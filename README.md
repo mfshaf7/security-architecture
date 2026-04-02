@@ -44,11 +44,14 @@ This repository does not replace delivery repos. Platform implementations remain
 - [`docs/strategy/roadmap.md`](docs/strategy/roadmap.md): phased remediation plan
 - [`docs/strategy/30-60-90-plan.md`](docs/strategy/30-60-90-plan.md): near-term execution plan
 - [`docs/assessments/platform-security-assessment-2026-04.md`](docs/assessments/platform-security-assessment-2026-04.md): current-state assessment
+- [`docs/assessments/platform-security-executive-report-2026-04.md`](docs/assessments/platform-security-executive-report-2026-04.md): executive summary for leadership or demos
+- [`docs/methodology/assessment-method.md`](docs/methodology/assessment-method.md): assessment structure and documentation method
 - [`docs/adr/README.md`](docs/adr/README.md): architecture decision record index
 - [`docs/standards/`](docs/standards): security standards and control expectations
 - [`docs/standards/ai-security-and-governance.md`](docs/standards/ai-security-and-governance.md): AI security and governance baseline
 - [`docs/reviews/security-review-checklist.md`](docs/reviews/security-review-checklist.md): reusable review checklist
 - [`registers/risk-register.md`](registers/risk-register.md): active security risks
+- [`registers/findings-register.md`](registers/findings-register.md): normalized findings tracking
 - [`registers/credential-inventory.md`](registers/credential-inventory.md): credential classes and ownership
 - [`registers/ai-system-inventory.md`](registers/ai-system-inventory.md): AI and agentic system inventory
 

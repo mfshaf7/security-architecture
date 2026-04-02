@@ -1,5 +1,19 @@
 # Platform Security Assessment: 2026-04
 
+| Field | Value |
+| --- | --- |
+| Document ID | SAR-DET-2026-04 |
+| Version | 1.0 |
+| Status | Draft |
+| Owner | Security Architecture |
+| Reviewers | TBD |
+| Classification | Internal |
+| Created | 2026-04-02 |
+| Last Updated | 2026-04-02 |
+| Related Executive Report | [`platform-security-executive-report-2026-04.md`](platform-security-executive-report-2026-04.md) |
+| Related Findings Register | [`../../registers/findings-register.md`](../../registers/findings-register.md) |
+| Related Risk Register | [`../../registers/risk-register.md`](../../registers/risk-register.md) |
+
 ## Executive Summary
 
 The platform is operational and recoverable, but several security controls are still immature. The most important weaknesses are concentrated in identity, secret governance, recovery handling, and control-plane trust. The platform currently works because those paths were repaired, not because they were already resilient by design.
@@ -48,6 +62,9 @@ This architecture is workable, but not yet governed at the level expected for lo
 ### F-001: Shared Privileged Credential Blast Radius
 
 Severity: High
+Likelihood: High
+
+Affected Assets: Vault, Argo CD, local administration boundary, recovery handling
 
 #### Observation
 
@@ -76,6 +93,9 @@ Move human privileged access to OIDC and reserve local passwords for controlled 
 ### F-002: Recovery-Material Governance Is Incomplete
 
 Severity: High
+Likelihood: Medium
+
+Affected Assets: Vault recovery authority, break-glass process
 
 #### Observation
 
@@ -104,6 +124,9 @@ Define a formal recovery-material policy covering storage location, encrypted ba
 ### F-003: Argo CD Repository Trust Drifted Out Of Managed Visibility
 
 Severity: High
+Likelihood: Medium
+
+Affected Assets: Argo CD, platform-engineering source trust, GitOps reconciliation
 
 #### Observation
 
@@ -132,6 +155,9 @@ Treat machine Git access as a first-class architecture domain. The current Vault
 ### F-004: Vault Manual-Unseal Deployment Was Operationally Fragile
 
 Severity: Medium
+Likelihood: Medium
+
+Affected Assets: Vault control plane
 
 #### Observation
 
@@ -160,6 +186,9 @@ Treat recoverability as an architecture requirement. Probe behavior, startup ass
 ### F-005: Secret Delivery Was Correct In Design But Brittle In Recovery
 
 Severity: Medium
+Likelihood: Medium
+
+Affected Assets: Vault, External Secrets Operator, runtime secret delivery
 
 #### Observation
 
@@ -187,6 +216,9 @@ Document and test the full Vault bootstrap and re-bootstrap path, including expe
 ### F-006: Host-Control Crosses A High-Trust Boundary
 
 Severity: High
+Likelihood: Medium
+
+Affected Assets: OpenClaw gateway, host bridge, WSL host boundary
 
 #### Observation
 
@@ -215,6 +247,9 @@ Create a dedicated host-control threat model and architecture review. This shoul
 ### F-007: AI And Agentic Governance Is Not Yet Formalized
 
 Severity: Medium
+Likelihood: Medium
+
+Affected Assets: AI-enabled workflows, future agentic systems, model-assisted trust paths
 
 #### Observation
 
