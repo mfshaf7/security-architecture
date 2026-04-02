@@ -52,6 +52,8 @@ This repository does not replace delivery repos. Platform implementations remain
 - [`docs/reviews/security-review-checklist.md`](docs/reviews/security-review-checklist.md): reusable review checklist
 - [`registers/risk-register.md`](registers/risk-register.md): active security risks
 - [`registers/findings-register.md`](registers/findings-register.md): normalized findings tracking
+- [`registers/csv/findings-register.csv`](registers/csv/findings-register.csv): machine-friendly findings data
+- [`registers/csv/risk-register.csv`](registers/csv/risk-register.csv): machine-friendly risk data
 - [`registers/credential-inventory.md`](registers/credential-inventory.md): credential classes and ownership
 - [`registers/ai-system-inventory.md`](registers/ai-system-inventory.md): AI and agentic system inventory
 
