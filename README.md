@@ -26,7 +26,7 @@ This repository covers:
 - platform hardening baselines
 - incident response and audit posture
 
-This repository does not replace delivery repos. Platform implementations remain in other repositories, especially [`platform-engineering`](/home/mfshaf7/projects/platform-engineering).
+This repository does not replace delivery repos. Platform implementations remain in other repositories, especially `platform-engineering`.
 
 ## Operating Model
 
@@ -36,21 +36,21 @@ This repository does not replace delivery repos. Platform implementations remain
 
 ## Repository Layout
 
-- [`docs/charter.md`](/home/mfshaf7/projects/security-architecture/docs/charter.md): repository charter and ownership model
-- [`docs/architecture/platform-overview.md`](/home/mfshaf7/projects/security-architecture/docs/architecture/platform-overview.md): full platform diagram and review reference
-- [`docs/architecture/component-inventory.md`](/home/mfshaf7/projects/security-architecture/docs/architecture/component-inventory.md): component inventory and trust relevance
-- [`docs/architecture/trust-boundaries.md`](/home/mfshaf7/projects/security-architecture/docs/architecture/trust-boundaries.md): trust-boundary mapping
-- [`docs/strategy/target-state.md`](/home/mfshaf7/projects/security-architecture/docs/strategy/target-state.md): target security architecture
-- [`docs/strategy/roadmap.md`](/home/mfshaf7/projects/security-architecture/docs/strategy/roadmap.md): phased remediation plan
-- [`docs/strategy/30-60-90-plan.md`](/home/mfshaf7/projects/security-architecture/docs/strategy/30-60-90-plan.md): near-term execution plan
-- [`docs/assessments/platform-security-assessment-2026-04.md`](/home/mfshaf7/projects/security-architecture/docs/assessments/platform-security-assessment-2026-04.md): current-state assessment
-- [`docs/adr/README.md`](/home/mfshaf7/projects/security-architecture/docs/adr/README.md): architecture decision record index
-- [`docs/standards/`](/home/mfshaf7/projects/security-architecture/docs/standards): security standards and control expectations
-- [`docs/standards/ai-security-and-governance.md`](/home/mfshaf7/projects/security-architecture/docs/standards/ai-security-and-governance.md): AI security and governance baseline
-- [`docs/reviews/security-review-checklist.md`](/home/mfshaf7/projects/security-architecture/docs/reviews/security-review-checklist.md): reusable review checklist
-- [`registers/risk-register.md`](/home/mfshaf7/projects/security-architecture/registers/risk-register.md): active security risks
-- [`registers/credential-inventory.md`](/home/mfshaf7/projects/security-architecture/registers/credential-inventory.md): credential classes and ownership
-- [`registers/ai-system-inventory.md`](/home/mfshaf7/projects/security-architecture/registers/ai-system-inventory.md): AI and agentic system inventory
+- [`docs/charter.md`](docs/charter.md): repository charter and ownership model
+- [`docs/architecture/platform-overview.md`](docs/architecture/platform-overview.md): full platform diagram and review reference
+- [`docs/architecture/component-inventory.md`](docs/architecture/component-inventory.md): component inventory and trust relevance
+- [`docs/architecture/trust-boundaries.md`](docs/architecture/trust-boundaries.md): trust-boundary mapping
+- [`docs/strategy/target-state.md`](docs/strategy/target-state.md): target security architecture
+- [`docs/strategy/roadmap.md`](docs/strategy/roadmap.md): phased remediation plan
+- [`docs/strategy/30-60-90-plan.md`](docs/strategy/30-60-90-plan.md): near-term execution plan
+- [`docs/assessments/platform-security-assessment-2026-04.md`](docs/assessments/platform-security-assessment-2026-04.md): current-state assessment
+- [`docs/adr/README.md`](docs/adr/README.md): architecture decision record index
+- [`docs/standards/`](docs/standards): security standards and control expectations
+- [`docs/standards/ai-security-and-governance.md`](docs/standards/ai-security-and-governance.md): AI security and governance baseline
+- [`docs/reviews/security-review-checklist.md`](docs/reviews/security-review-checklist.md): reusable review checklist
+- [`registers/risk-register.md`](registers/risk-register.md): active security risks
+- [`registers/credential-inventory.md`](registers/credential-inventory.md): credential classes and ownership
+- [`registers/ai-system-inventory.md`](registers/ai-system-inventory.md): AI and agentic system inventory
 
 ## First Priorities
 
