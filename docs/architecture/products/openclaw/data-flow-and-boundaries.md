@@ -38,6 +38,11 @@ flowchart LR
 Telegram behavior is channel-specific and should not be absorbed into host
 enforcement or platform rollout logic.
 
+Read-only operator inventory may be rendered through the Telegram surface, but
+the source of truth for platform endpoints, health checks, and governance notes
+should stay in the platform control boundary instead of being hardcoded in the
+channel layer.
+
 ### Runtime
 
 The runtime orchestrates sessions, routing, tools, and agent execution, but it

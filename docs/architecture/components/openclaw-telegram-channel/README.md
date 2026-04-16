@@ -30,6 +30,9 @@ that fronts the OpenClaw runtime.
 
 - Telegram-specific policy and approval behavior must stay explicit at the
   channel layer
+- any read-only operator inventory exposed through Telegram must remain
+  catalog-driven from a platform-owned source and must not expose mutating
+  controls or secrets by default
 - privileged or host-facing actions must remain behind deterministic checks
 - approval, callback, and delivery behavior changes must remain stage-testable
 - AI-influenced or chat-driven control changes must point back to product and
