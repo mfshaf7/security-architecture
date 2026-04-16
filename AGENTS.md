@@ -33,6 +33,8 @@ It does not own delivery implementation.
   the control story is incomplete.
 - Push requirements back to the owner delivery repo instead of absorbing
   delivery work here.
+- Expect owner repos to reference concrete security artifacts here when they
+  cross meaningful trust-boundary review areas.
 - Place new content in the correct layer:
   - `docs/standards/` for normative control requirements
   - `docs/adr/` for durable security decisions

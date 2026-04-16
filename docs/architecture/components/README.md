@@ -11,6 +11,8 @@ especially sensitive runtime-side components.
 - [`observability/README.md`](observability/README.md)
 - [`platform-postgresql/README.md`](platform-postgresql/README.md)
 - [`openclaw-host-bridge/README.md`](openclaw-host-bridge/README.md)
+- [`openclaw-runtime-distribution/README.md`](openclaw-runtime-distribution/README.md)
+- [`openclaw-telegram-channel/README.md`](openclaw-telegram-channel/README.md)
 
 Use a component security view when one shared service has a distinct trust
 boundary, failure mode, or control profile.
