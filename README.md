@@ -27,6 +27,15 @@ It does not own:
 
 Those stay in the owning delivery and platform repos.
 
+Key related owner repos:
+
+- `platform-engineering`
+  - shared platform and release authority
+- `openclaw-host-bridge`
+  - host-control enforcement runtime
+- `openclaw-runtime-distribution`
+  - active OpenClaw runtime composition
+
 ## Repository Model
 
 This repo uses a hybrid enterprise structure:
