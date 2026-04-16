@@ -37,6 +37,9 @@ that fronts the OpenClaw runtime.
 - approval, callback, and delivery behavior changes must remain stage-testable
 - AI-influenced or chat-driven control changes must point back to product and
   domain security views
+- if Telegram code is delivered as a separate stage-only overlay artifact, that
+  path must remain immutable, digest-pinned, and explicitly blocked from prod
+  promotion until separately reviewed
 
 ## Evidence And Related Docs
 
