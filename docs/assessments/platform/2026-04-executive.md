@@ -9,6 +9,9 @@
 | Classification | Internal |
 | Created | 2026-04-02 |
 | Last Updated | 2026-04-02 |
+| Related Detailed Assessment | [`2026-04-detailed.md`](2026-04-detailed.md) |
+| Related Findings Register | [`../../../registers/findings-register.md`](../../../registers/findings-register.md) |
+| Related Risk Register | [`../../../registers/risk-register.md`](../../../registers/risk-register.md) |
 
 ## Executive Summary
 
@@ -57,4 +60,3 @@ Current maturity is sufficient for continued platform operation, but not yet suf
 2. approve formal break-glass governance
 3. approve GitHub App migration for Argo CD
 4. sponsor a dedicated host-control and AI security review
-

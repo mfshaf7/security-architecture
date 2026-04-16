@@ -1,5 +1,9 @@
 # Security Review Checklist
 
+Use this checklist for platform, component, and product reviews. Record the
+result under `docs/reviews/platform/`, `docs/reviews/components/`, or
+`docs/reviews/products/` based on scope.
+
 ## Identity
 
 - does this change introduce a new human or machine identity
@@ -36,6 +40,13 @@
 - were operator docs or runbooks updated if the live operating model changed
 - can another reviewer understand the control without relying on tribal
   knowledge
+
+## Governance
+
+- does this review change a durable control expectation that should update a
+  standard, ADR, or architecture view
+- did this review identify a lasting finding or risk that belongs in a register
+- is the resulting evidence recorded in the correct review or assessment scope
 
 ## AI
 

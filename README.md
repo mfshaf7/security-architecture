@@ -1,77 +1,108 @@
 # Security Architecture
 
-This repository defines the security architecture, control strategy, and review
-criteria for the platform.
+This repository is the security governance backbone for the platform.
 
-It exists to separate security governance and architectural decision-making from
-day-to-day delivery work.
+It separates security standards, architecture judgment, assessment evidence, and
+durable decisions from day-to-day delivery repos.
 
 ## What This Repository Owns
 
 This repository owns:
 
-- security standards
-- trust-boundary definitions
-- review methodology
+- security standards and control expectations
+- trust-boundary and security architecture views
 - ADRs for security-significant decisions
-- findings and remediation direction
-- AI governance and model-risk expectations
+- repeatable review and assessment methodology
+- security review outputs and assessment evidence
+- findings, risks, and security inventories
+- AI governance and model-risk posture
 
 It does not own:
 
 - rollout implementation
-- gateway composition
-- Telegram feature work
-- host bridge code changes
+- product packaging or release assembly
+- product feature development
+- host bridge or application code changes
+- operator access runbooks
 
-Those live in delivery repos and should consume the standards and review outputs
-from here.
+Those stay in the owning delivery and platform repos.
+
+## Repository Model
+
+This repo uses a hybrid enterprise structure:
+
+- governance artifacts by type:
+  - [`docs/standards/`](docs/standards)
+  - [`docs/adr/`](docs/adr)
+  - [`docs/methodology/`](docs/methodology)
+- architecture by scope:
+  - [`docs/architecture/platform/`](docs/architecture/platform)
+  - [`docs/architecture/domains/`](docs/architecture/domains)
+  - [`docs/architecture/components/`](docs/architecture/components)
+  - [`docs/architecture/products/`](docs/architecture/products)
+- evidence by artifact class:
+  - [`docs/reviews/`](docs/reviews)
+  - [`docs/assessments/`](docs/assessments)
+  - [`registers/`](registers)
+
+That structure is deliberate:
+
+- standards stay cross-cutting
+- security design is described at the right scope
+- review and assessment evidence remain auditable
+- findings and risk tracking stay centralized
 
 ## Workflow Role
 
-1. Security-significant change is proposed in a delivery repo.
+1. A security-significant change is proposed in a delivery repo.
 2. This repository supplies the review lens:
    - trust boundaries
    - identity and secret impact
-   - privileged runtime and AI implications
-3. Findings or requirements flow back to the owner repo.
+   - machine-trust and GitOps impact
+   - privileged runtime and host-control implications
+   - AI and agentic risk
+3. Requirements or findings flow back to the owner repo.
 4. Delivery repos implement the control.
-5. Standards or ADRs here are updated when the security posture or governance
-   model materially changes.
+5. This repository is updated only when the security posture, control model, or
+   evidence base materially changes.
 
 ## Audit And Visibility
 
-This repo is the main evidence surface for security governance.
+This repo is the main evidence surface for security governance:
 
-- standards:
-  - `docs/standards/`
-- architecture and boundary model:
-  - `docs/architecture/`
-- repeatable review method:
-  - `docs/reviews/security-review-checklist.md`
-  - `docs/methodology/assessment-method.md`
+- normative controls:
+  - [`docs/standards/`](docs/standards)
+- architecture and trust-boundary models:
+  - [`docs/architecture/`](docs/architecture)
+- review method and review outputs:
+  - [`docs/reviews/`](docs/reviews)
+  - [`docs/methodology/assessment-method.md`](docs/methodology/assessment-method.md)
 - durable decisions:
-  - `docs/adr/`
-- findings and risk tracking:
-  - `registers/`
+  - [`docs/adr/`](docs/adr)
+- point-in-time assessment evidence:
+  - [`docs/assessments/`](docs/assessments)
+- findings, risks, and security inventories:
+  - [`registers/`](registers)
 
 If a control exists only in code and not in these reviewable artifacts, the
 security governance story is incomplete.
 
-## Repository Layout
+## Read First
 
 - [`docs/charter.md`](docs/charter.md)
-- [`docs/architecture/platform-overview.md`](docs/architecture/platform-overview.md)
-- [`docs/architecture/component-inventory.md`](docs/architecture/component-inventory.md)
-- [`docs/architecture/trust-boundaries.md`](docs/architecture/trust-boundaries.md)
+- [`docs/architecture/README.md`](docs/architecture/README.md)
+- [`docs/architecture/platform/overview.md`](docs/architecture/platform/overview.md)
+- [`docs/architecture/platform/trust-boundaries.md`](docs/architecture/platform/trust-boundaries.md)
 - [`docs/strategy/target-state.md`](docs/strategy/target-state.md)
-- [`docs/strategy/roadmap.md`](docs/strategy/roadmap.md)
-- [`docs/strategy/30-60-90-plan.md`](docs/strategy/30-60-90-plan.md)
-- [`docs/assessments/platform-security-assessment-2026-04.md`](docs/assessments/platform-security-assessment-2026-04.md)
-- [`docs/assessments/platform-security-executive-report-2026-04.md`](docs/assessments/platform-security-executive-report-2026-04.md)
-- [`docs/standards/`](docs/standards)
 - [`docs/reviews/security-review-checklist.md`](docs/reviews/security-review-checklist.md)
-- `registers/`
+
+## Validation
+
+Run the structure validator after significant documentation or taxonomy changes:
+
+```bash
+python3 scripts/validate_repo_structure.py --repo-root .
+```
 
 ## Current Priorities
 

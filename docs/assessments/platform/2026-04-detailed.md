@@ -10,9 +10,9 @@
 | Classification | Internal |
 | Created | 2026-04-02 |
 | Last Updated | 2026-04-02 |
-| Related Executive Report | [`platform-security-executive-report-2026-04.md`](platform-security-executive-report-2026-04.md) |
-| Related Findings Register | [`../../registers/findings-register.md`](../../registers/findings-register.md) |
-| Related Risk Register | [`../../registers/risk-register.md`](../../registers/risk-register.md) |
+| Related Executive Report | [`2026-04-executive.md`](2026-04-executive.md) |
+| Related Findings Register | [`../../../registers/findings-register.md`](../../../registers/findings-register.md) |
+| Related Risk Register | [`../../../registers/risk-register.md`](../../../registers/risk-register.md) |
 
 ## Executive Summary
 
