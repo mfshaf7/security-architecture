@@ -16,6 +16,7 @@ This repository owns:
 - security review outputs and assessment evidence
 - findings, risks, and security inventories
 - AI governance and model-risk posture
+- repo-owned skill source for reusable security review workflows
 
 It does not own:
 
@@ -53,6 +54,8 @@ This repo uses a hybrid enterprise structure:
   - [`docs/reviews/`](docs/reviews)
   - [`docs/assessments/`](docs/assessments)
   - [`registers/`](registers)
+- repo-owned workflow skills:
+  - [`skills-src/`](skills-src)
 
 That structure is deliberate:
 
@@ -106,6 +109,7 @@ security governance story is incomplete.
 - [`docs/architecture/platform/trust-boundaries.md`](docs/architecture/platform/trust-boundaries.md)
 - [`docs/strategy/target-state.md`](docs/strategy/target-state.md)
 - [`docs/reviews/security-review-checklist.md`](docs/reviews/security-review-checklist.md)
+- [`skills-src/README.md`](skills-src/README.md)
 
 ## Validation
 

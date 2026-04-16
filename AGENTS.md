@@ -23,6 +23,7 @@ It does not own delivery implementation.
 - `docs/architecture/platform/trust-boundaries.md`
 - `docs/strategy/target-state.md`
 - `docs/reviews/security-review-checklist.md`
+- `skills-src/README.md`
 
 ## Working Rules
 
@@ -33,6 +34,8 @@ It does not own delivery implementation.
   the control story is incomplete.
 - Push requirements back to the owner delivery repo instead of absorbing
   delivery work here.
+- Keep reusable security review workflows under `skills-src/` so the workspace
+  installer can publish them without copying logic into `workspace-governance`.
 - Expect owner repos to reference concrete security artifacts here when they
   cross meaningful trust-boundary review areas.
 - Place new content in the correct layer:
