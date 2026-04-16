@@ -14,6 +14,8 @@
 
 - released behavior should reconcile through approved platform contracts
 - stage and prod should remain attestable by source SHA and digest
+- experimental delivery artifacts must remain explicitly scoped, reversible, and
+  non-promotable until their trust model is separately approved
 
 ## Runtime
 
