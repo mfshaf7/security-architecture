@@ -49,6 +49,8 @@ REQUIRED_PATHS = [
     "docs/templates/README.md",
     "registers/README.md",
     "scripts/README.md",
+    "skills-src/README.md",
+    "skills-src/security-governance-review/SKILL.md",
 ]
 
 FORBIDDEN_PATHS = [
