@@ -14,8 +14,9 @@
 
 - released behavior should reconcile through approved platform contracts
 - stage and prod should remain attestable by source SHA and digest
-- experimental delivery artifacts must remain explicitly scoped, reversible, and
-  non-promotable until their trust model is separately approved
+- any separate Telegram overlay artifact must remain explicitly scoped,
+  reversible, digest-pinned, tied to an exact qualified base image, and
+  stage-approved before prod promotion
 
 ## Runtime
 
