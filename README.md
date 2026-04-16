@@ -71,8 +71,10 @@ That structure is deliberate:
    - privileged runtime and host-control implications
    - AI and agentic risk
 3. Requirements or findings flow back to the owner repo.
-4. Delivery repos implement the control.
-5. This repository is updated only when the security posture, control model, or
+4. Owner repos should link concrete security artifacts from this repository,
+   not only the repo name.
+5. Delivery repos implement the control.
+6. This repository is updated only when the security posture, control model, or
    evidence base materially changes.
 
 ## Audit And Visibility
