@@ -10,9 +10,21 @@ review_inventory:
         review_due_on: 2026-10-18
         status: active
       latest_change_review:
-        path: docs/reviews/platform/2026-04-18-platform-engineering-security-baseline.md
+        path: docs/reviews/platform/2026-04-18-governed-ai-intake-assist-and-model-profiles.md
         reviewed_on: 2026-04-18
-        status: baseline-current
+        status: current
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - ai
+        owner_artifacts:
+          - repo: platform-engineering
+            path: docs/standards/governed-ai-access-model.md
+          - repo: platform-engineering
+            path: security/governed-ai-model-profiles.yaml
+          - repo: workspace-governance
+            path: contracts/intake-policy.yaml
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
