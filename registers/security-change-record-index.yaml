@@ -63,3 +63,15 @@ change_records:
   - R-007
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-18-openproject-idea-backlog-contract.md
+  date: '2026-04-18'
+  short_title: canonical OpenProject idea backlog contract
+  review_areas:
+  - identity
+  - secrets
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
