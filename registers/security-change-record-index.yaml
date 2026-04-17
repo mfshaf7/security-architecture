@@ -48,3 +48,18 @@ change_records:
   - R-006
   workstreams:
   - WS-006
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-18-governed-ai-intake-foundation.md
+  date: '2026-04-18'
+  short_title: platform-owned governed AI intake foundation
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
