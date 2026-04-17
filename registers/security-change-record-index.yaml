@@ -1,0 +1,14 @@
+schema_version: 1
+change_records:
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
+  date: '2026-04-17'
+  short_title: Stage bridge audit-path drift blocked live host-control rehearsal
+  review_areas:
+  - runtime
+  findings:
+  - F-006
+  risks:
+  - R-006
+  workstreams:
+  - WS-006

@@ -12,6 +12,7 @@ import sys
 import yaml
 
 from render_register_views import generated_views
+from render_security_change_record_index import rendered_text as rendered_change_record_index
 
 
 REVIEW_AREAS = {"identity", "secrets", "delivery", "runtime", "ai"}
@@ -89,6 +90,21 @@ def validate_generated_views(repo_root: Path, errors: list[str]) -> None:
         actual = path.read_text()
         if actual != expected:
             errors.append(f"generated register view out of date: {path.relative_to(repo_root)}")
+
+
+def validate_generated_change_record_index(
+    repo_root: Path, workspace_root: Path, errors: list[str]
+) -> None:
+    target = repo_root / "registers" / "security-change-record-index.yaml"
+    if not target.exists():
+        errors.append(f"generated change-record index missing: {target.relative_to(repo_root)}")
+        return
+    expected = rendered_change_record_index(workspace_root)
+    actual = target.read_text()
+    if actual != expected:
+        errors.append(
+            f"generated change-record index out of date: {target.relative_to(repo_root)}"
+        )
 
 
 def validate_change_record_linkage(
@@ -220,6 +236,7 @@ def validate(repo_root: Path, workspace_root: Path) -> list[str]:
     findings = remediation_inventory.get("findings") or {}
     risks = remediation_inventory.get("risks") or {}
     validate_generated_views(repo_root, errors)
+    validate_generated_change_record_index(repo_root, workspace_root, errors)
     if not workstreams:
         errors.append("remediation-inventory: at least one workstream is required")
     for workstream_id, workstream in workstreams.items():
