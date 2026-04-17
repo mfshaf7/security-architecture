@@ -1,5 +1,41 @@
 schema_version: 1
 change_records:
+- repo: openclaw-host-bridge
+  path: docs/records/change-records/2026-04-17-publish-bridge-interface-contract.md
+  date: '2026-04-17'
+  short_title: Bridge interface contract is now published for downstream validation
+  review_areas:
+  - runtime
+  findings:
+  - F-006
+  risks:
+  - R-006
+  workstreams:
+  - WS-006
+- repo: openclaw-runtime-distribution
+  path: docs/records/change-records/2026-04-17-governed-telegram-overlay-lane.md
+  date: '2026-04-17'
+  short_title: Telegram overlay artifact lane became a governed runtime delivery path
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-006
+- repo: openclaw-telegram-enhanced
+  path: docs/records/change-records/2026-04-17-stored-model-override-resolution.md
+  date: '2026-04-17'
+  short_title: Stored model override resolution no longer crashes on missing provider
+    values
+  review_areas:
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
