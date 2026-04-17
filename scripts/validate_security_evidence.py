@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import argparse
-import csv
 from datetime import date
 from pathlib import Path
 import re
@@ -12,12 +11,18 @@ import sys
 
 import yaml
 
+from render_register_views import generated_views
+
 
 REVIEW_AREAS = {"identity", "secrets", "delivery", "runtime", "ai"}
 CHANGE_REVIEW_STATUSES = {"baseline-current", "current"}
 ASSESSMENT_STATUSES = {"published", "superseded"}
 WORKSTREAM_STATUSES = {"active", "complete"}
 FINDING_RISK_STATUSES = {"open", "mitigated", "accepted"}
+CHANGE_RECORD_PATH_RE = re.compile(r"docs/records/change-records/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\.md$")
+FINDING_ID_RE = re.compile(r"^F-\d{3}$")
+RISK_ID_RE = re.compile(r"^R-\d{3}$")
+WORKSTREAM_ID_RE = re.compile(r"^WS-\d{3}$")
 ASSESSMENT_DRAFT_RE = re.compile(
     r"^\|\s*Status\s*\|\s*Draft\s*\|", re.MULTILINE | re.IGNORECASE
 )
@@ -66,19 +71,66 @@ def validate_artifact_refs(
             errors.append(f"{label}: artifact #{idx} points to missing file {repo}/{path}")
 
 
-def ids_from_markdown_table(path: Path, prefix: str) -> set[str]:
-    ids: set[str] = set()
-    for line in path.read_text().splitlines():
-        line = line.strip()
-        if line.startswith(f"| {prefix}"):
-            ids.add(line.split("|")[1].strip())
-    return ids
+def parse_yaml_front_matter(path: Path) -> dict:
+    text = path.read_text()
+    if not text.startswith("---\n"):
+        return {}
+    parts = text.split("\n---\n", 1)
+    if len(parts) != 2:
+        return {}
+    return yaml.safe_load(parts[0][4:]) or {}
 
 
-def ids_from_csv(path: Path, column_name: str) -> set[str]:
-    with path.open(newline="") as handle:
-        reader = csv.DictReader(handle)
-        return {row[column_name].strip() for row in reader}
+def validate_generated_views(repo_root: Path, errors: list[str]) -> None:
+    for path, expected in generated_views(repo_root).items():
+        if not path.exists():
+            errors.append(f"generated register view missing: {path.relative_to(repo_root)}")
+            continue
+        actual = path.read_text()
+        if actual != expected:
+            errors.append(f"generated register view out of date: {path.relative_to(repo_root)}")
+
+
+def validate_change_record_linkage(
+    *,
+    repo_name: str,
+    rel_path: str,
+    item_id: str,
+    workstream_id: str,
+    collection_name: str,
+    workspace_root: Path,
+    errors: list[str],
+) -> None:
+    if not CHANGE_RECORD_PATH_RE.fullmatch(rel_path):
+        return
+    path = artifact_path(workspace_root, repo_name, rel_path)
+    metadata = parse_yaml_front_matter(path)
+    security_evidence = metadata.get("security_evidence") or {}
+    if not security_evidence:
+        errors.append(
+            f"{repo_name}/{rel_path}: change record used as security remediation evidence must declare security_evidence front matter"
+        )
+        return
+    findings = security_evidence.get("findings") or []
+    risks = security_evidence.get("risks") or []
+    workstreams = security_evidence.get("workstreams") or []
+    review_areas = security_evidence.get("review_areas") or []
+    if not isinstance(review_areas, list) or not review_areas or any(area not in REVIEW_AREAS for area in review_areas):
+        errors.append(f"{repo_name}/{rel_path}: security_evidence.review_areas must be a non-empty list of valid review areas")
+    if not isinstance(workstreams, list) or workstream_id not in workstreams:
+        errors.append(
+            f"{repo_name}/{rel_path}: security_evidence.workstreams must include {workstream_id}"
+        )
+    if collection_name == "findings":
+        if not isinstance(findings, list) or item_id not in findings:
+            errors.append(
+                f"{repo_name}/{rel_path}: security_evidence.findings must include {item_id}"
+            )
+    elif collection_name == "risks":
+        if not isinstance(risks, list) or item_id not in risks:
+            errors.append(
+                f"{repo_name}/{rel_path}: security_evidence.risks must include {item_id}"
+            )
 
 
 def validate(repo_root: Path, workspace_root: Path) -> list[str]:
@@ -167,6 +219,7 @@ def validate(repo_root: Path, workspace_root: Path) -> list[str]:
     workstreams = remediation_inventory.get("workstreams") or {}
     findings = remediation_inventory.get("findings") or {}
     risks = remediation_inventory.get("risks") or {}
+    validate_generated_views(repo_root, errors)
     if not workstreams:
         errors.append("remediation-inventory: at least one workstream is required")
     for workstream_id, workstream in workstreams.items():
@@ -186,46 +239,49 @@ def validate(repo_root: Path, workspace_root: Path) -> list[str]:
             workspace_root=workspace_root,
             errors=errors,
         )
+        for artifact in (workstream or {}).get("artifacts") or []:
+            repo = artifact.get("repo")
+            path = artifact.get("path")
+            if isinstance(repo, str) and isinstance(path, str):
+                if CHANGE_RECORD_PATH_RE.fullmatch(path):
+                    validate_change_record_linkage(
+                        repo_name=repo,
+                        rel_path=path,
+                        item_id="",
+                        workstream_id=workstream_id,
+                        collection_name="workstreams",
+                        workspace_root=workspace_root,
+                        errors=errors,
+                    )
 
-    finding_md_ids = ids_from_markdown_table(repo_root / "registers" / "findings-register.md", "F-")
-    finding_csv_ids = ids_from_csv(repo_root / "registers" / "csv" / "findings-register.csv", "Finding ID")
-    risk_md_ids = ids_from_markdown_table(repo_root / "registers" / "risk-register.md", "R-")
-    risk_csv_ids = ids_from_csv(repo_root / "registers" / "csv" / "risk-register.csv", "Risk ID")
-    if finding_md_ids != finding_csv_ids:
-        errors.append("findings register markdown and CSV IDs do not match")
-    if risk_md_ids != risk_csv_ids:
-        errors.append("risk register markdown and CSV IDs do not match")
-
-    for register_path in (
-        repo_root / "registers" / "findings-register.md",
-        repo_root / "registers" / "risk-register.md",
-        repo_root / "registers" / "csv" / "findings-register.csv",
-        repo_root / "registers" / "csv" / "risk-register.csv",
-    ):
-        if "TBD" in register_path.read_text():
-            errors.append(f"{register_path.relative_to(repo_root)} must not contain TBD once remediation inventory is active")
-
-    for collection_name, expected_ids, entries in (
-        ("findings", finding_md_ids, findings),
-        ("risks", risk_md_ids, risks),
-    ):
-        if set(entries) != expected_ids:
-            missing = sorted(expected_ids - set(entries))
-            extra = sorted(set(entries) - expected_ids)
-            if missing:
-                errors.append(f"remediation-inventory {collection_name}: missing entries for {missing}")
-            if extra:
-                errors.append(f"remediation-inventory {collection_name}: unexpected extra entries {extra}")
+    for collection_name, entries in (("findings", findings), ("risks", risks)):
         for item_id, entry in entries.items():
             status = (entry or {}).get("status")
             if status not in FINDING_RISK_STATUSES:
                 errors.append(
                     f"remediation-inventory {collection_name}.{item_id}: status must be one of {sorted(FINDING_RISK_STATUSES)}"
                 )
+            if collection_name == "findings":
+                required_fields = ("title", "severity", "likelihood", "affected_assets", "owner", "risk_id")
+            else:
+                required_fields = ("title", "severity", "likelihood", "owner", "treatment", "residual_risk", "related_findings")
+            for field_name in required_fields:
+                if field_name not in (entry or {}):
+                    errors.append(
+                        f"remediation-inventory {collection_name}.{item_id}: missing field {field_name}"
+                    )
             workstream = (entry or {}).get("workstream")
             if workstream not in workstreams:
                 errors.append(
                     f"remediation-inventory {collection_name}.{item_id}: unknown workstream {workstream!r}"
+                )
+            if collection_name == "findings" and not FINDING_ID_RE.fullmatch(item_id):
+                errors.append(f"remediation-inventory findings: invalid finding id {item_id!r}")
+            if collection_name == "risks" and not RISK_ID_RE.fullmatch(item_id):
+                errors.append(f"remediation-inventory risks: invalid risk id {item_id!r}")
+            if workstream and not WORKSTREAM_ID_RE.fullmatch(workstream):
+                errors.append(
+                    f"remediation-inventory {collection_name}.{item_id}: invalid workstream id {workstream!r}"
                 )
             if collection_name == "findings":
                 target_date = parse_date(
@@ -237,12 +293,36 @@ def validate(repo_root: Path, workspace_root: Path) -> list[str]:
                     errors.append(
                         f"remediation-inventory findings.{item_id}: open finding target_date {target_date} is already in the past"
                     )
+                risk_id = (entry or {}).get("risk_id")
+                if risk_id not in risks:
+                    errors.append(
+                        f"remediation-inventory findings.{item_id}: unknown linked risk {risk_id!r}"
+                    )
+            else:
+                for finding_id in (entry or {}).get("related_findings") or []:
+                    if finding_id not in findings:
+                        errors.append(
+                            f"remediation-inventory risks.{item_id}: unknown linked finding {finding_id!r}"
+                        )
             validate_artifact_refs(
                 (entry or {}).get("remediation_artifacts") or [],
                 label=f"remediation-inventory {collection_name}.{item_id}",
                 workspace_root=workspace_root,
                 errors=errors,
             )
+            for artifact in (entry or {}).get("remediation_artifacts") or []:
+                repo = artifact.get("repo")
+                path = artifact.get("path")
+                if isinstance(repo, str) and isinstance(path, str):
+                    validate_change_record_linkage(
+                        repo_name=repo,
+                        rel_path=path,
+                        item_id=item_id,
+                        workstream_id=workstream,
+                        collection_name=collection_name,
+                        workspace_root=workspace_root,
+                        errors=errors,
+                    )
 
     return errors
 

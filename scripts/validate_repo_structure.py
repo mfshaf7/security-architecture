@@ -54,6 +54,7 @@ REQUIRED_PATHS = [
     "registers/assessment-inventory.yaml",
     "registers/remediation-inventory.yaml",
     "scripts/README.md",
+    "scripts/render_register_views.py",
     "scripts/validate_security_evidence.py",
     "skills-src/README.md",
     "skills-src/security-governance-review/SKILL.md",

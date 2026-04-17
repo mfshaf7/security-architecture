@@ -110,8 +110,18 @@ workstreams:
         role: inventory
 findings:
   F-001:
+    title: Shared privileged credential blast radius
+    severity: High
+    likelihood: High
+    affected_assets:
+      - Vault
+      - Argo CD
+      - local admin
+      - recovery handling
+    owner: Security Architecture / Platform
     status: open
     target_date: 2026-06-17
+    risk_id: R-001
     workstream: WS-001
     remediation_artifacts:
       - repo: security-architecture
@@ -119,8 +129,15 @@ findings:
       - repo: security-architecture
         path: registers/credential-inventory.md
   F-002:
+    title: Recovery-material governance is incomplete
+    severity: High
+    likelihood: Medium
+    affected_assets:
+      - Vault recovery authority
+    owner: Security Architecture / Platform
     status: open
     target_date: 2026-05-18
+    risk_id: R-002
     workstream: WS-002
     remediation_artifacts:
       - repo: security-architecture
@@ -130,8 +147,16 @@ findings:
       - repo: platform-engineering
         path: docs/runbooks/vault-recovery.md
   F-003:
+    title: Argo CD repository trust drifted out of managed visibility
+    severity: High
+    likelihood: Medium
+    affected_assets:
+      - Argo CD
+      - GitOps repo access
+    owner: Platform
     status: mitigated
     target_date: 2026-04-03
+    risk_id: R-003
     workstream: WS-003
     remediation_artifacts:
       - repo: platform-engineering
@@ -139,8 +164,15 @@ findings:
       - repo: security-architecture
         path: docs/adr/0002-machine-git-access.md
   F-004:
+    title: Vault manual-unseal deployment was operationally fragile
+    severity: Medium
+    likelihood: Medium
+    affected_assets:
+      - Vault control plane
+    owner: Platform
     status: mitigated
     target_date: 2026-04-03
+    risk_id: R-004
     workstream: WS-004
     remediation_artifacts:
       - repo: platform-engineering
@@ -148,8 +180,17 @@ findings:
       - repo: platform-engineering
         path: docs/components/vault/operations.md
   F-005:
+    title: Secret delivery was correct in design but brittle in recovery
+    severity: Medium
+    likelihood: Medium
+    affected_assets:
+      - Vault
+      - ESO
+      - runtime namespaces
+    owner: Platform
     status: open
     target_date: 2026-06-17
+    risk_id: R-005
     workstream: WS-005
     remediation_artifacts:
       - repo: security-architecture
@@ -159,8 +200,17 @@ findings:
       - repo: platform-engineering
         path: environments/shared/argocd/platform-vault-reader-serviceaccount.yaml
   F-006:
+    title: Host-control crosses a high-trust boundary
+    severity: High
+    likelihood: Medium
+    affected_assets:
+      - OpenClaw gateway
+      - host bridge
+      - WSL host
+    owner: Security Architecture / Platform
     status: open
     target_date: 2026-06-17
+    risk_id: R-006
     workstream: WS-006
     remediation_artifacts:
       - repo: security-architecture
@@ -169,9 +219,18 @@ findings:
         path: docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md
       - repo: security-architecture
         path: docs/reviews/components/2026-04-18-host-control-plugin-security-baseline.md
+      - repo: platform-engineering
+        path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   F-007:
+    title: AI and agentic governance is not yet formalized
+    severity: Medium
+    likelihood: Medium
+    affected_assets:
+      - AI-enabled and model-assisted workflows
+    owner: Security Architecture
     status: open
     target_date: 2026-06-17
+    risk_id: R-007
     workstream: WS-007
     remediation_artifacts:
       - repo: security-architecture
@@ -182,7 +241,15 @@ findings:
         path: registers/ai-system-inventory.md
 risks:
   R-001:
+    title: Shared privileged credential blast radius
+    severity: High
+    likelihood: High
     status: open
+    owner: Security Architecture / Platform
+    treatment: Mitigate
+    residual_risk: High
+    related_findings:
+      - F-001
     workstream: WS-001
     remediation_artifacts:
       - repo: security-architecture
@@ -190,7 +257,15 @@ risks:
       - repo: security-architecture
         path: registers/credential-inventory.md
   R-002:
+    title: Recovery-material governance weakness
+    severity: High
+    likelihood: Medium
     status: open
+    owner: Security Architecture / Platform
+    treatment: Mitigate
+    residual_risk: High
+    related_findings:
+      - F-002
     workstream: WS-002
     remediation_artifacts:
       - repo: security-architecture
@@ -198,7 +273,15 @@ risks:
       - repo: platform-engineering
         path: docs/runbooks/vault-backup-restore.md
   R-003:
+    title: Controller Git credential drift
+    severity: High
+    likelihood: Medium
     status: mitigated
+    owner: Platform
+    treatment: Mitigated through Vault-backed management
+    residual_risk: Medium
+    related_findings:
+      - F-003
     workstream: WS-003
     remediation_artifacts:
       - repo: platform-engineering
@@ -206,7 +289,15 @@ risks:
       - repo: security-architecture
         path: docs/adr/0002-machine-git-access.md
   R-004:
+    title: Manual-unseal probe fragility
+    severity: Medium
+    likelihood: Medium
     status: mitigated
+    owner: Platform
+    treatment: Mitigated through probe redesign
+    residual_risk: Low
+    related_findings:
+      - F-004
     workstream: WS-004
     remediation_artifacts:
       - repo: platform-engineering
@@ -214,7 +305,15 @@ risks:
       - repo: platform-engineering
         path: docs/components/vault/operations.md
   R-005:
+    title: Secret delivery recovery brittleness
+    severity: Medium
+    likelihood: Medium
     status: open
+    owner: Platform
+    treatment: Mitigate
+    residual_risk: Medium
+    related_findings:
+      - F-005
     workstream: WS-005
     remediation_artifacts:
       - repo: security-architecture
@@ -222,15 +321,33 @@ risks:
       - repo: platform-engineering
         path: environments/shared/argocd/platform-vault-secretstore.yaml
   R-006:
+    title: High-trust host-control boundary exposure
+    severity: High
+    likelihood: Medium
     status: open
+    owner: Security Architecture / Platform
+    treatment: Mitigate
+    residual_risk: High
+    related_findings:
+      - F-006
     workstream: WS-006
     remediation_artifacts:
       - repo: security-architecture
         path: docs/architecture/domains/host-control.md
       - repo: security-architecture
         path: docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md
+      - repo: platform-engineering
+        path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   R-007:
+    title: AI and agentic governance immaturity
+    severity: Medium
+    likelihood: Medium
     status: open
+    owner: Security Architecture
+    treatment: Mitigate
+    residual_risk: Medium
+    related_findings:
+      - F-007
     workstream: WS-007
     remediation_artifacts:
       - repo: security-architecture
