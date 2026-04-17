@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render findings and risk register views from remediation inventory."""
+"""Render human-facing register views from security evidence inventories."""
 
 from __future__ import annotations
 
@@ -22,10 +22,22 @@ RISKS_HEADER = (
     "Related Findings | Target Workstream |\n"
     "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n"
 )
-GENERATED_NOTICE = (
-    "<!-- Generated from registers/remediation-inventory.yaml by "
-    "scripts/render_register_views.py. Do not hand-edit. -->\n\n"
+REVIEWS_HEADER = (
+    "| Entry Type | Entry | Owner Repo | Scope | Baseline Review | Baseline Due | "
+    "Latest Change Review | Latest Status | Review Areas |\n"
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n"
 )
+ASSESSMENTS_HEADER = (
+    "| Assessment | Scope | Status | Reviewed On | Review Due | Reviewers | Path |\n"
+    "| --- | --- | --- | --- | --- | --- | --- |\n"
+)
+
+
+def generated_notice(source_path: str) -> str:
+    return (
+        f"<!-- Generated from {source_path} by "
+        "scripts/render_register_views.py. Do not hand-edit. -->\n\n"
+    )
 
 
 def load_yaml(path: Path) -> dict:
@@ -37,7 +49,11 @@ def join_list(values: list[str]) -> str:
 
 
 def render_findings_markdown(findings: dict) -> str:
-    lines = [GENERATED_NOTICE, "# Findings Register\n\n", FINDINGS_HEADER]
+    lines = [
+        generated_notice("registers/remediation-inventory.yaml"),
+        "# Findings Register\n\n",
+        FINDINGS_HEADER,
+    ]
     for finding_id in sorted(findings):
         entry = findings[finding_id]
         lines.append(
@@ -58,7 +74,11 @@ def render_findings_markdown(findings: dict) -> str:
 
 
 def render_risks_markdown(risks: dict) -> str:
-    lines = [GENERATED_NOTICE, "# Risk Register\n\n", RISKS_HEADER]
+    lines = [
+        generated_notice("registers/remediation-inventory.yaml"),
+        "# Risk Register\n\n",
+        RISKS_HEADER,
+    ]
     for risk_id in sorted(risks):
         entry = risks[risk_id]
         lines.append(
@@ -150,15 +170,172 @@ def render_risks_csv(risks: dict) -> str:
     return output.getvalue()
 
 
+def review_rows(review_inventory: dict) -> list[dict[str, str]]:
+    rows: list[dict[str, str]] = []
+    inventory = review_inventory.get("review_inventory") or {}
+    for entry_type in ("repos", "products", "components"):
+        for entry_name, entry in sorted((inventory.get(entry_type) or {}).items()):
+            baseline = entry.get("baseline_review") or {}
+            latest = entry.get("latest_change_review") or {}
+            rows.append(
+                {
+                    "entry_type": entry_type[:-1],
+                    "entry_name": entry_name,
+                    "owner_repo": entry.get("owner_repo", ""),
+                    "scope": entry.get("scope", ""),
+                    "baseline_path": baseline.get("path", ""),
+                    "baseline_reviewed_on": str(baseline.get("reviewed_on", "")),
+                    "baseline_review_due_on": str(baseline.get("review_due_on", "")),
+                    "baseline_status": str(baseline.get("status", "")),
+                    "latest_path": latest.get("path", ""),
+                    "latest_reviewed_on": str(latest.get("reviewed_on", "")),
+                    "latest_status": str(latest.get("status", "")),
+                    "review_areas": join_list(latest.get("review_areas") or []),
+                    "owner_artifacts": join_list(
+                        [
+                            f"{artifact.get('repo')}/{artifact.get('path')}"
+                            for artifact in (latest.get("owner_artifacts") or [])
+                        ]
+                    ),
+                }
+            )
+    return rows
+
+
+def render_review_inventory_markdown(review_inventory: dict) -> str:
+    lines = [
+        generated_notice("registers/review-inventory.yaml"),
+        "# Review Inventory\n\n",
+        REVIEWS_HEADER,
+    ]
+    for row in review_rows(review_inventory):
+        lines.append(
+            "| {entry_type} | {entry_name} | {owner_repo} | {scope} | {baseline_path} | {baseline_review_due_on} | {latest_path} | {latest_status} | {review_areas} |\n".format(
+                **row
+            )
+        )
+    return "".join(lines)
+
+
+def render_review_inventory_csv(review_inventory: dict) -> str:
+    output = StringIO()
+    writer = csv.writer(output, lineterminator="\n")
+    writer.writerow(
+        [
+            "Entry Type",
+            "Entry",
+            "Owner Repo",
+            "Scope",
+            "Baseline Review Path",
+            "Baseline Reviewed On",
+            "Baseline Review Due On",
+            "Baseline Status",
+            "Latest Change Review Path",
+            "Latest Change Reviewed On",
+            "Latest Change Status",
+            "Review Areas",
+            "Owner Artifacts",
+        ]
+    )
+    for row in review_rows(review_inventory):
+        writer.writerow(
+            [
+                row["entry_type"],
+                row["entry_name"],
+                row["owner_repo"],
+                row["scope"],
+                row["baseline_path"],
+                row["baseline_reviewed_on"],
+                row["baseline_review_due_on"],
+                row["baseline_status"],
+                row["latest_path"],
+                row["latest_reviewed_on"],
+                row["latest_status"],
+                row["review_areas"],
+                row["owner_artifacts"],
+            ]
+        )
+    return output.getvalue()
+
+
+def assessment_rows(assessment_inventory: dict) -> list[dict[str, str]]:
+    rows: list[dict[str, str]] = []
+    for assessment_name, entry in sorted(
+        (assessment_inventory.get("assessment_inventory") or {}).items()
+    ):
+        rows.append(
+            {
+                "assessment_name": assessment_name,
+                "scope": entry.get("scope", ""),
+                "status": str(entry.get("status", "")),
+                "reviewed_on": str(entry.get("reviewed_on", "")),
+                "review_due_on": str(entry.get("review_due_on", "")),
+                "reviewers": join_list(entry.get("reviewers") or []),
+                "path": entry.get("path", ""),
+            }
+        )
+    return rows
+
+
+def render_assessment_inventory_markdown(assessment_inventory: dict) -> str:
+    lines = [
+        generated_notice("registers/assessment-inventory.yaml"),
+        "# Assessment Inventory\n\n",
+        ASSESSMENTS_HEADER,
+    ]
+    for row in assessment_rows(assessment_inventory):
+        lines.append(
+            "| {assessment_name} | {scope} | {status} | {reviewed_on} | {review_due_on} | {reviewers} | {path} |\n".format(
+                **row
+            )
+        )
+    return "".join(lines)
+
+
+def render_assessment_inventory_csv(assessment_inventory: dict) -> str:
+    output = StringIO()
+    writer = csv.writer(output, lineterminator="\n")
+    writer.writerow(
+        [
+            "Assessment",
+            "Scope",
+            "Status",
+            "Reviewed On",
+            "Review Due On",
+            "Reviewers",
+            "Path",
+        ]
+    )
+    for row in assessment_rows(assessment_inventory):
+        writer.writerow(
+            [
+                row["assessment_name"],
+                row["scope"],
+                row["status"],
+                row["reviewed_on"],
+                row["review_due_on"],
+                row["reviewers"],
+                row["path"],
+            ]
+        )
+    return output.getvalue()
+
+
 def generated_views(repo_root: Path) -> dict[Path, str]:
     inventory = load_yaml(repo_root / "registers" / "remediation-inventory.yaml")
+    review_inventory = load_yaml(repo_root / "registers" / "review-inventory.yaml")
+    assessment_inventory = load_yaml(repo_root / "registers" / "assessment-inventory.yaml")
     findings = inventory.get("findings") or {}
     risks = inventory.get("risks") or {}
     return {
         repo_root / "registers" / "findings-register.md": render_findings_markdown(findings),
         repo_root / "registers" / "risk-register.md": render_risks_markdown(risks),
+        repo_root / "registers" / "review-inventory.md": render_review_inventory_markdown(review_inventory),
+        repo_root / "registers" / "assessment-inventory.md": render_assessment_inventory_markdown(assessment_inventory),
         repo_root / "registers" / "csv" / "findings-register.csv": render_findings_csv(findings),
         repo_root / "registers" / "csv" / "risk-register.csv": render_risks_csv(risks),
+        repo_root / "registers" / "csv" / "review-inventory.csv": render_review_inventory_csv(review_inventory),
+        repo_root / "registers" / "csv" / "assessment-inventory.csv": render_assessment_inventory_csv(assessment_inventory),
     }
 
 
@@ -188,6 +365,7 @@ def main() -> int:
         return 0
 
     for path, content in outputs.items():
+        path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content)
         print(f"rendered {path}")
     return 0

@@ -50,6 +50,8 @@ REQUIRED_PATHS = [
     "docs/strategy/README.md",
     "docs/templates/README.md",
     "registers/README.md",
+    "registers/review-inventory.md",
+    "registers/assessment-inventory.md",
     "registers/review-inventory.yaml",
     "registers/assessment-inventory.yaml",
     "registers/remediation-inventory.yaml",
