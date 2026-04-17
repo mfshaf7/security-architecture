@@ -107,9 +107,18 @@ review_inventory:
         review_due_on: 2026-10-18
         status: active
       latest_change_review:
-        path: docs/reviews/products/2026-04-18-openproject-security-baseline.md
+        path: docs/reviews/products/2026-04-18-openproject-idea-backlog-and-automation-identity.md
         reviewed_on: 2026-04-18
-        status: baseline-current
+        status: current
+        review_areas:
+          - identity
+          - secrets
+          - ai
+        owner_artifacts:
+          - repo: platform-engineering
+            path: products/openproject/idea-backlog-contract.md
+          - repo: operator-orchestration-service
+            path: docs/contracts/openproject-adapter-v1.md
   components:
     argo-cd:
       owner_repo: platform-engineering
