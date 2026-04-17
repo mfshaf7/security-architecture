@@ -7,6 +7,8 @@ lifecycle, or product delivery lane that spans more than one component.
 
 Current outputs:
 
+- [`2026-04-18-openclaw-security-baseline.md`](2026-04-18-openclaw-security-baseline.md)
+- [`2026-04-18-openproject-security-baseline.md`](2026-04-18-openproject-security-baseline.md)
 - [`2026-04-17-openclaw-governed-runtime-lifecycle-standard.md`](2026-04-17-openclaw-governed-runtime-lifecycle-standard.md)
 - [`2026-04-17-openclaw-prod-emergency-lifecycle.md`](2026-04-17-openclaw-prod-emergency-lifecycle.md)
 - [`2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md`](2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md)

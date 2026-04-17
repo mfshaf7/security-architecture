@@ -22,6 +22,7 @@ points to their security views where they exist.
 | OpenClaw stage gateway | pre-production validation gateway | mirrors high-trust runtime shape and should be governed accordingly | [`../products/openclaw/README.md`](../products/openclaw/README.md) |
 | openclaw-runtime-distribution | governed runtime composition path | packages runtime inputs and preserves attestation between source and runtime | [`../components/openclaw-runtime-distribution/README.md`](../components/openclaw-runtime-distribution/README.md) |
 | Telegram surface | user interaction surface | receives commands and returns content in a chat-driven threat model | [`../components/openclaw-telegram-channel/README.md`](../components/openclaw-telegram-channel/README.md) |
+| host-control plugin | typed runtime tool surface | exposes which host-facing operations the runtime may request | [`../components/host-control-plugin/README.md`](../components/host-control-plugin/README.md) |
 | OpenProject | product application surface | multi-user web application with persistent data and admin workflows | [`../products/openproject/README.md`](../products/openproject/README.md) |
 
 ## Privileged Host Components

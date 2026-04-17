@@ -10,3 +10,4 @@ and minimum review-lane coverage.
     that retired flat paths are gone
   - verifies that each review lane contains at least one dated review output
     beyond its directory `README.md`
+  - verifies that the review inventory register exists
