@@ -6,6 +6,10 @@ Review the introduction of a bounded governed prod lifecycle for OpenClaw that
 allows prod OpenClaw to be deliberately suspended and later returned to `live`
 without pruning unrelated prod services.
 
+This narrower review is now extended by
+[`2026-04-17-openclaw-governed-runtime-lifecycle-standard.md`](2026-04-17-openclaw-governed-runtime-lifecycle-standard.md),
+which covers `traffic-stopped` and `quarantined` in addition to `suspended`.
+
 ## Decision
 
 Approved with bounded controls.
