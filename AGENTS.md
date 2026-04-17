@@ -49,3 +49,4 @@ It does not own delivery implementation.
 - Keep product ops, rollout steps, and delivery implementation in owner repos.
 - After structural changes, run:
   - `python3 scripts/validate_repo_structure.py --repo-root .`
+  - `python3 scripts/validate_security_evidence.py --repo-root . --workspace-root /home/mfshaf7/projects`

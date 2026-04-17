@@ -25,6 +25,14 @@ review_inventory:
         path: docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md
         reviewed_on: 2026-04-17
         status: current
+        review_areas:
+          - delivery
+          - runtime
+        owner_artifacts:
+          - repo: openclaw-runtime-distribution
+            path: deployment/telegram-runtime-migration.md
+          - repo: platform-engineering
+            path: products/openclaw/runtime-contract.md
     openclaw-host-bridge:
       owner_repo: openclaw-host-bridge
       scope: component
@@ -49,6 +57,14 @@ review_inventory:
         path: docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md
         reviewed_on: 2026-04-17
         status: current
+        review_areas:
+          - delivery
+          - runtime
+        owner_artifacts:
+          - repo: openclaw-telegram-enhanced
+            path: docs/architecture.md
+          - repo: platform-engineering
+            path: products/openclaw/runtime-contract.md
   products:
     openclaw:
       owner_repo: platform-engineering
@@ -62,6 +78,14 @@ review_inventory:
         path: docs/reviews/products/2026-04-17-openclaw-governed-runtime-lifecycle-standard.md
         reviewed_on: 2026-04-17
         status: current
+        review_areas:
+          - delivery
+          - runtime
+        owner_artifacts:
+          - repo: platform-engineering
+            path: docs/standards/governed-runtime-lifecycle-model.md
+          - repo: platform-engineering
+            path: products/openclaw/runbooks/manage-prod-lifecycle.md
     openproject:
       owner_repo: platform-engineering
       scope: product
@@ -159,6 +183,14 @@ review_inventory:
         path: docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md
         reviewed_on: 2026-04-17
         status: current
+        review_areas:
+          - delivery
+          - runtime
+        owner_artifacts:
+          - repo: openclaw-telegram-enhanced
+            path: docs/architecture.md
+          - repo: platform-engineering
+            path: products/openclaw/runtime-contract.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -171,6 +203,14 @@ review_inventory:
         path: docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md
         reviewed_on: 2026-04-17
         status: current
+        review_areas:
+          - delivery
+          - runtime
+        owner_artifacts:
+          - repo: openclaw-runtime-distribution
+            path: deployment/telegram-runtime-migration.md
+          - repo: platform-engineering
+            path: products/openclaw/runtime-contract.md
     host-control-plugin:
       owner_repo: openclaw-runtime-distribution
       scope: component
