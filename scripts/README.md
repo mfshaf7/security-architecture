@@ -6,8 +6,8 @@ and minimum review-lane coverage.
 ## Available Scripts
 
 - `render_register_views.py`
-  - generates the findings and risk Markdown/CSV register views from
-    `registers/remediation-inventory.yaml`
+  - generates the findings/risk register views plus review/assessment inventory
+    Markdown and CSV summaries from the YAML inventories under `registers/`
 - `render_security_change_record_index.py`
   - generates the cross-repo index of owner change records that declare
     `security_evidence` front matter
@@ -19,4 +19,5 @@ and minimum review-lane coverage.
   - verifies that the review inventory register exists
 - `validate_security_evidence.py`
   - validates review-inventory change-review metadata, assessment freshness
-    metadata, and remediation linkage against real owner-repo artifacts
+    metadata, remediation linkage against real owner-repo artifacts, and that
+    generated register views stay current

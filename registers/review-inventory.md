@@ -1,0 +1,21 @@
+<!-- Generated from registers/review-inventory.yaml by scripts/render_register_views.py. Do not hand-edit. -->
+
+# Review Inventory
+
+| Entry Type | Entry | Owner Repo | Scope | Baseline Review | Baseline Due | Latest Change Review | Latest Status | Review Areas |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| repo | openclaw-host-bridge | openclaw-host-bridge | component | docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md | 2026-10-18 | docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md | baseline-current |  |
+| repo | openclaw-runtime-distribution | openclaw-runtime-distribution | component | docs/reviews/components/2026-04-18-openclaw-runtime-distribution-security-baseline.md | 2026-10-18 | docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md | current | delivery, runtime |
+| repo | openclaw-telegram-enhanced | openclaw-telegram-enhanced | component | docs/reviews/components/2026-04-18-openclaw-telegram-channel-security-baseline.md | 2026-10-18 | docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md | current | delivery, runtime |
+| repo | platform-engineering | platform-engineering | platform | docs/reviews/platform/2026-04-18-platform-engineering-security-baseline.md | 2026-10-18 | docs/reviews/platform/2026-04-18-platform-engineering-security-baseline.md | baseline-current |  |
+| product | openclaw | platform-engineering | product | docs/reviews/products/2026-04-18-openclaw-security-baseline.md | 2026-10-18 | docs/reviews/products/2026-04-17-openclaw-governed-runtime-lifecycle-standard.md | current | delivery, runtime |
+| product | openproject | platform-engineering | product | docs/reviews/products/2026-04-18-openproject-security-baseline.md | 2026-10-18 | docs/reviews/products/2026-04-18-openproject-security-baseline.md | baseline-current |  |
+| component | argo-cd | platform-engineering | component | docs/reviews/components/2026-04-18-argo-cd-security-baseline.md | 2026-10-18 | docs/reviews/components/2026-04-18-argo-cd-security-baseline.md | baseline-current |  |
+| component | external-secrets | platform-engineering | component | docs/reviews/components/2026-04-18-external-secrets-security-baseline.md | 2026-10-18 | docs/reviews/components/2026-04-18-external-secrets-security-baseline.md | baseline-current |  |
+| component | host-control-plugin | openclaw-runtime-distribution | component | docs/reviews/components/2026-04-18-host-control-plugin-security-baseline.md | 2026-10-18 | docs/reviews/components/2026-04-18-host-control-plugin-security-baseline.md | baseline-current |  |
+| component | observability | platform-engineering | component | docs/reviews/components/2026-04-18-observability-security-baseline.md | 2026-10-18 | docs/reviews/components/2026-04-18-observability-security-baseline.md | baseline-current |  |
+| component | openclaw-host-bridge | openclaw-host-bridge | component | docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md | 2026-10-18 | docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md | baseline-current |  |
+| component | openclaw-runtime-distribution | openclaw-runtime-distribution | component | docs/reviews/components/2026-04-18-openclaw-runtime-distribution-security-baseline.md | 2026-10-18 | docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md | current | delivery, runtime |
+| component | openclaw-telegram-channel | openclaw-telegram-enhanced | component | docs/reviews/components/2026-04-18-openclaw-telegram-channel-security-baseline.md | 2026-10-18 | docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md | current | delivery, runtime |
+| component | platform-postgresql | platform-engineering | component | docs/reviews/components/2026-04-18-platform-postgresql-security-baseline.md | 2026-10-18 | docs/reviews/components/2026-04-18-platform-postgresql-security-baseline.md | baseline-current |  |
+| component | vault | platform-engineering | component | docs/reviews/components/2026-04-18-vault-security-baseline.md | 2026-10-18 | docs/reviews/components/2026-04-18-vault-security-baseline.md | baseline-current |  |
