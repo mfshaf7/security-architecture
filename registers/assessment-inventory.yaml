@@ -1,0 +1,18 @@
+schema_version: 1
+assessment_inventory:
+  platform-executive-2026-04:
+    scope: platform
+    path: docs/assessments/platform/2026-04-executive.md
+    status: published
+    reviewed_on: 2026-04-18
+    review_due_on: 2026-07-18
+    reviewers:
+      - mfshaf7
+  platform-detailed-2026-04:
+    scope: platform
+    path: docs/assessments/platform/2026-04-detailed.md
+    status: published
+    reviewed_on: 2026-04-18
+    review_due_on: 2026-07-18
+    reviewers:
+      - mfshaf7

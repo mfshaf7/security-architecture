@@ -1,0 +1,239 @@
+schema_version: 1
+workstreams:
+  WS-001:
+    title: Human identity modernization
+    owner: security-architecture
+    status: active
+    target_date: 2026-06-17
+    artifacts:
+      - repo: security-architecture
+        path: docs/adr/0001-federated-human-access.md
+        role: proposed-decision
+      - repo: security-architecture
+        path: docs/strategy/target-state.md
+        role: target-state
+      - repo: security-architecture
+        path: registers/credential-inventory.md
+        role: current-state-inventory
+  WS-002:
+    title: Recovery governance
+    owner: security-architecture
+    status: active
+    target_date: 2026-05-18
+    artifacts:
+      - repo: security-architecture
+        path: docs/standards/secrets-and-recovery.md
+        role: standard
+      - repo: platform-engineering
+        path: docs/runbooks/vault-backup-restore.md
+        role: operator-runbook
+      - repo: platform-engineering
+        path: docs/runbooks/vault-recovery.md
+        role: operator-runbook
+  WS-003:
+    title: Machine identity modernization
+    owner: security-architecture
+    status: active
+    target_date: 2026-06-17
+    artifacts:
+      - repo: security-architecture
+        path: docs/adr/0002-machine-git-access.md
+        role: proposed-decision
+      - repo: security-architecture
+        path: docs/strategy/target-state.md
+        role: target-state
+      - repo: platform-engineering
+        path: environments/shared/argocd/platform-engineering-repo-externalsecret.yaml
+        role: current-control
+  WS-004:
+    title: Platform resilience
+    owner: platform-engineering
+    status: complete
+    target_date: 2026-04-03
+    artifacts:
+      - repo: platform-engineering
+        path: docs/runbooks/bootstrap-vault.md
+        role: recovery-runbook
+      - repo: platform-engineering
+        path: docs/components/vault/operations.md
+        role: operator-guide
+      - repo: platform-engineering
+        path: docs/runbooks/vault-recovery.md
+        role: recovery-runbook
+  WS-005:
+    title: Secret delivery resilience
+    owner: platform-engineering
+    status: active
+    target_date: 2026-06-17
+    artifacts:
+      - repo: security-architecture
+        path: docs/architecture/domains/secrets-and-recovery.md
+        role: architecture-view
+      - repo: platform-engineering
+        path: environments/shared/argocd/platform-vault-secretstore.yaml
+        role: current-control
+      - repo: platform-engineering
+        path: environments/shared/argocd/platform-vault-reader-serviceaccount.yaml
+        role: current-control
+  WS-006:
+    title: Host-control security review
+    owner: security-architecture
+    status: active
+    target_date: 2026-06-17
+    artifacts:
+      - repo: security-architecture
+        path: docs/architecture/domains/host-control.md
+        role: architecture-view
+      - repo: security-architecture
+        path: docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md
+        role: baseline-review
+      - repo: security-architecture
+        path: docs/reviews/components/2026-04-18-host-control-plugin-security-baseline.md
+        role: baseline-review
+      - repo: security-architecture
+        path: docs/reviews/products/2026-04-18-openclaw-security-baseline.md
+        role: product-review
+  WS-007:
+    title: AI security and governance
+    owner: security-architecture
+    status: active
+    target_date: 2026-06-17
+    artifacts:
+      - repo: security-architecture
+        path: docs/adr/0003-ai-governance-baseline.md
+        role: proposed-decision
+      - repo: security-architecture
+        path: docs/standards/ai-security-and-governance.md
+        role: standard
+      - repo: security-architecture
+        path: registers/ai-system-inventory.md
+        role: inventory
+findings:
+  F-001:
+    status: open
+    target_date: 2026-06-17
+    workstream: WS-001
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/adr/0001-federated-human-access.md
+      - repo: security-architecture
+        path: registers/credential-inventory.md
+  F-002:
+    status: open
+    target_date: 2026-05-18
+    workstream: WS-002
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/standards/secrets-and-recovery.md
+      - repo: platform-engineering
+        path: docs/runbooks/vault-backup-restore.md
+      - repo: platform-engineering
+        path: docs/runbooks/vault-recovery.md
+  F-003:
+    status: mitigated
+    target_date: 2026-04-03
+    workstream: WS-003
+    remediation_artifacts:
+      - repo: platform-engineering
+        path: environments/shared/argocd/platform-engineering-repo-externalsecret.yaml
+      - repo: security-architecture
+        path: docs/adr/0002-machine-git-access.md
+  F-004:
+    status: mitigated
+    target_date: 2026-04-03
+    workstream: WS-004
+    remediation_artifacts:
+      - repo: platform-engineering
+        path: docs/runbooks/bootstrap-vault.md
+      - repo: platform-engineering
+        path: docs/components/vault/operations.md
+  F-005:
+    status: open
+    target_date: 2026-06-17
+    workstream: WS-005
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/architecture/domains/secrets-and-recovery.md
+      - repo: platform-engineering
+        path: environments/shared/argocd/platform-vault-secretstore.yaml
+      - repo: platform-engineering
+        path: environments/shared/argocd/platform-vault-reader-serviceaccount.yaml
+  F-006:
+    status: open
+    target_date: 2026-06-17
+    workstream: WS-006
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/architecture/domains/host-control.md
+      - repo: security-architecture
+        path: docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md
+      - repo: security-architecture
+        path: docs/reviews/components/2026-04-18-host-control-plugin-security-baseline.md
+  F-007:
+    status: open
+    target_date: 2026-06-17
+    workstream: WS-007
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/adr/0003-ai-governance-baseline.md
+      - repo: security-architecture
+        path: docs/standards/ai-security-and-governance.md
+      - repo: security-architecture
+        path: registers/ai-system-inventory.md
+risks:
+  R-001:
+    status: open
+    workstream: WS-001
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/adr/0001-federated-human-access.md
+      - repo: security-architecture
+        path: registers/credential-inventory.md
+  R-002:
+    status: open
+    workstream: WS-002
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/standards/secrets-and-recovery.md
+      - repo: platform-engineering
+        path: docs/runbooks/vault-backup-restore.md
+  R-003:
+    status: mitigated
+    workstream: WS-003
+    remediation_artifacts:
+      - repo: platform-engineering
+        path: environments/shared/argocd/platform-engineering-repo-externalsecret.yaml
+      - repo: security-architecture
+        path: docs/adr/0002-machine-git-access.md
+  R-004:
+    status: mitigated
+    workstream: WS-004
+    remediation_artifacts:
+      - repo: platform-engineering
+        path: docs/runbooks/bootstrap-vault.md
+      - repo: platform-engineering
+        path: docs/components/vault/operations.md
+  R-005:
+    status: open
+    workstream: WS-005
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/architecture/domains/secrets-and-recovery.md
+      - repo: platform-engineering
+        path: environments/shared/argocd/platform-vault-secretstore.yaml
+  R-006:
+    status: open
+    workstream: WS-006
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/architecture/domains/host-control.md
+      - repo: security-architecture
+        path: docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md
+  R-007:
+    status: open
+    workstream: WS-007
+    remediation_artifacts:
+      - repo: security-architecture
+        path: docs/adr/0003-ai-governance-baseline.md
+      - repo: security-architecture
+        path: registers/ai-system-inventory.md
