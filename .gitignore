@@ -5,3 +5,7 @@ Thumbs.db
 # Generated bundles
 *.enc
 *.bak
+
+# Python bytecode
+__pycache__/
+*.py[cod]
