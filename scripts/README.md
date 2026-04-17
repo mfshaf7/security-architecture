@@ -5,6 +5,9 @@ and minimum review-lane coverage.
 
 ## Available Scripts
 
+- `render_register_views.py`
+  - generates the findings and risk Markdown/CSV register views from
+    `registers/remediation-inventory.yaml`
 - `validate_repo_structure.py`
   - verifies that the required hybrid security-architecture layout exists and
     that retired flat paths are gone
