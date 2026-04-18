@@ -1,0 +1,68 @@
+name: Validate Security Evidence
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-security-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validation dependencies
+        run: python3 -m pip install pyyaml
+
+      - name: Validate repo structure
+        run: python3 scripts/validate_repo_structure.py --repo-root .
+
+      - name: Materialize workspace context
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import shutil
+          import subprocess
+
+          repo_root = Path(".").resolve()
+          workspace_root = repo_root / ".workspace-ci"
+          if workspace_root.exists():
+              shutil.rmtree(workspace_root)
+          workspace_root.mkdir()
+          shutil.copytree(
+              repo_root,
+              workspace_root / "security-architecture",
+              ignore=shutil.ignore_patterns(".git", ".workspace-ci", "__pycache__", "*.pyc"),
+          )
+
+          repos = [
+              "workspace-governance",
+              "platform-engineering",
+              "openclaw-runtime-distribution",
+              "openclaw-telegram-enhanced",
+              "openclaw-host-bridge",
+              "operator-orchestration-service",
+          ]
+          for repo_name in repos:
+              subprocess.run(
+                  [
+                      "git",
+                      "clone",
+                      "--depth",
+                      "1",
+                      f"https://github.com/mfshaf7/{repo_name}.git",
+                      str(workspace_root / repo_name),
+                  ],
+                  check=True,
+              )
+          PY
+
+      - name: Validate security evidence
+        run: python3 .workspace-ci/security-architecture/scripts/validate_security_evidence.py --repo-root .workspace-ci/security-architecture --workspace-root .workspace-ci

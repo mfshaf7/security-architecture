@@ -50,3 +50,15 @@ It does not own delivery implementation.
 - After structural changes, run:
   - `python3 scripts/validate_repo_structure.py --repo-root .`
   - `python3 scripts/validate_security_evidence.py --repo-root . --workspace-root /home/mfshaf7/projects`
+
+## Review guidelines
+
+For Codex GitHub review, treat the following as `P1` when they plausibly
+regress the security-governance role:
+
+- security claims that are no longer backed by a concrete artifact, review
+  output, or evidence linkage
+- delivery implementation or operator-runbook content being absorbed here
+  instead of pushed back to the owner repo
+- changes that blur design intent, implemented control, and operating evidence
+  into a single undocumented claim
