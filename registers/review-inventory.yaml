@@ -66,17 +66,17 @@ review_inventory:
         review_due_on: 2026-10-18
         status: active
       latest_change_review:
-        path: docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md
-        reviewed_on: 2026-04-17
+        path: docs/reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md
+        reviewed_on: 2026-04-18
         status: current
         review_areas:
-          - delivery
           - runtime
+          - delivery
         owner_artifacts:
           - repo: openclaw-telegram-enhanced
-            path: docs/architecture.md
-          - repo: platform-engineering
-            path: products/openclaw/runtime-contract.md
+            path: src/idea-capture-command.ts
+          - repo: operator-orchestration-service
+            path: docs/contracts/intake-api-v1.md
     operator-orchestration-service:
       owner_repo: operator-orchestration-service
       scope: component
@@ -86,9 +86,16 @@ review_inventory:
         review_due_on: 2026-10-18
         status: active
       latest_change_review:
-        path: docs/reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md
+        path: docs/reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md
         reviewed_on: 2026-04-18
-        status: baseline-current
+        status: current
+        review_areas:
+          - runtime
+        owner_artifacts:
+          - repo: operator-orchestration-service
+            path: docs/contracts/intake-api-v1.md
+          - repo: openclaw-telegram-enhanced
+            path: src/idea-capture-command.ts
   products:
     openclaw:
       owner_repo: platform-engineering
@@ -267,6 +274,13 @@ review_inventory:
         review_due_on: 2026-10-18
         status: active
       latest_change_review:
-        path: docs/reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md
+        path: docs/reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md
         reviewed_on: 2026-04-18
-        status: baseline-current
+        status: current
+        review_areas:
+          - runtime
+        owner_artifacts:
+          - repo: operator-orchestration-service
+            path: docs/contracts/intake-api-v1.md
+          - repo: openclaw-telegram-enhanced
+            path: src/idea-capture-command.ts
