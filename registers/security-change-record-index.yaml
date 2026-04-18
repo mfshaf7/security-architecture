@@ -49,6 +49,42 @@ change_records:
   - R-007
   workstreams:
   - WS-007
+- repo: openclaw-telegram-enhanced
+  path: docs/records/change-records/2026-04-18-idea-command-usage-guidance.md
+  date: '2026-04-18'
+  short_title: 2026-04-18-idea-command-usage-guidance
+  review_areas:
+  - runtime
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-18-openproject-host-header-runtime-fix.md
+  date: '2026-04-18'
+  short_title: 2026-04-18-openproject-host-header-runtime-fix
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-18-runtime-host-binding-for-container-reachability.md
+  date: '2026-04-18'
+  short_title: 2026-04-18-runtime-host-binding-for-container-reachability
+  review_areas:
+  - runtime
+  - delivery
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
 - repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-18-shared-runtime-admission-and-stage-capture-path.md
   date: '2026-04-18'
