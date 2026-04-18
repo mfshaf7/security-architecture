@@ -26,6 +26,10 @@ Phase 1 admits only the bounded idea workflow family:
 - read one broker-owned idea projection
 - list recent idea records through a bounded projection
 
+Local fast-iteration work is allowed through the `dev-integration`
+`idea-workflow` profile, but that lane stays local-only and does not count as
+governed stage evidence.
+
 AI triage remains deferred.
 
 ## Current Admitted Runtime Shape
@@ -95,5 +99,7 @@ AI triage remains deferred.
   [../../reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md](../../reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md)
 - idea-list and command-family review:
   [../../reviews/components/2026-04-18-operator-orchestration-service-idea-list-and-command-family.md](../../reviews/components/2026-04-18-operator-orchestration-service-idea-list-and-command-family.md)
+- dev-integration idea-workflow review:
+  [../../reviews/components/2026-04-18-operator-orchestration-service-dev-integration-idea-workflow.md](../../reviews/components/2026-04-18-operator-orchestration-service-dev-integration-idea-workflow.md)
 - AI governance standard:
   [../../standards/ai-security-and-governance.md](../../standards/ai-security-and-governance.md)

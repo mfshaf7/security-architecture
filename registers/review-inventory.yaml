@@ -10,21 +10,23 @@ review_inventory:
         review_due_on: 2026-10-18
         status: active
       latest_change_review:
-        path: docs/reviews/platform/2026-04-18-governed-ai-intake-assist-and-model-profiles.md
+        path: docs/reviews/platform/2026-04-18-dev-integration-local-k3s-lane.md
         reviewed_on: 2026-04-18
         status: current
         review_areas:
           - identity
           - secrets
           - delivery
-          - ai
+          - runtime
         owner_artifacts:
           - repo: platform-engineering
-            path: docs/standards/governed-ai-access-model.md
+            path: docs/standards/dev-integration-lane.md
           - repo: platform-engineering
-            path: security/governed-ai-model-profiles.yaml
+            path: scripts/dev_integration.py
           - repo: workspace-governance
-            path: contracts/intake-policy.yaml
+            path: contracts/developer-integration-policy.yaml
+          - repo: workspace-governance
+            path: contracts/developer-integration-profiles.yaml
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -86,16 +88,21 @@ review_inventory:
         review_due_on: 2026-10-18
         status: active
       latest_change_review:
-        path: docs/reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md
+        path: docs/reviews/components/2026-04-18-operator-orchestration-service-dev-integration-idea-workflow.md
         reviewed_on: 2026-04-18
         status: current
         review_areas:
+          - identity
+          - secrets
+          - delivery
           - runtime
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/contracts/intake-api-v1.md
-          - repo: openclaw-telegram-enhanced
-            path: src/idea-capture-command.ts
+            path: dev-integration/profiles/idea-workflow/profile.yaml
+          - repo: operator-orchestration-service
+            path: dev-integration/profiles/idea-workflow/scripts/up.sh
+          - repo: operator-orchestration-service
+            path: dev-integration/profiles/idea-workflow/scripts/telegram_simulator.mjs
   products:
     openclaw:
       owner_repo: platform-engineering
