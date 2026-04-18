@@ -87,3 +87,14 @@ change_records:
   workstreams:
   - WS-003
   - WS-005
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-18-openproject-operator-orchestration-role-correction.md
+  date: '2026-04-18'
+  short_title: corrected broker OpenProject roles so capture can create work packages
+  review_areas:
+  - identity
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
