@@ -16,6 +16,10 @@ The implemented model is acceptable provided the credential remains component-
 owned, the account stays non-admin, and the project role set is limited to the
 minimum needed for `workspace-proposals`.
 
+Live follow-up on 2026-04-18 found that the earlier `Reader` plus
+`Work package editor` set was under-permissioned for API-backed capture. The
+approved minimum role set is corrected below.
+
 ## Review Areas
 
 ### Identity
@@ -24,6 +28,7 @@ minimum needed for `workspace-proposals`.
 - the account must remain non-admin
 - project access should be limited to:
   - `Reader`
+  - `Work package creator`
   - `Work package editor`
 - scope should remain the dedicated `workspace-proposals` project
 
@@ -56,6 +61,7 @@ minimum needed for `workspace-proposals`.
 3. project-scoped membership on `workspace-proposals`
 4. minimum role set:
    - `Reader`
+   - `Work package creator`
    - `Work package editor`
 5. named single-purpose API token
 6. Vault path under the broker component scope
