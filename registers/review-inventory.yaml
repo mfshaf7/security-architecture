@@ -77,6 +77,18 @@ review_inventory:
             path: docs/architecture.md
           - repo: platform-engineering
             path: products/openclaw/runtime-contract.md
+    operator-orchestration-service:
+      owner_repo: operator-orchestration-service
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md
+        reviewed_on: 2026-04-18
+        review_due_on: 2026-10-18
+        status: active
+      latest_change_review:
+        path: docs/reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md
+        reviewed_on: 2026-04-18
+        status: baseline-current
   products:
     openclaw:
       owner_repo: platform-engineering
@@ -244,5 +256,17 @@ review_inventory:
         status: active
       latest_change_review:
         path: docs/reviews/components/2026-04-18-host-control-plugin-security-baseline.md
+        reviewed_on: 2026-04-18
+        status: baseline-current
+    operator-orchestration-service:
+      owner_repo: operator-orchestration-service
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md
+        reviewed_on: 2026-04-18
+        review_due_on: 2026-10-18
+        status: active
+      latest_change_review:
+        path: docs/reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md
         reviewed_on: 2026-04-18
         status: baseline-current
