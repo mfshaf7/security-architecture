@@ -1,0 +1,11 @@
+# Security governance ownership
+* @mfshaf7
+
+# Review and CI controls
+/.github/ @mfshaf7
+
+# Security architecture, evidence, and inventories
+/docs/ @mfshaf7
+/registers/ @mfshaf7
+/scripts/ @mfshaf7
+/skills-src/ @mfshaf7
