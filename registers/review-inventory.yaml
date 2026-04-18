@@ -107,16 +107,18 @@ review_inventory:
         review_due_on: 2026-10-18
         status: active
       latest_change_review:
-        path: docs/reviews/products/2026-04-18-openproject-idea-backlog-and-automation-identity.md
+        path: docs/reviews/products/2026-04-18-openproject-operator-orchestration-automation-identity-provisioning.md
         reviewed_on: 2026-04-18
         status: current
         review_areas:
           - identity
           - secrets
-          - ai
+          - runtime
         owner_artifacts:
           - repo: platform-engineering
             path: products/openproject/idea-backlog-contract.md
+          - repo: platform-engineering
+            path: products/openproject/runbooks/provision-operator-orchestration-identity.md
           - repo: operator-orchestration-service
             path: docs/contracts/openproject-adapter-v1.md
   components:

@@ -75,3 +75,15 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-18-openproject-operator-orchestration-identity.md
+  date: '2026-04-18'
+  short_title: provisioned OpenProject service identity for operator-orchestration-service
+  review_areas:
+  - identity
+  - secrets
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
