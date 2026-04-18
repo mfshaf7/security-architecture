@@ -63,6 +63,8 @@ deferred.
 - only bounded workflow endpoints are allowed
 - `/healthz`, `/readyz`, and `/version` are required operator-visible
   attestation surfaces
+- workflow descriptors and read projections are allowed only for broker-owned
+  workflows and records
 - canonical record mutation remains behind explicit operator action at the
   workflow layer
 
@@ -84,5 +86,7 @@ deferred.
 
 - runtime-admission review:
   [../../reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md](../../reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md)
+- workflow-catalog and read-projection review:
+  [../../reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md](../../reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md)
 - AI governance standard:
   [../../standards/ai-security-and-governance.md](../../standards/ai-security-and-governance.md)
