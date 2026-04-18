@@ -20,8 +20,13 @@ This component sits at a multi-system trust boundary:
 - the service emits audit records for workflow requests and durable backend
   writes
 
-Phase 1 admits only the bounded idea-capture workflow and keeps AI triage
-deferred.
+Phase 1 admits only the bounded idea workflow family:
+
+- capture a new idea
+- read one broker-owned idea projection
+- list recent idea records through a bounded projection
+
+AI triage remains deferred.
 
 ## Current Admitted Runtime Shape
 
@@ -88,5 +93,7 @@ deferred.
   [../../reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md](../../reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md)
 - workflow-catalog and read-projection review:
   [../../reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md](../../reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md)
+- idea-list and command-family review:
+  [../../reviews/components/2026-04-18-operator-orchestration-service-idea-list-and-command-family.md](../../reviews/components/2026-04-18-operator-orchestration-service-idea-list-and-command-family.md)
 - AI governance standard:
   [../../standards/ai-security-and-governance.md](../../standards/ai-security-and-governance.md)
