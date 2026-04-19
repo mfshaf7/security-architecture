@@ -98,6 +98,70 @@ change_records:
   - R-007
   workstreams:
   - WS-007
+- repo: openclaw-telegram-enhanced
+  path: docs/records/change-records/2026-04-19-idea-command-keyword-guardrails.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-idea-command-keyword-guardrails
+  review_areas:
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: openclaw-telegram-enhanced
+  path: docs/records/change-records/2026-04-19-idea-decision-command-surface.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-idea-decision-command-surface
+  review_areas:
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: openclaw-telegram-enhanced
+  path: docs/records/change-records/2026-04-19-idea-evaluation-readback.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-idea-evaluation-readback
+  review_areas:
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: openclaw-telegram-enhanced
+  path: docs/records/change-records/2026-04-19-idea-status-filtered-list-surface.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-idea-status-filtered-list-surface
+  review_areas:
+  - runtime
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: openclaw-telegram-enhanced
+  path: docs/records/change-records/2026-04-19-idea-triage-command-surface.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-idea-triage-command-surface
+  review_areas:
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
 - repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-18-broker-owned-workflow-catalog-and-read-projection.md
   date: '2026-04-18'
@@ -167,6 +231,82 @@ change_records:
   - identity
   - secrets
   - delivery
+  - runtime
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-19-accepted-idea-delivery-design-and-profile.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-accepted-idea-delivery-design-and-profile
+  review_areas:
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-19-bounded-idea-decision.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-bounded-idea-decision
+  review_areas:
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-19-idea-status-filtered-list-projection.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-idea-status-filtered-list-projection
+  review_areas:
+  - runtime
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-19-internal-idea-evaluation-metadata.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-internal-idea-evaluation-metadata
+  review_areas:
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-19-operator-authored-idea-triage.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-operator-authored-idea-triage
+  review_areas:
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-19-terminal-idea-archive-placeholder.md
+  date: '2026-04-19'
+  short_title: 2026-04-19-terminal-idea-archive-placeholder
+  review_areas:
   - runtime
   findings:
   - F-007
