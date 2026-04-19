@@ -17,6 +17,9 @@ and minimum review-lane coverage.
   - verifies that each review lane contains at least one dated review output
     beyond its directory `README.md`
   - verifies that the review inventory register exists
+  - verifies that architecture docs keep design intent separate from evidence
+    surfaces and that the platform component inventory covers admitted shared
+    security-relevant components such as `operator-orchestration-service`
 - `validate_security_evidence.py`
   - validates review-inventory change-review metadata, assessment freshness
     metadata, remediation linkage against real owner-repo artifacts, and that

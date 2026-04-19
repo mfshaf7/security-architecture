@@ -33,6 +33,7 @@ REQUIRED_PATHS = [
     "docs/architecture/components/platform-postgresql/README.md",
     "docs/architecture/components/host-control-plugin/README.md",
     "docs/architecture/components/openclaw-host-bridge/README.md",
+    "docs/architecture/components/operator-orchestration-service/README.md",
     "docs/architecture/products/README.md",
     "docs/architecture/products/openclaw/README.md",
     "docs/architecture/products/openclaw/security-overview.md",
@@ -79,6 +80,22 @@ REVIEW_OUTPUT_DIRECTORIES = [
 ]
 DATED_REVIEW_OUTPUT_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}-.+\.md$")
 
+REQUIRED_DOC_MARKERS = {
+    "docs/architecture/README.md": (
+        "design intent and control judgment",
+        "[`../reviews/`](../reviews)",
+        "[`../assessments/`](../assessments)",
+        "[`../../registers/`](../../registers)",
+    ),
+    "docs/architecture/platform/overview.md": (
+        "design-level security architecture view",
+        "`operator-orchestration-service`",
+    ),
+    "docs/architecture/platform/component-inventory.md": (
+        "../components/operator-orchestration-service/README.md",
+    ),
+}
+
 
 def validate(repo_root: Path) -> list[str]:
     errors: list[str] = []
@@ -105,6 +122,17 @@ def validate(repo_root: Path) -> list[str]:
         if not dated_outputs:
             errors.append(
                 f"review output lane must contain at least one dated review artifact: {rel}"
+            )
+
+    for rel, markers in REQUIRED_DOC_MARKERS.items():
+        path = repo_root / rel
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        missing = [marker for marker in markers if marker not in text]
+        if missing:
+            errors.append(
+                f"{rel}: missing required doctrine markers: {', '.join(missing)}"
             )
 
     return errors

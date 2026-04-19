@@ -117,6 +117,7 @@ Run the structure validator after significant documentation or taxonomy changes:
 
 ```bash
 python3 scripts/validate_repo_structure.py --repo-root .
+python3 scripts/validate_security_evidence.py --repo-root . --workspace-root /home/mfshaf7/projects
 ```
 
 ## Current Priorities

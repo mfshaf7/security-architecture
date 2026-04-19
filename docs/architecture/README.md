@@ -2,6 +2,15 @@
 
 Security architecture in this repo is organized by scope, not by delivery repo.
 
+These documents describe security design intent and control judgment, not
+point-in-time runtime evidence.
+
+Point-in-time evidence belongs in:
+
+- [`../reviews/`](../reviews)
+- [`../assessments/`](../assessments)
+- [`../../registers/`](../../registers)
+
 ## Scopes
 
 - [`platform/`](platform)
