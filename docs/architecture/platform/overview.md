@@ -8,6 +8,9 @@ platform.
 It explains how governance, shared control-plane components, product runtimes,
 and the host-control boundary fit together.
 
+This is a design-level security architecture view, not a live environment
+status page or point-in-time assessment record.
+
 ## Diagram
 
 ```mermaid
@@ -33,6 +36,7 @@ flowchart TB
     K8S["Kubernetes API"]
     OBS["Observability stack"]
     PPG["Platform PostgreSQL"]
+    OOS["operator-orchestration-service"]
   end
 
   subgraph Products["Product Runtime Plane"]
@@ -70,6 +74,7 @@ flowchart TB
   ARGO --> ESO
   ARGO --> OBS
   ARGO --> PPG
+  ARGO --> OOS
   K8S --> ARGO
   K8S --> ESO
   K8S --> VAULT
@@ -100,6 +105,9 @@ flowchart TB
 - Vault is the secret authority
 - External Secrets bridges Vault policy into runtime namespaces
 - Kubernetes underpins machine identity and controller trust
+- `operator-orchestration-service` is an admitted shared operator workflow
+  broker with its own trust boundary around caller authentication, backend
+  credentials, and workflow audit
 - observability and shared data services support platform operations and require
   their own security posture
 
