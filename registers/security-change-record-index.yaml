@@ -12,10 +12,35 @@ change_records:
   - R-006
   workstreams:
   - WS-006
+- repo: openclaw-host-bridge
+  path: docs/records/change-records/2026-04-19-stage-recovery-profile-hardening.md
+  date: '2026-04-19'
+  short_title: Separate legacy tmux launchers and fail closed on ambiguous recovery
+    profile selection
+  review_areas:
+  - runtime
+  - delivery
+  findings:
+  - F-019
+  risks:
+  - R-019
+  workstreams:
+  - WS-019
 - repo: openclaw-runtime-distribution
   path: docs/records/change-records/2026-04-17-governed-telegram-overlay-lane.md
   date: '2026-04-17'
   short_title: Telegram overlay artifact lane became a governed runtime delivery path
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-006
+- repo: openclaw-runtime-distribution
+  path: docs/records/change-records/2026-04-20-runtime-doc-boundary-hardening.md
+  date: '2026-04-20'
+  short_title: Harden runtime-distribution repo-boundary and build-lane doctrine checks
   review_areas:
   - delivery
   - runtime
@@ -98,6 +123,19 @@ change_records:
   - R-007
   workstreams:
   - WS-007
+- repo: openclaw-telegram-enhanced
+  path: docs/records/change-records/2026-04-19-host-control-recovery-target-selection.md
+  date: '2026-04-19'
+  short_title: Preserve explicit host-control recovery targeting in the Telegram layer
+  review_areas:
+  - delivery
+  - runtime
+  findings:
+  - F-019
+  risks:
+  - R-019
+  workstreams:
+  - WS-019
 - repo: openclaw-telegram-enhanced
   path: docs/records/change-records/2026-04-19-idea-command-keyword-guardrails.md
   date: '2026-04-19'
@@ -314,6 +352,17 @@ change_records:
   - R-007
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-20-doc-surface-and-link-hardening.md
+  date: '2026-04-20'
+  short_title: 2026-04-20-doc-surface-and-link-hardening
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
@@ -376,3 +425,17 @@ change_records:
   risks: []
   workstreams:
   - WS-003
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-19-stage-bridge-lifecycle-bootstrap-hardening.md
+  date: '2026-04-19'
+  short_title: Harden the stage bridge lifecycle path around the supported Windows-to-WSL
+    bootstrap model
+  review_areas:
+  - runtime
+  - delivery
+  findings:
+  - F-019
+  risks:
+  - R-019
+  workstreams:
+  - WS-019
