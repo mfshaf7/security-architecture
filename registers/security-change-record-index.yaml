@@ -353,6 +353,28 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-20-accepted-idea-delivery-consume-implementation.md
+  date: '2026-04-20'
+  short_title: 2026-04-20-accepted-idea-delivery-consume-implementation
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-20-accepted-idea-delivery-dev-integration-profile.md
+  date: '2026-04-20'
+  short_title: 2026-04-20-accepted-idea-delivery-dev-integration-profile
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-20-doc-surface-and-link-hardening.md
   date: '2026-04-20'
   short_title: 2026-04-20-doc-surface-and-link-hardening
