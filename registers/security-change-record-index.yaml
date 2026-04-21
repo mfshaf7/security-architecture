@@ -353,6 +353,17 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-20-accepted-idea-delivery-backlink-recovery.md
+  date: '2026-04-20'
+  short_title: 2026-04-20-accepted-idea-delivery-backlink-recovery
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-20-accepted-idea-delivery-consume-implementation.md
   date: '2026-04-20'
   short_title: 2026-04-20-accepted-idea-delivery-consume-implementation
@@ -375,9 +386,75 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-20-accepted-idea-delivery-lookup-retry.md
+  date: '2026-04-20'
+  short_title: 2026-04-20-accepted-idea-delivery-lookup-retry
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-20-accepted-idea-delivery-socket-reset-hardening.md
+  date: '2026-04-20'
+  short_title: 2026-04-20-accepted-idea-delivery-socket-reset-hardening
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-20-doc-surface-and-link-hardening.md
   date: '2026-04-20'
   short_title: 2026-04-20-doc-surface-and-link-hardening
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-20-openproject-safe-read-retry.md
+  date: '2026-04-20'
+  short_title: 2026-04-20-openproject-safe-read-retry
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-21-delivery-execution-summary-read-surface.md
+  date: '2026-04-21'
+  short_title: 2026-04-21-delivery-execution-summary-read-surface
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-21-delivery-work-item-create-surface.md
+  date: '2026-04-21'
+  short_title: 2026-04-21-delivery-work-item-create-surface
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-21-delivery-work-item-update-command-surface.md
+  date: '2026-04-21'
+  short_title: 2026-04-21-delivery-work-item-update-command-surface
   review_areas:
   - runtime
   - delivery
@@ -452,6 +529,32 @@ change_records:
   date: '2026-04-19'
   short_title: Harden the stage bridge lifecycle path around the supported Windows-to-WSL
     bootstrap model
+  review_areas:
+  - runtime
+  - delivery
+  findings:
+  - F-019
+  risks:
+  - R-019
+  workstreams:
+  - WS-019
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-21-delivery-art-fast-read-strategy.md
+  date: '- 2026-04-21'
+  short_title: '- Delivery ART fast read strategy'
+  review_areas:
+  - runtime
+  findings:
+  - F-000
+  risks:
+  - R-000
+  workstreams:
+  - WS-000
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-21-stage-bridge-persistence-and-status-truth.md
+  date: '2026-04-21'
+  short_title: Keep stage bridge persistent while stage is active and make stage status
+    bridge-aware
   review_areas:
   - runtime
   - delivery
