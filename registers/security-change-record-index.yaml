@@ -430,6 +430,19 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-21-broker-create-role-alignment-and-formattable-field-repair.md
+  date: '2026-04-21'
+  short_title: 2026-04-21-broker-create-role-alignment-and-formattable-field-repair
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-021
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-21-delivery-execution-summary-read-surface.md
   date: '2026-04-21'
   short_title: 2026-04-21-delivery-execution-summary-read-surface
@@ -550,6 +563,19 @@ change_records:
   - R-000
   workstreams:
   - WS-000
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-21-openproject-assignable-principal-contract-alignment.md
+  date: '2026-04-21'
+  short_title: OpenProject assignable-principal contract alignment
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-021
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-21-stage-bridge-persistence-and-status-truth.md
   date: '2026-04-21'
