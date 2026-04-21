@@ -24,8 +24,8 @@ RISKS_HEADER = (
 )
 REVIEWS_HEADER = (
     "| Entry Type | Entry | Owner Repo | Scope | Baseline Review | Baseline Due | "
-    "Latest Change Review | Latest Status | Review Areas |\n"
-    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n"
+    "Baseline Decision | Latest Change Review | Latest Status | Latest Decision | Review Areas | Review Trigger IDs |\n"
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n"
 )
 ASSESSMENTS_HEADER = (
     "| Assessment | Scope | Status | Reviewed On | Review Due | Reviewers | Path |\n"
@@ -187,10 +187,13 @@ def review_rows(review_inventory: dict) -> list[dict[str, str]]:
                     "baseline_reviewed_on": str(baseline.get("reviewed_on", "")),
                     "baseline_review_due_on": str(baseline.get("review_due_on", "")),
                     "baseline_status": str(baseline.get("status", "")),
+                    "baseline_decision": str(baseline.get("decision", "")),
                     "latest_path": latest.get("path", ""),
                     "latest_reviewed_on": str(latest.get("reviewed_on", "")),
                     "latest_status": str(latest.get("status", "")),
+                    "latest_decision": str(latest.get("decision", "")),
                     "review_areas": join_list(latest.get("review_areas") or []),
+                    "review_trigger_ids": join_list(latest.get("review_trigger_ids") or []),
                     "owner_artifacts": join_list(
                         [
                             f"{artifact.get('repo')}/{artifact.get('path')}"
@@ -210,7 +213,7 @@ def render_review_inventory_markdown(review_inventory: dict) -> str:
     ]
     for row in review_rows(review_inventory):
         lines.append(
-            "| {entry_type} | {entry_name} | {owner_repo} | {scope} | {baseline_path} | {baseline_review_due_on} | {latest_path} | {latest_status} | {review_areas} |\n".format(
+            "| {entry_type} | {entry_name} | {owner_repo} | {scope} | {baseline_path} | {baseline_review_due_on} | {baseline_decision} | {latest_path} | {latest_status} | {latest_decision} | {review_areas} | {review_trigger_ids} |\n".format(
                 **row
             )
         )
@@ -230,10 +233,13 @@ def render_review_inventory_csv(review_inventory: dict) -> str:
             "Baseline Reviewed On",
             "Baseline Review Due On",
             "Baseline Status",
+            "Baseline Decision",
             "Latest Change Review Path",
             "Latest Change Reviewed On",
             "Latest Change Status",
+            "Latest Change Decision",
             "Review Areas",
+            "Review Trigger IDs",
             "Owner Artifacts",
         ]
     )
@@ -248,10 +254,13 @@ def render_review_inventory_csv(review_inventory: dict) -> str:
                 row["baseline_reviewed_on"],
                 row["baseline_review_due_on"],
                 row["baseline_status"],
+                row["baseline_decision"],
                 row["latest_path"],
                 row["latest_reviewed_on"],
                 row["latest_status"],
+                row["latest_decision"],
                 row["review_areas"],
+                row["review_trigger_ids"],
                 row["owner_artifacts"],
             ]
         )

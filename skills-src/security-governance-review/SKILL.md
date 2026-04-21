@@ -38,11 +38,18 @@ change.
    reference.
 4. Decide whether the change needs:
    - an existing artifact reference only
-   - a new review output
+   - a fresh security delta review
    - a durable security decision or ADR
    - an explicit exception or waiver
 5. Push implementation changes back to the owner repo. Keep this repo focused
    on reviewable security artifacts, not delivery logic.
+6. When a fresh delta review is required, use
+   `docs/reviews/security-delta-review-process.md` and update
+   `registers/review-inventory.yaml` with:
+   - `latest_change_review.status`
+   - `latest_change_review.decision`
+   - `latest_change_review.review_areas`
+   - `latest_change_review.review_trigger_ids`
 
 ## Guardrails
 
@@ -52,3 +59,7 @@ change.
   governance story incomplete.
 - If a delivery repo changed a trust boundary without updating its security
   references, fix that gap in the same work or flag the exception explicitly.
+- If the change matches a repo-rule security delta trigger, do not treat the
+  baseline review as sufficient by itself.
+- Route findings back into active owner work, ART risks or blockers, or the
+  remediation inventory instead of leaving them as passive review prose.

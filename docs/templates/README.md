@@ -8,3 +8,4 @@ These templates provide starting structures for new security artifacts.
 - `architecture-domain-template.md`
 - `architecture-component-template.md`
 - `architecture-product-template.md`
+- [`security-delta-review-template.md`](security-delta-review-template.md)
