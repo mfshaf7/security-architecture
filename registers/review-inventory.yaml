@@ -11,10 +11,10 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-21-platform-engineering-openproject-and-stage-control-delta.md
+        path: docs/reviews/platform/2026-04-21-platform-engineering-openproject-assignable-principal-and-operator-contract.md
         reviewed_on: 2026-04-21
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
@@ -22,16 +22,16 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - openproject-runtime-and-automation-boundary
-          - openclaw-stage-and-runtime-governance
+          - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: platform-engineering
             path: products/openproject/delivery-art-contract.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/provision-operator-orchestration-identity.md
-          - repo: workspace-governance
-            path: contracts/repo-rules/platform-engineering.yaml
+            path: products/openproject/runbooks/create-delivery-work-item.md
           - repo: platform-engineering
-            path: products/openclaw/scripts/set_stage_environment_state.py
+            path: products/openproject/runbooks/update-delivery-work-item.md
+          - repo: platform-engineering
+            path: products/openproject/scripts/openproject_update_delivery_work_item.sh
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -104,10 +104,10 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-04-21-operator-orchestration-service-delivery-workflow-broker-expansion.md
+        path: docs/reviews/components/2026-04-21-operator-orchestration-service-broker-create-repair-and-role-alignment.md
         reviewed_on: 2026-04-21
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
@@ -117,6 +117,8 @@ review_inventory:
           - broker-runtime-and-caller-surface
           - openproject-delivery-adapter-and-api
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: dev-integration/profiles/accepted-idea-delivery/scripts/up.sh
           - repo: operator-orchestration-service
             path: src/delivery-service.js
           - repo: operator-orchestration-service
@@ -162,10 +164,10 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/products/2026-04-21-openproject-broker-delivery-and-automation-boundary.md
+        path: docs/reviews/products/2026-04-21-openproject-broker-create-role-and-assignable-principal.md
         reviewed_on: 2026-04-21
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
@@ -178,7 +180,9 @@ review_inventory:
           - repo: platform-engineering
             path: products/openproject/delivery-art-contract.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/provision-operator-orchestration-identity.md
+            path: products/openproject/runbooks/create-delivery-work-item.md
+          - repo: platform-engineering
+            path: products/openproject/runbooks/update-delivery-work-item.md
           - repo: operator-orchestration-service
             path: docs/contracts/delivery-workflow-api-v1.md
   components:
