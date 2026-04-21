@@ -30,6 +30,8 @@ It does not own delivery implementation.
 - Return security judgment first and implementation advice second.
 - Distinguish between design intent, implemented control, and operating
   evidence.
+- Treat security-significant delivery or platform changes as requiring a fresh
+  delta review with an explicit decision, not just a baseline reference.
 - If a control exists only in code and not in reviewable governance artifacts,
   the control story is incomplete.
 - Push requirements back to the owner delivery repo instead of absorbing
@@ -43,9 +45,12 @@ It does not own delivery implementation.
   - `docs/adr/` for durable security decisions
   - `docs/architecture/platform|domains|components|products/` for scoped
     security design
-  - `docs/reviews/` for review method or review outputs
+- `docs/reviews/` for review method or review outputs
   - `docs/assessments/` for periodic or event-driven assessment evidence
   - `registers/` for live findings, risks, and inventories
+- Use `docs/reviews/security-delta-review-process.md` as the primary review
+  workflow when a change affects trust boundaries, identity, secrets, delivery,
+  privileged runtime, host control, or AI-shaped action paths.
 - Keep product ops, rollout steps, and delivery implementation in owner repos.
 - After structural changes, run:
   - `python3 scripts/validate_repo_structure.py --repo-root .`

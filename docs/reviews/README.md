@@ -6,6 +6,7 @@ design, incident, or focused investigation.
 ## Contents
 
 - [`security-review-checklist.md`](security-review-checklist.md)
+- [`security-delta-review-process.md`](security-delta-review-process.md)
 - [`platform/`](platform)
 - [`components/`](components)
 - [`products/`](products)

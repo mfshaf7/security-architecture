@@ -5,6 +5,11 @@ This repository is the security governance backbone for the platform.
 It separates security standards, architecture judgment, assessment evidence, and
 durable decisions from day-to-day delivery repos.
 
+It is also the active security decision authority for security-significant
+workspace changes. Owner repos should not treat this repository as a passive
+reference library when trust boundaries, privileged execution, identity,
+secrets, GitOps delivery, or AI-shaped action paths change.
+
 ## What This Repository Owns
 
 This repository owns:
@@ -73,11 +78,13 @@ That structure is deliberate:
    - machine-trust and GitOps impact
    - privileged runtime and host-control implications
    - AI and agentic risk
-3. Requirements or findings flow back to the owner repo.
-4. Owner repos should link concrete security artifacts from this repository,
+3. Security-significant owner-repo changes require a fresh delta review with an
+   explicit decision, not just a stale baseline reference.
+4. Requirements or findings flow back to the owner repo.
+5. Owner repos should link concrete security artifacts from this repository,
    not only the repo name.
-5. Delivery repos implement the control.
-6. This repository is updated only when the security posture, control model, or
+6. Delivery repos implement the control.
+7. This repository is updated only when the security posture, control model, or
    evidence base materially changes.
 
 ## Audit And Visibility
@@ -91,6 +98,8 @@ This repo is the main evidence surface for security governance:
 - review method and review outputs:
   - [`docs/reviews/`](docs/reviews)
   - [`docs/methodology/assessment-method.md`](docs/methodology/assessment-method.md)
+- active delta-review operating model:
+  - [`docs/reviews/security-delta-review-process.md`](docs/reviews/security-delta-review-process.md)
 - durable decisions:
   - [`docs/adr/`](docs/adr)
 - point-in-time assessment evidence:
@@ -109,6 +118,7 @@ security governance story is incomplete.
 - [`docs/architecture/platform/trust-boundaries.md`](docs/architecture/platform/trust-boundaries.md)
 - [`docs/strategy/target-state.md`](docs/strategy/target-state.md)
 - [`docs/reviews/security-review-checklist.md`](docs/reviews/security-review-checklist.md)
+- [`docs/reviews/security-delta-review-process.md`](docs/reviews/security-delta-review-process.md)
 - [`skills-src/README.md`](skills-src/README.md)
 
 ## Validation

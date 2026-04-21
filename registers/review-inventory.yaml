@@ -9,24 +9,29 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-18-dev-integration-local-k3s-lane.md
-        reviewed_on: 2026-04-18
+        path: docs/reviews/platform/2026-04-21-platform-engineering-openproject-and-stage-control-delta.md
+        reviewed_on: 2026-04-21
         status: current
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
+        review_trigger_ids:
+          - openproject-runtime-and-automation-boundary
+          - openclaw-stage-and-runtime-governance
         owner_artifacts:
           - repo: platform-engineering
-            path: docs/standards/dev-integration-lane.md
+            path: products/openproject/delivery-art-contract.md
           - repo: platform-engineering
-            path: scripts/dev_integration.py
+            path: products/openproject/runbooks/provision-operator-orchestration-identity.md
           - repo: workspace-governance
-            path: contracts/developer-integration-policy.yaml
-          - repo: workspace-governance
-            path: contracts/developer-integration-profiles.yaml
+            path: contracts/repo-rules/platform-engineering.yaml
+          - repo: platform-engineering
+            path: products/openclaw/scripts/set_stage_environment_state.py
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -35,13 +40,17 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md
         reviewed_on: 2026-04-17
         status: current
+        decision: approved-with-findings
         review_areas:
           - delivery
           - runtime
+        review_trigger_ids:
+          - runtime-packaging-and-plugin-composition
         owner_artifacts:
           - repo: openclaw-runtime-distribution
             path: deployment/telegram-runtime-migration.md
@@ -55,10 +64,12 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md
         reviewed_on: 2026-04-18
         status: baseline-current
+        decision: approved
     openclaw-telegram-enhanced:
       owner_repo: openclaw-telegram-enhanced
       scope: component
@@ -67,13 +78,17 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md
         reviewed_on: 2026-04-18
         status: current
+        decision: approved-with-findings
         review_areas:
           - runtime
           - delivery
+        review_trigger_ids:
+          - telegram-command-routing-and-approval-surface
         owner_artifacts:
           - repo: openclaw-telegram-enhanced
             path: src/idea-capture-command.ts
@@ -87,22 +102,29 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-04-18-operator-orchestration-service-dev-integration-idea-workflow.md
-        reviewed_on: 2026-04-18
+        path: docs/reviews/components/2026-04-21-operator-orchestration-service-delivery-workflow-broker-expansion.md
+        reviewed_on: 2026-04-21
         status: current
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
+        review_trigger_ids:
+          - broker-runtime-and-caller-surface
+          - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: dev-integration/profiles/idea-workflow/profile.yaml
+            path: src/delivery-service.js
           - repo: operator-orchestration-service
-            path: dev-integration/profiles/idea-workflow/scripts/up.sh
+            path: src/openproject-client.js
           - repo: operator-orchestration-service
-            path: dev-integration/profiles/idea-workflow/scripts/telegram_simulator.mjs
+            path: src/app.js
+          - repo: operator-orchestration-service
+            path: docs/contracts/delivery-workflow-api-v1.md
   products:
     openclaw:
       owner_repo: platform-engineering
@@ -112,18 +134,24 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
-        path: docs/reviews/products/2026-04-17-openclaw-governed-runtime-lifecycle-standard.md
-        reviewed_on: 2026-04-17
+        path: docs/reviews/products/2026-04-21-openclaw-stage-bridge-persistence-and-status-truth.md
+        reviewed_on: 2026-04-21
         status: current
+        decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
+        review_trigger_ids:
+          - openclaw-stage-and-runtime-governance
         owner_artifacts:
           - repo: platform-engineering
-            path: docs/standards/governed-runtime-lifecycle-model.md
+            path: products/openclaw/scripts/set_stage_environment_state.py
           - repo: platform-engineering
-            path: products/openclaw/runbooks/manage-prod-lifecycle.md
+            path: products/openclaw/runtime-contract.md
     openproject:
       owner_repo: platform-engineering
       scope: product
@@ -132,21 +160,27 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/products/2026-04-18-openproject-operator-orchestration-automation-identity-provisioning.md
-        reviewed_on: 2026-04-18
+        path: docs/reviews/products/2026-04-21-openproject-broker-delivery-and-automation-boundary.md
+        reviewed_on: 2026-04-21
         status: current
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
+          - delivery
           - runtime
+        review_trigger_ids:
+          - openproject-runtime-and-automation-boundary
+          - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: platform-engineering
-            path: products/openproject/idea-backlog-contract.md
+            path: products/openproject/delivery-art-contract.md
           - repo: platform-engineering
             path: products/openproject/runbooks/provision-operator-orchestration-identity.md
           - repo: operator-orchestration-service
-            path: docs/contracts/openproject-adapter-v1.md
+            path: docs/contracts/delivery-workflow-api-v1.md
   components:
     argo-cd:
       owner_repo: platform-engineering
@@ -156,10 +190,12 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-04-18-argo-cd-security-baseline.md
         reviewed_on: 2026-04-18
         status: baseline-current
+        decision: approved
     vault:
       owner_repo: platform-engineering
       scope: component
@@ -168,10 +204,12 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-04-18-vault-security-baseline.md
         reviewed_on: 2026-04-18
         status: baseline-current
+        decision: approved
     external-secrets:
       owner_repo: platform-engineering
       scope: component
@@ -180,10 +218,12 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-04-18-external-secrets-security-baseline.md
         reviewed_on: 2026-04-18
         status: baseline-current
+        decision: approved
     observability:
       owner_repo: platform-engineering
       scope: component
@@ -192,10 +232,12 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-04-18-observability-security-baseline.md
         reviewed_on: 2026-04-18
         status: baseline-current
+        decision: approved
     platform-postgresql:
       owner_repo: platform-engineering
       scope: component
@@ -204,10 +246,12 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-04-18-platform-postgresql-security-baseline.md
         reviewed_on: 2026-04-18
         status: baseline-current
+        decision: approved
     openclaw-host-bridge:
       owner_repo: openclaw-host-bridge
       scope: component
@@ -216,10 +260,12 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md
         reviewed_on: 2026-04-18
         status: baseline-current
+        decision: approved
     openclaw-telegram-channel:
       owner_repo: openclaw-telegram-enhanced
       scope: component
@@ -228,13 +274,17 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md
         reviewed_on: 2026-04-17
         status: current
+        decision: approved-with-findings
         review_areas:
           - delivery
           - runtime
+        review_trigger_ids:
+          - telegram-command-routing-and-approval-surface
         owner_artifacts:
           - repo: openclaw-telegram-enhanced
             path: docs/architecture.md
@@ -248,13 +298,17 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/products/2026-04-17-openclaw-telegram-overlay-governed-prod-lane.md
         reviewed_on: 2026-04-17
         status: current
+        decision: approved-with-findings
         review_areas:
           - delivery
           - runtime
+        review_trigger_ids:
+          - runtime-packaging-and-plugin-composition
         owner_artifacts:
           - repo: openclaw-runtime-distribution
             path: deployment/telegram-runtime-migration.md
@@ -268,10 +322,12 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-04-18-host-control-plugin-security-baseline.md
         reviewed_on: 2026-04-18
         status: baseline-current
+        decision: approved
     operator-orchestration-service:
       owner_repo: operator-orchestration-service
       scope: component
@@ -280,14 +336,22 @@ review_inventory:
         reviewed_on: 2026-04-18
         review_due_on: 2026-10-18
         status: active
+        decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-04-18-operator-orchestration-service-workflow-catalog-and-read-projection.md
-        reviewed_on: 2026-04-18
+        path: docs/reviews/components/2026-04-21-operator-orchestration-service-delivery-workflow-broker-expansion.md
+        reviewed_on: 2026-04-21
         status: current
+        decision: approved-with-findings
         review_areas:
+          - identity
+          - secrets
+          - delivery
           - runtime
+        review_trigger_ids:
+          - broker-runtime-and-caller-surface
+          - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/contracts/intake-api-v1.md
-          - repo: openclaw-telegram-enhanced
-            path: src/idea-capture-command.ts
+            path: src/delivery-service.js
+          - repo: operator-orchestration-service
+            path: src/openproject-client.js

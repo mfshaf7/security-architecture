@@ -17,6 +17,7 @@ from render_security_change_record_index import rendered_text as rendered_change
 
 REVIEW_AREAS = {"identity", "secrets", "delivery", "runtime", "ai"}
 CHANGE_REVIEW_STATUSES = {"baseline-current", "current"}
+REVIEW_DECISIONS = {"approved", "approved-with-findings", "blocked", "accepted-risk"}
 ASSESSMENT_STATUSES = {"published", "superseded"}
 WORKSTREAM_STATUSES = {"active", "complete"}
 FINDING_RISK_STATUSES = {"open", "mitigated", "accepted"}
@@ -161,12 +162,23 @@ def validate(repo_root: Path, workspace_root: Path) -> list[str]:
     for inventory_name in ("repos", "products", "components"):
         for entry_name, entry in (review_entries.get(inventory_name) or {}).items():
             latest = (entry or {}).get("latest_change_review") or {}
+            baseline = (entry or {}).get("baseline_review") or {}
             status = latest.get("status")
             if status not in CHANGE_REVIEW_STATUSES:
                 errors.append(
                     f"review-inventory {inventory_name}.{entry_name}: latest_change_review.status must be one of {sorted(CHANGE_REVIEW_STATUSES)}"
                 )
                 continue
+            baseline_decision = baseline.get("decision")
+            if baseline_decision not in REVIEW_DECISIONS:
+                errors.append(
+                    f"review-inventory {inventory_name}.{entry_name}: baseline_review.decision must be one of {sorted(REVIEW_DECISIONS)}"
+                )
+            latest_decision = latest.get("decision")
+            if latest_decision not in REVIEW_DECISIONS:
+                errors.append(
+                    f"review-inventory {inventory_name}.{entry_name}: latest_change_review.decision must be one of {sorted(REVIEW_DECISIONS)}"
+                )
             if status == "current":
                 review_areas = latest.get("review_areas") or []
                 if not isinstance(review_areas, list) or not review_areas:
@@ -182,6 +194,19 @@ def validate(repo_root: Path, workspace_root: Path) -> list[str]:
                     label=f"review-inventory {inventory_name}.{entry_name}",
                     workspace_root=workspace_root,
                     errors=errors,
+                )
+                review_trigger_ids = latest.get("review_trigger_ids")
+                if (
+                    not isinstance(review_trigger_ids, list)
+                    or not review_trigger_ids
+                    or any(not isinstance(entry, str) or not entry for entry in review_trigger_ids)
+                ):
+                    errors.append(
+                        f"review-inventory {inventory_name}.{entry_name}: current latest_change_review must declare non-empty review_trigger_ids"
+                    )
+            elif latest_decision != baseline_decision:
+                errors.append(
+                    f"review-inventory {inventory_name}.{entry_name}: baseline-current latest_change_review must mirror baseline_review.decision"
                 )
 
     assessments = assessment_inventory.get("assessment_inventory") or {}
