@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-22-delivery-initiative-governance-and-plan-apply-broker-expansion.md
-        reviewed_on: 2026-04-22
+        path: docs/reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md
+        reviewed_on: 2026-04-23
         status: current
         decision: approved
         review_areas:
@@ -25,15 +25,13 @@ review_inventory:
           - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: platform-engineering
-            path: products/openproject/delivery-art-contract.md
+            path: products/openproject/README.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/update-delivery-initiative.md
+            path: products/openproject/runbooks/README.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/start-delivery-execution.md
+            path: products/openproject/scripts/README.md
           - repo: platform-engineering
-            path: products/openproject/scripts/openproject_update_delivery_initiative.sh
-          - repo: platform-engineering
-            path: products/openproject/scripts/openproject_apply_delivery_plan.sh
+            path: products/openproject/scripts/openproject_check_delivery_art_quality.py
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -140,8 +138,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-04-22-delivery-initiative-governance-and-plan-apply-broker-expansion.md
-        reviewed_on: 2026-04-22
+        path: docs/reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md
+        reviewed_on: 2026-04-23
         status: current
         decision: approved
         review_areas:
@@ -162,7 +160,9 @@ review_inventory:
           - repo: operator-orchestration-service
             path: docs/contracts/delivery-workflow-api-v1.md
           - repo: operator-orchestration-service
-            path: docs/architecture/runtime-shape.md
+            path: docs/architecture/delivery-workflow-api-boundary.md
+          - repo: operator-orchestration-service
+            path: docs/operations/delivery-workflow-operator-surface.md
   products:
     openclaw:
       owner_repo: platform-engineering
@@ -200,8 +200,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-22-delivery-initiative-governance-and-plan-apply-broker-expansion.md
-        reviewed_on: 2026-04-22
+        path: docs/reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md
+        reviewed_on: 2026-04-23
         status: current
         decision: approved
         review_areas:
@@ -214,11 +214,13 @@ review_inventory:
           - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: platform-engineering
-            path: products/openproject/delivery-art-contract.md
+            path: products/openproject/README.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/update-delivery-initiative.md
+            path: products/openproject/AGENTS.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/start-delivery-execution.md
+            path: products/openproject/scripts/README.md
+          - repo: platform-engineering
+            path: products/openproject/runbooks/README.md
           - repo: operator-orchestration-service
             path: docs/contracts/delivery-workflow-api-v1.md
   components:
