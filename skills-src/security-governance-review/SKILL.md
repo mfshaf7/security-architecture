@@ -41,9 +41,15 @@ change.
    - a fresh security delta review
    - a durable security decision or ADR
    - an explicit exception or waiver
-5. Push implementation changes back to the owner repo. Keep this repo focused
+5. If delegated execution is in use, keep the security authority explicit:
+   - sub-agents may implement bounded repo-local slices
+   - the main agent retains security decision closure
+   - the main agent retains final landing judgment for security-significant work
+   - delegated workers must not close reviews, accept risk, or treat themselves
+     as independent security authorities
+6. Push implementation changes back to the owner repo. Keep this repo focused
    on reviewable security artifacts, not delivery logic.
-6. When a fresh delta review is required, use
+7. When a fresh delta review is required, use
    `docs/reviews/security-delta-review-process.md` and update
    `registers/review-inventory.yaml` with:
    - `latest_change_review.status`
@@ -61,5 +67,11 @@ change.
   references, fix that gap in the same work or flag the exception explicitly.
 - If the change matches a repo-rule security delta trigger, do not treat the
   baseline review as sufficient by itself.
+- If delegated workers are involved, require the review artifact to say who
+  retains security closure and final landing judgment.
+- Do not let delegated execution widen trust by convenience. If the delegated
+  packet or workflow would allow live mutation, secret handling, security
+  closure, or final approval without the main agent, treat that as a control
+  failure rather than an acceptable shortcut.
 - Route findings back into active owner work, ART risks or blockers, or the
   remediation inventory instead of leaving them as passive review prose.

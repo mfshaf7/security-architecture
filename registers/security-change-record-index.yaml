@@ -454,6 +454,17 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-21-delivery-work-item-blocker-surface.md
+  date: '2026-04-21'
+  short_title: 2026-04-21-delivery-work-item-blocker-surface
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-21-delivery-work-item-create-surface.md
   date: '2026-04-21'
   short_title: 2026-04-21-delivery-work-item-create-surface
@@ -465,9 +476,53 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-21-delivery-work-item-dependency-surface.md
+  date: '2026-04-21'
+  short_title: 2026-04-21-delivery-work-item-dependency-surface
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-21-delivery-work-item-move-surface.md
+  date: '2026-04-21'
+  short_title: 2026-04-21-delivery-work-item-move-surface
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-21-delivery-work-item-parking-surface.md
+  date: '2026-04-21'
+  short_title: 2026-04-21-delivery-work-item-parking-surface
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-21-delivery-work-item-update-command-surface.md
   date: '2026-04-21'
   short_title: 2026-04-21-delivery-work-item-update-command-surface
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-22-delivery-initiative-governance-and-plan-apply-brokerization.md
+  date: '2026-04-22'
+  short_title: 2026-04-22-delivery-initiative-governance-and-plan-apply-brokerization
   review_areas:
   - runtime
   - delivery

@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-21-platform-engineering-openproject-assignable-principal-and-operator-contract.md
-        reviewed_on: 2026-04-21
+        path: docs/reviews/components/2026-04-22-delivery-initiative-governance-and-plan-apply-broker-expansion.md
+        reviewed_on: 2026-04-22
         status: current
         decision: approved
         review_areas:
@@ -27,11 +27,47 @@ review_inventory:
           - repo: platform-engineering
             path: products/openproject/delivery-art-contract.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/create-delivery-work-item.md
+            path: products/openproject/runbooks/update-delivery-initiative.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/update-delivery-work-item.md
+            path: products/openproject/runbooks/start-delivery-execution.md
           - repo: platform-engineering
-            path: products/openproject/scripts/openproject_update_delivery_work_item.sh
+            path: products/openproject/scripts/openproject_update_delivery_initiative.sh
+          - repo: platform-engineering
+            path: products/openproject/scripts/openproject_apply_delivery_plan.sh
+    workspace-governance:
+      owner_repo: workspace-governance
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-04-22-workspace-governance-delegated-execution-governance.md
+        reviewed_on: 2026-04-22
+        review_due_on: 2026-10-22
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-04-22-workspace-governance-delegated-execution-governance.md
+        reviewed_on: 2026-04-22
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - delegated-execution-policy-and-audit-control
+          - workspace-control-plane-and-skill-governance
+        owner_artifacts:
+          - repo: workspace-governance
+            path: docs/delegated-execution.md
+          - repo: workspace-governance
+            path: contracts/delegation-policy.yaml
+          - repo: workspace-governance
+            path: contracts/repo-rules/workspace-governance.yaml
+          - repo: workspace-governance
+            path: skills-src/project-delivery-operator/SKILL.md
+          - repo: workspace-governance
+            path: skills-src/self-improvement-review/SKILL.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -104,8 +140,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-04-21-operator-orchestration-service-broker-create-repair-and-role-alignment.md
-        reviewed_on: 2026-04-21
+        path: docs/reviews/components/2026-04-22-delivery-initiative-governance-and-plan-apply-broker-expansion.md
+        reviewed_on: 2026-04-22
         status: current
         decision: approved
         review_areas:
@@ -118,8 +154,6 @@ review_inventory:
           - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: dev-integration/profiles/accepted-idea-delivery/scripts/up.sh
-          - repo: operator-orchestration-service
             path: src/delivery-service.js
           - repo: operator-orchestration-service
             path: src/openproject-client.js
@@ -127,6 +161,8 @@ review_inventory:
             path: src/app.js
           - repo: operator-orchestration-service
             path: docs/contracts/delivery-workflow-api-v1.md
+          - repo: operator-orchestration-service
+            path: docs/architecture/runtime-shape.md
   products:
     openclaw:
       owner_repo: platform-engineering
@@ -164,8 +200,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/products/2026-04-21-openproject-broker-create-role-and-assignable-principal.md
-        reviewed_on: 2026-04-21
+        path: docs/reviews/components/2026-04-22-delivery-initiative-governance-and-plan-apply-broker-expansion.md
+        reviewed_on: 2026-04-22
         status: current
         decision: approved
         review_areas:
@@ -180,9 +216,9 @@ review_inventory:
           - repo: platform-engineering
             path: products/openproject/delivery-art-contract.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/create-delivery-work-item.md
+            path: products/openproject/runbooks/update-delivery-initiative.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/update-delivery-work-item.md
+            path: products/openproject/runbooks/start-delivery-execution.md
           - repo: operator-orchestration-service
             path: docs/contracts/delivery-workflow-api-v1.md
   components:
