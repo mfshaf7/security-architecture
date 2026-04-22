@@ -541,6 +541,16 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-23-accepted-idea-delivery-runtime-sizing.md
+  date: '2026-04-23'
+  short_title: 2026-04-23-accepted-idea-delivery-runtime-sizing
+  review_areas:
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
@@ -656,3 +666,14 @@ change_records:
   - R-019
   workstreams:
   - WS-019
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-23-openproject-runtime-sizing-and-vault-single-node.md
+  date: '2026-04-23'
+  short_title: 2026-04-23-openproject-runtime-sizing-and-vault-single-node
+  review_areas:
+  - runtime
+  - secrets
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
