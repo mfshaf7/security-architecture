@@ -10,6 +10,29 @@ workspace changes. Owner repos should not treat this repository as a passive
 reference library when trust boundaries, privileged execution, identity,
 secrets, GitOps delivery, or AI-shaped action paths change.
 
+## Architecture At A Glance
+
+```mermaid
+flowchart LR
+    Changes[Security-significant changes]
+    Standards[Standards, trust boundaries, ADRs]
+    Reviews[Delta reviews and assessments]
+    Findings[Findings, risks, accepted risk]
+    Owners[Owner repos]
+    Evidence[Evidence and inventories]
+
+    Standards --> Reviews
+    Changes --> Reviews
+    Reviews --> Findings
+    Reviews --> Owners
+    Owners --> Evidence
+    Evidence --> Reviews
+```
+
+This repo is the security judgment loop for the workspace. It defines the lens,
+reviews the change, routes requirements back to the owner repo, and keeps the
+evidence trail reviewable afterward.
+
 ## What This Repository Owns
 
 This repository owns:
