@@ -11,27 +11,25 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md
+        path: docs/reviews/components/2026-04-23-openproject-runtime-sizing-and-vault-single-node.md
         reviewed_on: 2026-04-23
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
-          - identity
-          - secrets
-          - delivery
           - runtime
+          - secrets
         review_trigger_ids:
           - openproject-runtime-and-automation-boundary
-          - openproject-delivery-adapter-and-api
+          - shared-platform-control-plane-and-secrets
         owner_artifacts:
           - repo: platform-engineering
-            path: products/openproject/README.md
+            path: products/openproject/runtime-contract.md
           - repo: platform-engineering
-            path: products/openproject/runbooks/README.md
+            path: environments/shared/argocd/vault-app.yaml
           - repo: platform-engineering
-            path: products/openproject/scripts/README.md
+            path: ansible/group_vars/all/main.yml
           - repo: platform-engineering
-            path: products/openproject/scripts/openproject_check_delivery_art_quality.py
+            path: docs/runbooks/vault-recovery.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -200,29 +198,25 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md
+        path: docs/reviews/components/2026-04-23-openproject-runtime-sizing-and-vault-single-node.md
         reviewed_on: 2026-04-23
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
-          - identity
-          - secrets
-          - delivery
           - runtime
+          - secrets
         review_trigger_ids:
           - openproject-runtime-and-automation-boundary
-          - openproject-delivery-adapter-and-api
+          - shared-platform-control-plane-and-secrets
         owner_artifacts:
           - repo: platform-engineering
-            path: products/openproject/README.md
+            path: products/openproject/runtime-contract.md
           - repo: platform-engineering
-            path: products/openproject/AGENTS.md
+            path: environments/prod/argocd/openproject-app.yaml
           - repo: platform-engineering
-            path: products/openproject/scripts/README.md
-          - repo: platform-engineering
-            path: products/openproject/runbooks/README.md
+            path: environments/shared/argocd/vault-app.yaml
           - repo: operator-orchestration-service
-            path: docs/contracts/delivery-workflow-api-v1.md
+            path: dev-integration/profiles/accepted-idea-delivery/scripts/up.sh
   components:
     argo-cd:
       owner_repo: platform-engineering
@@ -248,10 +242,22 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-04-18-vault-security-baseline.md
-        reviewed_on: 2026-04-18
-        status: baseline-current
-        decision: approved
+        path: docs/reviews/components/2026-04-23-openproject-runtime-sizing-and-vault-single-node.md
+        reviewed_on: 2026-04-23
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - runtime
+          - secrets
+        review_trigger_ids:
+          - shared-platform-control-plane-and-secrets
+        owner_artifacts:
+          - repo: platform-engineering
+            path: environments/shared/argocd/vault-app.yaml
+          - repo: platform-engineering
+            path: ansible/group_vars/all/main.yml
+          - repo: platform-engineering
+            path: docs/runbooks/vault-recovery.md
     external-secrets:
       owner_repo: platform-engineering
       scope: component
