@@ -1,4 +1,4 @@
-# Governed Full-Platform Runtime Drill And Restore Review
+# Governed Active-Stack Runtime Drill And Restore Review
 
 ## Summary
 
@@ -16,7 +16,7 @@
   - `components.openclaw-host-bridge`
 - decision: `approved-with-findings`
 
-This delta review covers the new shared governed full-platform runtime drill
+This delta review covers the new shared governed active-stack runtime drill
 workflow that now gives the platform one explicit operator surface for:
 
 - baseline capture before activation
@@ -30,9 +30,10 @@ workflow that now gives the platform one explicit operator surface for:
 
 - temporary runtime exercise should be governed as a distinct workflow class,
   not blurred into normal stage or prod promotion
-- the full-platform drill should have one explicit machine-readable scope that
-  includes OpenProject, the broker, OpenClaw, shared secrets delivery, shared
-  supporting components, and required host-bridge surfaces
+- the active-stack drill should have one explicit machine-readable scope that
+  includes the operator-critical stack across OpenProject, the broker,
+  OpenClaw, shared secrets delivery, shared supporting components, and
+  required host-bridge surfaces
 - restore should return the exact captured pre-drill posture rather than
   whatever GitHub `main` currently declares
 
@@ -40,11 +41,11 @@ workflow that now gives the platform one explicit operator surface for:
 
 - `platform-engineering` now carries:
   - `docs/standards/governed-runtime-drill-model.md`
-  - `docs/decisions/adr/ADR-014-governed-full-platform-runtime-drill-and-restore.md`
-  - `environments/shared/runtime-drills/full-platform-runtime-drill.yaml`
-  - `environments/shared/runtime-drills/full-platform-runtime-drill-evidence-template.yaml`
+  - `docs/decisions/adr/ADR-014-governed-active-stack-runtime-drill-and-restore.md`
+  - `environments/shared/runtime-drills/active-stack-runtime-drill.yaml`
+  - `environments/shared/runtime-drills/active-stack-runtime-drill-evidence-template.yaml`
   - `scripts/platform_drill.py`
-  - `docs/runbooks/full-platform-runtime-drill.md`
+  - `docs/runbooks/active-stack-runtime-drill.md`
 - the shared contract and script now:
   - require baseline capture before activation
   - keep explicit verification and restore ledgers
@@ -120,7 +121,7 @@ workflow that now gives the platform one explicit operator surface for:
 
 - the new workflow materially improves runtime control because the operator now
   has one explicit baseline, verification, restore, and exception model for
-  full-platform drills instead of reconstructing the exercise from scattered
+  active-stack drills instead of reconstructing the exercise from scattered
   product procedures
 - exact-baseline restore is the correct default because it prevents temporary
   drills from being mislabeled as completed while the environment stays changed
@@ -175,11 +176,11 @@ Findings and residual risk:
 ## Related Artifacts
 
 - `platform-engineering/docs/standards/governed-runtime-drill-model.md`
-- `platform-engineering/docs/decisions/adr/ADR-014-governed-full-platform-runtime-drill-and-restore.md`
-- `platform-engineering/environments/shared/runtime-drills/full-platform-runtime-drill.yaml`
-- `platform-engineering/environments/shared/runtime-drills/full-platform-runtime-drill-evidence-template.yaml`
+- `platform-engineering/docs/decisions/adr/ADR-014-governed-active-stack-runtime-drill-and-restore.md`
+- `platform-engineering/environments/shared/runtime-drills/active-stack-runtime-drill.yaml`
+- `platform-engineering/environments/shared/runtime-drills/active-stack-runtime-drill-evidence-template.yaml`
 - `platform-engineering/scripts/platform_drill.py`
-- `platform-engineering/docs/runbooks/full-platform-runtime-drill.md`
+- `platform-engineering/docs/runbooks/active-stack-runtime-drill.md`
 - [`../../architecture/platform/trust-boundaries.md`](../../architecture/platform/trust-boundaries.md)
 - [`../../architecture/domains/identity-and-access.md`](../../architecture/domains/identity-and-access.md)
 - [`../../architecture/domains/secrets-and-recovery.md`](../../architecture/domains/secrets-and-recovery.md)

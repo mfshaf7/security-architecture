@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-24-governed-full-platform-runtime-drill-and-restore.md
+        path: docs/reviews/platform/2026-04-24-governed-active-stack-runtime-drill-and-restore.md
         reviewed_on: 2026-04-24
         status: current
         decision: approved-with-findings
@@ -26,15 +26,15 @@ review_inventory:
           - repo: platform-engineering
             path: docs/standards/governed-runtime-drill-model.md
           - repo: platform-engineering
-            path: docs/decisions/adr/ADR-014-governed-full-platform-runtime-drill-and-restore.md
+            path: docs/decisions/adr/ADR-014-governed-active-stack-runtime-drill-and-restore.md
           - repo: platform-engineering
-            path: environments/shared/runtime-drills/full-platform-runtime-drill.yaml
+            path: environments/shared/runtime-drills/active-stack-runtime-drill.yaml
           - repo: platform-engineering
-            path: environments/shared/runtime-drills/full-platform-runtime-drill-evidence-template.yaml
+            path: environments/shared/runtime-drills/active-stack-runtime-drill-evidence-template.yaml
           - repo: platform-engineering
             path: scripts/platform_drill.py
           - repo: platform-engineering
-            path: docs/runbooks/full-platform-runtime-drill.md
+            path: docs/runbooks/active-stack-runtime-drill.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -322,7 +322,7 @@ review_inventory:
           - repo: platform-engineering
             path: docs/runbooks/access-platform-uis.md
           - repo: platform-engineering
-            path: environments/shared/runtime-drills/full-platform-runtime-drill.yaml
+            path: environments/shared/runtime-drills/active-stack-runtime-drill.yaml
           - repo: platform-engineering
             path: products/openclaw/platform-operator-catalog.yaml
     platform-postgresql:
