@@ -11,30 +11,26 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/products/2026-04-23-openproject-governed-release-control-state.md
+        path: docs/reviews/platform/2026-04-23-platform-environment-readiness-aggregate-gate.md
         reviewed_on: 2026-04-23
         status: current
         decision: approved-with-findings
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
+          - secrets
+          - identity
         review_trigger_ids:
-          - openproject-runtime-and-automation-boundary
+          - shared-platform-control-plane-and-secrets
         owner_artifacts:
           - repo: platform-engineering
-            path: products/openproject/runtime-contract.md
+            path: environments/stage/environment-readiness.yaml
           - repo: platform-engineering
-            path: products/openproject/runbooks/release-governance.md
+            path: environments/prod/environment-readiness.yaml
           - repo: platform-engineering
-            path: products/openproject/verification-catalog.yaml
+            path: scripts/validate_environment_readiness.py
           - repo: platform-engineering
-            path: products/openproject/prod-verification-catalog.yaml
-          - repo: platform-engineering
-            path: environments/prod/openproject-release/stage-candidate.yaml
-          - repo: platform-engineering
-            path: environments/prod/openproject-release/prod-verification.yaml
+            path: docs/runbooks/assess-environment-readiness.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
