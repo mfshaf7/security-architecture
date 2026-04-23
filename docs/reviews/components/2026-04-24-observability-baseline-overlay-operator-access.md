@@ -12,7 +12,9 @@
 
 This delta review covers the shift from an OpenClaw-shaped observability
 identity toward a platform observability baseline with explicit shared and
-product overlay boundaries.
+product overlay boundaries, plus the follow-on hardening that moved the shared
+UI catalog into a platform-owned path and renamed the live observability
+runtime identities.
 
 ## Scope Delta
 
@@ -24,9 +26,8 @@ product overlay boundaries.
   baseline
 - product-specific overlay assets should move under product ownership instead
   of drifting back into shared platform paths
-- operator access surfaces should explain the compatibility-phase naming truth
-  without implying OpenClaw ownership of the shared Grafana, Prometheus, or
-  Alertmanager paths
+- operator access surfaces should stop implying OpenClaw ownership of the
+  shared Grafana, Prometheus, or Alertmanager paths
 
 ### Implemented Control
 
@@ -39,12 +40,14 @@ product overlay boundaries.
 - shared operator runbooks and runtime-drill surfaces now describe:
   - platform baseline access
   - shared dashboard overlay access
-  - compatibility-phase legacy OpenClaw-shaped app and service names
+  - platform-owned observability runtime identities
 - OpenClaw-specific overlay ownership now has a product-local home under:
   - `products/openclaw/observability/`
+- the shared UI inventory now lives under:
+  - `docs/runbooks/platform-operator-catalog.yaml`
 - the OpenClaw `/platform` catalog remains a read-only operator inventory
-  surface, but its shared observability entries are now labeled as
-  platform-owned instead of looking product-owned
+  surface, but it is now sourced from the platform-owned shared catalog rather
+  than a product-local file
 
 ### Operating Evidence
 
@@ -60,10 +63,9 @@ product overlay boundaries.
 ### Identity
 
 - the new model improves identity clarity because the shared observability UI
-  and auth surfaces are no longer described as if they belong to OpenClaw
-- the compatibility phase is acceptable because the operator-facing runbooks
-  now say explicitly that legacy names such as `openclaw-observability` remain
-  implementation artifacts, not ownership truth
+  and auth surfaces no longer read as if they belong to OpenClaw
+- the platform-owned runtime names reduce the risk that operators mistake one
+  product for the owner of the shared control-plane telemetry stack
 
 ### Runtime
 
@@ -84,11 +86,12 @@ product overlay boundaries.
 
 ### Operator Access
 
-- the OpenClaw `/platform` catalog may continue to surface shared platform UIs
-  because it is an operator inventory, not a delegated control plane
-- this is acceptable only while the catalog stays read-only, keeps credentials
-  out of the catalog payload, and does not add mutating or secret-bearing
-  actions for shared observability
+- the OpenClaw `/platform` surface may continue to present the shared platform
+  UI inventory because it is an operator inventory, not a delegated control
+  plane
+- this remains acceptable only while the platform-owned shared catalog stays
+  read-only, keeps credentials out of the payload, and does not add mutating
+  or secret-bearing actions for shared observability
 
 ## Decision
 
@@ -99,16 +102,14 @@ understanding without widening runtime authority.
 
 Findings and residual risk:
 
-1. Compatibility-phase legacy names such as `openclaw-observability` are
-   acceptable only while the primary runbooks, readiness records, and access
-   surfaces continue to identify those paths as platform-baseline surfaces.
-2. Product-local overlays are acceptable only while they do not introduce a
+1. Product-local overlays are acceptable only while they do not introduce a
    parallel credential model, cross-product data exposure, or hidden control
    path around the shared Grafana and auth-proxy surfaces.
-3. The OpenClaw `/platform` operator catalog may remain the access index for
-   shared platform UIs only while it stays read-only and free of embedded
-   credentials, tokens, or direct mutation paths.
-4. Future work must reopen review if the platform baseline or overlay model
+2. The OpenClaw `/platform` operator surface may remain the access index for
+   shared platform UIs only while the underlying platform-owned catalog stays
+   read-only and free of embedded credentials, tokens, or direct mutation
+   paths.
+3. Future work must reopen review if the platform baseline or overlay model
    expands into separate tenant-scoped Grafana organizations, additional human
    identities, writable operator actions, or new alert-routing destinations.
 
@@ -119,13 +120,13 @@ Findings and residual risk:
 - `platform-engineering/docs/components/observability/release-governance.md`
 - `platform-engineering/docs/runbooks/access-platform-uis.md`
 - `platform-engineering/docs/runbooks/access-grafana.md`
-- `platform-engineering/docs/runbooks/full-platform-runtime-drill.md`
-- `platform-engineering/environments/shared/runtime-drills/full-platform-runtime-drill.yaml`
+- `platform-engineering/docs/runbooks/environment-complete-runtime-drill.md`
+- `platform-engineering/environments/shared/runtime-drills/environment-complete-runtime-drill.yaml`
 - `platform-engineering/environments/prod/observability-release/`
 - `platform-engineering/environments/stage/observability-release/`
 - `platform-engineering/environments/prod/platform-dashboards-release/`
 - `platform-engineering/environments/stage/platform-dashboards-release/`
-- `platform-engineering/products/openclaw/platform-operator-catalog.yaml`
+- `platform-engineering/docs/runbooks/platform-operator-catalog.yaml`
 - `platform-engineering/products/openclaw/observability/overlay-assets.yaml`
 - [`../security-delta-review-process.md`](../security-delta-review-process.md)
 - [`../security-review-checklist.md`](../security-review-checklist.md)
