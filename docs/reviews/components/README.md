@@ -18,6 +18,7 @@ Current baseline outputs:
 - [`2026-04-18-openclaw-telegram-channel-security-baseline.md`](2026-04-18-openclaw-telegram-channel-security-baseline.md)
 - [`2026-04-21-operator-orchestration-service-delivery-workflow-broker-expansion.md`](2026-04-21-operator-orchestration-service-delivery-workflow-broker-expansion.md)
 - [`2026-04-21-operator-orchestration-service-work-item-move-pre-implementation-review.md`](2026-04-21-operator-orchestration-service-work-item-move-pre-implementation-review.md)
+- [`2026-04-24-observability-baseline-overlay-operator-access.md`](2026-04-24-observability-baseline-overlay-operator-access.md)
 
 Owner repos should reference a concrete dated review artifact from this
 directory when workspace governance requires a `review_output_path`.

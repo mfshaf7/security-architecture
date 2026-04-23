@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-24-governed-full-platform-runtime-drill-and-restore.md
+        path: docs/reviews/platform/2026-04-24-governed-active-stack-runtime-drill-and-restore.md
         reviewed_on: 2026-04-24
         status: current
         decision: approved-with-findings
@@ -26,15 +26,15 @@ review_inventory:
           - repo: platform-engineering
             path: docs/standards/governed-runtime-drill-model.md
           - repo: platform-engineering
-            path: docs/decisions/adr/ADR-014-governed-full-platform-runtime-drill-and-restore.md
+            path: docs/decisions/adr/ADR-014-governed-active-stack-runtime-drill-and-restore.md
           - repo: platform-engineering
-            path: environments/shared/runtime-drills/full-platform-runtime-drill.yaml
+            path: environments/shared/runtime-drills/active-stack-runtime-drill.yaml
           - repo: platform-engineering
-            path: environments/shared/runtime-drills/full-platform-runtime-drill-evidence-template.yaml
+            path: environments/shared/runtime-drills/active-stack-runtime-drill-evidence-template.yaml
           - repo: platform-engineering
             path: scripts/platform_drill.py
           - repo: platform-engineering
-            path: docs/runbooks/full-platform-runtime-drill.md
+            path: docs/runbooks/active-stack-runtime-drill.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -302,10 +302,29 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-04-18-observability-security-baseline.md
-        reviewed_on: 2026-04-18
-        status: baseline-current
-        decision: approved
+        path: docs/reviews/components/2026-04-24-observability-baseline-overlay-operator-access.md
+        reviewed_on: 2026-04-24
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - identity
+          - delivery
+          - runtime
+        review_trigger_ids:
+          - shared-platform-control-plane-and-secrets
+        owner_artifacts:
+          - repo: platform-engineering
+            path: docs/decisions/adr/ADR-015-platform-observability-baseline-and-overlay-model.md
+          - repo: platform-engineering
+            path: docs/components/observability/model.yaml
+          - repo: platform-engineering
+            path: docs/components/observability/release-governance.md
+          - repo: platform-engineering
+            path: docs/runbooks/access-platform-uis.md
+          - repo: platform-engineering
+            path: environments/shared/runtime-drills/active-stack-runtime-drill.yaml
+          - repo: platform-engineering
+            path: products/openclaw/platform-operator-catalog.yaml
     platform-postgresql:
       owner_repo: platform-engineering
       scope: component
