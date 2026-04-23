@@ -11,26 +11,30 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-23-platform-environment-readiness-aggregate-gate.md
-        reviewed_on: 2026-04-23
+        path: docs/reviews/platform/2026-04-24-governed-full-platform-runtime-drill-and-restore.md
+        reviewed_on: 2026-04-24
         status: current
         decision: approved-with-findings
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
-          - secrets
-          - identity
         review_trigger_ids:
           - shared-platform-control-plane-and-secrets
         owner_artifacts:
           - repo: platform-engineering
-            path: environments/stage/environment-readiness.yaml
+            path: docs/standards/governed-runtime-drill-model.md
           - repo: platform-engineering
-            path: environments/prod/environment-readiness.yaml
+            path: docs/decisions/adr/ADR-014-governed-full-platform-runtime-drill-and-restore.md
           - repo: platform-engineering
-            path: scripts/validate_environment_readiness.py
+            path: environments/shared/runtime-drills/full-platform-runtime-drill.yaml
           - repo: platform-engineering
-            path: docs/runbooks/assess-environment-readiness.md
+            path: environments/shared/runtime-drills/full-platform-runtime-drill-evidence-template.yaml
+          - repo: platform-engineering
+            path: scripts/platform_drill.py
+          - repo: platform-engineering
+            path: docs/runbooks/full-platform-runtime-drill.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
