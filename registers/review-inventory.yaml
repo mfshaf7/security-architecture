@@ -11,25 +11,30 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-23-openproject-runtime-sizing-and-vault-single-node.md
+        path: docs/reviews/products/2026-04-23-openproject-governed-release-control-state.md
         reviewed_on: 2026-04-23
         status: current
         decision: approved-with-findings
         review_areas:
-          - runtime
+          - identity
           - secrets
+          - delivery
+          - runtime
         review_trigger_ids:
           - openproject-runtime-and-automation-boundary
-          - shared-platform-control-plane-and-secrets
         owner_artifacts:
           - repo: platform-engineering
             path: products/openproject/runtime-contract.md
           - repo: platform-engineering
-            path: environments/shared/argocd/vault-app.yaml
+            path: products/openproject/runbooks/release-governance.md
           - repo: platform-engineering
-            path: ansible/group_vars/all/main.yml
+            path: products/openproject/verification-catalog.yaml
           - repo: platform-engineering
-            path: docs/runbooks/vault-recovery.md
+            path: products/openproject/prod-verification-catalog.yaml
+          - repo: platform-engineering
+            path: environments/prod/openproject-release/stage-candidate.yaml
+          - repo: platform-engineering
+            path: environments/prod/openproject-release/prod-verification.yaml
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -198,25 +203,30 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-23-openproject-runtime-sizing-and-vault-single-node.md
+        path: docs/reviews/products/2026-04-23-openproject-governed-release-control-state.md
         reviewed_on: 2026-04-23
         status: current
         decision: approved-with-findings
         review_areas:
-          - runtime
+          - identity
           - secrets
+          - delivery
+          - runtime
         review_trigger_ids:
           - openproject-runtime-and-automation-boundary
-          - shared-platform-control-plane-and-secrets
         owner_artifacts:
           - repo: platform-engineering
             path: products/openproject/runtime-contract.md
           - repo: platform-engineering
-            path: environments/prod/argocd/openproject-app.yaml
+            path: products/openproject/runbooks/release-governance.md
           - repo: platform-engineering
-            path: environments/shared/argocd/vault-app.yaml
-          - repo: operator-orchestration-service
-            path: dev-integration/profiles/accepted-idea-delivery/scripts/up.sh
+            path: products/openproject/verification-catalog.yaml
+          - repo: platform-engineering
+            path: products/openproject/prod-verification-catalog.yaml
+          - repo: platform-engineering
+            path: environments/prod/openproject-release/stage-candidate.yaml
+          - repo: platform-engineering
+            path: environments/prod/openproject-release/prod-verification.yaml
   components:
     argo-cd:
       owner_repo: platform-engineering
