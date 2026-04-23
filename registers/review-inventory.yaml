@@ -173,22 +173,32 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/products/2026-04-21-openclaw-stage-bridge-persistence-and-status-truth.md
-        reviewed_on: 2026-04-21
+        path: docs/reviews/products/2026-04-23-openclaw-governed-release-control-state.md
+        reviewed_on: 2026-04-23
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - openclaw-stage-and-runtime-governance
+          - openclaw-governed-release-control-standardization
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/openclaw/README.md
           - repo: platform-engineering
             path: products/openclaw/scripts/set_stage_environment_state.py
           - repo: platform-engineering
             path: products/openclaw/runtime-contract.md
+          - repo: platform-engineering
+            path: products/openclaw/runbooks/release-governance.md
+          - repo: platform-engineering
+            path: products/openclaw/verification-catalog.yaml
+          - repo: platform-engineering
+            path: products/openclaw/scripts/stage_readiness.py
+          - repo: platform-engineering
+            path: environments/stage/promotion-readiness.yaml
     openproject:
       owner_repo: platform-engineering
       scope: product
