@@ -64,6 +64,38 @@ This applies to:
   - security review reference
   - lifecycle status such as `active`, `suspended`, `retired`, or `exception`
 
+### Governed Model Access Contract
+
+- a governed AI runtime foundation must define its model-access contract before
+  runtime activation
+- that contract must identify:
+  - the approved profile registry
+  - the governed invocation path
+  - the caller identity boundary
+  - the operator approval boundary
+  - the required audit fields
+- instruction bundles, prompts, skills, or `AGENTS.md` content do not replace
+  the model-access contract and must not be treated as the runtime authority
+- repo-local policy must not redefine governed model-access rules that already
+  belong to the shared access plane or approved profile registry
+
+### Governed AI Audit Minimum
+
+- governed AI calls must emit reviewable audit metadata for at least:
+  - caller identity
+  - operator identity or acceptance reference when the decision requires human
+    approval
+  - approved profile id
+  - invocation path
+  - decision or correlation id
+  - event time
+  - outcome
+  - override reason when an operator rejects or changes the suggested result
+- the audit record should make it possible to distinguish:
+  - workload identity from operator identity
+  - suggestion generation from operator acceptance
+  - governed invocation from exception-lane or direct-provider use
+
 ### AI-Assisted Operator Decisions
 
 - AI may assist operator decisions only within a bounded reviewed purpose
