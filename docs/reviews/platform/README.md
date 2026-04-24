@@ -12,6 +12,7 @@ Current baseline outputs:
 - [`2026-04-21-platform-engineering-openproject-and-stage-control-delta.md`](2026-04-21-platform-engineering-openproject-and-stage-control-delta.md)
 - [`2026-04-24-governed-active-stack-runtime-drill-and-restore.md`](2026-04-24-governed-active-stack-runtime-drill-and-restore.md)
 - [`2026-04-24-environment-complete-runtime-drill-and-shared-ui-catalog.md`](2026-04-24-environment-complete-runtime-drill-and-shared-ui-catalog.md)
+- [`2026-04-24-governed-ai-model-access-and-audit-contract.md`](2026-04-24-governed-ai-model-access-and-audit-contract.md)
 
 Owner repos should reference a concrete dated review artifact from this
 directory when workspace governance requires a `review_output_path`.

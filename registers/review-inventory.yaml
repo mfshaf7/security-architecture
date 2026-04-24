@@ -47,30 +47,28 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-22-workspace-governance-delegated-execution-governance.md
-        reviewed_on: 2026-04-22
+        path: docs/reviews/platform/2026-04-24-governed-ai-model-access-and-audit-contract.md
+        reviewed_on: 2026-04-24
         status: current
         decision: approved-with-findings
         review_areas:
           - identity
-          - secrets
           - delivery
           - runtime
           - ai
         review_trigger_ids:
-          - delegated-execution-policy-and-audit-control
           - workspace-control-plane-and-skill-governance
         owner_artifacts:
           - repo: workspace-governance
-            path: docs/delegated-execution.md
+            path: docs/governance-engine-foundation.md
           - repo: workspace-governance
-            path: contracts/delegation-policy.yaml
+            path: contracts/governance-engine-foundation.yaml
           - repo: workspace-governance
             path: contracts/repo-rules/workspace-governance.yaml
-          - repo: workspace-governance
-            path: skills-src/project-delivery-operator/SKILL.md
-          - repo: workspace-governance
-            path: skills-src/self-improvement-review/SKILL.md
+          - repo: platform-engineering
+            path: docs/standards/governed-ai-access-model.md
+          - repo: platform-engineering
+            path: security/governed-ai-model-profiles.yaml
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
