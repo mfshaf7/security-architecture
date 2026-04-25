@@ -25,6 +25,9 @@ adds the next missing control layers:
    installed skills, and generated governance artifacts
 3. an explicit extraction gate and runtime-readiness contract that keeps repo
    extraction and governed AI activation out of scope until parity is proven
+4. explicit extraction hard-gate thresholds, need signals, current coupling
+   inventory, and standalone packaging prerequisites so later extraction work
+   cannot proceed from inferred architecture context alone
 
 These are security-relevant because they determine whether future extraction or
 runtime activation is sequenced behind reviewed control-plane truth instead of
@@ -46,6 +49,11 @@ being justified by drift-prone local convenience.
   any extraction decision is taken
 - classifying tenant-instance files explicitly prevents local admitted state
   from being normalized into generated control-plane outputs
+- the extraction gate is stronger now that it defaults to retain-integrated
+  unless every hard gate and every extraction-need signal is satisfied
+- the boundary-map inventory correctly turns the current coupling points and
+  packaging prerequisites into reviewable machine state instead of leaving them
+  as latent architecture assumptions
 
 ### Runtime
 
@@ -82,6 +90,10 @@ Findings and residual risk:
 3. The tenant-instance classification must stay current as new local admitted
    state surfaces appear; otherwise parity could become mechanically clean while
    the boundary itself silently drifts.
+4. The threshold model is intentionally conservative. If a later change tries
+   to weaken the extraction-need signals or remove the coupling inventory, that
+   should be treated as a security-significant contract regression rather than
+   a harmless documentation tweak.
 
 ## Related Artifacts
 
@@ -90,6 +102,7 @@ Findings and residual risk:
 - `workspace-governance/contracts/governance-engine-boundary-map.yaml`
 - `workspace-governance/contracts/governance-engine-shadow-parity.yaml`
 - `workspace-governance/contracts/governance-engine-extraction-gate.yaml`
+- `workspace-governance/generated/governance-engine-boundary-map.json`
 - `workspace-governance/scripts/validate_governance_engine_shadow_parity.py`
 - `platform-engineering/docs/standards/governed-ai-access-model.md`
 - `security-architecture/docs/standards/ai-security-and-governance.md`
