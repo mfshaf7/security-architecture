@@ -47,8 +47,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-24-governed-ai-model-access-and-audit-contract.md
-        reviewed_on: 2026-04-24
+        path: docs/reviews/platform/2026-04-25-governance-engine-parity-extraction-and-runtime-readiness.md
+        reviewed_on: 2026-04-25
         status: current
         decision: approved-with-findings
         review_areas:
@@ -64,7 +64,13 @@ review_inventory:
           - repo: workspace-governance
             path: contracts/governance-engine-foundation.yaml
           - repo: workspace-governance
-            path: contracts/repo-rules/workspace-governance.yaml
+            path: contracts/governance-engine-boundary-map.yaml
+          - repo: workspace-governance
+            path: contracts/governance-engine-shadow-parity.yaml
+          - repo: workspace-governance
+            path: contracts/governance-engine-extraction-gate.yaml
+          - repo: workspace-governance
+            path: scripts/validate_governance_engine_shadow_parity.py
           - repo: platform-engineering
             path: docs/standards/governed-ai-access-model.md
           - repo: platform-engineering
