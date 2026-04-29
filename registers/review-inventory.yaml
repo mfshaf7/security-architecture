@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-24-environment-complete-runtime-drill-and-shared-ui-catalog.md
-        reviewed_on: 2026-04-24
+        path: docs/reviews/platform/2026-04-29-bounded-governed-ai-runtime-assist-activation.md
+        reviewed_on: 2026-04-29
         status: current
         decision: approved-with-findings
         review_areas:
@@ -20,23 +20,21 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - shared-platform-control-plane-and-secrets
+          - governed-ai-runtime-assist-activation
+          - model-access-audit-and-approval-boundary
         owner_artifacts:
           - repo: platform-engineering
-            path: docs/standards/governed-runtime-drill-model.md
+            path: security/governed-ai-runtime-assist-contract.yaml
           - repo: platform-engineering
-            path: docs/runbooks/platform-operator-catalog.yaml
+            path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
-            path: environments/shared/runtime-drills/environment-complete-runtime-drill.yaml
+            path: docs/standards/governed-ai-access-model.md
           - repo: platform-engineering
-            path: environments/shared/runtime-drills/environment-complete-runtime-drill-evidence-template.yaml
+            path: docs/records/change-records/2026-04-29-governed-ai-runtime-assist-contract.md
           - repo: platform-engineering
-            path: environments/prod/argocd/observability-app.yaml
-          - repo: platform-engineering
-            path: docs/runbooks/environment-complete-runtime-drill.md
-          - repo: platform-engineering
-            path: scripts/platform_drill.py
+            path: scripts/validate_ai_model_profiles.py
     workspace-governance:
       owner_repo: workspace-governance
       scope: component

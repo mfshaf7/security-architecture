@@ -111,12 +111,21 @@ workstreams:
       - repo: security-architecture
         path: docs/reviews/platform/2026-04-18-governed-ai-intake-assist-and-model-profiles.md
         role: change-review
+      - repo: security-architecture
+        path: docs/reviews/platform/2026-04-29-bounded-governed-ai-runtime-assist-activation.md
+        role: change-review
       - repo: platform-engineering
         path: docs/standards/governed-ai-access-model.md
         role: platform-standard
       - repo: platform-engineering
         path: security/governed-ai-model-profiles.yaml
         role: profile-registry
+      - repo: platform-engineering
+        path: security/governed-ai-runtime-assist-contract.yaml
+        role: activation-contract
+      - repo: platform-engineering
+        path: docs/records/change-records/2026-04-29-governed-ai-runtime-assist-contract.md
+        role: change-record
 findings:
   F-001:
     title: Shared privileged credential blast radius
@@ -250,10 +259,16 @@ findings:
         path: registers/ai-system-inventory.md
       - repo: security-architecture
         path: docs/reviews/platform/2026-04-18-governed-ai-intake-assist-and-model-profiles.md
+      - repo: security-architecture
+        path: docs/reviews/platform/2026-04-29-bounded-governed-ai-runtime-assist-activation.md
       - repo: platform-engineering
         path: docs/standards/governed-ai-access-model.md
       - repo: platform-engineering
         path: security/governed-ai-model-profiles.yaml
+      - repo: platform-engineering
+        path: security/governed-ai-runtime-assist-contract.yaml
+      - repo: platform-engineering
+        path: docs/records/change-records/2026-04-29-governed-ai-runtime-assist-contract.md
 risks:
   R-001:
     title: Shared privileged credential blast radius
@@ -373,7 +388,13 @@ risks:
         path: registers/ai-system-inventory.md
       - repo: security-architecture
         path: docs/reviews/platform/2026-04-18-governed-ai-intake-assist-and-model-profiles.md
+      - repo: security-architecture
+        path: docs/reviews/platform/2026-04-29-bounded-governed-ai-runtime-assist-activation.md
       - repo: platform-engineering
         path: docs/standards/governed-ai-access-model.md
       - repo: platform-engineering
         path: security/governed-ai-model-profiles.yaml
+      - repo: platform-engineering
+        path: security/governed-ai-runtime-assist-contract.yaml
+      - repo: platform-engineering
+        path: docs/records/change-records/2026-04-29-governed-ai-runtime-assist-contract.md
