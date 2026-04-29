@@ -880,6 +880,27 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-29-art-bulk-draft-schema-guard.md
+  date: '2026-04-29'
+  short_title: 2026-04-29-art-bulk-draft-schema-guard
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-29-art-closeout-surface-quality-guard.md
+  date: '2026-04-29'
+  short_title: 2026-04-29-art-closeout-surface-quality-guard
+  review_areas:
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-29-art-epic-shell-continuation-guard.md
   date: '2026-04-29'
   short_title: 2026-04-29-art-epic-shell-continuation-guard
@@ -897,6 +918,17 @@ change_records:
   review_areas:
   - runtime
   - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-29-art-mutation-drafts-and-review-packets.md
+  date: '2026-04-29'
+  short_title: 2026-04-29-art-mutation-drafts-and-review-packets
+  review_areas:
+  - delivery
+  - runtime
   findings: []
   risks: []
   workstreams:
