@@ -1125,3 +1125,19 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-29-governed-ai-runtime-assist-contract.md
+  date: '2026-04-29'
+  short_title: Governed AI runtime assist activation contract
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
