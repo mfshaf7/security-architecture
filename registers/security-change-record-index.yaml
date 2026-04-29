@@ -750,6 +750,38 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-25-art-probe-nullable-response-contracts.md
+  date: '2026-04-25'
+  short_title: 2026-04-25-art-probe-nullable-response-contracts
+  review_areas:
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-25-art-retired-roadmap-bucket.md
+  date: '2026-04-25'
+  short_title: 2026-04-25-art-retired-roadmap-bucket
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-25-art-root-repair-move-support.md
+  date: '2026-04-25'
+  short_title: 2026-04-25-art-root-repair-move-support
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-04-25-art-safe-write-retry.md
   date: '2026-04-25'
   short_title: 2026-04-25-art-safe-write-retry
@@ -797,6 +829,93 @@ change_records:
   path: docs/records/change-records/2026-04-25-initiative-owner-repo-parity.md
   date: '2026-04-25'
   short_title: 2026-04-25-initiative-owner-repo-parity
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-26-art-retired-scope-target-pi-cleanup.md
+  date: '2026-04-26'
+  short_title: 2026-04-26-art-retired-scope-target-pi-cleanup
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-26-continuation-context-lineage-and-classification.md
+  date: '2026-04-26'
+  short_title: 2026-04-26-continuation-context-lineage-and-classification
+  review_areas:
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-26-delivery-initiative-lineage-governance.md
+  date: '2026-04-26'
+  short_title: 2026-04-26-delivery-initiative-lineage-governance
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-29-art-broker-target-pi-and-context-placement.md
+  date: '2026-04-29'
+  short_title: 2026-04-29-art-broker-target-pi-and-context-placement
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-29-art-epic-shell-continuation-guard.md
+  date: '2026-04-29'
+  short_title: 2026-04-29-art-epic-shell-continuation-guard
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-29-art-generic-target-pi-roadmap-projection.md
+  date: '2026-04-29'
+  short_title: 2026-04-29-art-generic-target-pi-roadmap-projection
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-29-art-roadmap-projection-readonly-form-correction.md
+  date: '2026-04-29'
+  short_title: 2026-04-29-art-roadmap-projection-readonly-form-correction
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-04-29-openproject-error-status-mapping.md
+  date: '2026-04-29'
+  short_title: 2026-04-29-openproject-error-status-mapping
   review_areas:
   - runtime
   - delivery
