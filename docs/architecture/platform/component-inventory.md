@@ -13,6 +13,7 @@ points to their security views where they exist.
 | Kubernetes API | orchestration plane | underpins controller authority and service-account trust | reviewed through platform and domain views |
 | Observability stack | visibility plane | holds operational telemetry, alerts, and sensitive runtime metadata | [`../components/observability/README.md`](../components/observability/README.md) |
 | Platform PostgreSQL | shared data service | stores platform-managed state for platform products and services | [`../components/platform-postgresql/README.md`](../components/platform-postgresql/README.md) |
+| workspace-governance-control-fabric | governance runtime control fabric | evaluates workspace readiness/admission inputs and will hold receipt, graph, and ledger runtime surfaces | [`../components/workspace-governance-control-fabric/README.md`](../components/workspace-governance-control-fabric/README.md) |
 | operator-orchestration-service | shared operator workflow broker | holds backend credentials, authenticates machine callers, and emits durable workflow audit | [`../components/operator-orchestration-service/README.md`](../components/operator-orchestration-service/README.md) |
 
 ## Product And Runtime Components
