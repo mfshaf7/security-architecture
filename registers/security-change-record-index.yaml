@@ -1270,4 +1270,4 @@ change_records:
   findings: []
   risks: []
   workstreams:
-  - workspace-governance-control-fabric
+  - WS-007
