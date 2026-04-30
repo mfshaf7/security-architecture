@@ -70,12 +70,8 @@ review_inventory:
             path: docs/governance-engine-foundation.md
           - repo: workspace-governance
             path: contracts/governance-engine-foundation.yaml
-          - repo: workspace-governance-control-fabric
-            path: docs/operations/operator-surface.md
-          - repo: workspace-governance-control-fabric
-            path: README.md
-          - repo: workspace-governance-control-fabric
-            path: AGENTS.md
+          - repo: security-architecture
+            path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -100,12 +96,8 @@ review_inventory:
           - governance-runtime-control-fabric-bootstrap
           - identity-audit-approval-evidence-custody-boundary
         owner_artifacts:
-          - repo: workspace-governance-control-fabric
-            path: docs/operations/operator-surface.md
-          - repo: workspace-governance-control-fabric
-            path: README.md
-          - repo: workspace-governance-control-fabric
-            path: AGENTS.md
+          - repo: security-architecture
+            path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
           - repo: workspace-governance
             path: contracts/governance-control-fabric-operator-surface.yaml
           - repo: workspace-governance
