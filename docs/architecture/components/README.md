@@ -10,6 +10,7 @@ especially sensitive runtime-side components.
 - [`external-secrets/README.md`](external-secrets/README.md)
 - [`observability/README.md`](observability/README.md)
 - [`platform-postgresql/README.md`](platform-postgresql/README.md)
+- [`workspace-governance-control-fabric/README.md`](workspace-governance-control-fabric/README.md)
 - [`host-control-plugin/README.md`](host-control-plugin/README.md)
 - [`openclaw-host-bridge/README.md`](openclaw-host-bridge/README.md)
 - [`openclaw-runtime-distribution/README.md`](openclaw-runtime-distribution/README.md)

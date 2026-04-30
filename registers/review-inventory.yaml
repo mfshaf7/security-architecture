@@ -372,6 +372,20 @@ review_inventory:
         reviewed_on: 2026-04-18
         status: baseline-current
         decision: approved
+    workspace-governance-control-fabric:
+      owner_repo: workspace-governance-control-fabric
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
+        reviewed_on: 2026-04-30
+        review_due_on: 2026-10-30
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
+        reviewed_on: 2026-04-30
+        status: baseline-current
+        decision: approved-with-findings
     openclaw-host-bridge:
       owner_repo: openclaw-host-bridge
       scope: component
