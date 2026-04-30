@@ -1260,3 +1260,14 @@ change_records:
   - R-007
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-04-30-wgcf-devint-runtime-access.md
+  date: '2026-04-30'
+  short_title: WGCF dev-integration runtime access
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - workspace-governance-control-fabric
