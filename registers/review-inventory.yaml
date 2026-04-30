@@ -45,34 +45,63 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-25-governance-engine-parity-extraction-and-runtime-readiness.md
-        reviewed_on: 2026-04-25
+        path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
+        reviewed_on: 2026-04-30
         status: current
         decision: approved-with-findings
         review_areas:
           - identity
+          - secrets
           - delivery
           - runtime
           - ai
         review_trigger_ids:
+          - governance-control-fabric-operator-surface
+          - identity-audit-approval-evidence-custody-boundary
           - workspace-control-plane-and-skill-governance
         owner_artifacts:
+          - repo: workspace-governance
+            path: contracts/governance-control-fabric-operator-surface.yaml
+          - repo: workspace-governance
+            path: contracts/schemas/governance-control-fabric-operator-surface.schema.json
+          - repo: workspace-governance
+            path: docs/governance-control-fabric-operator-surface.md
           - repo: workspace-governance
             path: docs/governance-engine-foundation.md
           - repo: workspace-governance
             path: contracts/governance-engine-foundation.yaml
+          - repo: security-architecture
+            path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
+    workspace-governance-control-fabric:
+      owner_repo: workspace-governance-control-fabric
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
+        reviewed_on: 2026-04-30
+        review_due_on: 2026-10-30
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
+        reviewed_on: 2026-04-30
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - governance-runtime-control-fabric-bootstrap
+          - identity-audit-approval-evidence-custody-boundary
+        owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
           - repo: workspace-governance
-            path: contracts/governance-engine-boundary-map.yaml
+            path: contracts/governance-control-fabric-operator-surface.yaml
           - repo: workspace-governance
-            path: contracts/governance-engine-shadow-parity.yaml
-          - repo: workspace-governance
-            path: contracts/governance-engine-extraction-gate.yaml
-          - repo: workspace-governance
-            path: scripts/validate_governance_engine_shadow_parity.py
-          - repo: platform-engineering
-            path: docs/standards/governed-ai-access-model.md
-          - repo: platform-engineering
-            path: security/governed-ai-model-profiles.yaml
+            path: docs/governance-control-fabric-operator-surface.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
