@@ -21,8 +21,10 @@ support:
 - may feed operator workflows and future governance console views
 - must not mutate upstream authority stores directly
 
-The current dev-integration profile is only `proposed`. It records the runtime
-lane decision but is not an approved self-serve environment.
+The current dev-integration profile is `active`. It provides a local-k3s API
+Deployment, ClusterIP Service, persistent PostgreSQL StatefulSet/PVC, and
+database migration Job for fast local runtime iteration. It is not governed
+stage or production evidence.
 
 ## Current Admitted Runtime Shape
 
@@ -30,7 +32,8 @@ lane decision but is not an approved self-serve environment.
 - platform runtime owner: `platform-engineering`
 - workspace authority owner: `workspace-governance`
 - security owner: `security-architecture`
-- current runtime lane: source-only plus proposed `dev-integration` profile
+- current runtime lane: source plus active local-k3s `dev-integration` API and
+  PostgreSQL profile
 - stage/prod status: not admitted
 
 ## Security Model
@@ -55,7 +58,7 @@ lane decision but is not an approved self-serve environment.
 - platform deployment state and promotion gates remain in
   `platform-engineering`
 - workspace rules and maturity contracts remain in `workspace-governance`
-- stage rehearsal cannot be claimed from the proposed dev-integration profile
+- stage rehearsal cannot be claimed from the dev-integration profile
 
 ### Runtime
 
