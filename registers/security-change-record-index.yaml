@@ -1119,6 +1119,17 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-05-01-dependency-draft-action-guard.md
+  date: '2026-05-01'
+  short_title: 2026-05-01-dependency-draft-action-guard
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-05-01-wgcf-art-handoff-and-cli-transport.md
   date: '2026-05-01'
   short_title: 2026-05-01-wgcf-art-handoff-and-cli-transport
