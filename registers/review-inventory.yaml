@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-04-29-bounded-governed-ai-runtime-assist-activation.md
-        reviewed_on: 2026-04-29
+        path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
+        reviewed_on: 2026-05-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -22,19 +22,17 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governed-ai-runtime-assist-activation
-          - model-access-audit-and-approval-boundary
+          - wgcf-validator-invocation-profile-gates
+          - artifact-custody-and-receipt-boundary
         owner_artifacts:
           - repo: platform-engineering
-            path: security/governed-ai-runtime-assist-contract.yaml
+            path: docs/components/workspace-governance-control-fabric/validator-invocation-gates.md
           - repo: platform-engineering
-            path: security/governed-ai-model-profiles.yaml
+            path: docs/components/workspace-governance-control-fabric/release-governance.md
           - repo: platform-engineering
-            path: docs/standards/governed-ai-access-model.md
-          - repo: platform-engineering
-            path: docs/records/change-records/2026-04-29-governed-ai-runtime-assist-contract.md
-          - repo: platform-engineering
-            path: scripts/validate_ai_model_profiles.py
+            path: docs/components/workspace-governance-control-fabric/operations.md
+          - repo: security-architecture
+            path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -45,8 +43,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
-        reviewed_on: 2026-04-30
+        path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
+        reviewed_on: 2026-05-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -56,22 +54,20 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governance-control-fabric-operator-surface
-          - identity-audit-approval-evidence-custody-boundary
-          - workspace-control-plane-and-skill-governance
+          - wgcf-validator-invocation-shadow-parity
+          - artifact-custody-and-receipt-boundary
+          - workspace-control-plane-validator-cutover
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/governance-control-fabric-operator-surface.yaml
-          - repo: workspace-governance
-            path: contracts/schemas/governance-control-fabric-operator-surface.schema.json
-          - repo: workspace-governance
-            path: docs/governance-control-fabric-operator-surface.md
+            path: contracts/governance-engine-shadow-parity.yaml
           - repo: workspace-governance
             path: docs/governance-engine-foundation.md
           - repo: workspace-governance
-            path: contracts/governance-engine-foundation.yaml
+            path: docs/governance-validator-catalog.md
+          - repo: workspace-governance
+            path: scripts/validate_governance_engine_shadow_parity.py
           - repo: security-architecture
-            path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
+            path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -82,8 +78,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
-        reviewed_on: 2026-04-30
+        path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
+        reviewed_on: 2026-05-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -93,15 +89,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governance-runtime-control-fabric-bootstrap
-          - identity-audit-approval-evidence-custody-boundary
+          - wgcf-validator-invocation-profile-gates
+          - artifact-custody-and-receipt-boundary
+          - governance-runtime-control-fabric-cutover
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
+            path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
           - repo: workspace-governance
-            path: contracts/governance-control-fabric-operator-surface.yaml
+            path: contracts/governance-engine-shadow-parity.yaml
           - repo: workspace-governance
-            path: docs/governance-control-fabric-operator-surface.md
+            path: docs/governance-engine-foundation.md
+          - repo: platform-engineering
+            path: docs/components/workspace-governance-control-fabric/validator-invocation-gates.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -382,10 +381,27 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
-        reviewed_on: 2026-04-30
-        status: baseline-current
+        path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
+        reviewed_on: 2026-05-01
+        status: current
         decision: approved-with-findings
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - wgcf-validator-invocation-profile-gates
+          - artifact-custody-and-receipt-boundary
+          - governance-runtime-control-fabric-cutover
+        owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
+          - repo: platform-engineering
+            path: docs/components/workspace-governance-control-fabric/validator-invocation-gates.md
+          - repo: workspace-governance
+            path: contracts/governance-engine-shadow-parity.yaml
     openclaw-host-bridge:
       owner_repo: openclaw-host-bridge
       scope: component

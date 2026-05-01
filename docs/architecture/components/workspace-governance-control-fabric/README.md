@@ -89,6 +89,8 @@ stage or production evidence.
 
 - control-fabric operator surface review:
   [../../../reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md](../../../reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md)
+- validator invocation and artifact-custody delta:
+  [../../../reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md](../../../reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md)
 - component inventory:
   [`../../platform/component-inventory.md`](../../platform/component-inventory.md)
 - workspace governance contract:
