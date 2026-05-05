@@ -1173,6 +1173,17 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-05-06-plan-apply-optional-create-fields.md
+  date: '2026-05-06'
+  short_title: 2026-05-06-plan-apply-optional-create-fields
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
