@@ -22,11 +22,12 @@ operators, CI, or automation:
   output, repo contents, or runtime evidence
 - model-safe packets must contain only redacted, sliced, budgeted, and
   policy-admitted context
-- full artifact custody remains local in the current approved slice
-- service-mode runtime, shared storage, workers, dashboard upload, broker
-  adapters, and downstream AI gateway adapters are not approved yet
-- the proposed `dev-integration` profile is an admission contract only and must
-  fail closed until platform and security gates approve service mode
+- full artifact custody remains local in the current approved slices
+- active local `dev-integration` runtime is approved only after workspace
+  lifecycle activation and only for local-k3s service-shape proof
+- governed service-mode runtime, shared stage/prod storage, dashboard raw
+  browsing, broker adapters, and downstream AI gateway adapters are not
+  approved yet
 
 ## Current Admitted Shape
 
@@ -34,14 +35,14 @@ operators, CI, or automation:
 - workspace authority owner: `workspace-governance`
 - platform runtime owner: `platform-engineering`
 - security owner: `security-architecture`
-- current runtime lane: local CLI/source evidence plus proposed
-  `dev-integration` profile
+- current runtime lane: local CLI/source evidence plus security-approved
+  local-k3s `dev-integration` after workspace lifecycle activation
 - stage/prod status: not admitted
 
 ## Service Mode Admission Gate
 
-The next maturity boundary is shared service mode. That boundary is not
-approved yet.
+The next maturity boundary after local `dev-integration` is governed shared
+service mode. That boundary is not approved yet.
 
 Before service implementation or runtime activation, CGG must satisfy the
 service-mode security requirements for:
@@ -54,18 +55,21 @@ service-mode security requirements for:
 - model-safe and operator-safe packet projection
 - downstream consumer attribution and denial metadata
 
-The current security decision approves the gate definition only. It keeps API
-runtime, workers, shared metadata storage, shared artifact storage, dashboard
-upload, broker adapters, WGCF adapters, scanner execution, model invocation,
-stage, and production blocked until implementation and platform evidence exist.
+The current security decision approves active local dev-integration only. It
+keeps governed shared metadata storage, governed shared artifact storage,
+dashboard raw browsing, broker adapters, WGCF adapters, scanner execution,
+model invocation, stage, and production blocked until implementation,
+platform, and security evidence exist for those boundaries.
 
 ## Security Model
 
 ### Identity
 
-- Phase 1 has no service identity or network listener.
-- Future API, worker, dashboard, broker, or adapter identity must be distinct
-  from operator identity and attributable in receipts or audit metadata.
+- Phase 1 local CLI has no service identity or network listener.
+- Active local dev-integration may use local profile secrets only.
+- Future governed API, worker, dashboard, broker, or adapter identity must be
+  distinct from operator identity and attributable in receipts or audit
+  metadata.
 - CGG outputs must not become autonomous approval or mutation authority.
 
 ### Secrets
@@ -86,12 +90,12 @@ stage, and production blocked until implementation and platform evidence exist.
 
 ### Runtime
 
-- Phase 1 is local CLI only.
-- The proposed dev-integration profile may report status and run read-only
-  static smoke, but `up` and `access` must fail closed.
-- Persistent service-mode state requires approved identity, storage, retention,
-  deletion, encryption, access, debug override, tamper-evident audit, backup,
-  restore, and rollback posture.
+- Phase 1 local CLI remains local-only.
+- Active local dev-integration may run API, worker, PostgreSQL, MinIO, PVC-backed
+  state, read-only smoke, and access through the active profile only.
+- Persistent governed service-mode state still requires approved identity,
+  storage, retention, deletion, encryption, access, debug override,
+  tamper-evident audit, backup, restore, and rollback posture.
 
 ### AI
 
@@ -118,6 +122,8 @@ stage, and production blocked until implementation and platform evidence exist.
   [`service-mode-security-requirements.md`](service-mode-security-requirements.md)
 - Service-mode admission gates security delta:
   [../../../reviews/components/2026-05-05-context-governance-gateway-service-mode-admission-gates.md](../../../reviews/components/2026-05-05-context-governance-gateway-service-mode-admission-gates.md)
+- Active dev-integration runtime security delta:
+  [../../../reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md](../../../reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md)
 - Phase 1 local custody security delta:
   [../../../reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md](../../../reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md)
 - AI security and governance standard:

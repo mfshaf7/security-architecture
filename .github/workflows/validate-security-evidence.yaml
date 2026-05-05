@@ -30,6 +30,7 @@ jobs:
           from pathlib import Path
           import shutil
           import subprocess
+          import yaml
 
           repo_root = Path(".").resolve()
           workspace_root = repo_root / ".workspace-ci"
@@ -42,14 +43,37 @@ jobs:
               ignore=shutil.ignore_patterns(".git", ".workspace-ci", "__pycache__", "*.pyc"),
           )
 
-          repos = [
+          base_repos = {
               "workspace-governance",
               "platform-engineering",
               "openclaw-runtime-distribution",
               "openclaw-telegram-enhanced",
               "openclaw-host-bridge",
               "operator-orchestration-service",
+          }
+
+          def collect_referenced_repos(value):
+              if isinstance(value, dict):
+                  repo = value.get("repo")
+                  path = value.get("path")
+                  if isinstance(repo, str) and isinstance(path, str):
+                      yield repo
+                  for child in value.values():
+                      yield from collect_referenced_repos(child)
+              elif isinstance(value, list):
+                  for child in value:
+                      yield from collect_referenced_repos(child)
+
+          registers = [
+              "registers/review-inventory.yaml",
+              "registers/remediation-inventory.yaml",
           ]
+          referenced_repos = set()
+          for rel_path in registers:
+              data = yaml.safe_load((repo_root / rel_path).read_text()) or {}
+              referenced_repos.update(collect_referenced_repos(data))
+
+          repos = sorted((base_repos | referenced_repos) - {"security-architecture"})
           for repo_name in repos:
               subprocess.run(
                   [
