@@ -125,12 +125,6 @@ review_inventory:
           - deny-raw-model-projection
           - local-context-packet-generation
         owner_artifacts:
-          - repo: context-governance-gateway
-            path: README.md
-          - repo: context-governance-gateway
-            path: docs/threat-model/phase-1-local-custody.md
-          - repo: context-governance-gateway
-            path: docs/operating-model/local-cli.md
           - repo: security-architecture
             path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
     openclaw-runtime-distribution:
@@ -458,12 +452,6 @@ review_inventory:
           - deny-raw-model-projection
           - local-context-packet-generation
         owner_artifacts:
-          - repo: context-governance-gateway
-            path: README.md
-          - repo: context-governance-gateway
-            path: docs/threat-model/phase-1-local-custody.md
-          - repo: context-governance-gateway
-            path: docs/operating-model/local-cli.md
           - repo: security-architecture
             path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
     openclaw-host-bridge:
