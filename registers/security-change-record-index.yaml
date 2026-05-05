@@ -1337,3 +1337,16 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-05-05-cgg-devint-platform-activation-acceptance.md
+  date: '2026-05-05'
+  short_title: CGG dev-integration platform activation acceptance
+  review_areas:
+  - runtime
+  - ai
+  - delivery
+  findings: []
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
