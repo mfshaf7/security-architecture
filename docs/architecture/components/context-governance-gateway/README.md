@@ -38,6 +38,27 @@ operators, CI, or automation:
   `dev-integration` profile
 - stage/prod status: not admitted
 
+## Service Mode Admission Gate
+
+The next maturity boundary is shared service mode. That boundary is not
+approved yet.
+
+Before service implementation or runtime activation, CGG must satisfy the
+service-mode security requirements for:
+
+- caller identity and authorization
+- raw and redacted artifact custody
+- retention and deletion
+- debug override
+- tamper-evident ledger events
+- model-safe and operator-safe packet projection
+- downstream consumer attribution and denial metadata
+
+The current security decision approves the gate definition only. It keeps API
+runtime, workers, shared metadata storage, shared artifact storage, dashboard
+upload, broker adapters, WGCF adapters, scanner execution, model invocation,
+stage, and production blocked until implementation and platform evidence exist.
+
 ## Security Model
 
 ### Identity
@@ -68,8 +89,9 @@ operators, CI, or automation:
 - Phase 1 is local CLI only.
 - The proposed dev-integration profile may report status and run read-only
   static smoke, but `up` and `access` must fail closed.
-- Persistent service-mode state requires approved storage, retention, deletion,
-  encryption, access, audit, and rollback posture.
+- Persistent service-mode state requires approved identity, storage, retention,
+  deletion, encryption, access, debug override, tamper-evident audit, backup,
+  restore, and rollback posture.
 
 ### AI
 
@@ -92,6 +114,10 @@ operators, CI, or automation:
 
 ## Required Companion Artifacts
 
+- Service-mode security requirements:
+  [`service-mode-security-requirements.md`](service-mode-security-requirements.md)
+- Service-mode admission gates security delta:
+  [../../../reviews/components/2026-05-05-context-governance-gateway-service-mode-admission-gates.md](../../../reviews/components/2026-05-05-context-governance-gateway-service-mode-admission-gates.md)
 - Phase 1 local custody security delta:
   [../../../reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md](../../../reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md)
 - AI security and governance standard:

@@ -111,22 +111,28 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
+        path: docs/reviews/components/2026-05-05-context-governance-gateway-service-mode-admission-gates.md
         reviewed_on: 2026-05-05
         status: current
         decision: approved-with-findings
         review_areas:
+          - identity
           - secrets
           - delivery
           - runtime
           - ai
         review_trigger_ids:
-          - context-admission-local-artifact-custody
-          - deny-raw-model-projection
-          - local-context-packet-generation
+          - cgg-service-mode-admission-gates
+          - cgg-shared-artifact-custody-and-retention
+          - cgg-debug-override-and-tamper-evident-ledger
+          - cgg-downstream-packet-projection-boundary
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
+            path: docs/reviews/components/2026-05-05-context-governance-gateway-service-mode-admission-gates.md
+          - repo: security-architecture
+            path: docs/architecture/components/context-governance-gateway/service-mode-security-requirements.md
+          - repo: security-architecture
+            path: docs/architecture/components/context-governance-gateway/README.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
