@@ -11,12 +11,17 @@ themselves.
 
 ## Admission State
 
-- current approved state: local CLI/source evidence only
-- proposed next state: service-mode implementation after security and platform
-  gates are complete
-- blocked until gates: API listener, workers, shared metadata store, shared
-  artifact store, dashboard upload, broker adapters, WGCF adapters, scanner
-  execution, model invocation, stage, and production
+- current approved state: local CLI/source evidence plus active local
+  dev-integration after workspace lifecycle activation
+- approved local dev-integration state: API, worker, PostgreSQL, MinIO,
+  PVC-backed CGG state, local profile secrets, read-only smoke, access,
+  suspend, and reset through the active profile only
+- proposed next state: governed service-mode implementation after security and
+  platform gates are complete
+- blocked until governed gates: stage/prod API listener, stage/prod workers,
+  governed shared metadata store, governed shared artifact store, dashboard raw
+  upload or browsing, broker adapters, WGCF adapters, scanner execution, model
+  invocation, stage, and production
 
 ## Required Contracts
 
@@ -171,3 +176,7 @@ Runtime activation may happen only after:
 - security review is refreshed against implemented behavior
 - operator docs explain the normal and exceptional paths
 - validation proves default raw projection denial and ledger evidence behavior
+
+Local dev-integration activation is the only approved exception to the broader
+runtime block. It is local evidence only and does not satisfy governed
+stage/prod service-mode activation.
