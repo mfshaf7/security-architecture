@@ -101,6 +101,32 @@ review_inventory:
             path: docs/governance-engine-foundation.md
           - repo: platform-engineering
             path: docs/components/workspace-governance-control-fabric/validator-invocation-gates.md
+    context-governance-gateway:
+      owner_repo: context-governance-gateway
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
+        reviewed_on: 2026-05-05
+        review_due_on: 2026-11-05
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
+        reviewed_on: 2026-05-05
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - context-admission-local-artifact-custody
+          - deny-raw-model-projection
+          - local-context-packet-generation
+        owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -402,6 +428,32 @@ review_inventory:
             path: docs/components/workspace-governance-control-fabric/validator-invocation-gates.md
           - repo: workspace-governance
             path: contracts/governance-engine-shadow-parity.yaml
+    context-governance-gateway:
+      owner_repo: context-governance-gateway
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
+        reviewed_on: 2026-05-05
+        review_due_on: 2026-11-05
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
+        reviewed_on: 2026-05-05
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - context-admission-local-artifact-custody
+          - deny-raw-model-projection
+          - local-context-packet-generation
+        owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
     openclaw-host-bridge:
       owner_repo: openclaw-host-bridge
       scope: component
