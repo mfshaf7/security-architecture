@@ -14,6 +14,7 @@ points to their security views where they exist.
 | Observability stack | visibility plane | holds operational telemetry, alerts, and sensitive runtime metadata | [`../components/observability/README.md`](../components/observability/README.md) |
 | Platform PostgreSQL | shared data service | stores platform-managed state for platform products and services | [`../components/platform-postgresql/README.md`](../components/platform-postgresql/README.md) |
 | workspace-governance-control-fabric | governance runtime control fabric | evaluates workspace readiness/admission inputs and will hold receipt, graph, and ledger runtime surfaces | [`../components/workspace-governance-control-fabric/README.md`](../components/workspace-governance-control-fabric/README.md) |
+| context-governance-gateway | context admission runtime implementation | captures, redacts, budgets, and projects operational context before it reaches operators, CI, automation, or AI-assisted workflows | [`../components/context-governance-gateway/README.md`](../components/context-governance-gateway/README.md) |
 | operator-orchestration-service | shared operator workflow broker | holds backend credentials, authenticates machine callers, and emits durable workflow audit | [`../components/operator-orchestration-service/README.md`](../components/operator-orchestration-service/README.md) |
 
 ## Product And Runtime Components
