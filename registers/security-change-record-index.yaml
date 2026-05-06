@@ -1429,14 +1429,3 @@ change_records:
   - R-007
   workstreams:
   - WS-007
-- repo: platform-engineering
-  path: docs/records/change-records/2026-05-06-accepted-idea-delivery-optimized-art-smoke.md
-  date: '2026-05-06'
-  short_title: Accepted-idea-delivery optimized ART smoke coverage
-  review_areas:
-  - delivery
-  - runtime
-  findings: []
-  risks: []
-  workstreams:
-  - WS-007
