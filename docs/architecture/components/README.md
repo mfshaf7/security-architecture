@@ -13,6 +13,7 @@ especially sensitive runtime-side components.
 - [`workspace-governance-control-fabric/README.md`](workspace-governance-control-fabric/README.md)
 - [`context-governance-gateway/README.md`](context-governance-gateway/README.md)
 - [`governed-ai-gateway/README.md`](governed-ai-gateway/README.md)
+- [`workspace-prototype-studio/README.md`](workspace-prototype-studio/README.md)
 - [`host-control-plugin/README.md`](host-control-plugin/README.md)
 - [`openclaw-host-bridge/README.md`](openclaw-host-bridge/README.md)
 - [`openclaw-runtime-distribution/README.md`](openclaw-runtime-distribution/README.md)
