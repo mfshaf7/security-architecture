@@ -12,6 +12,7 @@ especially sensitive runtime-side components.
 - [`platform-postgresql/README.md`](platform-postgresql/README.md)
 - [`workspace-governance-control-fabric/README.md`](workspace-governance-control-fabric/README.md)
 - [`context-governance-gateway/README.md`](context-governance-gateway/README.md)
+- [`governed-ai-gateway/README.md`](governed-ai-gateway/README.md)
 - [`host-control-plugin/README.md`](host-control-plugin/README.md)
 - [`openclaw-host-bridge/README.md`](openclaw-host-bridge/README.md)
 - [`openclaw-runtime-distribution/README.md`](openclaw-runtime-distribution/README.md)
