@@ -476,6 +476,42 @@ review_inventory:
             path: docs/components/context-governance-gateway/release-governance.md
           - repo: context-governance-gateway
             path: docs/operating-model/dev-integration-service.md
+    governed-ai-gateway:
+      owner_repo: platform-engineering
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-05-06-governed-ai-gateway-devint-runtime.md
+        reviewed_on: 2026-05-06
+        review_due_on: 2026-11-06
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-05-06-governed-ai-gateway-devint-runtime.md
+        reviewed_on: 2026-05-06
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - governed-ai-gateway-component-admission
+          - governed-ai-gateway-devint-runtime
+          - provider-credential-custody
+          - ai-consumer-egress-denial
+        owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-05-06-governed-ai-gateway-devint-runtime.md
+          - repo: security-architecture
+            path: docs/reviews/platform/2026-05-06-governed-ai-gateway-devint-runtime.md
+          - repo: platform-engineering
+            path: docs/components/governed-ai-gateway/README.md
+          - repo: platform-engineering
+            path: security/governed-ai-access-plane.yaml
+          - repo: workspace-governance
+            path: contracts/components.yaml
     openclaw-host-bridge:
       owner_repo: openclaw-host-bridge
       scope: component
