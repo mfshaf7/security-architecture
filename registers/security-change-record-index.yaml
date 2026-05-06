@@ -1243,6 +1243,18 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-05-06-art-projection-sync-cgg-subprocess-capture.md
+  date: '2026-05-06'
+  short_title: 2026-05-06-art-projection-sync-cgg-subprocess-capture
+  review_areas:
+  - delivery
+  - runtime
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-05-06-feature-closeout-narrative-contract.md
   date: '2026-05-06'
   short_title: 2026-05-06-feature-closeout-narrative-contract
