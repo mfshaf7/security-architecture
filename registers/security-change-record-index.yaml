@@ -1453,3 +1453,19 @@ change_records:
   - R-007
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-05-06-governed-ai-gateway-devint-runtime.md
+  date: '2026-05-06'
+  short_title: Governed AI gateway dev-integration runtime
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  - ai
+  findings:
+  - F-007
+  risks:
+  - R-007
+  workstreams:
+  - WS-007
