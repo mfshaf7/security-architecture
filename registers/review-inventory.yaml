@@ -139,6 +139,20 @@ review_inventory:
             path: docs/components/context-governance-gateway/release-governance.md
           - repo: context-governance-gateway
             path: docs/operating-model/dev-integration-service.md
+    workspace-prototype-studio:
+      owner_repo: workspace-prototype-studio
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-05-06-workspace-prototype-studio-product-incubation-baseline.md
+        reviewed_on: 2026-05-06
+        review_due_on: 2026-11-06
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-05-06-workspace-prototype-studio-product-incubation-baseline.md
+        reviewed_on: 2026-05-06
+        status: baseline-current
+        decision: approved-with-findings
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
