@@ -232,7 +232,7 @@ def validate(repo_root: Path, workspace_root: Path) -> list[str]:
             errors.append(
                 f"assessment-inventory {name}: review_due_on {review_due_on} must not be before reviewed_on {reviewed_on}"
             )
-        if review_due_on and review_due_on < today:
+        if status == "published" and review_due_on and review_due_on < today:
             errors.append(
                 f"assessment-inventory {name}: assessment freshness expired on {review_due_on}"
             )
@@ -270,11 +270,21 @@ def validate(repo_root: Path, workspace_root: Path) -> list[str]:
             errors.append(
                 f"remediation-inventory workstreams.{workstream_id}: status must be one of {sorted(WORKSTREAM_STATUSES)}"
             )
-        parse_date(
+        target_date = parse_date(
             (workstream or {}).get("target_date"),
             label=f"remediation-inventory workstreams.{workstream_id}.target_date",
             errors=errors,
         )
+        if status == "active" and target_date and target_date < today:
+            errors.append(
+                f"remediation-inventory workstreams.{workstream_id}: active workstream target_date {target_date} is already in the past"
+            )
+        if status == "active" and not str(
+            (workstream or {}).get("target_date_rationale") or ""
+        ).strip():
+            errors.append(
+                f"remediation-inventory workstreams.{workstream_id}: active workstream must declare target_date_rationale"
+            )
         validate_artifact_refs(
             (workstream or {}).get("artifacts") or [],
             label=f"remediation-inventory workstreams.{workstream_id}",
@@ -335,6 +345,22 @@ def validate(repo_root: Path, workspace_root: Path) -> list[str]:
                     errors.append(
                         f"remediation-inventory findings.{item_id}: open finding target_date {target_date} is already in the past"
                     )
+                if status == "open":
+                    last_reviewed_on = parse_date(
+                        (entry or {}).get("last_reviewed_on"),
+                        label=f"remediation-inventory findings.{item_id}.last_reviewed_on",
+                        errors=errors,
+                    )
+                    if last_reviewed_on and last_reviewed_on > today:
+                        errors.append(
+                            f"remediation-inventory findings.{item_id}: last_reviewed_on {last_reviewed_on} is in the future"
+                        )
+                    if not str(
+                        (entry or {}).get("target_date_rationale") or ""
+                    ).strip():
+                        errors.append(
+                            f"remediation-inventory findings.{item_id}: open finding must declare target_date_rationale"
+                        )
                 risk_id = (entry or {}).get("risk_id")
                 if risk_id not in risks:
                     errors.append(

@@ -5,4 +5,4 @@ R-003,Controller Git credential drift,High,Medium,Mitigated,Platform,Mitigated t
 R-004,Manual-unseal probe fragility,Medium,Medium,Mitigated,Platform,Mitigated through probe redesign,Low,F-004,WS-004
 R-005,Secret delivery recovery brittleness,Medium,Medium,Open,Platform,Mitigate,Medium,F-005,WS-005
 R-006,High-trust host-control boundary exposure,High,Medium,Open,Security Architecture / Platform,Mitigate,High,F-006,WS-006
-R-007,AI and agentic governance immaturity,Medium,Medium,Open,Security Architecture,Mitigate,Medium,F-007,WS-007
+R-007,AI and agentic governance immaturity,Medium,Medium,Mitigated,Security Architecture,"Mitigated through formal AI standards, inventories, governed model-profile contracts, context controls, and delta-review gates",Medium,F-007,WS-007
