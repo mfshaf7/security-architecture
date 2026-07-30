@@ -149,10 +149,22 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-05-06-workspace-prototype-studio-product-incubation-baseline.md
-        reviewed_on: 2026-05-06
-        status: baseline-current
+        path: docs/reviews/components/2026-07-30-governance-operations-console-baseline-security-delta.md
+        reviewed_on: 2026-07-30
+        status: current
         decision: approved-with-findings
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - prototype-real-data-or-client-visible
+          - governance-console-prototype-local-ai-invocation
+        owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-07-30-governance-operations-console-baseline-security-delta.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
