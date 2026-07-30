@@ -4,7 +4,8 @@ workstreams:
     title: Human identity modernization
     owner: security-architecture
     status: active
-    target_date: 2026-06-17
+    target_date: 2026-10-30
+    target_date_rationale: Quarterly disposition checkpoint retained because federated human access and break-glass separation are not implemented.
     artifacts:
       - repo: security-architecture
         path: docs/adr/0001-federated-human-access.md
@@ -19,7 +20,8 @@ workstreams:
     title: Recovery governance
     owner: security-architecture
     status: active
-    target_date: 2026-05-18
+    target_date: 2026-10-30
+    target_date_rationale: Quarterly disposition checkpoint retained pending custody, dual-control, and recovery-drill evidence.
     artifacts:
       - repo: security-architecture
         path: docs/standards/secrets-and-recovery.md
@@ -34,7 +36,8 @@ workstreams:
     title: Machine identity modernization
     owner: security-architecture
     status: active
-    target_date: 2026-06-17
+    target_date: 2026-10-30
+    target_date_rationale: Machine identity modernization remains active beyond the mitigated repository-visibility defect.
     artifacts:
       - repo: security-architecture
         path: docs/adr/0002-machine-git-access.md
@@ -64,7 +67,8 @@ workstreams:
     title: Secret delivery resilience
     owner: platform-engineering
     status: active
-    target_date: 2026-06-17
+    target_date: 2026-10-30
+    target_date_rationale: Quarterly disposition checkpoint retained pending an end-to-end secret-delivery recovery drill.
     artifacts:
       - repo: security-architecture
         path: docs/architecture/domains/secrets-and-recovery.md
@@ -79,7 +83,8 @@ workstreams:
     title: Host-control security review
     owner: security-architecture
     status: active
-    target_date: 2026-06-17
+    target_date: 2026-10-30
+    target_date_rationale: Quarterly disposition checkpoint retained pending active bridge policy, identity, and audit attestation.
     artifacts:
       - repo: security-architecture
         path: docs/architecture/domains/host-control.md
@@ -96,8 +101,9 @@ workstreams:
   WS-007:
     title: AI security and governance
     owner: security-architecture
-    status: active
-    target_date: 2026-06-17
+    status: complete
+    target_date: 2026-07-30
+    completed_on: 2026-07-30
     artifacts:
       - repo: security-architecture
         path: docs/adr/0003-ai-governance-baseline.md
@@ -138,7 +144,9 @@ findings:
       - recovery handling
     owner: Security Architecture / Platform
     status: open
-    target_date: 2026-06-17
+    target_date: 2026-10-30
+    last_reviewed_on: 2026-07-30
+    target_date_rationale: Retained for the next quarterly disposition checkpoint because federated access remains proposed and operating proof is absent.
     risk_id: R-001
     workstream: WS-001
     remediation_artifacts:
@@ -154,7 +162,9 @@ findings:
       - Vault recovery authority
     owner: Security Architecture / Platform
     status: open
-    target_date: 2026-05-18
+    target_date: 2026-10-30
+    last_reviewed_on: 2026-07-30
+    target_date_rationale: Retained for the next quarterly disposition checkpoint pending custody, dual-control, and drill evidence.
     risk_id: R-002
     workstream: WS-002
     remediation_artifacts:
@@ -207,7 +217,9 @@ findings:
       - runtime namespaces
     owner: Platform
     status: open
-    target_date: 2026-06-17
+    target_date: 2026-10-30
+    last_reviewed_on: 2026-07-30
+    target_date_rationale: Retained for the next quarterly disposition checkpoint pending current end-to-end recovery evidence.
     risk_id: R-005
     workstream: WS-005
     remediation_artifacts:
@@ -227,7 +239,9 @@ findings:
       - WSL host
     owner: Security Architecture / Platform
     status: open
-    target_date: 2026-06-17
+    target_date: 2026-10-30
+    last_reviewed_on: 2026-07-30
+    target_date_rationale: Retained for the next quarterly disposition checkpoint pending active policy, identity, audit, and environment-boundary attestation.
     risk_id: R-006
     workstream: WS-006
     remediation_artifacts:
@@ -246,8 +260,9 @@ findings:
     affected_assets:
       - AI-enabled and model-assisted workflows
     owner: Security Architecture
-    status: open
+    status: mitigated
     target_date: 2026-06-17
+    mitigated_on: 2026-07-30
     risk_id: R-007
     workstream: WS-007
     remediation_artifacts:
@@ -372,9 +387,9 @@ risks:
     title: AI and agentic governance immaturity
     severity: Medium
     likelihood: Medium
-    status: open
+    status: mitigated
     owner: Security Architecture
-    treatment: Mitigate
+    treatment: Mitigated through formal AI standards, inventories, governed model-profile contracts, context controls, and delta-review gates
     residual_risk: Medium
     related_findings:
       - F-007
