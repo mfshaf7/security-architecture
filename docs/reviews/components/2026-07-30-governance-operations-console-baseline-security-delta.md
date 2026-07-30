@@ -189,5 +189,5 @@ Approval excludes:
 - [Workspace Prototype Studio product-incubation baseline](2026-05-06-workspace-prototype-studio-product-incubation-baseline.md)
 - [Security delta review process](../security-delta-review-process.md)
 - [Security review checklist](../security-review-checklist.md)
-- `workspace-prototype-studio/apps/governance-operations-console`
-- `workspace-prototype-studio/docs/prototypes/governance-operations-console/baseline-candidate-review.md`
+- [Governance Operations Console source candidate at `aa12fdb`](https://github.com/mfshaf7/workspace-prototype-studio/tree/aa12fdbb9b4f7b16c8ac2d2229c4dd4f6c95ec98/apps/governance-operations-console)
+- [Baseline candidate review at `aa12fdb`](https://github.com/mfshaf7/workspace-prototype-studio/blob/aa12fdbb9b4f7b16c8ac2d2229c4dd4f6c95ec98/docs/prototypes/governance-operations-console/baseline-candidate-review.md)
