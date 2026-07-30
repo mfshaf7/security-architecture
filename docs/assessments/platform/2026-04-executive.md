@@ -4,12 +4,13 @@
 | --- | --- |
 | Document ID | SAR-EXEC-2026-04 |
 | Version | 1.1 |
-| Status | Published |
+| Status | Superseded |
 | Owner | Security Architecture |
 | Reviewers | mfshaf7 |
 | Classification | Internal |
 | Created | 2026-04-02 |
-| Last Updated | 2026-04-18 |
+| Last Updated | 2026-07-30 |
+| Superseded By | [`2026-07-executive.md`](2026-07-executive.md) |
 | Related Detailed Assessment | [`2026-04-detailed.md`](2026-04-detailed.md) |
 | Related Findings Register | [`../../../registers/findings-register.md`](../../../registers/findings-register.md) |
 | Related Risk Register | [`../../../registers/risk-register.md`](../../../registers/risk-register.md) |

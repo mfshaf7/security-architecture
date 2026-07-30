@@ -4,10 +4,10 @@
 
 | Finding ID | Title | Severity | Likelihood | Affected Assets | Owner | Status | Target Date | Risk ID | Workstream |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| F-001 | Shared privileged credential blast radius | High | High | Vault, Argo CD, local admin, recovery handling | Security Architecture / Platform | Open | 2026-06-17 | R-001 | WS-001 |
-| F-002 | Recovery-material governance is incomplete | High | Medium | Vault recovery authority | Security Architecture / Platform | Open | 2026-05-18 | R-002 | WS-002 |
+| F-001 | Shared privileged credential blast radius | High | High | Vault, Argo CD, local admin, recovery handling | Security Architecture / Platform | Open | 2026-10-30 | R-001 | WS-001 |
+| F-002 | Recovery-material governance is incomplete | High | Medium | Vault recovery authority | Security Architecture / Platform | Open | 2026-10-30 | R-002 | WS-002 |
 | F-003 | Argo CD repository trust drifted out of managed visibility | High | Medium | Argo CD, GitOps repo access | Platform | Mitigated | 2026-04-03 | R-003 | WS-003 |
 | F-004 | Vault manual-unseal deployment was operationally fragile | Medium | Medium | Vault control plane | Platform | Mitigated | 2026-04-03 | R-004 | WS-004 |
-| F-005 | Secret delivery was correct in design but brittle in recovery | Medium | Medium | Vault, ESO, runtime namespaces | Platform | Open | 2026-06-17 | R-005 | WS-005 |
-| F-006 | Host-control crosses a high-trust boundary | High | Medium | OpenClaw gateway, host bridge, WSL host | Security Architecture / Platform | Open | 2026-06-17 | R-006 | WS-006 |
-| F-007 | AI and agentic governance is not yet formalized | Medium | Medium | AI-enabled and model-assisted workflows | Security Architecture | Open | 2026-06-17 | R-007 | WS-007 |
+| F-005 | Secret delivery was correct in design but brittle in recovery | Medium | Medium | Vault, ESO, runtime namespaces | Platform | Open | 2026-10-30 | R-005 | WS-005 |
+| F-006 | Host-control crosses a high-trust boundary | High | Medium | OpenClaw gateway, host bridge, WSL host | Security Architecture / Platform | Open | 2026-10-30 | R-006 | WS-006 |
+| F-007 | AI and agentic governance is not yet formalized | Medium | Medium | AI-enabled and model-assisted workflows | Security Architecture | Mitigated | 2026-06-17 | R-007 | WS-007 |
