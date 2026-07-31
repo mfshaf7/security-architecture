@@ -7,6 +7,7 @@ lifecycle, or product delivery lane that spans more than one component.
 
 Current outputs:
 
+- [`2026-07-31-governance-operations-console-source-owned-local-preview.md`](2026-07-31-governance-operations-console-source-owned-local-preview.md)
 - [`2026-04-18-openclaw-security-baseline.md`](2026-04-18-openclaw-security-baseline.md)
 - [`2026-04-18-openproject-security-baseline.md`](2026-04-18-openproject-security-baseline.md)
 - [`2026-04-21-openclaw-stage-bridge-persistence-and-status-truth.md`](2026-04-21-openclaw-stage-bridge-persistence-and-status-truth.md)

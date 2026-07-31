@@ -297,37 +297,19 @@ review_inventory:
             path: docs/operations/delivery-workflow-operator-surface.md
   products:
     governance-operations-console:
-      owner_repo: governance-operations-console
+      owner_repo: platform-engineering
       scope: product
       baseline_review:
-        path: docs/reviews/components/2026-07-31-governance-operations-console-source-graduation.md
+        path: docs/reviews/products/2026-07-31-governance-operations-console-source-owned-local-preview.md
         reviewed_on: 2026-07-31
         review_due_on: 2027-01-31
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-31-governance-operations-console-source-graduation.md
+        path: docs/reviews/products/2026-07-31-governance-operations-console-source-owned-local-preview.md
         reviewed_on: 2026-07-31
-        status: current
+        status: baseline-current
         decision: approved-with-findings
-        review_areas:
-          - identity
-          - secrets
-          - delivery
-          - runtime
-          - ai
-        review_trigger_ids:
-          - governance-console-source-graduation
-          - governance-console-live-integration
-        owner_artifacts:
-          - repo: governance-operations-console
-            path: README.md
-          - repo: governance-operations-console
-            path: AGENTS.md
-          - repo: governance-operations-console
-            path: docs/security-and-data-boundaries.md
-          - repo: security-architecture
-            path: docs/reviews/components/2026-07-31-governance-operations-console-source-graduation.md
     openclaw:
       owner_repo: platform-engineering
       scope: product
