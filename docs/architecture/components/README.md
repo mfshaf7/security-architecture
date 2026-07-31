@@ -10,6 +10,7 @@ especially sensitive runtime-side components.
 - [`external-secrets/README.md`](external-secrets/README.md)
 - [`observability/README.md`](observability/README.md)
 - [`platform-postgresql/README.md`](platform-postgresql/README.md)
+- [`temporal/README.md`](temporal/README.md)
 - [`workspace-governance-control-fabric/README.md`](workspace-governance-control-fabric/README.md)
 - [`context-governance-gateway/README.md`](context-governance-gateway/README.md)
 - [`governed-ai-gateway/README.md`](governed-ai-gateway/README.md)

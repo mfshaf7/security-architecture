@@ -25,6 +25,7 @@ Current baseline outputs:
 - [`2026-05-05-context-governance-gateway-phase-1-local-custody.md`](2026-05-05-context-governance-gateway-phase-1-local-custody.md)
 - [`2026-05-05-context-governance-gateway-service-mode-admission-gates.md`](2026-05-05-context-governance-gateway-service-mode-admission-gates.md)
 - [`2026-05-05-context-governance-gateway-active-devint-runtime.md`](2026-05-05-context-governance-gateway-active-devint-runtime.md)
+- [`2026-07-31-temporal-durable-orchestration-build-admission.md`](2026-07-31-temporal-durable-orchestration-build-admission.md)
 
 Owner repos should reference a concrete dated review artifact from this
 directory when workspace governance requires a `review_output_path`.
