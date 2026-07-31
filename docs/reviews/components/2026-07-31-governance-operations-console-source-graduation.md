@@ -6,6 +6,7 @@
 - owner repo: `security-architecture`
 - affected review subject:
   - `repos.governance-operations-console`
+  - `products.governance-operations-console`
 - security ART item: `openproject://work_packages/785`
 - source landing ART item: `openproject://work_packages/784`
 - source review:
