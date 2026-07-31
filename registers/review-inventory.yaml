@@ -175,7 +175,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-31-governance-operations-console-owner-repository-admission.md
+        path: docs/reviews/components/2026-07-31-governance-operations-console-source-graduation.md
         reviewed_on: 2026-07-31
         status: current
         decision: approved-with-findings
@@ -196,8 +196,10 @@ review_inventory:
             path: AGENTS.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
+          - repo: governance-operations-console
+            path: docs/graduation/source-manifest.json
           - repo: security-architecture
-            path: docs/reviews/components/2026-07-31-governance-operations-console-owner-repository-admission.md
+            path: docs/reviews/components/2026-07-31-governance-operations-console-source-graduation.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
