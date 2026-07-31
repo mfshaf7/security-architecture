@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-05-06-governed-ai-gateway-devint-runtime.md
-        reviewed_on: 2026-05-06
+        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
+        reviewed_on: 2026-07-31
         status: current
         decision: approved-with-findings
         review_areas:
@@ -22,19 +22,19 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governed-ai-gateway-devint-runtime
-          - provider-credential-custody
-          - ai-consumer-egress-denial
-          - access-plane-audit-boundary
+          - temporal-durable-runtime-build-admission
+          - temporal-workflow-history-data-boundary
+          - temporal-approval-and-retry-boundary
+          - temporal-cgg-packet-only-boundary
         owner_artifacts:
           - repo: platform-engineering
-            path: docs/components/governed-ai-gateway/README.md
+            path: docs/components/temporal/README.md
           - repo: platform-engineering
-            path: security/governed-ai-access-plane.yaml
+            path: dev-integration/profiles/temporal/profile.yaml
           - repo: platform-engineering
-            path: security/governed-ai-devint-egress-policy.yaml
+            path: docs/decisions/adr/ADR-017-temporal-durable-workflow-runtime.md
           - repo: security-architecture
-            path: docs/reviews/platform/2026-05-06-governed-ai-gateway-devint-runtime.md
+            path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -45,8 +45,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
-        reviewed_on: 2026-05-01
+        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
+        reviewed_on: 2026-07-31
         status: current
         decision: approved-with-findings
         review_areas:
@@ -56,20 +56,19 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - wgcf-validator-invocation-shadow-parity
-          - artifact-custody-and-receipt-boundary
-          - workspace-control-plane-validator-cutover
+          - temporal-durable-runtime-build-admission
+          - temporal-workflow-history-data-boundary
+          - temporal-approval-and-retry-boundary
+          - temporal-cgg-packet-only-boundary
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/governance-engine-shadow-parity.yaml
+            path: contracts/durable-orchestration.yaml
           - repo: workspace-governance
-            path: docs/governance-engine-foundation.md
+            path: contracts/developer-integration-profiles.yaml
           - repo: workspace-governance
-            path: docs/governance-validator-catalog.md
-          - repo: workspace-governance
-            path: scripts/validate_governance_engine_shadow_parity.py
+            path: docs/durable-orchestration-governance.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
+            path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -482,6 +481,42 @@ review_inventory:
         reviewed_on: 2026-04-18
         status: baseline-current
         decision: approved
+    temporal:
+      owner_repo: platform-engineering
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
+        reviewed_on: 2026-07-31
+        review_due_on: 2027-01-31
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
+        reviewed_on: 2026-07-31
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - temporal-durable-runtime-build-admission
+          - temporal-workflow-history-data-boundary
+          - temporal-approval-and-retry-boundary
+          - temporal-cgg-packet-only-boundary
+        owner_artifacts:
+          - repo: security-architecture
+            path: docs/architecture/components/temporal/README.md
+          - repo: security-architecture
+            path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
+          - repo: platform-engineering
+            path: docs/components/temporal/README.md
+          - repo: platform-engineering
+            path: dev-integration/profiles/temporal/profile.yaml
+          - repo: workspace-governance
+            path: contracts/durable-orchestration.yaml
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
