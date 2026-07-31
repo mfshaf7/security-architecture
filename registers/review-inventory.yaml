@@ -165,6 +165,39 @@ review_inventory:
         owner_artifacts:
           - repo: security-architecture
             path: docs/reviews/components/2026-07-30-governance-operations-console-baseline-security-delta.md
+    governance-operations-console:
+      owner_repo: governance-operations-console
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-07-31-governance-operations-console-owner-repository-admission.md
+        reviewed_on: 2026-07-31
+        review_due_on: 2027-01-31
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-07-31-governance-operations-console-owner-repository-admission.md
+        reviewed_on: 2026-07-31
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - governance-console-owner-repository-admission
+          - governance-console-source-graduation
+          - governance-console-live-integration
+        owner_artifacts:
+          - repo: governance-operations-console
+            path: README.md
+          - repo: governance-operations-console
+            path: AGENTS.md
+          - repo: governance-operations-console
+            path: docs/security-and-data-boundaries.md
+          - repo: security-architecture
+            path: docs/reviews/components/2026-07-31-governance-operations-console-owner-repository-admission.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
