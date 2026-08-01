@@ -117,5 +117,7 @@ AI triage remains deferred.
   [../../reviews/components/2026-04-20-operator-orchestration-service-accepted-idea-delivery-consume.md](../../reviews/components/2026-04-20-operator-orchestration-service-accepted-idea-delivery-consume.md)
 - broker-only delivery execution cutover review:
   [../../reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md](../../reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md)
+- durable-orchestration source-admission review:
+  [../../../reviews/components/2026-08-01-operator-orchestration-service-durable-orchestration-source-admission.md](../../../reviews/components/2026-08-01-operator-orchestration-service-durable-orchestration-source-admission.md)
 - AI governance standard:
   [../../standards/ai-security-and-governance.md](../../standards/ai-security-and-governance.md)
