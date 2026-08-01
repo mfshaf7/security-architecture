@@ -66,9 +66,9 @@ The merged source provides:
 The implementation does not give Temporal direct OpenProject, Console,
 Platform, Security, or WGCF authority.
 
-### Operating Evidence
+### Source And Build Validation
 
-Accepted source evidence is limited to:
+Accepted source and build validation is limited to:
 
 - 425 passing OOS tests
 - deterministic workflow-bundle validation
@@ -87,9 +87,13 @@ Accepted source evidence is limited to:
 - paired WGCF source evidence at
   `c59f34b6893a763df82184fc54c6c6dc1982c38e`
 
-No live Temporal namespace, worker poll, workflow execution, activity
-dispatch, durable history, database, network path, credential delivery,
-restart, replay, backup, restore, or incident-response proof is claimed.
+### Operating Evidence
+
+Operating evidence is absent. No live Temporal namespace, worker poll,
+workflow execution, activity dispatch, durable history, database, network
+path, credential delivery, restart, replay, backup, restore, or
+incident-response proof is claimed. Source tests, local image builds, and local
+health or fail-closed status checks cannot satisfy a runtime activation gate.
 
 ## Review Areas
 
