@@ -18,9 +18,9 @@
 - future pre-run authorization: `openproject://work_packages/790`
 - future post-run review: `openproject://work_packages/791`
 - reviewed Workspace Governance PR: `workspace-governance` PR #134 at
-  `b061533bbb04d320d06c657d0b8b466adc7c6cb9`
+  `f211f7a4933ae49217bc0bab02df453aefe432e2`
 - reviewed Platform PR: `platform-engineering` PR #197 at
-  `c773e5e302bfb60035b5ba8cef903cc0fbe5ccfe`
+  `67f9a1b8f8b642b1fa309d46aad395ce2e74a6db`
 - decision: `approved-with-findings`
 
 This review accepts the contract design for one permit-gated Temporal
@@ -57,8 +57,9 @@ The reviewed source is contract-only:
 
 - a strict authorization schema binds one component, profile lifecycle,
   definition version, source revisions, immutable artifacts, namespace,
-  identities, task queues, scenarios, actions, approvals, validity window,
-  evidence owner, baseline, restore, exceptions, and stop conditions
+  identities, task queues, scenarios, actions, the exact reviewed executor
+  revision and Review Packet, approvals, validity window, evidence owner,
+  baseline, restore, exceptions, and stop conditions
 - validators fail closed on stale, widened, malformed, or unsupported permit
   fields
 - the Platform drill profile scopes Temporal, the OOS worker, and the WGCF
@@ -66,6 +67,9 @@ The reviewed source is contract-only:
 - ledger creation requires the exact authorization ref and digest
 - activation recording remains denied until every scoped surface has a
   separate operator-reviewable baseline evidence ref
+- authorization expiry denies new proof work while preserving only the fixed,
+  run-bound exact-baseline cleanup actions until restoration or governed
+  exception closure
 - ordinary Temporal launch, access, smoke, backup, restore, and workflow
   commands remain denied while the profile is `build-admitted`
 - the operator surface states that no issuer, executor, permit, or runtime
