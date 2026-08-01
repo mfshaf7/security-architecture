@@ -23,9 +23,9 @@
 - future pre-run authorization: `openproject://work_packages/790`
 - future post-run review: `openproject://work_packages/791`
 - reviewed Workspace Governance PR: `workspace-governance` PR #134 at
-  `2411d755b99fa284fcbd9a988b1cc3383a2a19aa`
+  `8edd74cf9b3e033f46465a5eaef59142f12ec7b1`
 - reviewed Platform PR: `platform-engineering` PR #197 at
-  `bc965b7c375f8fcff4b39dbae553c9f663d40ebd`
+  `f7f01e061abe48154cbb562fe50f9e4544b54d9e`
 - decision: `approved-with-findings`
 
 This review accepts the contract design for one permit-gated Temporal
@@ -76,8 +76,11 @@ The reviewed source is contract-only:
   covering every authorization claim
 - one authorization id is bound to one run and must be atomically consumed
   before the first mutation; every duplicate consumption attempt is denied
-- a strict result schema binds the consumed authorization and run, scenario
-  outcomes, owner receipts, and immutable exact-baseline restoration evidence
+- a strict result schema binds the consumed authorization and run, exactly one
+  keyed outcome for every authorized commissioning scenario, owner receipts,
+  and immutable exact-baseline restoration evidence; `passed` requires every
+  scenario and exact restoration to pass without an exception, while a
+  governed restoration exception forces `stopped`
 - contract validators fail closed if these required schema, semantic,
   consumption, approval, baseline, or result bindings are weakened
 - the Platform drill profile scopes Temporal, the OOS worker, and the WGCF
@@ -216,6 +219,8 @@ Approved:
 - the controlled-proof authorization schema and fail-closed validation model
 - the controlled-proof result schema and its authorization, run, scenario,
   receipt, and restoration bindings
+- exact scenario coverage and denial of a passing result when restoration
+  closes through a governed exception
 - the `component-commissioning-proof` runtime-drill taxonomy
 - the Platform operator procedure and machine-readable drill/evidence profile
 - baseline attestation before activation and exact-baseline restore
