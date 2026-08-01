@@ -90,9 +90,10 @@ post-run Security review.
 The contract correctly binds the Temporal runtime identity, OOS worker
 identity, WGCF worker identity, namespace, and distinct task queues. The future
 permit must resolve those refs to the exact operator-approved identities and
-must expire before any mutation. Cross-owner queue consumption, anonymous
-namespace access, shared long-lived worker credentials, and direct Console
-credentials remain denied.
+must be checked as unexpired immediately before the first mutation and remain
+valid throughout the permitted operation. Cross-owner queue consumption,
+anonymous namespace access, shared long-lived worker credentials, and direct
+Console credentials remain denied.
 
 The future Security authorizer must compare the permit against current source,
 artifact, identity, namespace, and queue truth. A syntactically valid reference
@@ -121,7 +122,7 @@ The future sequence remains separate:
 
 1. #789 lands the contract and operator surface.
 2. #790 reviews and authorizes one exact, unexpired permit.
-3. the permit-bound executor may run only the declared proof.
+3. #751 uses the permit-bound executor to run only the declared proof.
 4. exact-baseline restore completes before the run can close.
 5. #791 reviews the operating evidence before any lifecycle decision.
 
@@ -143,14 +144,15 @@ readiness, production readiness, or safe reuse for another source revision.
 
 1. The permit issuer and executor are not implemented. They must remain absent
    or fail closed until separately reviewed source exists. Owners: Platform and
-   Workspace Governance. ART: #790 and the later executor work.
+   Workspace Governance. ART: #751, with #790 as its Security authorization
+   prerequisite.
 2. No per-run Security authorization exists. This contract review must not be
    used as `security_authorization_ref`; #790 must bind the exact permit and
    current runtime truth.
 3. No operating evidence exists for identities, secrets, network isolation,
    persistence, restart, replay, idempotency, payload boundaries, backup,
    restore, or incident fencing. Owners: Platform, OOS, and WGCF. ART: #790,
-   the controlled proof, and #791.
+   #751, and #791.
 4. The local drill ledger can contain environment-sensitive references. Raw
    ledger files must stay local, while bounded summaries and durable refs are
    promoted through approved evidence custody.
