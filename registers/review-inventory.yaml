@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
-        reviewed_on: 2026-07-31
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+        reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -20,21 +20,20 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - temporal-durable-runtime-build-admission
-          - temporal-workflow-history-data-boundary
-          - temporal-approval-and-retry-boundary
-          - temporal-cgg-packet-only-boundary
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
           - repo: platform-engineering
             path: docs/components/temporal/README.md
           - repo: platform-engineering
             path: dev-integration/profiles/temporal/profile.yaml
           - repo: platform-engineering
             path: docs/decisions/adr/ADR-017-temporal-durable-workflow-runtime.md
-          - repo: security-architecture
-            path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -45,8 +44,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
-        reviewed_on: 2026-07-31
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+        reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -54,21 +53,20 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - temporal-durable-runtime-build-admission
-          - temporal-workflow-history-data-boundary
-          - temporal-approval-and-retry-boundary
-          - temporal-cgg-packet-only-boundary
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
           - repo: workspace-governance
             path: contracts/durable-orchestration.yaml
           - repo: workspace-governance
             path: contracts/developer-integration-profiles.yaml
           - repo: workspace-governance
             path: docs/durable-orchestration-governance.md
-          - repo: security-architecture
-            path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -79,8 +77,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
-        reviewed_on: 2026-05-01
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+        reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -88,20 +86,22 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - wgcf-validator-invocation-profile-gates
-          - artifact-custody-and-receipt-boundary
-          - governance-runtime-control-fabric-cutover
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/orchestration_activities.py
+          - repo: workspace-governance-control-fabric
+            path: schemas/validation-readiness-activity-request.schema.json
+          - repo: workspace-governance-control-fabric
+            path: schemas/validation-readiness-activity-result.schema.json
           - repo: workspace-governance
-            path: contracts/governance-engine-shadow-parity.yaml
-          - repo: workspace-governance
-            path: docs/governance-engine-foundation.md
-          - repo: platform-engineering
-            path: docs/components/workspace-governance-control-fabric/validator-invocation-gates.md
+            path: contracts/durable-orchestration.yaml
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -269,7 +269,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-01-operator-orchestration-service-durable-orchestration-source-admission.md
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
         reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
@@ -279,20 +279,19 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - broker-runtime-and-caller-surface
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: src/app.js
-          - repo: operator-orchestration-service
-            path: src/config.js
+          - repo: security-architecture
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
           - repo: operator-orchestration-service
             path: src/orchestration/worker.js
           - repo: operator-orchestration-service
-            path: src/orchestration/generation-retirement.js
-          - repo: operator-orchestration-service
             path: contracts/orchestration/activation-evidence-manifest.schema.json
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-07-31-oos-durable-orchestration-source-admission.md
+          - repo: workspace-governance
+            path: contracts/durable-orchestration.yaml
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -490,8 +489,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
-        reviewed_on: 2026-07-31
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+        reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -499,17 +498,16 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - temporal-durable-runtime-build-admission
-          - temporal-workflow-history-data-boundary
-          - temporal-approval-and-retry-boundary
-          - temporal-cgg-packet-only-boundary
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
           - repo: security-architecture
             path: docs/architecture/components/temporal/README.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
           - repo: platform-engineering
             path: docs/components/temporal/README.md
           - repo: platform-engineering
@@ -526,8 +524,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
-        reviewed_on: 2026-05-01
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+        reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -535,18 +533,22 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - wgcf-validator-invocation-profile-gates
-          - artifact-custody-and-receipt-boundary
-          - governance-runtime-control-fabric-cutover
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md
-          - repo: platform-engineering
-            path: docs/components/workspace-governance-control-fabric/validator-invocation-gates.md
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/orchestration_activities.py
+          - repo: workspace-governance-control-fabric
+            path: schemas/validation-readiness-activity-request.schema.json
+          - repo: workspace-governance-control-fabric
+            path: schemas/validation-readiness-activity-result.schema.json
           - repo: workspace-governance
-            path: contracts/governance-engine-shadow-parity.yaml
+            path: contracts/durable-orchestration.yaml
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -705,7 +707,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-01-operator-orchestration-service-durable-orchestration-source-admission.md
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
         reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
@@ -715,17 +717,16 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - broker-runtime-and-caller-surface
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: src/app.js
-          - repo: operator-orchestration-service
-            path: src/config.js
+          - repo: security-architecture
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
           - repo: operator-orchestration-service
             path: src/orchestration/worker.js
           - repo: operator-orchestration-service
-            path: src/orchestration/generation-retirement.js
-          - repo: operator-orchestration-service
             path: contracts/orchestration/activation-evidence-manifest.schema.json
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-07-31-oos-durable-orchestration-source-admission.md
+          - repo: workspace-governance
+            path: contracts/durable-orchestration.yaml
