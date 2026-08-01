@@ -6,8 +6,12 @@
 - owner repo: `security-architecture`
 - affected review subjects:
   - `components.temporal`
+  - `components.operator-orchestration-service`
+  - `components.workspace-governance-control-fabric`
   - `repos.platform-engineering`
+  - `repos.operator-orchestration-service`
   - `repos.workspace-governance`
+  - `repos.workspace-governance-control-fabric`
 - review triggers:
   - `temporal-controlled-runtime-proof-authorization`
   - `temporal-component-commissioning-runtime-drill`
@@ -176,7 +180,9 @@ readiness, production readiness, or safe reuse for another source revision.
    #751, and #791.
 4. The local drill ledger can contain environment-sensitive references. Raw
    ledger files must stay local, while bounded summaries and durable refs are
-   promoted through approved evidence custody.
+   promoted through approved evidence custody. Platform owns ledger custody
+   during #751; the post-run Security review verifies that boundary under #791.
+   Owners: Platform and Security. ART: #751 and #791.
 
 These are fail-closed future gates, not accepted live defects.
 
