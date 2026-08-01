@@ -11,6 +11,12 @@ The current security decision permits bounded source implementation in
 `dev-integration`. It does not approve an active runtime, self-serve launch,
 stage, production, or direct Console access.
 
+The controlled commissioning contract is also design-approved with findings.
+That review permits the fail-closed contract and operator surface to land, but
+it does not issue a run permit, authorize an executor, or approve runtime
+activation. A fresh pre-run Security authorization and a separate post-run
+review remain mandatory.
+
 ## Authority Boundary
 
 - `workspace-governance` owns orchestration authority and admission contracts.
@@ -149,3 +155,4 @@ Activation requires fresh review against implemented and operating evidence.
 ## Review
 
 - [2026-07-31 Temporal durable orchestration build admission](../../../reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md)
+- [2026-08-01 Temporal controlled commissioning proof contract](../../../reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md)

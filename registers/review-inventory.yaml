@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
-        reviewed_on: 2026-07-31
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+        reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -20,21 +20,20 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - temporal-durable-runtime-build-admission
-          - temporal-workflow-history-data-boundary
-          - temporal-approval-and-retry-boundary
-          - temporal-cgg-packet-only-boundary
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
           - repo: platform-engineering
             path: docs/components/temporal/README.md
           - repo: platform-engineering
             path: dev-integration/profiles/temporal/profile.yaml
           - repo: platform-engineering
             path: docs/decisions/adr/ADR-017-temporal-durable-workflow-runtime.md
-          - repo: security-architecture
-            path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -45,8 +44,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
-        reviewed_on: 2026-07-31
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+        reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -54,21 +53,20 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - temporal-durable-runtime-build-admission
-          - temporal-workflow-history-data-boundary
-          - temporal-approval-and-retry-boundary
-          - temporal-cgg-packet-only-boundary
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
           - repo: workspace-governance
             path: contracts/durable-orchestration.yaml
           - repo: workspace-governance
             path: contracts/developer-integration-profiles.yaml
           - repo: workspace-governance
             path: docs/durable-orchestration-governance.md
-          - repo: security-architecture
-            path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -490,8 +488,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
-        reviewed_on: 2026-07-31
+        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+        reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -499,17 +497,16 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - temporal-durable-runtime-build-admission
-          - temporal-workflow-history-data-boundary
-          - temporal-approval-and-retry-boundary
-          - temporal-cgg-packet-only-boundary
+          - temporal-controlled-runtime-proof-authorization
+          - temporal-component-commissioning-runtime-drill
+          - temporal-baseline-attestation-and-exact-restore
+          - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
           - repo: security-architecture
             path: docs/architecture/components/temporal/README.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md
+            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
           - repo: platform-engineering
             path: docs/components/temporal/README.md
           - repo: platform-engineering
