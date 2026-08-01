@@ -23,9 +23,9 @@
 - future pre-run authorization: `openproject://work_packages/790`
 - future post-run review: `openproject://work_packages/791`
 - reviewed Workspace Governance PR: `workspace-governance` PR #134 at
-  `7b41725dc631602d3375d4f2bd61fe680df19029`
+  `2411d755b99fa284fcbd9a988b1cc3383a2a19aa`
 - reviewed Platform PR: `platform-engineering` PR #197 at
-  `1fdf79c5fd50ea7addaed2c26b03656bc44c7920`
+  `bc965b7c375f8fcff4b39dbae553c9f663d40ebd`
 - decision: `approved-with-findings`
 
 This review accepts the contract design for one permit-gated Temporal
@@ -45,11 +45,13 @@ the proof through a `component-commissioning-proof` runtime-drill ledger.
 
 The authority split remains:
 
-- Platform implements the bounded permit issuer and executor, issues one exact
-  permit after its separate authorization, and owns the runtime-drill
-  procedure, Temporal lifecycle, baseline capture, and restore.
-- Security separately authorizes the exact future permit scope.
-- the operator explicitly accepts the exact permit.
+- Platform implements the bounded baseline capture, permit issuer, and
+  executor; assembles one exact claims set; and owns the runtime-drill
+  procedure, Temporal lifecycle, and restore.
+- Security separately authorizes the RFC 8785 digest of every authorization
+  field outside the approval envelope.
+- the operator explicitly accepts that same canonical claims digest.
+- Platform issues the final permit with both approval artifact refs and digests.
 - OOS owns the single admitted aggregate definition and its worker.
 - WGCF owns the bounded readiness activity and its worker.
 - Temporal schedules and records execution but gains no business, approval,
@@ -62,16 +64,29 @@ The reviewed source is contract-only:
 
 - a strict authorization schema binds one component, profile lifecycle,
   definition version, source revisions, immutable artifacts, namespace,
-  identities, task queues, scenarios, actions, the exact reviewed permit-issuer
-  and executor revisions and Review Packet, approvals, validity window,
-  evidence owner, baseline, restore, exceptions, and stop conditions
-- validators fail closed on stale, widened, malformed, or unsupported permit
-  fields
+  identities, task queues, scenarios, actions, one run, the exact reviewed
+  permit-issuer and executor revisions and Review Packet, approval artifact
+  refs and digests, validity window, evidence owner, immutable pre-issued
+  baseline, restore, exceptions, and stop conditions
+- policy requires source revisions to be unique by repo, runtime artifacts by
+  artifact id, and runtime images by image ref; #792 must enforce those
+  semantics before accepting any permit
+- approval records bind the RFC 8785 digest of the entire closed authorization
+  outside its approval envelope, avoiding a self-referential digest while
+  covering every authorization claim
+- one authorization id is bound to one run and must be atomically consumed
+  before the first mutation; every duplicate consumption attempt is denied
+- a strict result schema binds the consumed authorization and run, scenario
+  outcomes, owner receipts, and immutable exact-baseline restoration evidence
+- contract validators fail closed if these required schema, semantic,
+  consumption, approval, baseline, or result bindings are weakened
 - the Platform drill profile scopes Temporal, the OOS worker, and the WGCF
   worker with eight required checks and exact-baseline restore
-- ledger creation requires the exact authorization ref and digest
-- activation recording remains denied until every scoped surface has a
-  separate operator-reviewable baseline evidence ref
+- commissioning snapshot and ledger creation are hard-denied while the profile
+  is `contract-only`; supplied authorization refs and plausible digests cannot
+  bypass that gate, and denial creates no local state
+- after #792 lands, the immutable baseline artifact must be captured before
+  permit issuance and imported and reverified before the first mutation
 - every terminal stop condition denies new proof work while preserving only
   the fixed, run-bound exact-baseline cleanup actions until restoration or
   governed exception closure
@@ -90,8 +105,8 @@ issued, no Security authorization for a run exists, and no Temporal runtime,
 database, namespace, credential, worker poll, workflow, activity, backup,
 restore, or post-run assessment is claimed.
 
-Schema validation, profile tests, temporary local ledgers, and CI prove only
-source behavior. They cannot satisfy the future pre-run authorization or
+Schema validation, profile validation, contract-only denial tests, and CI prove
+only source behavior. They cannot satisfy the future pre-run authorization or
 post-run Security review.
 
 ## Review Areas
@@ -132,12 +147,16 @@ future permit.
 The future sequence remains separate and mechanically ordered in the ART:
 
 1. #789 lands the contract and operator surface.
-2. #792 implements, tests, and source-reviews the fail-closed permit issuer and
-   executor without activating a runtime.
-3. #790 reviews both exact merged source revisions and authorizes one exact,
-   unexpired permit scope bound to those revisions.
-4. #751 uses the reviewed issuer to create that authorized permit and the
-   permit-bound executor to run only the declared proof.
+2. #792 implements, tests, and source-reviews immutable baseline capture, the
+   fail-closed permit issuer, semantic and approval validators, atomic
+   single-use consumption, the bounded executor, and result emission without
+   activating a runtime.
+3. Platform captures the immutable baseline and assembles the complete claims;
+   #790 reviews both exact merged source revisions and authorizes that exact,
+   unexpired canonical claims digest.
+4. #751 uses the reviewed issuer to create the final permit carrying both
+   approval bindings and the permit-bound executor to consume it once and run
+   only the declared proof.
 5. exact-baseline restore completes before the run can close.
 6. #791 reviews the operating evidence before any lifecycle decision.
 
@@ -167,10 +186,12 @@ readiness, production readiness, or safe reuse for another source revision.
 
 ## Findings
 
-1. The permit issuer and executor are not implemented. #792 must land both
-   exact fail-closed source paths and their tests before #790 may authorize a
-   permit scope; #751 may issue and run only after that authorization. Owners:
-   Platform and Workspace Governance. ART: #792, #790, and #751.
+1. Baseline capture, the permit issuer, semantic and approval validators,
+   atomic permit consumption, executor, and result emitter are not implemented.
+   #792 must land those exact fail-closed source paths and negative tests before
+   #790 may authorize a claims digest; #751 may issue and run only after that
+   authorization. Owners: Platform and Workspace Governance. ART: #792, #790,
+   and #751.
 2. No per-run Security authorization exists. This contract review must not be
    used as `security_authorization_ref`; #790 must bind the exact permit and
    current runtime truth.
@@ -193,9 +214,13 @@ These are fail-closed future gates, not accepted live defects.
 Approved:
 
 - the controlled-proof authorization schema and fail-closed validation model
+- the controlled-proof result schema and its authorization, run, scenario,
+  receipt, and restoration bindings
 - the `component-commissioning-proof` runtime-drill taxonomy
 - the Platform operator procedure and machine-readable drill/evidence profile
 - baseline attestation before activation and exact-baseline restore
+- contract-only snapshot denial until reviewed #792 source deliberately enables
+  that path
 - restore-only cleanup authority for an already-started run after any terminal
   stop condition
 - continued `build-admitted`, non-self-serve Temporal posture
