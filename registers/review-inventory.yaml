@@ -269,10 +269,10 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md
-        reviewed_on: 2026-04-23
+        path: docs/reviews/components/2026-08-01-operator-orchestration-service-durable-orchestration-source-admission.md
+        reviewed_on: 2026-08-01
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
@@ -280,20 +280,19 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - broker-runtime-and-caller-surface
-          - openproject-delivery-adapter-and-api
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: src/delivery-service.js
-          - repo: operator-orchestration-service
-            path: src/openproject-client.js
           - repo: operator-orchestration-service
             path: src/app.js
           - repo: operator-orchestration-service
-            path: docs/contracts/delivery-workflow-api-v1.md
+            path: src/config.js
           - repo: operator-orchestration-service
-            path: docs/architecture/delivery-workflow-api-boundary.md
+            path: src/orchestration/worker.js
           - repo: operator-orchestration-service
-            path: docs/operations/delivery-workflow-operator-surface.md
+            path: src/orchestration/generation-retirement.js
+          - repo: operator-orchestration-service
+            path: contracts/orchestration/activation-evidence-manifest.schema.json
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-07-31-oos-durable-orchestration-source-admission.md
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -706,8 +705,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-04-21-operator-orchestration-service-delivery-workflow-broker-expansion.md
-        reviewed_on: 2026-04-21
+        path: docs/reviews/components/2026-08-01-operator-orchestration-service-durable-orchestration-source-admission.md
+        reviewed_on: 2026-08-01
         status: current
         decision: approved-with-findings
         review_areas:
@@ -717,9 +716,16 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - broker-runtime-and-caller-surface
-          - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: src/delivery-service.js
+            path: src/app.js
           - repo: operator-orchestration-service
-            path: src/openproject-client.js
+            path: src/config.js
+          - repo: operator-orchestration-service
+            path: src/orchestration/worker.js
+          - repo: operator-orchestration-service
+            path: src/orchestration/generation-retirement.js
+          - repo: operator-orchestration-service
+            path: contracts/orchestration/activation-evidence-manifest.schema.json
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-07-31-oos-durable-orchestration-source-admission.md
