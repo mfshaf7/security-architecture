@@ -14,20 +14,21 @@
   - `temporal-baseline-attestation-and-exact-restore`
   - `temporal-bounded-worker-and-payload-boundary`
 - ART contract work: `openproject://work_packages/789`
-- future executor source review: `openproject://work_packages/792`
+- future permit-issuer and executor source review:
+  `openproject://work_packages/792`
 - future pre-run authorization: `openproject://work_packages/790`
 - future post-run review: `openproject://work_packages/791`
 - reviewed Workspace Governance PR: `workspace-governance` PR #134 at
-  `f211f7a4933ae49217bc0bab02df453aefe432e2`
+  `343e85d679635235eb5f62697a20a9ae12f5b01d`
 - reviewed Platform PR: `platform-engineering` PR #197 at
-  `67f9a1b8f8b642b1fa309d46aad395ce2e74a6db`
+  `d13a1520180a55e7b9e4ae45a720c5d846242453`
 - decision: `approved-with-findings`
 
 This review accepts the contract design for one permit-gated Temporal
 commissioning proof while the profile remains `build-admitted`. It does not
 issue the future permit, satisfy its `security_authorization_ref`, authorize an
-executor, activate Temporal or either worker, approve workflow execution, or
-replace the separate pre-run and post-run Security decisions.
+issuer or executor, activate Temporal or either worker, approve workflow
+execution, or replace the separate pre-run and post-run Security decisions.
 
 ## Scope Delta
 
@@ -40,9 +41,9 @@ the proof through a `component-commissioning-proof` runtime-drill ledger.
 
 The authority split remains:
 
-- Platform implements the bounded executor, issues one exact permit, and owns
-  the runtime-drill procedure, Temporal lifecycle, baseline capture, and
-  restore.
+- Platform implements the bounded permit issuer and executor, issues one exact
+  permit after its separate authorization, and owns the runtime-drill
+  procedure, Temporal lifecycle, baseline capture, and restore.
 - Security separately authorizes the exact future permit scope.
 - the operator explicitly accepts the exact permit.
 - OOS owns the single admitted aggregate definition and its worker.
@@ -57,9 +58,9 @@ The reviewed source is contract-only:
 
 - a strict authorization schema binds one component, profile lifecycle,
   definition version, source revisions, immutable artifacts, namespace,
-  identities, task queues, scenarios, actions, the exact reviewed executor
-  revision and Review Packet, approvals, validity window, evidence owner,
-  baseline, restore, exceptions, and stop conditions
+  identities, task queues, scenarios, actions, the exact reviewed permit-issuer
+  and executor revisions and Review Packet, approvals, validity window,
+  evidence owner, baseline, restore, exceptions, and stop conditions
 - validators fail closed on stale, widened, malformed, or unsupported permit
   fields
 - the Platform drill profile scopes Temporal, the OOS worker, and the WGCF
@@ -127,11 +128,12 @@ future permit.
 The future sequence remains separate and mechanically ordered in the ART:
 
 1. #789 lands the contract and operator surface.
-2. #792 implements, tests, and source-reviews the fail-closed executor without
-   activating a runtime.
-3. #790 reviews the exact merged executor revision and authorizes one exact,
-   unexpired permit bound to that revision.
-4. #751 uses the permit-bound executor to run only the declared proof.
+2. #792 implements, tests, and source-reviews the fail-closed permit issuer and
+   executor without activating a runtime.
+3. #790 reviews both exact merged source revisions and authorizes one exact,
+   unexpired permit scope bound to those revisions.
+4. #751 uses the reviewed issuer to create that authorized permit and the
+   permit-bound executor to run only the declared proof.
 5. exact-baseline restore completes before the run can close.
 6. #791 reviews the operating evidence before any lifecycle decision.
 
@@ -149,10 +151,10 @@ a governed exception is recorded. That cleanup authority is bound to the same
 run and captured surfaces; it cannot start or retry proof work, widen scope,
 preserve post-run runtime, or be reused.
 
-The future executor must also fail closed on source or artifact drift,
-unexpected scope, identity or queue denial failure, payload-boundary failure,
-evidence-custody failure, or restore failure. A restore failure enters the
-exception path; it does not reopen proof authority.
+The future issuer and executor must also fail closed on source or artifact
+drift, unexpected scope, identity or queue denial failure, payload-boundary
+failure, evidence-custody failure, or restore failure. A restore failure enters
+the exception path; it does not reopen proof authority.
 
 One successful run proves only the permitted local commissioning scope. It
 does not establish self-serve launch, a generally admitted workflow, stage
@@ -160,10 +162,10 @@ readiness, production readiness, or safe reuse for another source revision.
 
 ## Findings
 
-1. The permit issuer and executor are not implemented. #792 must land the exact
-   fail-closed executor source and tests before #790 may authorize a permit;
-   #751 may run only after that authorization. Owners: Platform and Workspace
-   Governance. ART: #792, #790, and #751.
+1. The permit issuer and executor are not implemented. #792 must land both
+   exact fail-closed source paths and their tests before #790 may authorize a
+   permit scope; #751 may issue and run only after that authorization. Owners:
+   Platform and Workspace Governance. ART: #792, #790, and #751.
 2. No per-run Security authorization exists. This contract review must not be
    used as `security_authorization_ref`; #790 must bind the exact permit and
    current runtime truth.
@@ -201,10 +203,11 @@ Not approved:
 - profile lifecycle `active`, stage, or production
 - treating pre-run authorization as post-run acceptance
 
-The contract may land. Runtime work remains denied until #792 lands an exact
-reviewed executor revision, #790 records a fresh Security decision for one
-permit bound to that revision, and the operator explicitly approves it. A
-successful proof still requires #791 before any later lifecycle change.
+The contract may land. Runtime work remains denied until #792 lands exact
+reviewed permit-issuer and executor revisions, #790 records a fresh Security
+decision for one permit scope bound to those revisions, and the operator
+explicitly approves it. A successful proof still requires #791 before any
+later lifecycle change.
 
 ## Related Artifacts
 
