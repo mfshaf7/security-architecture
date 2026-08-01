@@ -19,9 +19,9 @@
 - future pre-run authorization: `openproject://work_packages/790`
 - future post-run review: `openproject://work_packages/791`
 - reviewed Workspace Governance PR: `workspace-governance` PR #134 at
-  `343e85d679635235eb5f62697a20a9ae12f5b01d`
+  `7b41725dc631602d3375d4f2bd61fe680df19029`
 - reviewed Platform PR: `platform-engineering` PR #197 at
-  `d13a1520180a55e7b9e4ae45a720c5d846242453`
+  `1fdf79c5fd50ea7addaed2c26b03656bc44c7920`
 - decision: `approved-with-findings`
 
 This review accepts the contract design for one permit-gated Temporal
@@ -68,9 +68,9 @@ The reviewed source is contract-only:
 - ledger creation requires the exact authorization ref and digest
 - activation recording remains denied until every scoped surface has a
   separate operator-reviewable baseline evidence ref
-- authorization expiry denies new proof work while preserving only the fixed,
-  run-bound exact-baseline cleanup actions until restoration or governed
-  exception closure
+- every terminal stop condition denies new proof work while preserving only
+  the fixed, run-bound exact-baseline cleanup actions until restoration or
+  governed exception closure
 - ordinary Temporal launch, access, smoke, backup, restore, and workflow
   commands remain denied while the profile is `build-admitted`
 - the operator surface states that no issuer, executor, permit, or runtime
@@ -142,19 +142,20 @@ No pre-run permit may be reused as activation or promotion evidence.
 ### Runtime
 
 The baseline gate, verification pack, exception decisions, and exact restore
-model are appropriate for a temporary runtime proof. Authorization expiry must
-deny every new proof action, workflow or activity start, retry, verification
-mutation, scope expansion, and activation action. For an already-started run,
-expiry preserves only a constrained cleanup authority that may stop the scoped
-runtime and restore the exact captured baseline until restoration completes or
-a governed exception is recorded. That cleanup authority is bound to the same
-run and captured surfaces; it cannot start or retry proof work, widen scope,
-preserve post-run runtime, or be reused.
+model are appropriate for a temporary runtime proof. Every terminal stop
+condition must deny new proof actions, workflow or activity starts, retries,
+verification mutation, scope expansion, and activation actions. This includes
+authorization expiry, source or artifact drift, unexpected scope, identity or
+queue denial failure, payload-boundary failure, evidence-custody failure, and
+restore failure.
 
-The future issuer and executor must also fail closed on source or artifact
-drift, unexpected scope, identity or queue denial failure, payload-boundary
-failure, evidence-custody failure, or restore failure. A restore failure enters
-the exception path; it does not reopen proof authority.
+For an already-started run, each stop preserves only a constrained cleanup
+authority that may stop the scoped runtime and restore the exact captured
+baseline until restoration completes or a governed exception is recorded.
+That cleanup authority is bound to the same run and captured surfaces; it
+cannot start or retry proof work, widen scope, preserve post-run runtime, or be
+reused. A restore failure enters the exception path; it does not reopen proof
+authority.
 
 One successful run proves only the permitted local commissioning scope. It
 does not establish self-serve launch, a generally admitted workflow, stage
@@ -189,7 +190,8 @@ Approved:
 - the `component-commissioning-proof` runtime-drill taxonomy
 - the Platform operator procedure and machine-readable drill/evidence profile
 - baseline attestation before activation and exact-baseline restore
-- restore-only cleanup authority for an already-started run after permit expiry
+- restore-only cleanup authority for an already-started run after any terminal
+  stop condition
 - continued `build-admitted`, non-self-serve Temporal posture
 
 Not approved:
