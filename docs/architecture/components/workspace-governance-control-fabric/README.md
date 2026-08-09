@@ -68,6 +68,21 @@ stage or production evidence.
 - mutating ledger or receipt smoke requires a separate disposable companion
   profile
 
+### Delivery ART Evidence Custody Target
+
+- OOS remains the author and semantic validator for Delivery ART architecture
+  packets, work-start records, and Review Packets.
+- WGCF may persist those exact artifact classes through Platform-owned object
+  storage and own their registry metadata, immutable custody receipts, and
+  ledger events.
+- WGCF must verify content digests and source bindings without taking artifact
+  authorship, Workspace Governance policy authority, Security approval, or ART
+  mutation authority.
+- OpenProject receives only bounded artifact, digest, and custody-receipt
+  references after durable persistence succeeds.
+- the design is approved for bounded implementation, but no custody runtime or
+  stage/prod use is operating-approved yet
+
 ### AI
 
 - the control fabric may later prepare governed context or readiness decisions
@@ -91,6 +106,8 @@ stage or production evidence.
   [../../../reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md](../../../reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md)
 - validator invocation and artifact-custody delta:
   [../../../reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md](../../../reviews/components/2026-05-01-wgcf-validator-invocation-and-artifact-custody.md)
+- Delivery ART evidence custody and source-provenance delta:
+  [../../../reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md](../../../reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md)
 - component inventory:
   [`../../platform/component-inventory.md`](../../platform/component-inventory.md)
 - workspace governance contract:

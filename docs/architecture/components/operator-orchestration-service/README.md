@@ -76,6 +76,9 @@ AI triage remains deferred.
   secret-delivery owner
 - accepted-idea consumption must remain an internal broker action until a
   separate operator surface is explicitly reviewed and admitted
+- for the target Delivery ART evidence path, OOS authors and validates the
+  source artifact, computes its canonical digest, persists it through WGCF,
+  and projects only bounded evidence references into OpenProject
 
 ### Runtime
 
@@ -86,6 +89,11 @@ AI triage remains deferred.
   workflows and records
 - canonical record mutation remains behind explicit operator action at the
   workflow layer
+- Delivery ART mutation must fail before write when WGCF persistence or
+  integrity validation fails; an OpenProject projection failure preserves the
+  durable artifact and retries only the reference projection
+- this target evidence path is design-approved but not operating until its
+  owner implementation and dogfood work lands
 
 ### AI
 
@@ -119,5 +127,7 @@ AI triage remains deferred.
   [../../reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md](../../reviews/components/2026-04-23-broker-only-delivery-execution-plane-cutover.md)
 - durable-orchestration source-admission review:
   [../../../reviews/components/2026-08-01-operator-orchestration-service-durable-orchestration-source-admission.md](../../../reviews/components/2026-08-01-operator-orchestration-service-durable-orchestration-source-admission.md)
+- Delivery ART evidence custody and source-provenance review:
+  [../../../reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md](../../../reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md)
 - AI governance standard:
   [../../standards/ai-security-and-governance.md](../../standards/ai-security-and-governance.md)

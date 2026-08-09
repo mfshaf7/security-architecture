@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-        reviewed_on: 2026-08-01
+        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+        reviewed_on: 2026-08-09
         status: current
         decision: approved-with-findings
         review_areas:
@@ -21,19 +21,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - temporal-controlled-runtime-proof-authorization
-          - temporal-component-commissioning-runtime-drill
-          - temporal-baseline-attestation-and-exact-restore
-          - temporal-bounded-worker-and-payload-boundary
+          - delivery-art-evidence-custody-boundary
+          - delivery-art-source-provenance-integrity
+          - delivery-art-object-storage-and-lifecycle
+          - delivery-art-safe-openproject-projection
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-          - repo: platform-engineering
-            path: docs/components/temporal/README.md
-          - repo: platform-engineering
-            path: dev-integration/profiles/temporal/profile.yaml
-          - repo: platform-engineering
-            path: docs/decisions/adr/ADR-017-temporal-durable-workflow-runtime.md
+            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+          - repo: workspace-governance
+            path: contracts/delivery-art-operator-path.yaml
+          - repo: workspace-governance
+            path: contracts/schemas/delivery-art-custody-receipt.schema.json
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -44,8 +42,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-        reviewed_on: 2026-08-01
+        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+        reviewed_on: 2026-08-09
         status: current
         decision: approved-with-findings
         review_areas:
@@ -54,19 +52,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - temporal-controlled-runtime-proof-authorization
-          - temporal-component-commissioning-runtime-drill
-          - temporal-baseline-attestation-and-exact-restore
-          - temporal-bounded-worker-and-payload-boundary
+          - delivery-art-evidence-custody-boundary
+          - delivery-art-source-provenance-integrity
+          - delivery-art-object-storage-and-lifecycle
+          - delivery-art-safe-openproject-projection
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
           - repo: workspace-governance
-            path: contracts/durable-orchestration.yaml
+            path: contracts/delivery-art-operator-path.yaml
           - repo: workspace-governance
-            path: contracts/developer-integration-profiles.yaml
-          - repo: workspace-governance
-            path: docs/durable-orchestration-governance.md
+            path: contracts/schemas/delivery-art-custody-receipt.schema.json
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -77,8 +73,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-        reviewed_on: 2026-08-01
+        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+        reviewed_on: 2026-08-09
         status: current
         decision: approved-with-findings
         review_areas:
@@ -87,21 +83,19 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - temporal-controlled-runtime-proof-authorization
-          - temporal-component-commissioning-runtime-drill
-          - temporal-baseline-attestation-and-exact-restore
-          - temporal-bounded-worker-and-payload-boundary
+          - delivery-art-evidence-custody-boundary
+          - delivery-art-source-provenance-integrity
+          - delivery-art-object-storage-and-lifecycle
+          - delivery-art-safe-openproject-projection
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/orchestration_activities.py
-          - repo: workspace-governance-control-fabric
-            path: schemas/validation-readiness-activity-request.schema.json
-          - repo: workspace-governance-control-fabric
-            path: schemas/validation-readiness-activity-result.schema.json
+            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+          - repo: security-architecture
+            path: docs/architecture/components/workspace-governance-control-fabric/README.md
           - repo: workspace-governance
-            path: contracts/durable-orchestration.yaml
+            path: contracts/delivery-art-operator-path.yaml
+          - repo: workspace-governance
+            path: contracts/schemas/delivery-art-custody-receipt.schema.json
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -269,8 +263,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-        reviewed_on: 2026-08-01
+        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+        reviewed_on: 2026-08-09
         status: current
         decision: approved-with-findings
         review_areas:
@@ -279,19 +273,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - temporal-controlled-runtime-proof-authorization
-          - temporal-component-commissioning-runtime-drill
-          - temporal-baseline-attestation-and-exact-restore
-          - temporal-bounded-worker-and-payload-boundary
+          - delivery-art-evidence-custody-boundary
+          - delivery-art-source-provenance-integrity
+          - delivery-art-object-storage-and-lifecycle
+          - delivery-art-safe-openproject-projection
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-          - repo: operator-orchestration-service
-            path: src/orchestration/worker.js
-          - repo: operator-orchestration-service
-            path: contracts/orchestration/activation-evidence-manifest.schema.json
+            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+          - repo: security-architecture
+            path: docs/architecture/components/operator-orchestration-service/README.md
           - repo: workspace-governance
-            path: contracts/durable-orchestration.yaml
+            path: contracts/delivery-art-operator-path.yaml
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -524,8 +516,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-        reviewed_on: 2026-08-01
+        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+        reviewed_on: 2026-08-09
         status: current
         decision: approved-with-findings
         review_areas:
@@ -534,21 +526,19 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - temporal-controlled-runtime-proof-authorization
-          - temporal-component-commissioning-runtime-drill
-          - temporal-baseline-attestation-and-exact-restore
-          - temporal-bounded-worker-and-payload-boundary
+          - delivery-art-evidence-custody-boundary
+          - delivery-art-source-provenance-integrity
+          - delivery-art-object-storage-and-lifecycle
+          - delivery-art-safe-openproject-projection
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/orchestration_activities.py
-          - repo: workspace-governance-control-fabric
-            path: schemas/validation-readiness-activity-request.schema.json
-          - repo: workspace-governance-control-fabric
-            path: schemas/validation-readiness-activity-result.schema.json
+            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+          - repo: security-architecture
+            path: docs/architecture/components/workspace-governance-control-fabric/README.md
           - repo: workspace-governance
-            path: contracts/durable-orchestration.yaml
+            path: contracts/delivery-art-operator-path.yaml
+          - repo: workspace-governance
+            path: contracts/schemas/delivery-art-custody-receipt.schema.json
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -707,8 +697,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-        reviewed_on: 2026-08-01
+        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+        reviewed_on: 2026-08-09
         status: current
         decision: approved-with-findings
         review_areas:
@@ -717,16 +707,14 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - temporal-controlled-runtime-proof-authorization
-          - temporal-component-commissioning-runtime-drill
-          - temporal-baseline-attestation-and-exact-restore
-          - temporal-bounded-worker-and-payload-boundary
+          - delivery-art-evidence-custody-boundary
+          - delivery-art-source-provenance-integrity
+          - delivery-art-object-storage-and-lifecycle
+          - delivery-art-safe-openproject-projection
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-          - repo: operator-orchestration-service
-            path: src/orchestration/worker.js
-          - repo: operator-orchestration-service
-            path: contracts/orchestration/activation-evidence-manifest.schema.json
+            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+          - repo: security-architecture
+            path: docs/architecture/components/operator-orchestration-service/README.md
           - repo: workspace-governance
-            path: contracts/durable-orchestration.yaml
+            path: contracts/delivery-art-operator-path.yaml
