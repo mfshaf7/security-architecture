@@ -11,6 +11,7 @@
   - `repos.operator-orchestration-service`
   - `components.workspace-governance-control-fabric`
   - `components.operator-orchestration-service`
+  - `products.openproject`
 - security ART item: `openproject://work_packages/805`
 - architecture correction: `openproject://work_packages/809`
 - implementation follow-ups:
@@ -79,12 +80,36 @@ No Platform object store, WGCF registry endpoint, OOS persistence client, or
 live OpenProject projection change is implemented or approved as operating by
 this review.
 
+### Contract Validation Evidence
+
+The contract implementation was validated on exact pull-request head
+[`8b33370`](https://github.com/mfshaf7/workspace-governance/commit/8b3337040c20b74fa3d41c6b3e905cfe73d97430)
+by the passing GitHub Actions
+[`validate` job](https://github.com/mfshaf7/workspace-governance/actions/runs/31297587815/job/93205110631).
+That head and reviewed merge commit `bf64af3` resolve to the same Git tree
+`e5f2bdf1f412d714d682d0e49a2a0887ded67df1`.
+
+The durable job evidence includes:
+
+- `python3 scripts/validate_contracts.py --repo-root .`
+- positive dependency-chain validation for architecture, work-start,
+  merge-ready, finalized, readiness, and custody-receipt fixtures through
+  `scripts/validate_delivery_art_artifact.py`
+- negative validation for non-canonical data, digest mismatch, retired
+  OpenProject attachment custody, missing or mismatched custody receipts,
+  cross-subject and cyclic supersession, and missing real-Git evidence
+- `python3 -m unittest discover -s tests`
+
+This evidence proves contract/schema conformance and the declared local
+integrity rules only. It is not operating evidence for the target custody
+runtime.
+
 ### Operating Evidence
 
-There is no operating evidence for the target custody path yet. Contract
-validation and the merged schema prove only the intended structure and local
-integrity rules. The following remain unproven until their owning ART items
-land:
+There is no operating evidence for the target custody path yet. The linked
+contract-validation evidence and merged schema prove only the intended
+structure and local integrity rules. The following remain unproven until their
+owning ART items land:
 
 - profile-scoped service identities and authorization
 - encrypted object persistence and tenant/profile isolation
