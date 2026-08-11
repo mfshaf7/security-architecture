@@ -29,11 +29,18 @@ If no follow-up is required, explain why briefly.
 - Workspace evidence validation:
 - Generated register views refreshed:
 
-## Codex Review
+## Advisory Review
 
-- Codex review requested:
-- Automatic or manual review path:
-- Findings resolved or explicitly acknowledged:
+Optional; leave blank when deterministic owner review and validation are sufficient.
+
+- Requested:
+- Provider:
+- Scope and accepted trust model:
+- Finding disposition:
+  - `fix-now`
+  - `separate-work`
+  - `reject-with-reason`
+- Verification pass:
 
 ## Review Gates
 
