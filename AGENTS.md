@@ -58,8 +58,8 @@ It does not own delivery implementation.
 
 ## Review guidelines
 
-For Codex GitHub review, treat the following as `P1` when they plausibly
-regress the security-governance role:
+For owner review or optional advisory review, treat the following as `P1` when
+they plausibly regress the security-governance role:
 
 - security claims that are no longer backed by a concrete artifact, review
   output, or evidence linkage
