@@ -480,8 +480,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-13-temporal-commissioning-pre-run-authorization.md
-        reviewed_on: 2026-08-13
+        path: docs/reviews/components/2026-08-14-temporal-commissioning-reauthorization.md
+        reviewed_on: 2026-08-14
         status: current
         decision: approved-with-findings
         review_areas:
@@ -498,9 +498,9 @@ review_inventory:
           - repo: security-architecture
             path: docs/architecture/components/temporal/README.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-13-temporal-commissioning-pre-run-authorization.md
+            path: docs/reviews/components/2026-08-14-temporal-commissioning-reauthorization.md
           - repo: security-architecture
-            path: records/controlled-proof-authorizations/delivery-698-790-temporal-commissioning-20260813-v2.json
+            path: records/controlled-proof-authorizations/delivery-698-831-temporal-commissioning-20260814-v1.json
           - repo: platform-engineering
             path: docs/components/temporal/README.md
           - repo: platform-engineering
