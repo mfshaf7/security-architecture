@@ -480,11 +480,13 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-13-temporal-approval-provenance-source-review.md
+        path: docs/reviews/components/2026-08-13-temporal-commissioning-pre-run-authorization.md
         reviewed_on: 2026-08-13
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
         review_trigger_ids:
@@ -496,7 +498,9 @@ review_inventory:
           - repo: security-architecture
             path: docs/architecture/components/temporal/README.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-13-temporal-approval-provenance-source-review.md
+            path: docs/reviews/components/2026-08-13-temporal-commissioning-pre-run-authorization.md
+          - repo: security-architecture
+            path: records/controlled-proof-authorizations/delivery-698-790-temporal-commissioning-20260813-v2.json
           - repo: platform-engineering
             path: docs/components/temporal/README.md
           - repo: platform-engineering
