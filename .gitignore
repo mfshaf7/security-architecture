@@ -1,6 +1,7 @@
 # Local artifacts
 .DS_Store
 Thumbs.db
+.art/review-packets/
 
 # Generated bundles
 *.enc
