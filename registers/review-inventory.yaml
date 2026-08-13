@@ -480,13 +480,11 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
-        reviewed_on: 2026-08-01
+        path: docs/reviews/components/2026-08-13-temporal-approval-provenance-source-review.md
+        reviewed_on: 2026-08-13
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
         review_trigger_ids:
@@ -498,7 +496,7 @@ review_inventory:
           - repo: security-architecture
             path: docs/architecture/components/temporal/README.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md
+            path: docs/reviews/components/2026-08-13-temporal-approval-provenance-source-review.md
           - repo: platform-engineering
             path: docs/components/temporal/README.md
           - repo: platform-engineering

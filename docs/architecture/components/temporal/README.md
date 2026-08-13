@@ -17,6 +17,14 @@ it does not issue a run permit, authorize an executor, or approve runtime
 activation. A fresh pre-run Security authorization and a separate post-run
 review remain mandatory.
 
+The approval-provenance source correction is approved for its exact reviewed
+Platform head. Controlled-proof claims now bind executable source revisions,
+while the permit separately binds the exact merged Security revision,
+normalized artifact path, reference, and digest. A clean local or pushed review
+branch is insufficient: the revision must be contained in the fetched
+`refs/remotes/origin/main` tracking ref. This source decision does not replace
+the per-run Security authorization or authorize commissioning.
+
 ## Authority Boundary
 
 - `workspace-governance` owns orchestration authority and admission contracts.
@@ -156,3 +164,4 @@ Activation requires fresh review against implemented and operating evidence.
 
 - [2026-07-31 Temporal durable orchestration build admission](../../../reviews/components/2026-07-31-temporal-durable-orchestration-build-admission.md)
 - [2026-08-01 Temporal controlled commissioning proof contract](../../../reviews/components/2026-08-01-temporal-controlled-commissioning-proof-contract.md)
+- [2026-08-13 Temporal approval provenance source review](../../../reviews/components/2026-08-13-temporal-approval-provenance-source-review.md)
