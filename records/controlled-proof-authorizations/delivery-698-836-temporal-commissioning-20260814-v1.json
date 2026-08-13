@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "approval_id": "artifact://controlled-proof/approvals/delivery-698-836-temporal-commissioning-20260814-v1",
+  "approval_role": "security-authorization",
+  "decision": "approved",
+  "authorization_id": "platform-controlled-proof://authorizations/delivery-698-751-temporal-commissioning-20260814-v1",
+  "canonicalization": "rfc8785",
+  "canonical_claims_digest": "sha256:3989f5157e02c9f1a091499cc57bb60972f594d5cfa9f196475cf2366aa1d46b",
+  "approved_by": "security-architecture",
+  "approved_at": "2026-08-13T22:30:39Z",
+  "source_provenance": {
+    "owner_repo": "security-architecture",
+    "source_path": "records/controlled-proof-authorizations/delivery-698-836-temporal-commissioning-20260814-v1.json"
+  }
+}

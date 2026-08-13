@@ -1436,6 +1436,17 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-14-delivery-art-terminal-lifecycle-custody.md
+  date: '2026-08-14'
+  short_title: 2026-08-14-delivery-art-terminal-lifecycle-custody
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
