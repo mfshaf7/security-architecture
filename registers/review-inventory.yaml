@@ -480,7 +480,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-14-temporal-chronology-correct-commissioning-authorization.md
+        path: docs/reviews/components/2026-08-14-temporal-post-installation-fix-commissioning-authorization.md
         reviewed_on: 2026-08-14
         status: current
         decision: approved-with-findings
@@ -498,9 +498,9 @@ review_inventory:
           - repo: security-architecture
             path: docs/architecture/components/temporal/README.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-14-temporal-chronology-correct-commissioning-authorization.md
+            path: docs/reviews/components/2026-08-14-temporal-post-installation-fix-commissioning-authorization.md
           - repo: security-architecture
-            path: records/controlled-proof-authorizations/delivery-698-845-temporal-commissioning-20260814-v7.json
+            path: records/controlled-proof-authorizations/delivery-698-847-temporal-commissioning-20260814-v8.json
           - repo: platform-engineering
             path: docs/components/temporal/README.md
           - repo: platform-engineering
