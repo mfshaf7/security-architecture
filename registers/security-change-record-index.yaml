@@ -1458,6 +1458,17 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-16-proposal-workflow-live-api.md
+  date: '2026-08-16'
+  short_title: 2026-08-16-proposal-workflow-live-api
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'

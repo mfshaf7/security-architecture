@@ -168,8 +168,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-31-governance-operations-console-source-graduation.md
-        reviewed_on: 2026-07-31
+        path: docs/reviews/components/2026-08-16-governance-operations-console-proposal-live-integration.md
+        reviewed_on: 2026-08-16
         status: current
         decision: approved-with-findings
         review_areas:
@@ -177,20 +177,19 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - governance-console-owner-repository-admission
-          - governance-console-source-graduation
           - governance-console-live-integration
         owner_artifacts:
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-08-16-openproject-proposal-workflow-state.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-08-16-proposal-workflow-live-api.md
           - repo: governance-operations-console
-            path: README.md
-          - repo: governance-operations-console
-            path: AGENTS.md
+            path: docs/product/proposal-live-integration.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-07-31-governance-operations-console-source-graduation.md
+            path: docs/reviews/components/2026-08-16-governance-operations-console-proposal-live-integration.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
