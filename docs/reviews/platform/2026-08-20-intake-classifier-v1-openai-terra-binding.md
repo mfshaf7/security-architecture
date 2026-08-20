@@ -58,6 +58,20 @@ That smoke proved gateway readiness, caller attribution, local audit emission,
 gateway-only credential custody, provider-sentinel denial, exact binding
 projection, and both activation gates remaining closed.
 
+The operating claim is bound to finalized Review Packet
+`review-packet:delivery-251-work-item-853-revision-2` for
+`openproject://work_packages/853`. Its exact-head smoke records
+`devint://governed-ai-gateway/mfshaf7/smoke-summary.json` with digest
+`sha256:8dc4903de26185740a554dcd87c274aa8babdb72772f9263f2499964ef75e84b`
+and `devint://governed-ai-gateway/mfshaf7/promotion-report.yaml` with digest
+`sha256:8d3e03e2283a58960300b56d562a1ab0231060b0153d5f063cf25dfb0ddad83e`.
+The exact source head also passed the
+[Build And Validate run](https://github.com/mfshaf7/platform-engineering/actions/runs/32357812681)
+and the
+[Security Posture run](https://github.com/mfshaf7/platform-engineering/actions/runs/32357812692)
+before [Platform PR 213](https://github.com/mfshaf7/platform-engineering/pull/213)
+merged as `43528915fc45376c7145c1b0eedf95222c49d021`.
+
 No OpenAI request was issued. The current runtime still uses a provider
 sentinel, so this evidence cannot prove real-provider authentication, project
 retention posture, request minimization, structured-output enforcement, provider
@@ -157,6 +171,8 @@ These findings must be routed to active ART rather than left as review prose.
 ## Related Artifacts
 
 - [Platform PR 213](https://github.com/mfshaf7/platform-engineering/pull/213)
+- [Platform Build And Validate run 32357812681](https://github.com/mfshaf7/platform-engineering/actions/runs/32357812681)
+- [Platform Security Posture run 32357812692](https://github.com/mfshaf7/platform-engineering/actions/runs/32357812692)
 - [GPT-5.6 Terra model documentation](https://developers.openai.com/api/docs/models/gpt-5.6-terra)
 - [OpenAI organization data-retention API](https://developers.openai.com/api/reference/python/resources/admin/subresources/organization/subresources/data_retention/methods/retrieve)
 - [OpenAI project data-retention API](https://developers.openai.com/api/reference/python/resources/admin/subresources/organization/subresources/projects/subresources/data_retention/methods/retrieve)
