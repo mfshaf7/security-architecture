@@ -30,6 +30,7 @@ Current baseline outputs:
 - [`2026-08-01-temporal-controlled-commissioning-proof-contract.md`](2026-08-01-temporal-controlled-commissioning-proof-contract.md)
 - [`2026-08-13-temporal-approval-provenance-source-review.md`](2026-08-13-temporal-approval-provenance-source-review.md)
 - [`2026-08-13-temporal-commissioning-pre-run-authorization.md`](2026-08-13-temporal-commissioning-pre-run-authorization.md)
+- [`2026-08-21-proposal-to-delivery-application.md`](2026-08-21-proposal-to-delivery-application.md)
 
 Owner repos should reference a concrete dated review artifact from this
 directory when workspace governance requires a `review_output_path`.
