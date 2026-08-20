@@ -170,8 +170,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-16-governance-operations-console-proposal-live-integration.md
-        reviewed_on: 2026-08-16
+        path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
+        reviewed_on: 2026-08-21
         status: current
         decision: approved-with-findings
         review_areas:
@@ -182,16 +182,14 @@ review_inventory:
         review_trigger_ids:
           - governance-console-live-integration
         owner_artifacts:
-          - repo: platform-engineering
-            path: docs/records/change-records/2026-08-16-openproject-proposal-workflow-state.md
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-16-proposal-workflow-live-api.md
+            path: docs/records/change-records/2026-08-21-proposal-delivery-application.md
           - repo: governance-operations-console
             path: docs/product/proposal-live-integration.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-16-governance-operations-console-proposal-live-integration.md
+            path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -264,8 +262,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-        reviewed_on: 2026-08-09
+        path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
+        reviewed_on: 2026-08-21
         status: current
         decision: approved-with-findings
         review_areas:
@@ -274,17 +272,15 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-evidence-custody-boundary
-          - delivery-art-source-provenance-integrity
-          - delivery-art-object-storage-and-lifecycle
-          - delivery-art-safe-openproject-projection
+          - broker-runtime-and-caller-surface
+          - openproject-delivery-adapter-and-api
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-08-21-proposal-delivery-application.md
+          - repo: governance-operations-console
+            path: docs/product/proposal-live-integration.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-          - repo: security-architecture
-            path: docs/architecture/components/operator-orchestration-service/README.md
-          - repo: workspace-governance
-            path: contracts/delivery-art-operator-path.yaml
+            path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -698,8 +694,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-        reviewed_on: 2026-08-09
+        path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
+        reviewed_on: 2026-08-21
         status: current
         decision: approved-with-findings
         review_areas:
@@ -708,14 +704,12 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-evidence-custody-boundary
-          - delivery-art-source-provenance-integrity
-          - delivery-art-object-storage-and-lifecycle
-          - delivery-art-safe-openproject-projection
+          - broker-runtime-and-caller-surface
+          - openproject-delivery-adapter-and-api
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-08-21-proposal-delivery-application.md
+          - repo: governance-operations-console
+            path: docs/product/proposal-live-integration.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-          - repo: security-architecture
-            path: docs/architecture/components/operator-orchestration-service/README.md
-          - repo: workspace-governance
-            path: contracts/delivery-art-operator-path.yaml
+            path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
