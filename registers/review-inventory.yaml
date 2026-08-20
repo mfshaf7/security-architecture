@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-08-20-intake-classifier-v1-openai-terra-binding.md
+        path: docs/reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md
         reviewed_on: 2026-08-20
         status: current
         decision: approved-with-findings
@@ -23,12 +23,13 @@ review_inventory:
           - ai
         review_trigger_ids:
           - governed-ai-provider-model-binding
-          - governed-ai-external-provider-route
-          - governed-ai-data-retention-and-tool-boundary
+          - governed-ai-local-provider-route
+          - governed-ai-host-listener-boundary
+          - governed-ai-structured-output-and-tool-boundary
           - governed-ai-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/platform/2026-08-20-intake-classifier-v1-openai-terra-binding.md
+            path: docs/reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md
           - repo: platform-engineering
             path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
@@ -586,7 +587,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-08-20-intake-classifier-v1-openai-terra-binding.md
+        path: docs/reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md
         reviewed_on: 2026-08-20
         status: current
         decision: approved-with-findings
@@ -598,12 +599,13 @@ review_inventory:
           - ai
         review_trigger_ids:
           - governed-ai-provider-model-binding
-          - governed-ai-external-provider-route
-          - governed-ai-data-retention-and-tool-boundary
+          - governed-ai-local-provider-route
+          - governed-ai-host-listener-boundary
+          - governed-ai-structured-output-and-tool-boundary
           - governed-ai-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/platform/2026-08-20-intake-classifier-v1-openai-terra-binding.md
+            path: docs/reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md
           - repo: platform-engineering
             path: docs/components/governed-ai-gateway/README.md
           - repo: platform-engineering
