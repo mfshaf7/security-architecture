@@ -1,5 +1,12 @@
 # Intake Classifier OpenAI Terra Binding Review
 
+> Supersession note, 2026-08-20: the OpenAI binding decision remains valid,
+> but its activation sequence now applies only when the OpenAI route is
+> selected. Local Ollama binding review work item `#865` and Platform
+> activation work item `#866` establish a separate no-cost route. Workspace
+> consumer work item `#415` now depends on `#866`; paid OpenAI activation
+> remains isolated and blocked under `#864`.
+
 ## Summary
 
 - date: 2026-08-20

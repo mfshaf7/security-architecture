@@ -22,7 +22,15 @@ The gateway sits between governed consumers and any future provider route:
 - consumer egress must be denied except for DNS and the gateway service
 
 The current local dev-integration profile uses a provider sentinel to prove
-direct-provider bypass denial before a real provider adapter is selected.
+direct-provider bypass denial before a real provider adapter is activated.
+Two provider bindings are now selected but inactive:
+
+- local Ollama `qwen3:8b` as the initial no-cost dev-integration route
+- OpenAI Responses API plus `gpt-5.6-terra` as a future paid route
+
+Consumers depend on the logical model profile, not either provider binding.
+Each binding requires its own activation evidence and may be suspended without
+rewriting consumers or activating the other route.
 
 ## Current Admitted Shape
 
@@ -61,6 +69,11 @@ Consumer egress defaults to deny. The only allowed AI invocation path is the
 gateway service. If the consumer can reach the provider sentinel directly, the
 activation path is blocked.
 
+A local provider route also crosses the Windows-host boundary. Host listener,
+firewall, and forwarding rules must admit only the managed gateway path and
+must deny direct consumer and unrelated local-network access. Local inference
+does not make a broadly reachable provider endpoint acceptable.
+
 ### AI
 
 Model output is suggestion-only. It must not directly mutate workspace,
@@ -74,11 +87,15 @@ accepted or operator overridden.
 - audit records missing caller or operator identity
 - dev-integration evidence being mistaken for stage or prod readiness
 - model output being treated as workspace decision authority
+- a host-local provider being mistaken for an implicitly trusted endpoint
+- provider or model drift occurring without route revalidation
 
 ## Required Companion Artifacts
 
 - Gateway dev-integration review:
   [../../../reviews/platform/2026-05-06-governed-ai-gateway-devint-runtime.md](../../../reviews/platform/2026-05-06-governed-ai-gateway-devint-runtime.md)
+- Local Ollama binding review:
+  [../../../reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md](../../../reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md)
 - Bounded runtime-assist activation review:
   [../../../reviews/platform/2026-04-29-bounded-governed-ai-runtime-assist-activation.md](../../../reviews/platform/2026-04-29-bounded-governed-ai-runtime-assist-activation.md)
 - AI security and governance standard:
