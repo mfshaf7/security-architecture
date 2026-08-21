@@ -108,32 +108,38 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md
-        reviewed_on: 2026-05-05
+        path: docs/reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md
+        reviewed_on: 2026-08-22
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
           - secrets
           - delivery
           - runtime
           - ai
         review_trigger_ids:
-          - cgg-active-devint-runtime
-          - cgg-local-artifact-custody-boundary
-          - cgg-read-only-persistent-smoke
-          - cgg-stage-prod-denial
+          - cgg-governed-ai-context-handoff
+          - cgg-packet-receipt-integrity-binding
+          - cgg-provider-specific-adapter-retirement
+          - cgg-raw-source-reference-exclusion
+          - cgg-runtime-activation-denial
         owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md
           - repo: security-architecture
             path: docs/reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md
           - repo: security-architecture
-            path: docs/architecture/components/context-governance-gateway/service-mode-security-requirements.md
-          - repo: security-architecture
             path: docs/architecture/components/context-governance-gateway/README.md
-          - repo: platform-engineering
-            path: docs/components/context-governance-gateway/release-governance.md
+          - repo: security-architecture
+            path: docs/architecture/components/context-governance-gateway/service-mode-security-requirements.md
           - repo: context-governance-gateway
-            path: docs/operating-model/dev-integration-service.md
+            path: contracts/schemas/governed-ai-context-handoff.schema.json
+          - repo: context-governance-gateway
+            path: packages/context_adapters/src/context_adapters/gateway.py
+          - repo: context-governance-gateway
+            path: packages/context_adapters/src/context_adapters/authority.py
+          - repo: context-governance-gateway
+            path: tests/test_adapter_foundation.py
     workspace-prototype-studio:
       owner_repo: workspace-prototype-studio
       scope: component
@@ -547,32 +553,38 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md
-        reviewed_on: 2026-05-05
+        path: docs/reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md
+        reviewed_on: 2026-08-22
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
           - secrets
           - delivery
           - runtime
           - ai
         review_trigger_ids:
-          - cgg-active-devint-runtime
-          - cgg-local-artifact-custody-boundary
-          - cgg-read-only-persistent-smoke
-          - cgg-stage-prod-denial
+          - cgg-governed-ai-context-handoff
+          - cgg-packet-receipt-integrity-binding
+          - cgg-provider-specific-adapter-retirement
+          - cgg-raw-source-reference-exclusion
+          - cgg-runtime-activation-denial
         owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md
           - repo: security-architecture
             path: docs/reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md
           - repo: security-architecture
-            path: docs/architecture/components/context-governance-gateway/service-mode-security-requirements.md
-          - repo: security-architecture
             path: docs/architecture/components/context-governance-gateway/README.md
-          - repo: platform-engineering
-            path: docs/components/context-governance-gateway/release-governance.md
+          - repo: security-architecture
+            path: docs/architecture/components/context-governance-gateway/service-mode-security-requirements.md
           - repo: context-governance-gateway
-            path: docs/operating-model/dev-integration-service.md
+            path: contracts/schemas/governed-ai-context-handoff.schema.json
+          - repo: context-governance-gateway
+            path: packages/context_adapters/src/context_adapters/gateway.py
+          - repo: context-governance-gateway
+            path: packages/context_adapters/src/context_adapters/authority.py
+          - repo: context-governance-gateway
+            path: tests/test_adapter_foundation.py
     governed-ai-gateway:
       owner_repo: platform-engineering
       scope: component
