@@ -25,8 +25,10 @@ operators, CI, or automation:
 - full artifact custody remains local in the current approved slices
 - active local `dev-integration` runtime is approved only after workspace
   lifecycle activation and only for local-k3s service-shape proof
+- the provider-neutral governed AI gateway handoff is approved as a dormant
+  source contract only
 - governed service-mode runtime, shared stage/prod storage, dashboard raw
-  browsing, broker adapters, and downstream AI gateway adapters are not
+  browsing, downstream handoff activation, and model invocation are not
   approved yet
 
 ## Current Admitted Shape
@@ -55,11 +57,12 @@ service-mode security requirements for:
 - model-safe and operator-safe packet projection
 - downstream consumer attribution and denial metadata
 
-The current security decision approves active local dev-integration only. It
-keeps governed shared metadata storage, governed shared artifact storage,
-dashboard raw browsing, broker adapters, WGCF adapters, scanner execution,
-model invocation, stage, and production blocked until implementation,
-platform, and security evidence exist for those boundaries.
+The current security decisions approve active local dev-integration and the
+dormant provider-neutral handoff source contract only. They keep governed
+shared metadata storage, governed shared artifact storage, dashboard raw
+browsing, downstream handoff activation, scanner execution, model invocation,
+stage, and production blocked until implementation, platform, and security
+evidence exist for those boundaries.
 
 ## Security Model
 
@@ -101,6 +104,8 @@ platform, and security evidence exist for those boundaries.
 
 - CGG may produce packets for later AI-assisted or operator-assisted
   workflows.
+- CGG may project the reviewed provider-neutral three-field gateway handoff as
+  dormant source behavior after packet and receipt integrity agree.
 - It does not approve model invocation or replace governed model-access
   controls.
 - Downstream AI consumers must preserve attribution, output validation, and
@@ -124,6 +129,8 @@ platform, and security evidence exist for those boundaries.
   [../../../reviews/components/2026-05-05-context-governance-gateway-service-mode-admission-gates.md](../../../reviews/components/2026-05-05-context-governance-gateway-service-mode-admission-gates.md)
 - Active dev-integration runtime security delta:
   [../../../reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md](../../../reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md)
+- Provider-neutral context handoff security delta:
+  [../../../reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md](../../../reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md)
 - Phase 1 local custody security delta:
   [../../../reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md](../../../reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md)
 - AI security and governance standard:
