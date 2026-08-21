@@ -68,6 +68,21 @@ Evidence for this delta is immutable source and validation evidence only:
 
 No deployed consumer, gateway call, model call, or live handoff is claimed.
 
+### Review Packet Custody Remediation
+
+The security decision above did not change while its delivery evidence was
+completed. The Review Packet contract was corrected to allow validation-only
+Security Architecture changes to record an empty test set without fabricating
+an executable test result. The canonical contract, OOS consumer, WGCF
+readiness runtime, and generated Security Architecture index were then aligned
+through ART work items #947 through #950 before this review closed.
+
+This remediation changes delivery evidence custody only. It does not broaden
+the approved CGG handoff, alter an active finding or risk, or approve runtime
+activation. The source review remains bound to Security Architecture PR #124;
+the generated cross-repo index refresh is bound separately to Security
+Architecture PR #125.
+
 ## Review Areas
 
 ### Identity
