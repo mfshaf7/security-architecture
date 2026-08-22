@@ -268,25 +268,26 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
-        reviewed_on: 2026-08-21
+        path: docs/reviews/components/2026-08-23-delivery-art-work-session-lifecycle.md
+        reviewed_on: 2026-08-23
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - broker-runtime-and-caller-surface
-          - openproject-delivery-adapter-and-api
+          - delivery-art-work-session-state-custody
+          - delivery-art-historical-freshness
+          - delivery-art-human-gate-preservation
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-21-proposal-delivery-application.md
-          - repo: governance-operations-console
-            path: docs/product/proposal-live-integration.md
+            path: docs/operations/delivery-workflow-operator-surface.md
+          - repo: operator-orchestration-service
+            path: contracts/delivery-art-lifecycle/capabilities.json
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
+            path: docs/reviews/components/2026-08-23-delivery-art-work-session-lifecycle.md
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -706,22 +707,23 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
-        reviewed_on: 2026-08-21
+        path: docs/reviews/components/2026-08-23-delivery-art-work-session-lifecycle.md
+        reviewed_on: 2026-08-23
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - broker-runtime-and-caller-surface
-          - openproject-delivery-adapter-and-api
+          - delivery-art-work-session-state-custody
+          - delivery-art-historical-freshness
+          - delivery-art-human-gate-preservation
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-21-proposal-delivery-application.md
-          - repo: governance-operations-console
-            path: docs/product/proposal-live-integration.md
+            path: docs/operations/delivery-workflow-operator-surface.md
+          - repo: operator-orchestration-service
+            path: contracts/delivery-art-lifecycle/capabilities.json
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
+            path: docs/reviews/components/2026-08-23-delivery-art-work-session-lifecycle.md
