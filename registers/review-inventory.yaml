@@ -44,8 +44,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-        reviewed_on: 2026-08-09
+        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+        reviewed_on: 2026-08-24
         status: current
         decision: approved-with-findings
         review_areas:
@@ -53,18 +53,19 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - delivery-art-evidence-custody-boundary
-          - delivery-art-source-provenance-integrity
-          - delivery-art-object-storage-and-lifecycle
-          - delivery-art-safe-openproject-projection
+          - governed-agent-action-authority-boundary
+          - logical-agent-attribution-only
+          - exact-operator-approval-for-mutation
+          - agent-action-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
+            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
           - repo: workspace-governance
-            path: contracts/delivery-art-operator-path.yaml
+            path: contracts/agent-action-authority.yaml
           - repo: workspace-governance
-            path: contracts/schemas/delivery-art-custody-receipt.schema.json
+            path: reports/agent-action-conformance.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -75,26 +76,28 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
-        reviewed_on: 2026-08-23
+        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+        reviewed_on: 2026-08-24
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - delivery-art-destructive-resource-retirement
-          - delivery-art-session-created-provenance
-          - delivery-art-terminal-cleanup-evidence
-          - delivery-art-architecture-v2-custody-validation
-          - delivery-art-activation-sequencing
+          - governed-agent-action-policy-evaluation
+          - current-authority-binding
+          - logical-agent-attribution-only
+          - agent-action-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
+            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
           - repo: workspace-governance-control-fabric
-            path: contracts/delivery-art/delivery-art-architecture-packet.schema.json
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-23-delivery-art-work-session-resource-retirement.md
+            path: contracts/agent-action/manifest.json
+          - repo: workspace-governance
+            path: reports/agent-action-conformance.md
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -265,26 +268,29 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
-        reviewed_on: 2026-08-23
+        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+        reviewed_on: 2026-08-24
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - delivery-art-destructive-resource-retirement
-          - delivery-art-session-created-provenance
-          - delivery-art-terminal-cleanup-evidence
-          - delivery-art-architecture-v2-custody-validation
-          - delivery-art-activation-sequencing
+          - governed-agent-action-enforcement
+          - exact-operator-approval-for-mutation
+          - owner-and-terminal-receipt-custody
+          - post-owner-mutation-reconciliation
+          - agent-action-runtime-activation-denial
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-23-delivery-art-work-session-resource-retirement.md
-          - repo: workspace-governance-control-fabric
-            path: contracts/delivery-art/delivery-art-architecture-packet.schema.json
+            path: docs/records/change-records/2026-08-23-agent-action-decision-enforcement.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
+            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+          - repo: workspace-governance
+            path: reports/agent-action-conformance.md
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -518,26 +524,28 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
-        reviewed_on: 2026-08-23
+        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+        reviewed_on: 2026-08-24
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - delivery-art-destructive-resource-retirement
-          - delivery-art-session-created-provenance
-          - delivery-art-terminal-cleanup-evidence
-          - delivery-art-architecture-v2-custody-validation
-          - delivery-art-activation-sequencing
+          - governed-agent-action-policy-evaluation
+          - current-authority-binding
+          - logical-agent-attribution-only
+          - agent-action-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
+            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
           - repo: workspace-governance-control-fabric
-            path: contracts/delivery-art/delivery-art-architecture-packet.schema.json
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-23-delivery-art-work-session-resource-retirement.md
+            path: contracts/agent-action/manifest.json
+          - repo: workspace-governance
+            path: reports/agent-action-conformance.md
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -701,23 +709,26 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
-        reviewed_on: 2026-08-23
+        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+        reviewed_on: 2026-08-24
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - delivery-art-destructive-resource-retirement
-          - delivery-art-session-created-provenance
-          - delivery-art-terminal-cleanup-evidence
-          - delivery-art-architecture-v2-custody-validation
-          - delivery-art-activation-sequencing
+          - governed-agent-action-enforcement
+          - exact-operator-approval-for-mutation
+          - owner-and-terminal-receipt-custody
+          - post-owner-mutation-reconciliation
+          - agent-action-runtime-activation-denial
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-23-delivery-art-work-session-resource-retirement.md
-          - repo: workspace-governance-control-fabric
-            path: contracts/delivery-art/delivery-art-architecture-packet.schema.json
+            path: docs/records/change-records/2026-08-23-agent-action-decision-enforcement.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
+            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+          - repo: workspace-governance
+            path: reports/agent-action-conformance.md
