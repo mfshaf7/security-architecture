@@ -75,29 +75,26 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-        reviewed_on: 2026-08-09
+        path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
+        reviewed_on: 2026-08-23
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-evidence-custody-boundary
-          - delivery-art-source-provenance-integrity
-          - delivery-art-object-storage-and-lifecycle
-          - delivery-art-safe-openproject-projection
+          - delivery-art-destructive-resource-retirement
+          - delivery-art-session-created-provenance
+          - delivery-art-terminal-cleanup-evidence
+          - delivery-art-architecture-v2-custody-validation
+          - delivery-art-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-          - repo: security-architecture
-            path: docs/architecture/components/workspace-governance-control-fabric/README.md
-          - repo: workspace-governance
-            path: contracts/delivery-art-operator-path.yaml
-          - repo: workspace-governance
-            path: contracts/schemas/delivery-art-custody-receipt.schema.json
+            path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
+          - repo: workspace-governance-control-fabric
+            path: contracts/delivery-art/delivery-art-architecture-packet.schema.json
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-08-23-delivery-art-work-session-resource-retirement.md
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -268,26 +265,26 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-23-delivery-art-work-session-lifecycle.md
+        path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
         reviewed_on: 2026-08-23
         status: current
         decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-work-session-state-custody
-          - delivery-art-historical-freshness
-          - delivery-art-human-gate-preservation
+          - delivery-art-destructive-resource-retirement
+          - delivery-art-session-created-provenance
+          - delivery-art-terminal-cleanup-evidence
+          - delivery-art-architecture-v2-custody-validation
+          - delivery-art-activation-sequencing
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/operations/delivery-workflow-operator-surface.md
-          - repo: operator-orchestration-service
-            path: contracts/delivery-art-lifecycle/capabilities.json
+            path: docs/records/change-records/2026-08-23-delivery-art-work-session-resource-retirement.md
+          - repo: workspace-governance-control-fabric
+            path: contracts/delivery-art/delivery-art-architecture-packet.schema.json
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-23-delivery-art-work-session-lifecycle.md
+            path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -521,29 +518,26 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-        reviewed_on: 2026-08-09
+        path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
+        reviewed_on: 2026-08-23
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-evidence-custody-boundary
-          - delivery-art-source-provenance-integrity
-          - delivery-art-object-storage-and-lifecycle
-          - delivery-art-safe-openproject-projection
+          - delivery-art-destructive-resource-retirement
+          - delivery-art-session-created-provenance
+          - delivery-art-terminal-cleanup-evidence
+          - delivery-art-architecture-v2-custody-validation
+          - delivery-art-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-          - repo: security-architecture
-            path: docs/architecture/components/workspace-governance-control-fabric/README.md
-          - repo: workspace-governance
-            path: contracts/delivery-art-operator-path.yaml
-          - repo: workspace-governance
-            path: contracts/schemas/delivery-art-custody-receipt.schema.json
+            path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
+          - repo: workspace-governance-control-fabric
+            path: contracts/delivery-art/delivery-art-architecture-packet.schema.json
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-08-23-delivery-art-work-session-resource-retirement.md
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -707,23 +701,23 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-23-delivery-art-work-session-lifecycle.md
+        path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
         reviewed_on: 2026-08-23
         status: current
         decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-work-session-state-custody
-          - delivery-art-historical-freshness
-          - delivery-art-human-gate-preservation
+          - delivery-art-destructive-resource-retirement
+          - delivery-art-session-created-provenance
+          - delivery-art-terminal-cleanup-evidence
+          - delivery-art-architecture-v2-custody-validation
+          - delivery-art-activation-sequencing
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/operations/delivery-workflow-operator-surface.md
-          - repo: operator-orchestration-service
-            path: contracts/delivery-art-lifecycle/capabilities.json
+            path: docs/records/change-records/2026-08-23-delivery-art-work-session-resource-retirement.md
+          - repo: workspace-governance-control-fabric
+            path: contracts/delivery-art/delivery-art-architecture-packet.schema.json
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-23-delivery-art-work-session-lifecycle.md
+            path: docs/reviews/components/2026-08-23-delivery-art-work-session-resource-retirement.md
