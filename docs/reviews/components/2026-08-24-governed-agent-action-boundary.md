@@ -93,6 +93,8 @@ Accepted evidence:
   `sha256:3172d1dac51a8454d8c20bbf52c1b7f6598ef11c516cd00b8e8293c64015a099`
 - integrated result: `11/11` scenarios passed, comprising four positive and
   seven negative scenarios;
+- Security Architecture PR #129 is the review and merge path; its exact-head
+  `validate-security-evidence` result is required by Review Packet readiness;
 - the mutation adapter used by conformance is synthetic; no canonical backend
   was mutated.
 
