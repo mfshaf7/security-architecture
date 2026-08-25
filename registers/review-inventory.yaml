@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
-        reviewed_on: 2026-08-25
+        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+        reviewed_on: 2026-08-26
         status: current
         decision: approved-with-findings
         review_areas:
@@ -22,18 +22,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - work-design-exact-source-binding
-          - work-design-profile-isolation
-          - work-design-provider-custody
-          - work-design-structured-output-boundary
-          - work-design-devint-activation-sequencing
+          - refinement-catalog-exact-source-and-envelope-binding
+          - refinement-advisor-and-temporal-profile-isolation
+          - refinement-provider-and-composition-credential-custody
+          - catalog-bounded-control-adapter
+          - refinement-catalog-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
+            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
           - repo: platform-engineering
             path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
-            path: dev-integration/profiles/governed-ai-gateway/runtime/gateway_policy.py
+            path: scripts/dev_integration_compositions.py
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -44,8 +44,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
-        reviewed_on: 2026-08-24
+        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+        reviewed_on: 2026-08-26
         status: current
         decision: approved-with-findings
         review_areas:
@@ -55,17 +55,17 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governed-agent-action-authority-boundary
-          - logical-agent-attribution-only
-          - exact-operator-approval-for-mutation
-          - agent-action-runtime-activation-denial
+          - refinement-catalog-composition-authority
+          - refinement-catalog-secret-free-registry
+          - refinement-catalog-exact-profile-bindings
+          - refinement-catalog-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
           - repo: workspace-governance
-            path: contracts/agent-action-authority.yaml
+            path: contracts/developer-integration-profiles.yaml
           - repo: workspace-governance
-            path: reports/agent-action-conformance.md
+            path: docs/developer-integration-runtime-composition.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -76,8 +76,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
-        reviewed_on: 2026-08-24
+        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+        reviewed_on: 2026-08-26
         status: current
         decision: approved-with-findings
         review_areas:
@@ -87,17 +87,17 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governed-agent-action-policy-evaluation
-          - current-authority-binding
-          - logical-agent-attribution-only
-          - agent-action-runtime-activation-denial
+          - repository-readiness-authority-binding
+          - repository-readiness-current-digest
+          - repository-readiness-immutable-receipt
+          - repository-lifecycle-mutation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
           - repo: workspace-governance-control-fabric
-            path: contracts/agent-action/manifest.json
-          - repo: workspace-governance
-            path: reports/agent-action-conformance.md
+            path: contracts/repository-readiness/manifest.json
+          - repo: workspace-governance-control-fabric
+            path: contracts/repository-readiness/README.md
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -108,8 +108,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
-        reviewed_on: 2026-08-25
+        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+        reviewed_on: 2026-08-26
         status: current
         decision: approved-with-findings
         review_areas:
@@ -119,18 +119,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - work-design-exact-source-binding
-          - work-design-context-receipt-boundary
-          - work-design-raw-context-denial
-          - work-design-replay-and-recovery
-          - work-design-devint-activation-sequencing
+          - refinement-exact-source-binding
+          - refinement-context-receipt-boundary
+          - refinement-raw-context-denial
+          - refinement-replay-and-recovery
+          - refinement-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
+            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
           - repo: context-governance-gateway
-            path: docs/operating-model/work-design-projection.md
+            path: docs/operating-model/refinement-projection.md
           - repo: context-governance-gateway
-            path: contracts/schemas/work-design-context-projection-result.schema.json
+            path: contracts/schemas/refinement-context-projection-result.schema.json
     workspace-prototype-studio:
       owner_repo: workspace-prototype-studio
       scope: component
@@ -167,8 +167,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
-        reviewed_on: 2026-08-25
+        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+        reviewed_on: 2026-08-26
         status: current
         decision: approved-with-findings
         review_areas:
@@ -178,18 +178,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - work-design-console-source-baseline-binding
-          - work-design-same-origin-oos-boundary
-          - work-design-server-side-operator-attribution
-          - work-design-no-fixture-success-fallback
-          - work-design-console-integration-sequencing
+          - refinement-catalog-console-source-baseline-binding
+          - refinement-catalog-same-origin-oos-boundary
+          - refinement-catalog-server-side-operator-attribution
+          - refinement-catalog-no-fixture-success-fallback
+          - refinement-catalog-console-integration-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
+            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
           - repo: operator-orchestration-service
-            path: docs/contracts/work-design-v1.md
+            path: docs/contracts/refinement-v1.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -262,8 +262,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
-        reviewed_on: 2026-08-25
+        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+        reviewed_on: 2026-08-26
         status: current
         decision: approved-with-findings
         review_areas:
@@ -273,18 +273,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - work-design-exact-source-binding
-          - work-design-typed-advice-validation
-          - work-design-operator-apply-authority
-          - work-design-backend-readback-and-receipt
-          - work-design-runtime-activation-denial
+          - refinement-catalog-exact-source-binding
+          - refinement-typed-advice-and-operator-apply-authority
+          - refinement-durable-recovery-and-receipt
+          - catalog-readiness-readback-and-receipt
+          - refinement-catalog-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
+            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
           - repo: operator-orchestration-service
-            path: contracts/work-design/manifest.json
+            path: contracts/refinement/manifest.json
           - repo: operator-orchestration-service
-            path: src/work-design/service.js
+            path: contracts/catalog/manifest.json
   products:
     governance-operations-console:
       owner_repo: platform-engineering

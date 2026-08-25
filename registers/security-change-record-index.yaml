@@ -1710,6 +1710,43 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-26-authoritative-delivery-catalog-runtime.md
+  date: '2026-08-26'
+  short_title: 2026-08-26-authoritative-delivery-catalog-runtime
+  review_areas:
+  - delivery
+  - identity
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-26-governed-refinement-runtime.md
+  date: '2026-08-26'
+  short_title: 2026-08-26-governed-refinement-runtime
+  review_areas:
+  - ai
+  - delivery
+  - identity
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-26-refinement-catalog-contracts.md
+  date: '2026-08-26'
+  short_title: 2026-08-26-refinement-catalog-contracts
+  review_areas:
+  - ai
+  - delivery
+  - identity
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
