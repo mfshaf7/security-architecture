@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md
-        reviewed_on: 2026-08-20
+        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
         review_areas:
@@ -22,18 +22,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governed-ai-provider-model-binding
-          - governed-ai-local-provider-route
-          - governed-ai-host-listener-boundary
-          - governed-ai-structured-output-and-tool-boundary
-          - governed-ai-activation-sequencing
+          - work-design-exact-source-binding
+          - work-design-profile-isolation
+          - work-design-provider-custody
+          - work-design-structured-output-boundary
+          - work-design-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md
+            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
           - repo: platform-engineering
             path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
-            path: security/governed-ai-access-plane.yaml
+            path: dev-integration/profiles/governed-ai-gateway/runtime/gateway_policy.py
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -108,38 +108,29 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md
-        reviewed_on: 2026-08-22
+        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        reviewed_on: 2026-08-25
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
+          - identity
           - secrets
           - delivery
           - runtime
           - ai
         review_trigger_ids:
-          - cgg-governed-ai-context-handoff
-          - cgg-packet-receipt-integrity-binding
-          - cgg-provider-specific-adapter-retirement
-          - cgg-raw-source-reference-exclusion
-          - cgg-runtime-activation-denial
+          - work-design-exact-source-binding
+          - work-design-context-receipt-boundary
+          - work-design-raw-context-denial
+          - work-design-replay-and-recovery
+          - work-design-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md
-          - repo: security-architecture
-            path: docs/reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md
-          - repo: security-architecture
-            path: docs/architecture/components/context-governance-gateway/README.md
-          - repo: security-architecture
-            path: docs/architecture/components/context-governance-gateway/service-mode-security-requirements.md
+            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
           - repo: context-governance-gateway
-            path: contracts/schemas/governed-ai-context-handoff.schema.json
+            path: docs/operating-model/work-design-projection.md
           - repo: context-governance-gateway
-            path: packages/context_adapters/src/context_adapters/gateway.py
-          - repo: context-governance-gateway
-            path: packages/context_adapters/src/context_adapters/authority.py
-          - repo: context-governance-gateway
-            path: tests/test_adapter_foundation.py
+            path: contracts/schemas/work-design-context-projection-result.schema.json
     workspace-prototype-studio:
       owner_repo: workspace-prototype-studio
       scope: component
@@ -176,8 +167,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
-        reviewed_on: 2026-08-21
+        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
         review_areas:
@@ -185,17 +176,20 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - governance-console-live-integration
+          - work-design-console-source-baseline-binding
+          - work-design-same-origin-oos-boundary
+          - work-design-server-side-operator-attribution
+          - work-design-no-fixture-success-fallback
+          - work-design-console-integration-sequencing
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-21-proposal-delivery-application.md
-          - repo: governance-operations-console
-            path: docs/product/proposal-live-integration.md
+          - repo: security-architecture
+            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
-          - repo: security-architecture
-            path: docs/reviews/components/2026-08-21-proposal-to-delivery-application.md
+          - repo: operator-orchestration-service
+            path: docs/contracts/work-design-v1.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -268,8 +262,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
-        reviewed_on: 2026-08-24
+        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
         review_areas:
@@ -279,18 +273,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governed-agent-action-enforcement
-          - exact-operator-approval-for-mutation
-          - owner-and-terminal-receipt-custody
-          - post-owner-mutation-reconciliation
-          - agent-action-runtime-activation-denial
+          - work-design-exact-source-binding
+          - work-design-typed-advice-validation
+          - work-design-operator-apply-authority
+          - work-design-backend-readback-and-receipt
+          - work-design-runtime-activation-denial
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-23-agent-action-decision-enforcement.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
-          - repo: workspace-governance
-            path: reports/agent-action-conformance.md
+            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+          - repo: operator-orchestration-service
+            path: contracts/work-design/manifest.json
+          - repo: operator-orchestration-service
+            path: src/work-design/service.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -556,38 +550,29 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md
-        reviewed_on: 2026-08-22
+        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        reviewed_on: 2026-08-25
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
+          - identity
           - secrets
           - delivery
           - runtime
           - ai
         review_trigger_ids:
-          - cgg-governed-ai-context-handoff
-          - cgg-packet-receipt-integrity-binding
-          - cgg-provider-specific-adapter-retirement
-          - cgg-raw-source-reference-exclusion
-          - cgg-runtime-activation-denial
+          - work-design-exact-source-binding
+          - work-design-context-receipt-boundary
+          - work-design-raw-context-denial
+          - work-design-replay-and-recovery
+          - work-design-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-22-context-governance-gateway-provider-neutral-context-handoff.md
-          - repo: security-architecture
-            path: docs/reviews/components/2026-05-05-context-governance-gateway-active-devint-runtime.md
-          - repo: security-architecture
-            path: docs/architecture/components/context-governance-gateway/README.md
-          - repo: security-architecture
-            path: docs/architecture/components/context-governance-gateway/service-mode-security-requirements.md
+            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
           - repo: context-governance-gateway
-            path: contracts/schemas/governed-ai-context-handoff.schema.json
+            path: docs/operating-model/work-design-projection.md
           - repo: context-governance-gateway
-            path: packages/context_adapters/src/context_adapters/gateway.py
-          - repo: context-governance-gateway
-            path: packages/context_adapters/src/context_adapters/authority.py
-          - repo: context-governance-gateway
-            path: tests/test_adapter_foundation.py
+            path: contracts/schemas/work-design-context-projection-result.schema.json
     governed-ai-gateway:
       owner_repo: platform-engineering
       scope: component
@@ -598,8 +583,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md
-        reviewed_on: 2026-08-20
+        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
         review_areas:
@@ -609,20 +594,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governed-ai-provider-model-binding
-          - governed-ai-local-provider-route
-          - governed-ai-host-listener-boundary
-          - governed-ai-structured-output-and-tool-boundary
-          - governed-ai-activation-sequencing
+          - work-design-exact-source-binding
+          - work-design-profile-isolation
+          - work-design-provider-custody
+          - work-design-structured-output-boundary
+          - work-design-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/platform/2026-08-20-intake-classifier-v1-local-ollama-binding.md
+            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
           - repo: platform-engineering
-            path: docs/components/governed-ai-gateway/README.md
+            path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
-            path: security/governed-ai-access-plane.yaml
-          - repo: workspace-governance
-            path: contracts/components.yaml
+            path: dev-integration/profiles/governed-ai-gateway/runtime/gateway_policy.py
     openclaw-host-bridge:
       owner_repo: openclaw-host-bridge
       scope: component
@@ -709,8 +692,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
-        reviewed_on: 2026-08-24
+        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
         review_areas:
@@ -720,15 +703,15 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - governed-agent-action-enforcement
-          - exact-operator-approval-for-mutation
-          - owner-and-terminal-receipt-custody
-          - post-owner-mutation-reconciliation
-          - agent-action-runtime-activation-denial
+          - work-design-exact-source-binding
+          - work-design-typed-advice-validation
+          - work-design-operator-apply-authority
+          - work-design-backend-readback-and-receipt
+          - work-design-runtime-activation-denial
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-23-agent-action-decision-enforcement.md
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
-          - repo: workspace-governance
-            path: reports/agent-action-conformance.md
+            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+          - repo: operator-orchestration-service
+            path: contracts/work-design/manifest.json
+          - repo: operator-orchestration-service
+            path: src/work-design/service.js
