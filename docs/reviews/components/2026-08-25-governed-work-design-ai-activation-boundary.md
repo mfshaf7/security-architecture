@@ -99,6 +99,9 @@ behavior. They do not prove an active Work Design provider route. Exact
 activation, audit persistence, bypass denial, provider health, and independent
 suspension remain operating-evidence obligations for `#995`.
 
+Security Architecture PR `#130` is the review and merge path. Its exact-head
+`validate-security-evidence` result is required by Review Packet readiness.
+
 ## Review Areas
 
 ### Identity And Authorization
@@ -243,4 +246,3 @@ accepted risk implicitly.
 - `platform-engineering/dev-integration/profiles/governed-ai-gateway/runtime/gateway_policy.py`
 - `governance-operations-console/docs/security-and-data-boundaries.md`
 - `security-architecture/docs/standards/ai-security-and-governance.md`
-
