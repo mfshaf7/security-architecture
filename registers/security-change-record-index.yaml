@@ -1583,6 +1583,108 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-24-canonical-projection-checkpoint-coordination.md
+  date: '2026-08-24'
+  short_title: 2026-08-24-canonical-projection-checkpoint-coordination
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-24-delivery-art-architecture-v2-validator-parity.md
+  date: '2026-08-24'
+  short_title: 2026-08-24-delivery-art-architecture-v2-validator-parity
+  review_areas:
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-24-linked-worktree-projection-sync-resolution.md
+  date: '2026-08-24'
+  short_title: 2026-08-24-linked-worktree-projection-sync-resolution
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-24-linked-worktree-self-cleanup-execution-boundary.md
+  date: '2026-08-24'
+  short_title: 2026-08-24-linked-worktree-self-cleanup-execution-boundary
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-24-squash-merge-cleanup-proof.md
+  date: '2026-08-24'
+  short_title: 2026-08-24-squash-merge-cleanup-proof
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-25-governed-work-design-contract.md
+  date: '2026-08-25'
+  short_title: 2026-08-25-governed-work-design-contract
+  review_areas:
+  - ai
+  - delivery
+  - identity
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-25-governed-work-design-runtime.md
+  date: '2026-08-25'
+  short_title: 2026-08-25-governed-work-design-runtime
+  review_areas:
+  - ai
+  - delivery
+  - identity
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-25-neutral-delivery-ingress.md
+  date: '2026-08-25'
+  short_title: 2026-08-25-neutral-delivery-ingress
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-25-prototype-delivery-application.md
+  date: '2026-08-25'
+  short_title: 2026-08-25-prototype-delivery-application
+  review_areas:
+  - runtime
+  - delivery
+  - identity
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
