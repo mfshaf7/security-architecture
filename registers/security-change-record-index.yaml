@@ -1685,6 +1685,31 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-25-work-design-composed-oos-runtime.md
+  date: '2026-08-25'
+  short_title: 2026-08-25-work-design-composed-oos-runtime
+  review_areas:
+  - ai
+  - delivery
+  - identity
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-25-work-design-durable-projection.md
+  date: '2026-08-25'
+  short_title: 2026-08-25-work-design-durable-projection
+  review_areas:
+  - delivery
+  - identity
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'

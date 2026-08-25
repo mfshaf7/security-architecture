@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
         reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
@@ -29,7 +29,7 @@ review_inventory:
           - work-design-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
           - repo: platform-engineering
             path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
@@ -108,7 +108,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
         reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
@@ -126,7 +126,7 @@ review_inventory:
           - work-design-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
           - repo: context-governance-gateway
             path: docs/operating-model/work-design-projection.md
           - repo: context-governance-gateway
@@ -167,7 +167,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
         reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
@@ -185,7 +185,7 @@ review_inventory:
           - work-design-console-integration-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
           - repo: operator-orchestration-service
@@ -262,7 +262,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
         reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
@@ -280,7 +280,7 @@ review_inventory:
           - work-design-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
           - repo: operator-orchestration-service
             path: contracts/work-design/manifest.json
           - repo: operator-orchestration-service
@@ -550,7 +550,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
         reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
@@ -568,7 +568,7 @@ review_inventory:
           - work-design-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
           - repo: context-governance-gateway
             path: docs/operating-model/work-design-projection.md
           - repo: context-governance-gateway
@@ -583,7 +583,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
         reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
@@ -601,7 +601,7 @@ review_inventory:
           - work-design-devint-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
           - repo: platform-engineering
             path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
@@ -692,7 +692,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
         reviewed_on: 2026-08-25
         status: current
         decision: approved-with-findings
@@ -710,7 +710,7 @@ review_inventory:
           - work-design-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-governed-work-design-ai-activation-boundary.md
+            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
           - repo: operator-orchestration-service
             path: contracts/work-design/manifest.json
           - repo: operator-orchestration-service
