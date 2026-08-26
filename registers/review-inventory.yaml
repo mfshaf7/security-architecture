@@ -167,8 +167,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
-        reviewed_on: 2026-08-26
+        path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
+        reviewed_on: 2026-08-27
         status: current
         decision: approved-with-findings
         review_areas:
@@ -178,18 +178,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - refinement-catalog-console-source-baseline-binding
-          - refinement-catalog-same-origin-oos-boundary
-          - refinement-catalog-server-side-operator-attribution
-          - refinement-catalog-no-fixture-success-fallback
-          - refinement-catalog-console-integration-sequencing
+          - console-work-session-same-origin-adapter
+          - console-server-side-caller-custody
+          - console-no-browser-source-or-completion-truth
+          - console-no-fixture-success-fallback
+          - console-execution-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+            path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
           - repo: operator-orchestration-service
-            path: docs/contracts/refinement-v1.md
+            path: docs/contracts/delivery-workflow-api-v1.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -262,8 +262,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
-        reviewed_on: 2026-08-26
+        path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
+        reviewed_on: 2026-08-27
         status: current
         decision: approved-with-findings
         review_areas:
@@ -273,18 +273,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - refinement-catalog-exact-source-binding
-          - refinement-typed-advice-and-operator-apply-authority
-          - refinement-durable-recovery-and-receipt
-          - catalog-readiness-readback-and-receipt
-          - refinement-catalog-runtime-activation-denial
+          - delivery-work-session-caller-bound-command-authority
+          - delivery-work-session-browser-safe-source-projection
+          - delivery-work-session-executor-admission-and-scope
+          - delivery-work-session-replay-revision-and-receipt-binding
+          - delivery-work-session-fail-closed-runtime-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+            path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
           - repo: operator-orchestration-service
-            path: contracts/refinement/manifest.json
+            path: docs/contracts/delivery-workflow-api-v1.md
           - repo: operator-orchestration-service
-            path: contracts/catalog/manifest.json
+            path: src/delivery-art/work-session-service.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -692,8 +692,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
-        reviewed_on: 2026-08-25
+        path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
+        reviewed_on: 2026-08-27
         status: current
         decision: approved-with-findings
         review_areas:
@@ -703,15 +703,15 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - work-design-exact-source-binding
-          - work-design-typed-advice-validation
-          - work-design-operator-apply-authority
-          - work-design-backend-readback-and-receipt
-          - work-design-runtime-activation-denial
+          - delivery-work-session-caller-bound-command-authority
+          - delivery-work-session-browser-safe-source-projection
+          - delivery-work-session-executor-admission-and-scope
+          - delivery-work-session-replay-revision-and-receipt-binding
+          - delivery-work-session-fail-closed-runtime-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
+            path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
           - repo: operator-orchestration-service
-            path: contracts/work-design/manifest.json
+            path: docs/contracts/delivery-workflow-api-v1.md
           - repo: operator-orchestration-service
-            path: src/work-design/service.js
+            path: src/delivery-art/work-session-service.js
