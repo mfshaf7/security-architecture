@@ -1723,6 +1723,28 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-26-authoritative-review-evidence-projection.md
+  date: '2026-08-26'
+  short_title: 2026-08-26-authoritative-review-evidence-projection
+  review_areas:
+  - identity
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-26-catalog-openproject-host-binding.md
+  date: '2026-08-26'
+  short_title: 2026-08-26-catalog-openproject-host-binding
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-08-26-governed-refinement-runtime.md
   date: '2026-08-26'
   short_title: 2026-08-26-governed-refinement-runtime
@@ -1736,6 +1758,20 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-26-refinement-catalog-composed-oos-runtime.md
+  date: '2026-08-26'
+  short_title: 2026-08-26-refinement-catalog-composed-oos-runtime
+  review_areas:
+  - ai
+  - delivery
+  - identity
+  - runtime
+  - secrets
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-08-26-refinement-catalog-contracts.md
   date: '2026-08-26'
   short_title: 2026-08-26-refinement-catalog-contracts
@@ -1743,6 +1779,41 @@ change_records:
   - ai
   - delivery
   - identity
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-26-refinement-operator-scoped-temporal-namespace.md
+  date: '2026-08-26'
+  short_title: 2026-08-26-refinement-operator-scoped-temporal-namespace
+  review_areas:
+  - delivery
+  - identity
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-26-refinement-pi-objective-projection.md
+  date: '2026-08-26'
+  short_title: 2026-08-26-refinement-pi-objective-projection
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-27-delivery-work-session-api.md
+  date: '2026-08-27'
+  short_title: 2026-08-27-delivery-work-session-api
+  review_areas:
+  - identity
+  - delivery
+  - runtime
   findings: []
   risks: []
   workstreams:
