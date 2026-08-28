@@ -1818,6 +1818,41 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-27-governed-delivery-source-executor.md
+  date: '2026-08-27'
+  short_title: 2026-08-27-governed-delivery-source-executor
+  review_areas:
+  - runtime
+  - delivery
+  - identity
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-29-delivery-art-operator-credential.md
+  date: '2026-08-29'
+  short_title: 2026-08-29-delivery-art-operator-credential
+  review_areas:
+  - runtime
+  - delivery
+  - identity
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-08-29-review-evidence-source-revision.md
+  date: '2026-08-29'
+  short_title: 2026-08-29-review-evidence-source-revision
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
