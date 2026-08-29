@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
-        reviewed_on: 2026-08-26
+        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
         review_areas:
@@ -20,20 +20,18 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - refinement-catalog-exact-source-and-envelope-binding
-          - refinement-advisor-and-temporal-profile-isolation
-          - refinement-provider-and-composition-credential-custody
-          - catalog-bounded-control-adapter
-          - refinement-catalog-devint-activation-sequencing
+          - repository-custody-github-app-machine-identity
+          - repository-custody-secret-projection-and-revocation
+          - repository-custody-provider-destination-pinning
+          - repository-custody-runtime-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
-          - repo: platform-engineering
-            path: security/governed-ai-model-profiles.yaml
-          - repo: platform-engineering
-            path: scripts/dev_integration_compositions.py
+            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+          - repo: workspace-governance
+            path: contracts/repository-custody.yaml
+          - repo: workspace-governance-control-fabric
+            path: contracts/repository-custody/manifest.json
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -44,8 +42,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
-        reviewed_on: 2026-08-26
+        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
         review_areas:
@@ -53,19 +51,15 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - refinement-catalog-composition-authority
-          - refinement-catalog-secret-free-registry
-          - refinement-catalog-exact-profile-bindings
-          - refinement-catalog-runtime-activation-denial
+          - repository-custody-authority-contract
+          - repository-custody-provider-identity-definition
+          - repository-custody-downstream-mutation-exclusion
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
           - repo: workspace-governance
-            path: contracts/developer-integration-profiles.yaml
-          - repo: workspace-governance
-            path: docs/developer-integration-runtime-composition.md
+            path: contracts/repository-custody.yaml
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -76,8 +70,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
-        reviewed_on: 2026-08-26
+        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
         review_areas:
@@ -85,19 +79,16 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - repository-readiness-authority-binding
-          - repository-readiness-current-digest
-          - repository-readiness-immutable-receipt
-          - repository-lifecycle-mutation-denial
+          - repository-custody-current-authority-binding
+          - repository-custody-content-addressed-decision
+          - repository-custody-terminal-receipt-contract
+          - repository-custody-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
+            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
           - repo: workspace-governance-control-fabric
-            path: contracts/repository-readiness/manifest.json
-          - repo: workspace-governance-control-fabric
-            path: contracts/repository-readiness/README.md
+            path: contracts/repository-custody/manifest.json
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -262,8 +253,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
-        reviewed_on: 2026-08-27
+        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
         review_areas:
@@ -271,20 +262,19 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - delivery-work-session-caller-bound-command-authority
-          - delivery-work-session-browser-safe-source-projection
-          - delivery-work-session-executor-admission-and-scope
-          - delivery-work-session-replay-revision-and-receipt-binding
-          - delivery-work-session-fail-closed-runtime-sequencing
+          - repository-custody-caller-bound-command-authority
+          - repository-custody-provider-identity-readback
+          - repository-custody-replay-and-terminal-receipt-binding
+          - repository-custody-bounded-provider-response
+          - repository-custody-fail-closed-runtime-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
-          - repo: operator-orchestration-service
-            path: docs/contracts/delivery-workflow-api-v1.md
-          - repo: operator-orchestration-service
-            path: src/delivery-art/work-session-service.js
+            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+          - repo: workspace-governance
+            path: contracts/repository-custody.yaml
+          - repo: workspace-governance-control-fabric
+            path: contracts/repository-custody/manifest.json
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -518,8 +508,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
-        reviewed_on: 2026-08-24
+        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
         review_areas:
@@ -527,19 +517,18 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - governed-agent-action-policy-evaluation
-          - current-authority-binding
-          - logical-agent-attribution-only
-          - agent-action-runtime-activation-denial
+          - repository-custody-current-authority-binding
+          - repository-custody-content-addressed-decision
+          - repository-custody-terminal-receipt-contract
+          - repository-custody-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-24-governed-agent-action-boundary.md
+            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
           - repo: workspace-governance-control-fabric
-            path: contracts/agent-action/manifest.json
+            path: contracts/repository-custody/manifest.json
           - repo: workspace-governance
-            path: reports/agent-action-conformance.md
+            path: contracts/repository-custody.yaml
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -692,8 +681,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
-        reviewed_on: 2026-08-27
+        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
         review_areas:
@@ -701,17 +690,16 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - delivery-work-session-caller-bound-command-authority
-          - delivery-work-session-browser-safe-source-projection
-          - delivery-work-session-executor-admission-and-scope
-          - delivery-work-session-replay-revision-and-receipt-binding
-          - delivery-work-session-fail-closed-runtime-sequencing
+          - repository-custody-caller-bound-command-authority
+          - repository-custody-provider-identity-readback
+          - repository-custody-replay-and-terminal-receipt-binding
+          - repository-custody-bounded-provider-response
+          - repository-custody-fail-closed-runtime-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
-          - repo: operator-orchestration-service
-            path: docs/contracts/delivery-workflow-api-v1.md
-          - repo: operator-orchestration-service
-            path: src/delivery-art/work-session-service.js
+            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+          - repo: workspace-governance
+            path: contracts/repository-custody.yaml
+          - repo: workspace-governance-control-fabric
+            path: contracts/repository-custody/manifest.json
