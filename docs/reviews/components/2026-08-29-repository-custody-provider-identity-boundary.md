@@ -15,6 +15,9 @@
     `workspace-governance-control-fabric@5cd7efb6c793358ba6d1f2e9dd25ef40acd65f17`
   - Operator Orchestration Service pull request:
     `operator-orchestration-service@860257facfb015d44d8355a873ab3f7b5363fc6d`
+- initial review landing:
+  `https://github.com/mfshaf7/security-architecture/pull/136` at
+  `c57a2dbfed3b958cf72a736e12887466be626894`
 - decision: `approved-with-findings`
 
 The existing-repository custody source is acceptable to merge at the exact OOS
@@ -26,6 +29,10 @@ Normal runtime activation is not approved by this review. It remains blocked
 until Platform Engineering provisions and proves a dedicated GitHub App
 installation identity under ART `#1044`, and the Console composition and
 positive and negative end-to-end evidence land under ART `#1045`.
+
+The initial review source landed through the pull request identified above.
+That source landing records Security Architecture judgment only; it neither
+commissions provider identity nor changes the denied normal-activation state.
 
 ## Scope Delta
 
