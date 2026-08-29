@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
         reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
@@ -21,17 +21,20 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-custody-github-app-machine-identity
-          - repository-custody-secret-projection-and-revocation
-          - repository-custody-provider-destination-pinning
-          - repository-custody-runtime-activation-sequencing
+          - repository-provisioning-github-app-machine-identity
+          - repository-provisioning-minimum-permission-proof
+          - repository-provisioning-secret-projection-and-revocation
+          - repository-provisioning-provider-destination-containment
+          - repository-provisioning-runtime-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
           - repo: workspace-governance
             path: contracts/repository-custody.yaml
           - repo: workspace-governance-control-fabric
             path: contracts/repository-custody/manifest.json
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-08-29-repository-provisioning-workflow.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -42,7 +45,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
         reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
@@ -52,12 +55,12 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-custody-authority-contract
-          - repository-custody-provider-identity-definition
-          - repository-custody-downstream-mutation-exclusion
+          - repository-provisioning-authority-contract
+          - repository-provisioning-organization-only-scope
+          - repository-provisioning-downstream-mutation-exclusion
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
           - repo: workspace-governance
             path: contracts/repository-custody.yaml
     workspace-governance-control-fabric:
@@ -70,7 +73,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
         reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
@@ -80,15 +83,19 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-custody-current-authority-binding
-          - repository-custody-content-addressed-decision
-          - repository-custody-terminal-receipt-contract
-          - repository-custody-runtime-activation-denial
+          - repository-provisioning-current-authority-binding
+          - repository-provisioning-content-addressed-decision
+          - repository-provisioning-secret-reference-denial
+          - repository-provisioning-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
           - repo: workspace-governance-control-fabric
             path: contracts/repository-custody/manifest.json
+          - repo: workspace-governance
+            path: contracts/repository-custody.yaml
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-08-29-repository-provisioning-workflow.md
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -253,7 +260,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
         reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
@@ -263,18 +270,20 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-custody-caller-bound-command-authority
-          - repository-custody-provider-identity-readback
-          - repository-custody-replay-and-terminal-receipt-binding
-          - repository-custody-bounded-provider-response
-          - repository-custody-fail-closed-runtime-sequencing
+          - broker-runtime-and-caller-surface
+          - repository-provisioning-create-once-recovery
+          - repository-provisioning-provider-readback
+          - repository-provisioning-bounded-provider-response
+          - repository-provisioning-fail-closed-runtime-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
           - repo: workspace-governance
             path: contracts/repository-custody.yaml
           - repo: workspace-governance-control-fabric
             path: contracts/repository-custody/manifest.json
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-08-29-repository-provisioning-workflow.md
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -508,7 +517,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
         reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
@@ -518,13 +527,13 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-custody-current-authority-binding
-          - repository-custody-content-addressed-decision
-          - repository-custody-terminal-receipt-contract
-          - repository-custody-runtime-activation-denial
+          - repository-provisioning-current-authority-binding
+          - repository-provisioning-content-addressed-decision
+          - repository-provisioning-secret-reference-denial
+          - repository-provisioning-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
           - repo: workspace-governance-control-fabric
             path: contracts/repository-custody/manifest.json
           - repo: workspace-governance
@@ -681,7 +690,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
         reviewed_on: 2026-08-29
         status: current
         decision: approved-with-findings
@@ -691,15 +700,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-custody-caller-bound-command-authority
-          - repository-custody-provider-identity-readback
-          - repository-custody-replay-and-terminal-receipt-binding
-          - repository-custody-bounded-provider-response
-          - repository-custody-fail-closed-runtime-sequencing
+          - broker-runtime-and-caller-surface
+          - repository-provisioning-create-once-recovery
+          - repository-provisioning-provider-readback
+          - repository-provisioning-bounded-provider-response
+          - repository-provisioning-fail-closed-runtime-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-custody-provider-identity-boundary.md
+            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
           - repo: workspace-governance
             path: contracts/repository-custody.yaml
           - repo: workspace-governance-control-fabric
             path: contracts/repository-custody/manifest.json
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-08-29-repository-provisioning-workflow.md
