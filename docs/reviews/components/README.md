@@ -33,6 +33,7 @@ Current baseline outputs:
 - [`2026-08-21-proposal-to-delivery-application.md`](2026-08-21-proposal-to-delivery-application.md)
 - [`2026-08-23-delivery-art-work-session-lifecycle.md`](2026-08-23-delivery-art-work-session-lifecycle.md)
 - [`2026-08-23-delivery-art-work-session-resource-retirement.md`](2026-08-23-delivery-art-work-session-resource-retirement.md)
+- [`2026-08-30-repository-lifecycle-authority.md`](2026-08-30-repository-lifecycle-authority.md)
 
 Owner repos should reference a concrete dated review artifact from this
 directory when workspace governance requires a `review_output_path`.

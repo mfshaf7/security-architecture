@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
-        reviewed_on: 2026-08-29
+        path: docs/reviews/components/2026-08-30-repository-lifecycle-authority.md
+        reviewed_on: 2026-08-30
         status: current
         decision: approved-with-findings
         review_areas:
@@ -21,20 +21,18 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-provisioning-github-app-machine-identity
-          - repository-provisioning-minimum-permission-proof
-          - repository-provisioning-secret-projection-and-revocation
-          - repository-provisioning-provider-destination-containment
-          - repository-provisioning-runtime-activation-sequencing
+          - repository-lifecycle-dedicated-github-app-identity
+          - repository-lifecycle-exact-token-scope
+          - repository-lifecycle-secret-projection-and-revocation
+          - repository-lifecycle-provider-destination-containment
+          - repository-lifecycle-runtime-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
+            path: docs/reviews/components/2026-08-30-repository-lifecycle-authority.md
+          - repo: platform-engineering
+            path: security/repository-lifecycle-identity.yaml
           - repo: workspace-governance
             path: contracts/repository-custody.yaml
-          - repo: workspace-governance-control-fabric
-            path: contracts/repository-custody/manifest.json
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-29-repository-provisioning-workflow.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -45,8 +43,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
-        reviewed_on: 2026-08-29
+        path: docs/reviews/components/2026-08-30-repository-lifecycle-authority.md
+        reviewed_on: 2026-08-30
         status: current
         decision: approved-with-findings
         review_areas:
@@ -55,14 +53,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-provisioning-authority-contract
-          - repository-provisioning-organization-only-scope
-          - repository-provisioning-downstream-mutation-exclusion
+          - repository-lifecycle-independent-state-axes
+          - repository-lifecycle-reversible-actions
+          - repository-lifecycle-impact-disposition
+          - repository-lifecycle-downstream-mutation-exclusion
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
+            path: docs/reviews/components/2026-08-30-repository-lifecycle-authority.md
           - repo: workspace-governance
             path: contracts/repository-custody.yaml
+          - repo: platform-engineering
+            path: security/repository-lifecycle-identity.yaml
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
