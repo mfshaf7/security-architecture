@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-30-repository-lifecycle-authority.md
-        reviewed_on: 2026-08-30
+        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+        reviewed_on: 2026-09-06
         status: current
         decision: approved-with-findings
         review_areas:
@@ -21,18 +21,18 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-lifecycle-dedicated-github-app-identity
-          - repository-lifecycle-exact-token-scope
-          - repository-lifecycle-secret-projection-and-revocation
-          - repository-lifecycle-provider-destination-containment
-          - repository-lifecycle-runtime-activation-sequencing
+          - workspace-intake-dedicated-github-app-identity
+          - workspace-intake-exact-repository-selection
+          - workspace-intake-main-and-merge-denial
+          - workspace-intake-secret-projection-and-revocation
+          - workspace-intake-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-30-repository-lifecycle-authority.md
+            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
           - repo: platform-engineering
-            path: security/repository-lifecycle-identity.yaml
-          - repo: workspace-governance
-            path: contracts/repository-custody.yaml
+            path: security/workspace-intake-identity.yaml
+          - repo: operator-orchestration-service
+            path: docs/operations/workspace-intake-operator-surface.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -43,8 +43,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-30-repository-lifecycle-authority.md
-        reviewed_on: 2026-08-30
+        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+        reviewed_on: 2026-09-06
         status: current
         decision: approved-with-findings
         review_areas:
@@ -52,18 +52,19 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - repository-lifecycle-independent-state-axes
-          - repository-lifecycle-reversible-actions
-          - repository-lifecycle-impact-disposition
-          - repository-lifecycle-downstream-mutation-exclusion
+          - workspace-intake-independent-state-axes
+          - workspace-intake-reviewed-canonical-mutation
+          - workspace-intake-optimistic-concurrency
+          - workspace-intake-no-runtime-activation
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-30-repository-lifecycle-authority.md
+            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
           - repo: workspace-governance
-            path: contracts/repository-custody.yaml
-          - repo: platform-engineering
-            path: security/repository-lifecycle-identity.yaml
+            path: contracts/workspace-intake.yaml
+          - repo: workspace-governance
+            path: docs/workspace-intake.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -74,8 +75,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
-        reviewed_on: 2026-08-29
+        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+        reviewed_on: 2026-09-06
         status: current
         decision: approved-with-findings
         review_areas:
@@ -83,20 +84,21 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - repository-provisioning-current-authority-binding
-          - repository-provisioning-content-addressed-decision
-          - repository-provisioning-secret-reference-denial
-          - repository-provisioning-runtime-activation-denial
+          - workspace-intake-current-authority-binding
+          - workspace-intake-content-addressed-readiness
+          - workspace-intake-caller-bound-receipts
+          - workspace-intake-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
+            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
           - repo: workspace-governance-control-fabric
-            path: contracts/repository-custody/manifest.json
+            path: contracts/workspace-intake/manifest.json
           - repo: workspace-governance
-            path: contracts/repository-custody.yaml
+            path: contracts/workspace-intake.yaml
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-29-repository-provisioning-workflow.md
+            path: docs/operations/workspace-intake-operator-surface.md
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -140,22 +142,26 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-07-30-governance-operations-console-baseline-security-delta.md
-        reviewed_on: 2026-07-30
+        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+        reviewed_on: 2026-09-06
         status: current
         decision: approved-with-findings
         review_areas:
           - identity
-          - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - prototype-real-data-or-client-visible
-          - governance-console-prototype-local-ai-invocation
+          - prototype-intake-committed-source-candidate
+          - prototype-intake-baseline-evidence-binding
+          - prototype-intake-no-authority-mutation
+          - prototype-intake-source-resolution-gate
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-07-30-governance-operations-console-baseline-security-delta.md
+            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+          - repo: workspace-prototype-studio
+            path: docs/prototype-intake-candidates.md
+          - repo: workspace-prototype-studio
+            path: schemas/prototype-intake-candidate.schema.json
     governance-operations-console:
       owner_repo: governance-operations-console
       scope: component
@@ -166,8 +172,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
-        reviewed_on: 2026-08-27
+        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+        reviewed_on: 2026-09-06
         status: current
         decision: approved-with-findings
         review_areas:
@@ -177,18 +183,19 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - console-work-session-same-origin-adapter
+          - console-workspace-intake-same-origin-adapter
           - console-server-side-caller-custody
-          - console-no-browser-source-or-completion-truth
+          - console-no-browser-canonical-authority
+          - console-candidate-authenticity-gate
           - console-no-fixture-success-fallback
-          - console-execution-activation-sequencing
+          - console-workspace-intake-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-27-console-oos-delivery-work-session-boundary.md
+            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
           - repo: operator-orchestration-service
-            path: docs/contracts/delivery-workflow-api-v1.md
+            path: docs/operations/workspace-intake-operator-surface.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -261,8 +268,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
-        reviewed_on: 2026-08-29
+        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+        reviewed_on: 2026-09-06
         status: current
         decision: approved-with-findings
         review_areas:
@@ -270,21 +277,23 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - broker-runtime-and-caller-surface
-          - repository-provisioning-create-once-recovery
-          - repository-provisioning-provider-readback
-          - repository-provisioning-bounded-provider-response
-          - repository-provisioning-fail-closed-runtime-sequencing
+          - workspace-intake-caller-bound-workflow
+          - workspace-intake-one-file-review-source
+          - workspace-intake-human-merge-and-readback
+          - workspace-intake-replay-cancel-recovery
+          - workspace-intake-candidate-resolution-gate
+          - workspace-intake-runtime-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
+            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
           - repo: workspace-governance
-            path: contracts/repository-custody.yaml
+            path: contracts/workspace-intake.yaml
           - repo: workspace-governance-control-fabric
-            path: contracts/repository-custody/manifest.json
+            path: contracts/workspace-intake/manifest.json
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-29-repository-provisioning-workflow.md
+            path: docs/records/change-records/2026-09-05-workspace-intake-workflow.md
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -518,8 +527,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
-        reviewed_on: 2026-08-29
+        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+        reviewed_on: 2026-09-06
         status: current
         decision: approved-with-findings
         review_areas:
@@ -527,18 +536,19 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - repository-provisioning-current-authority-binding
-          - repository-provisioning-content-addressed-decision
-          - repository-provisioning-secret-reference-denial
-          - repository-provisioning-runtime-activation-denial
+          - workspace-intake-current-authority-binding
+          - workspace-intake-content-addressed-readiness
+          - workspace-intake-caller-bound-receipts
+          - workspace-intake-runtime-activation-denial
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
+            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
           - repo: workspace-governance-control-fabric
-            path: contracts/repository-custody/manifest.json
+            path: contracts/workspace-intake/manifest.json
           - repo: workspace-governance
-            path: contracts/repository-custody.yaml
+            path: contracts/workspace-intake.yaml
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -691,8 +701,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
-        reviewed_on: 2026-08-29
+        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+        reviewed_on: 2026-09-06
         status: current
         decision: approved-with-findings
         review_areas:
@@ -700,18 +710,20 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - broker-runtime-and-caller-surface
-          - repository-provisioning-create-once-recovery
-          - repository-provisioning-provider-readback
-          - repository-provisioning-bounded-provider-response
-          - repository-provisioning-fail-closed-runtime-sequencing
+          - workspace-intake-caller-bound-workflow
+          - workspace-intake-one-file-review-source
+          - workspace-intake-human-merge-and-readback
+          - workspace-intake-replay-cancel-recovery
+          - workspace-intake-candidate-resolution-gate
+          - workspace-intake-runtime-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-08-29-repository-provisioning-authority.md
+            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
           - repo: workspace-governance
-            path: contracts/repository-custody.yaml
+            path: contracts/workspace-intake.yaml
           - repo: workspace-governance-control-fabric
-            path: contracts/repository-custody/manifest.json
+            path: contracts/workspace-intake/manifest.json
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-08-29-repository-provisioning-workflow.md
+            path: docs/records/change-records/2026-09-05-workspace-intake-workflow.md
