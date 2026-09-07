@@ -1985,12 +1985,36 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-07-prototype-landing-orchestration.md
+  date: '2026-09-07'
+  short_title: 2026-09-07-prototype-landing-orchestration
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-09-07-workspace-inventory-lifecycle.md
   date: '2026-09-07'
   short_title: 2026-09-07-workspace-inventory-lifecycle
   review_areas:
   - identity
   - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-08-prototype-landing-conformance.md
+  date: '2026-09-08'
+  short_title: 2026-09-08-prototype-landing-conformance
+  review_areas:
   - delivery
   - runtime
   findings: []
@@ -2183,6 +2207,18 @@ change_records:
   path: docs/records/change-records/2026-09-05-workspace-intake-identity-definition.md
   date: '2026-09-05'
   short_title: Selected, inactive Workspace Governance Git identity
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-09-07-prototype-landing-identity-activation.md
+  date: '2026-09-07'
+  short_title: Activate the bounded Prototype Landing identity projection
   review_areas:
   - identity
   - secrets
