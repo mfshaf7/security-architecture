@@ -142,26 +142,28 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-        reviewed_on: 2026-09-06
+        path: docs/reviews/components/2026-09-07-prototype-landing-trust-boundary.md
+        reviewed_on: 2026-09-07
         status: current
         decision: approved-with-findings
         review_areas:
           - identity
+          - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - prototype-intake-committed-source-candidate
-          - prototype-intake-baseline-evidence-binding
-          - prototype-intake-no-authority-mutation
-          - prototype-intake-source-resolution-gate
+          - prototype-landing-stable-identity-binding
+          - prototype-landing-source-custody-separation
+          - prototype-landing-untrusted-import-boundary
+          - prototype-landing-merged-readback-gate
+          - prototype-landing-runtime-activation-sequencing
+          - prototype-landing-console-projection-only
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-          - repo: workspace-prototype-studio
-            path: docs/prototype-intake-candidates.md
-          - repo: workspace-prototype-studio
-            path: schemas/prototype-intake-candidate.schema.json
+            path: docs/reviews/components/2026-09-07-prototype-landing-trust-boundary.md
+          - repo: workspace-governance
+            path: contracts/prototype-landing.yaml
     governance-operations-console:
       owner_repo: governance-operations-console
       scope: component

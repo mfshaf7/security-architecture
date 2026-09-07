@@ -1984,6 +1984,19 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-07-workspace-inventory-lifecycle.md
+  date: '2026-09-07'
+  short_title: 2026-09-07-workspace-inventory-lifecycle
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
