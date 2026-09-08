@@ -2011,6 +2011,17 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-08-art-work-session-lifecycle-order.md
+  date: '2026-09-08'
+  short_title: 2026-09-08-art-work-session-lifecycle-order
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-09-08-prototype-landing-conformance.md
   date: '2026-09-08'
   short_title: 2026-09-08-prototype-landing-conformance
