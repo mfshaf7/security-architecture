@@ -278,32 +278,22 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-        reviewed_on: 2026-09-06
+        path: docs/reviews/components/2026-09-09-art-work-session-explicit-merge.md
+        reviewed_on: 2026-09-09
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - workspace-intake-caller-bound-workflow
-          - workspace-intake-one-file-review-source
-          - workspace-intake-human-merge-and-readback
-          - workspace-intake-replay-cancel-recovery
-          - workspace-intake-candidate-resolution-gate
-          - workspace-intake-runtime-activation-sequencing
+          - broker-runtime-and-caller-surface
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-          - repo: workspace-governance
-            path: contracts/workspace-intake.yaml
-          - repo: workspace-governance-control-fabric
-            path: contracts/workspace-intake/manifest.json
+            path: docs/reviews/components/2026-09-09-art-work-session-explicit-merge.md
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-09-05-workspace-intake-workflow.md
+            path: docs/contracts/delivery-workflow-api-v1.md
   products:
     governance-operations-console:
       owner_repo: platform-engineering
