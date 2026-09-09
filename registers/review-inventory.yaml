@@ -142,8 +142,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-08-prototype-landing-normal-availability.md
-        reviewed_on: 2026-09-08
+        path: docs/reviews/components/2026-09-09-prototype-maturity-trust-boundary.md
+        reviewed_on: 2026-09-09
         status: current
         decision: approved-with-findings
         review_areas:
@@ -153,25 +153,19 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - prototype-landing-normal-availability
-          - prototype-landing-dedicated-runtime-identity
-          - prototype-landing-atomic-source-gate-activation
-          - prototype-landing-human-merge-and-readback
-          - prototype-landing-restart-revocation-and-rollback
-          - prototype-landing-console-operating-proof
+          - prototype-maturity-operator-decision
+          - prototype-maturity-evidence-disclosure
+          - prototype-maturity-source-mutation
+          - prototype-maturity-replay-and-stale-state
+          - prototype-maturity-identity-boundary
+          - prototype-maturity-normal-availability-separation
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-08-prototype-landing-normal-availability.md
+            path: docs/reviews/components/2026-09-09-prototype-maturity-trust-boundary.md
           - repo: workspace-governance
-            path: contracts/prototype-landing.yaml
-          - repo: workspace-governance-control-fabric
-            path: contracts/prototype-landing/manifest.json
-          - repo: operator-orchestration-service
-            path: contracts/prototype-landing/manifest.json
-          - repo: platform-engineering
-            path: security/prototype-landing-identity.yaml
-          - repo: governance-operations-console
-            path: docs/product/prototype-landing-live-integration.md
+            path: contracts/prototype-maturity.yaml
+          - repo: security-architecture
+            path: docs/reviews/components/2026-09-08-prototype-landing-normal-availability.md
     governance-operations-console:
       owner_repo: governance-operations-console
       scope: component
