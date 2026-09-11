@@ -43,8 +43,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-        reviewed_on: 2026-09-06
+        path: docs/reviews/components/2026-09-11-agent-gary-source-identity-boundary.md
+        reviewed_on: 2026-09-11
         status: current
         decision: approved-with-findings
         review_areas:
@@ -54,17 +54,19 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - workspace-intake-independent-state-axes
-          - workspace-intake-reviewed-canonical-mutation
-          - workspace-intake-optimistic-concurrency
-          - workspace-intake-no-runtime-activation
+          - agent-gary-distinct-source-attribution
+          - agent-gary-selected-repository-token-scope
+          - agent-gary-human-review-and-merge-separation
+          - agent-gary-bootstrap-custody-and-rotation
+          - agent-gary-audit-revocation-and-rollback
+          - agent-gary-normal-activation-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+            path: docs/reviews/components/2026-09-11-agent-gary-source-identity-boundary.md
           - repo: workspace-governance
-            path: contracts/workspace-intake.yaml
+            path: contracts/agent-source-implementation.yaml
           - repo: workspace-governance
-            path: docs/workspace-intake.md
+            path: docs/agent-action-authority.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
