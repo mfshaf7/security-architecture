@@ -144,7 +144,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-12-prototype-closure-implementation-admission.md
+        path: docs/reviews/components/2026-09-12-prototype-closure-causality-correction.md
         reviewed_on: 2026-09-12
         status: current
         decision: approved-with-findings
@@ -155,12 +155,15 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - prototype-closure-causality-correction
           - prototype-closure-implementation-admission
           - prototype-closure-source-custody-transfer
           - prototype-closure-dedicated-inactive-identity
           - prototype-closure-receipt-and-history-integrity
           - prototype-closure-runtime-cleanup-and-revocation
         owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-09-12-prototype-closure-causality-correction.md
           - repo: security-architecture
             path: docs/reviews/components/2026-09-12-prototype-closure-implementation-admission.md
           - repo: workspace-governance

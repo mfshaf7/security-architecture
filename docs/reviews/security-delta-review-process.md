@@ -64,6 +64,13 @@ It should also answer:
 - which residual risk remains
 - what has to be fixed or accepted before the change is considered safe
 
+Before accepting merge-ready conformance cases, check their evidence timing. A
+case may test a merge rule against an already-available Git history, but it
+must not require the current review's own future merge or post-merge readback.
+Keep source-landing evidence in the later closeout stage. If a packet mixes
+these stages, resolve the contradiction before work starts; do not fabricate
+merged-source evidence to pass a pre-merge gate.
+
 ## Inventory Update Rules
 
 Update `registers/review-inventory.yaml` in the same work:
