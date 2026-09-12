@@ -2124,6 +2124,31 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-12-agent-gary-source-identity-activation.md
+  date: '2026-09-12'
+  short_title: 2026-09-12-agent-gary-source-identity-activation
+  review_areas:
+  - identity
+  - secrets
+  - runtime
+  - delivery
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-12-art-work-session-close-adapter.md
+  date: '2026-09-12'
+  short_title: 2026-09-12-art-work-session-close-adapter
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'

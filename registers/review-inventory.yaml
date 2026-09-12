@@ -144,8 +144,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-10-prototype-maturity-normal-availability.md
-        reviewed_on: 2026-09-10
+        path: docs/reviews/components/2026-09-12-prototype-closure-implementation-admission.md
+        reviewed_on: 2026-09-12
         status: current
         decision: approved-with-findings
         review_areas:
@@ -155,29 +155,20 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - prototype-maturity-composed-conformance
-          - prototype-maturity-dedicated-machine-identity
-          - prototype-maturity-normal-availability
-          - prototype-maturity-runtime-activation-sequencing
-          - prototype-maturity-secret-custody-and-revocation
-          - prototype-maturity-console-operating-proof
+          - prototype-closure-implementation-admission
+          - prototype-closure-source-custody-transfer
+          - prototype-closure-dedicated-inactive-identity
+          - prototype-closure-receipt-and-history-integrity
+          - prototype-closure-runtime-cleanup-and-revocation
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-10-prototype-maturity-normal-availability.md
+            path: docs/reviews/components/2026-09-12-prototype-closure-implementation-admission.md
           - repo: workspace-governance
-            path: contracts/prototype-maturity.yaml
-          - repo: workspace-prototype-studio
-            path: contracts/prototype-maturity/manifest.json
-          - repo: workspace-governance-control-fabric
-            path: contracts/prototype-maturity/manifest.json
-          - repo: operator-orchestration-service
-            path: docs/operations/prototype-maturity-operator-surface.md
-          - repo: governance-operations-console
-            path: docs/product/prototype-maturity-live-integration.md
+            path: contracts/prototype-closure.yaml
           - repo: platform-engineering
-            path: security/prototype-maturity-identity.yaml
+            path: security/prototype-closure-identity.yaml
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-09-prototype-maturity-trust-boundary.md
+            path: docs/reviews/components/2026-09-10-prototype-maturity-normal-availability.md
     governance-operations-console:
       owner_repo: governance-operations-console
       scope: component
