@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-        reviewed_on: 2026-09-06
+        path: docs/reviews/components/2026-09-13-agent-gary-closure-source-scope.md
+        reviewed_on: 2026-09-13
         status: current
         decision: approved-with-findings
         review_areas:
@@ -20,19 +20,20 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - workspace-intake-dedicated-github-app-identity
-          - workspace-intake-exact-repository-selection
-          - workspace-intake-main-and-merge-denial
-          - workspace-intake-secret-projection-and-revocation
-          - workspace-intake-activation-sequencing
+          - agent-gary-closure-selected-repository-expansion
+          - agent-gary-one-repository-token-scope
+          - agent-gary-main-and-merge-denial
+          - agent-gary-exact-head-human-review
+          - agent-gary-platform-oos-admission-sequencing
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+            path: docs/reviews/components/2026-09-13-agent-gary-closure-source-scope.md
           - repo: platform-engineering
-            path: security/workspace-intake-identity.yaml
+            path: security/agent-source-identity.yaml
           - repo: operator-orchestration-service
-            path: docs/operations/workspace-intake-operator-surface.md
+            path: contracts/delivery-art-work-session/agent-source-identity.json
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
