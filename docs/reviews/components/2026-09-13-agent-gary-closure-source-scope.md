@@ -55,10 +55,14 @@ to all selected repositories or use ambient human credentials as fallback.
 
 The operator reports that both repositories were added to the GitHub App
 installation. That report is the trigger for this review, not independent
-provider readback. Platform must prove the installation's selected set,
-repository ids, unchanged permissions, one-repository token scope, and
-protected `main` on each new repository before OOS source work is unblocked.
-No operating or source-landing success is asserted by this review.
+installation readback. Platform must prove the selected set, repository ids,
+unchanged permissions, and one-repository token scope before OOS source work
+is unblocked. A 2026-09-13 provider ruleset readback showed protection on
+`workspace-governance` and `workspace-prototype-studio` only; it showed no
+repository ruleset or branch protection on Platform Engineering, Security
+Architecture, OOS, Control Fabric, or Console. This is a provider-enforcement
+gap in both the existing and expanded set. No operating or source-landing
+success is asserted by this review.
 
 ## Review Areas
 
@@ -73,10 +77,11 @@ installation access, expiry, suspension, and restart fail closed.
 
 ### Source Delivery And Provider Enforcement
 
-Both added repositories need provider-enforced denial of direct App writes to
-`main`, deletion, and non-fast-forward updates; a trusted owner validation
-check; current exact-head human approval; stale-review dismissal; latest-push
-approval separation; and conversation resolution. Agent Gary has no bypass,
+Every selected repository without protection needs provider-enforced denial of
+direct App writes to `main`, deletion, and non-fast-forward updates; a trusted
+owner validation check; current exact-head human approval; stale-review
+dismissal; latest-push approval separation; and conversation resolution. Agent
+Gary has no bypass,
 approval, merge, repository administration, or installation-scope mutation
 power. The final pushed head must equal the reviewed head and be read back
 from merged `main` before source completion is claimed.
@@ -108,7 +113,9 @@ checks remain outside the model.
 1. **Provider installation and protection are not yet proven.** ART `#1146`
    must read back the exact seven-repository installation, unchanged App
    permissions, one-repository token proof, and working branch protection on
-   both new repositories. No source work there is approved before this proof.
+   all five repositories where provider readback found it absent. No source
+   work in the two added repositories is approved before this proof. The
+   three existing gaps are not accepted as a permanent exception.
 2. **The consumer allowlist remains stale.** ART `#1147` must pin the reviewed
    Platform revision and digest, admit only the two additional exact repository
    ids, and prove wrong-repository, broad-token, human-fallback, stale-head,
