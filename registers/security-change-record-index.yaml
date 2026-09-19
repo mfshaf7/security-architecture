@@ -2173,6 +2173,54 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-14-delivery-art-status-read.md
+  date: '2026-09-14'
+  short_title: 2026-09-14-delivery-art-status-read
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-14-prototype-closure-conformance.md
+  date: '2026-09-14'
+  short_title: 2026-09-14-prototype-closure-conformance
+  review_areas:
+  - identity
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-14-prototype-closure-orchestration.md
+  date: '2026-09-14'
+  short_title: 2026-09-14-prototype-closure-orchestration
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-14-prototype-closure-preparation.md
+  date: '2026-09-14'
+  short_title: 2026-09-14-prototype-closure-preparation
+  review_areas:
+  - identity
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'

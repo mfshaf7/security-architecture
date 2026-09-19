@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-13-agent-gary-closure-source-scope.md
-        reviewed_on: 2026-09-13
+        path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
+        reviewed_on: 2026-09-19
         status: current
         decision: approved-with-findings
         review_areas:
@@ -22,18 +22,17 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - agent-gary-closure-selected-repository-expansion
-          - agent-gary-one-repository-token-scope
-          - agent-gary-main-and-merge-denial
-          - agent-gary-exact-head-human-review
-          - agent-gary-platform-oos-admission-sequencing
+          - prototype-closure-dedicated-identity-commissioning
+          - prototype-closure-provider-review-enforcement
+          - prototype-closure-resource-revocation
+          - prototype-closure-controlled-activation-order
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-13-agent-gary-closure-source-scope.md
+            path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
           - repo: platform-engineering
-            path: security/agent-source-identity.yaml
+            path: security/prototype-closure-identity.yaml
           - repo: operator-orchestration-service
-            path: contracts/delivery-art-work-session/agent-source-identity.json
+            path: contracts/prototype-closure/manifest.json
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -78,8 +77,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-        reviewed_on: 2026-09-06
+        path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
+        reviewed_on: 2026-09-19
         status: current
         decision: approved-with-findings
         review_areas:
@@ -89,19 +88,19 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - workspace-intake-current-authority-binding
-          - workspace-intake-content-addressed-readiness
-          - workspace-intake-caller-bound-receipts
-          - workspace-intake-runtime-activation-denial
+          - prototype-closure-owner-backed-readiness
+          - prototype-closure-exact-source-and-target-binding
+          - prototype-closure-fixture-only-denial
+          - prototype-closure-controlled-activation-order
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+            path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
           - repo: workspace-governance-control-fabric
-            path: contracts/workspace-intake/manifest.json
+            path: contracts/prototype-closure/manifest.json
           - repo: workspace-governance
-            path: contracts/workspace-intake.yaml
+            path: contracts/prototype-closure.yaml
           - repo: operator-orchestration-service
-            path: docs/operations/workspace-intake-operator-surface.md
+            path: docs/operations/prototype-closure-operator-surface.md
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -145,8 +144,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-12-prototype-closure-causality-correction.md
-        reviewed_on: 2026-09-12
+        path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
+        reviewed_on: 2026-09-19
         status: current
         decision: approved-with-findings
         review_areas:
@@ -156,15 +155,15 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - prototype-closure-causality-correction
-          - prototype-closure-implementation-admission
+          - prototype-closure-controlled-activation-order
+          - prototype-closure-owner-backed-readiness
           - prototype-closure-source-custody-transfer
           - prototype-closure-dedicated-inactive-identity
           - prototype-closure-receipt-and-history-integrity
           - prototype-closure-runtime-cleanup-and-revocation
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-12-prototype-closure-causality-correction.md
+            path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
           - repo: security-architecture
             path: docs/reviews/components/2026-09-12-prototype-closure-implementation-admission.md
           - repo: workspace-governance
@@ -183,8 +182,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-        reviewed_on: 2026-09-06
+        path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
+        reviewed_on: 2026-09-19
         status: current
         decision: approved-with-findings
         review_areas:
@@ -194,19 +193,17 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - console-workspace-intake-same-origin-adapter
-          - console-server-side-caller-custody
-          - console-no-browser-canonical-authority
-          - console-candidate-authenticity-gate
-          - console-no-fixture-success-fallback
-          - console-workspace-intake-activation-sequencing
+          - prototype-closure-configured-console-proof
+          - prototype-closure-server-side-caller-custody
+          - prototype-closure-no-fixture-success-fallback
+          - prototype-closure-controlled-activation-order
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
+            path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
           - repo: operator-orchestration-service
-            path: docs/operations/workspace-intake-operator-surface.md
+            path: docs/operations/prototype-closure-operator-surface.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -279,22 +276,25 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-09-09-art-work-session-explicit-merge.md
-        reviewed_on: 2026-09-09
+        path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
+        reviewed_on: 2026-09-19
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - broker-runtime-and-caller-surface
+          - prototype-closure-owner-backed-orchestration
+          - prototype-closure-exact-readback-and-terminal-receipt
+          - prototype-closure-no-fixture-success-fallback
+          - prototype-closure-controlled-activation-order
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-09-09-art-work-session-explicit-merge.md
+            path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
           - repo: operator-orchestration-service
-            path: docs/contracts/delivery-workflow-api-v1.md
+            path: contracts/prototype-closure/manifest.json
   products:
     governance-operations-console:
       owner_repo: platform-engineering
