@@ -111,8 +111,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
-        reviewed_on: 2026-08-26
+        path: docs/reviews/components/2026-09-24-lifecycle-context-controlled-activation.md
+        reviewed_on: 2026-09-24
         status: current
         decision: approved-with-findings
         review_areas:
@@ -122,18 +122,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - refinement-exact-source-binding
-          - refinement-context-receipt-boundary
-          - refinement-raw-context-denial
-          - refinement-replay-and-recovery
-          - refinement-devint-activation-sequencing
+          - lifecycle-context-dedicated-caller-binding
+          - lifecycle-context-redaction-and-custody
+          - lifecycle-context-explicit-raw-fallback
+          - lifecycle-context-replay-and-recovery
+          - lifecycle-context-controlled-activation
         owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-08-26-refinement-catalog-dev-integration-boundary.md
           - repo: context-governance-gateway
-            path: docs/operating-model/refinement-projection.md
+            path: docs/operating-model/lifecycle-context-projection.md
           - repo: context-governance-gateway
-            path: contracts/schemas/refinement-context-projection-result.schema.json
+            path: contracts/schemas/lifecycle-context-projection-result.schema.json
+          - repo: operator-orchestration-service
+            path: contracts/delivery-art-work-session/lifecycle-context-ledger.schema.json
     workspace-prototype-studio:
       owner_repo: workspace-prototype-studio
       scope: component
@@ -276,8 +276,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
-        reviewed_on: 2026-09-19
+        path: docs/reviews/components/2026-09-24-lifecycle-context-controlled-activation.md
+        reviewed_on: 2026-09-24
         status: current
         decision: approved-with-findings
         review_areas:
@@ -285,16 +285,18 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - prototype-closure-owner-backed-orchestration
-          - prototype-closure-exact-readback-and-terminal-receipt
-          - prototype-closure-no-fixture-success-fallback
-          - prototype-closure-controlled-activation-order
+          - lifecycle-context-session-and-operator-binding
+          - lifecycle-context-receipt-and-ledger-boundary
+          - lifecycle-context-explicit-raw-fallback
+          - lifecycle-context-denial-and-replay
+          - lifecycle-context-controlled-activation
         owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
           - repo: operator-orchestration-service
-            path: contracts/prototype-closure/manifest.json
+            path: contracts/delivery-art-work-session/lifecycle-context-ledger.schema.json
+          - repo: context-governance-gateway
+            path: contracts/schemas/lifecycle-context-projection-result.schema.json
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -560,8 +562,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
-        reviewed_on: 2026-08-25
+        path: docs/reviews/components/2026-09-24-lifecycle-context-controlled-activation.md
+        reviewed_on: 2026-09-24
         status: current
         decision: approved-with-findings
         review_areas:
@@ -571,18 +573,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - work-design-exact-source-binding
-          - work-design-context-receipt-boundary
-          - work-design-raw-context-denial
-          - work-design-replay-and-recovery
-          - work-design-devint-activation-sequencing
+          - lifecycle-context-dedicated-caller-binding
+          - lifecycle-context-redaction-and-custody
+          - lifecycle-context-explicit-raw-fallback
+          - lifecycle-context-replay-and-recovery
+          - lifecycle-context-controlled-activation
         owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
           - repo: context-governance-gateway
-            path: docs/operating-model/work-design-projection.md
+            path: docs/operating-model/lifecycle-context-projection.md
           - repo: context-governance-gateway
-            path: contracts/schemas/work-design-context-projection-result.schema.json
+            path: contracts/schemas/lifecycle-context-projection-result.schema.json
+          - repo: operator-orchestration-service
+            path: contracts/delivery-art-work-session/lifecycle-context-ledger.schema.json
     governed-ai-gateway:
       owner_repo: platform-engineering
       scope: component
@@ -702,8 +704,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-        reviewed_on: 2026-09-06
+        path: docs/reviews/components/2026-09-24-lifecycle-context-controlled-activation.md
+        reviewed_on: 2026-09-24
         status: current
         decision: approved-with-findings
         review_areas:
@@ -713,18 +715,13 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - workspace-intake-caller-bound-workflow
-          - workspace-intake-one-file-review-source
-          - workspace-intake-human-merge-and-readback
-          - workspace-intake-replay-cancel-recovery
-          - workspace-intake-candidate-resolution-gate
-          - workspace-intake-runtime-activation-sequencing
+          - lifecycle-context-session-and-operator-binding
+          - lifecycle-context-receipt-and-ledger-boundary
+          - lifecycle-context-explicit-raw-fallback
+          - lifecycle-context-denial-and-replay
+          - lifecycle-context-controlled-activation
         owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-          - repo: workspace-governance
-            path: contracts/workspace-intake.yaml
-          - repo: workspace-governance-control-fabric
-            path: contracts/workspace-intake/manifest.json
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-09-05-workspace-intake-workflow.md
+            path: contracts/delivery-art-work-session/lifecycle-context-ledger.schema.json
+          - repo: context-governance-gateway
+            path: contracts/schemas/lifecycle-context-projection-result.schema.json
