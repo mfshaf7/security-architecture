@@ -2221,6 +2221,141 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-20-merged-work-session-recovery.md
+  date: '2026-09-20'
+  short_title: 2026-09-20-merged-work-session-recovery
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-20-prototype-closure-owner-readback.md
+  date: '2026-09-20'
+  short_title: 2026-09-20-prototype-closure-owner-readback
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-21-prototype-closure-delegated-approval.md
+  date: '2026-09-21'
+  short_title: Prototype Closure delegated approval
+  review_areas:
+  - identity
+  - delivery
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-21-unmerged-work-session-recovery.md
+  date: '2026-09-21'
+  short_title: 2026-09-21-unmerged-work-session-recovery
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-23-prototype-closure-historical-baseline-read.md
+  date: '2026-09-23'
+  short_title: 2026-09-23-prototype-closure-historical-baseline-read
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-23-prototype-delivery-exact-readback.md
+  date: '2026-09-23'
+  short_title: 2026-09-23-prototype-delivery-exact-readback
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-23-prototype-readiness-reference-projection.md
+  date: '2026-09-23'
+  short_title: 2026-09-23-prototype-readiness-reference-projection
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-23-work-session-retry-path-binding.md
+  date: '2026-09-23'
+  short_title: 2026-09-23-work-session-retry-path-binding
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-24-agent-source-owner-admission-preflight.md
+  date: '2026-09-24'
+  short_title: 2026-09-24-agent-source-owner-admission-preflight
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-24-configured-path-preflight.md
+  date: '2026-09-24'
+  short_title: 2026-09-24-configured-path-preflight
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-24-delivery-lifecycle-context-consumer.md
+  date: '2026-09-24'
+  short_title: 2026-09-24-delivery-lifecycle-context-consumer
+  review_areas:
+  - ai
+  - delivery
+  - identity
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-24-work-session-terminal-obligation-preflight.md
+  date: '2026-09-24'
+  short_title: 2026-09-24-work-session-terminal-obligation-preflight
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
