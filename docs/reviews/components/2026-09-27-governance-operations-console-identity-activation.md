@@ -93,6 +93,14 @@ attribution, restart and revocation behavior across the combined runtime, or
 normal availability. The ordered downstream activation and operating-proof
 items remain required.
 
+This Landing Unit also admits a bounded Security Architecture owner-evidence
+profile for subsequent source-backed Security ART work. The profile runs the
+repository structure check, generated-register check, and exact source-diff
+check. It is read from the recorded base revision, so it cannot authorize this
+same bootstrap change. This review uses the documented direct Review Packet
+recovery for the current PR; later Security work must use the normal automated
+OOS evidence path from the merged base.
+
 ## Review Areas
 
 ### Identity And Authorization
