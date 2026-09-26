@@ -12,6 +12,8 @@ import sys
 REQUIRED_PATHS = [
     "README.md",
     "AGENTS.md",
+    "contracts/delivery-art-work-session/README.md",
+    "contracts/delivery-art-work-session/evidence-profile.json",
     "docs/README.md",
     "docs/charter.md",
     "docs/architecture/README.md",

@@ -153,6 +153,11 @@ python3 scripts/validate_repo_structure.py --repo-root .
 python3 scripts/validate_security_evidence.py --repo-root . --workspace-root /home/mfshaf7/projects
 ```
 
+OOS reads the bounded owner-evidence commands in
+`contracts/delivery-art-work-session/evidence-profile.json` from the recorded
+Landing Unit base. The profile provides pre-merge owner checks; the full
+cross-repository security-evidence validator and exact-head CI remain required.
+
 ## Current Priorities
 
 1. remove shared operator passwords and move human access to SSO or OIDC

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "profile_id": "security-architecture-delivery-art-evidence-v1",
+  "owner_repo": "security-architecture",
+  "commands": [
+    {
+      "id": "repository-structure-validation",
+      "kind": "validations",
+      "name": "Security Architecture repository structure validation",
+      "executable": "python3",
+      "args": ["scripts/validate_repo_structure.py", "--repo-root", "."],
+      "fidelity": "real-git",
+      "conformance_binding": "matching-fidelity",
+      "timeout_seconds": 300
+    },
+    {
+      "id": "generated-register-view-validation",
+      "kind": "validations",
+      "name": "Generated security register view validation",
+      "executable": "python3",
+      "args": ["scripts/render_register_views.py", "--repo-root", ".", "--check"],
+      "fidelity": "filesystem",
+      "conformance_binding": "none",
+      "timeout_seconds": 300
+    },
+    {
+      "id": "source-diff-validation",
+      "kind": "validations",
+      "name": "Source diff whitespace validation",
+      "executable": "git",
+      "args": ["diff", "--check", "{{base_commit}}...{{head_commit}}"],
+      "fidelity": "real-git",
+      "conformance_binding": "none",
+      "timeout_seconds": 60
+    }
+  ]
+}
