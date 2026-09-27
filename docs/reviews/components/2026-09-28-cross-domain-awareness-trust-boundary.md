@@ -26,6 +26,16 @@ This decision is source acceptance, not operating proof. The boundary is not
 operating-ready until `#1201` proves configured source availability, restart,
 rollback, cleanup, and the absence of configured fixture fallback.
 
+### Architecture Recovery Binding
+
+The accepted architecture successor at
+`wgcf://artifacts/delivery-art/sha256/750365860af74e096e10a7c3aa4250afc716e83a9b5f3cd1087a72a6c56024c4`
+corrects the execution contract without changing this security decision. The
+Security item closes on exact-source acceptance. Only Platform work item
+`#1201` owns the positive and negative live-backend conformance cases. Its
+activation result gates parent closeout; it does not gate this Security review
+or its own Review Packet.
+
 ### Exact Source Binding
 
 | Owner | Pull request | Merged source | Reviewed evidence |
