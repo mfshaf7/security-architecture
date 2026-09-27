@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "profile_id": "security-architecture-delivery-art-evidence-v1",
+  "profile_id": "security-architecture-delivery-art-evidence-v2",
   "owner_repo": "security-architecture",
   "commands": [
     {
-      "id": "repository-structure-validation",
-      "kind": "validations",
-      "name": "Security Architecture repository structure validation",
+      "id": "repository-structure-contract-test",
+      "kind": "tests",
+      "name": "Security Architecture repository structure contract test",
       "executable": "python3",
       "args": ["scripts/validate_repo_structure.py", "--repo-root", "."],
       "fidelity": "real-git",

@@ -182,7 +182,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-27-governance-operations-console-runtime-operability.md
+        path: docs/reviews/components/2026-09-27-governance-operations-console-identity-activation.md
         reviewed_on: 2026-09-27
         status: current
         decision: approved-with-findings
@@ -192,26 +192,21 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - governance-console-central-runtime-configuration
-          - governance-console-correlation-and-bounded-errors
-          - governance-console-canonical-audit-projection
-          - governance-console-platform-runtime-observations
-          - governance-console-controlled-operability-approval
+          - governance-console-platform-session-authority
+          - governance-console-server-mutation-authorization
+          - governance-console-session-expiry-and-revocation
+          - governance-console-controlled-identity-activation
         owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-09-27-governance-operations-console-runtime-operability.md
           - repo: security-architecture
             path: docs/reviews/components/2026-09-27-governance-operations-console-identity-activation.md
           - repo: platform-engineering
             path: products/governance-operations-console/runtime-contract.md
           - repo: platform-engineering
-            path: products/governance-operations-console/runtime-observation-policy.yaml
+            path: products/governance-operations-console/session-projection-policy.yaml
           - repo: governance-operations-console
-            path: docs/product/console-runtime-operability.md
+            path: docs/product/surface-contracts/identity-and-authorization.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
-          - repo: operator-orchestration-service
-            path: docs/contracts/console-source-authority.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
