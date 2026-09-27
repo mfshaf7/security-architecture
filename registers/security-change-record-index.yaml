@@ -2401,12 +2401,45 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-27-lifecycle-transition-journal.md
+  date: '2026-09-27'
+  short_title: 2026-09-27-lifecycle-transition-journal
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-09-27-merged-session-recovery-order.md
   date: '2026-09-27'
   short_title: 2026-09-27-merged-session-recovery-order
   review_areas:
   - delivery
   - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-27-transition-target-gate-order.md
+  date: '2026-09-27'
+  short_title: 2026-09-27-transition-target-gate-order
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-28-workflow-activity-projection.md
+  date: '2026-09-28'
+  short_title: 2026-09-28-workflow-activity-projection
+  review_areas:
+  - runtime
+  - delivery
   findings: []
   risks: []
   workstreams:
