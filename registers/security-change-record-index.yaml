@@ -2434,12 +2434,67 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-28-crash-safe-work-session-locks.md
+  date: '2026-09-28'
+  short_title: 2026-09-28-crash-safe-work-session-locks
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-28-delivery-art-custody-owner-boundary.md
+  date: '2026-09-28'
+  short_title: 2026-09-28-delivery-art-custody-owner-boundary
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-09-28-workflow-activity-projection.md
   date: '2026-09-28'
   short_title: 2026-09-28-workflow-activity-projection
   review_areas:
   - runtime
   - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-30-delivery-completion-truth.md
+  date: '2026-09-30'
+  short_title: 2026-09-30-delivery-completion-truth
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-30-landing-unit-closeout-scope.md
+  date: '2026-09-30'
+  short_title: 2026-09-30-landing-unit-closeout-scope
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-09-30-owner-source-publication-preflight.md
+  date: '2026-09-30'
+  short_title: 2026-09-30-owner-source-publication-preflight
+  review_areas:
+  - delivery
+  - runtime
   findings: []
   risks: []
   workstreams:
