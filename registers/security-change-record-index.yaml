@@ -2511,9 +2511,31 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-01-delivery-art-evidence-fidelity-coverage.md
+  date: '2026-10-01'
+  short_title: 2026-10-01-delivery-art-evidence-fidelity-coverage
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-01-operator-guidance-truth.md
   date: '2026-10-01'
   short_title: 2026-10-01-operator-guidance-truth
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-01-workspace-intake-inventory-orchestration.md
+  date: '2026-10-01'
+  short_title: 2026-10-01-workspace-intake-inventory-orchestration
   review_areas:
   - runtime
   - delivery
