@@ -11,39 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
-        reviewed_on: 2026-09-19
-        status: current
-        decision: approved-with-findings
-        review_areas:
-          - identity
-          - secrets
-          - delivery
-          - runtime
-          - ai
-        review_trigger_ids:
-          - prototype-closure-dedicated-identity-commissioning
-          - prototype-closure-provider-review-enforcement
-          - prototype-closure-resource-revocation
-          - prototype-closure-controlled-activation-order
-        owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
-          - repo: platform-engineering
-            path: security/prototype-closure-identity.yaml
-          - repo: operator-orchestration-service
-            path: contracts/prototype-closure/manifest.json
-    workspace-governance:
-      owner_repo: workspace-governance
-      scope: component
-      baseline_review:
-        path: docs/reviews/components/2026-04-22-workspace-governance-delegated-execution-governance.md
-        reviewed_on: 2026-04-22
-        review_due_on: 2026-10-22
-        status: active
-        decision: approved-with-findings
-      latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-controlled-activation.md
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
         reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
@@ -54,13 +22,44 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-exact-source-and-packet-lineage
-          - intake-inventory-distinct-caller-and-provider-identities
-          - intake-inventory-replay-stale-and-failure-denial
-          - intake-inventory-human-merge-and-canonical-readback
-          - intake-inventory-no-fixture-live-fallback
-          - intake-inventory-controlled-activation-order
-          - intake-inventory-rollback-revocation-and-cleanup
+          - intake-inventory-exact-maintenance-source-binding
+          - intake-inventory-expanded-app-source-boundary
+          - intake-inventory-direct-runtime-and-denial-proof
+          - intake-inventory-invalidated-console-only-evidence
+          - intake-inventory-owner-maintenance-activation-order
+        owner_artifacts:
+          - repo: security-architecture
+            path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
+          - repo: platform-engineering
+            path: security/workspace-intake-identity.yaml
+          - repo: operator-orchestration-service
+            path: contracts/workspace-inventory/manifest.json
+    workspace-governance:
+      owner_repo: workspace-governance
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-04-22-workspace-governance-delegated-execution-governance.md
+        reviewed_on: 2026-04-22
+        review_due_on: 2026-10-22
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
+        reviewed_on: 2026-10-02
+        status: current
+        decision: approved-with-findings
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - intake-inventory-exact-maintenance-source-binding
+          - intake-inventory-expanded-app-source-boundary
+          - intake-inventory-direct-runtime-and-denial-proof
+          - intake-inventory-invalidated-console-only-evidence
+          - intake-inventory-owner-maintenance-activation-order
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/workspace-intake-inventory-operation.yaml
@@ -80,7 +79,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-controlled-activation.md
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
         reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
@@ -91,13 +90,11 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-exact-source-and-packet-lineage
-          - intake-inventory-distinct-caller-and-provider-identities
-          - intake-inventory-replay-stale-and-failure-denial
-          - intake-inventory-human-merge-and-canonical-readback
-          - intake-inventory-no-fixture-live-fallback
-          - intake-inventory-controlled-activation-order
-          - intake-inventory-rollback-revocation-and-cleanup
+          - intake-inventory-exact-maintenance-source-binding
+          - intake-inventory-expanded-app-source-boundary
+          - intake-inventory-direct-runtime-and-denial-proof
+          - intake-inventory-invalidated-console-only-evidence
+          - intake-inventory-owner-maintenance-activation-order
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/workspace-intake-inventory-operation.yaml
@@ -188,7 +185,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-controlled-activation.md
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
         reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
@@ -199,13 +196,11 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-exact-source-and-packet-lineage
-          - intake-inventory-distinct-caller-and-provider-identities
-          - intake-inventory-replay-stale-and-failure-denial
-          - intake-inventory-human-merge-and-canonical-readback
-          - intake-inventory-no-fixture-live-fallback
-          - intake-inventory-controlled-activation-order
-          - intake-inventory-rollback-revocation-and-cleanup
+          - intake-inventory-exact-maintenance-source-binding
+          - intake-inventory-expanded-app-source-boundary
+          - intake-inventory-direct-runtime-and-denial-proof
+          - intake-inventory-invalidated-console-only-evidence
+          - intake-inventory-owner-maintenance-activation-order
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/workspace-intake-inventory-operation.yaml
@@ -287,7 +282,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-controlled-activation.md
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
         reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
@@ -298,13 +293,11 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-exact-source-and-packet-lineage
-          - intake-inventory-distinct-caller-and-provider-identities
-          - intake-inventory-replay-stale-and-failure-denial
-          - intake-inventory-human-merge-and-canonical-readback
-          - intake-inventory-no-fixture-live-fallback
-          - intake-inventory-controlled-activation-order
-          - intake-inventory-rollback-revocation-and-cleanup
+          - intake-inventory-exact-maintenance-source-binding
+          - intake-inventory-expanded-app-source-boundary
+          - intake-inventory-direct-runtime-and-denial-proof
+          - intake-inventory-invalidated-console-only-evidence
+          - intake-inventory-owner-maintenance-activation-order
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/workspace-intake-inventory-operation.yaml
