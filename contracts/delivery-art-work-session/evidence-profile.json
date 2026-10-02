@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "profile_id": "security-architecture-delivery-art-evidence-v2",
+  "profile_id": "security-architecture-delivery-art-evidence-v3",
   "owner_repo": "security-architecture",
   "commands": [
     {
@@ -20,7 +20,7 @@
       "executable": "python3",
       "args": ["scripts/render_register_views.py", "--repo-root", ".", "--check"],
       "fidelity": "filesystem",
-      "conformance_binding": "none",
+      "conformance_binding": "matching-fidelity",
       "timeout_seconds": 300
     },
     {
