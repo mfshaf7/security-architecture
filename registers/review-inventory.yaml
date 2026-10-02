@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
         reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
@@ -22,14 +22,12 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-exact-maintenance-source-binding
-          - intake-inventory-expanded-app-source-boundary
-          - intake-inventory-direct-runtime-and-denial-proof
-          - intake-inventory-invalidated-console-only-evidence
-          - intake-inventory-owner-maintenance-activation-order
+          - intake-inventory-post-maintenance-exact-head-refresh
+          - intake-inventory-no-boundary-delta
+          - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
+            path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
           - repo: platform-engineering
             path: security/workspace-intake-identity.yaml
           - repo: operator-orchestration-service
@@ -44,7 +42,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
         reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
@@ -55,11 +53,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-exact-maintenance-source-binding
-          - intake-inventory-expanded-app-source-boundary
-          - intake-inventory-direct-runtime-and-denial-proof
-          - intake-inventory-invalidated-console-only-evidence
-          - intake-inventory-owner-maintenance-activation-order
+          - intake-inventory-post-maintenance-exact-head-refresh
+          - intake-inventory-no-boundary-delta
+          - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/workspace-intake-inventory-operation.yaml
@@ -79,7 +75,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
         reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
@@ -90,11 +86,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-exact-maintenance-source-binding
-          - intake-inventory-expanded-app-source-boundary
-          - intake-inventory-direct-runtime-and-denial-proof
-          - intake-inventory-invalidated-console-only-evidence
-          - intake-inventory-owner-maintenance-activation-order
+          - intake-inventory-post-maintenance-exact-head-refresh
+          - intake-inventory-no-boundary-delta
+          - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/workspace-intake-inventory-operation.yaml
@@ -185,7 +179,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
         reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
@@ -196,11 +190,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-exact-maintenance-source-binding
-          - intake-inventory-expanded-app-source-boundary
-          - intake-inventory-direct-runtime-and-denial-proof
-          - intake-inventory-invalidated-console-only-evidence
-          - intake-inventory-owner-maintenance-activation-order
+          - intake-inventory-post-maintenance-exact-head-refresh
+          - intake-inventory-no-boundary-delta
+          - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/workspace-intake-inventory-operation.yaml
@@ -282,7 +274,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-maintenance-reacceptance.md
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
         reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
@@ -293,11 +285,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-exact-maintenance-source-binding
-          - intake-inventory-expanded-app-source-boundary
-          - intake-inventory-direct-runtime-and-denial-proof
-          - intake-inventory-invalidated-console-only-evidence
-          - intake-inventory-owner-maintenance-activation-order
+          - intake-inventory-post-maintenance-exact-head-refresh
+          - intake-inventory-no-boundary-delta
+          - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/workspace-intake-inventory-operation.yaml
