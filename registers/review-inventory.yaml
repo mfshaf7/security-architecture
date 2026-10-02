@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
-        reviewed_on: 2026-10-02
+        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
+        reviewed_on: 2026-10-03
         status: current
         decision: approved-with-findings
         review_areas:
@@ -22,12 +22,12 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-post-maintenance-exact-head-refresh
-          - intake-inventory-no-boundary-delta
+          - intake-inventory-runtime-helper-projection-correction
+          - intake-inventory-no-authority-expansion
           - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: security-architecture
-            path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
+            path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
           - repo: platform-engineering
             path: security/workspace-intake-identity.yaml
           - repo: operator-orchestration-service
@@ -42,8 +42,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
-        reviewed_on: 2026-10-02
+        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
+        reviewed_on: 2026-10-03
         status: current
         decision: approved-with-findings
         review_areas:
@@ -53,8 +53,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-post-maintenance-exact-head-refresh
-          - intake-inventory-no-boundary-delta
+          - intake-inventory-runtime-helper-projection-correction
+          - intake-inventory-no-authority-expansion
           - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: workspace-governance
@@ -75,8 +75,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
-        reviewed_on: 2026-10-02
+        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
+        reviewed_on: 2026-10-03
         status: current
         decision: approved-with-findings
         review_areas:
@@ -86,8 +86,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-post-maintenance-exact-head-refresh
-          - intake-inventory-no-boundary-delta
+          - intake-inventory-runtime-helper-projection-correction
+          - intake-inventory-no-authority-expansion
           - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: workspace-governance
@@ -179,8 +179,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
-        reviewed_on: 2026-10-02
+        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
+        reviewed_on: 2026-10-03
         status: current
         decision: approved-with-findings
         review_areas:
@@ -190,8 +190,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-post-maintenance-exact-head-refresh
-          - intake-inventory-no-boundary-delta
+          - intake-inventory-runtime-helper-projection-correction
+          - intake-inventory-no-authority-expansion
           - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: workspace-governance
@@ -274,8 +274,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-post-maintenance-reacceptance.md
-        reviewed_on: 2026-10-02
+        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
+        reviewed_on: 2026-10-03
         status: current
         decision: approved-with-findings
         review_areas:
@@ -285,8 +285,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-post-maintenance-exact-head-refresh
-          - intake-inventory-no-boundary-delta
+          - intake-inventory-runtime-helper-projection-correction
+          - intake-inventory-no-authority-expansion
           - intake-inventory-direct-runtime-proof-still-required
         owner_artifacts:
           - repo: workspace-governance
