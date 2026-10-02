@@ -43,8 +43,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-28-cross-domain-awareness-trust-boundary.md
-        reviewed_on: 2026-09-28
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-controlled-activation.md
+        reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
         review_areas:
@@ -54,20 +54,20 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - cross-domain-exact-source-binding
-          - cross-domain-distinct-caller-credentials
-          - cross-domain-read-only-composition
-          - cross-domain-no-fixture-live-fallback
-          - cross-domain-bounded-evidence-routing
-          - cross-domain-partial-and-stale-failure
-          - cross-domain-runtime-activation-sequencing
+          - intake-inventory-exact-source-and-packet-lineage
+          - intake-inventory-distinct-caller-and-provider-identities
+          - intake-inventory-replay-stale-and-failure-denial
+          - intake-inventory-human-merge-and-canonical-readback
+          - intake-inventory-no-fixture-live-fallback
+          - intake-inventory-controlled-activation-order
+          - intake-inventory-rollback-revocation-and-cleanup
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/project-lifecycle.yaml
+            path: contracts/workspace-intake-inventory-operation.yaml
           - repo: operator-orchestration-service
-            path: contracts/lifecycle-transition/manifest.json
+            path: contracts/workspace-intake/manifest.json
           - repo: workspace-governance-control-fabric
-            path: schemas/governance-history-projection.schema.json
+            path: contracts/workspace-intake/manifest.json
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
     workspace-governance-control-fabric:
@@ -80,8 +80,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-28-cross-domain-awareness-trust-boundary.md
-        reviewed_on: 2026-09-28
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-controlled-activation.md
+        reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
         review_areas:
@@ -91,20 +91,20 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - cross-domain-exact-source-binding
-          - cross-domain-distinct-caller-credentials
-          - cross-domain-read-only-composition
-          - cross-domain-no-fixture-live-fallback
-          - cross-domain-bounded-evidence-routing
-          - cross-domain-partial-and-stale-failure
-          - cross-domain-runtime-activation-sequencing
+          - intake-inventory-exact-source-and-packet-lineage
+          - intake-inventory-distinct-caller-and-provider-identities
+          - intake-inventory-replay-stale-and-failure-denial
+          - intake-inventory-human-merge-and-canonical-readback
+          - intake-inventory-no-fixture-live-fallback
+          - intake-inventory-controlled-activation-order
+          - intake-inventory-rollback-revocation-and-cleanup
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/project-lifecycle.yaml
+            path: contracts/workspace-intake-inventory-operation.yaml
           - repo: operator-orchestration-service
-            path: contracts/lifecycle-transition/manifest.json
+            path: contracts/workspace-intake/manifest.json
           - repo: workspace-governance-control-fabric
-            path: schemas/governance-history-projection.schema.json
+            path: contracts/workspace-intake/manifest.json
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
     context-governance-gateway:
@@ -188,8 +188,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-28-cross-domain-awareness-trust-boundary.md
-        reviewed_on: 2026-09-28
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-controlled-activation.md
+        reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
         review_areas:
@@ -199,20 +199,20 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - cross-domain-exact-source-binding
-          - cross-domain-distinct-caller-credentials
-          - cross-domain-read-only-composition
-          - cross-domain-no-fixture-live-fallback
-          - cross-domain-bounded-evidence-routing
-          - cross-domain-partial-and-stale-failure
-          - cross-domain-runtime-activation-sequencing
+          - intake-inventory-exact-source-and-packet-lineage
+          - intake-inventory-distinct-caller-and-provider-identities
+          - intake-inventory-replay-stale-and-failure-denial
+          - intake-inventory-human-merge-and-canonical-readback
+          - intake-inventory-no-fixture-live-fallback
+          - intake-inventory-controlled-activation-order
+          - intake-inventory-rollback-revocation-and-cleanup
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/project-lifecycle.yaml
+            path: contracts/workspace-intake-inventory-operation.yaml
           - repo: operator-orchestration-service
-            path: contracts/workflow-activity/manifest.json
+            path: contracts/workspace-inventory/manifest.json
           - repo: workspace-governance-control-fabric
-            path: schemas/governance-history-projection.schema.json
+            path: contracts/workspace-active-inventory/manifest.json
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
     openclaw-runtime-distribution:
@@ -287,8 +287,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-09-28-cross-domain-awareness-trust-boundary.md
-        reviewed_on: 2026-09-28
+        path: docs/reviews/components/2026-10-02-workspace-intake-inventory-controlled-activation.md
+        reviewed_on: 2026-10-02
         status: current
         decision: approved-with-findings
         review_areas:
@@ -298,20 +298,20 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - cross-domain-exact-source-binding
-          - cross-domain-distinct-caller-credentials
-          - cross-domain-read-only-composition
-          - cross-domain-no-fixture-live-fallback
-          - cross-domain-bounded-evidence-routing
-          - cross-domain-partial-and-stale-failure
-          - cross-domain-runtime-activation-sequencing
+          - intake-inventory-exact-source-and-packet-lineage
+          - intake-inventory-distinct-caller-and-provider-identities
+          - intake-inventory-replay-stale-and-failure-denial
+          - intake-inventory-human-merge-and-canonical-readback
+          - intake-inventory-no-fixture-live-fallback
+          - intake-inventory-controlled-activation-order
+          - intake-inventory-rollback-revocation-and-cleanup
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/project-lifecycle.yaml
+            path: contracts/workspace-intake-inventory-operation.yaml
           - repo: operator-orchestration-service
-            path: contracts/workflow-activity/manifest.json
+            path: contracts/workspace-intake/manifest.json
           - repo: workspace-governance-control-fabric
-            path: schemas/governance-history-projection.schema.json
+            path: contracts/workspace-intake/manifest.json
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
   products:
