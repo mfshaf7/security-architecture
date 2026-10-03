@@ -2632,6 +2632,18 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-03-devint-smoke-distinct-caller-secret.md
+  date: '2026-10-03'
+  short_title: 2026-10-03-devint-smoke-distinct-caller-secret
+  review_areas:
+  - identity
+  - secrets
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-03-merge-ready-session-recovery.md
   date: '2026-10-03'
   short_title: 2026-10-03-merge-ready-session-recovery

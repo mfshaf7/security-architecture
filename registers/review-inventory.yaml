@@ -266,7 +266,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-dev-integration-smoke-caller-binding.md
+        path: docs/reviews/components/2026-10-03-dev-integration-smoke-distinct-secret-correction.md
         reviewed_on: 2026-10-03
         status: current
         decision: approved
@@ -276,14 +276,14 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - dev-integration-smoke-caller-specific-binding
+          - dev-integration-smoke-distinct-caller-secret
           - workspace-inventory-unbound-caller-denial-preserved
-          - existing-profile-secret-reuse
+          - pre-mutation-secret-ambiguity-rejection
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-03-devint-smoke-caller-binding.md
+            path: docs/records/change-records/2026-10-03-devint-smoke-distinct-caller-secret.md
           - repo: operator-orchestration-service
-            path: dev-integration/profiles/accepted-idea-delivery/scripts/up.sh
+            path: dev-integration/profiles/accepted-idea-delivery/scripts/common.sh
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -688,7 +688,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-dev-integration-smoke-caller-binding.md
+        path: docs/reviews/components/2026-10-03-dev-integration-smoke-distinct-secret-correction.md
         reviewed_on: 2026-10-03
         status: current
         decision: approved
@@ -698,11 +698,11 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - dev-integration-smoke-caller-specific-binding
+          - dev-integration-smoke-distinct-caller-secret
           - workspace-inventory-unbound-caller-denial-preserved
-          - existing-profile-secret-reuse
+          - pre-mutation-secret-ambiguity-rejection
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-03-devint-smoke-caller-binding.md
+            path: docs/records/change-records/2026-10-03-devint-smoke-distinct-caller-secret.md
           - repo: operator-orchestration-service
-            path: dev-integration/profiles/accepted-idea-delivery/scripts/up.sh
+            path: dev-integration/profiles/accepted-idea-delivery/scripts/common.sh
