@@ -42,29 +42,25 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
+        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
         reviewed_on: 2026-10-03
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - intake-inventory-runtime-helper-projection-correction
-          - intake-inventory-no-authority-expansion
-          - intake-inventory-direct-runtime-proof-still-required
+          - delivery-art-v5-evidence-owner-attribution
+          - delivery-art-v5-readiness-phase-separation
+          - delivery-art-v5-fail-closed-version-activation
+          - delivery-art-v5-validation-termination
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/workspace-intake-inventory-operation.yaml
+            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
-            path: contracts/workspace-intake/manifest.json
+            path: src/delivery-art/contracts.js
           - repo: workspace-governance-control-fabric
-            path: contracts/workspace-intake/manifest.json
-          - repo: governance-operations-console
-            path: docs/security-and-data-boundaries.md
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -75,29 +71,25 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
+        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
         reviewed_on: 2026-10-03
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - intake-inventory-runtime-helper-projection-correction
-          - intake-inventory-no-authority-expansion
-          - intake-inventory-direct-runtime-proof-still-required
+          - delivery-art-v5-evidence-owner-attribution
+          - delivery-art-v5-readiness-phase-separation
+          - delivery-art-v5-fail-closed-version-activation
+          - delivery-art-v5-validation-termination
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/workspace-intake-inventory-operation.yaml
+            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
-            path: contracts/workspace-intake/manifest.json
+            path: src/delivery-art/contracts.js
           - repo: workspace-governance-control-fabric
-            path: contracts/workspace-intake/manifest.json
-          - repo: governance-operations-console
-            path: docs/security-and-data-boundaries.md
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -274,29 +266,25 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
+        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
         reviewed_on: 2026-10-03
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - intake-inventory-runtime-helper-projection-correction
-          - intake-inventory-no-authority-expansion
-          - intake-inventory-direct-runtime-proof-still-required
+          - delivery-art-v5-evidence-owner-attribution
+          - delivery-art-v5-readiness-phase-separation
+          - delivery-art-v5-fail-closed-version-activation
+          - delivery-art-v5-validation-termination
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/workspace-intake-inventory-operation.yaml
+            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
-            path: contracts/workspace-intake/manifest.json
+            path: src/delivery-art/contracts.js
           - repo: workspace-governance-control-fabric
-            path: contracts/workspace-intake/manifest.json
-          - repo: governance-operations-console
-            path: docs/security-and-data-boundaries.md
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -530,28 +518,25 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-        reviewed_on: 2026-09-06
+        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
+        reviewed_on: 2026-10-03
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - workspace-intake-current-authority-binding
-          - workspace-intake-content-addressed-readiness
-          - workspace-intake-caller-bound-receipts
-          - workspace-intake-runtime-activation-denial
+          - delivery-art-v5-evidence-owner-attribution
+          - delivery-art-v5-readiness-phase-separation
+          - delivery-art-v5-fail-closed-version-activation
+          - delivery-art-v5-validation-termination
         owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-09-06-workspace-intake-authority-boundary.md
-          - repo: workspace-governance-control-fabric
-            path: contracts/workspace-intake/manifest.json
           - repo: workspace-governance
-            path: contracts/workspace-intake.yaml
+            path: contracts/schemas/delivery-art-architecture-packet.schema.json
+          - repo: operator-orchestration-service
+            path: src/delivery-art/contracts.js
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -704,24 +689,22 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-09-24-lifecycle-context-controlled-activation.md
-        reviewed_on: 2026-09-24
+        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
+        reviewed_on: 2026-10-03
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - lifecycle-context-session-and-operator-binding
-          - lifecycle-context-receipt-and-ledger-boundary
-          - lifecycle-context-explicit-raw-fallback
-          - lifecycle-context-denial-and-replay
-          - lifecycle-context-controlled-activation
+          - delivery-art-v5-evidence-owner-attribution
+          - delivery-art-v5-readiness-phase-separation
+          - delivery-art-v5-fail-closed-version-activation
+          - delivery-art-v5-validation-termination
         owner_artifacts:
+          - repo: workspace-governance
+            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
-            path: contracts/delivery-art-work-session/lifecycle-context-ledger.schema.json
-          - repo: context-governance-gateway
-            path: contracts/schemas/lifecycle-context-projection-result.schema.json
+            path: src/delivery-art/contracts.js
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
