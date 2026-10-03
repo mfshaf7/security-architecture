@@ -11,10 +11,10 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
+        path: docs/reviews/components/2026-10-03-workspace-operations-post-repair-pin-refresh.md
         reviewed_on: 2026-10-03
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
@@ -22,16 +22,14 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - intake-inventory-runtime-helper-projection-correction
-          - intake-inventory-no-authority-expansion
-          - intake-inventory-direct-runtime-proof-still-required
+          - workspace-operations-exact-source-pin-refresh
+          - expired-installation-token-rotation
+          - composition-aware-registry-proof
         owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
           - repo: platform-engineering
             path: security/workspace-intake-identity.yaml
           - repo: operator-orchestration-service
-            path: contracts/workspace-inventory/manifest.json
+            path: docs/records/change-records/2026-10-03-devint-smoke-distinct-caller-secret.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
