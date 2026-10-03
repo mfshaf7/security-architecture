@@ -266,25 +266,24 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
+        path: docs/reviews/components/2026-10-03-dev-integration-smoke-caller-binding.md
         reviewed_on: 2026-10-03
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v5-evidence-owner-attribution
-          - delivery-art-v5-readiness-phase-separation
-          - delivery-art-v5-fail-closed-version-activation
-          - delivery-art-v5-validation-termination
+          - dev-integration-smoke-caller-specific-binding
+          - workspace-inventory-unbound-caller-denial-preserved
+          - existing-profile-secret-reuse
         owner_artifacts:
-          - repo: workspace-governance
-            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
-            path: src/delivery-art/contracts.js
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
+            path: docs/records/change-records/2026-10-03-devint-smoke-caller-binding.md
+          - repo: operator-orchestration-service
+            path: dev-integration/profiles/accepted-idea-delivery/scripts/up.sh
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -689,22 +688,21 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
+        path: docs/reviews/components/2026-10-03-dev-integration-smoke-caller-binding.md
         reviewed_on: 2026-10-03
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v5-evidence-owner-attribution
-          - delivery-art-v5-readiness-phase-separation
-          - delivery-art-v5-fail-closed-version-activation
-          - delivery-art-v5-validation-termination
+          - dev-integration-smoke-caller-specific-binding
+          - workspace-inventory-unbound-caller-denial-preserved
+          - existing-profile-secret-reuse
         owner_artifacts:
-          - repo: workspace-governance
-            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
-            path: src/delivery-art/contracts.js
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
+            path: docs/records/change-records/2026-10-03-devint-smoke-caller-binding.md
+          - repo: operator-orchestration-service
+            path: dev-integration/profiles/accepted-idea-delivery/scripts/up.sh
