@@ -169,8 +169,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-workspace-intake-inventory-runtime-helper-reacceptance.md
-        reviewed_on: 2026-10-03
+        path: docs/reviews/components/2026-10-04-repository-catalog-controlled-activation.md
+        reviewed_on: 2026-10-04
         status: current
         decision: approved-with-findings
         review_areas:
@@ -178,20 +178,20 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - intake-inventory-runtime-helper-projection-correction
-          - intake-inventory-no-authority-expansion
-          - intake-inventory-direct-runtime-proof-still-required
+          - repository-catalog-first-use-readiness-issuance
+          - repository-catalog-exact-authority-and-receipt-binding
+          - repository-catalog-server-only-console-handoff
+          - repository-catalog-controlled-runtime-commissioning
         owner_artifacts:
-          - repo: workspace-governance
-            path: contracts/workspace-intake-inventory-operation.yaml
           - repo: operator-orchestration-service
-            path: contracts/workspace-inventory/manifest.json
-          - repo: workspace-governance-control-fabric
-            path: contracts/workspace-active-inventory/manifest.json
+            path: docs/records/change-records/2026-10-04-repository-readiness-preparation.md
           - repo: governance-operations-console
             path: docs/security-and-data-boundaries.md
+          - repo: governance-operations-console
+            path: docs/product/refinement-catalog-live-integration.md
+          - repo: governance-operations-console
+            path: tests/operation-runtime/repository-catalog-console-protocol.test.mjs
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -264,24 +264,27 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-dev-integration-smoke-distinct-secret-correction.md
-        reviewed_on: 2026-10-03
+        path: docs/reviews/components/2026-10-04-repository-catalog-controlled-activation.md
+        reviewed_on: 2026-10-04
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - dev-integration-smoke-distinct-caller-secret
-          - workspace-inventory-unbound-caller-denial-preserved
-          - pre-mutation-secret-ambiguity-rejection
+          - repository-catalog-first-use-readiness-issuance
+          - repository-catalog-exact-authority-and-receipt-binding
+          - repository-catalog-server-only-console-handoff
+          - repository-catalog-controlled-runtime-commissioning
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-03-devint-smoke-distinct-caller-secret.md
+            path: docs/records/change-records/2026-10-04-repository-readiness-preparation.md
           - repo: operator-orchestration-service
-            path: dev-integration/profiles/accepted-idea-delivery/scripts/common.sh
+            path: contracts/catalog/repository-readiness-result.schema.json
+          - repo: operator-orchestration-service
+            path: src/catalog/wgcf-readiness-client.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -686,21 +689,24 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-dev-integration-smoke-distinct-secret-correction.md
-        reviewed_on: 2026-10-03
+        path: docs/reviews/components/2026-10-04-repository-catalog-controlled-activation.md
+        reviewed_on: 2026-10-04
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - dev-integration-smoke-distinct-caller-secret
-          - workspace-inventory-unbound-caller-denial-preserved
-          - pre-mutation-secret-ambiguity-rejection
+          - repository-catalog-first-use-readiness-issuance
+          - repository-catalog-exact-authority-and-receipt-binding
+          - repository-catalog-server-only-console-handoff
+          - repository-catalog-controlled-runtime-commissioning
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-03-devint-smoke-distinct-caller-secret.md
+            path: docs/records/change-records/2026-10-04-repository-readiness-preparation.md
           - repo: operator-orchestration-service
-            path: dev-integration/profiles/accepted-idea-delivery/scripts/common.sh
+            path: contracts/catalog/repository-readiness-result.schema.json
+          - repo: operator-orchestration-service
+            path: src/catalog/wgcf-readiness-client.js
