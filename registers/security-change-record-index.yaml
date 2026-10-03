@@ -2709,6 +2709,17 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-04-repository-readiness-preparation.md
+  date: '2026-10-04'
+  short_title: 2026-10-04-repository-readiness-preparation
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-04-v5-work-session-lifecycle-owner-binding.md
   date: '2026-10-04'
   short_title: 2026-10-04-v5-work-session-lifecycle-owner-binding
