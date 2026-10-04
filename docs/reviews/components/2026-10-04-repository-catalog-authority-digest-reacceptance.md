@@ -28,10 +28,30 @@ controls, keeps the semantic digest for Inventory projections, and sends the
 exact source-content digest to WGCF. No identity, permission, caller, secret,
 repository scope, readiness authority, or mutation authority changes.
 
-This is source re-acceptance, not operating proof. Platform must pin this
-review's eventual merge plus the exact OOS merge above, refresh the active
-Delivery architecture source binding, and complete the existing `#1231`
-commissioning path. No replacement ART Defect or child is authorized.
+The required source-binding refresh is now durably represented by architecture
+packet v11:
+`wgcf://artifacts/delivery-art/sha256/115056ba9f888c8ee08de78a17bcea5dd8df40c4a3624eeecbdc7b79148deb17`.
+It supersedes v10, binds the exact OOS repair and this review's first merged
+Security acceptance, preserves the approved Epic scope and owner map, and
+assigns `#1231` to one fresh evidence-preserving Platform recovery Landing
+Unit. This follow-up review change is the exact architecture-binding phase of
+the same `child_isolated_landing_unit` Security judgment.
+
+The complete commissioning source set accepted with v11 is:
+
+- Workspace Governance:
+  `9718ce9eea04049541a1fb44f0b7cdc0ac823687`;
+- Workspace Governance Control Fabric:
+  `f296a8bf91bcc22272f0079cf2b0aec6fe431fdf`;
+- Operator Orchestration Service:
+  `968643ad3dca86366ae417ebe77a23ba7c2c2cb6`; and
+- Governance Operations Console:
+  `9347794a138f3649bb6ef5b7db057524d1c1e26d`.
+
+This remains source and architecture acceptance, not operating proof. Platform
+must pin the eventual merge containing this exact v11 binding and complete the
+existing `#1231` commissioning path. No replacement ART Defect or child is
+authorized.
 
 ## Scope Delta
 
@@ -134,6 +154,10 @@ No exception or accepted risk is created.
 Approved:
 
 - exact OOS merge `968643ad3dca86366ae417ebe77a23ba7c2c2cb6`;
+- exact architecture packet
+  `wgcf://artifacts/delivery-art/sha256/115056ba9f888c8ee08de78a17bcea5dd8df40c4a3624eeecbdc7b79148deb17`
+  with the Workspace Governance, WGCF, OOS, and Console revisions listed
+  above;
 - separate semantic and exact source-content Inventory digests;
 - use of the exact source-content digest for WGCF
   `expected_authority_digest`;
