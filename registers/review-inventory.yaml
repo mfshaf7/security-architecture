@@ -264,27 +264,24 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-04-repository-catalog-controlled-activation.md
+        path: docs/reviews/components/2026-10-04-repository-catalog-authority-digest-reacceptance.md
         reviewed_on: 2026-10-04
         status: current
         decision: approved-with-findings
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-catalog-first-use-readiness-issuance
-          - repository-catalog-exact-authority-and-receipt-binding
-          - repository-catalog-server-only-console-handoff
+          - repository-catalog-source-content-digest-binding
+          - repository-catalog-cross-repo-digest-conformance
           - repository-catalog-controlled-runtime-commissioning
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-04-repository-readiness-preparation.md
+            path: docs/records/change-records/2026-10-04-repository-readiness-content-digest.md
           - repo: operator-orchestration-service
-            path: contracts/catalog/repository-readiness-result.schema.json
+            path: src/workspace-inventory/source-client.js
           - repo: operator-orchestration-service
-            path: src/catalog/wgcf-readiness-client.js
+            path: src/workspace-inventory/service.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -689,24 +686,21 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-04-repository-catalog-controlled-activation.md
+        path: docs/reviews/components/2026-10-04-repository-catalog-authority-digest-reacceptance.md
         reviewed_on: 2026-10-04
         status: current
         decision: approved-with-findings
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-catalog-first-use-readiness-issuance
-          - repository-catalog-exact-authority-and-receipt-binding
-          - repository-catalog-server-only-console-handoff
+          - repository-catalog-source-content-digest-binding
+          - repository-catalog-cross-repo-digest-conformance
           - repository-catalog-controlled-runtime-commissioning
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-04-repository-readiness-preparation.md
+            path: docs/records/change-records/2026-10-04-repository-readiness-content-digest.md
           - repo: operator-orchestration-service
-            path: contracts/catalog/repository-readiness-result.schema.json
+            path: src/workspace-inventory/source-client.js
           - repo: operator-orchestration-service
-            path: src/catalog/wgcf-readiness-client.js
+            path: src/workspace-inventory/service.js
