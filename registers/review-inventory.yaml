@@ -264,7 +264,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-04-repository-catalog-authority-digest-reacceptance.md
+        path: docs/reviews/components/2026-10-04-repository-catalog-authority-schema-v2-reacceptance.md
         reviewed_on: 2026-10-04
         status: current
         decision: approved-with-findings
@@ -272,16 +272,16 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-catalog-source-content-digest-binding
-          - repository-catalog-cross-repo-digest-conformance
+          - repository-catalog-authority-schema-v2-binding
+          - repository-catalog-cross-repo-authority-conformance
           - repository-catalog-controlled-runtime-commissioning
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-04-repository-readiness-content-digest.md
-          - repo: operator-orchestration-service
-            path: src/workspace-inventory/source-client.js
-          - repo: operator-orchestration-service
-            path: src/workspace-inventory/service.js
+          - repo: workspace-governance-control-fabric
+            path: docs/records/change-records/2026-10-04-repository-readiness-v2-authority.md
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/repository_readiness.py
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/repository_readiness_contracts.py
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -686,7 +686,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-04-repository-catalog-authority-digest-reacceptance.md
+        path: docs/reviews/components/2026-10-04-repository-catalog-authority-schema-v2-reacceptance.md
         reviewed_on: 2026-10-04
         status: current
         decision: approved-with-findings
@@ -694,13 +694,13 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-catalog-source-content-digest-binding
-          - repository-catalog-cross-repo-digest-conformance
+          - repository-catalog-authority-schema-v2-binding
+          - repository-catalog-cross-repo-authority-conformance
           - repository-catalog-controlled-runtime-commissioning
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-04-repository-readiness-content-digest.md
-          - repo: operator-orchestration-service
-            path: src/workspace-inventory/source-client.js
-          - repo: operator-orchestration-service
-            path: src/workspace-inventory/service.js
+          - repo: workspace-governance-control-fabric
+            path: docs/records/change-records/2026-10-04-repository-readiness-v2-authority.md
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/repository_readiness.py
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/repository_readiness_contracts.py
