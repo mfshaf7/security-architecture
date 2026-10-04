@@ -88,6 +88,23 @@ Landing Unit, owner boundaries, dependencies, security posture, rollback
 boundaries, and conformance outcomes are preserved. Packets v11 through v13
 are historical evidence rather than current activation authority.
 
+Architecture packet v15 is durably persisted at
+`wgcf://artifacts/delivery-art/sha256/1f17cc327aa7bbb730ab80877421f6d3d4a459b9e66d528c49e8d36bebb031ff`
+with custody receipt digest
+`sha256:51949b4ad017ba9bf66c881fc7bab373d26c22754653323f3070ab869b59bc96`.
+It supersedes v14 and changes only the terminal Platform Landing Unit identity
+from `delivery-1203-repository-catalog-platform-recovery-3` to
+`delivery-1203-repository-catalog-platform-recovery-4`. OOS recovery receipt
+`work-session-recovery:work-session:delivery-1203:delivery-1203-repository-catalog-platform-recovery-3`
+with digest
+`sha256:b33fc840d6e49b47e4d50268ef12ade5ae44cee4f788547941e2847faa635e23`
+proves the superseded session was clean, unmerged, and had no remote branch,
+pull request, Review Packet, or readiness receipt; its retained source is
+eligible for deliberate reconciliation into recovery 4. All 35 covered
+children, source revisions, owner boundaries, dependencies, security posture,
+rollback boundaries, and conformance outcomes are preserved. Packets v11
+through v14 are historical evidence rather than current activation authority.
+
 ## Scope Delta
 
 ### Design Intent
@@ -153,12 +170,12 @@ mutation owner and OpenProject remains canonical Catalog state.
 
 ## Findings And Activation Conditions
 
-1. Architecture packet v14 satisfies the successor-packet condition by binding
+1. Architecture packet v15 satisfies the successor-packet condition by binding
    WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46`, Security
-   `3cb26a024fce1d01ff8eb80899d8f50299982c9a`, Console
+   `e392abe55fbec947431aeba75c9daccf56cc0dee`, Console
    `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`, the unchanged approved Epic 1203
-   scope and evidence outcomes, and the required fresh Platform source-intent
-   identity.
+   scope and evidence outcomes, and the fresh
+   `delivery-1203-repository-catalog-platform-recovery-4` source-intent identity.
 2. The merge containing this paragraph must land before Platform activation so
    the Platform policy can pin the exact architecture-binding Security
    revision.
@@ -185,8 +202,8 @@ Approved:
 - exact WGCF merge `3d04ccaa8a751dfcb743c06b253299ee028c8f46`;
 - exact Console repair merge
   `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`;
-- exact architecture packet v14
-  `sha256:e834d9b9823ce1e0db357e0fbbbbf5b287e9e95c6e4aab18beb5e255fc556591`;
+- exact architecture packet v15
+  `sha256:1f17cc327aa7bbb730ab80877421f6d3d4a459b9e66d528c49e8d36bebb031ff`;
 - complete validation against the digest-pinned canonical repository-authority
   v2 schema;
 - the exact source set listed above as input to the successor architecture
@@ -196,9 +213,9 @@ Approved:
 
 Not approved:
 
-- activating WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46` under stale architecture v11,
-  v12, or v13, a terminal recovered Landing Unit identity, or stale Platform/Security
-  pins;
+- activating WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46` under stale architecture v11
+  through v14, a terminal recovered Landing Unit identity, or stale
+  Platform/Security pins;
 - accepting arbitrary or unpinned authority schemas;
 - treating the local source proof as deployed operating evidence;
 - fixture, cached, synthetic, or stale readiness evidence as Catalog mutation
@@ -214,5 +231,5 @@ Not approved:
 - [WGCF owner change record](https://github.com/mfshaf7/workspace-governance-control-fabric/blob/3d04ccaa8a751dfcb743c06b253299ee028c8f46/docs/records/change-records/2026-10-04-repository-readiness-v2-authority.md)
 - [WGCF pull request #97](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/97)
 - [Console pull request #51](https://github.com/mfshaf7/governance-operations-console/pull/51)
-- Architecture packet v14:
-  `wgcf://artifacts/delivery-art/sha256/e834d9b9823ce1e0db357e0fbbbbf5b287e9e95c6e4aab18beb5e255fc556591`
+- Architecture packet v15:
+  `wgcf://artifacts/delivery-art/sha256/1f17cc327aa7bbb730ab80877421f6d3d4a459b9e66d528c49e8d36bebb031ff`
