@@ -41,18 +41,27 @@ The source set accepted for the next architecture refresh is:
   `9347794a138f3649bb6ef5b7db057524d1c1e26d`; and
 - this Security review's eventual merged revision.
 
-Architecture packet v12 is now durably persisted at
-`wgcf://artifacts/delivery-art/sha256/c36e5a8d99ca5b196c87e3c5def23e4d9fd7f3dbc8550fd842fa6cde26d1ca27`
+Architecture packet v13 is now durably persisted at
+`wgcf://artifacts/delivery-art/sha256/ef13022a4fb930086617781eda0727217d3cae0d17e23cde7c82276e0da10db7`
 with custody receipt digest
-`sha256:0f37de3c086cbb732bfbc1252120be7b88d88608eb823ee927e40ddf049f6f60`.
-It explicitly supersedes v11, binds WGCF
-`3d04ccaa8a751dfcb743c06b253299ee028c8f46` and the first merged phase of this
-review at `d791ab47e254874f57aae9b89166c791eda8104d`, and preserves all 35 covered
-children, approved owner boundaries, Landing Units, and conformance cases.
-This follow-up source change is the exact architecture-binding phase of the
-same `child_isolated_landing_unit` Security judgment. Architecture packet v11
-remains historical evidence, not current activation authority. No replacement
-ART Defect or child is authorized.
+`sha256:ed0d2b0906757b3c4a9d2b0a04b6800428ea6743bdfd1584a8b3725dfa8c2a45`.
+It explicitly supersedes v12, binds WGCF
+`3d04ccaa8a751dfcb743c06b253299ee028c8f46` and the prior merged phase of this
+review at `cbb78d6e67097e3375ad983fca8408b491ac892a`, and preserves all 35 covered
+children, approved owner boundaries, rollback boundaries, and conformance
+outcomes. The only structural change is the replacement of terminal Platform
+Landing Unit identity
+`delivery-1203-repository-catalog-platform-recovery-2` with
+`delivery-1203-repository-catalog-platform-recovery-3` after OOS recovery
+receipt
+`work-session-recovery:work-session:delivery-1203:delivery-1203-repository-catalog-platform-recovery-2`
+archived the clean unmerged session. The receipt proves no remote branch, pull
+request, Review Packet, or readiness receipt existed and retains local source
+for deliberate reconciliation. This follow-up source change is the exact
+architecture-binding phase of the same `child_isolated_landing_unit` Security
+judgment. Architecture packets v11 and v12 remain historical evidence, not
+current activation authority. No replacement ART Defect or child is
+authorized.
 
 ## Scope Delta
 
@@ -119,15 +128,17 @@ mutation owner and OpenProject remains canonical Catalog state.
 
 ## Findings And Activation Conditions
 
-1. Architecture packet v12 satisfies the successor-packet condition by binding
+1. Architecture packet v13 satisfies the successor-packet condition by binding
    WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46`, Security
-   `d791ab47e254874f57aae9b89166c791eda8104d`, and the unchanged approved Epic
-   1203 scope and evidence cases.
+   `cbb78d6e67097e3375ad983fca8408b491ac892a`, the unchanged approved Epic 1203
+   scope and evidence outcomes, and the required fresh Platform source-intent
+   identity.
 2. The merge containing this paragraph must land before Platform activation so
    the Platform policy can pin the exact architecture-binding Security
    revision.
-3. Update the existing Platform `#1231` Landing Unit to the exact WGCF,
-   Security, and architecture revisions; do not create another ART child.
+3. Start the replacement Platform Landing Unit for existing item `#1231` with
+   the exact OOS recovery receipt chain, fresh branch, and exact WGCF, Security,
+   and architecture revisions; do not create another ART child.
 4. Rebuild the exact `refinement-catalog` composition and require the live
    readiness response to report `repository-ready` with a current durable
    reference before any Catalog mutation.
@@ -146,8 +157,8 @@ No exception or accepted risk is created.
 Approved:
 
 - exact WGCF merge `3d04ccaa8a751dfcb743c06b253299ee028c8f46`;
-- exact architecture packet v12
-  `sha256:c36e5a8d99ca5b196c87e3c5def23e4d9fd7f3dbc8550fd842fa6cde26d1ca27`;
+- exact architecture packet v13
+  `sha256:ef13022a4fb930086617781eda0727217d3cae0d17e23cde7c82276e0da10db7`;
 - complete validation against the digest-pinned canonical repository-authority
   v2 schema;
 - the exact source set listed above as input to the successor architecture
@@ -158,7 +169,8 @@ Approved:
 Not approved:
 
 - activating WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46` under stale architecture v11 or
-  stale Platform/Security pins;
+  v12, a terminal recovered Landing Unit identity, or stale Platform/Security
+  pins;
 - accepting arbitrary or unpinned authority schemas;
 - treating the local source proof as deployed operating evidence;
 - fixture, cached, synthetic, or stale readiness evidence as Catalog mutation
@@ -173,5 +185,5 @@ Not approved:
 - [Security delta review process](../security-delta-review-process.md)
 - [WGCF owner change record](https://github.com/mfshaf7/workspace-governance-control-fabric/blob/3d04ccaa8a751dfcb743c06b253299ee028c8f46/docs/records/change-records/2026-10-04-repository-readiness-v2-authority.md)
 - [WGCF pull request #97](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/97)
-- Architecture packet v12:
-  `wgcf://artifacts/delivery-art/sha256/c36e5a8d99ca5b196c87e3c5def23e4d9fd7f3dbc8550fd842fa6cde26d1ca27`
+- Architecture packet v13:
+  `wgcf://artifacts/delivery-art/sha256/ef13022a4fb930086617781eda0727217d3cae0d17e23cde7c82276e0da10db7`
