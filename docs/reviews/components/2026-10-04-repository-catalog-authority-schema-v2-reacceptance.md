@@ -36,9 +36,11 @@ The source set accepted for the next architecture refresh is:
 - Workspace Governance Control Fabric:
   `3d04ccaa8a751dfcb743c06b253299ee028c8f46`;
 - Operator Orchestration Service:
-  `968643ad3dca86366ae417ebe77a23ba7c2c2cb6`;
+  `7ea390c28ac95d64a8fee285f212585bf7863cf6`;
 - Governance Operations Console:
-  `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`; and
+  `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`;
+- Platform Engineering:
+  `7b0058a7a605871125dd5d9147e557dd9bc4ecb9`; and
 - this Security review's eventual merged revision.
 
 Architecture packet v13 is now durably persisted at
@@ -105,6 +107,28 @@ children, source revisions, owner boundaries, dependencies, security posture,
 rollback boundaries, and conformance outcomes are preserved. Packets v11
 through v14 are historical evidence rather than current activation authority.
 
+Architecture packet v16 is durably persisted at
+`wgcf://artifacts/delivery-art/sha256/3a4b5edb6bc54ff47a45f610b41f75bc57dd9d1ab56e9475518100d75ff72ab0`
+with custody receipt digest
+`sha256:8621a894e31626b24a4abc66ac489fe96c9f1fa127b54155ff51d042b13f5dae`.
+It supersedes v15, binds merged Platform PR 264 at
+`7b0058a7a605871125dd5d9147e557dd9bc4ecb9` and the OOS configured-path
+transport repair at `7ea390c28ac95d64a8fee285f212585bf7863cf6`, and replaces only the incomplete
+terminal Platform Landing Unit identity with
+`delivery-1203-repository-catalog-platform-recovery-5`. Evidence-preserving OOS
+recovery receipt
+`work-session-recovery:work-session:delivery-1203:delivery-1203-repository-catalog-platform-recovery-4`
+with digest
+`sha256:9f8dc621b8b1ce28a1170bec73eed7d665c6b96e5ac2d5b1c60d336f8425b568`
+proves PR 264 is merged, preserves its durable merge-ready Review Packet at
+`sha256:38b0924a4fdc2eea8bf587d15b4e67a3793d542f42eff51cba896b84144af8c8`,
+and confirms no readiness receipt or finalized packet exists. Recovery 5 must
+use the complete accepted-base profile and cannot claim the archived packet as
+its own evidence. All 35 covered children, owner boundaries, dependencies,
+security posture, rollback boundaries, and conformance outcomes are preserved.
+Packets v11 through v15 are historical evidence rather than current activation
+authority.
+
 ## Scope Delta
 
 ### Design Intent
@@ -170,12 +194,14 @@ mutation owner and OpenProject remains canonical Catalog state.
 
 ## Findings And Activation Conditions
 
-1. Architecture packet v15 satisfies the successor-packet condition by binding
+1. Architecture packet v16 satisfies the successor-packet condition by binding
    WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46`, Security
    `e392abe55fbec947431aeba75c9daccf56cc0dee`, Console
-   `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`, the unchanged approved Epic 1203
+   `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`, OOS
+   `7ea390c28ac95d64a8fee285f212585bf7863cf6`, Platform
+   `7b0058a7a605871125dd5d9147e557dd9bc4ecb9`, the unchanged approved Epic 1203
    scope and evidence outcomes, and the fresh
-   `delivery-1203-repository-catalog-platform-recovery-4` source-intent identity.
+   `delivery-1203-repository-catalog-platform-recovery-5` source-intent identity.
 2. The merge containing this paragraph must land before Platform activation so
    the Platform policy can pin the exact architecture-binding Security
    revision.
@@ -202,8 +228,8 @@ Approved:
 - exact WGCF merge `3d04ccaa8a751dfcb743c06b253299ee028c8f46`;
 - exact Console repair merge
   `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`;
-- exact architecture packet v15
-  `sha256:1f17cc327aa7bbb730ab80877421f6d3d4a459b9e66d528c49e8d36bebb031ff`;
+- exact architecture packet v16
+  `sha256:3a4b5edb6bc54ff47a45f610b41f75bc57dd9d1ab56e9475518100d75ff72ab0`;
 - complete validation against the digest-pinned canonical repository-authority
   v2 schema;
 - the exact source set listed above as input to the successor architecture
@@ -214,7 +240,7 @@ Approved:
 Not approved:
 
 - activating WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46` under stale architecture v11
-  through v14, a terminal recovered Landing Unit identity, or stale
+  through v15, a terminal recovered Landing Unit identity, or stale
   Platform/Security pins;
 - accepting arbitrary or unpinned authority schemas;
 - treating the local source proof as deployed operating evidence;
@@ -231,5 +257,5 @@ Not approved:
 - [WGCF owner change record](https://github.com/mfshaf7/workspace-governance-control-fabric/blob/3d04ccaa8a751dfcb743c06b253299ee028c8f46/docs/records/change-records/2026-10-04-repository-readiness-v2-authority.md)
 - [WGCF pull request #97](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/97)
 - [Console pull request #51](https://github.com/mfshaf7/governance-operations-console/pull/51)
-- Architecture packet v15:
-  `wgcf://artifacts/delivery-art/sha256/1f17cc327aa7bbb730ab80877421f6d3d4a459b9e66d528c49e8d36bebb031ff`
+- Architecture packet v16:
+  `wgcf://artifacts/delivery-art/sha256/3a4b5edb6bc54ff47a45f610b41f75bc57dd9d1ab56e9475518100d75ff72ab0`
