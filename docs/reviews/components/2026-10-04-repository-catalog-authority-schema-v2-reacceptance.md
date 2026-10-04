@@ -38,7 +38,7 @@ The source set accepted for the next architecture refresh is:
 - Operator Orchestration Service:
   `968643ad3dca86366ae417ebe77a23ba7c2c2cb6`;
 - Governance Operations Console:
-  `9347794a138f3649bb6ef5b7db057524d1c1e26d`; and
+  `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`; and
 - this Security review's eventual merged revision.
 
 Architecture packet v13 is now durably persisted at
@@ -62,6 +62,31 @@ architecture-binding phase of the same `child_isolated_landing_unit` Security
 judgment. Architecture packets v11 and v12 remain historical evidence, not
 current activation authority. No replacement ART Defect or child is
 authorized.
+
+Commissioning later exposed one product-local repeat-edit conflict in the
+already accepted Console source. The original idempotency digest represented
+only the effective Catalog draft, while each later deliberate operator
+acceptance carried a new request body. OpenProject correctly rejected that
+different body under the reused key. Console owner-maintenance
+[PR #51](https://github.com/mfshaf7/governance-operations-console/pull/51)
+binds the idempotency digest to the stable operator acceptance: same-acceptance
+retries still replay, while a later reviewed acceptance gets a distinct key.
+It adds no credential, role, permission, route, backend authority, or browser
+authority. Agent Gary authored the change; `mfshaf7` approved and squash-merged
+it as `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac` after all 466 semantic tests,
+typecheck, production build, repository validation, dependency audit, and
+strict branch-lifecycle cleanup passed.
+
+Architecture packet v14 is durably persisted at
+`wgcf://artifacts/delivery-art/sha256/e834d9b9823ce1e0db357e0fbbbbf5b287e9e95c6e4aab18beb5e255fc556591`
+with custody receipt digest
+`sha256:65687bd75a926cf5fbb0ba90d504a84ad871b552507c85828cc9962dd007c19b`.
+It supersedes v13 and changes only the Console source snapshot to that merged
+repair plus the Security snapshot to this review's prior merge. All 35 covered
+children, the active `delivery-1203-repository-catalog-platform-recovery-3`
+Landing Unit, owner boundaries, dependencies, security posture, rollback
+boundaries, and conformance outcomes are preserved. Packets v11 through v13
+are historical evidence rather than current activation authority.
 
 ## Scope Delta
 
@@ -128,9 +153,10 @@ mutation owner and OpenProject remains canonical Catalog state.
 
 ## Findings And Activation Conditions
 
-1. Architecture packet v13 satisfies the successor-packet condition by binding
+1. Architecture packet v14 satisfies the successor-packet condition by binding
    WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46`, Security
-   `cbb78d6e67097e3375ad983fca8408b491ac892a`, the unchanged approved Epic 1203
+   `3cb26a024fce1d01ff8eb80899d8f50299982c9a`, Console
+   `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`, the unchanged approved Epic 1203
    scope and evidence outcomes, and the required fresh Platform source-intent
    identity.
 2. The merge containing this paragraph must land before Platform activation so
@@ -157,8 +183,10 @@ No exception or accepted risk is created.
 Approved:
 
 - exact WGCF merge `3d04ccaa8a751dfcb743c06b253299ee028c8f46`;
-- exact architecture packet v13
-  `sha256:ef13022a4fb930086617781eda0727217d3cae0d17e23cde7c82276e0da10db7`;
+- exact Console repair merge
+  `f7e1db75739e5fbeb8d7a5ad0d9a7858f2289aac`;
+- exact architecture packet v14
+  `sha256:e834d9b9823ce1e0db357e0fbbbbf5b287e9e95c6e4aab18beb5e255fc556591`;
 - complete validation against the digest-pinned canonical repository-authority
   v2 schema;
 - the exact source set listed above as input to the successor architecture
@@ -168,8 +196,8 @@ Approved:
 
 Not approved:
 
-- activating WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46` under stale architecture v11 or
-  v12, a terminal recovered Landing Unit identity, or stale Platform/Security
+- activating WGCF `3d04ccaa8a751dfcb743c06b253299ee028c8f46` under stale architecture v11,
+  v12, or v13, a terminal recovered Landing Unit identity, or stale Platform/Security
   pins;
 - accepting arbitrary or unpinned authority schemas;
 - treating the local source proof as deployed operating evidence;
@@ -185,5 +213,6 @@ Not approved:
 - [Security delta review process](../security-delta-review-process.md)
 - [WGCF owner change record](https://github.com/mfshaf7/workspace-governance-control-fabric/blob/3d04ccaa8a751dfcb743c06b253299ee028c8f46/docs/records/change-records/2026-10-04-repository-readiness-v2-authority.md)
 - [WGCF pull request #97](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/97)
-- Architecture packet v13:
-  `wgcf://artifacts/delivery-art/sha256/ef13022a4fb930086617781eda0727217d3cae0d17e23cde7c82276e0da10db7`
+- [Console pull request #51](https://github.com/mfshaf7/governance-operations-console/pull/51)
+- Architecture packet v14:
+  `wgcf://artifacts/delivery-art/sha256/e834d9b9823ce1e0db357e0fbbbbf5b287e9e95c6e4aab18beb5e255fc556591`
