@@ -164,29 +164,26 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-04-repository-catalog-controlled-activation.md
-        reviewed_on: 2026-10-04
+        path: docs/reviews/components/2026-10-08-proposal-target-application-trust-boundary.md
+        reviewed_on: 2026-10-08
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-catalog-first-use-readiness-issuance
-          - repository-catalog-exact-authority-and-receipt-binding
-          - repository-catalog-server-only-console-handoff
-          - repository-catalog-controlled-runtime-commissioning
+          - proposal-target-machine-caller-attribution-repair
+          - proposal-target-session-principal-separation
+          - proposal-target-exact-console-source-reacceptance
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-04-repository-readiness-preparation.md
           - repo: governance-operations-console
-            path: docs/security-and-data-boundaries.md
+            path: src/domain-workspaces/proposal/server/proposal-oos-client.ts
           - repo: governance-operations-console
-            path: docs/product/refinement-catalog-live-integration.md
+            path: docs/product/proposal-live-integration.md
           - repo: governance-operations-console
-            path: tests/operation-runtime/repository-catalog-console-protocol.test.mjs
+            path: tests/operation-runtime/proposal-live-adapter.test.mjs
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
