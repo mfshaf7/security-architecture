@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-workspace-operations-post-repair-pin-refresh.md
-        reviewed_on: 2026-10-03
+        path: docs/reviews/components/2026-10-08-proposal-target-application-trust-boundary.md
+        reviewed_on: 2026-10-08
         status: current
         decision: approved
         review_areas:
@@ -20,16 +20,16 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - workspace-operations-exact-source-pin-refresh
-          - expired-installation-token-rotation
-          - composition-aware-registry-proof
+          - proposal-target-receipt-activation-source-binding
+          - proposal-target-current-target-authority-readback
         owner_artifacts:
           - repo: platform-engineering
-            path: security/workspace-intake-identity.yaml
-          - repo: operator-orchestration-service
-            path: docs/records/change-records/2026-10-03-devint-smoke-distinct-caller-secret.md
+            path: products/governance-operations-console/scripts/console_cross_domain_activation.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/proposal-target-commissioning-policy.yaml
+          - repo: platform-engineering
+            path: products/governance-operations-console/runbooks/commission-proposal-target.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component

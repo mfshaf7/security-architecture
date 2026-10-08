@@ -24,6 +24,8 @@
     `operator-orchestration-service@7263aae5b4eac17376a84b96f8f533b39a7e1500`
   - Operator Orchestration Service zero-mutation restart repair merge:
     `operator-orchestration-service@0e935029327c3195f7ad1026c6f450f4b32c52dd`
+  - Platform commissioning receipt-source binding repair merge:
+    `platform-engineering@85d7287ddccf021637d36131a5b661e75f1fdf4c`
   - Governance Operations Console reviewed head:
     `governance-operations-console@f71f1a240901bf93c6e65b3b2666791fa6e0fcd3`
   - Governance Operations Console merge:
@@ -62,6 +64,8 @@
     `https://github.com/mfshaf7/operator-orchestration-service/pull/289`
   - Governance Operations Console live-handoff conformance pull request:
     `https://github.com/mfshaf7/governance-operations-console/pull/57`
+  - Platform commissioning receipt-source binding repair pull request:
+    `https://github.com/mfshaf7/platform-engineering/pull/274`
 - decision: `approved`
 
 The exact repaired source separates the Console, OOS, GitHub review, and
@@ -118,6 +122,16 @@ independently, preserve history, and retain fail-closed conflicts for every
 prepared, reviewed, completed, or otherwise changed command. This does not add
 a caller, permission, repository, secret, merge authority, or direct mutation
 path.
+
+The Platform receipt-source binding repair at
+`platform-engineering@85d7287ddccf021637d36131a5b661e75f1fdf4c`
+separates the immutable activation baseline from the current target authority.
+Lifecycle receipts retain the policy-approved Prototype Studio activation
+revision; the canonical target proof independently requires the reviewed merge
+to be an ancestor of current clean Studio `main` and both bounded capture files
+to exist there. This removes a false post-success rejection without accepting
+stale target state, weakening merge evidence, or expanding identity, secret,
+repository, route, or runtime authority.
 
 The separate Delivery ART v6 control adds the missing OOS-owned source
 activation Landing Unit between this Security decision and Platform
@@ -180,11 +194,13 @@ build, zero-vulnerability production dependency audit, exact-head CI, human
 review, and protected merge. This is source conformance evidence only; live
 Proposal Target commissioning remains Platform-owned operating evidence.
 
-No runtime evidence exists or is accepted. OOS intentionally refuses to
-construct the target-application runtime while the synchronized manifest says
-`runtime_activation: false`. The approved next step is the v6 OOS-owned source
-activation Landing Unit; Platform composition and live proof remain later and
-separately owned.
+The activated runtime has now produced intermediate operating evidence for the
+human-reviewed target merge, canonical Proposal acknowledgement, required
+denials, restart recovery, rollback, cleanup, and clean redelivery. Final
+commissioning evidence is not yet accepted: the Platform verifier repair and
+this exact-revision reacceptance must land first, then Platform must rerun the
+non-mutating commissioning check against fresh lifecycle receipts. Source and
+review evidence do not substitute for that final operating proof.
 
 ## Review Areas
 
@@ -283,7 +299,8 @@ step represented by `gate:proposal-target-controlled-activation` and for
 Platform commissioning against the exact corrective Console revision
 `d66411f128c3fd2f21ac274f620352977966fecd`, OOS revision
 `0e935029327c3195f7ad1026c6f450f4b32c52dd`, and Prototype Studio revision
-`4066ea5ba5a68ab7ab12acc7fc395897e1ae6c3f`.
+`4066ea5ba5a68ab7ab12acc7fc395897e1ae6c3f`, using the repaired Platform
+verifier revision `85d7287ddccf021637d36131a5b661e75f1fdf4c`.
 
 Not approved:
 
@@ -316,4 +333,5 @@ identity model, exposure, or environment requires another delta review.
 - [OOS handoff-reference repair pull request #288](https://github.com/mfshaf7/operator-orchestration-service/pull/288)
 - [OOS zero-mutation restart repair pull request #289](https://github.com/mfshaf7/operator-orchestration-service/pull/289)
 - [Console live-handoff conformance pull request #57](https://github.com/mfshaf7/governance-operations-console/pull/57)
+- [Platform receipt-source binding repair pull request #274](https://github.com/mfshaf7/platform-engineering/pull/274)
 - [Delivery ART v6 activation-ownership review](2026-10-08-delivery-art-architecture-v6-activation-ownership.md)
