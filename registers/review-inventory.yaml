@@ -276,6 +276,7 @@ review_inventory:
           - proposal-target-exact-owner-contract-v2
           - proposal-target-controlled-activation-order
           - proposal-target-canonical-handoff-reference-conformance
+          - proposal-target-zero-mutation-cancelled-restart
         owner_artifacts:
           - repo: operator-orchestration-service
             path: contracts/proposal-target-application/manifest.json
