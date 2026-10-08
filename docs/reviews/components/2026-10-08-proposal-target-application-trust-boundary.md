@@ -14,10 +14,14 @@
     `workspace-prototype-studio@873b5cc12362846f9bcfd7d4e414853cf90ed59b`
   - Workspace Prototype Studio merge:
     `workspace-prototype-studio@eab7af0c44de2e76eb381bf06447105ce3a28863`
+  - Workspace Prototype Studio handoff-reference contract repair merge:
+    `workspace-prototype-studio@4066ea5ba5a68ab7ab12acc7fc395897e1ae6c3f`
   - Operator Orchestration Service reviewed head:
     `operator-orchestration-service@d1431e8ff5152abd8bc11be33fec39aa1318eeb3`
   - Operator Orchestration Service merge:
     `operator-orchestration-service@875696096adae15cf2e068054a5fa8d6e28d8524`
+  - Operator Orchestration Service handoff-reference contract repair merge:
+    `operator-orchestration-service@7263aae5b4eac17376a84b96f8f533b39a7e1500`
   - Governance Operations Console reviewed head:
     `governance-operations-console@f71f1a240901bf93c6e65b3b2666791fa6e0fcd3`
   - Governance Operations Console merge:
@@ -28,6 +32,8 @@
     `governance-operations-console@1c106066118c32d8db38cf34850a6560d821da66`
   - Governance Operations Console submission-contract repair merge:
     `governance-operations-console@b7dda700e1a6f12f445a42391737e20d5310b09e`
+  - Governance Operations Console live-handoff conformance merge:
+    `governance-operations-console@d66411f128c3fd2f21ac274f620352977966fecd`
 - prior ART source evidence:
   - Studio Review Packet:
     `wgcf://artifacts/delivery-art/sha256/e35fe9362734acdef717ff35de764e1333e92adcef2f2c9806afd7c6eef1696c`
@@ -46,6 +52,12 @@
     `https://github.com/mfshaf7/governance-operations-console/pull/54`
   - Governance Operations Console submission-contract repair pull request:
     `https://github.com/mfshaf7/governance-operations-console/pull/56`
+  - Workspace Prototype Studio handoff-reference repair pull request:
+    `https://github.com/mfshaf7/workspace-prototype-studio/pull/24`
+  - Operator Orchestration Service handoff-reference repair pull request:
+    `https://github.com/mfshaf7/operator-orchestration-service/pull/288`
+  - Governance Operations Console live-handoff conformance pull request:
+    `https://github.com/mfshaf7/governance-operations-console/pull/57`
 - decision: `approved`
 
 The exact repaired source separates the Console, OOS, GitHub review, and
@@ -79,6 +91,17 @@ OOS-derived Prototype identity already admitted by this review. The exact-body
 test prevents the public-source payload from regaining free-form Proposal
 content; no identity, permission, secret, repository, route, or exposure
 boundary changes.
+
+The handoff-reference repair binds the target application to the same bounded
+identifier already accepted by the canonical Proposal workflow. Studio and OOS
+now accept the live deterministic form
+`proposal-handoff:idea-<id>:version-<version>` while retaining the prior
+`proposal-packet:<id>` form for existing durable records. Studio still proves
+that the Proposal id, OpenProject record id, Prototype id, and handoff Proposal
+id agree. OOS pins the exact Studio schemas and digests, and the Console
+conformance fixture now exercises the form it actually emits. The change adds
+no free-form public field, new caller, repository, permission, secret, target,
+or exposure boundary.
 
 The separate Delivery ART v6 control adds the missing OOS-owned source
 activation Landing Unit between this Security decision and Platform
@@ -242,7 +265,9 @@ establishes completion. The reviewed path adds no AI authority.
 Approved only for the bounded OOS-owned `dev-integration` source activation
 step represented by `gate:proposal-target-controlled-activation` and for
 Platform commissioning against the exact corrective Console revision
-`b7dda700e1a6f12f445a42391737e20d5310b09e`.
+`d66411f128c3fd2f21ac274f620352977966fecd`, OOS revision
+`7263aae5b4eac17376a84b96f8f533b39a7e1500`, and Prototype Studio revision
+`4066ea5ba5a68ab7ab12acc7fc395897e1ae6c3f`.
 
 Not approved:
 
@@ -271,4 +296,7 @@ identity model, exposure, or environment requires another delta review.
 - [Console caller-attribution repair pull request #53](https://github.com/mfshaf7/governance-operations-console/pull/53)
 - [Console preparation-contract repair pull request #54](https://github.com/mfshaf7/governance-operations-console/pull/54)
 - [Console submission-contract repair pull request #56](https://github.com/mfshaf7/governance-operations-console/pull/56)
+- [Studio handoff-reference repair pull request #24](https://github.com/mfshaf7/workspace-prototype-studio/pull/24)
+- [OOS handoff-reference repair pull request #288](https://github.com/mfshaf7/operator-orchestration-service/pull/288)
+- [Console live-handoff conformance pull request #57](https://github.com/mfshaf7/governance-operations-console/pull/57)
 - [Delivery ART v6 activation-ownership review](2026-10-08-delivery-art-architecture-v6-activation-ownership.md)
