@@ -2799,6 +2799,17 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-08-evidence-profile-phase-boundary.md
+  date: '2026-10-08'
+  short_title: 2026-10-08-evidence-profile-phase-boundary
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-08-operating-evidence-repair-recovery.md
   date: '2026-10-08'
   short_title: 2026-10-08-operating-evidence-repair-recovery
