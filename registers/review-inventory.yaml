@@ -145,6 +145,7 @@ review_inventory:
           - proposal-target-generated-public-identities
           - proposal-target-exact-owner-contract-v2
           - proposal-target-controlled-activation-order
+          - proposal-target-canonical-handoff-reference-conformance
         owner_artifacts:
           - repo: workspace-prototype-studio
             path: contracts/proposal-target-application/request.schema.json
@@ -180,6 +181,7 @@ review_inventory:
           - proposal-target-derived-prototype-identity
           - proposal-target-preparation-request-conformance
           - proposal-target-submission-request-conformance
+          - proposal-target-canonical-handoff-reference-conformance
         owner_artifacts:
           - repo: governance-operations-console
             path: src/domain-workspaces/proposal/server/proposal-oos-client.ts
@@ -273,6 +275,7 @@ review_inventory:
           - proposal-target-private-to-public-projection
           - proposal-target-exact-owner-contract-v2
           - proposal-target-controlled-activation-order
+          - proposal-target-canonical-handoff-reference-conformance
         owner_artifacts:
           - repo: operator-orchestration-service
             path: contracts/proposal-target-application/manifest.json
