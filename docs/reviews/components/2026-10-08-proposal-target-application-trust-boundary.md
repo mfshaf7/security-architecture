@@ -22,6 +22,8 @@
     `governance-operations-console@f71f1a240901bf93c6e65b3b2666791fa6e0fcd3`
   - Governance Operations Console merge:
     `governance-operations-console@e993e9a55b80a24dcab4b96b8291ece822c8dd0f`
+  - Governance Operations Console caller-attribution repair merge:
+    `governance-operations-console@f1564dcd6ef46db9cceff09a598d64265074896b`
 - prior ART source evidence:
   - Studio Review Packet:
     `wgcf://artifacts/delivery-art/sha256/e35fe9362734acdef717ff35de764e1333e92adcef2f2c9806afd7c6eef1696c`
@@ -34,6 +36,8 @@
     `https://github.com/mfshaf7/workspace-prototype-studio/pull/23`
   - Operator Orchestration Service pull request:
     `https://github.com/mfshaf7/operator-orchestration-service/pull/285`
+  - Governance Operations Console caller-attribution repair pull request:
+    `https://github.com/mfshaf7/governance-operations-console/pull/53`
 - decision: `approved`
 
 The exact repaired source separates the Console, OOS, GitHub review, and
@@ -42,6 +46,15 @@ Prototype Studio contract v2 accepts only generated identifiers and labels,
 opaque canonical refs, digests, timestamps, and enumerated posture. OOS keeps
 operator identity and free-form Proposal content inside its private workflow
 state and cannot serialize those fields into the public target request.
+
+The Console caller-attribution repair at
+`governance-operations-console@f1564dcd6ef46db9cceff09a598d64265074896b`
+restores the reviewed boundary in the executable adapter: the OOS command
+operator is the authenticated `governance-operations-console` machine caller,
+while `operator:workspace-owner` remains only the verified same-origin session
+principal. It does not add an identity, permission, secret, repository, route,
+or exposure boundary. The included Next.js patch update changes no Proposal
+Target authority and removes the dependency advisories present at review time.
 
 The separate Delivery ART v6 control adds the missing OOS-owned source
 activation Landing Unit between this Security decision and Platform
@@ -98,6 +111,12 @@ custody-reference fields. OOS proved the exact v2 owner pin, a request free of
 caller-written content, Proposal-bound identities, disposable real-Git source
 preparation, and its full 1,228-test suite.
 
+The corrective Console maintenance Landing Unit passed its clean install,
+repository architecture checks, 469 semantic tests, type checking, production
+build, zero-vulnerability production dependency audit, exact-head CI, human
+review, and protected merge. This is source conformance evidence only; live
+Proposal Target commissioning remains Platform-owned operating evidence.
+
 No runtime evidence exists or is accepted. OOS intentionally refuses to
 construct the target-application runtime while the synchronized manifest says
 `runtime_activation: false`. The approved next step is the v6 OOS-owned source
@@ -114,9 +133,11 @@ single-operator local lane. Machine identities cannot approve or merge their
 own source work, and the Console cannot select the provider repository or
 credential.
 
-The current fixed Console operator remains machine attribution rather than
-trusted human identity. Existing Console finding `GOC-SEC-02` therefore still
-blocks shared or multi-user exposure.
+The fixed Console adapter now preserves machine attribution by serializing the
+authenticated `governance-operations-console` caller as the OOS command
+operator rather than serializing the local human session principal. Trusted
+human identity is still absent. Existing Console finding `GOC-SEC-02`
+therefore continues to block shared or multi-user exposure.
 
 ### Secrets
 
@@ -195,7 +216,9 @@ establishes completion. The reviewed path adds no AI authority.
 `approved`
 
 Approved only for the bounded OOS-owned `dev-integration` source activation
-step represented by `gate:proposal-target-controlled-activation`.
+step represented by `gate:proposal-target-controlled-activation` and for
+Platform commissioning against the exact corrective Console revision
+`f1564dcd6ef46db9cceff09a598d64265074896b`.
 
 Not approved:
 
@@ -221,4 +244,5 @@ identity model, exposure, or environment requires another delta review.
 - [OOS pull request #283](https://github.com/mfshaf7/operator-orchestration-service/pull/283)
 - [OOS public-safe correction #285](https://github.com/mfshaf7/operator-orchestration-service/pull/285)
 - [Console pull request #52](https://github.com/mfshaf7/governance-operations-console/pull/52)
+- [Console caller-attribution repair pull request #53](https://github.com/mfshaf7/governance-operations-console/pull/53)
 - [Delivery ART v6 activation-ownership review](2026-10-08-delivery-art-architecture-v6-activation-ownership.md)
