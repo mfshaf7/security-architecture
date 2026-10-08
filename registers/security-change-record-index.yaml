@@ -2879,6 +2879,20 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-09-model-profile-request-source-activation.md
+  date: '2026-10-09'
+  short_title: 2026-10-09-model-profile-request-source-activation
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-09-model-profile-request-workflow.md
   date: '2026-10-09'
   short_title: 2026-10-09-model-profile-request-workflow
