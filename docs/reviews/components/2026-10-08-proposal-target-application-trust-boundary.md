@@ -26,6 +26,8 @@
     `governance-operations-console@f1564dcd6ef46db9cceff09a598d64265074896b`
   - Governance Operations Console preparation-contract repair merge:
     `governance-operations-console@1c106066118c32d8db38cf34850a6560d821da66`
+  - Governance Operations Console submission-contract repair merge:
+    `governance-operations-console@b7dda700e1a6f12f445a42391737e20d5310b09e`
 - prior ART source evidence:
   - Studio Review Packet:
     `wgcf://artifacts/delivery-art/sha256/e35fe9362734acdef717ff35de764e1333e92adcef2f2c9806afd7c6eef1696c`
@@ -42,6 +44,8 @@
     `https://github.com/mfshaf7/governance-operations-console/pull/53`
   - Governance Operations Console preparation-contract repair pull request:
     `https://github.com/mfshaf7/governance-operations-console/pull/54`
+  - Governance Operations Console submission-contract repair pull request:
+    `https://github.com/mfshaf7/governance-operations-console/pull/56`
 - decision: `approved`
 
 The exact repaired source separates the Console, OOS, GitHub review, and
@@ -66,6 +70,15 @@ removes the caller-supplied `prototype_id` from the OOS preparation request.
 OOS remains the only authority that derives the Proposal-bound Prototype
 identity. The repair narrows the request to the already reviewed contract and
 adds an exact-body assertion; it adds no authority or data field.
+
+The submission-contract repair at
+`governance-operations-console@b7dda700e1a6f12f445a42391737e20d5310b09e`
+removes the unapproved `suggested_name` and `suggested_objective` fields from
+the Prototype binding sent to OOS. The Console now submits only the
+OOS-derived Prototype identity already admitted by this review. The exact-body
+test prevents the public-source payload from regaining free-form Proposal
+content; no identity, permission, secret, repository, route, or exposure
+boundary changes.
 
 The separate Delivery ART v6 control adds the missing OOS-owned source
 activation Landing Unit between this Security decision and Platform
@@ -229,7 +242,7 @@ establishes completion. The reviewed path adds no AI authority.
 Approved only for the bounded OOS-owned `dev-integration` source activation
 step represented by `gate:proposal-target-controlled-activation` and for
 Platform commissioning against the exact corrective Console revision
-`1c106066118c32d8db38cf34850a6560d821da66`.
+`b7dda700e1a6f12f445a42391737e20d5310b09e`.
 
 Not approved:
 
@@ -257,4 +270,5 @@ identity model, exposure, or environment requires another delta review.
 - [Console pull request #52](https://github.com/mfshaf7/governance-operations-console/pull/52)
 - [Console caller-attribution repair pull request #53](https://github.com/mfshaf7/governance-operations-console/pull/53)
 - [Console preparation-contract repair pull request #54](https://github.com/mfshaf7/governance-operations-console/pull/54)
+- [Console submission-contract repair pull request #56](https://github.com/mfshaf7/governance-operations-console/pull/56)
 - [Delivery ART v6 activation-ownership review](2026-10-08-delivery-art-architecture-v6-activation-ownership.md)

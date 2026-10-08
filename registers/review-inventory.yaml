@@ -179,6 +179,7 @@ review_inventory:
           - proposal-target-exact-console-source-reacceptance
           - proposal-target-derived-prototype-identity
           - proposal-target-preparation-request-conformance
+          - proposal-target-submission-request-conformance
         owner_artifacts:
           - repo: governance-operations-console
             path: src/domain-workspaces/proposal/server/proposal-oos-client.ts
