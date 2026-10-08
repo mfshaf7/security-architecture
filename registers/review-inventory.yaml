@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-08-proposal-target-application-trust-boundary.md
-        reviewed_on: 2026-10-08
+        path: docs/reviews/components/2026-10-09-model-profile-lifecycle-operating-boundary.md
+        reviewed_on: 2026-10-09
         status: current
         decision: approved
         review_areas:
@@ -20,16 +20,19 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - proposal-target-receipt-activation-source-binding
-          - proposal-target-current-target-authority-readback
+          - model-profile-registry-and-lifecycle-authority
+          - model-profile-security-decision-binding
+          - model-profile-private-operating-evidence
+          - model-profile-controlled-activation-order
         owner_artifacts:
           - repo: platform-engineering
-            path: products/governance-operations-console/scripts/console_cross_domain_activation.py
+            path: scripts/model_profile_lifecycle.py
           - repo: platform-engineering
-            path: products/governance-operations-console/proposal-target-commissioning-policy.yaml
+            path: security/model-profile-request-source-lock.json
           - repo: platform-engineering
-            path: products/governance-operations-console/runbooks/commission-proposal-target.md
+            path: docs/components/governed-ai-gateway/operations.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -131,7 +134,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-prototype-preview-runtime-execution-boundary.md
+        path: docs/reviews/components/2026-10-09-model-profile-lifecycle-operating-boundary.md
         reviewed_on: 2026-10-09
         status: current
         decision: approved
@@ -171,19 +174,20 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - preview-runtime-server-only-console-adapter
-          - preview-runtime-reviewed-source-custody
-          - preview-runtime-atomic-expected-state
-          - preview-runtime-fail-closed-owner-projection
-          - preview-runtime-operating-proof-sequencing
+          - model-profile-server-only-console-adapter
+          - model-profile-safe-source-projection
+          - model-profile-private-platform-projection
+          - model-profile-two-step-operator-confirmation
+          - model-profile-fail-closed-reconciliation
         owner_artifacts:
           - repo: governance-operations-console
-            path: src/domain-workspaces/prototype/server/prototype-preview-owner-client.ts
+            path: src/domain-workspaces/model-operations/server/model-operations-oos-client.ts
           - repo: governance-operations-console
-            path: docs/product/prototype-preview-runtime-live-integration.md
+            path: src/domain-workspaces/model-operations/server/model-operations-platform-adapter.ts
           - repo: governance-operations-console
-            path: tests/operation-runtime/prototype-preview-live-adapter.test.mjs
+            path: docs/product/model-operations-live-integration.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -256,8 +260,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-08-proposal-target-application-trust-boundary.md
-        reviewed_on: 2026-10-08
+        path: docs/reviews/components/2026-10-09-model-profile-lifecycle-operating-boundary.md
+        reviewed_on: 2026-10-09
         status: current
         decision: approved
         review_areas:
@@ -265,22 +269,21 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - proposal-target-public-source-prepublication-admission
-          - proposal-target-private-to-public-projection
-          - proposal-target-exact-owner-contract-v2
-          - proposal-target-controlled-activation-order
-          - proposal-target-canonical-handoff-reference-conformance
-          - proposal-target-zero-mutation-cancelled-restart
+          - model-profile-caller-operator-binding
+          - model-profile-revision-and-replay-integrity
+          - model-profile-platform-fulfillment-separation
+          - model-profile-dev-integration-source-activation
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: contracts/proposal-target-application/manifest.json
+            path: contracts/model-profile-request/manifest.json
           - repo: operator-orchestration-service
-            path: contracts/proposal-target-application/request.schema.json
+            path: contracts/model-profile-request/request.schema.json
           - repo: operator-orchestration-service
-            path: src/proposal-target-application/service.js
-          - repo: workspace-prototype-studio
-            path: contracts/proposal-target-application/request.schema.json
+            path: src/model-profile-request/service.js
+          - repo: operator-orchestration-service
+            path: src/model-profile-request/runtime.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -580,10 +583,10 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
-        reviewed_on: 2026-08-25
+        path: docs/reviews/components/2026-10-09-model-profile-lifecycle-operating-boundary.md
+        reviewed_on: 2026-10-09
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
@@ -591,18 +594,17 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - work-design-exact-source-binding
-          - work-design-profile-isolation
-          - work-design-provider-custody
-          - work-design-structured-output-boundary
-          - work-design-devint-activation-sequencing
+          - model-profile-registry-and-lifecycle-authority
+          - model-profile-provider-and-model-selection-boundary
+          - model-profile-security-decision-binding
+          - model-profile-controlled-activation-order
         owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md
           - repo: platform-engineering
             path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
-            path: dev-integration/profiles/governed-ai-gateway/runtime/gateway_policy.py
+            path: scripts/model_profile_lifecycle.py
+          - repo: operator-orchestration-service
+            path: contracts/model-profile-request/manifest.json
     openclaw-host-bridge:
       owner_repo: openclaw-host-bridge
       scope: component
