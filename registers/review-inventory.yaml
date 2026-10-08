@@ -131,34 +131,29 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
-        reviewed_on: 2026-09-19
+        path: docs/reviews/components/2026-10-08-proposal-target-application-trust-boundary.md
+        reviewed_on: 2026-10-08
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - prototype-closure-controlled-activation-order
-          - prototype-closure-owner-backed-readiness
-          - prototype-closure-source-custody-transfer
-          - prototype-closure-dedicated-inactive-identity
-          - prototype-closure-receipt-and-history-integrity
-          - prototype-closure-runtime-cleanup-and-revocation
+          - proposal-target-public-source-prepublication-admission
+          - proposal-target-generated-public-identities
+          - proposal-target-exact-owner-contract-v2
+          - proposal-target-controlled-activation-order
         owner_artifacts:
-          - repo: security-architecture
-            path: docs/reviews/components/2026-09-19-prototype-closure-controlled-activation.md
-          - repo: security-architecture
-            path: docs/reviews/components/2026-09-12-prototype-closure-implementation-admission.md
-          - repo: workspace-governance
-            path: contracts/prototype-closure.yaml
-          - repo: platform-engineering
-            path: security/prototype-closure-identity.yaml
-          - repo: security-architecture
-            path: docs/reviews/components/2026-09-10-prototype-maturity-normal-availability.md
+          - repo: workspace-prototype-studio
+            path: contracts/proposal-target-application/request.schema.json
+          - repo: workspace-prototype-studio
+            path: contracts/proposal-target-application/record.schema.json
+          - repo: workspace-prototype-studio
+            path: packages/proposal_target_application/application.py
+          - repo: operator-orchestration-service
+            path: contracts/proposal-target-application/manifest.json
     governance-operations-console:
       owner_repo: governance-operations-console
       scope: component
@@ -264,25 +259,29 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
+        path: docs/reviews/components/2026-10-08-proposal-target-application-trust-boundary.md
         reviewed_on: 2026-10-08
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v6-source-activation-ownership
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-fail-closed-version-activation
+          - proposal-target-public-source-prepublication-admission
+          - proposal-target-private-to-public-projection
+          - proposal-target-exact-owner-contract-v2
+          - proposal-target-controlled-activation-order
         owner_artifacts:
-          - repo: workspace-governance
-            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
-            path: src/delivery-art/contracts.js
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
+            path: contracts/proposal-target-application/manifest.json
+          - repo: operator-orchestration-service
+            path: contracts/proposal-target-application/request.schema.json
+          - repo: operator-orchestration-service
+            path: src/proposal-target-application/service.js
+          - repo: workspace-prototype-studio
+            path: contracts/proposal-target-application/request.schema.json
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -516,25 +515,29 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
+        path: docs/reviews/components/2026-10-08-proposal-target-application-trust-boundary.md
         reviewed_on: 2026-10-08
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v6-source-activation-ownership
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-fail-closed-version-activation
+          - proposal-target-public-source-prepublication-admission
+          - proposal-target-private-to-public-projection
+          - proposal-target-exact-owner-contract-v2
+          - proposal-target-controlled-activation-order
         owner_artifacts:
-          - repo: workspace-governance
-            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
-            path: src/delivery-art/contracts.js
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
+            path: contracts/proposal-target-application/manifest.json
+          - repo: operator-orchestration-service
+            path: contracts/proposal-target-application/request.schema.json
+          - repo: operator-orchestration-service
+            path: src/proposal-target-application/service.js
+          - repo: workspace-prototype-studio
+            path: contracts/proposal-target-application/request.schema.json
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
