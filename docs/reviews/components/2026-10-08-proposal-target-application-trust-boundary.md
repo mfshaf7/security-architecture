@@ -24,6 +24,10 @@
     `operator-orchestration-service@7263aae5b4eac17376a84b96f8f533b39a7e1500`
   - Operator Orchestration Service zero-mutation restart repair merge:
     `operator-orchestration-service@0e935029327c3195f7ad1026c6f450f4b32c52dd`
+  - Operator Orchestration Service operating-evidence recovery reviewed head:
+    `operator-orchestration-service@f483ba6f7d4cc43bde49daf3ad8b136e2a21ec13`
+  - Operator Orchestration Service operating-evidence recovery merge:
+    `operator-orchestration-service@c0ef285a39938050b6a7ae976f315245269ea58b`
   - Platform commissioning receipt-source binding repair merge:
     `platform-engineering@85d7287ddccf021637d36131a5b661e75f1fdf4c`
   - Governance Operations Console reviewed head:
@@ -62,6 +66,8 @@
     `https://github.com/mfshaf7/operator-orchestration-service/pull/288`
   - Operator Orchestration Service zero-mutation restart repair pull request:
     `https://github.com/mfshaf7/operator-orchestration-service/pull/289`
+  - Operator Orchestration Service operating-evidence recovery pull request:
+    `https://github.com/mfshaf7/operator-orchestration-service/pull/290`
   - Governance Operations Console live-handoff conformance pull request:
     `https://github.com/mfshaf7/governance-operations-console/pull/57`
   - Platform commissioning receipt-source binding repair pull request:
@@ -133,6 +139,18 @@ to exist there. This removes a false post-success rejection without accepting
 stale target state, weakening merge evidence, or expanding identity, secret,
 repository, route, or runtime authority.
 
+The later OOS operating-evidence recovery at
+`operator-orchestration-service@c0ef285a39938050b6a7ae976f315245269ea58b`
+changes only the Delivery ART work-session controller, its tests, and its
+operator contract and change record. The reviewed diff from the previously
+approved OOS revision changes no Proposal Target service, manifest, schema,
+runtime adapter, identity, credential, repository, public projection, or
+activation surface. Its new transition is fail-closed to an already-merged PR
+with an immutable merge-ready Review Packet and invalid post-merge operating
+evidence; it archives that evidence and requires a fully governed successor
+attempt. This review therefore accepts the current OOS revision for the same
+Proposal Target boundary without expanding that boundary.
+
 The separate Delivery ART v6 control adds the missing OOS-owned source
 activation Landing Unit between this Security decision and Platform
 commissioning. This review emits `gate:proposal-target-controlled-activation`
@@ -193,6 +211,13 @@ repository architecture checks, 469 semantic tests, type checking, production
 build, zero-vulnerability production dependency audit, exact-head CI, human
 review, and protected merge. This is source conformance evidence only; live
 Proposal Target commissioning remains Platform-owned operating evidence.
+
+OOS pull request `#290` passed its focused recovery regression, the complete
+OOS test suite, governance and change-record validation, OpenProject mutation
+validation, OpenAPI synchronization, exact-head CI, human review, and protected
+merge. The reviewed
+`0e935029327c3195f7ad1026c6f450f4b32c52dd..c0ef285a39938050b6a7ae976f315245269ea58b`
+path delta contains no Proposal Target implementation surface.
 
 The activated runtime has now produced intermediate operating evidence for the
 human-reviewed target merge, canonical Proposal acknowledgement, required
@@ -298,7 +323,7 @@ Approved only for the bounded OOS-owned `dev-integration` source activation
 step represented by `gate:proposal-target-controlled-activation` and for
 Platform commissioning against the exact corrective Console revision
 `d66411f128c3fd2f21ac274f620352977966fecd`, OOS revision
-`0e935029327c3195f7ad1026c6f450f4b32c52dd`, and Prototype Studio revision
+`c0ef285a39938050b6a7ae976f315245269ea58b`, and Prototype Studio revision
 `4066ea5ba5a68ab7ab12acc7fc395897e1ae6c3f`, using the repaired Platform
 verifier revision `85d7287ddccf021637d36131a5b661e75f1fdf4c`.
 
@@ -332,6 +357,8 @@ identity model, exposure, or environment requires another delta review.
 - [Studio handoff-reference repair pull request #24](https://github.com/mfshaf7/workspace-prototype-studio/pull/24)
 - [OOS handoff-reference repair pull request #288](https://github.com/mfshaf7/operator-orchestration-service/pull/288)
 - [OOS zero-mutation restart repair pull request #289](https://github.com/mfshaf7/operator-orchestration-service/pull/289)
+- [OOS operating-evidence recovery pull request #290](https://github.com/mfshaf7/operator-orchestration-service/pull/290)
 - [Console live-handoff conformance pull request #57](https://github.com/mfshaf7/governance-operations-console/pull/57)
 - [Platform receipt-source binding repair pull request #274](https://github.com/mfshaf7/platform-engineering/pull/274)
+- [Platform commissioning evidence consolidation pull request #277](https://github.com/mfshaf7/platform-engineering/pull/277)
 - [Delivery ART v6 activation-ownership review](2026-10-08-delivery-art-architecture-v6-activation-ownership.md)
