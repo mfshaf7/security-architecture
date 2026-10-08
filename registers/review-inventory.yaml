@@ -40,25 +40,25 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
-        reviewed_on: 2026-10-03
+        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
+        reviewed_on: 2026-10-08
         status: current
         decision: approved
         review_areas:
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v5-evidence-owner-attribution
-          - delivery-art-v5-readiness-phase-separation
-          - delivery-art-v5-fail-closed-version-activation
-          - delivery-art-v5-validation-termination
+          - delivery-art-v6-source-activation-ownership
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-fail-closed-version-activation
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
             path: src/delivery-art/contracts.js
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -69,25 +69,25 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
-        reviewed_on: 2026-10-03
+        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
+        reviewed_on: 2026-10-08
         status: current
         decision: approved
         review_areas:
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v5-evidence-owner-attribution
-          - delivery-art-v5-readiness-phase-separation
-          - delivery-art-v5-fail-closed-version-activation
-          - delivery-art-v5-validation-termination
+          - delivery-art-v6-source-activation-ownership
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-fail-closed-version-activation
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
             path: src/delivery-art/contracts.js
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -264,24 +264,25 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-04-repository-catalog-authority-schema-v2-reacceptance.md
-        reviewed_on: 2026-10-04
+        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
+        reviewed_on: 2026-10-08
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-catalog-authority-schema-v2-binding
-          - repository-catalog-cross-repo-authority-conformance
-          - repository-catalog-controlled-runtime-commissioning
+          - delivery-art-v6-source-activation-ownership
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-fail-closed-version-activation
         owner_artifacts:
+          - repo: workspace-governance
+            path: contracts/schemas/delivery-art-architecture-packet.schema.json
+          - repo: operator-orchestration-service
+            path: src/delivery-art/contracts.js
           - repo: workspace-governance-control-fabric
-            path: docs/records/change-records/2026-10-04-repository-readiness-v2-authority.md
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/repository_readiness.py
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/repository_readiness_contracts.py
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -515,25 +516,25 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-03-delivery-art-architecture-v5-evidence-ownership.md
-        reviewed_on: 2026-10-03
+        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
+        reviewed_on: 2026-10-08
         status: current
         decision: approved
         review_areas:
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v5-evidence-owner-attribution
-          - delivery-art-v5-readiness-phase-separation
-          - delivery-art-v5-fail-closed-version-activation
-          - delivery-art-v5-validation-termination
+          - delivery-art-v6-source-activation-ownership
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-fail-closed-version-activation
         owner_artifacts:
           - repo: workspace-governance
             path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
             path: src/delivery-art/contracts.js
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -686,21 +687,22 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-04-repository-catalog-authority-schema-v2-reacceptance.md
-        reviewed_on: 2026-10-04
+        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
+        reviewed_on: 2026-10-08
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - delivery
           - runtime
         review_trigger_ids:
-          - repository-catalog-authority-schema-v2-binding
-          - repository-catalog-cross-repo-authority-conformance
-          - repository-catalog-controlled-runtime-commissioning
+          - delivery-art-v6-source-activation-ownership
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-fail-closed-version-activation
         owner_artifacts:
+          - repo: workspace-governance
+            path: contracts/schemas/delivery-art-architecture-packet.schema.json
+          - repo: operator-orchestration-service
+            path: src/delivery-art/contracts.js
           - repo: workspace-governance-control-fabric
-            path: docs/records/change-records/2026-10-04-repository-readiness-v2-authority.md
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/repository_readiness.py
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/repository_readiness_contracts.py
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
