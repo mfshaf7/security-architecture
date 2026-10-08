@@ -22,6 +22,8 @@
     `operator-orchestration-service@875696096adae15cf2e068054a5fa8d6e28d8524`
   - Operator Orchestration Service handoff-reference contract repair merge:
     `operator-orchestration-service@7263aae5b4eac17376a84b96f8f533b39a7e1500`
+  - Operator Orchestration Service zero-mutation restart repair merge:
+    `operator-orchestration-service@0e935029327c3195f7ad1026c6f450f4b32c52dd`
   - Governance Operations Console reviewed head:
     `governance-operations-console@f71f1a240901bf93c6e65b3b2666791fa6e0fcd3`
   - Governance Operations Console merge:
@@ -56,6 +58,8 @@
     `https://github.com/mfshaf7/workspace-prototype-studio/pull/24`
   - Operator Orchestration Service handoff-reference repair pull request:
     `https://github.com/mfshaf7/operator-orchestration-service/pull/288`
+  - Operator Orchestration Service zero-mutation restart repair pull request:
+    `https://github.com/mfshaf7/operator-orchestration-service/pull/289`
   - Governance Operations Console live-handoff conformance pull request:
     `https://github.com/mfshaf7/governance-operations-console/pull/57`
 - decision: `approved`
@@ -102,6 +106,18 @@ id agree. OOS pins the exact Studio schemas and digests, and the Console
 conformance fixture now exercises the form it actually emits. The change adds
 no free-form public field, new caller, repository, permission, secret, target,
 or exposure boundary.
+
+The zero-mutation restart repair closes only the recovery gap created when
+Prototype Studio authority changes after OOS accepts a command but before it
+prepares any target files. A replacement target-authority binding requires an
+explicit cancellation, a cancelled record with no preparation, review, target
+result, Proposal acknowledgement, or canonical mutation, and an identical
+caller, Proposal, Prototype, approval, session, execution, correlation, and
+idempotency identity. The service and durable store enforce those conditions
+independently, preserve history, and retain fail-closed conflicts for every
+prepared, reviewed, completed, or otherwise changed command. This does not add
+a caller, permission, repository, secret, merge authority, or direct mutation
+path.
 
 The separate Delivery ART v6 control adds the missing OOS-owned source
 activation Landing Unit between this Security decision and Platform
@@ -266,7 +282,7 @@ Approved only for the bounded OOS-owned `dev-integration` source activation
 step represented by `gate:proposal-target-controlled-activation` and for
 Platform commissioning against the exact corrective Console revision
 `d66411f128c3fd2f21ac274f620352977966fecd`, OOS revision
-`7263aae5b4eac17376a84b96f8f533b39a7e1500`, and Prototype Studio revision
+`0e935029327c3195f7ad1026c6f450f4b32c52dd`, and Prototype Studio revision
 `4066ea5ba5a68ab7ab12acc7fc395897e1ae6c3f`.
 
 Not approved:
@@ -298,5 +314,6 @@ identity model, exposure, or environment requires another delta review.
 - [Console submission-contract repair pull request #56](https://github.com/mfshaf7/governance-operations-console/pull/56)
 - [Studio handoff-reference repair pull request #24](https://github.com/mfshaf7/workspace-prototype-studio/pull/24)
 - [OOS handoff-reference repair pull request #288](https://github.com/mfshaf7/operator-orchestration-service/pull/288)
+- [OOS zero-mutation restart repair pull request #289](https://github.com/mfshaf7/operator-orchestration-service/pull/289)
 - [Console live-handoff conformance pull request #57](https://github.com/mfshaf7/governance-operations-console/pull/57)
 - [Delivery ART v6 activation-ownership review](2026-10-08-delivery-art-architecture-v6-activation-ownership.md)
