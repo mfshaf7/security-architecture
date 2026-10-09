@@ -21,8 +21,8 @@
     `operator-orchestration-service@cbcab89c517d90ef6609bb26368d1ea0e2374f3e`
   - Platform Engineering Agent Console admission merge:
     `platform-engineering@e780c33ecb64d7fc317121165aba8e8154518e3d`
-  - Platform Engineering current revision:
-    `platform-engineering@5e712eb75896db20a49b15a69452046833a798db`
+  - Platform Engineering current reviewed revision:
+    `platform-engineering@c60a83a19c6e356cf3dcca0a825ce6c07aec5452`
   - Governance Operations Console integration merge:
     `governance-operations-console@585850a53ef6c348f4f297468f1ccdb487b5a6c9`
   - Workspace Governance composition-binding merge:
@@ -34,6 +34,7 @@
   - [OOS runtime hook PR #298](https://github.com/mfshaf7/operator-orchestration-service/pull/298)
   - [OOS closeout regression repair PR #300](https://github.com/mfshaf7/operator-orchestration-service/pull/300)
   - [Platform admission PR #280](https://github.com/mfshaf7/platform-engineering/pull/280)
+  - [Platform verifier cleanup PR #282](https://github.com/mfshaf7/platform-engineering/pull/282)
   - [Console governed integration PR #61](https://github.com/mfshaf7/governance-operations-console/pull/61)
   - [Workspace composition correction PR #253](https://github.com/mfshaf7/workspace-governance/pull/253)
 - decision: `approved`
@@ -195,7 +196,7 @@ operating proof against exactly:
 
 - `context-governance-gateway@094c10a0df39bf0733ee02e3cb567f571cdf661f`;
 - `operator-orchestration-service@cbcab89c517d90ef6609bb26368d1ea0e2374f3e`;
-- `platform-engineering@5e712eb75896db20a49b15a69452046833a798db`;
+- `platform-engineering@c60a83a19c6e356cf3dcca0a825ce6c07aec5452`;
 - `governance-operations-console@585850a53ef6c348f4f297468f1ccdb487b5a6c9`;
 - `workspace-governance@20ffe1a2d3530b370c116ea0f54cef5c47b7afa4`;
 - profile `agent-console-assistant-v1` on local Ollama `qwen3:8b`;
