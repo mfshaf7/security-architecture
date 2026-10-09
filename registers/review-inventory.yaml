@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-model-profile-lifecycle-operating-boundary.md
+        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
         reviewed_on: 2026-10-09
         status: current
         decision: approved
@@ -22,17 +22,17 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - model-profile-registry-and-lifecycle-authority
-          - model-profile-security-decision-binding
-          - model-profile-private-operating-evidence
-          - model-profile-controlled-activation-order
+          - agent-console-governed-profile-admission
+          - agent-console-exact-revision-security-gate
+          - agent-console-private-operating-evidence
+          - agent-console-composed-activation-order
         owner_artifacts:
           - repo: platform-engineering
-            path: scripts/model_profile_lifecycle.py
+            path: products/governance-operations-console/agent-console-commissioning-policy.yaml
           - repo: platform-engineering
-            path: security/model-profile-request-source-lock.json
+            path: products/governance-operations-console/scripts/agent_console_platform.py
           - repo: platform-engineering
-            path: docs/components/governed-ai-gateway/operations.md
+            path: security/governed-ai-model-profiles.yaml
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -43,25 +43,27 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
-        reviewed_on: 2026-10-08
+        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
+        reviewed_on: 2026-10-09
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v6-source-activation-ownership
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-fail-closed-version-activation
+          - agent-console-composition-endpoint-binding
+          - agent-console-composition-caller-binding
+          - agent-console-composition-credential-binding
+          - agent-console-paired-owner-activation
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/schemas/delivery-art-architecture-packet.schema.json
-          - repo: operator-orchestration-service
-            path: src/delivery-art/contracts.js
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
+            path: contracts/developer-integration-profiles.yaml
+          - repo: workspace-governance
+            path: tests/test_developer_integration_runtime_composition.py
+          - repo: workspace-governance
+            path: docs/developer-integration-runtime-composition.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -101,10 +103,10 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-24-lifecycle-context-controlled-activation.md
-        reviewed_on: 2026-09-24
+        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
+        reviewed_on: 2026-10-09
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
@@ -112,18 +114,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - lifecycle-context-dedicated-caller-binding
-          - lifecycle-context-redaction-and-custody
-          - lifecycle-context-explicit-raw-fallback
-          - lifecycle-context-replay-and-recovery
-          - lifecycle-context-controlled-activation
+          - agent-console-dedicated-caller-binding
+          - agent-console-redaction-budget-and-custody
+          - agent-console-raw-context-denial
+          - agent-console-replay-and-receipt-integrity
+          - agent-console-composition-only-activation
         owner_artifacts:
           - repo: context-governance-gateway
-            path: docs/operating-model/lifecycle-context-projection.md
+            path: docs/operating-model/agent-console-projection.md
           - repo: context-governance-gateway
-            path: contracts/schemas/lifecycle-context-projection-result.schema.json
-          - repo: operator-orchestration-service
-            path: contracts/delivery-art-work-session/lifecycle-context-ledger.schema.json
+            path: contracts/schemas/agent-console-context-projection-result.schema.json
+          - repo: context-governance-gateway
+            path: apps/api/src/cgg_api/agent_console.py
     workspace-prototype-studio:
       owner_repo: workspace-prototype-studio
       scope: component
@@ -165,7 +167,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-prototype-preview-runtime-execution-boundary.md
+        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
         reviewed_on: 2026-10-09
         status: current
         decision: approved
@@ -176,18 +178,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - model-profile-server-only-console-adapter
-          - model-profile-safe-source-projection
-          - model-profile-private-platform-projection
-          - model-profile-two-step-operator-confirmation
-          - model-profile-fail-closed-reconciliation
+          - agent-console-server-only-oos-adapter
+          - agent-console-same-origin-session-authorization
+          - agent-console-exact-response-evidence
+          - agent-console-direct-provider-removal
+          - agent-console-exact-session-cleanup
         owner_artifacts:
           - repo: governance-operations-console
-            path: src/domain-workspaces/model-operations/server/model-operations-oos-client.ts
+            path: src/agent-console/server/agent-console-oos-client.ts
           - repo: governance-operations-console
-            path: src/domain-workspaces/model-operations/server/model-operations-platform-adapter.ts
+            path: src/agent-console/server/agent-interaction-route.ts
           - repo: governance-operations-console
-            path: docs/product/model-operations-live-integration.md
+            path: docs/product/agent-console-live-integration.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -260,7 +262,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-model-profile-lifecycle-operating-boundary.md
+        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
         reviewed_on: 2026-10-09
         status: current
         decision: approved
@@ -271,19 +273,20 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - model-profile-caller-operator-binding
-          - model-profile-revision-and-replay-integrity
-          - model-profile-platform-fulfillment-separation
-          - model-profile-dev-integration-source-activation
+          - agent-console-caller-operator-session-binding
+          - agent-console-cgg-model-evidence-chain
+          - agent-console-revision-and-replay-integrity
+          - agent-console-action-authority-separation
+          - agent-console-dev-integration-source-activation
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: contracts/model-profile-request/manifest.json
+            path: contracts/agent-console/manifest.json
           - repo: operator-orchestration-service
-            path: contracts/model-profile-request/request.schema.json
+            path: src/agent-console/service.js
           - repo: operator-orchestration-service
-            path: src/model-profile-request/service.js
+            path: src/agent-console/runtime.js
           - repo: operator-orchestration-service
-            path: src/model-profile-request/runtime.js
+            path: docs/operations/agent-console-operator-surface.md
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -550,40 +553,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-09-24-lifecycle-context-controlled-activation.md
-        reviewed_on: 2026-09-24
-        status: current
-        decision: approved-with-findings
-        review_areas:
-          - identity
-          - secrets
-          - delivery
-          - runtime
-          - ai
-        review_trigger_ids:
-          - lifecycle-context-dedicated-caller-binding
-          - lifecycle-context-redaction-and-custody
-          - lifecycle-context-explicit-raw-fallback
-          - lifecycle-context-replay-and-recovery
-          - lifecycle-context-controlled-activation
-        owner_artifacts:
-          - repo: context-governance-gateway
-            path: docs/operating-model/lifecycle-context-projection.md
-          - repo: context-governance-gateway
-            path: contracts/schemas/lifecycle-context-projection-result.schema.json
-          - repo: operator-orchestration-service
-            path: contracts/delivery-art-work-session/lifecycle-context-ledger.schema.json
-    governed-ai-gateway:
-      owner_repo: platform-engineering
-      scope: component
-      baseline_review:
-        path: docs/reviews/components/2026-05-06-governed-ai-gateway-devint-runtime.md
-        reviewed_on: 2026-05-06
-        review_due_on: 2026-11-06
-        status: active
-        decision: approved-with-findings
-      latest_change_review:
-        path: docs/reviews/components/2026-10-09-model-profile-lifecycle-operating-boundary.md
+        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
         reviewed_on: 2026-10-09
         status: current
         decision: approved
@@ -594,17 +564,50 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
-          - model-profile-registry-and-lifecycle-authority
-          - model-profile-provider-and-model-selection-boundary
-          - model-profile-security-decision-binding
-          - model-profile-controlled-activation-order
+          - agent-console-dedicated-caller-binding
+          - agent-console-redaction-budget-and-custody
+          - agent-console-raw-context-denial
+          - agent-console-replay-and-receipt-integrity
+          - agent-console-composition-only-activation
+        owner_artifacts:
+          - repo: context-governance-gateway
+            path: docs/operating-model/agent-console-projection.md
+          - repo: context-governance-gateway
+            path: contracts/schemas/agent-console-context-projection-result.schema.json
+          - repo: context-governance-gateway
+            path: apps/api/src/cgg_api/agent_console.py
+    governed-ai-gateway:
+      owner_repo: platform-engineering
+      scope: component
+      baseline_review:
+        path: docs/reviews/components/2026-05-06-governed-ai-gateway-devint-runtime.md
+        reviewed_on: 2026-05-06
+        review_due_on: 2026-11-06
+        status: active
+        decision: approved-with-findings
+      latest_change_review:
+        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
+        reviewed_on: 2026-10-09
+        status: current
+        decision: approved
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+          - ai
+        review_trigger_ids:
+          - agent-console-profile-and-caller-admission
+          - agent-console-provider-and-model-selection-boundary
+          - agent-console-response-schema-and-audit-binding
+          - agent-console-controlled-activation-order
         owner_artifacts:
           - repo: platform-engineering
             path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
-            path: scripts/model_profile_lifecycle.py
+            path: security/governed-ai-access-plane.yaml
           - repo: operator-orchestration-service
-            path: contracts/model-profile-request/manifest.json
+            path: contracts/agent-console/manifest.json
     openclaw-host-bridge:
       owner_repo: openclaw-host-bridge
       scope: component
@@ -691,22 +694,28 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
-        reviewed_on: 2026-10-08
+        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
+        reviewed_on: 2026-10-09
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - delivery-art-v6-source-activation-ownership
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-fail-closed-version-activation
+          - agent-console-caller-operator-session-binding
+          - agent-console-cgg-model-evidence-chain
+          - agent-console-revision-and-replay-integrity
+          - agent-console-action-authority-separation
+          - agent-console-dev-integration-source-activation
         owner_artifacts:
-          - repo: workspace-governance
-            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: operator-orchestration-service
-            path: src/delivery-art/contracts.js
-          - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
+            path: contracts/agent-console/manifest.json
+          - repo: operator-orchestration-service
+            path: src/agent-console/service.js
+          - repo: operator-orchestration-service
+            path: src/agent-console/runtime.js
+          - repo: operator-orchestration-service
+            path: docs/operations/agent-console-operator-surface.md
