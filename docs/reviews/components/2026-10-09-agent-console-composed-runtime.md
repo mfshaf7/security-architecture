@@ -22,7 +22,7 @@
   - Platform Engineering Agent Console admission merge:
     `platform-engineering@e780c33ecb64d7fc317121165aba8e8154518e3d`
   - Platform Engineering current reviewed revision:
-    `platform-engineering@c60a83a19c6e356cf3dcca0a825ce6c07aec5452`
+    `platform-engineering@d9796f6db70d5c68012be0212ca3c4050f54794e`
   - Governance Operations Console integration merge:
     `governance-operations-console@585850a53ef6c348f4f297468f1ccdb487b5a6c9`
   - Workspace Governance composition-binding merge:
@@ -36,6 +36,7 @@
   - [OOS failed-evidence retry repair PR #301](https://github.com/mfshaf7/operator-orchestration-service/pull/301)
   - [Platform admission PR #280](https://github.com/mfshaf7/platform-engineering/pull/280)
   - [Platform verifier cleanup PR #282](https://github.com/mfshaf7/platform-engineering/pull/282)
+  - [Platform Ollama runtime reconciliation PR #283](https://github.com/mfshaf7/platform-engineering/pull/283)
   - [Console governed integration PR #61](https://github.com/mfshaf7/governance-operations-console/pull/61)
   - [Workspace composition correction PR #253](https://github.com/mfshaf7/workspace-governance/pull/253)
 - decision: `approved`
@@ -165,6 +166,11 @@ profile, data, credential, or action boundary. The later OOS documentation head
 and Workspace Governance composition correction likewise narrow operating
 truth without expanding the accepted path.
 
+The Platform runtime reconciliation accepts host Ollama 0.40.1 only with the
+unchanged full `qwen3:8b` digest after a synthetic Agent Console invocation
+returned strict-schema-valid output. It does not change provider, model,
+caller, data scope, credential custody, network exposure, or action authority.
+
 ### Runtime And Failure Integrity
 
 OOS and CGG activation are default-off and valid only under the registered
@@ -197,10 +203,11 @@ operating proof against exactly:
 
 - `context-governance-gateway@094c10a0df39bf0733ee02e3cb567f571cdf661f`;
 - `operator-orchestration-service@5f6a422227641cf6356510a300d678a685fe256e`;
-- `platform-engineering@c60a83a19c6e356cf3dcca0a825ce6c07aec5452`;
+- `platform-engineering@d9796f6db70d5c68012be0212ca3c4050f54794e`;
 - `governance-operations-console@585850a53ef6c348f4f297468f1ccdb487b5a6c9`;
 - `workspace-governance@20ffe1a2d3530b370c116ea0f54cef5c47b7afa4`;
-- profile `agent-console-assistant-v1` on local Ollama `qwen3:8b`;
+- profile `agent-console-assistant-v1` on local Ollama 0.40.1 with the exact
+  `qwen3:8b` digest;
 - the existing `refinement-catalog` composition; and
 - the loopback-only, single-operator `dev-integration` boundary described
   above.
