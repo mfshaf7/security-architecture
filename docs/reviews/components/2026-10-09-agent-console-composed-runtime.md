@@ -18,7 +18,7 @@
   - Operator Orchestration Service implementation merge:
     `operator-orchestration-service@015c74422901425892cf62cd46ab2f3a9f79c71a`
   - Operator Orchestration Service current reviewed revision:
-    `operator-orchestration-service@5f6a422227641cf6356510a300d678a685fe256e`
+    `operator-orchestration-service@e8b46ffbd9a11f5d0b4f037ca7ff1806991950a8`
   - Platform Engineering Agent Console admission merge:
     `platform-engineering@e780c33ecb64d7fc317121165aba8e8154518e3d`
   - Platform Engineering current reviewed revision:
@@ -34,6 +34,7 @@
   - [OOS runtime hook PR #298](https://github.com/mfshaf7/operator-orchestration-service/pull/298)
   - [OOS closeout regression repair PR #300](https://github.com/mfshaf7/operator-orchestration-service/pull/300)
   - [OOS failed-evidence retry repair PR #301](https://github.com/mfshaf7/operator-orchestration-service/pull/301)
+  - [OOS invalid-evidence lifecycle retry completion PR #302](https://github.com/mfshaf7/operator-orchestration-service/pull/302)
   - [Platform admission PR #280](https://github.com/mfshaf7/platform-engineering/pull/280)
   - [Platform verifier cleanup PR #282](https://github.com/mfshaf7/platform-engineering/pull/282)
   - [Platform Ollama runtime reconciliation PR #283](https://github.com/mfshaf7/platform-engineering/pull/283)
@@ -166,6 +167,14 @@ profile, data, credential, or action boundary. The later OOS documentation head
 and Workspace Governance composition correction likewise narrow operating
 truth without expanding the accepted path.
 
+The OOS invalid-evidence lifecycle retry completion at
+`operator-orchestration-service@e8b46ffbd9a11f5d0b4f037ca7ff1806991950a8`
+routes a failed post-merge operating check back through the same exact-source,
+exact-profile bounded acquisition after its reported cause is repaired. It
+adds no caller, credential, command, source mutation, approval, merge,
+readiness, closeout, model, context, or action authority; failed results remain
+ineligible for durable replay and only a fully passing receipt may advance.
+
 The Platform runtime reconciliation accepts host Ollama 0.40.1 only with the
 unchanged full `qwen3:8b` digest after a synthetic Agent Console invocation
 returned strict-schema-valid output. It does not change provider, model,
@@ -202,7 +211,7 @@ Security emits `gate:agent-console-operating-acceptance` for activation and
 operating proof against exactly:
 
 - `context-governance-gateway@094c10a0df39bf0733ee02e3cb567f571cdf661f`;
-- `operator-orchestration-service@5f6a422227641cf6356510a300d678a685fe256e`;
+- `operator-orchestration-service@e8b46ffbd9a11f5d0b4f037ca7ff1806991950a8`;
 - `platform-engineering@d9796f6db70d5c68012be0212ca3c4050f54794e`;
 - `governance-operations-console@585850a53ef6c348f4f297468f1ccdb487b5a6c9`;
 - `workspace-governance@20ffe1a2d3530b370c116ea0f54cef5c47b7afa4`;
