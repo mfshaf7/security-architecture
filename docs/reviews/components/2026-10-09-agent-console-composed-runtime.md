@@ -17,8 +17,8 @@
     `context-governance-gateway@094c10a0df39bf0733ee02e3cb567f571cdf661f`
   - Operator Orchestration Service implementation merge:
     `operator-orchestration-service@015c74422901425892cf62cd46ab2f3a9f79c71a`
-  - Operator Orchestration Service current runtime-hook revision:
-    `operator-orchestration-service@232f21aced79657c758622a5ca91626cf736177d`
+  - Operator Orchestration Service current reviewed revision:
+    `operator-orchestration-service@cbcab89c517d90ef6609bb26368d1ea0e2374f3e`
   - Platform Engineering Agent Console admission merge:
     `platform-engineering@e780c33ecb64d7fc317121165aba8e8154518e3d`
   - Platform Engineering current revision:
@@ -32,6 +32,7 @@
   - [CGG runtime hook PR #24](https://github.com/mfshaf7/context-governance-gateway/pull/24)
   - [OOS orchestration PR #297](https://github.com/mfshaf7/operator-orchestration-service/pull/297)
   - [OOS runtime hook PR #298](https://github.com/mfshaf7/operator-orchestration-service/pull/298)
+  - [OOS closeout regression repair PR #300](https://github.com/mfshaf7/operator-orchestration-service/pull/300)
   - [Platform admission PR #280](https://github.com/mfshaf7/platform-engineering/pull/280)
   - [Console governed integration PR #61](https://github.com/mfshaf7/governance-operations-console/pull/61)
   - [Workspace composition correction PR #253](https://github.com/mfshaf7/workspace-governance/pull/253)
@@ -193,7 +194,7 @@ Security emits `gate:agent-console-operating-acceptance` for activation and
 operating proof against exactly:
 
 - `context-governance-gateway@094c10a0df39bf0733ee02e3cb567f571cdf661f`;
-- `operator-orchestration-service@232f21aced79657c758622a5ca91626cf736177d`;
+- `operator-orchestration-service@cbcab89c517d90ef6609bb26368d1ea0e2374f3e`;
 - `platform-engineering@5e712eb75896db20a49b15a69452046833a798db`;
 - `governance-operations-console@585850a53ef6c348f4f297468f1ccdb487b5a6c9`;
 - `workspace-governance@20ffe1a2d3530b370c116ea0f54cef5c47b7afa4`;
