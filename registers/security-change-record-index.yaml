@@ -2963,6 +2963,18 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-12-refinement-worker-capability-isolation.md
+  date: '2026-10-12'
+  short_title: 2026-10-12-refinement-worker-capability-isolation
+  review_areas:
+  - runtime
+  - identity
+  - secrets
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
