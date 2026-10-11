@@ -18,7 +18,7 @@
   - Operator Orchestration Service implementation merge:
     `operator-orchestration-service@015c74422901425892cf62cd46ab2f3a9f79c71a`
   - Operator Orchestration Service current reviewed revision:
-    `operator-orchestration-service@43e5e0b623e901dc5fb877f64d357ac01aed1065`
+    `operator-orchestration-service@a78372ca87c2d2e87a9f52f91699ad873f467072`
   - Platform Engineering Agent Console admission merge:
     `platform-engineering@e780c33ecb64d7fc317121165aba8e8154518e3d`
   - Platform Engineering current reviewed revision:
@@ -38,6 +38,7 @@
   - [OOS operating-evidence projection retry completion PR #303](https://github.com/mfshaf7/operator-orchestration-service/pull/303)
   - [OOS Refinement worker rollout-generation repair PR #304](https://github.com/mfshaf7/operator-orchestration-service/pull/304)
   - [OOS Refinement worker capability-isolation repair PR #305](https://github.com/mfshaf7/operator-orchestration-service/pull/305)
+  - [OOS initiative lineage reference-scope repair PR #306](https://github.com/mfshaf7/operator-orchestration-service/pull/306)
   - [Platform admission PR #280](https://github.com/mfshaf7/platform-engineering/pull/280)
   - [Platform verifier cleanup PR #282](https://github.com/mfshaf7/platform-engineering/pull/282)
   - [Platform Ollama runtime reconciliation PR #283](https://github.com/mfshaf7/platform-engineering/pull/283)
@@ -198,6 +199,15 @@ change narrows capability and credential exposure; it does not add a caller,
 credential, data path, model, network route, action, mutation, approval, or
 composition authority.
 
+The subsequent OOS initiative-lineage repair at
+`operator-orchestration-service@a78372ca87c2d2e87a9f52f91699ad873f467072`
+uses portfolio-wide Delivery ART state only to validate an existing external
+Architecture Anchor Ref or Required Upstream Ref before updating the requested
+initiative. Execution summaries and the mutation target remain scoped to that
+initiative. The repair adds no identity, credential, field write, allowed
+value, action, approval, model, context, network, source-mutation, or
+composition authority.
+
 The Platform runtime reconciliation accepts host Ollama 0.40.1 only with the
 unchanged full `qwen3:8b` digest after a synthetic Agent Console invocation
 returned strict-schema-valid output. It does not change provider, model,
@@ -234,7 +244,7 @@ Security emits `gate:agent-console-operating-acceptance` for activation and
 operating proof against exactly:
 
 - `context-governance-gateway@094c10a0df39bf0733ee02e3cb567f571cdf661f`;
-- `operator-orchestration-service@43e5e0b623e901dc5fb877f64d357ac01aed1065`;
+- `operator-orchestration-service@a78372ca87c2d2e87a9f52f91699ad873f467072`;
 - `platform-engineering@d9796f6db70d5c68012be0212ca3c4050f54794e`;
 - `governance-operations-console@585850a53ef6c348f4f297468f1ccdb487b5a6c9`;
 - `workspace-governance@20ffe1a2d3530b370c116ea0f54cef5c47b7afa4`;
