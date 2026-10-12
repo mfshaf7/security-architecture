@@ -16,7 +16,7 @@
 - superseded activation conditions:
   [`2026-10-08-delivery-art-architecture-v6-activation-ownership.md`](2026-10-08-delivery-art-architecture-v6-activation-ownership.md)
 - exact reviewed consumer heads:
-  - [operator-orchestration-service#315](https://github.com/mfshaf7/operator-orchestration-service/pull/315), head `654883afb4eede2e169ef25daa22c176848df27d`
+  - [operator-orchestration-service#315](https://github.com/mfshaf7/operator-orchestration-service/pull/315), head `1bdb32fa0a86dac25f29bd9cf94400ce9131e498`
   - [workspace-governance-control-fabric#103](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/103), head `e8cc466aae57111ca6663783fbdd6dc45443ee6f`
 - reviewed Workspace Governance v6 authority:
   - [workspace-governance#240](https://github.com/mfshaf7/workspace-governance/pull/240), merge `052261b14196d52318767e1bf371b1c156c0ac26`
