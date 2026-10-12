@@ -262,31 +262,20 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-09
+        path: docs/reviews/components/2026-10-12-oos-art-human-admin-merge.md
+        reviewed_on: 2026-10-12
         status: current
         decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - agent-console-caller-operator-session-binding
-          - agent-console-cgg-model-evidence-chain
-          - agent-console-revision-and-replay-integrity
-          - agent-console-action-authority-separation
-          - agent-console-dev-integration-source-activation
+          - delivery-art-human-ruleset-bypass
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: contracts/agent-console/manifest.json
+            path: src/delivery-art/work-session-cli-adapters.js
           - repo: operator-orchestration-service
-            path: src/agent-console/service.js
-          - repo: operator-orchestration-service
-            path: src/agent-console/runtime.js
-          - repo: operator-orchestration-service
-            path: docs/operations/agent-console-operator-surface.md
+            path: test/delivery-art-work-session-cli-adapters.test.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
