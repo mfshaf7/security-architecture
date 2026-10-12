@@ -3023,6 +3023,19 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-12-product-publication-workflow-activation.md
+  date: '2026-10-12'
+  short_title: 2026-10-12-product-publication-workflow-activation
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-12-product-publication-workflow.md
   date: '2026-10-12'
   short_title: 2026-10-12-product-publication-workflow
@@ -3372,6 +3385,18 @@ change_records:
   date: '2026-10-08'
   short_title: 2026-10-08-delivery-art-v6-activation-ownership-support
   review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: workspace-governance-control-fabric
+  path: docs/records/change-records/2026-10-12-product-publication-readiness-activation.md
+  date: '2026-10-12'
+  short_title: 2026-10-12-product-publication-readiness-activation
+  review_areas:
+  - identity
   - delivery
   - runtime
   findings: []
