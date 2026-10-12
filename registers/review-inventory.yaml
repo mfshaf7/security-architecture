@@ -43,7 +43,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
         reviewed_on: 2026-10-12
         status: current
         decision: approved
@@ -53,17 +53,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-active-product-authority
-          - product-publication-owner-manifest-contract
-          - product-publication-fixed-target-tuples
-          - product-publication-cross-boundary-grant-denial
+          - delivery-art-v6-current-version-activation
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-historical-session-preservation
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/product-publication.yaml
+            path: contracts/delivery-art-operator-path.yaml
           - repo: workspace-governance
-            path: contracts/schemas/product-publication-manifest.schema.json
+            path: contracts/schemas/delivery-art-architecture-packet.schema.json
           - repo: workspace-governance
-            path: contracts/schemas/product-publication-packet.schema.json
+            path: contracts/fixtures/delivery-art-workflow/architecture-packet-v6-activation-parity-vectors.valid.json
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -74,7 +74,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
         reviewed_on: 2026-10-12
         status: current
         decision: approved
@@ -84,17 +84,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-exact-owner-manifest
-          - product-publication-merged-authority-read
-          - product-publication-durable-readiness-ledger
-          - product-publication-source-activation-order
+          - delivery-art-v6-current-version-activation
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-historical-session-preservation
         owner_artifacts:
           - repo: workspace-governance-control-fabric
-            path: contracts/product-publication/manifest.json
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/product_publication_readiness.py
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
           - repo: workspace-governance-control-fabric
-            path: tests/test_product_publication_readiness.py
+            path: tests/test_delivery_art_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -169,7 +169,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
         reviewed_on: 2026-10-12
         status: current
         decision: approved
@@ -262,7 +262,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
         reviewed_on: 2026-10-12
         status: current
         decision: approved
@@ -272,17 +272,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-exact-security-decision-binding
-          - product-publication-internal-only-target-scope
-          - product-publication-wgcf-readback-binding
-          - product-publication-replay-and-version-integrity
+          - delivery-art-v6-current-version-activation
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-historical-session-preservation
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: contracts/product-publication/manifest.json
+            path: src/delivery-art/contracts.js
           - repo: operator-orchestration-service
-            path: src/product-publication/service.js
+            path: src/delivery-art/service.js
           - repo: operator-orchestration-service
-            path: src/product-publication/wgcf-client.js
+            path: test/delivery-art-contracts.test.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -516,7 +516,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
         reviewed_on: 2026-10-12
         status: current
         decision: approved
@@ -526,17 +526,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-exact-owner-manifest
-          - product-publication-merged-authority-read
-          - product-publication-durable-readiness-ledger
-          - product-publication-source-activation-order
+          - delivery-art-v6-current-version-activation
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-historical-session-preservation
         owner_artifacts:
           - repo: workspace-governance-control-fabric
-            path: contracts/product-publication/manifest.json
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/product_publication_readiness.py
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
           - repo: workspace-governance-control-fabric
-            path: tests/test_product_publication_readiness.py
+            path: tests/test_delivery_art_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -688,7 +688,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
         reviewed_on: 2026-10-12
         status: current
         decision: approved
@@ -698,16 +698,14 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-exact-security-decision-binding
-          - product-publication-internal-only-target-scope
-          - product-publication-wgcf-readback-binding
-          - product-publication-replay-and-version-integrity
+          - delivery-art-v6-current-version-activation
+          - delivery-art-v6-source-snapshot-revision-binding
+          - delivery-art-v6-security-source-commissioning-order
+          - delivery-art-v6-historical-session-preservation
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: contracts/product-publication/manifest.json
+            path: src/delivery-art/contracts.js
           - repo: operator-orchestration-service
-            path: src/product-publication/service.js
+            path: src/delivery-art/service.js
           - repo: operator-orchestration-service
-            path: src/product-publication/wgcf-client.js
-          - repo: operator-orchestration-service
-            path: docs/operations/product-publication-operator-surface.md
+            path: test/delivery-art-contracts.test.js
