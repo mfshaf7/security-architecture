@@ -43,27 +43,27 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
+        path: docs/reviews/components/2026-10-12-product-publication-audience-access-boundary.md
         reviewed_on: 2026-10-12
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v6-current-version-activation
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-historical-session-preservation
+          - product-publication-fixed-target-tuples
+          - product-publication-owner-manifest-current-posture
+          - product-publication-access-authority-separation
+          - product-publication-archive-lifecycle-separation
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/delivery-art-operator-path.yaml
+            path: contracts/product-publication.yaml
           - repo: workspace-governance
-            path: contracts/schemas/delivery-art-architecture-packet.schema.json
+            path: contracts/products.yaml
           - repo: workspace-governance
-            path: contracts/fixtures/delivery-art-workflow/architecture-packet-v6-activation-parity-vectors.valid.json
+            path: contracts/schemas/product-publication-manifest.schema.json
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -74,27 +74,27 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
+        path: docs/reviews/components/2026-10-12-product-publication-audience-access-boundary.md
         reviewed_on: 2026-10-12
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v6-current-version-activation
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-historical-session-preservation
+          - product-publication-owner-manifest-current-posture
+          - product-publication-exact-target-tuple
+          - product-publication-durable-readiness-ledger
+          - product-publication-source-activation-denial
         owner_artifacts:
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
+            path: packages/control_fabric_core/src/control_fabric_core/product_publication_policy.py
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
+            path: packages/control_fabric_core/src/control_fabric_core/product_publication_readiness.py
           - repo: workspace-governance-control-fabric
-            path: tests/test_delivery_art_readiness.py
+            path: tests/test_product_publication_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -169,25 +169,25 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
+        path: docs/reviews/components/2026-10-12-product-publication-audience-access-boundary.md
         reviewed_on: 2026-10-12
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-server-only-oos-adapter
-          - product-publication-same-origin-session-authorization
-          - product-publication-exact-owner-manifest
-          - product-publication-exact-response-evidence
+          - product-publication-audience-tuple-projection
+          - product-publication-owner-manifest-not-access-grant
+          - product-publication-configured-no-fixture-failure
+          - product-publication-archived-action-deferred
         owner_artifacts:
           - repo: governance-operations-console
-            path: product-publication/manifest.json
+            path: src/domain-workspaces/portfolio/work-model/publication/product-publication-audience-model.ts
           - repo: governance-operations-console
-            path: src/domain-workspaces/portfolio/server/product-publication-oos-client.ts
+            path: src/domain-workspaces/portfolio/live-runtime/product-publication-live-projection.ts
           - repo: governance-operations-console
             path: docs/product/product-publication-live-integration.md
     openclaw-runtime-distribution:
@@ -262,27 +262,27 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
+        path: docs/reviews/components/2026-10-12-product-publication-audience-access-boundary.md
         reviewed_on: 2026-10-12
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v6-current-version-activation
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-historical-session-preservation
+          - product-publication-capability-versus-activation
+          - product-publication-exact-security-decision
+          - product-publication-target-rejection-before-wgcf
+          - product-publication-replay-version-integrity
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: src/delivery-art/contracts.js
+            path: contracts/product-publication/manifest.json
           - repo: operator-orchestration-service
-            path: src/delivery-art/service.js
+            path: src/product-publication/contracts.js
           - repo: operator-orchestration-service
-            path: test/delivery-art-contracts.test.js
+            path: src/product-publication/service.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -516,27 +516,27 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
+        path: docs/reviews/components/2026-10-12-product-publication-audience-access-boundary.md
         reviewed_on: 2026-10-12
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v6-current-version-activation
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-historical-session-preservation
+          - product-publication-owner-manifest-current-posture
+          - product-publication-exact-target-tuple
+          - product-publication-durable-readiness-ledger
+          - product-publication-source-activation-denial
         owner_artifacts:
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
+            path: packages/control_fabric_core/src/control_fabric_core/product_publication_policy.py
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
+            path: packages/control_fabric_core/src/control_fabric_core/product_publication_readiness.py
           - repo: workspace-governance-control-fabric
-            path: tests/test_delivery_art_readiness.py
+            path: tests/test_product_publication_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -688,24 +688,24 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-delivery-art-architecture-v6-activation.md
+        path: docs/reviews/components/2026-10-12-product-publication-audience-access-boundary.md
         reviewed_on: 2026-10-12
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v6-current-version-activation
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-historical-session-preservation
+          - product-publication-capability-versus-activation
+          - product-publication-exact-security-decision
+          - product-publication-target-rejection-before-wgcf
+          - product-publication-replay-version-integrity
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: src/delivery-art/contracts.js
+            path: contracts/product-publication/manifest.json
           - repo: operator-orchestration-service
-            path: src/delivery-art/service.js
+            path: src/product-publication/contracts.js
           - repo: operator-orchestration-service
-            path: test/delivery-art-contracts.test.js
+            path: src/product-publication/service.js
