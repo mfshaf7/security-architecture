@@ -43,8 +43,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-09
+        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        reviewed_on: 2026-10-12
         status: current
         decision: approved
         review_areas:
@@ -53,17 +53,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - agent-console-composition-endpoint-binding
-          - agent-console-composition-caller-binding
-          - agent-console-composition-credential-binding
-          - agent-console-paired-owner-activation
+          - product-publication-active-product-authority
+          - product-publication-owner-manifest-contract
+          - product-publication-fixed-target-tuples
+          - product-publication-cross-boundary-grant-denial
         owner_artifacts:
           - repo: workspace-governance
-            path: contracts/developer-integration-profiles.yaml
+            path: contracts/product-publication.yaml
           - repo: workspace-governance
-            path: tests/test_developer_integration_runtime_composition.py
+            path: contracts/schemas/product-publication-manifest.schema.json
           - repo: workspace-governance
-            path: docs/developer-integration-runtime-composition.md
+            path: contracts/schemas/product-publication-packet.schema.json
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -74,25 +74,27 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-08-delivery-art-architecture-v6-activation-ownership.md
-        reviewed_on: 2026-10-08
+        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        reviewed_on: 2026-10-12
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-v6-source-activation-ownership
-          - delivery-art-v6-source-snapshot-revision-binding
-          - delivery-art-v6-security-source-commissioning-order
-          - delivery-art-v6-fail-closed-version-activation
+          - product-publication-exact-owner-manifest
+          - product-publication-merged-authority-read
+          - product-publication-durable-readiness-ledger
+          - product-publication-source-activation-order
         owner_artifacts:
-          - repo: workspace-governance
-            path: contracts/schemas/delivery-art-architecture-packet.schema.json
-          - repo: operator-orchestration-service
-            path: src/delivery-art/contracts.js
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_contracts.py
+            path: contracts/product-publication/manifest.json
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/product_publication_readiness.py
+          - repo: workspace-governance-control-fabric
+            path: tests/test_product_publication_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -167,8 +169,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-09
+        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        reviewed_on: 2026-10-12
         status: current
         decision: approved
         review_areas:
@@ -176,20 +178,18 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - agent-console-server-only-oos-adapter
-          - agent-console-same-origin-session-authorization
-          - agent-console-exact-response-evidence
-          - agent-console-direct-provider-removal
-          - agent-console-exact-session-cleanup
+          - product-publication-server-only-oos-adapter
+          - product-publication-same-origin-session-authorization
+          - product-publication-exact-owner-manifest
+          - product-publication-exact-response-evidence
         owner_artifacts:
           - repo: governance-operations-console
-            path: src/agent-console/server/agent-console-oos-client.ts
+            path: product-publication/manifest.json
           - repo: governance-operations-console
-            path: src/agent-console/server/agent-interaction-route.ts
+            path: src/domain-workspaces/portfolio/server/product-publication-oos-client.ts
           - repo: governance-operations-console
-            path: docs/product/agent-console-live-integration.md
+            path: docs/product/product-publication-live-integration.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -262,20 +262,27 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-oos-art-human-admin-merge.md
+        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
         reviewed_on: 2026-10-12
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - delivery-art-human-ruleset-bypass
+          - product-publication-exact-security-decision-binding
+          - product-publication-internal-only-target-scope
+          - product-publication-wgcf-readback-binding
+          - product-publication-replay-and-version-integrity
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: src/delivery-art/work-session-cli-adapters.js
+            path: contracts/product-publication/manifest.json
           - repo: operator-orchestration-service
-            path: test/delivery-art-work-session-cli-adapters.test.js
+            path: src/product-publication/service.js
+          - repo: operator-orchestration-service
+            path: src/product-publication/wgcf-client.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -509,8 +516,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-08-proposal-target-application-trust-boundary.md
-        reviewed_on: 2026-10-08
+        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        reviewed_on: 2026-10-12
         status: current
         decision: approved
         review_areas:
@@ -519,19 +526,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - proposal-target-public-source-prepublication-admission
-          - proposal-target-private-to-public-projection
-          - proposal-target-exact-owner-contract-v2
-          - proposal-target-controlled-activation-order
+          - product-publication-exact-owner-manifest
+          - product-publication-merged-authority-read
+          - product-publication-durable-readiness-ledger
+          - product-publication-source-activation-order
         owner_artifacts:
-          - repo: operator-orchestration-service
-            path: contracts/proposal-target-application/manifest.json
-          - repo: operator-orchestration-service
-            path: contracts/proposal-target-application/request.schema.json
-          - repo: operator-orchestration-service
-            path: src/proposal-target-application/service.js
-          - repo: workspace-prototype-studio
-            path: contracts/proposal-target-application/request.schema.json
+          - repo: workspace-governance-control-fabric
+            path: contracts/product-publication/manifest.json
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/product_publication_readiness.py
+          - repo: workspace-governance-control-fabric
+            path: tests/test_product_publication_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -683,8 +688,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-09
+        path: docs/reviews/components/2026-10-12-product-publication-trust-boundary.md
+        reviewed_on: 2026-10-12
         status: current
         decision: approved
         review_areas:
@@ -692,19 +697,17 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - agent-console-caller-operator-session-binding
-          - agent-console-cgg-model-evidence-chain
-          - agent-console-revision-and-replay-integrity
-          - agent-console-action-authority-separation
-          - agent-console-dev-integration-source-activation
+          - product-publication-exact-security-decision-binding
+          - product-publication-internal-only-target-scope
+          - product-publication-wgcf-readback-binding
+          - product-publication-replay-and-version-integrity
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: contracts/agent-console/manifest.json
+            path: contracts/product-publication/manifest.json
           - repo: operator-orchestration-service
-            path: src/agent-console/service.js
+            path: src/product-publication/service.js
           - repo: operator-orchestration-service
-            path: src/agent-console/runtime.js
+            path: src/product-publication/wgcf-client.js
           - repo: operator-orchestration-service
-            path: docs/operations/agent-console-operator-surface.md
+            path: docs/operations/product-publication-operator-surface.md

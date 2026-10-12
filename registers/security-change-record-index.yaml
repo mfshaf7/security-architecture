@@ -2998,6 +2998,43 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-12-product-publication-security-decision-binding.md
+  date: '2026-10-12'
+  short_title: 2026-10-12-product-publication-security-decision-binding
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-12-product-publication-target-posture-binding.md
+  date: '2026-10-12'
+  short_title: 2026-10-12-product-publication-target-posture-binding
+  review_areas:
+  - identity
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-12-product-publication-workflow.md
+  date: '2026-10-12'
+  short_title: 2026-10-12-product-publication-workflow
+  review_areas:
+  - identity
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-12-refinement-catalog-rollout-generation.md
   date: '2026-10-12'
   short_title: 2026-10-12-refinement-catalog-rollout-generation
