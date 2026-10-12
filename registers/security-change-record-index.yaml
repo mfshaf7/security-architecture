@@ -3033,6 +3033,18 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-12-product-publication-lifecycle-maintenance-activation.md
+  date: '2026-10-12'
+  short_title: 2026-10-12-product-publication-lifecycle-maintenance-activation
+  review_areas:
+  - identity
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-12-product-publication-posture-capability.md
   date: '2026-10-12'
   short_title: 2026-10-12-product-publication-posture-capability
@@ -3112,6 +3124,17 @@ change_records:
   - runtime
   - identity
   - secrets
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-13-monotonic-workflow-failure-projections.md
+  date: '2026-10-13'
+  short_title: 2026-10-13-monotonic-workflow-failure-projections
+  review_areas:
+  - runtime
+  - delivery
   findings: []
   risks: []
   workstreams:
@@ -3400,6 +3423,18 @@ change_records:
   review_areas:
   - delivery
   - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-13-workspace-intake-token-rotation-consumption.md
+  date: '2026-10-13'
+  short_title: 2026-10-13-workspace-intake-token-rotation-consumption
+  review_areas:
+  - runtime
+  - secrets
+  - delivery
   findings: []
   risks: []
   workstreams:

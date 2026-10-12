@@ -11,27 +11,24 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-lifecycle-maintenance-boundary.md
-        reviewed_on: 2026-10-12
+        path: docs/reviews/components/2026-10-13-product-publication-oos-repair-delta.md
+        reviewed_on: 2026-10-13
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-complete-lifecycle-sequence
-          - product-publication-owner-evidence-refresh
-          - product-publication-interruption-and-recovery
-          - product-publication-exact-baseline-restoration
+          - product-publication-exact-oos-repair-revision
+          - product-publication-monotonic-failure-projection
+          - product-publication-inventory-history-readback
         owner_artifacts:
           - repo: platform-engineering
             path: products/governance-operations-console/product-publication-commissioning-policy.yaml
-          - repo: platform-engineering
-            path: products/governance-operations-console/scripts/product_publication_platform.py
-          - repo: platform-engineering
-            path: products/governance-operations-console/runbooks/commission-product-publication.md
+          - repo: operator-orchestration-service
+            path: src/workflow-progress.js
+          - repo: operator-orchestration-service
+            path: scripts/workspace_inventory_source.py
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -261,27 +258,24 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-lifecycle-maintenance-boundary.md
-        reviewed_on: 2026-10-12
+        path: docs/reviews/components/2026-10-13-product-publication-oos-repair-delta.md
+        reviewed_on: 2026-10-13
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
-          - identity
-          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-lifecycle-capability-versus-activation
-          - product-publication-exact-lifecycle-security-decision
-          - product-publication-sequence-rejection-before-wgcf
-          - product-publication-replay-version-and-history-integrity
+          - product-publication-exact-oos-repair-revision
+          - product-publication-monotonic-failure-projection
+          - product-publication-inventory-history-readback
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: contracts/product-publication/manifest.json
+            path: src/workflow-progress.js
           - repo: operator-orchestration-service
-            path: src/product-publication/contracts.js
+            path: scripts/workspace_inventory_source.py
           - repo: operator-orchestration-service
-            path: src/product-publication/service.js
+            path: test/workflow-progress.test.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
