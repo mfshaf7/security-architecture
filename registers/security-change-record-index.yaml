@@ -3562,18 +3562,6 @@ change_records:
   risks: []
   workstreams:
   - WS-007
-- repo: platform-engineering
-  path: docs/records/change-records/2026-10-15-governance-console-complete-runtime.md
-  date: '2026-10-15'
-  short_title: Compose the complete local Console runtime
-  review_areas:
-  - runtime
-  - identity
-  - delivery
-  findings: []
-  risks: []
-  workstreams:
-  - WS-007
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'

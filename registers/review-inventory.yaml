@@ -27,13 +27,9 @@ review_inventory:
           - governance-console-recovery-rollback-revocation
         owner_artifacts:
           - repo: platform-engineering
-            path: products/governance-operations-console/complete-runtime-policy.yaml
+            path: products/governance-operations-console/AGENTS.md
           - repo: platform-engineering
-            path: products/governance-operations-console/scripts/console_complete_runtime.py
-          - repo: platform-engineering
-            path: products/governance-operations-console/scripts/platform_operation_provider.py
-          - repo: platform-engineering
-            path: products/governance-operations-console/scripts/console_cross_domain_activation.py
+            path: products/governance-operations-console/README.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -312,8 +308,6 @@ review_inventory:
           - governance-console-workspace-continuity-no-fixture-fallback
           - governance-console-recovery-rollback-revocation
         owner_artifacts:
-          - repo: platform-engineering
-            path: products/governance-operations-console/complete-runtime-policy.yaml
           - repo: governance-operations-console
             path: src/workspace-continuity/workspace-continuity-contract.ts
           - repo: operator-orchestration-service

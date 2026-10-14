@@ -16,11 +16,11 @@
 - reviewed exact revisions:
   - `governance-operations-console@9ae2edf5d5a4121ca198172225c65984494a3b72`
   - `operator-orchestration-service@c2bf368be17af127b344e236942049abf6d4ca3d`
-  - `platform-engineering@b199a46e22b5e2d5f46b4f5f048018966b00dc5b`
+  - `platform-engineering@f8329645233665275a86a7f72e2cbea4efdae527`
   - `workspace-governance@9bf9d0485dd8292406464a73bc3b881503c52900`
   - `workspace-governance-control-fabric@18210752bc7450f7fed1fe62e8f41957c5031337`
 - reviewed Platform tree:
-  `platform-engineering-tree@c49a9c74abe4f16eef634e209aa528dd5df819e2`
+  `platform-engineering-tree@3663adbd7a0e7e649a39f9a0e5f0e6e5e5a61be3`
 - source reviews:
   - [WGCF continuity projection PR #109](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/109)
   - [Console canonical continuity PR #81](https://github.com/mfshaf7/governance-operations-console/pull/81)
@@ -212,8 +212,8 @@ substitute component fixtures or source tests for that later proof.
 `approved`
 
 Security emits `gate:platform-operation-security` for Platform candidate
-`b199a46e22b5e2d5f46b4f5f048018966b00dc5b` with tree
-`c49a9c74abe4f16eef634e209aa528dd5df819e2`, composed only with the four other
+`f8329645233665275a86a7f72e2cbea4efdae527` with tree
+`3663adbd7a0e7e649a39f9a0e5f0e6e5e5a61be3`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 
