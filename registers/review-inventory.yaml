@@ -258,24 +258,31 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-13-product-publication-oos-repair-delta.md
-        reviewed_on: 2026-10-13
+        path: docs/reviews/components/2026-10-15-bounded-source-realization-boundary.md
+        reviewed_on: 2026-10-15
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - product-publication-exact-oos-repair-revision
-          - product-publication-monotonic-failure-projection
-          - product-publication-inventory-history-readback
+          - bounded-source-realization-caller-and-agent-identity
+          - bounded-source-realization-cgg-context-and-disclosure
+          - bounded-source-realization-exact-acceptance-and-audit-digest
+          - bounded-source-realization-denial-replay-recovery-rollback
+          - bounded-source-realization-human-exact-head-merge
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: src/workflow-progress.js
+            path: src/delivery-art/work-session-controller.js
           - repo: operator-orchestration-service
-            path: scripts/workspace_inventory_source.py
+            path: src/delivery-art/work-session-cli-adapters.js
           - repo: operator-orchestration-service
-            path: test/workflow-progress.test.js
+            path: test/delivery-art-work-session.test.js
+          - repo: operator-orchestration-service
+            path: test/delivery-art-work-session-cli-adapters.test.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
