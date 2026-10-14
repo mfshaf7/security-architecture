@@ -15,17 +15,20 @@
   `sha256:ea428f9ad9a14368aa9f789be278d3aac44def2cb2a4bc31caec7768f03335bb`
 - reviewed exact revisions:
   - `governance-operations-console@9ae2edf5d5a4121ca198172225c65984494a3b72`
-  - `operator-orchestration-service@c2bf368be17af127b344e236942049abf6d4ca3d`
-  - `platform-engineering@f8329645233665275a86a7f72e2cbea4efdae527`
+  - `operator-orchestration-service@bc03994b467e04b82ef39b3c391f98bdbbbdaedf`
+  - `platform-engineering@26cc1a34369ba59233e666ec268d1f2a83818fa7`
   - `workspace-governance@9bf9d0485dd8292406464a73bc3b881503c52900`
   - `workspace-governance-control-fabric@18210752bc7450f7fed1fe62e8f41957c5031337`
 - reviewed Platform tree:
-  `platform-engineering-tree@3663adbd7a0e7e649a39f9a0e5f0e6e5e5a61be3`
+  `platform-engineering-tree@f1d27bd64d57158a834330cfbfebaf46e60d4ed8`
 - source reviews:
   - [WGCF continuity projection PR #109](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/109)
   - [Console canonical continuity PR #81](https://github.com/mfshaf7/governance-operations-console/pull/81)
   - [OOS Platform-operation adapter PR #336](https://github.com/mfshaf7/operator-orchestration-service/pull/336)
   - [Platform complete-runtime PR #303](https://github.com/mfshaf7/platform-engineering/pull/303)
+  - [OOS evidence failure projection PR #337](https://github.com/mfshaf7/operator-orchestration-service/pull/337)
+  - [OOS trusted-ancestor profile repair PR #338](https://github.com/mfshaf7/operator-orchestration-service/pull/338)
+  - [Platform evidence-profile repair PR #304](https://github.com/mfshaf7/platform-engineering/pull/304)
 - decision: `approved`
 
 Security accepts only this exact composed candidate for Platform source
@@ -40,6 +43,17 @@ already passed. Platform work item `#1291` must still publish the accepted
 candidate, rerun exact-head source evidence and CI, obtain human approval,
 merge, and prove activation, restart, rollback, teardown, and restored normal
 availability.
+
+The replacement is a `child_isolated_landing_unit` Security delta because this
+review and rollback boundary is independent from the Platform source repair.
+It changes no identity, credential, action vocabulary, network exposure,
+canonical-data authority, runtime profile, or rollback scope. It accepts only
+the OOS controls that record invalid profile evidence, archive the failed
+attempt, and execute pre-merge commands from the nearest qualifying reviewed
+ancestor, plus the Platform correction that reduces one verifier timeout from
+`3600` to the schema maximum `1800` seconds. Candidate commands remain
+untrusted, and post-merge evidence remains bound to the accepted head without
+fallback.
 
 ## Scope Delta
 
@@ -116,10 +130,12 @@ intentionally pending.
   identity, duplicate or contradictory lifecycle state, stale actionability,
   OOS drift, tampered projection digest, browser credential exclusion, and
   live-mode fixture-dashboard exclusion.
-- OOS PR #336 is merged, approved, and passed exact-head CI. Security work item
-  #1302 separately accepted its finite command, denial, disclosure, replay,
-  recovery, and audit boundary.
-- The clean Platform candidate passed the complete repository validation with
+- OOS PRs #336, #337, and #338 are merged, approved, and passed exact-head CI.
+  Security work item #1302 separately accepted the Platform-operation adapter's
+  finite command, denial, disclosure, replay, recovery, and audit boundary;
+  the two repair PRs narrow evidence-profile failure and recovery behavior
+  without changing that command boundary.
+- The clean replacement Platform candidate passed the complete repository validation with
   the documented explicit OOS source root. Focused tests cover the finite
   catalog, stale Security denial, exact approval, conflicting replay,
   truthful terminal receipts, closed runner mapping, recovery, credential
@@ -212,8 +228,8 @@ substitute component fixtures or source tests for that later proof.
 `approved`
 
 Security emits `gate:platform-operation-security` for Platform candidate
-`f8329645233665275a86a7f72e2cbea4efdae527` with tree
-`3663adbd7a0e7e649a39f9a0e5f0e6e5e5a61be3`, composed only with the four other
+`26cc1a34369ba59233e666ec268d1f2a83818fa7` with tree
+`f1d27bd64d57158a834330cfbfebaf46e60d4ed8`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 
