@@ -11,24 +11,29 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-13-product-publication-oos-repair-delta.md
-        reviewed_on: 2026-10-13
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-15
         status: current
         decision: approved
         review_areas:
+          - identity
+          - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-exact-oos-repair-revision
-          - product-publication-monotonic-failure-projection
-          - product-publication-inventory-history-readback
+          - governance-console-complete-runtime-exact-source-set
+          - governance-console-external-security-tree-binding
+          - governance-console-server-only-credential-composition
+          - governance-console-recovery-rollback-revocation
         owner_artifacts:
           - repo: platform-engineering
-            path: products/governance-operations-console/product-publication-commissioning-policy.yaml
-          - repo: operator-orchestration-service
-            path: src/workflow-progress.js
-          - repo: operator-orchestration-service
-            path: scripts/workspace_inventory_source.py
+            path: products/governance-operations-console/complete-runtime-policy.yaml
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_complete_runtime.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/platform_operation_provider.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_cross_domain_activation.py
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -70,27 +75,27 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-lifecycle-maintenance-boundary.md
-        reviewed_on: 2026-10-12
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-15
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-schema-v2-owner-binding
-          - product-publication-exact-lifecycle-event-readiness
-          - product-publication-durable-readiness-ledger
-          - product-publication-sequence-order-denial
+          - governance-console-workspace-continuity-read-boundary
+          - governance-console-canonical-projection-integrity
+          - governance-console-continuity-default-deny-activation
+          - governance-console-recovery-rollback-revocation
         owner_artifacts:
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/product_publication_policy.py
+            path: packages/control_fabric_core/src/control_fabric_core/workspace_continuity_projection.py
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/product_publication_readiness.py
+            path: schemas/workspace-continuity-projection.schema.json
           - repo: workspace-governance-control-fabric
-            path: tests/test_product_publication_readiness.py
+            path: tests/test_workspace_continuity_projection.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -165,27 +170,27 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-lifecycle-maintenance-boundary.md
-        reviewed_on: 2026-10-12
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-15
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - product-maintenance-authoritative-owner-routing
-          - product-maintenance-current-state-reread
-          - product-maintenance-no-stale-manifest-reuse
-          - product-maintenance-contradiction-fail-closed
+          - governance-console-server-only-owner-credentials
+          - governance-console-workspace-continuity-no-fixture-fallback
+          - governance-console-registry-portfolio-canonical-identity
+          - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
           - repo: governance-operations-console
-            path: src/domain-workspaces/portfolio/live-runtime/product-maintenance-sequence.ts
+            path: src/workspace-continuity/server/workspace-continuity-wgcf-client.ts
           - repo: governance-operations-console
-            path: src/domain-workspaces/portfolio/server/product-maintenance-service.ts
+            path: src/workspace-continuity/workspace-registry-continuity.ts
           - repo: governance-operations-console
-            path: tests/operation-runtime/product-maintenance-live-adapter.test.mjs
+            path: tests/operation-runtime/workspace-continuity-live-adapter.test.mjs
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -258,7 +263,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-oos-platform-operation-adapter-boundary.md
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
         reviewed_on: 2026-10-15
         status: current
         decision: approved
@@ -268,20 +273,19 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
-          - platform-operation-exact-caller-operator-approval
-          - platform-operation-provider-credential-and-target
-          - platform-operation-finite-command-and-effect-boundary
-          - platform-operation-denial-disclosure-replay-and-recovery
-          - platform-operation-exact-security-decision-and-human-merge
+          - governance-console-platform-operation-exact-caller-approval
+          - governance-console-finite-command-and-effect-boundary
+          - governance-console-composed-denial-replay-and-recovery
+          - governance-console-external-security-tree-binding
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: src/app.js
+            path: src/platform-operation/contracts.js
           - repo: operator-orchestration-service
-            path: src/config.js
+            path: src/platform-operation/service.js
           - repo: operator-orchestration-service
-            path: src/runtime.js
+            path: src/platform-operation/provider-client.js
           - repo: operator-orchestration-service
-            path: test/http.test.js
+            path: test/platform-operation.test.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
@@ -293,10 +297,29 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/products/2026-07-31-governance-operations-console-source-owned-local-preview.md
-        reviewed_on: 2026-07-31
-        status: baseline-current
-        decision: approved-with-findings
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-15
+        status: current
+        decision: approved
+        review_areas:
+          - identity
+          - secrets
+          - delivery
+          - runtime
+        review_trigger_ids:
+          - governance-console-complete-runtime-exact-source-set
+          - governance-console-server-only-credential-composition
+          - governance-console-workspace-continuity-no-fixture-fallback
+          - governance-console-recovery-rollback-revocation
+        owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/complete-runtime-policy.yaml
+          - repo: governance-operations-console
+            path: src/workspace-continuity/workspace-continuity-contract.ts
+          - repo: operator-orchestration-service
+            path: src/platform-operation/service.js
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/workspace_continuity_projection.py
     openclaw:
       owner_repo: platform-engineering
       scope: product
@@ -515,27 +538,27 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-lifecycle-maintenance-boundary.md
-        reviewed_on: 2026-10-12
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-15
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-schema-v2-owner-binding
-          - product-publication-exact-lifecycle-event-readiness
-          - product-publication-durable-readiness-ledger
-          - product-publication-sequence-order-denial
+          - governance-console-workspace-continuity-read-boundary
+          - governance-console-canonical-projection-integrity
+          - governance-console-continuity-default-deny-activation
+          - governance-console-recovery-rollback-revocation
         owner_artifacts:
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/product_publication_policy.py
+            path: packages/control_fabric_core/src/control_fabric_core/workspace_continuity_projection.py
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/product_publication_readiness.py
+            path: schemas/workspace-continuity-projection.schema.json
           - repo: workspace-governance-control-fabric
-            path: tests/test_product_publication_readiness.py
+            path: tests/test_workspace_continuity_projection.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -687,24 +710,24 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-lifecycle-maintenance-boundary.md
-        reviewed_on: 2026-10-12
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-15
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
-          - product-publication-lifecycle-capability-versus-activation
-          - product-publication-exact-lifecycle-security-decision
-          - product-publication-sequence-rejection-before-wgcf
-          - product-publication-replay-version-and-history-integrity
+          - governance-console-platform-operation-exact-caller-approval
+          - governance-console-finite-command-and-effect-boundary
+          - governance-console-composed-denial-replay-and-recovery
+          - governance-console-external-security-tree-binding
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: contracts/product-publication/manifest.json
+            path: src/platform-operation/contracts.js
           - repo: operator-orchestration-service
-            path: src/product-publication/contracts.js
+            path: src/platform-operation/service.js
           - repo: operator-orchestration-service
-            path: src/product-publication/service.js
+            path: test/platform-operation.test.js
