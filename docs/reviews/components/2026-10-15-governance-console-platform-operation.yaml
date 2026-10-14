@@ -1,0 +1,19 @@
+schema_version: 1
+decision_id: delivery-1275-platform-operation
+gate_id: gate:platform-operation-security
+status: accepted
+delivery_id: delivery-1275
+work_item_ref: openproject://work_packages/1303
+architecture:
+  artifact_id: architecture-packet:delivery-1275-v1
+  uri: wgcf://artifacts/delivery-art/sha256/ea428f9ad9a14368aa9f789be278d3aac44def2cb2a4bc31caec7768f03335bb
+  digest: sha256:ea428f9ad9a14368aa9f789be278d3aac44def2cb2a4bc31caec7768f03335bb
+review_ref: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+reviewed_revisions:
+  governance-operations-console: 9ae2edf5d5a4121ca198172225c65984494a3b72
+  operator-orchestration-service: c2bf368be17af127b344e236942049abf6d4ca3d
+  platform-engineering: f8329645233665275a86a7f72e2cbea4efdae527
+  workspace-governance: 9bf9d0485dd8292406464a73bc3b881503c52900
+  workspace-governance-control-fabric: 18210752bc7450f7fed1fe62e8f41957c5031337
+reviewed_trees:
+  platform-engineering: 3663adbd7a0e7e649a39f9a0e5f0e6e5e5a61be3
