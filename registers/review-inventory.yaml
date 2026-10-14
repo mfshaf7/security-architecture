@@ -258,7 +258,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-bounded-source-realization-boundary.md
+        path: docs/reviews/components/2026-10-15-oos-platform-operation-adapter-boundary.md
         reviewed_on: 2026-10-15
         status: current
         decision: approved
@@ -267,22 +267,21 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
-          - bounded-source-realization-caller-and-agent-identity
-          - bounded-source-realization-cgg-context-and-disclosure
-          - bounded-source-realization-exact-acceptance-and-audit-digest
-          - bounded-source-realization-denial-replay-recovery-rollback
-          - bounded-source-realization-human-exact-head-merge
+          - platform-operation-exact-caller-operator-approval
+          - platform-operation-provider-credential-and-target
+          - platform-operation-finite-command-and-effect-boundary
+          - platform-operation-denial-disclosure-replay-and-recovery
+          - platform-operation-exact-security-decision-and-human-merge
         owner_artifacts:
           - repo: operator-orchestration-service
-            path: src/delivery-art/work-session-controller.js
+            path: src/app.js
           - repo: operator-orchestration-service
-            path: src/delivery-art/work-session-cli-adapters.js
+            path: src/config.js
           - repo: operator-orchestration-service
-            path: test/delivery-art-work-session.test.js
+            path: src/runtime.js
           - repo: operator-orchestration-service
-            path: test/delivery-art-work-session-cli-adapters.test.js
+            path: test/http.test.js
   products:
     governance-operations-console:
       owner_repo: platform-engineering
