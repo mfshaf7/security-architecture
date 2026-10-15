@@ -16,7 +16,7 @@
 - reviewed exact revisions:
   - `governance-operations-console@9ae2edf5d5a4121ca198172225c65984494a3b72`
   - `operator-orchestration-service@bc03994b467e04b82ef39b3c391f98bdbbbdaedf`
-  - `platform-engineering@df6844ded120c2325bb09d0b41dacc10fe33a44e`
+  - `platform-engineering@11465f6b50a218e4282e1394c9cb2d307c6c34ae`
   - `workspace-governance@9bf9d0485dd8292406464a73bc3b881503c52900`
   - `workspace-governance-control-fabric@18210752bc7450f7fed1fe62e8f41957c5031337`
 - reviewed Platform tree:
@@ -154,6 +154,12 @@ owner authority.
   #254, the `r2` successor session, and the corrected PR #304 evidence lineage.
   The runtime implementation and evidence profile are byte-identical to the
   tree accepted by Security PR #254.
+  Security binds the PR's exact reviewed head
+  `11465f6b50a218e4282e1394c9cb2d307c6c34ae`, which is the source revision
+  used by the governed post-merge evidence acquisition. Squash merge
+  `df6844ded120c2325bb09d0b41dacc10fe33a44e` has the same accepted tree but
+  is retained as merge evidence rather than substituted for the acquisition's
+  source identity.
 
 No source test or this decision is represented as live commissioning evidence.
 The `verify-operating` command and OOS operating-ready acquisition remain
@@ -248,14 +254,15 @@ substitute component fixtures or source tests for that later proof.
 
 `approved`
 
-Security emits `gate:platform-operation-security` for merged Platform revision
-`df6844ded120c2325bb09d0b41dacc10fe33a44e` with tree
+Security emits `gate:platform-operation-security` for reviewed Platform head
+`11465f6b50a218e4282e1394c9cb2d307c6c34ae` with tree
 `8313815b1684275e92a1fa61ac5e73b111d4d00c`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 
 This approval permits retry of the existing successor's bounded local
-operating-evidence acquisition from that reviewed merged tree. It does not permit a component-only,
+operating-evidence acquisition from that reviewed source head and exact tree.
+It does not permit a component-only,
 stale, partial, dirty, synthetic-substitute, or differently composed source
 set; fixture fallback; browser-held owner credentials; a generic Platform
 command; Console-owned lifecycle state; stage or production use; or a claim
