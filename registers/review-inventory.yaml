@@ -25,6 +25,8 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - governance-console-server-only-credential-composition
           - governance-console-recovery-rollback-revocation
+          - governance-console-private-runtime-state-binding
+          - governance-console-failure-first-rollback-order
         owner_artifacts:
           - repo: platform-engineering
             path: products/governance-operations-console/AGENTS.md
@@ -307,6 +309,8 @@ review_inventory:
           - governance-console-server-only-credential-composition
           - governance-console-workspace-continuity-no-fixture-fallback
           - governance-console-recovery-rollback-revocation
+          - governance-console-private-runtime-state-binding
+          - governance-console-failure-first-rollback-order
         owner_artifacts:
           - repo: governance-operations-console
             path: src/workspace-continuity/workspace-continuity-contract.ts
