@@ -15,10 +15,10 @@
   `sha256:ea428f9ad9a14368aa9f789be278d3aac44def2cb2a4bc31caec7768f03335bb`
 - reviewed exact revisions:
   - `governance-operations-console@9ae2edf5d5a4121ca198172225c65984494a3b72`
-  - `operator-orchestration-service@2fe2be3f21cf172c71c63cc7272ae8192ee07ee3`
-  - `platform-engineering@328af66193a1f6e5a9118a2107106d2dba65aad2`
+  - `operator-orchestration-service@c87d1fa7a242c495fae7c942b1437af78acfc094`
+  - `platform-engineering@068c6078755ec8a3df73e65f67131eb3e4cf07fa`
   - `workspace-governance@9bf9d0485dd8292406464a73bc3b881503c52900`
-  - `workspace-governance-control-fabric@18210752bc7450f7fed1fe62e8f41957c5031337`
+  - `workspace-governance-control-fabric@b52c8c422cf91bc2270363ed62ca360393984c08`
 - reviewed Platform tree:
   `platform-engineering-tree@0ce3a6aeedc81227f2e55ac06a7f93eb271065b2`
 - source reviews:
@@ -36,18 +36,30 @@
   - [OOS live-evidence process-boundary repair PR #339](https://github.com/mfshaf7/operator-orchestration-service/pull/339)
   - [OOS interrupted-acquisition recovery repair PR #340](https://github.com/mfshaf7/operator-orchestration-service/pull/340)
   - [Platform operating-proof receipt-replay successor PR #309](https://github.com/mfshaf7/platform-engineering/pull/309)
+  - [WGCF historical architecture-lineage repair PR #110](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/110)
+  - [OOS Epic retirement field-shape repair PR #341](https://github.com/mfshaf7/operator-orchestration-service/pull/341)
 - decision: `approved`
 
 Security accepts only this exact reviewed composition for bounded local
 commissioning. The exact Platform tree is part of the decision so later source
 changes cannot silently alter the accepted runtime.
 
-This decision does not assert that commissioning or operating verification has
-already passed. Platform work item `#1291` archived the `r3` successor after
-full teardown interrupted the executor supervising its proof, then opened the
-governed `r4` successor from the merged recovery base. It must still prove
-activation, restart, rollback, teardown, restored normal availability, and
-exact receipt replay after executor replacement.
+This decision does not itself assert current commissioning or operating
+verification. Platform work item `#1291` retains the completed component-level
+operating proof and its recovery history. The current source-set refresh still
+requires exact-composition activation and status readback before work item
+`#1298` may use the runtime for fixture-free journey evidence.
+
+This current-composition refresh accepts three later reviewed source identities
+without widening the approved boundary. Platform merge
+`068c6078755ec8a3df73e65f67131eb3e4cf07fa` has the exact tree already accepted
+for PR #309. OOS PR #341 narrows Epic retirement to the form shape OpenProject
+actually exposes, without changing Platform-operation commands, credentials,
+identity, or network reachability. WGCF PR #110 preserves immutable superseded
+Architecture Packet lineage without weakening semantic validation for the
+active packet or Review Packet evidence. The generated Security change-record
+index is refreshed in this same landing so the new security-evidenced owner
+record remains visible before composition activation.
 
 The replacement is a `child_isolated_landing_unit` Security delta because this
 review and rollback boundary is independent from the Platform source repairs
@@ -132,19 +144,23 @@ The exact reviewed composition provides:
 
 ### Operating Evidence
 
-This is a pre-merge composed-source decision. Operating readiness is
-intentionally pending.
+This is an exact-source acceptance decision. The current reviewed revisions are
+merged; current-composition activation and fixture-free journey evidence remain
+separate operating proofs.
 
 - WGCF PR #109 is merged, approved, and passed both exact-head validation
   checks; its projection was also exercised against the current committed
-  Workspace Governance authority.
+  Workspace Governance authority. WGCF PR #110 is merged, passed repository
+  validation, and has a separate approved Security delta in PR #259. It changes
+  only historical Architecture Packet supersession resolution and retains full
+  active-subject validation.
 - Console PR #81 is merged, approved, and passed exact-head CI. Its owner check
   passed all architecture guards, 534 semantic tests, TypeScript validation,
   and the production build. Positive and negative cases cover cross-view
   identity, duplicate or contradictory lifecycle state, stale actionability,
   OOS drift, tampered projection digest, browser credential exclusion, and
   live-mode fixture-dashboard exclusion.
-- OOS PRs #336, #337, #338, #339, and #340 are merged, approved, and passed
+- OOS PRs #336, #337, #338, #339, #340, and #341 are merged, approved, and passed
   exact-head CI.
   Security work item #1302 separately accepted the Platform-operation adapter's
   finite command, denial, disclosure, replay, recovery, and audit boundary;
@@ -156,6 +172,10 @@ intentionally pending.
   readiness, and keep composed source selection on the reviewed Platform
   worktree. They do not add an action, caller, credential, network exposure,
   or owner authority.
+  OOS PR #341 changes only the existing OpenProject retirement adapter: an Epic
+  may omit the Iteration field that its live form does not expose, while
+  non-Epic retirement stays fail closed. It adds no Platform command, caller,
+  credential, source-executor action, or Console authority.
 - Platform PRs #304 and #305 are merged, approved, and passed exact-head CI.
   The complete repository validation also passed locally with the documented
   explicit OOS source root. Focused tests cover the finite
@@ -188,13 +208,15 @@ intentionally pending.
   validation passed against base
   `1549e86aff70d341fdb8d76219aebe84814d08d5`. Focused tests prove exact cached
   receipt reuse and rejection of stale or malformed receipts. Security binds
-  its exact reviewed head `328af66193a1f6e5a9118a2107106d2dba65aad2`
+  its merged revision `068c6078755ec8a3df73e65f67131eb3e4cf07fa`
   and tree `0ce3a6aeedc81227f2e55ac06a7f93eb271065b2` before the governed post-merge
-  operating-evidence acquisition.
+  operating-evidence acquisition. That tree is byte-identical to the reviewed
+  PR head `328af66193a1f6e5a9118a2107106d2dba65aad2`.
 
-No source test or this decision is represented as live commissioning evidence.
-The `verify-operating` command and OOS operating-ready acquisition remain
-mandatory after protected Platform merge.
+No source test or this decision is represented as current live commissioning
+evidence. The completed `#1291` proof remains component evidence, while `#1298`
+must demonstrate the current exact composition through the real Console
+journey after activation and status readback.
 
 ## Review Areas
 
@@ -285,15 +307,15 @@ substitute component fixtures or source tests for that later proof.
 
 `approved`
 
-Security emits `gate:platform-operation-security` for reviewed Platform head
-`328af66193a1f6e5a9118a2107106d2dba65aad2` with tree
+Security emits `gate:platform-operation-security` for merged Platform revision
+`068c6078755ec8a3df73e65f67131eb3e4cf07fa` with tree
 `0ce3a6aeedc81227f2e55ac06a7f93eb271065b2`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 
-This approval permits retry of the existing successor's bounded local
-operating-evidence acquisition from that reviewed source head and exact tree.
-It does not permit a component-only,
+This approval permits activation, restart, and status readback of the exact
+current composition and the later Console-only journey under `#1298`. It does
+not permit a component-only,
 stale, partial, dirty, synthetic-substitute, or differently composed source
 set; fixture fallback; browser-held owner credentials; a generic Platform
 command; Console-owned lifecycle state; stage or production use; or a claim
