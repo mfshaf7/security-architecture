@@ -78,10 +78,10 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-repository-custody-controlled-activation.md
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
         reviewed_on: 2026-10-16
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
@@ -89,6 +89,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - wgcf-custody-source-activation-exact-composition
           - wgcf-bounded-custody-readiness-source-activation
           - wgcf-configured-runtime-factory-proof
           - wgcf-installed-operation-contract-bundle-packaging
