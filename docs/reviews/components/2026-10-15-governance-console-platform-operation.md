@@ -15,12 +15,12 @@
   `sha256:ea428f9ad9a14368aa9f789be278d3aac44def2cb2a4bc31caec7768f03335bb`
 - reviewed exact revisions:
   - `governance-operations-console@9ae2edf5d5a4121ca198172225c65984494a3b72`
-  - `operator-orchestration-service@bc03994b467e04b82ef39b3c391f98bdbbbdaedf`
-  - `platform-engineering@087d1bdb8ce706c323643b97c6d564e95d6bf40a`
+  - `operator-orchestration-service@2fe2be3f21cf172c71c63cc7272ae8192ee07ee3`
+  - `platform-engineering@328af66193a1f6e5a9118a2107106d2dba65aad2`
   - `workspace-governance@9bf9d0485dd8292406464a73bc3b881503c52900`
   - `workspace-governance-control-fabric@18210752bc7450f7fed1fe62e8f41957c5031337`
 - reviewed Platform tree:
-  `platform-engineering-tree@062d603af399a5736b8ff7c432e7ce33b9dbdbaa`
+  `platform-engineering-tree@0ce3a6aeedc81227f2e55ac06a7f93eb271065b2`
 - source reviews:
   - [WGCF continuity projection PR #109](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/109)
   - [Console canonical continuity PR #81](https://github.com/mfshaf7/governance-operations-console/pull/81)
@@ -33,6 +33,9 @@
   - [Platform governed recovery-successor record PR #306](https://github.com/mfshaf7/platform-engineering/pull/306)
   - [Platform reviewed-worktree source repair PR #307](https://github.com/mfshaf7/platform-engineering/pull/307)
   - [Platform final operating-proof successor PR #308](https://github.com/mfshaf7/platform-engineering/pull/308)
+  - [OOS live-evidence process-boundary repair PR #339](https://github.com/mfshaf7/operator-orchestration-service/pull/339)
+  - [OOS interrupted-acquisition recovery repair PR #340](https://github.com/mfshaf7/operator-orchestration-service/pull/340)
+  - [Platform operating-proof receipt-replay successor PR #309](https://github.com/mfshaf7/platform-engineering/pull/309)
 - decision: `approved`
 
 Security accepts only this exact reviewed composition for bounded local
@@ -40,23 +43,25 @@ commissioning. The exact Platform tree is part of the decision so later source
 changes cannot silently alter the accepted runtime.
 
 This decision does not assert that commissioning or operating verification has
-already passed. Platform work item `#1291` has recovered its failed attempt,
-archived the `r2` successor after its checkout-source conflict, and opened the
-governed `r3` successor from the merged repair base. It must still prove
-activation, restart, rollback, teardown, and restored normal availability.
+already passed. Platform work item `#1291` archived the `r3` successor after
+full teardown interrupted the executor supervising its proof, then opened the
+governed `r4` successor from the merged recovery base. It must still prove
+activation, restart, rollback, teardown, restored normal availability, and
+exact receipt replay after executor replacement.
 
 The replacement is a `child_isolated_landing_unit` Security delta because this
 review and rollback boundary is independent from the Platform source repairs
 and their documentation-only recovery successors.
 It changes no identity, credential, action vocabulary, network exposure,
-canonical-data authority, runtime profile, or rollback scope. It accepts only
-the OOS controls that record invalid profile evidence, archive the failed
-attempt, and execute pre-merge commands from the nearest qualifying reviewed
-ancestor, plus the Platform corrections that reduce one verifier timeout from
-`3600` to the schema maximum `1800` seconds and bind the shared composition to
-the verifier's reviewed Platform checkout unless an explicit operator source
-override is supplied. Candidate commands remain untrusted, and post-merge
-evidence remains bound to the accepted head without fallback.
+canonical-data authority, runtime profile, or rollback scope. It accepts the
+existing OOS profile and recovery controls plus two bounded repairs: live
+evidence executes outside the supervising executor process group, and an
+interrupted merged acquisition may enter the existing evidence-preserving
+replacement path without claiming readiness. Platform serializes the proof
+with one operator-private lock and reuses only a digest-valid receipt bound to
+this exact Security decision, reviewed revision set, complete proof shape, and
+restored normal availability. Candidate commands remain untrusted, and
+post-merge evidence remains bound to the accepted head without fallback.
 
 ## Scope Delta
 
@@ -120,7 +125,10 @@ The exact reviewed composition provides:
 - bounded rollback, cleanup, and teardown that remove only the dedicated
   provider, OOS binding, Console/WGCF runtime bindings, generated credentials,
   and optional composition activation while preserving canonical owner and
-  evidence state.
+  evidence state; and
+- a host-local exclusive proof lock plus exact-decision receipt validation so
+  executor replacement cannot repeat teardown or accept stale, malformed,
+  partial, or different-revision operating evidence.
 
 ### Operating Evidence
 
@@ -136,11 +144,13 @@ intentionally pending.
   identity, duplicate or contradictory lifecycle state, stale actionability,
   OOS drift, tampered projection digest, browser credential exclusion, and
   live-mode fixture-dashboard exclusion.
-- OOS PRs #336, #337, and #338 are merged, approved, and passed exact-head CI.
+- OOS PRs #336, #337, #338, #339, and #340 are merged, approved, and passed
+  exact-head CI.
   Security work item #1302 separately accepted the Platform-operation adapter's
   finite command, denial, disclosure, replay, recovery, and audit boundary;
-  the two OOS repair PRs narrow evidence-profile failure and recovery behavior
-  without changing that command boundary. The Platform repairs correct the
+  the OOS repair PRs narrow evidence-profile failure, process survival, and
+  evidence-preserving recovery behavior without changing that command
+  boundary. The Platform repairs correct the
   profile timeout, mount one fixed operator-private state directory into the
   non-root OOS container, remove the OOS binding before rollback waits for
   readiness, and keep composed source selection on the reviewed Platform
@@ -170,11 +180,16 @@ intentionally pending.
   operator `--repo-path` override. Focused tests cover both selection paths;
   the change does not widen the source set or execution authority.
 - Platform PR #308 is the documentation-only `r3` successor. Full local
-  repository validation passed against base
-  `e2e664a00fc99c7b4b196b4462db634dbf193d9b`; protected review and merge are
-  still required. Security binds its exact reviewed head
-  `087d1bdb8ce706c323643b97c6d564e95d6bf40a` and tree
-  `062d603af399a5736b8ff7c432e7ce33b9dbdbaa` before the governed post-merge
+  repository validation passed, protected review and merge completed, and its
+  live proof exposed the executor process-group conflict before a result could
+  be retained. The attempt was archived with its exact merge-ready packet and
+  is not represented as operating-ready.
+- Platform PR #309 is the `r4` receipt-replay successor. Full local repository
+  validation passed against base
+  `1549e86aff70d341fdb8d76219aebe84814d08d5`. Focused tests prove exact cached
+  receipt reuse and rejection of stale or malformed receipts. Security binds
+  its exact reviewed head `328af66193a1f6e5a9118a2107106d2dba65aad2`
+  and tree `0ce3a6aeedc81227f2e55ac06a7f93eb271065b2` before the governed post-merge
   operating-evidence acquisition.
 
 No source test or this decision is represented as live commissioning evidence.
@@ -271,8 +286,8 @@ substitute component fixtures or source tests for that later proof.
 `approved`
 
 Security emits `gate:platform-operation-security` for reviewed Platform head
-`087d1bdb8ce706c323643b97c6d564e95d6bf40a` with tree
-`062d603af399a5736b8ff7c432e7ce33b9dbdbaa`, composed only with the four other
+`328af66193a1f6e5a9118a2107106d2dba65aad2` with tree
+`0ce3a6aeedc81227f2e55ac06a7f93eb271065b2`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 

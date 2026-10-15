@@ -3250,6 +3250,28 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-15-interrupted-operating-evidence-recovery.md
+  date: '2026-10-15'
+  short_title: 2026-10-15-interrupted-operating-evidence-recovery
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-15-operating-evidence-executor-survival.md
+  date: '2026-10-15'
+  short_title: Keep live evidence commands outside the source-executor process group
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-15-owner-evidence-profile-failure-projection.md
   date: '2026-10-15'
   short_title: 2026-10-15-owner-evidence-profile-failure-projection
