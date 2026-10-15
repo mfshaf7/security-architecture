@@ -6,14 +6,14 @@ delivery_id: delivery-1275
 work_item_ref: openproject://work_packages/1303
 architecture:
   artifact_id: architecture-packet:delivery-1275-v1
-  uri: wgcf://artifacts/delivery-art/sha256/8ad9c43664bb580a2eef7a23a8ddfa77c95bdea7bfc00efcb424d5008b71062a
-  digest: sha256:8ad9c43664bb580a2eef7a23a8ddfa77c95bdea7bfc00efcb424d5008b71062a
+  uri: wgcf://artifacts/delivery-art/sha256/02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4
+  digest: sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4
 review_ref: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
 reviewed_revisions:
   governance-operations-console: 98f051aeab4e4414768e42a90533083aebea01e0
-  operator-orchestration-service: bdc72c401c603bbe543a67a1e1e60bd558dfbef9
-  platform-engineering: 068c6078755ec8a3df73e65f67131eb3e4cf07fa
+  operator-orchestration-service: 6f92c6b4c0637f4c8ef85d83f5d9181b7f189d64
+  platform-engineering: 305862655d2df3185ac74cdebc72cad9919e24e8
   workspace-governance: ec499fcbdd7d62687d704b9f9e50c87a601c48ee
   workspace-governance-control-fabric: 981aa6259b2dcc65d41dc739bddadbb395794973
 reviewed_trees:
-  platform-engineering: 0ce3a6aeedc81227f2e55ac06a7f93eb271065b2
+  platform-engineering: f7888387a6dead537550b3f105b4c9b8295d807d

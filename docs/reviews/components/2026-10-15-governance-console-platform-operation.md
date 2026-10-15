@@ -10,17 +10,17 @@
 - governing gate: `gate:platform-operation-security`
 - architecture packet: `architecture-packet:delivery-1275-v1`
 - architecture packet URI:
-  `wgcf://artifacts/delivery-art/sha256/8ad9c43664bb580a2eef7a23a8ddfa77c95bdea7bfc00efcb424d5008b71062a`
+  `wgcf://artifacts/delivery-art/sha256/02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - architecture packet digest:
-  `sha256:8ad9c43664bb580a2eef7a23a8ddfa77c95bdea7bfc00efcb424d5008b71062a`
+  `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `governance-operations-console@98f051aeab4e4414768e42a90533083aebea01e0`
-  - `operator-orchestration-service@bdc72c401c603bbe543a67a1e1e60bd558dfbef9`
-  - `platform-engineering@068c6078755ec8a3df73e65f67131eb3e4cf07fa`
+  - `operator-orchestration-service@6f92c6b4c0637f4c8ef85d83f5d9181b7f189d64`
+  - `platform-engineering@305862655d2df3185ac74cdebc72cad9919e24e8`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@981aa6259b2dcc65d41dc739bddadbb395794973`
 - reviewed Platform tree:
-  `platform-engineering-tree@0ce3a6aeedc81227f2e55ac06a7f93eb271065b2`
+  `platform-engineering-tree@f7888387a6dead537550b3f105b4c9b8295d807d`
 - source reviews:
   - [WGCF continuity projection PR #109](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/109)
   - [Console canonical continuity PR #81](https://github.com/mfshaf7/governance-operations-console/pull/81)
@@ -44,6 +44,8 @@
   - [OOS repository-custody activation PR #342](https://github.com/mfshaf7/operator-orchestration-service/pull/342)
   - [Console fixture-isolation PR #82](https://github.com/mfshaf7/governance-operations-console/pull/82)
   - [Console fail-closed resume PR #83](https://github.com/mfshaf7/governance-operations-console/pull/83)
+  - [OOS gated-handoff compatibility PR #343](https://github.com/mfshaf7/operator-orchestration-service/pull/343)
+  - [Platform current-composition candidate PR #310](https://github.com/mfshaf7/platform-engineering/pull/310)
 - decision: `approved`
 
 Security accepts only this exact reviewed composition for bounded local
@@ -58,16 +60,22 @@ readback before work item `#1298` may use the runtime for fixture-free journey
 evidence.
 
 This current-composition refresh accepts the later reviewed source identities
-without widening the approved boundary. Platform merge
-`068c6078755ec8a3df73e65f67131eb3e4cf07fa` has the exact tree already accepted
-for PR #309. Workspace Governance PR #281 corrects the declared Console
-operating truth; WGCF PR #111 packages the canonical continuity schema used by
-its existing projection; Security PR #261 accepts bounded repository-custody
-activation; and OOS PR #342 activates only that already reviewed custody
-manifest. Console PRs #82 and #83 isolate live records from fixtures and fail
-closed when resume context is stale or unknown. Those repairs narrow failure
-behavior and current source identity; they add no Platform action, caller,
-credential, network exposure, canonical-data authority, or rollback scope.
+without widening the approved boundary. Architecture Packet v6 corrects the
+gate sequence: Platform candidate PR #310 exists first at exact head
+`305862655d2df3185ac74cdebc72cad9919e24e8` and tree
+`f7888387a6dead537550b3f105b4c9b8295d807d`, Security accepts that candidate
+here, and Platform remains unmerged until this exact decision lands. Workspace
+Governance PR #281 corrects the declared Console operating truth; WGCF PR #111
+packages the canonical continuity schema used by its existing projection;
+Security PR #261 accepts bounded repository-custody activation; and OOS PR
+#342 activates only that already reviewed custody manifest. Console PRs #82
+and #83 isolate live records from fixtures and fail closed when resume context
+is stale or unknown. OOS PR #343 preserves a compatible consumer session when
+only the gated Security producer Landing Unit attempt changes while the same
+gate, authority owner, work item, evidence contract, and accepted architecture
+remain fixed. Those repairs narrow failure behavior and current source
+identity; they add no Platform action, caller, credential, network exposure,
+canonical-data authority, or rollback scope.
 
 The replacement is a `child_isolated_landing_unit` Security delta because this
 review and rollback boundary is independent from the Platform source repairs
@@ -156,9 +164,10 @@ The exact reviewed composition provides:
 
 ### Operating Evidence
 
-This is an exact-source acceptance decision. The current reviewed revisions are
-merged; complete Platform commissioning and fixture-free journey evidence
-remain separate operating proofs.
+This is an exact-source acceptance decision. All dependency revisions are
+merged. The exact Platform candidate is open and intentionally unmerged until
+this decision lands; complete Platform commissioning and fixture-free journey
+evidence remain separate operating proofs.
 
 - Workspace Governance PR #281 is merged and records the corrected current
   capability posture. WGCF PR #111 is merged and packages the corresponding
@@ -206,6 +215,12 @@ remain separate operating proofs.
   the bounded repository-custody manifest accepted by Security PR #261 and
   pins the corrected Workspace Governance authority. It does not add a custody
   action, provider, permission, destination, or credential path.
+- OOS PR #343 is merged, approved, and passed exact-head CI. It treats only a
+  gated producer Landing Unit attempt-identity refresh as compatible when the
+  same human gate, producer owner, producer work item, evidence contract, and
+  accepted architecture remain fixed. Any gate or handoff semantic change
+  still supersedes the consumer session. It changes no Platform command,
+  caller, credential, network exposure, or owner authority.
 - The generated Security change-record index includes OOS's merged
   `2026-10-15-repository-custody-source-activation` record, preserving the
   owner-to-Security evidence link at the reviewed OOS revision.
@@ -248,6 +263,12 @@ remain separate operating proofs.
   and tree `0ce3a6aeedc81227f2e55ac06a7f93eb271065b2` before the governed post-merge
   operating-evidence acquisition. That tree is byte-identical to the reviewed
   PR head `328af66193a1f6e5a9118a2107106d2dba65aad2`.
+- Platform PR #310 is the current-composition candidate. Its exact open head
+  `305862655d2df3185ac74cdebc72cad9919e24e8` and tree
+  `f7888387a6dead537550b3f105b4c9b8295d807d` bind the complete-runtime policy
+  to Architecture Packet v6. Exact-head CI and the focused complete-runtime,
+  provider, coordinator, and dev-integration tests pass. The PR remains
+  intentionally unmerged until this Security decision is merged.
 
 No source test or this decision is represented as current live commissioning
 evidence. Earlier `#1291` attempts remain historical component evidence while
@@ -350,9 +371,9 @@ substitute component fixtures or source tests for that later proof.
 
 `approved`
 
-Security emits `gate:platform-operation-security` for merged Platform revision
-`068c6078755ec8a3df73e65f67131eb3e4cf07fa` with tree
-`0ce3a6aeedc81227f2e55ac06a7f93eb271065b2`, composed only with the four other
+Security emits `gate:platform-operation-security` for Platform candidate
+revision `305862655d2df3185ac74cdebc72cad9919e24e8` with tree
+`f7888387a6dead537550b3f105b4c9b8295d807d`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 
