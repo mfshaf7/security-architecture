@@ -44,6 +44,64 @@ repository custody can be called operating-ready.
 
 ## Scope Delta
 
+### 2026-10-16 Retained-Request Readback Maintenance
+
+Maintenance Landing Unit `maintenance-1275-repository-readback-security` uses
+`child_isolated_landing_unit`: Security review and rollback are independent of
+the two owner implementation landings. This is maintenance of the existing
+acceptance path, not another ART child or provider action.
+
+Security accepts the bounded readback delta at these exact candidate heads:
+
+- `operator-orchestration-service@dbe33dad90f3a11e5516478d81a0513061a6bd6f`
+  ([OOS PR #344](https://github.com/mfshaf7/operator-orchestration-service/pull/344));
+- `governance-operations-console@926a6c87256efd0b9d8932094373fbb4fbde58b1`.
+
+Design intent is to recover retained custody requests after a browser reload,
+not create a Console-owned register or infer admission from provisioning.
+OOS exposes a paginated read of the same records already available by request
+identity. It requires the existing caller-bound credential, admits only a
+SHA-256 cursor and a page limit of 1–25, validates stored request identities
+and artifact integrity, and performs no provider action. A corrupt record
+fails the read instead of silently omitting evidence.
+
+Console reads this collection only through its server-held OOS identity and
+validates the canonical source envelope, request digest, bounded page shape,
+and each existing workflow result. The browser receives only the established
+safe result projection. Register recovery is capped at ten pages; duplicate
+request identities, repeated cursors, malformed data, or unavailable owner
+truth fail closed. Polling is bounded to visible pages. An authoritative
+refresh replaces the previous snapshot, and an older in-flight refresh cannot
+overwrite a subsequently completed command result. Loading and unavailable
+states do not select fixtures or claim current owner availability.
+
+Provider custody and provisioning receipts remain distinct from Workspace
+Intake, inventory, Catalog, and product lifecycle decisions. No action,
+permission, credential, caller, provider destination, mutation authority, or
+network exposure is added. Existing-link and provisioning still use separate
+Platform-held GitHub App identities. The read surface is accepted only inside
+the existing single-operator, loopback `dev-integration` boundary.
+
+Implemented-source evidence includes OOS focused store reconstruction,
+pagination, corruption, authentication, and no-provider-effect cases; full
+owner tests and API-contract validation; and Console canonical-envelope,
+cold-read, linked-record reconstruction, malformed-pagination, and unavailable
+readback cases, architecture guards, semantic tests, type checking, and build.
+Exact-head owner CI and human approval remain required before merge. This
+review is not live operating evidence.
+
+The decision remains `approved-with-findings`: it permits only these bounded
+owner source landings. The machine-readable composed Platform decision is
+unchanged by this maintenance review. The final merged OOS and Console
+revisions and the pending Platform composition repair require a fresh exact
+composition decision before activation. Existing final journey work must
+prove browser reload recovery, provider identity/readback, credential failure,
+restart, and restoration without fixture or CLI substitution. Rollback removes
+the collection adapter and restores the previous read behavior while retaining
+owner records; it does not delete repositories or evidence. Security judgment
+and delegated human approval remain with the primary operator agent, not the
+implementation identity.
+
 ### Design Intent
 
 - let the Console invoke the already implemented `link-existing` and
