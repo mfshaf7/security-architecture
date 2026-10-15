@@ -22,6 +22,7 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - governance-console-repository-provisioning-composition
+          - governance-console-public-probe-contract-and-bounded-recovery
           - governance-console-early-token-renewal-and-crash-recovery
           - governance-console-service-source-survival
           - governance-console-complete-runtime-exact-source-set
@@ -311,6 +312,7 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - governance-console-repository-provisioning-composition
+          - governance-console-public-probe-contract-and-bounded-recovery
           - governance-console-early-token-renewal-and-crash-recovery
           - governance-console-service-source-survival
           - governance-console-complete-runtime-exact-source-set

@@ -16,12 +16,13 @@
 - reviewed exact revisions:
   - `governance-operations-console@8b7eac7066d05beae3234429e9e696e3feaa3e1c`
   - `operator-orchestration-service@5c75a8da879884bab924ac8d0a4476298c0ae7e1`
-  - `platform-engineering@99ee41e5280a08552c9b704549aac4518136dbe0`
+  - `platform-engineering@b5ff79ba09191dd141760fc2f4b0fa01ca14a2e2`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@981aa6259b2dcc65d41dc739bddadbb395794973`
 - reviewed Platform tree:
-  `platform-engineering-tree@89ae904b9d2d95a8802314545a52eb4070f2c81b`
+  `platform-engineering-tree@01542224d6948bd72183a084d70598da7860a317`
 - source reviews:
+  - [Platform public Console probe contract PR #312](https://github.com/mfshaf7/platform-engineering/pull/312)
   - [OOS retained request readback PR #344](https://github.com/mfshaf7/operator-orchestration-service/pull/344)
   - [Console canonical Repository register PR #84](https://github.com/mfshaf7/governance-operations-console/pull/84)
   - [Security bounded readback PR #264](https://github.com/mfshaf7/security-architecture/pull/264)
@@ -54,6 +55,30 @@
 
 ### Current Maintenance Acceptance
 
+Verification-only maintenance Landing Unit
+`maintenance-1275-runtime-probe-security` uses `child_isolated_landing_unit`
+for this exact-tree decision refresh. The Platform candidate corrects the
+commissioning probe to the observed public Console error contract. The Console
+returns HTTP 404, code `repository_custody_oos_rejected`, and the exact
+missing-request message; the old probe incorrectly required OOS's internal
+error code. The candidate checks live mode, that exact public response, and
+the missing-request identity. Wrong-route lookalikes, unauthorized results,
+preview responses, and unexpected success still fail closed. It permits at
+most thirty seconds of transport/502/503 recovery after the already approved
+OOS rollout, without relaxing identity, canonical integrity, source acceptance,
+or readiness requirements.
+
+Focused tests cover the observed response, restart recovery, and false
+readiness rejection. A read-only invocation of the corrected probe passed
+against the actual accepted Console runtime before source publication. Full
+Platform validation also passed at the committed candidate. No API, action,
+credential, effect, provider, permission, or rollback authority changes; this
+refresh accepts only the corrected read-only checker at the Summary's exact
+head and tree. The earlier runtime-composition implementation is now merged
+as Platform PR #311. Its source and activation state are not claimed to be a
+passed commissioning proof; the corrected complete operating proof remains
+required before final journey acceptance.
+
 Maintenance Landing Unit `maintenance-1275-runtime-provisioning-security`
 uses `child_isolated_landing_unit`: the exact-composition Security decision
 has its own review and rollback boundary, independent from the Platform
@@ -61,7 +86,7 @@ implementation. It creates no new ART child or authority plane.
 
 The current source dependencies are merged OOS PR #344 and Console PR #84,
 whose bounded canonical request-enumeration boundary was accepted in Security
-PR #264. Platform PR #311 is the only pending composed implementation candidate
+PR #264. The verification-only Platform successor is the pending candidate
 and must remain unmerged until this exact decision lands. The Summary and YAML
 decision above supersede all historical source identities below.
 
@@ -435,8 +460,8 @@ substitute component fixtures or source tests for that later proof.
 `approved`
 
 Security emits `gate:platform-operation-security` for Platform candidate
-revision `99ee41e5280a08552c9b704549aac4518136dbe0` with tree
-`89ae904b9d2d95a8802314545a52eb4070f2c81b`, composed only with the four other
+revision `b5ff79ba09191dd141760fc2f4b0fa01ca14a2e2` with tree
+`01542224d6948bd72183a084d70598da7860a317`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 
