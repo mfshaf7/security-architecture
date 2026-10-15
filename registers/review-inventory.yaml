@@ -166,16 +166,18 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-15
+        path: docs/reviews/components/2026-10-15-repository-custody-controlled-activation.md
+        reviewed_on: 2026-10-16
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
+          - repository-custody-canonical-request-enumeration
+          - repository-custody-browser-reload-without-fixtures
           - governance-console-server-only-owner-credentials
           - governance-console-workspace-continuity-no-fixture-fallback
           - governance-console-registry-portfolio-canonical-identity
@@ -259,16 +261,18 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-15
+        path: docs/reviews/components/2026-10-15-repository-custody-controlled-activation.md
+        reviewed_on: 2026-10-16
         status: current
-        decision: approved
+        decision: approved-with-findings
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
+          - repository-custody-canonical-request-enumeration
+          - repository-custody-bound-caller-readback
           - governance-console-platform-operation-exact-caller-approval
           - governance-console-finite-command-and-effect-boundary
           - governance-console-composed-denial-replay-and-recovery
