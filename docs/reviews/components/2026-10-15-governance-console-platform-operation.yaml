@@ -12,7 +12,7 @@ review_ref: docs/reviews/components/2026-10-15-governance-console-platform-opera
 reviewed_revisions:
   governance-operations-console: 9ae2edf5d5a4121ca198172225c65984494a3b72
   operator-orchestration-service: bc03994b467e04b82ef39b3c391f98bdbbbdaedf
-  platform-engineering: df6844ded120c2325bb09d0b41dacc10fe33a44e
+  platform-engineering: 11465f6b50a218e4282e1394c9cb2d307c6c34ae
   workspace-governance: 9bf9d0485dd8292406464a73bc3b881503c52900
   workspace-governance-control-fabric: 18210752bc7450f7fed1fe62e8f41957c5031337
 reviewed_trees:
