@@ -2,7 +2,7 @@
 
 ## Summary
 
-- date: 2026-10-15
+- date: 2026-10-16
 - owner repo: `security-architecture`
 - delivery initiative: `openproject://work_packages/1275`
 - security acceptance item: `openproject://work_packages/1303`
@@ -14,14 +14,18 @@
 - architecture packet digest:
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
-  - `governance-operations-console@98f051aeab4e4414768e42a90533083aebea01e0`
-  - `operator-orchestration-service@6f92c6b4c0637f4c8ef85d83f5d9181b7f189d64`
-  - `platform-engineering@305862655d2df3185ac74cdebc72cad9919e24e8`
+  - `governance-operations-console@8b7eac7066d05beae3234429e9e696e3feaa3e1c`
+  - `operator-orchestration-service@5c75a8da879884bab924ac8d0a4476298c0ae7e1`
+  - `platform-engineering@99ee41e5280a08552c9b704549aac4518136dbe0`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@981aa6259b2dcc65d41dc739bddadbb395794973`
 - reviewed Platform tree:
-  `platform-engineering-tree@f7888387a6dead537550b3f105b4c9b8295d807d`
+  `platform-engineering-tree@89ae904b9d2d95a8802314545a52eb4070f2c81b`
 - source reviews:
+  - [OOS retained request readback PR #344](https://github.com/mfshaf7/operator-orchestration-service/pull/344)
+  - [Console canonical Repository register PR #84](https://github.com/mfshaf7/governance-operations-console/pull/84)
+  - [Security bounded readback PR #264](https://github.com/mfshaf7/security-architecture/pull/264)
+  - [Platform provisioning composition PR #311](https://github.com/mfshaf7/platform-engineering/pull/311)
   - [WGCF continuity projection PR #109](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/109)
   - [Console canonical continuity PR #81](https://github.com/mfshaf7/governance-operations-console/pull/81)
   - [OOS Platform-operation adapter PR #336](https://github.com/mfshaf7/operator-orchestration-service/pull/336)
@@ -48,6 +52,64 @@
   - [Platform current-composition candidate PR #310](https://github.com/mfshaf7/platform-engineering/pull/310)
 - decision: `approved`
 
+### Current Maintenance Acceptance
+
+Maintenance Landing Unit `maintenance-1275-runtime-provisioning-security`
+uses `child_isolated_landing_unit`: the exact-composition Security decision
+has its own review and rollback boundary, independent from the Platform
+implementation. It creates no new ART child or authority plane.
+
+The current source dependencies are merged OOS PR #344 and Console PR #84,
+whose bounded canonical request-enumeration boundary was accepted in Security
+PR #264. Platform PR #311 is the only pending composed implementation candidate
+and must remain unmerged until this exact decision lands. The Summary and YAML
+decision above supersede all historical source identities below.
+
+The Platform candidate restores the already accepted dedicated provisioning
+App and organization installation through the existing Vault and identity
+delivery path. It activates WGCF custody readiness, binds OOS to the dedicated
+runtime Secret and a fixed operator-private persistent custody directory,
+and projects only policy and credential-binding references to Console.
+It does not borrow the existing-repository read identity, deliver a private
+key to OOS, or grant automatic intake, inventory, Catalog, product, or release
+authority. The separate read-only existing-repository identity is not claimed
+operating by this provisioning composition.
+
+Purpose-bound credential maintenance extends the existing user-systemd runtime
+lifecycle. A fixed five-minute timer renews only the accepted App's token when
+fewer than twenty minutes remain. Each run revalidates the exact current
+Security decision, owner sources, materialized policy, and active marker before
+using Vault or changing runtime. It holds the same lifecycle lock without
+waiting; normal activation, proof, restart, and rollback hold that lock too.
+Rollback disables renewal before revoking and removing the projection.
+The timer has no caller-selected credential, repository, command, host, or
+destination, and service arguments contain no credential values.
+
+OOS receives its token at process startup. A stable non-secret token-expiry
+annotation makes delivery consumption idempotent and recoverable if a host
+crash occurs after Secret replacement but before the required OOS rollout.
+Unchanged versions do not restart OOS. A new token performs one bounded rollout
+and rechecks readiness while preserving persistent workflow state. Failed
+Vault access, stale authority, or rollout failure produces non-success; neither
+the timer nor its receipt can substitute an ambient identity or operating proof.
+
+Generated provider, composition, and credential-maintenance services use the
+surviving workspace main checkout only when clean main, remote main, and the
+reviewed candidate have identical committed trees. Otherwise the candidate
+path remains explicit and cannot be retired as if restart-ready. This closes
+the proven missing-worktree startup regression without weakening source checks.
+
+Implemented-source evidence covers private-key stdin handling and temporary
+file custody; exact Secret/env/state bindings; canonical cold-browser readback;
+early renewal, unchanged-version reconciliation, expired-token recovery,
+stale-marker denial, lifecycle-lock contention, and bounded rollback.
+Full owner validation and exact-head CI are required for the pending candidate.
+The operating verifier rejects earlier partial receipts and must now prove
+renewal, credential revocation, restart, teardown, restoration, the active
+timer, and executable Console provisioning. Current live success remains
+unproven by this source decision. Final journey work #1298 retains the real
+fixture-free to-do exercise and browser-reload proof.
+
 Security accepts only this exact reviewed composition for bounded local
 commissioning. The exact Platform tree is part of the decision so later source
 changes cannot silently alter the accepted runtime.
@@ -55,11 +117,12 @@ changes cannot silently alter the accepted runtime.
 This decision does not itself assert current commissioning or complete-system
 operating verification. Earlier work under Platform item `#1291` remains
 historical component evidence and recovery history, not current completion.
-Open item `#1291` still requires exact-composition commissioning and status
-readback before work item `#1298` may use the runtime for fixture-free journey
-evidence.
+The earlier `#1291` component proof did not compose repository provisioning.
+Its completion is not current complete-system proof. This maintenance repair
+requires exact-composition commissioning and status readback before work item
+`#1298` may use the runtime for fixture-free journey evidence.
 
-This current-composition refresh accepts the later reviewed source identities
+The prior-composition refresh accepted the later reviewed source identities
 without widening the approved boundary. Architecture Packet v6 corrects the
 gate sequence: Platform candidate PR #310 exists first at exact head
 `305862655d2df3185ac74cdebc72cad9919e24e8` and tree
@@ -372,8 +435,8 @@ substitute component fixtures or source tests for that later proof.
 `approved`
 
 Security emits `gate:platform-operation-security` for Platform candidate
-revision `305862655d2df3185ac74cdebc72cad9919e24e8` with tree
-`f7888387a6dead537550b3f105b4c9b8295d807d`, composed only with the four other
+revision `99ee41e5280a08552c9b704549aac4518136dbe0` with tree
+`89ae904b9d2d95a8802314545a52eb4070f2c81b`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 

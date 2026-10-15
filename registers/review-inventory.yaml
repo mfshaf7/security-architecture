@@ -12,7 +12,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-15
+        reviewed_on: 2026-10-16
         status: current
         decision: approved
         review_areas:
@@ -21,6 +21,9 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - governance-console-repository-provisioning-composition
+          - governance-console-early-token-renewal-and-crash-recovery
+          - governance-console-service-source-survival
           - governance-console-complete-runtime-exact-source-set
           - governance-console-external-security-tree-binding
           - governance-console-server-only-credential-composition
@@ -166,10 +169,10 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-repository-custody-controlled-activation.md
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
         reviewed_on: 2026-10-16
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
@@ -261,10 +264,10 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-repository-custody-controlled-activation.md
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
         reviewed_on: 2026-10-16
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
@@ -298,7 +301,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-15
+        reviewed_on: 2026-10-16
         status: current
         decision: approved
         review_areas:
@@ -307,6 +310,9 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - governance-console-repository-provisioning-composition
+          - governance-console-early-token-renewal-and-crash-recovery
+          - governance-console-service-source-survival
           - governance-console-complete-runtime-exact-source-set
           - governance-console-server-only-credential-composition
           - governance-console-workspace-continuity-no-fixture-fallback
