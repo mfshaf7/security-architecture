@@ -78,8 +78,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-delivery-art-superseded-architecture-lineage.md
-        reviewed_on: 2026-10-15
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-16
         status: current
         decision: approved
         review_areas:
@@ -89,10 +89,18 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - wgcf-installed-operation-contract-bundle-packaging
+          - wgcf-nonroot-image-build-contract-proof
           - delivery-art-active-architecture-semantic-validation
           - delivery-art-superseded-architecture-custody-lineage
           - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
+          - repo: workspace-governance-control-fabric
+            path: Dockerfile
+          - repo: workspace-governance-control-fabric
+            path: scripts/smoke_packaged_contracts.py
+          - repo: workspace-governance-control-fabric
+            path: tests/test_packaged_contracts.py
           - repo: workspace-governance-control-fabric
             path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
           - repo: workspace-governance-control-fabric
