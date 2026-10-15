@@ -16,11 +16,11 @@
 - reviewed exact revisions:
   - `governance-operations-console@9ae2edf5d5a4121ca198172225c65984494a3b72`
   - `operator-orchestration-service@bc03994b467e04b82ef39b3c391f98bdbbbdaedf`
-  - `platform-engineering@36510a9783b7b4667e4cdcd60b3144b54515c5f7`
+  - `platform-engineering@df6844ded120c2325bb09d0b41dacc10fe33a44e`
   - `workspace-governance@9bf9d0485dd8292406464a73bc3b881503c52900`
   - `workspace-governance-control-fabric@18210752bc7450f7fed1fe62e8f41957c5031337`
 - reviewed Platform tree:
-  `platform-engineering-tree@79539f1e3ffc0c0dadf8f4dac2c4cef1b21f9842`
+  `platform-engineering-tree@8313815b1684275e92a1fa61ac5e73b111d4d00c`
 - source reviews:
   - [WGCF continuity projection PR #109](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/109)
   - [Console canonical continuity PR #81](https://github.com/mfshaf7/governance-operations-console/pull/81)
@@ -30,6 +30,7 @@
   - [OOS trusted-ancestor profile repair PR #338](https://github.com/mfshaf7/operator-orchestration-service/pull/338)
   - [Platform evidence-profile repair PR #304](https://github.com/mfshaf7/platform-engineering/pull/304)
   - [Platform private-state and rollback-order repair PR #305](https://github.com/mfshaf7/platform-engineering/pull/305)
+  - [Platform governed recovery-successor record PR #306](https://github.com/mfshaf7/platform-engineering/pull/306)
 - decision: `approved`
 
 Security accepts only this exact merged composition for bounded local
@@ -37,13 +38,14 @@ commissioning. The exact Platform tree is part of the decision so later source
 changes cannot silently alter the accepted runtime.
 
 This decision does not assert that commissioning or operating verification has
-already passed. Platform work item `#1291` must still recover its failed
-attempt through the evidence-preserving path, start its governed successor
-from this reviewed base, repeat source evidence and human review, and prove
-activation, restart, rollback, teardown, and restored normal availability.
+already passed. Platform work item `#1291` has recovered its failed attempt,
+merged its governed successor from the reviewed repair base, and must still
+prove activation, restart, rollback, teardown, and restored normal
+availability.
 
 The replacement is a `child_isolated_landing_unit` Security delta because this
-review and rollback boundary is independent from the Platform source repair.
+review and rollback boundary is independent from the Platform source repair
+and its documentation-only recovery successor.
 It changes no identity, credential, action vocabulary, network exposure,
 canonical-data authority, runtime profile, or rollback scope. It accepts only
 the OOS controls that record invalid profile evidence, archive the failed
@@ -147,6 +149,11 @@ owner authority.
   truthful terminal receipts, closed runner mapping, recovery, credential
   custody, private writable OOS state projection, failure-first rollback,
   incomplete rollback, and workspace-continuity activation and removal.
+- Platform PR #306 is merged, approved, and passed exact-head CI. Its only
+  changed surface is the commissioning record that binds PR #305, Security PR
+  #254, the `r2` successor session, and the corrected PR #304 evidence lineage.
+  The runtime implementation and evidence profile are byte-identical to the
+  tree accepted by Security PR #254.
 
 No source test or this decision is represented as live commissioning evidence.
 The `verify-operating` command and OOS operating-ready acquisition remain
@@ -242,13 +249,13 @@ substitute component fixtures or source tests for that later proof.
 `approved`
 
 Security emits `gate:platform-operation-security` for merged Platform revision
-`36510a9783b7b4667e4cdcd60b3144b54515c5f7` with tree
-`79539f1e3ffc0c0dadf8f4dac2c4cef1b21f9842`, composed only with the four other
+`df6844ded120c2325bb09d0b41dacc10fe33a44e` with tree
+`8313815b1684275e92a1fa61ac5e73b111d4d00c`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 
-This approval permits fresh exact-head source evidence and bounded local
-commissioning from that reviewed base. It does not permit a component-only,
+This approval permits retry of the existing successor's bounded local
+operating-evidence acquisition from that reviewed merged tree. It does not permit a component-only,
 stale, partial, dirty, synthetic-substitute, or differently composed source
 set; fixture fallback; browser-held owner credentials; a generic Platform
 command; Console-owned lifecycle state; stage or production use; or a claim
