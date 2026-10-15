@@ -16,11 +16,11 @@
 - reviewed exact revisions:
   - `governance-operations-console@9ae2edf5d5a4121ca198172225c65984494a3b72`
   - `operator-orchestration-service@bc03994b467e04b82ef39b3c391f98bdbbbdaedf`
-  - `platform-engineering@26cc1a34369ba59233e666ec268d1f2a83818fa7`
+  - `platform-engineering@36510a9783b7b4667e4cdcd60b3144b54515c5f7`
   - `workspace-governance@9bf9d0485dd8292406464a73bc3b881503c52900`
   - `workspace-governance-control-fabric@18210752bc7450f7fed1fe62e8f41957c5031337`
 - reviewed Platform tree:
-  `platform-engineering-tree@f1d27bd64d57158a834330cfbfebaf46e60d4ed8`
+  `platform-engineering-tree@79539f1e3ffc0c0dadf8f4dac2c4cef1b21f9842`
 - source reviews:
   - [WGCF continuity projection PR #109](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/109)
   - [Console canonical continuity PR #81](https://github.com/mfshaf7/governance-operations-console/pull/81)
@@ -29,20 +29,18 @@
   - [OOS evidence failure projection PR #337](https://github.com/mfshaf7/operator-orchestration-service/pull/337)
   - [OOS trusted-ancestor profile repair PR #338](https://github.com/mfshaf7/operator-orchestration-service/pull/338)
   - [Platform evidence-profile repair PR #304](https://github.com/mfshaf7/platform-engineering/pull/304)
+  - [Platform private-state and rollback-order repair PR #305](https://github.com/mfshaf7/platform-engineering/pull/305)
 - decision: `approved`
 
-Security accepts only this exact composed candidate for Platform source
-publication, human exact-head review, protected merge, and subsequent bounded
-local commissioning. The Platform commit is a clean local descendant of the
-open PR head because the governing pre-merge gate correctly prevents OOS from
-publishing it until this decision lands. Its exact tree is part of the decision
-so the later merge commit cannot silently change the accepted composition.
+Security accepts only this exact merged composition for bounded local
+commissioning. The exact Platform tree is part of the decision so later source
+changes cannot silently alter the accepted runtime.
 
 This decision does not assert that commissioning or operating verification has
-already passed. Platform work item `#1291` must still publish the accepted
-candidate, rerun exact-head source evidence and CI, obtain human approval,
-merge, and prove activation, restart, rollback, teardown, and restored normal
-availability.
+already passed. Platform work item `#1291` must still recover its failed
+attempt through the evidence-preserving path, start its governed successor
+from this reviewed base, repeat source evidence and human review, and prove
+activation, restart, rollback, teardown, and restored normal availability.
 
 The replacement is a `child_isolated_landing_unit` Security delta because this
 review and rollback boundary is independent from the Platform source repair.
@@ -102,6 +100,9 @@ The exact reviewed composition provides:
 - persisted operation state before worker dispatch, exact PID plus kernel boot
   and process-start identity, lost-worker blocking, bounded retry, and
   cancellation only of the same live process group;
+- a fixed mode-`0700`, UID-1000-owned Platform state directory mounted only at
+  `/var/lib/oos/platform-operation`, with no browser projection, caller-chosen
+  host path, or credential storage in that directory;
 - canonical WGCF continuity validation, projection-digest verification, exact
   WGCF/OOS Registry reconciliation, and no fixture fallback while configured
   owner truth is loading or unavailable;
@@ -133,17 +134,19 @@ intentionally pending.
 - OOS PRs #336, #337, and #338 are merged, approved, and passed exact-head CI.
   Security work item #1302 separately accepted the Platform-operation adapter's
   finite command, denial, disclosure, replay, recovery, and audit boundary;
-  the two repair PRs narrow evidence-profile failure and recovery behavior
-  without changing that command boundary.
-- The clean replacement Platform candidate passed the complete repository validation with
-  the documented explicit OOS source root. Focused tests cover the finite
+the two OOS repair PRs narrow evidence-profile failure and recovery behavior
+without changing that command boundary. The Platform repairs correct the
+profile timeout, mount one fixed operator-private state directory into the
+non-root OOS container, and remove the OOS binding before rollback waits for
+readiness. They do not add an action, caller, credential, network exposure, or
+owner authority.
+- Platform PRs #304 and #305 are merged, approved, and passed exact-head CI.
+  The complete repository validation also passed locally with the documented
+  explicit OOS source root. Focused tests cover the finite
   catalog, stale Security denial, exact approval, conflicting replay,
   truthful terminal receipts, closed runner mapping, recovery, credential
-  custody, incomplete rollback, and workspace-continuity activation and
-  removal.
-- The earlier Platform PR head passed both source CI and repository-posture
-  CI. The accepted follow-up commit must still be published and pass those
-  checks at its new exact head before merge.
+  custody, private writable OOS state projection, failure-first rollback,
+  incomplete rollback, and workspace-continuity activation and removal.
 
 No source test or this decision is represented as live commissioning evidence.
 The `verify-operating` command and OOS operating-ready acquisition remain
@@ -201,6 +204,11 @@ private material. Teardown additionally suspends the reused composition. A
 later Security decision with `status` other than `accepted`, a changed source
 tree, or removal of the decision blocks fresh provider startup.
 
+The OOS binding is removed before cross-domain rollback waits for OOS
+readiness. If environment or state-volume removal fails, cross-domain cleanup
+is not represented as successful and the operator receives an incomplete
+rollback result for bounded retry.
+
 ### Audit And Visibility
 
 Receipts bind the Architecture Packet, Security decision digest and URI,
@@ -219,6 +227,12 @@ produce a success receipt when cleanup is incomplete. Availability and
 performance on this single host remain operational concerns, not expanded
 authorization.
 
+The dedicated OOS operation-state directory persists across pod restart and is
+preserved when its mount is removed. It is restricted to the local operator
+account and contains workflow state rather than the provider caller secret.
+Host compromise remains inside the already accepted single-operator local
+trust boundary.
+
 The final fixture-free idea-to-product journey, including creation of a real
 to-do application, remains owned by work item `#1298`. This decision does not
 substitute component fixtures or source tests for that later proof.
@@ -227,18 +241,18 @@ substitute component fixtures or source tests for that later proof.
 
 `approved`
 
-Security emits `gate:platform-operation-security` for Platform candidate
-`26cc1a34369ba59233e666ec268d1f2a83818fa7` with tree
-`f1d27bd64d57158a834330cfbfebaf46e60d4ed8`, composed only with the four other
+Security emits `gate:platform-operation-security` for merged Platform revision
+`36510a9783b7b4667e4cdcd60b3144b54515c5f7` with tree
+`79539f1e3ffc0c0dadf8f4dac2c4cef1b21f9842`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 
-This approval permits publication of that candidate, fresh exact-head source
-evidence, human review, protected merge, and bounded local commissioning. It
-does not permit a component-only, stale, partial, dirty, synthetic-substitute,
-or differently composed source set; fixture fallback; browser-held owner
-credentials; a generic Platform command; Console-owned lifecycle state; stage
-or production use; or a claim that operating readiness has already passed.
+This approval permits fresh exact-head source evidence and bounded local
+commissioning from that reviewed base. It does not permit a component-only,
+stale, partial, dirty, synthetic-substitute, or differently composed source
+set; fixture fallback; browser-held owner credentials; a generic Platform
+command; Console-owned lifecycle state; stage or production use; or a claim
+that operating readiness has already passed.
 
 Any change to the accepted Platform tree, owner revision set, identity,
 credential custody, action vocabulary, canonical-data authority, network
