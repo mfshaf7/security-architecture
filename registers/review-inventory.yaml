@@ -73,7 +73,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        path: docs/reviews/components/2026-10-15-delivery-art-superseded-architecture-lineage.md
         reviewed_on: 2026-10-15
         status: current
         decision: approved
@@ -82,18 +82,16 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - governance-console-workspace-continuity-read-boundary
-          - governance-console-canonical-projection-integrity
-          - governance-console-continuity-default-deny-activation
-          - governance-console-recovery-rollback-revocation
+          - delivery-art-active-architecture-semantic-validation
+          - delivery-art-superseded-architecture-custody-lineage
+          - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/workspace_continuity_projection.py
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
           - repo: workspace-governance-control-fabric
-            path: schemas/workspace-continuity-projection.schema.json
-          - repo: workspace-governance-control-fabric
-            path: tests/test_workspace_continuity_projection.py
+            path: tests/test_delivery_art_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -536,7 +534,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        path: docs/reviews/components/2026-10-15-delivery-art-superseded-architecture-lineage.md
         reviewed_on: 2026-10-15
         status: current
         decision: approved
@@ -545,18 +543,16 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
-          - governance-console-workspace-continuity-read-boundary
-          - governance-console-canonical-projection-integrity
-          - governance-console-continuity-default-deny-activation
-          - governance-console-recovery-rollback-revocation
+          - delivery-art-active-architecture-semantic-validation
+          - delivery-art-superseded-architecture-custody-lineage
+          - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
           - repo: workspace-governance-control-fabric
-            path: packages/control_fabric_core/src/control_fabric_core/workspace_continuity_projection.py
+            path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
           - repo: workspace-governance-control-fabric
-            path: schemas/workspace-continuity-projection.schema.json
-          - repo: workspace-governance-control-fabric
-            path: tests/test_workspace_continuity_projection.py
+            path: tests/test_delivery_art_readiness.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
