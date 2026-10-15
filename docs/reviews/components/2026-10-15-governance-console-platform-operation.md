@@ -10,15 +10,15 @@
 - governing gate: `gate:platform-operation-security`
 - architecture packet: `architecture-packet:delivery-1275-v1`
 - architecture packet URI:
-  `wgcf://artifacts/delivery-art/sha256/ea428f9ad9a14368aa9f789be278d3aac44def2cb2a4bc31caec7768f03335bb`
+  `wgcf://artifacts/delivery-art/sha256/8ad9c43664bb580a2eef7a23a8ddfa77c95bdea7bfc00efcb424d5008b71062a`
 - architecture packet digest:
-  `sha256:ea428f9ad9a14368aa9f789be278d3aac44def2cb2a4bc31caec7768f03335bb`
+  `sha256:8ad9c43664bb580a2eef7a23a8ddfa77c95bdea7bfc00efcb424d5008b71062a`
 - reviewed exact revisions:
-  - `governance-operations-console@9ae2edf5d5a4121ca198172225c65984494a3b72`
-  - `operator-orchestration-service@c87d1fa7a242c495fae7c942b1437af78acfc094`
+  - `governance-operations-console@98f051aeab4e4414768e42a90533083aebea01e0`
+  - `operator-orchestration-service@bdc72c401c603bbe543a67a1e1e60bd558dfbef9`
   - `platform-engineering@068c6078755ec8a3df73e65f67131eb3e4cf07fa`
-  - `workspace-governance@9bf9d0485dd8292406464a73bc3b881503c52900`
-  - `workspace-governance-control-fabric@b52c8c422cf91bc2270363ed62ca360393984c08`
+  - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
+  - `workspace-governance-control-fabric@981aa6259b2dcc65d41dc739bddadbb395794973`
 - reviewed Platform tree:
   `platform-engineering-tree@0ce3a6aeedc81227f2e55ac06a7f93eb271065b2`
 - source reviews:
@@ -38,28 +38,36 @@
   - [Platform operating-proof receipt-replay successor PR #309](https://github.com/mfshaf7/platform-engineering/pull/309)
   - [WGCF historical architecture-lineage repair PR #110](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/110)
   - [OOS Epic retirement field-shape repair PR #341](https://github.com/mfshaf7/operator-orchestration-service/pull/341)
+  - [Workspace Governance Console operating-truth correction PR #281](https://github.com/mfshaf7/workspace-governance/pull/281)
+  - [WGCF continuity-schema packaging repair PR #111](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/111)
+  - [Security repository-custody controlled-activation PR #261](https://github.com/mfshaf7/security-architecture/pull/261)
+  - [OOS repository-custody activation PR #342](https://github.com/mfshaf7/operator-orchestration-service/pull/342)
+  - [Console fixture-isolation PR #82](https://github.com/mfshaf7/governance-operations-console/pull/82)
+  - [Console fail-closed resume PR #83](https://github.com/mfshaf7/governance-operations-console/pull/83)
 - decision: `approved`
 
 Security accepts only this exact reviewed composition for bounded local
 commissioning. The exact Platform tree is part of the decision so later source
 changes cannot silently alter the accepted runtime.
 
-This decision does not itself assert current commissioning or operating
-verification. Platform work item `#1291` retains the completed component-level
-operating proof and its recovery history. The current source-set refresh still
-requires exact-composition activation and status readback before work item
-`#1298` may use the runtime for fixture-free journey evidence.
+This decision does not itself assert current commissioning or complete-system
+operating verification. Earlier work under Platform item `#1291` remains
+historical component evidence and recovery history, not current completion.
+Open item `#1291` still requires exact-composition commissioning and status
+readback before work item `#1298` may use the runtime for fixture-free journey
+evidence.
 
-This current-composition refresh accepts three later reviewed source identities
+This current-composition refresh accepts the later reviewed source identities
 without widening the approved boundary. Platform merge
 `068c6078755ec8a3df73e65f67131eb3e4cf07fa` has the exact tree already accepted
-for PR #309. OOS PR #341 narrows Epic retirement to the form shape OpenProject
-actually exposes, without changing Platform-operation commands, credentials,
-identity, or network reachability. WGCF PR #110 preserves immutable superseded
-Architecture Packet lineage without weakening semantic validation for the
-active packet or Review Packet evidence. The generated Security change-record
-index is refreshed in this same landing so the new security-evidenced owner
-record remains visible before composition activation.
+for PR #309. Workspace Governance PR #281 corrects the declared Console
+operating truth; WGCF PR #111 packages the canonical continuity schema used by
+its existing projection; Security PR #261 accepts bounded repository-custody
+activation; and OOS PR #342 activates only that already reviewed custody
+manifest. Console PRs #82 and #83 isolate live records from fixtures and fail
+closed when resume context is stale or unknown. Those repairs narrow failure
+behavior and current source identity; they add no Platform action, caller,
+credential, network exposure, canonical-data authority, or rollback scope.
 
 The replacement is a `child_isolated_landing_unit` Security delta because this
 review and rollback boundary is independent from the Platform source repairs
@@ -128,6 +136,10 @@ The exact reviewed composition provides:
 - canonical WGCF continuity validation, projection-digest verification, exact
   WGCF/OOS Registry reconciliation, and no fixture fallback while configured
   owner truth is loading or unavailable;
+- repository-custody activation only through the separately accepted bounded
+  manifest, provider identities, and server-side credential path;
+- live primary-record isolation from fixture records and fail-closed resume
+  handling when no exact lifecycle record can be selected;
 - runtime-only activation of
   `WGCF_WORKSPACE_CONTINUITY_PROJECTION_ENABLED=true` using the existing
   server-side Console WGCF credential, with literal-value verification and
@@ -145,8 +157,17 @@ The exact reviewed composition provides:
 ### Operating Evidence
 
 This is an exact-source acceptance decision. The current reviewed revisions are
-merged; current-composition activation and fixture-free journey evidence remain
-separate operating proofs.
+merged; complete Platform commissioning and fixture-free journey evidence
+remain separate operating proofs.
+
+- Workspace Governance PR #281 is merged and records the corrected current
+  capability posture. WGCF PR #111 is merged and packages the corresponding
+  continuity schema into the runtime artifact without changing WGCF mutation
+  authority. Live work item `#1295` then returned HTTP 200 from both Console
+  Registry and Portfolio continuity endpoints, with the same Workspace
+  Governance authority revision and no canonical mutation. That readback is
+  current operating evidence for the continuity projection only; it is not
+  Platform commissioning or the final idea-to-product journey.
 
 - WGCF PR #109 is merged, approved, and passed both exact-head validation
   checks; its projection was also exercised against the current committed
@@ -160,6 +181,11 @@ separate operating proofs.
   identity, duplicate or contradictory lifecycle state, stale actionability,
   OOS drift, tampered projection digest, browser credential exclusion, and
   live-mode fixture-dashboard exclusion.
+- Console PRs #82 and #83 are merged, approved, and passed exact-head CI. PR
+  #82 prevents live primary records from being populated by fixture data. PR
+  #83 refuses stale or unknown resume context instead of silently selecting a
+  different lifecycle record. Neither repair grants Console owner credentials,
+  canonical mutation authority, or a broader action vocabulary.
 - OOS PRs #336, #337, #338, #339, #340, and #341 are merged, approved, and passed
   exact-head CI.
   Security work item #1302 separately accepted the Platform-operation adapter's
@@ -176,6 +202,16 @@ separate operating proofs.
   may omit the Iteration field that its live form does not expose, while
   non-Epic retirement stays fail closed. It adds no Platform command, caller,
   credential, source-executor action, or Console authority.
+- OOS PR #342 is merged, approved, and passed exact-head CI. It activates only
+  the bounded repository-custody manifest accepted by Security PR #261 and
+  pins the corrected Workspace Governance authority. It does not add a custody
+  action, provider, permission, destination, or credential path.
+- The generated Security change-record index includes OOS's merged
+  `2026-10-15-repository-custody-source-activation` record, preserving the
+  owner-to-Security evidence link at the reviewed OOS revision.
+- Security PR #261 is merged, approved, and passed exact-head CI. It preserves
+  fresh Platform credential delivery and downstream live journey proof as
+  operating conditions rather than treating source activation as readiness.
 - Platform PRs #304 and #305 are merged, approved, and passed exact-head CI.
   The complete repository validation also passed locally with the documented
   explicit OOS source root. Focused tests cover the finite
@@ -214,9 +250,16 @@ separate operating proofs.
   PR head `328af66193a1f6e5a9118a2107106d2dba65aad2`.
 
 No source test or this decision is represented as current live commissioning
-evidence. The completed `#1291` proof remains component evidence, while `#1298`
-must demonstrate the current exact composition through the real Console
-journey after activation and status readback.
+evidence. Earlier `#1291` attempts remain historical component evidence while
+the item stays open for current exact-composition commissioning. Work item
+`#1298` must then demonstrate that composition through the real Console journey
+after activation and status readback.
+
+The negative decision is equally binding: the prior Architecture Packet
+digest or any prior Console, OOS, Workspace Governance, or WGCF revision set is
+stale evidence and cannot authorize the composed Platform merge. Component-only
+proof, a partial source set, or the `#1295` continuity readback by itself also
+cannot satisfy `gate:platform-operation-security`.
 
 ## Review Areas
 
