@@ -44,6 +44,61 @@ repository custody can be called operating-ready.
 
 ## Scope Delta
 
+### 2026-10-16 WGCF Readiness Source-Activation Maintenance
+
+Maintenance Landing Unit
+`maintenance-1275-custody-readiness-activation-security` uses
+`child_isolated_landing_unit` for the existing gate's Security review boundary.
+The source baseline is WGCF
+`bccd3742213bf5082da1c86b2265d19c20a48b8c`; the accepted OOS, Console,
+Platform and Workspace Governance heads remain those in the current composed
+Platform review. This is not a new ART child or capability.
+
+The live Console request reached WGCF after the packaged-contract repair and
+was refused because its runtime factory still requires the upstream policy's
+`runtime_activation.enabled` flag. That authority's schema fixes the flag at
+`false` and maturity at `contract-only`. OOS already uses a separately reviewed
+source activation. Its approval did not implicitly activate WGCF. Do not edit
+the upstream policy or schema to bypass this mismatch or imply that the
+separate repository-lifecycle runtime has been approved.
+
+Security extends `gate:repository-custody-runtime-activation` to one bounded
+WGCF source change using the same WGCF manifest activation pattern already used
+for Prototype maturity, Intake, Inventory and Product Publication:
+
+- pin the current unchanged Workspace Governance policy and schemas;
+- record source `runtime_activation` in the WGCF custody manifest, with a
+  pinned reference to the merged revision and content digest of this review;
+- admit only the existing `link-existing` and `provision-new` readiness
+  capabilities, with unchanged GitHub organization provisioning scope;
+- require both the admitted `dev-integration` runtime profile and explicit
+  Platform-owned custody-readiness enablement in addition to source approval;
+- reject missing, disabled, malformed or unreviewed source activation; and
+- leave repository lifecycle activation, provider effects, OOS mutation,
+  caller authorization, credential custody and downstream admission unchanged.
+
+WGCF remains a non-provider-mutating readiness authority. This decision grants
+no new action, provider, destination, identity, role, permission, browser
+authority or automatic downstream effect. Default runtime startup remains
+denied. The implementation must not treat a bare environment flag or an
+unvalidated manifest field as Security acceptance.
+
+Before merge, owner proof must construct the actual configured runtime factory,
+not only load schemas or directly instantiate a test service. Positive proof
+must use the normal reviewed bundle while the upstream global authority stays
+false. Negative proof must cover default/profile denial, disabled or missing
+source activation, invalid review evidence and unchanged lifecycle denial.
+Installed-image proof must verify those source and configuration bindings.
+The real request must then be exercised through the Console with canonical
+WGCF/OOS/provider receipt readback and no fixture or direct-CLI substitution.
+
+This is source-activation approval, not current operating readiness or an exact
+composition update. After the bounded WGCF change lands, the existing composed
+Platform YAML/Markdown decision must accept its exact merged source before
+Platform reactivates it. No post-review Platform source-pin commit is needed.
+Rollback disables Platform's existing custody enablement or reverts the WGCF
+source activation, preserving decisions, custody history and provider state.
+
 ### 2026-10-16 Retained-Request Readback Maintenance
 
 Maintenance Landing Unit `maintenance-1275-repository-readback-security` uses
@@ -231,6 +286,8 @@ do not require a new defect, story, control plane, or credential mechanism.
 
 Approved:
 
+- the bounded WGCF readiness source-activation maintenance described above,
+  under the same gate and the established WGCF manifest/review model;
 - `gate:repository-custody-runtime-activation` for the bounded OOS `#1288`
   source-activation Landing Unit;
 - reuse of the implemented repository-custody and provisioning workflows and
