@@ -22,6 +22,7 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - governance-console-repository-provisioning-composition
+          - governance-console-canonical-repository-resolution-state
           - governance-console-public-probe-contract-and-bounded-recovery
           - governance-console-early-token-renewal-and-crash-recovery
           - governance-console-service-source-survival
@@ -181,6 +182,8 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - repository-custody-canonical-request-enumeration
+          - repository-custody-proposal-gate-canonical-resolution
+          - repository-custody-frozen-acknowledgement-recovery
           - repository-custody-browser-reload-without-fixtures
           - governance-console-server-only-owner-credentials
           - governance-console-workspace-continuity-no-fixture-fallback
@@ -276,6 +279,8 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - repository-custody-canonical-request-enumeration
+          - repository-custody-proposal-gate-canonical-resolution
+          - repository-custody-frozen-acknowledgement-recovery
           - repository-custody-bound-caller-readback
           - governance-console-platform-operation-exact-caller-approval
           - governance-console-finite-command-and-effect-boundary
@@ -312,6 +317,7 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - governance-console-repository-provisioning-composition
+          - governance-console-canonical-repository-resolution-state
           - governance-console-public-probe-contract-and-bounded-recovery
           - governance-console-early-token-renewal-and-crash-recovery
           - governance-console-service-source-survival

@@ -14,14 +14,17 @@
 - architecture packet digest:
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
-  - `governance-operations-console@8b7eac7066d05beae3234429e9e696e3feaa3e1c`
-  - `operator-orchestration-service@5c75a8da879884bab924ac8d0a4476298c0ae7e1`
-  - `platform-engineering@b5ff79ba09191dd141760fc2f4b0fa01ca14a2e2`
+  - `governance-operations-console@b82c0a9932531627954bc8a2ae0836a8eba5bb7f`
+  - `operator-orchestration-service@17c9d14c3d07691cca8622e8c7db3ecbcb9c201f`
+  - `platform-engineering@e292b3acff8b498f9b2586ffde25ec49f08deed6`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@981aa6259b2dcc65d41dc739bddadbb395794973`
 - reviewed Platform tree:
-  `platform-engineering-tree@01542224d6948bd72183a084d70598da7860a317`
+  `platform-engineering-tree@cf511ffcd46f27445cb4f591c807afa582da8cb5`
 - source reviews:
+  - [Platform canonical resolution state PR #313](https://github.com/mfshaf7/platform-engineering/pull/313)
+  - [OOS canonical Repository gate PR #345](https://github.com/mfshaf7/operator-orchestration-service/pull/345)
+  - [Console live Repository gate PR #85](https://github.com/mfshaf7/governance-operations-console/pull/85)
   - [Platform public Console probe contract PR #312](https://github.com/mfshaf7/platform-engineering/pull/312)
   - [OOS retained request readback PR #344](https://github.com/mfshaf7/operator-orchestration-service/pull/344)
   - [Console canonical Repository register PR #84](https://github.com/mfshaf7/governance-operations-console/pull/84)
@@ -54,6 +57,68 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+Maintenance Landing Unit `maintenance-1275-repository-gate-security` uses
+`child_isolated_landing_unit` for the existing cross-domain boundary review.
+It extends this decision, not the ART tree or the authority architecture. The
+exact revisions in the Summary and YAML decision are authoritative; historical
+acceptances below are not current source bindings.
+
+The Repository-to-Proposal delta is approved for the existing single-operator,
+loopback-only `dev-integration` composition. The operator selects a retained
+successful custody request and its exact provider receipt in Repository
+Control. Console supplies verified session authorization, server-only caller
+attribution and deterministic replay identity. OOS admits only the authenticated
+Console caller, rejects development bypass and caller/operator mismatch, checks
+the canonical accepted Proposal version and pending gate, and independently
+reads and verifies the retained custody evidence before any canonical write.
+Owner and source reference are derived from that evidence, never accepted as
+browser authority. No provider mutation, new credential, role, installation
+scope, repository admission or workspace promotion is added by resolution.
+
+Canonical state retains one bounded typed current resolution with exact replay
+inputs and original source/timestamp bindings. The Platform-owned optional
+schema and OOS mirror preserve older records and do not create another ledger
+or accumulate history in the state field. Immutable events remain OpenProject
+journals. When a source write committed but journaling or the response failed,
+canonical readback exposes pending acknowledgement and exact recovery inputs.
+Console can retry those frozen inputs after reload without reapplying the
+source update, rewriting Disposition or manufacturing a local receipt.
+The server validates owner, record, event, resolution identity and custody
+receipt agreement before reporting success. Pending history is not an actionable
+handoff; offline or malformed owner truth never substitutes fixtures.
+
+The empty Repository-register path now mounts its existing dialog stack, so
+first-time provisioning is operable before a custody row exists. The UI keeps
+the graduated Teras primitives and existing operator roles; no new control
+plane or special one-off approval mechanism is introduced.
+
+Reviewed source evidence comprises the Platform optional-state compatibility
+and bounds tests, full Platform validation, OOS unit and recovery tests, API
+contract synchronization, workflow bundles, exact-base governance gates,
+API/worker image build and smoke, and Console semantic/type/architecture/build
+validation. Isolated browser conformance covers first-use provisioning,
+canonical pending request reload and offline denial without live mutation.
+That mocked UI proof is not final operating evidence. The real to-do journey
+and refreshed complete-runtime operating proof remain outstanding.
+
+Local validation also encountered native build-process segmentation faults;
+Git integrity and standalone type checks passed, and a preserved-cache/cold
+build succeeded. This review neither identifies their root cause nor certifies
+host hardware. Do not silently relabel those failures as an application defect
+or a memory-pressure diagnosis.
+
+Rollback uses the existing complete-runtime shutdown/revocation path and
+preserves canonical records and journals. Do not downgrade to a decoder that
+predates the optional resolution/event contract after it has been used, or
+delete canonical outcomes to make old source appear compatible. Runtime
+activation remains denied until this exact source acceptance is current.
+
+Source review references: [Platform schema #313](https://github.com/mfshaf7/platform-engineering/pull/313),
+[OOS canonical gate #345](https://github.com/mfshaf7/operator-orchestration-service/pull/345),
+and [Console gate adapter #85](https://github.com/mfshaf7/governance-operations-console/pull/85).
+
+### Prior Public-Probe Maintenance Acceptance
 
 Verification-only maintenance Landing Unit
 `maintenance-1275-runtime-probe-security` uses `child_isolated_landing_unit`
@@ -208,6 +273,11 @@ The trust split remains explicit:
 ### Implemented Control
 
 The exact reviewed composition provides:
+
+- a Repository-owned Proposal gate outcome whose source-version and successful
+  custody evidence are verified before mutation; current typed canonical state
+  survives recent-receipt rotation, while immutable journal history and frozen
+  replay inputs allow browser recovery without another source mutation;
 
 - an external Security decision contract whose gate, initiative, work item,
   Architecture Packet, five owner revisions, and Platform tree must all match;
@@ -386,7 +456,7 @@ This shared-secret arrangement is accepted only for the single-operator,
 loopback and cluster-local `dev-integration` lane. It is not approval for
 remote, shared, stage, production, or public access.
 
-### Command And Effect Boundary
+### Platform Command And Effect Boundary
 
 OOS and Platform independently validate the same finite action, subject,
 source version, capability, intent digest, and operator approval. Platform
@@ -394,6 +464,20 @@ constructs every owner command itself. A caller cannot supply a repository,
 path, command, argument, destination, or credential. Terminal Platform
 receipts and current Console readback—not OOS coordination state alone—are the
 effect evidence.
+
+### Repository Gate Authority And Recovery
+
+The distinct Repository resolution operation accepts only a selected retained
+custody request and exact receipt plus the reviewed Proposal source and notes.
+It cannot perform a provider action or select Platform effects. OOS derives
+the resolved owner/reference from its validated custody store. The current
+typed resolution remains authoritative when the bounded recent-receipt list
+rotates; pending history and exact retry inputs remain visible after reload.
+The matching source write and history acknowledgement are distinct, and only
+the latter permits a completed Console handoff projection. Source tests cover
+negative caller, stale source, changed receipt, conflicting replay, source and
+event interruption, cold recovery and receipt-list rotation cases. Console
+tests reject inconsistent owner/record/event/receipt acknowledgement bindings.
 
 ### Canonical Continuity And Disclosure
 
@@ -459,9 +543,9 @@ substitute component fixtures or source tests for that later proof.
 
 `approved`
 
-Security emits `gate:platform-operation-security` for Platform candidate
-revision `b5ff79ba09191dd141760fc2f4b0fa01ca14a2e2` with tree
-`01542224d6948bd72183a084d70598da7860a317`, composed only with the four other
+Security emits `gate:platform-operation-security` for merged Platform
+revision `e292b3acff8b498f9b2586ffde25ec49f08deed6` with tree
+`cf511ffcd46f27445cb4f591c807afa582da8cb5`, composed only with the four other
 exact revisions listed in the Summary and the current Architecture Packet URI
 and digest.
 
