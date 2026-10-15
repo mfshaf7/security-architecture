@@ -37,6 +37,7 @@ Current baseline outputs:
 - [`2026-09-06-workspace-intake-authority-boundary.md`](2026-09-06-workspace-intake-authority-boundary.md)
 - [`2026-09-10-prototype-maturity-normal-availability.md`](2026-09-10-prototype-maturity-normal-availability.md)
 - [`2026-09-11-agent-gary-source-identity-boundary.md`](2026-09-11-agent-gary-source-identity-boundary.md)
+- [`2026-10-15-repository-custody-controlled-activation.md`](2026-10-15-repository-custody-controlled-activation.md)
 
 Owner repos should reference a concrete dated review artifact from this
 directory when workspace governance requires a `review_output_path`.
