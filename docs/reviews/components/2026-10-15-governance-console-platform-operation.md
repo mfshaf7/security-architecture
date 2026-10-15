@@ -18,10 +18,11 @@
   - `operator-orchestration-service@17c9d14c3d07691cca8622e8c7db3ecbcb9c201f`
   - `platform-engineering@e292b3acff8b498f9b2586ffde25ec49f08deed6`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
-  - `workspace-governance-control-fabric@981aa6259b2dcc65d41dc739bddadbb395794973`
+  - `workspace-governance-control-fabric@bccd3742213bf5082da1c86b2265d19c20a48b8c`
 - reviewed Platform tree:
   `platform-engineering-tree@cf511ffcd46f27445cb4f591c807afa582da8cb5`
 - source reviews:
+  - [WGCF installed contract packaging PR #112](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/112)
   - [Platform canonical resolution state PR #313](https://github.com/mfshaf7/platform-engineering/pull/313)
   - [OOS canonical Repository gate PR #345](https://github.com/mfshaf7/operator-orchestration-service/pull/345)
   - [Console live Repository gate PR #85](https://github.com/mfshaf7/governance-operations-console/pull/85)
@@ -57,6 +58,49 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+Maintenance Landing Unit `maintenance-1275-packaged-contracts-security` uses
+`child_isolated_landing_unit` for this existing exact-source acceptance. The
+current Summary and YAML decision supersede older source bindings below.
+
+The real Console provisioning submission exposed a WGCF packaging failure:
+the installed custody loader searched `/usr/local/contracts`, although the
+image contained the pinned bundle under `/app/contracts`. Readiness failed
+before the provider operation. This is not an approval or operator-identity
+bypass, and no successful real-repository creation is claimed.
+
+WGCF PR #112 binds the existing custody/lifecycle, repository readiness,
+Agent Action, and Product Publication loaders to their packaged bundles. It
+changes no policy, request schema, role, authorization, provider permission,
+credential, or runtime activation gate. The default-denied boundaries remain
+default-denied. Both targets inherit a build check that loads all twelve
+operation bundles and the continuity schema through installed Python with
+isolated imports, normal image bindings, and no test-supplied root override.
+The check runs as UID10001; the base then restores its pre-existing root build
+identity solely for subsequent package installation. Both final runtime users
+remain UID10001. Existing CI and image publication require this shared build
+to pass; no CI workflow or GitHub App permission change is included.
+
+The reviewed candidate `36b60db3f8c85bf190c687931a48b2b20bca7293` and merged
+WGCF head in the Summary have the identical tree
+`2cbff29dd4530d45619b685246448192632e1744`. Source proof passed the isolated
+owner validator and 510 tests, API/worker image builds, thirteen installed
+contract/schema checks in each image, API health/readiness and exact revision
+readback, worker status and controlled-proof status, runtime UID, immutable
+revision marker and writable evidence roots. Missing custody manifests fail;
+both unapproved worker startup paths remain denied. Exact-base diff checks
+used fetched `origin/main` at `981aa6259b2dcc65d41dc739bddadbb395794973`.
+
+Decision: approved for the already-admitted single-operator, loopback-only
+`dev-integration` composition at the Summary's exact source set. Console,
+OOS, Workspace Governance, and Platform head/tree bindings are unchanged.
+Platform must refresh its private accepted policy and deploy the new exact
+WGCF image before resumed operation. Image smoke is not successful live
+provisioning, final to-do acceptance, or a complete-runtime operating proof;
+those proofs remain outstanding. Rollback uses the existing Platform path,
+preserves canonical records, and does not substitute fixture success.
+
+### Prior Repository Gate Maintenance Acceptance
 
 Maintenance Landing Unit `maintenance-1275-repository-gate-security` uses
 `child_isolated_landing_unit` for the existing cross-domain boundary review.
