@@ -14,14 +14,16 @@
 - architecture packet digest:
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
-  - `governance-operations-console@b82c0a9932531627954bc8a2ae0836a8eba5bb7f`
-  - `operator-orchestration-service@17c9d14c3d07691cca8622e8c7db3ecbcb9c201f`
+  - `governance-operations-console@ebded3d49d18ce6b9453c3beb946ec42f03b6144`
+  - `operator-orchestration-service@31981ffeb036cbaa6db2042a7848cd589c4e9a4b`
   - `platform-engineering@e292b3acff8b498f9b2586ffde25ec49f08deed6`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@39ed2c13bfc4855b39b84cb0021eb2d3e2256569`
 - reviewed Platform tree:
   `platform-engineering-tree@cf511ffcd46f27445cb4f591c807afa582da8cb5`
 - source reviews:
+  - [OOS partial provisioning baseline PR #346](https://github.com/mfshaf7/operator-orchestration-service/pull/346)
+  - [Console retained correction and resume PR #86](https://github.com/mfshaf7/governance-operations-console/pull/86)
   - [WGCF bounded custody source activation PR #113](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/113)
   - [Security WGCF source-activation approval PR #269](https://github.com/mfshaf7/security-architecture/pull/269)
   - [WGCF installed contract packaging PR #112](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/112)
@@ -60,6 +62,78 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+Maintenance Landing Unit `maintenance-1275-provisioning-baseline-security` uses
+`child_isolated_landing_unit` for this existing exact-composition review. The
+Summary and YAML bind the two newly merged owner revisions. Platform head/tree,
+Workspace Governance, WGCF, source activation and admission boundaries remain
+unchanged. This is not a new ART child or approval mechanism.
+
+Design intent: complete the unchanged approved provisioning baseline when a
+real creation has been acknowledged but separate provider readback mismatches.
+The Console must display a valid failed observation rather than reject it as
+malformed success evidence, and must expose retained correction and interrupted
+request recovery without adopting an unrelated repository or rewriting history.
+
+Implemented control: OOS may finish only the approved mutable settings through
+the same dedicated provisioning App after an acknowledged immutable ID and fresh
+active owner/name readback. The bounded PATCH does not include rename, transfer,
+archive, delete or initialization. A separate read must prove every exact
+setting before successful custody. Unknown acknowledgement and coordinate
+collisions grant no settings authority; observed wrong identity, coordinates or
+archive state fail closed. Authorization failure is bounded and cannot borrow
+the read-only App, human credentials or another provider destination.
+
+A nonretryable failed creation is corrected only through a new, explicitly
+reviewed request causally bound to its retained owner result. OOS validates
+creation provenance, acknowledged ID, unchanged target/settings/custody/operator
+and credential-binding identity, then obtains current WGCF readiness. It resumes
+by that ID and never creates again. The original failed record and receipt remain
+immutable. Applying checkpoints carry no fabricated terminal receipt and remain
+readable after interruption. Retry rereads provider truth before any further
+approved operation, including recovery after a lost settings acknowledgement.
+
+Console keeps exact success settings, active-state, identity and receipt checks.
+Only failed observations may carry the mismatch that explains their failure;
+they never produce successful Repository custody or unlock the Proposal gate.
+The existing dialog restores retained requests after reload, locks correction
+target/settings and requires fresh baseline review and approval. Applying and
+retryable requests resume through the same authenticated POST path: the server
+rereads the canonical original request, verifies current operator/policy/binding
+identity, and resubmits its exact original approval and digest. Browser fields
+cannot reconstruct or replace that authority. No credential, policy or provider
+call enters the browser, and no new endpoint, action, role or downstream effect
+is admitted.
+
+Source evidence: reviewed candidates OOS `4360777b2353c9494e359c92d2da56c8c0ae9d91`
+and Console `d9a7ad374f6b8261967af31f975fffa9b83ca903` match their merged trees
+`d6994a44e20934cb3e76a7de4f519b6e45ebc9bf` and
+`b1178e438e184fdf92652f1261bddf5776b0670d`. OOS full serialized tests, 32 focused
+client/service cases, deterministic bundles, all 178 documented API routes,
+fetched-base controls, API/worker builds and health/default-denial smoke passed.
+Console all guards, 544 tests, types, repository safety, production audit and
+exact-base checks passed. Isolated browser conformance proved failed readback,
+locked target, fresh correction review, preserved original failure, reload and
+exact-request resume without live mutations. Both exact-head CI runs passed:
+OOS `38850468538` and Console `38850386946`, including production build.
+
+Local production builds also failed on the unchanged accepted baseline. The
+operator directed continuation using successful GitHub CI for production-build
+evidence while preserving other local checks and all review/runtime gates. This
+is recorded validation provenance, not a durable weakening of the delivery
+contract or a claim about the host's root cause. Runtime acceptance still requires
+the actual Console correction and provider readback; synthetic UI proof and CI
+alone cannot establish a successful real repository, app or operating lifecycle.
+
+Decision: approved for the existing single-operator, loopback-only
+`dev-integration` composition at the Summary's exact source set. Platform must
+recommission that set and refresh dedicated credentials before the real journey
+continues. Rollback preserves repositories and immutable results; it does not
+delete a partially created repository, rewrite its receipt, substitute fixtures
+or claim downstream admission. The original real failure remains historical
+evidence even if a later reviewed correction succeeds.
+
+### Prior WGCF Readiness Maintenance Acceptance
 
 Maintenance Landing Unit `maintenance-1275-custody-readiness-composition-security` uses
 `child_isolated_landing_unit` for this existing exact-source acceptance. The
