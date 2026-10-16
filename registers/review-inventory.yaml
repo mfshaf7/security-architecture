@@ -739,7 +739,7 @@ review_inventory:
         decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-15
+        reviewed_on: 2026-10-16
         status: current
         decision: approved
         review_areas:
