@@ -16,10 +16,39 @@
   `sha256:ea428f9ad9a14368aa9f789be278d3aac44def2cb2a4bc31caec7768f03335bb`
 - decision: `approved`
 
-Security approves the exact reviewed OOS revision for merge as the bounded
-source-realization implementation. This decision does not activate the runtime,
+The original source decision approved the exact reviewed OOS revision for merge
+as the bounded source-realization implementation. That source decision did not activate the runtime,
 commission a model profile, approve a network exposure, replace human review,
 or authorize merge by a model or Agent Gary.
+
+### Current composed operating-boundary delta — 2026-10-16
+
+The exact source set and current approval authority are bound by
+[the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
+and its YAML decision, not the historical source head above. The review
+extends approval to commissioning the existing Delivery realization path at
+OOS `30730ad25667373be2521bd1c39f82b9d11f1a34`, Console
+`1d19fc2a0cc809a42905688296baf42793b7e066` and Platform
+`f3c59359793c065e2c89b112caf9402775dde477`, with the other exact owners in
+that decision. It is not evidence that live product generation has succeeded.
+
+The existing local provider/model, gateway, CGG boundary and source executor
+are reused. The exact workflow suffix is `source-realization`; the gateway
+structural schema belongs to Platform, while OOS independently enforces its
+stricter semantics and exact-digest acceptance. New Console controls expose
+only bounded objectives, paths and digests, not staged source contents or
+provider/source credentials. Generation interrupted before source acceptance
+may be reason-bound cancelled and explicitly retried. An uncertain apply
+retains same-action recovery and cannot be replaced with another draft.
+
+This accepts no generic coding agent, Prototype source-generation workflow,
+new repository installation scope, automatic merge, direct provider fallback,
+paid model or stage/prod activation. Existing active Delivery session, exact
+repository/base, Gary identity, current source gates, operator acceptance,
+human exact-head review, normal work-session evidence and terminal cleanup
+remain required. Model quality failures are visible retryable outcomes rather
+than justification for hidden Codex implementation. Current live positive and
+negative proof remains necessary before operating-ready or Epic closeout.
 
 The initial review found an audit-binding mismatch between the canonical
 change-set digest accepted by the operator and the order-sensitive digest used
@@ -154,8 +183,9 @@ Epic 1275.
 
 `approved`
 
-OOS revision `c2ed4aba7da8264623595ae7910aded4ba1c56a0` may proceed to
+The original OOS revision `c2ed4aba7da8264623595ae7910aded4ba1c56a0` could proceed to
 exact-head human review and protected merge. Approval is invalid for any later
-OOS head unless a fresh Security delta explicitly accepts it. Runtime activation
-must remain disabled until the separately owned exact Platform composition and
-Security operating-boundary decisions are complete.
+OOS head unless a fresh Security delta explicitly accepts it. The current
+composed operating-boundary delta above provides that later acceptance only
+for its exact source set; every other runtime remains disabled until its exact
+Platform composition and Security operating-boundary decisions are complete.

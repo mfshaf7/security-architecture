@@ -20,7 +20,12 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
+          - governance-console-bounded-record-authority-and-realization
+          - governance-console-governed-ai-source-drafting
+          - governance-console-retained-composition-startup
+          - governance-console-current-decision-provenance
           - governance-console-repository-provisioning-composition
           - governance-console-canonical-repository-resolution-state
           - governance-console-public-probe-contract-and-bounded-recovery
@@ -89,6 +94,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - wgcf-read-only-record-checkpoint-freshness
           - wgcf-custody-source-activation-exact-composition
           - wgcf-bounded-custody-readiness-source-activation
           - wgcf-configured-runtime-factory-proof
@@ -151,8 +157,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-model-profile-lifecycle-operating-boundary.md
-        reviewed_on: 2026-10-09
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-16
         status: current
         decision: approved
         review_areas:
@@ -161,6 +167,7 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - preview-reviewed-control-and-current-record-snapshots
           - preview-runtime-local-host-process-boundary
           - preview-runtime-reviewed-source-custody
           - preview-runtime-atomic-expected-state
@@ -191,7 +198,12 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
+          - console-primary-owner-records-and-cold-workflow-readback
+          - console-governed-ai-source-drafting
+          - console-delivery-realization-explicit-digest-acceptance
+          - console-preview-owner-checkpoint-validation
           - repository-custody-canonical-request-enumeration
           - repository-custody-proposal-gate-canonical-resolution
           - repository-custody-frozen-acknowledgement-recovery
@@ -290,7 +302,12 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
+          - oos-canonical-primary-record-collection
+          - oos-governed-ai-source-drafting
+          - oos-record-authority-checkpoint-guards
+          - oos-source-realization-gateway-binding-and-interruption-recovery
           - repository-custody-canonical-request-enumeration
           - repository-custody-proposal-gate-canonical-resolution
           - repository-custody-frozen-acknowledgement-recovery
@@ -330,7 +347,11 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
+          - governance-console-bounded-record-authority-and-realization
+          - governance-console-retained-composition-startup
+          - governance-console-all-route-proof-remains-outstanding
           - governance-console-repository-provisioning-composition
           - governance-console-retained-provisioning-correction-composition
           - governance-console-canonical-repository-resolution-state
@@ -747,6 +768,7 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
           - governance-console-platform-operation-exact-caller-approval
           - governance-console-finite-command-and-effect-boundary

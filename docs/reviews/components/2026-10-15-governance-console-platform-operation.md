@@ -14,14 +14,20 @@
 - architecture packet digest:
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
-  - `governance-operations-console@ebded3d49d18ce6b9453c3beb946ec42f03b6144`
-  - `operator-orchestration-service@31981ffeb036cbaa6db2042a7848cd589c4e9a4b`
-  - `platform-engineering@31a12981a9f69f9c9f7006d3946f42ed5d611374`
+  - `governance-operations-console@1d19fc2a0cc809a42905688296baf42793b7e066`
+  - `operator-orchestration-service@30730ad25667373be2521bd1c39f82b9d11f1a34`
+  - `platform-engineering@f3c59359793c065e2c89b112caf9402775dde477`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
-  - `workspace-governance-control-fabric@39ed2c13bfc4855b39b84cb0021eb2d3e2256569`
+  - `workspace-governance-control-fabric@7077ddf671e8697f1f09712023e3535556dfd2f1`
+  - `workspace-prototype-studio@14dfcb5fad6272eabdc3edde55c1c26b017a4f3f`
 - reviewed Platform tree:
-  `platform-engineering-tree@db172865339e239aac5639f99e61f661f4f59077`
+  `platform-engineering-tree@daf5d378f08b24c2a9dae383f4a99c35e84fe6e5`
 - source reviews:
+  - [Platform records and realization composition PR #316](https://github.com/mfshaf7/platform-engineering/pull/316)
+  - [OOS canonical reads and realization bindings PR #348](https://github.com/mfshaf7/operator-orchestration-service/pull/348)
+  - [Console fixed Preview freshness boundary PR #88](https://github.com/mfshaf7/governance-operations-console/pull/88)
+  - [Console live registers and realization controls PR #87](https://github.com/mfshaf7/governance-operations-console/pull/87)
+  - [WGCF current record snapshots PR #114](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/114)
   - [Platform identity producer ownership correction PR #315](https://github.com/mfshaf7/platform-engineering/pull/315)
   - [Platform complete workflow credential lifecycle PR #314](https://github.com/mfshaf7/platform-engineering/pull/314)
   - [OOS partial provisioning baseline PR #346](https://github.com/mfshaf7/operator-orchestration-service/pull/346)
@@ -64,6 +70,110 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+Maintenance Landing Unit `maintenance-1275-console-journey-security` uses
+`child_isolated_landing_unit` for the existing exact-composition decision.
+Recommendation posture is `extend`: retain Studio source ownership, OOS
+workflow authority, WGCF read/evaluation authority, Platform runtime custody,
+CGG context admission, Gary source authorship and human review/merge.
+No new service, identity, provider, installation scope or generic command
+authority is introduced.
+
+Design intent: separate fixed reviewed control code from changing canonical
+business records; restore the missing primary Prototype and Delivery reads;
+commission the existing bounded Delivery source-realization mechanism and
+fixed Studio Preview adapter. A fixture-free, all-route product qualification
+remains a different obligation. This decision does not certify that a Prototype
+can already be authored, that its Delivery packet can be created from the
+Console, or that the real to-do app exists.
+
+Implemented controls reviewed at the Summary's exact source set:
+
+- Platform alone refreshes two private Git snapshots from the fixed canonical
+  Workspace Governance and Studio providers. Only record/inventory paths and
+  Studio incubation app source may advance from reviewed ancestry. Governing
+  control code, schemas, skills, policy, executable modes, symlinks, unrelated
+  paths, history rewrite and dirty local source are denied. It does not pull
+  or rewrite primary execution checkouts. Candidate refs are not trusted until
+  admission succeeds, and unique local work is preserved rather than reset.
+- A five-minute atomic owner/ref/reviewed-revision/record-revision checkpoint
+  authorizes read-only consumer snapshots. OOS and WGCF independently validate
+  regular bounded files, exact Git identity and ancestry, source shape, timing
+  and expiry. The existing credential timer checks every minute. Refresh
+  failure invalidates record authority but does not skip the existing
+  purpose-bound credential renewal. Neither a cached record nor a timer
+  receipt is a canonical business approval.
+- Console consumes only validated canonical envelopes for the actual nested
+  ART register and Studio registry/captures. Empty live collections are valid;
+  unavailable or conflicting authorities do not fall back to fixtures.
+  Cold workflow reconstruction preserves actual owner receipts, and live
+  Maturity projection no longer invokes fixture transition helpers or adds
+  prototype-local evidence. Existing dialogs expose progress, review, failure,
+  continuation and cancellation instead of silently discarding async failures.
+- Delivery source realization uses only `source-realization-v1`, the existing
+  pinned local Ollama `qwen3:8b` binding, single concurrency, zero automatic
+  retries and bounded input/output/latency. Gateway caller workflow and
+  Platform-owned structural schema now match the actual registered contract.
+  OOS independently validates stricter change-set semantics and keeps contents
+  private. The Console exposes objective, paths and digest approval through
+  authenticated same-origin routes, never model tools or provider credentials.
+  Only exact-digest acceptance reaches Gary's existing isolated executor;
+  ordinary exact-head validation, human review and merge remain mandatory.
+- An interrupted accepted generation may be cancelled with a substantive
+  reason before source acceptance and retried with explicit predecessor
+  binding. Applying/unknown application still requires same-action recovery;
+  cancellation cannot conceal an uncertain source mutation.
+- The fixed Studio Preview command executes reviewed owner code against its
+  independently verified fresh record revision. Its private cache and state
+  paths are deployment-owned, not browser-selected. The existing loopback,
+  static-only, no-external-network source and profile checks remain in force.
+- Normal complete-runtime activation and the finite provider start action
+  reuse the existing admitted composition oneshot. Its product-owned drop-in
+  retains helpers after controller exit and reapplies the whole reviewed
+  composition rather than raw profile startup. Delegation happens before the
+  lifecycle lock; inner activation does not recursively wait on its own lock.
+  Uncached full proof requires retained supervision. The long-running web
+  service restarts on unexpected successful exit as well as nonzero exit;
+  explicit operator stop still remains stopped.
+- Current clean Security `origin/main` and the complete decision/review
+  contents are revalidated on every resolution. Provenance uses the last
+  commit touching the four relevant acceptance files, so an unrelated generated
+  index update does not force recommissioning. Changed/revoked decisions or
+  relevant reviews do change the anchor and invalidate old bindings. Exact
+  Platform tree and non-data owner source changes remain gated.
+- Status proves actual read-only mounts, exact paths/owners, guard/profile
+  values and consumed deployment generations, then the gateway profile and
+  both live primary Console models. Homepage health alone is insufficient.
+  Rollback restores primary owner mounts, disables the new guards and
+  realization, removes only the product drop-in and preserves canonical
+  history, cached unique work, Preview state and the generic profile unit.
+
+Engineering evidence: OOS 1,369 passing tests with two intentional skips and
+actual API/worker build/smoke; Console 559 passing semantic tests, guards,
+types, safety/audit and exact-head CI production build; WGCF 519 passing tests
+and actual non-root API/worker proof; Platform full local CI-equivalent
+validation on committed Gary head `2c624ca935b725187077dc9385c901d953be019e`
+after fetching base `31a12981a9f69f9c9f7006d3946f42ed5d611374`, including
+Helm/Terraform, 45 complete-runtime cases (three native Kubernetes opt-in skips)
+and 27 cross-domain cases. Eight native producer/actual-image cases prove fresh
+acceptance and expired denial in actual built OOS/WGCF images, UID10001,
+read-only mounts and no network. Platform CI `38885146994` and posture
+`38885146870` passed; merged Platform tree equals that reviewed candidate tree.
+These are source/engineering results, not substituted live product proof.
+
+Decision: approve commissioning and bounded use of this exact single-operator,
+loopback/cluster-local `dev-integration` composition. Source-only realization
+approval is extended only by the corresponding operating-boundary delta and
+this exact set. Primary checkouts must move together to the accepted set;
+current operating readiness requires actual source-bound runtime readback.
+Full lifecycle qualification and all three admitted ingress routes remain
+required before Epic completion. Known missing Prototype authoring/handoff,
+new-owner admission and product evidence are not silently waived, supplied by
+hidden CLI mutation or replaced by successful screen health. Broader identities,
+new repository scope, Prototype source-generation authority, publication,
+remote access, stage and production are not granted by this maintenance review.
+
+### Prior Workflow Credential Maintenance Acceptance
 
 Maintenance Landing Unit `maintenance-1275-workflow-credential-lifecycle-security`
 uses `child_isolated_landing_unit` for the existing exact-composition decision.
@@ -504,7 +614,7 @@ The exact reviewed composition provides:
   replay inputs allow browser recovery without another source mutation;
 
 - an external Security decision contract whose gate, initiative, work item,
-  Architecture Packet, five owner revisions, and Platform tree must all match;
+  Architecture Packet, six owner revisions, and Platform tree must all match;
 - selection of that decision only from clean current Security `origin/main`,
   followed by mode-`0600` private materialization rather than a circular
   post-review source-pin commit;
@@ -546,10 +656,11 @@ The exact reviewed composition provides:
 
 ### Operating Evidence
 
-This is an exact-source acceptance decision. All dependency revisions are
-merged. The exact Platform candidate is open and intentionally unmerged until
-this decision lands; complete Platform commissioning and fixture-free journey
-evidence remain separate operating proofs.
+This is an exact-source acceptance decision. All Summary revisions are merged;
+the Current Maintenance Acceptance above states the current engineering proof
+and remaining operating obligations. The component evidence below preserves
+historical implementation and recovery provenance, not a claim that those
+older source sets remain current or the whole journey has passed.
 
 - Workspace Governance PR #281 is merged and records the corrected current
   capability posture. WGCF PR #111 is merged and packages the corresponding
@@ -767,11 +878,10 @@ substitute component fixtures or source tests for that later proof.
 
 `approved`
 
-Security emits `gate:platform-operation-security` for merged Platform
-revision `e292b3acff8b498f9b2586ffde25ec49f08deed6` with tree
-`cf511ffcd46f27445cb4f591c807afa582da8cb5`, composed only with the four other
-exact revisions listed in the Summary and the current Architecture Packet URI
-and digest.
+Security emits `gate:platform-operation-security` only for the six exact owner
+revisions and Platform tree listed in the Summary and machine-readable decision,
+bound to the current Architecture Packet URI and digest. Historical source
+bindings above do not replace that current set.
 
 This approval permits activation, restart, and status readback of the exact
 current composition and the later Console-only journey under `#1298`. It does
@@ -781,7 +891,8 @@ set; fixture fallback; browser-held owner credentials; a generic Platform
 command; Console-owned lifecycle state; stage or production use; or a claim
 that operating readiness has already passed.
 
-Any change to the accepted Platform tree, owner revision set, identity,
+Except for the explicitly admitted record-only descendants, any change to the
+accepted Platform tree, governing owner source, identity,
 credential custody, action vocabulary, canonical-data authority, network
 exposure, rollback boundary, or runtime profile requires a fresh Security
 delta decision.
