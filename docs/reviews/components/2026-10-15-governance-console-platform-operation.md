@@ -15,14 +15,16 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `governance-operations-console@1d19fc2a0cc809a42905688296baf42793b7e066`
-  - `operator-orchestration-service@30730ad25667373be2521bd1c39f82b9d11f1a34`
-  - `platform-engineering@f3c59359793c065e2c89b112caf9402775dde477`
+  - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
+  - `platform-engineering@6d7536e6f5f6815bb088214f16acbd5aabcbc00f`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@7077ddf671e8697f1f09712023e3535556dfd2f1`
   - `workspace-prototype-studio@14dfcb5fad6272eabdc3edde55c1c26b017a4f3f`
 - reviewed Platform tree:
-  `platform-engineering-tree@daf5d378f08b24c2a9dae383f4a99c35e84fe6e5`
+  `platform-engineering-tree@88d90c0f587fb172d3f0daf92354f6ee8d33f3ff`
 - source reviews:
+  - [Platform post-crash health PR #317](https://github.com/mfshaf7/platform-engineering/pull/317)
+  - [OOS bounded dependency reads PR #349](https://github.com/mfshaf7/operator-orchestration-service/pull/349)
   - [Platform records and realization composition PR #316](https://github.com/mfshaf7/platform-engineering/pull/316)
   - [OOS canonical reads and realization bindings PR #348](https://github.com/mfshaf7/operator-orchestration-service/pull/348)
   - [Console fixed Preview freshness boundary PR #88](https://github.com/mfshaf7/governance-operations-console/pull/88)
@@ -71,7 +73,47 @@
 
 ### Current Maintenance Acceptance
 
-Maintenance Landing Unit `maintenance-1275-console-journey-security` uses
+#### Post-crash health delta — 2026-10-16
+
+The Summary source set supersedes the preceding maintenance pins. It accepts
+all five existing local Ollama bindings at exactly `0.40.5`, retaining the
+approved `qwen3:8b` digest
+`500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`.
+This is the operator-requested installed patch, not automatic acceptance of
+future updates. Readiness now checks actual provider metadata with one-second
+requests, no retry or inference, shared across identical bindings. Eligibility
+and readiness remain distinct; version/digest mismatch and unavailable
+providers deny readiness. Every invocation still repeats integrity checks.
+
+Unchanged record refresh retains a still-valid checkpoint until atomic
+replacement. Actual source changes invalidate both fixed owners before any
+changed checkout; failed observation invalidates both owners, and a later
+changed member cannot leave a refreshed peer without re-observation. The
+existing five-minute expiry, source ancestry, allowed-path/mode boundaries,
+read-only consumer mounts and credential-renewal independence remain intact.
+Invalidation must not follow a clone or Git-directory symlink.
+
+OOS reads dependency relations through its existing authenticated `involved`
+API in batches of at most 100 IDs. Both endpoints, pagination, deduplication,
+external dependency hydration and backend-error denial retain their existing
+semantics. No cache, write route, readiness waiver or authority is added.
+
+Engineering evidence: exact-head full Platform validation and CI passed;
+metadata integrity includes a real local HTTP server; native Git/group
+continuity and failure tests passed; both actual read-only consumer images
+passed at a distinct UID. OOS passed 1,370 tests (two intentional skips),
+CI-equivalent checks, native API/worker image builds and isolated smoke. Its
+205-item fixture proves pagination and cross-batch dependency completeness.
+These are engineering results, not post-activation operating claims. Current
+provider, synthetic governed inference, refresh continuity and Console latency
+must still be read back after exact-source activation.
+
+Decision: `approved` for this exact local maintenance source set. No new
+model/provider, source-writing purpose, repository installation, public
+exposure, stage/prod authority or Prototype authoring path is granted. Epic
+1275 and the real to-do exercise remain unfinished.
+
+The preceding maintenance Landing Unit `maintenance-1275-console-journey-security` used
 `child_isolated_landing_unit` for the existing exact-composition decision.
 Recommendation posture is `extend`: retain Studio source ownership, OOS
 workflow authority, WGCF read/evaluation authority, Platform runtime custody,

@@ -22,6 +22,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governed-ai-observed-provider-patch-and-readiness
+          - console-unchanged-record-refresh-continuity
           - governance-console-bounded-record-authority-and-realization
           - governance-console-governed-ai-source-drafting
           - governance-console-retained-composition-startup
@@ -304,6 +306,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - canonical-dependency-read-batching-and-error-preservation
           - oos-canonical-primary-record-collection
           - oos-governed-ai-source-drafting
           - oos-record-authority-checkpoint-guards
@@ -652,7 +655,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-09
+        reviewed_on: 2026-10-16
         status: current
         decision: approved
         review_areas:
@@ -662,6 +665,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governed-ai-observed-provider-patch-and-readiness
           - agent-console-profile-and-caller-admission
           - agent-console-provider-and-model-selection-boundary
           - agent-console-response-schema-and-audit-binding
