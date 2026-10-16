@@ -18,11 +18,12 @@
   - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
   - `platform-engineering@52b71766dc4cf4eaa028aff45a4c57b5b569a51d`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
-  - `workspace-governance-control-fabric@7077ddf671e8697f1f09712023e3535556dfd2f1`
+  - `workspace-governance-control-fabric@b30a94ea73e1528fefef4b1c05759edf16cea5bb`
   - `workspace-prototype-studio@14dfcb5fad6272eabdc3edde55c1c26b017a4f3f`
 - reviewed Platform tree:
   `platform-engineering-tree@43d24473dde30f0ec9a480c7ec731b6cb7e99b78`
 - source reviews:
+  - [WGCF current Studio registry compatibility PR #115](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/115)
   - [Platform grouped readiness caller and issuer reconciliation PR #318](https://github.com/mfshaf7/platform-engineering/pull/318)
   - [Platform post-crash health PR #317](https://github.com/mfshaf7/platform-engineering/pull/317)
   - [OOS bounded dependency reads PR #349](https://github.com/mfshaf7/operator-orchestration-service/pull/349)
@@ -73,6 +74,43 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Current Studio registry compatibility — 2026-10-16
+
+The Summary's WGCF revision accepts a bounded consumer-bundle correction. The
+same retained Proposal1305 Landing request passed the repaired authentication
+but failed its actual source snapshot: Landing and Maturity pinned the registry
+schema before Studio's already-reviewed Closure evolution
+`9fdf82e08caf14074f804beaeabdb6569b174ade`. Studio and WGCF Closure already agree
+on schema digest
+`defdc5c2e994e7472e8827759c7c2dfc2f55f421313e665c3147d79fb98802d0`.
+Both stale consumers now use that exact schema and minimum owner revision,
+including `delivery-governed` and `source_custody`. This does not create new
+schema meaning or permit arbitrary current-source trust.
+
+There is no runtime API/code, canonical record, caller role, activation flag,
+source-writing purpose, model or privilege change. Exact schema mismatch,
+unknown schema, source ancestry and freshness denial remain. Native Git cases
+exercise a current unrelated graduating Prototype beside both target types,
+source immutability, agreement with Closure and rejection of an old/tampered
+schema. Historical self-consistent fixtures alone are not accepted proof of
+compatibility with the current shared registry.
+
+Gary head `2827bbe0023ad2e10c2f925515004c5013550e9e`, merged as PR115 at the
+Summary's exact WGCF revision with an identical tree, passed the full committed
+project/CLI checks and all521 tests (47 focused readiness cases). Both actual
+Docker targets built with the exact revision. Packaged API HTTP/readiness,
+worker UID10001/revision protection/default execution denial and read-only
+Landing/Maturity snapshots against current Studio14dfcb passed. The source
+proof used a read-only private snapshot mount and no network or canonical
+mutation. These are engineering results, not deployed operating evidence.
+
+Decision: `approved` for the exact Summary source set. Existing Platform caller
+and issuer reconciliation consumes this accepted WGCF revision through normal
+coordinated activation; no Platform source delta is needed. Require actual
+deployed source-reader proof and continuation of the SAME Landing request.
+Prototype source generation, packet authoring and the real to-do exercise
+remain outstanding. No Epic or whole-system readiness claim is made.
 
 #### Existing readiness caller and exact issuer reconciliation — 2026-10-16
 
