@@ -10,8 +10,8 @@ architecture:
   digest: sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4
 review_ref: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
 reviewed_revisions:
-  governance-operations-console: b82c0a9932531627954bc8a2ae0836a8eba5bb7f
-  operator-orchestration-service: 17c9d14c3d07691cca8622e8c7db3ecbcb9c201f
+  governance-operations-console: ebded3d49d18ce6b9453c3beb946ec42f03b6144
+  operator-orchestration-service: 31981ffeb036cbaa6db2042a7848cd589c4e9a4b
   platform-engineering: e292b3acff8b498f9b2586ffde25ec49f08deed6
   workspace-governance: ec499fcbdd7d62687d704b9f9e50c87a601c48ee
   workspace-governance-control-fabric: 39ed2c13bfc4855b39b84cb0021eb2d3e2256569

@@ -196,6 +196,8 @@ review_inventory:
           - repository-custody-proposal-gate-canonical-resolution
           - repository-custody-frozen-acknowledgement-recovery
           - repository-custody-browser-reload-without-fixtures
+          - repository-custody-failed-readback-and-reviewed-correction
+          - repository-custody-canonical-original-approval-resume
           - governance-console-server-only-owner-credentials
           - governance-console-workspace-continuity-no-fixture-fallback
           - governance-console-registry-portfolio-canonical-identity
@@ -293,6 +295,8 @@ review_inventory:
           - repository-custody-proposal-gate-canonical-resolution
           - repository-custody-frozen-acknowledgement-recovery
           - repository-custody-bound-caller-readback
+          - repository-custody-acknowledged-baseline-completion
+          - repository-custody-immutable-failed-request-correction
           - governance-console-platform-operation-exact-caller-approval
           - governance-console-finite-command-and-effect-boundary
           - governance-console-composed-denial-replay-and-recovery
@@ -328,6 +332,7 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - governance-console-repository-provisioning-composition
+          - governance-console-retained-provisioning-correction-composition
           - governance-console-canonical-repository-resolution-state
           - governance-console-public-probe-contract-and-bounded-recovery
           - governance-console-early-token-renewal-and-crash-recovery
