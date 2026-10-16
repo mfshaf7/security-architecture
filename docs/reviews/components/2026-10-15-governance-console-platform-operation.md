@@ -16,12 +16,13 @@
 - reviewed exact revisions:
   - `governance-operations-console@ebded3d49d18ce6b9453c3beb946ec42f03b6144`
   - `operator-orchestration-service@31981ffeb036cbaa6db2042a7848cd589c4e9a4b`
-  - `platform-engineering@e292b3acff8b498f9b2586ffde25ec49f08deed6`
+  - `platform-engineering@c1b65d945d95218f76c7e11bdf3c0a62b7f2bdec`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@39ed2c13bfc4855b39b84cb0021eb2d3e2256569`
 - reviewed Platform tree:
-  `platform-engineering-tree@cf511ffcd46f27445cb4f591c807afa582da8cb5`
+  `platform-engineering-tree@d8309062693280afe4c44706d49f59e99ebf61be`
 - source reviews:
+  - [Platform complete workflow credential lifecycle PR #314](https://github.com/mfshaf7/platform-engineering/pull/314)
   - [OOS partial provisioning baseline PR #346](https://github.com/mfshaf7/operator-orchestration-service/pull/346)
   - [Console retained correction and resume PR #86](https://github.com/mfshaf7/governance-operations-console/pull/86)
   - [WGCF bounded custody source activation PR #113](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/113)
@@ -62,6 +63,81 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+Maintenance Landing Unit `maintenance-1275-workflow-credential-lifecycle-security`
+uses `child_isolated_landing_unit` for the existing exact-composition decision.
+This accepts the bounded Platform renewal/readiness extension requested after
+the real Console journey exposed expired downstream identity credentials.
+Only Platform's revision/tree changes; the other Summary owner revisions,
+architecture, operator approval, source gates and permission limits remain.
+
+Design intent: maintain the five already-commissioned Proposal Target,
+Prototype Landing, Prototype Maturity, Prototype Closure and Workspace Intake
+credentials through the existing complete-runtime timer. Provisioning-only
+renewal and a running pod did not prove those workflow prerequisites.
+
+Implemented control: the closed App/installation set is source-bound, with
+repository, permissions, Vault paths and credential-binding digests derived
+from the existing owner identity contracts. Missing, disabled, differently
+owned or wrong-profile bindings fail closed; renewal does not commission a
+workflow, change provider scope or create source, product, ART or approval
+authority. Existing App validation is reused and every replacement grant is
+validated before the first Secret changes. Failed preparation revokes new,
+unprojected grants. No human, ambient or other workflow token is substituted.
+
+Replacement uses Kubernetes resource-version compare-and-swap and preserves
+other Secret fields, including WGCF caller credentials. One non-secret batch
+delivery-version update drives one OOS rollout; unchanged ticks do not force
+restarts. Recovery first consumes a retained fresh delivery rather than
+minting again. Readiness compares each actual mounted token with the delivered
+Secret by digest, then uses it for a pinned, redirect-denied GitHub read that
+must prove live acceptance and exactly the expected one repository. Expiry
+annotations, missing projections, stale sessions, wrong repository scope and
+HTTP denial cannot stand in for that proof. Prior tokens are revoked after
+new consumption succeeds. Process loss or failed revocation may leave a
+previous same-scope token usable only until its original maximum-one-hour
+expiry; it cannot widen scope or authorize another workflow. Normal renewal
+must complete revocation rather than report the failed attempt as success.
+
+Vault remains private-key authority. The two absent declared bootstrap entries
+were created without overwrite from existing operator keys. An invalid stored
+Maturity PEM was replaced only after its existing valid key proved the exact
+App/installation/permissions, using Vault version compare-and-swap with the
+prior version retained. All five Vault keys and existing provider identities
+were verified read-only. Ephemeral key files remain operator-private and are
+removed on every exit; tokens and private keys never enter source, process
+arguments, receipts, Console data or browser state.
+
+The existing lifecycle lock and active exact-Security marker cover the group.
+Rollback stops renewal before Console-owned credential revocation but does
+not delete, disable or revoke the five pre-existing owner bindings. Their
+bounded credentials may expire while renewal is stopped; later accepted
+activation renews and proves consumption. This does not promise indefinite
+availability or hide owner-state mutation behind Console cleanup. Proposal,
+repository, Prototype and ART history remain outside this rollback boundary.
+
+Source proof: 34 focused tests cover the complete identity set, expiry, denied
+provider access, exact binding, compare-and-swap failure, private-key cleanup,
+invalid later grant, unchanged ticks, forced renewal, interrupted consumption
+without reminting, and preservation of other owner fields. Read-only actual
+OOS checks proved all five configured mounts and correctly reported four
+expired credentials rather than readiness. Candidate
+`cac797f024e678bfc228b6dca0925b93b80ef120` and merged Platform source have the
+identical Summary tree. Full local `make validate` passed on that committed
+candidate after fetching base `e292b3acff8b498f9b2586ffde25ec49f08deed6`,
+including owner tests, Helm and Terraform validation. Exact-head CI
+`38857904164` and Security Posture `38857904172` passed; all five Vault-key,
+App and installation permission checks passed read-only. Accepted-source
+activation, forced group renewal and the real to-do exercise remain separate
+operating proof, not claims inferred from these source checks.
+
+Decision: approved only for the Summary's exact source set in the existing
+single-operator, loopback-only `dev-integration` composition. No new service,
+identity, role, provider permission, stage/prod exposure, AI action or ART
+child is admitted. Refresh the private policy from this merged decision and
+prove current group readiness before resuming the same acceptance exercise.
+
+### Prior Provisioning Maintenance Acceptance
 
 Maintenance Landing Unit `maintenance-1275-provisioning-baseline-security` uses
 `child_isolated_landing_unit` for this existing exact-composition review. The
