@@ -27,9 +27,9 @@ The exact source set and current approval authority are bound by
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision, not the historical source head above. The review
 extends approval to commissioning the existing Delivery realization path at
-OOS `30730ad25667373be2521bd1c39f82b9d11f1a34`, Console
+OOS `4c74d35b09864c12b4a63beb4fa8a23416381e70`, Console
 `1d19fc2a0cc809a42905688296baf42793b7e066` and Platform
-`f3c59359793c065e2c89b112caf9402775dde477`, with the other exact owners in
+`6d7536e6f5f6815bb088214f16acbd5aabcbc00f`, with the other exact owners in
 that decision. It is not evidence that live product generation has succeeded.
 
 The existing local provider/model, gateway, CGG boundary and source executor
