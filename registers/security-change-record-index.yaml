@@ -3703,6 +3703,19 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-16-prototype-readiness-caller-reconciliation.md
+  date: '2026-10-16'
+  short_title: maintain current WGCF caller bindings for all three Prototype workflows
+  review_areas:
+  - identity
+  - secrets
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'

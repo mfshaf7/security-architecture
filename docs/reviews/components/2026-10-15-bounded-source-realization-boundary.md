@@ -29,7 +29,7 @@ and its YAML decision, not the historical source head above. The review
 extends approval to commissioning the existing Delivery realization path at
 OOS `4c74d35b09864c12b4a63beb4fa8a23416381e70`, Console
 `1d19fc2a0cc809a42905688296baf42793b7e066` and Platform
-`6d7536e6f5f6815bb088214f16acbd5aabcbc00f`, with the other exact owners in
+`52b71766dc4cf4eaa028aff45a4c57b5b569a51d`, with the other exact owners in
 that decision. It is not evidence that live product generation has succeeded.
 
 The existing local provider/model, gateway, CGG boundary and source executor

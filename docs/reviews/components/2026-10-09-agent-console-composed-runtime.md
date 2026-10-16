@@ -64,7 +64,7 @@ approves the current reviewed local source set:
 
 - `context-governance-gateway@a2f4e9274338ddc55824616e78a1d01cee079227`
 - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
-- `platform-engineering@6d7536e6f5f6815bb088214f16acbd5aabcbc00f`
+- `platform-engineering@52b71766dc4cf4eaa028aff45a4c57b5b569a51d`
 - `governance-operations-console@1d19fc2a0cc809a42905688296baf42793b7e066`
 - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
 
@@ -72,6 +72,9 @@ Ollama is exactly `0.40.5`, with unchanged `qwen3:8b` digest
 `500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`.
 The exact Platform tree and full scope are accepted by the current
 [complete-runtime delta](2026-10-15-governance-console-platform-operation.md).
+Its additional maintenance reconciles existing WGCF consumer credentials and
+exact issuer expectations only. It does not alter Agent Console model tasks,
+context admission, session identity, invocation, action or approval authority.
 Metadata readiness now observes actual version/digest, without inference or
 automatic update. OOS/CGG session, context, schema, explicit operator invocation,
 audit and negative-admission controls remain unchanged. A bounded synthetic
