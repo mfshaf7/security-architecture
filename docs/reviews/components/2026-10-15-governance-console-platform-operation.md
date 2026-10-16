@@ -16,12 +16,13 @@
 - reviewed exact revisions:
   - `governance-operations-console@ebded3d49d18ce6b9453c3beb946ec42f03b6144`
   - `operator-orchestration-service@31981ffeb036cbaa6db2042a7848cd589c4e9a4b`
-  - `platform-engineering@c1b65d945d95218f76c7e11bdf3c0a62b7f2bdec`
+  - `platform-engineering@31a12981a9f69f9c9f7006d3946f42ed5d611374`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@39ed2c13bfc4855b39b84cb0021eb2d3e2256569`
 - reviewed Platform tree:
-  `platform-engineering-tree@d8309062693280afe4c44706d49f59e99ebf61be`
+  `platform-engineering-tree@db172865339e239aac5639f99e61f661f4f59077`
 - source reviews:
+  - [Platform identity producer ownership correction PR #315](https://github.com/mfshaf7/platform-engineering/pull/315)
   - [Platform complete workflow credential lifecycle PR #314](https://github.com/mfshaf7/platform-engineering/pull/314)
   - [OOS partial provisioning baseline PR #346](https://github.com/mfshaf7/operator-orchestration-service/pull/346)
   - [Console retained correction and resume PR #86](https://github.com/mfshaf7/governance-operations-console/pull/86)
@@ -85,8 +86,13 @@ authority. Existing App validation is reused and every replacement grant is
 validated before the first Secret changes. Failed preparation revokes new,
 unprojected grants. No human, ambient or other workflow token is substituted.
 
-Replacement uses Kubernetes resource-version compare-and-swap and preserves
-other Secret fields, including WGCF caller credentials. One non-secret batch
+Replacement uses the original producer's server-side Apply operation and exact
+field manager, with Kubernetes resource-version compare-and-swap. A native
+pre-activation test caught PR314's replace operation transferring ownership and
+breaking later producer recovery. This same maintenance scope corrects that
+miss before live activation; using only the original manager name with replace
+would not suffice. The corrected operation preserves all existing Secret
+fields, including WGCF caller credentials. One non-secret batch
 delivery-version update drives one OOS rollout; unchanged ticks do not force
 restarts. Recovery first consumes a retained fresh delivery rather than
 minting again. Readiness compares each actual mounted token with the delivered
@@ -116,17 +122,23 @@ activation renews and proves consumption. This does not promise indefinite
 availability or hide owner-state mutation behind Console cleanup. Proposal,
 repository, Prototype and ART history remain outside this rollback boundary.
 
-Source proof: 34 focused tests cover the complete identity set, expiry, denied
+Source proof: 37 focused tests cover the complete identity set, expiry, denied
 provider access, exact binding, compare-and-swap failure, private-key cleanup,
 invalid later grant, unchanged ticks, forced renewal, interrupted consumption
-without reminting, and preservation of other owner fields. Read-only actual
+without reminting, and preservation of other owner fields. Three native local
+Kubernetes cases reproduce the legacy ownership conflict, exercise the actual
+adapter's CAS/recovery for all five producers and use each existing producer's
+actual Secret manifest (including stringData) for renewal/recovery. Unique
+synthetic ConfigMaps and Secrets contain no provider credentials and are removed
+on exit; no real owner binding or provider grant is changed by these cases.
+Read-only actual
 OOS checks proved all five configured mounts and correctly reported four
 expired credentials rather than readiness. Candidate
-`cac797f024e678bfc228b6dca0925b93b80ef120` and merged Platform source have the
+`36eb6d8836104ee23e4364de7724d47e41c1a9f5` and merged Platform source have the
 identical Summary tree. Full local `make validate` passed on that committed
-candidate after fetching base `e292b3acff8b498f9b2586ffde25ec49f08deed6`,
+candidate after fetching base `c1b65d945d95218f76c7e11bdf3c0a62b7f2bdec`,
 including owner tests, Helm and Terraform validation. Exact-head CI
-`38857904164` and Security Posture `38857904172` passed; all five Vault-key,
+`38859925827` and Security Posture `38859925730` passed; all five Vault-key,
 App and installation permission checks passed read-only. Accepted-source
 activation, forced group renewal and the real to-do exercise remain separate
 operating proof, not claims inferred from these source checks.
