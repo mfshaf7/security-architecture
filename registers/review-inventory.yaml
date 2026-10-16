@@ -97,6 +97,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - wgcf-current-studio-registry-consumer-compatibility
           - wgcf-read-only-record-checkpoint-freshness
           - wgcf-custody-source-activation-exact-composition
           - wgcf-bounded-custody-readiness-source-activation
@@ -107,6 +108,14 @@ review_inventory:
           - delivery-art-superseded-architecture-custody-lineage
           - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
+          - repo: workspace-governance-control-fabric
+            path: contracts/prototype-landing/manifest.json
+          - repo: workspace-governance-control-fabric
+            path: contracts/prototype-maturity/manifest.json
+          - repo: workspace-governance-control-fabric
+            path: tests/test_prototype_landing_readiness.py
+          - repo: workspace-governance-control-fabric
+            path: tests/test_prototype_maturity_readiness.py
           - repo: workspace-governance-control-fabric
             path: Dockerfile
           - repo: workspace-governance-control-fabric

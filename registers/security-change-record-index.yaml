@@ -3772,3 +3772,14 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: workspace-governance-control-fabric
+  path: docs/records/change-records/2026-10-16-current-studio-registry-readiness-bundles.md
+  date: '2026-10-16'
+  short_title: synchronize Landing and Maturity with the current approved Studio registry
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
