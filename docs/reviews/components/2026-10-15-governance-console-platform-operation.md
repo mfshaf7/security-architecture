@@ -16,13 +16,14 @@
 - reviewed exact revisions:
   - `governance-operations-console@1d19fc2a0cc809a42905688296baf42793b7e066`
   - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
-  - `platform-engineering@6d7536e6f5f6815bb088214f16acbd5aabcbc00f`
+  - `platform-engineering@52b71766dc4cf4eaa028aff45a4c57b5b569a51d`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@7077ddf671e8697f1f09712023e3535556dfd2f1`
   - `workspace-prototype-studio@14dfcb5fad6272eabdc3edde55c1c26b017a4f3f`
 - reviewed Platform tree:
-  `platform-engineering-tree@88d90c0f587fb172d3f0daf92354f6ee8d33f3ff`
+  `platform-engineering-tree@43d24473dde30f0ec9a480c7ec731b6cb7e99b78`
 - source reviews:
+  - [Platform grouped readiness caller and issuer reconciliation PR #318](https://github.com/mfshaf7/platform-engineering/pull/318)
   - [Platform post-crash health PR #317](https://github.com/mfshaf7/platform-engineering/pull/317)
   - [OOS bounded dependency reads PR #349](https://github.com/mfshaf7/operator-orchestration-service/pull/349)
   - [Platform records and realization composition PR #316](https://github.com/mfshaf7/platform-engineering/pull/316)
@@ -72,6 +73,59 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Existing readiness caller and exact issuer reconciliation — 2026-10-16
+
+The Summary's exact merged Platform source supersedes the earlier Platform
+pin for this bounded maintenance delta. A real Proposal1305 Console Landing
+request exposed stale credentials in the three dedicated Prototype consumer
+Secrets. Full-process inspection covered every current OOS WGCF caller and
+issuer expectation: shared credentials already match the current OOS registry
+principal; Landing, Maturity and Closure copies do not. Their three expected
+issuer revisions and Product Publication's expectation are historical, while
+Workspace Intake already expects the current image. The caller is one
+existing OOS registry principal; GitHub Apps and source permissions remain
+separate. This does not create a new caller, role, source-writing purpose,
+credential issuer, service, publication path, provider or exposure.
+
+Platform now proves the active operator WGCF session, exact API credential
+reference, owner activation, current Secret source, consumed credential and
+actual image revision against the Security-accepted source set before
+reconciliation. Only the three already-declared `wgcf-caller-secret` keys may
+change. Original producer SSA ownership and resourceVersion CAS preserve
+unrelated fields and concurrent-update denial. Caller-only correction does
+not mint GitHub credentials. The existing grouped delivery marker additionally
+uses Secret resource versions, so caller-only replacement and interrupted
+consumption cause one required rollout, not a permanent stale process or an
+unchanged-tick restart.
+
+The same grouped operation binds all five existing consumer issuer
+expectations to the current accepted WGCF revision, without changing their
+enablement or privileges. Historical identity activation source remains
+historical evidence. Pre-reconciliation admission permits the repairable stale
+consumer expectation; issuer-source verification is still exact before any
+write. Post-consumption checks reject stale active consumer expectations,
+wrong caller values, unconsumed Secrets and failed authenticated readiness
+reads. OOS's exact issuer, service-identity and receipt checks are unchanged.
+No wildcard, automatic trust of an unreviewed image, credential value in argv
+or output, browser token, fixture fallback or readiness bypass is accepted.
+
+Engineering evidence: final Gary head
+`64cf9f32d5093b7de5b6c8fa859b1917a8cdafb2` has the exact Summary tree and
+merged as Platform PR318. Full committed local CI-equivalent `make validate`
+passed with the canonical OOS source and fetched base
+`6d7536e6f5f6815bb088214f16acbd5aabcbc00f`; CI38905153533 and Security
+Posture38905153556 passed. All53 native/focused tests passed without skips,
+including actual producer Secret/CAS recovery and real reviewed-issuer
+positive/wrong-revision denial. The generated Node probe is executed for
+staging, consumed caller, Prototype/publication issuer and HTTP denial cases.
+These are source/engineering results, not a claim of applied operating proof.
+
+Decision: `approved` for the exact local source set. Normal coordinated
+activation, grouped caller/issuer consumption proof and continuation of the
+SAME retained Landing request are required before maintenance completion.
+Prototype source generation and Delivery-packet authoring remain unaccepted
+operating capabilities; no real to-do product or Epic completion is asserted.
 
 #### Post-crash health delta — 2026-10-16
 
