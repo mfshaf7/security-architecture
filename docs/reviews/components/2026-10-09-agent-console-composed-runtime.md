@@ -56,7 +56,7 @@ sequence before the Feature is operating-ready.
 
 ## Scope Delta
 
-### Current patch maintenance acceptance — 2026-10-16
+### Current patch maintenance acceptance — 2026-10-17
 
 The historical 2026-10-09 pins above remain historical evidence. For the
 existing `gate:agent-console-operating-acceptance` proof, this scoped delta
@@ -65,7 +65,7 @@ approves the current reviewed local source set:
 - `context-governance-gateway@a2f4e9274338ddc55824616e78a1d01cee079227`
 - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
 - `platform-engineering@52b71766dc4cf4eaa028aff45a4c57b5b569a51d`
-- `governance-operations-console@1d19fc2a0cc809a42905688296baf42793b7e066`
+- `governance-operations-console@f2e506e7a4532c7ca2461d2631ec5f33367606a4`
 - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
 
 Ollama is exactly `0.40.5`, with unchanged `qwen3:8b` digest
@@ -73,7 +73,9 @@ Ollama is exactly `0.40.5`, with unchanged `qwen3:8b` digest
 The exact Platform tree and full scope are accepted by the current
 [complete-runtime delta](2026-10-15-governance-console-platform-operation.md).
 Its additional maintenance reconciles existing WGCF consumer credentials and
-exact issuer expectations only. It does not alter Agent Console model tasks,
+exact issuer expectations and corrects only the existing Landing new-code
+revision mapping in Console PR89. The composed review records exact source
+validation and non-mutating capture-policy proof. It does not alter Agent Console model tasks,
 context admission, session identity, invocation, action or approval authority.
 Metadata readiness now observes actual version/digest, without inference or
 automatic update. OOS/CGG session, context, schema, explicit operator invocation,
