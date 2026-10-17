@@ -16,13 +16,14 @@
 - reviewed exact revisions:
   - `governance-operations-console@f2e506e7a4532c7ca2461d2631ec5f33367606a4`
   - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
-  - `platform-engineering@52b71766dc4cf4eaa028aff45a4c57b5b569a51d`
+  - `platform-engineering@ac854a4e08a6d075bd1842127513c55de59f3997`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@b30a94ea73e1528fefef4b1c05759edf16cea5bb`
   - `workspace-prototype-studio@a4dff00628ad54b7c05bd48aebbbcf3ec2a18d6b`
 - reviewed Platform tree:
-  `platform-engineering-tree@43d24473dde30f0ec9a480c7ec731b6cb7e99b78`
+  `platform-engineering-tree@cdc958bc3c31488193f868ed69507e7c918b693e`
 - source reviews:
+  - [Platform documented Landing fixture record admission PR #319](https://github.com/mfshaf7/platform-engineering/pull/319)
   - [Studio inert Landing draft compatibility PR #30](https://github.com/mfshaf7/workspace-prototype-studio/pull/30)
   - [Console Landing new-source revision correction PR #89](https://github.com/mfshaf7/governance-operations-console/pull/89)
   - [WGCF current Studio registry compatibility PR #115](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/115)
@@ -76,6 +77,44 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Existing Landing fixture data versus record refresh — 2026-10-17
+
+Platform PR319 restores the existing documented Landing fixture namespace in
+the canonical record-data projection. Corrected same-Prototype request
+`prototype-landing-request:proposal-1305:17922519451811` opened Studio PR31;
+native78tests, every owner validator, providerCI39046501652 and exact human
+review passed before merge `f668a26ce5fdb4d0794d949d08205f10d9f50741`.
+Platform's prior classifier rejected exactly its ordinary empty
+`fixtures/prototypes/proposal-1305/.gitkeep` among twelve authorized outputs,
+withholding fresh checkpoints and the Console collection. Credentials remained
+maintained. This is a demonstrated producer/consumer mismatch, not a new source
+purpose or permission waiver.
+
+The accepted change admits regular data beneath only
+`fixtures/prototypes/<prototype-id>/`. Fixed canonical provider/owner, Git
+ancestry, bounded history/path counts, metadata restrictions, non-executable
+file modes, symlink denial and exact reviewed control source remain enforced.
+Unrelated fixture namespaces, control-code co-changes and governance source
+remain denied. Fixture data is never executed as Platform control code.
+Studio's executable baseline remains the exact Summary revision; PR31 is
+separately admitted record-only advancement, not an excuse to replace reviewed
+code or discard the business merge.
+
+Committed local `make validate` passed33suites/443tests and native validators,
+charts and Terraform checks. Native real-Git regressions exercise all twelve
+Landing output shapes, nested fixture add/update/delete, unrelated and metadata
+paths, executable/symlink denial and control-code co-change. The actual merged
+twelve-file delta is old-denied/new-admitted without owner writes. Explicit
+image/runtime-only skips are not live operating evidence. The exact merged
+Platform commit/tree is bound in Summary and YAML; other owner pins stay
+unchanged. Normal coherent activation, automatic renewal, current Console
+collection and the SAME request's terminal merged readback are still required
+before operating acceptance. No app, baseline, Prototype generation purpose,
+private custody, target source admission or Epic completion is established.
+The exact Gary head `b47b90df3d2cc0f586535549df4bc50fedcb5aae` passed provider
+validate39047159175 and repo-posture39047159183 plus delegated human review;
+PR319 merged as the Summary commit with the same reviewed tree.
 
 #### Existing Landing draft versus executable Preview profile — 2026-10-17
 
