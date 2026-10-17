@@ -170,7 +170,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-16
+        reviewed_on: 2026-10-17
         status: current
         decision: approved
         review_areas:
@@ -179,12 +179,17 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - preview-landing-inert-draft-consumer-compatibility
           - preview-reviewed-control-and-current-record-snapshots
           - preview-runtime-local-host-process-boundary
           - preview-runtime-reviewed-source-custody
           - preview-runtime-atomic-expected-state
           - preview-runtime-operating-proof-sequencing
         owner_artifacts:
+          - repo: workspace-prototype-studio
+            path: packages/prototype_landing/landing.py
+          - repo: workspace-prototype-studio
+            path: tests/test_prototype_landing.py
           - repo: workspace-prototype-studio
             path: packages/prototype_preview/runtime.py
           - repo: workspace-prototype-studio
@@ -367,6 +372,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governance-console-landing-draft-consumer-compatibility
           - governance-console-existing-landing-mapper-reacceptance
           - governance-console-bounded-record-authority-and-realization
           - governance-console-retained-composition-startup

@@ -15,6 +15,6 @@ reviewed_revisions:
   platform-engineering: 52b71766dc4cf4eaa028aff45a4c57b5b569a51d
   workspace-governance: ec499fcbdd7d62687d704b9f9e50c87a601c48ee
   workspace-governance-control-fabric: b30a94ea73e1528fefef4b1c05759edf16cea5bb
-  workspace-prototype-studio: 14dfcb5fad6272eabdc3edde55c1c26b017a4f3f
+  workspace-prototype-studio: a4dff00628ad54b7c05bd48aebbbcf3ec2a18d6b
 reviewed_trees:
   platform-engineering: 43d24473dde30f0ec9a480c7ec731b6cb7e99b78
