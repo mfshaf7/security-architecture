@@ -21,16 +21,21 @@ as the bounded source-realization implementation. That source decision did not a
 commission a model profile, approve a network exposure, replace human review,
 or authorize merge by a model or Agent Gary.
 
-### Current composed operating-boundary delta — 2026-10-16
+### Current composed operating-boundary delta — 2026-10-17
 
 The exact source set and current approval authority are bound by
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision, not the historical source head above. The review
 extends approval to commissioning the existing Delivery realization path at
 OOS `4c74d35b09864c12b4a63beb4fa8a23416381e70`, Console
-`1d19fc2a0cc809a42905688296baf42793b7e066` and Platform
+`f2e506e7a4532c7ca2461d2631ec5f33367606a4` and Platform
 `52b71766dc4cf4eaa028aff45a4c57b5b569a51d`, with the other exact owners in
 that decision. It is not evidence that live product generation has succeeded.
+
+The Console revision includes PR89's existing Landing new-code revision
+correction. The composed review records exact validation and capture-policy
+proof; this mapping change does not affect Delivery realization, enable
+Prototype generation, admit another repository or expand model/action authority.
 
 The existing local provider/model, gateway, CGG boundary and source executor
 are reused. The exact workflow suffix is `source-realization`; the gateway

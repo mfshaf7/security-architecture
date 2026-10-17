@@ -202,7 +202,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-16
+        reviewed_on: 2026-10-17
         status: current
         decision: approved
         review_areas:
@@ -212,6 +212,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-prototype-landing-new-source-revision-binding
           - console-primary-owner-records-and-cold-workflow-readback
           - console-governed-ai-source-drafting
           - console-delivery-realization-explicit-digest-acceptance
@@ -227,6 +228,10 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/prototype/server/prototype-landing-oos-client.ts
+          - repo: governance-operations-console
+            path: tests/operation-runtime/prototype-landing-live-adapter.test.mjs
           - repo: governance-operations-console
             path: src/workspace-continuity/server/workspace-continuity-wgcf-client.ts
           - repo: governance-operations-console
@@ -352,7 +357,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-16
+        reviewed_on: 2026-10-17
         status: current
         decision: approved
         review_areas:
@@ -362,6 +367,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governance-console-existing-landing-mapper-reacceptance
           - governance-console-bounded-record-authority-and-realization
           - governance-console-retained-composition-startup
           - governance-console-all-route-proof-remains-outstanding

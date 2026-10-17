@@ -2,7 +2,7 @@
 
 ## Summary
 
-- date: 2026-10-16
+- date: 2026-10-17
 - owner repo: `security-architecture`
 - delivery initiative: `openproject://work_packages/1275`
 - security acceptance item: `openproject://work_packages/1303`
@@ -14,7 +14,7 @@
 - architecture packet digest:
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
-  - `governance-operations-console@1d19fc2a0cc809a42905688296baf42793b7e066`
+  - `governance-operations-console@f2e506e7a4532c7ca2461d2631ec5f33367606a4`
   - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
   - `platform-engineering@52b71766dc4cf4eaa028aff45a4c57b5b569a51d`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
@@ -23,6 +23,7 @@
 - reviewed Platform tree:
   `platform-engineering-tree@43d24473dde30f0ec9a480c7ec731b6cb7e99b78`
 - source reviews:
+  - [Console Landing new-source revision correction PR #89](https://github.com/mfshaf7/governance-operations-console/pull/89)
   - [WGCF current Studio registry compatibility PR #115](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/115)
   - [Platform grouped readiness caller and issuer reconciliation PR #318](https://github.com/mfshaf7/platform-engineering/pull/318)
   - [Platform post-crash health PR #317](https://github.com/mfshaf7/platform-engineering/pull/317)
@@ -74,6 +75,40 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Landing capture versus new-code revision — 2026-10-17
+
+The exact Console revision in the Summary accepts the existing Landing mapper
+correction, not a new source-writing purpose. The retained Proposal1305 capture
+has a real immutable revision, but its intended new Studio app source does not
+exist. For `create-studio-source` only, the mapper now supplies a null source-plan
+revision as the unchanged WGCF policy requires. Entry Packet source evidence,
+current preparation revision, expected state, operator attribution and artifact
+digest checks remain intact. Existing/referenced/import source bindings retain
+their original semantics. Old requests remain immutable; normal corrected
+submission preserves the same Prototype and prior history.
+
+Agent Gary head `49dad299009d0c11449ab6630f2a04d6e09372bb`, merged by the
+delegated human through PR89 at the Summary's exact Console revision, passed
+fresh full committed CI-equivalent validation against fetched base
+`1d19fc2a0cc809a42905688296baf42793b7e066`: repository validation, validator
+compilation, base-aware whitespace, all561 semantic tests, architecture,
+typecheck, production build and dependency audit with zero vulnerabilities.
+The exact-head provider check and `mfshaf7` review also passed. Non-mutating
+engineering replay of the actual retained capture against current WGCF and
+Studio14dfcb reproduces the old denial and accepts the corrected command,
+including all schemas, digests and unchanged capture/concurrency bindings.
+It issues no readiness receipt and writes no canonical business source.
+
+Decision: `approved` for the exact Summary source set. Every non-Console
+revision and the Platform tree remain unchanged. No new caller, repository
+scope, model, Prototype coding authority, schema, activation flag, service,
+public runtime exposure or waiver is accepted. The operator's public synthetic
+demo repository decision is separate from this code review and does not prove
+private-client custody. Platform must commission the accepted source set and
+prove current readiness before corrected Landing submission. Actual reviewed
+Studio merge/readback remains necessary for a landed claim. App generation,
+authoring/handoff gaps and Epic1275 completion remain outstanding.
 
 #### Current Studio registry compatibility — 2026-10-16
 
