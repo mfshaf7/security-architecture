@@ -19,10 +19,11 @@
   - `platform-engineering@52b71766dc4cf4eaa028aff45a4c57b5b569a51d`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@b30a94ea73e1528fefef4b1c05759edf16cea5bb`
-  - `workspace-prototype-studio@14dfcb5fad6272eabdc3edde55c1c26b017a4f3f`
+  - `workspace-prototype-studio@a4dff00628ad54b7c05bd48aebbbcf3ec2a18d6b`
 - reviewed Platform tree:
   `platform-engineering-tree@43d24473dde30f0ec9a480c7ec731b6cb7e99b78`
 - source reviews:
+  - [Studio inert Landing draft compatibility PR #30](https://github.com/mfshaf7/workspace-prototype-studio/pull/30)
   - [Console Landing new-source revision correction PR #89](https://github.com/mfshaf7/governance-operations-console/pull/89)
   - [WGCF current Studio registry compatibility PR #115](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/115)
   - [Platform grouped readiness caller and issuer reconciliation PR #318](https://github.com/mfshaf7/platform-engineering/pull/318)
@@ -75,6 +76,43 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Existing Landing draft versus executable Preview profile — 2026-10-17
+
+Studio's exact Summary revision accepts only the existing Landing/Preview
+consumer correction. The normal corrected Console request for Proposal1305
+prepared PR29, whose exact source reproduced the provider CI failure locally:
+Landing correctly emits a non-activating six-field draft, but aggregate Preview
+validation required a fully configured runtime profile. That failed review was
+not merged; its owner attempt was cancelled through the normal Console, with
+history and product identity preserved. Retained review-branch housekeeping
+must not be mistaken for product implementation or canonical source custody.
+
+The new owner-local draft schema accepts exactly Landing's six metadata fields,
+status `draft` and `runtime_activation: false`, with its canonical vocabulary.
+Aggregate validation binds a known Prototype and matching draft filename;
+missing fields, extra runtime configuration, invalid identity/status/vocabulary
+and requested activation remain denied. Fully configured profiles still use
+the unchanged executable schema and registry-boundary checks. Runtime
+construction still rejects a metadata-only draft before creating state or
+spawning a process. No port, source server, mutable product state, network,
+public ingress or activation authority is inferred from a valid draft.
+
+Gary head `f24977817489aae23806b1522174c46a54f5812b`, merged as Studio PR30
+at the Summary revision, passed clean committed `make validate` with all78
+tests and every owner validator, fetched-base whitespace, exact provider
+`validate` success and delegated `mfshaf7` review. The regression uses actual
+Landing-emitted metadata, proves non-execution, and checks negative draft
+shapes, known identity/filename binding and producer-vocabulary parity. The
+repository-profile test enumerates committed profiles rather than assuming
+there can only ever be one. Existing runtime denial tests remain unchanged.
+
+Decision: `approved` for the exact Summary source set. All non-Studio source
+revisions, the Platform tree, existing active runtime schema and original
+model/source-writing purpose remain unchanged. Normal composed activation and
+a fresh corrected Landing's actual CI/review/merged readback are still needed.
+This is not approval for browser persistence, Prototype coding, confidential
+client custody, public hosting or final Epic completion.
 
 #### Landing capture versus new-code revision — 2026-10-17
 
