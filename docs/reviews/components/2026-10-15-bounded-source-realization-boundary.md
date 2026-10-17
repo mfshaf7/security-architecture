@@ -29,8 +29,14 @@ and its YAML decision, not the historical source head above. The review
 extends approval to commissioning the existing Delivery realization path at
 OOS `4c74d35b09864c12b4a63beb4fa8a23416381e70`, Console
 `f2e506e7a4532c7ca2461d2631ec5f33367606a4` and Platform
-`52b71766dc4cf4eaa028aff45a4c57b5b569a51d`, with the other exact owners in
+`ac854a4e08a6d075bd1842127513c55de59f3997`, with the other exact owners in
 that decision. It is not evidence that live product generation has succeeded.
+
+Platform PR319 additionally restores the documented Prototype-local fixture
+data namespace in record-only refresh. It changes no realization purpose,
+model binding, source repository admission or execution authority; fixture
+files are not executed as control-plane code. The composed review binds its
+exact tree and denial proof. Actual Console terminal readback remains separate.
 
 The Console revision includes PR89's existing Landing new-code revision
 correction. The composed review records exact validation and capture-policy

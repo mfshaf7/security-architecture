@@ -12,7 +12,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-16
+        reviewed_on: 2026-10-17
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-documented-landing-fixture-record-admission
           - console-existing-readiness-caller-and-reviewed-issuer-reconciliation
           - governed-ai-observed-provider-patch-and-readiness
           - console-unchanged-record-refresh-continuity
@@ -41,6 +42,12 @@ review_inventory:
           - governance-console-private-runtime-state-binding
           - governance-console-failure-first-rollback-order
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_record_authority.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/test_console_record_authority.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/runbooks/operate-complete-runtime.md
           - repo: platform-engineering
             path: products/governance-operations-console/AGENTS.md
           - repo: platform-engineering
@@ -372,6 +379,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governance-console-documented-landing-fixture-record-admission
           - governance-console-landing-draft-consumer-compatibility
           - governance-console-existing-landing-mapper-reacceptance
           - governance-console-bounded-record-authority-and-realization
