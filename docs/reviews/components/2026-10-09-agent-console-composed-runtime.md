@@ -65,7 +65,7 @@ approves the current reviewed local source set:
 - `context-governance-gateway@a2f4e9274338ddc55824616e78a1d01cee079227`
 - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
 - `platform-engineering@ac854a4e08a6d075bd1842127513c55de59f3997`
-- `governance-operations-console@f2e506e7a4532c7ca2461d2631ec5f33367606a4`
+- `governance-operations-console@b840fa731f25f2a39bb254d9a2607273625c7fcd`
 - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
 
 Ollama is exactly `0.40.5`, with unchanged `qwen3:8b` digest
@@ -78,7 +78,10 @@ mapping in Console PR89, and restores Landing's documented Prototype-local
 fixture-data namespace in Platform PR319. The composed review records exact
 source validation, non-mutating capture-policy proof and real-Git fixture
 boundary/denial evidence. Fixture data is not control-plane executable source.
-These repairs do not alter Agent Console model tasks,
+Console PR90 additionally restores the same pending Landing owner's post-merge
+cold continuation while retaining readonly accepted input and succeeded-only
+completion. The exact composed review distinguishes source/compiled-UI proof
+from normal operating readback. These repairs do not alter Agent Console model tasks,
 context admission, session identity, invocation, action or approval authority.
 Metadata readiness now observes actual version/digest, without inference or
 automatic update. OOS/CGG session, context, schema, explicit operator invocation,

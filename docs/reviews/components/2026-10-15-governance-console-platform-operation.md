@@ -2,7 +2,7 @@
 
 ## Summary
 
-- date: 2026-10-17
+- date: 2026-10-18
 - owner repo: `security-architecture`
 - delivery initiative: `openproject://work_packages/1275`
 - security acceptance item: `openproject://work_packages/1303`
@@ -14,7 +14,7 @@
 - architecture packet digest:
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
-  - `governance-operations-console@f2e506e7a4532c7ca2461d2631ec5f33367606a4`
+  - `governance-operations-console@b840fa731f25f2a39bb254d9a2607273625c7fcd`
   - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
   - `platform-engineering@ac854a4e08a6d075bd1842127513c55de59f3997`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
@@ -23,6 +23,7 @@
 - reviewed Platform tree:
   `platform-engineering-tree@cdc958bc3c31488193f868ed69507e7c918b693e`
 - source reviews:
+  - [Console existing Landing post-merge cold continuation PR #90](https://github.com/mfshaf7/governance-operations-console/pull/90)
   - [Platform documented Landing fixture record admission PR #319](https://github.com/mfshaf7/platform-engineering/pull/319)
   - [Studio inert Landing draft compatibility PR #30](https://github.com/mfshaf7/workspace-prototype-studio/pull/30)
   - [Console Landing new-source revision correction PR #89](https://github.com/mfshaf7/governance-operations-console/pull/89)
@@ -77,6 +78,50 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Existing Landing cold readback continuation — 2026-10-18
+
+Console PR90 repairs its existing operator adapter after a canonical source
+merge. Same immutable request17922519451811 remains `review-required` after
+Studio31 mergedf668a26; current records contain that real registration. The
+cold modal previously disabled Continue and called the run Done because it
+reused new-draft mutability and source completeness as owner-workflow gates.
+The primary procedure requires the same request's approved-merge verification,
+byte-identical owner readback and terminal receipt. No direct owner API bypass
+or duplicate request was used to hide the disabled UI.
+
+The existing Landing view model now distinguishes pending live owner progress
+from source registration and local-draft completion. Accepted pending drafts
+stay read-only; only `succeeded` completes a live run. Existing accepted,
+evaluating, preparing, review-required and cancelling states may continue the
+same immutable request, with step/in-flight/dirty-draft and canonical terminal
+record guards. Cancelled, rejected and requires-action states do not advance.
+The wizard step and body status describe the owner state consistently. New
+submission and disconnected-preview guards remain separate and unchanged;
+server caller, request/digest, review, authority and lifecycle checks remain
+the enforcement boundary. No endpoint, model purpose or privilege is added.
+
+Exact Garyd79b260aca83dbf018c25db31a1dac3571f9025e passed fetched-base
+whitespace, repository/validator compile, architecture, all565tests, types,
+production build and dependency audit0. State-matrix regressions cover every
+owner status over merged/unmerged source and negative guards. An actual
+compiled-candidate browser check used explicitly intercepted synthetic-demo
+owner/capability snapshots: readonly accepted fields, pending/notDone wizard,
+enabled same-request continuation, zero new submissions/owner writes and cold
+reload recovery. This is engineering evidence, NOT operating acceptance.
+Exact reviewed merge and coherent normal activation must precede the real
+same-request browser continuation and terminal owner readback. This remains
+registration-only; no app, baseline, source admission, private-client custody
+or Epic-complete claim follows.
+Provider repositoryCI39110384003 and delegated exact-head human review passed;
+PR90 merged as the Summary revision with the same validated source tree.
+
+Post-crash environment containment started the existing approved Ollama0.40.5
+and restored the owner-defined volatile directory/disposable failed pod;
+normal activation080728Z and automatic renewal recovered. A proposed startup
+ordering defect was disproven from the actual gateway-owned probe target
+before any Platform source change. All non-Console source pins, the Platform
+tree, model profiles, identities and runtime purposes remain unchanged here.
 
 #### Existing Landing fixture data versus record refresh — 2026-10-17
 
