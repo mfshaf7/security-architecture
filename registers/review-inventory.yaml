@@ -144,7 +144,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-09
+        reviewed_on: 2026-10-18
         status: current
         decision: approved
         review_areas:
@@ -159,7 +159,10 @@ review_inventory:
           - agent-console-raw-context-denial
           - agent-console-replay-and-receipt-integrity
           - agent-console-composition-only-activation
+          - owner-evidence-profile-bounded-runtime-admission
         owner_artifacts:
+          - repo: context-governance-gateway
+            path: contracts/delivery-art-work-session/evidence-profile.json
           - repo: context-governance-gateway
             path: docs/operating-model/agent-console-projection.md
           - repo: context-governance-gateway
@@ -177,7 +180,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-17
+        reviewed_on: 2026-10-18
         status: current
         decision: approved
         review_areas:
@@ -187,12 +190,15 @@ review_inventory:
           - runtime
         review_trigger_ids:
           - preview-landing-inert-draft-consumer-compatibility
+          - owner-evidence-profile-bounded-runtime-admission
           - preview-reviewed-control-and-current-record-snapshots
           - preview-runtime-local-host-process-boundary
           - preview-runtime-reviewed-source-custody
           - preview-runtime-atomic-expected-state
           - preview-runtime-operating-proof-sequencing
         owner_artifacts:
+          - repo: workspace-prototype-studio
+            path: contracts/delivery-art-work-session/evidence-profile.json
           - repo: workspace-prototype-studio
             path: packages/prototype_landing/landing.py
           - repo: workspace-prototype-studio
@@ -662,7 +668,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-09
+        reviewed_on: 2026-10-18
         status: current
         decision: approved
         review_areas:
@@ -677,7 +683,10 @@ review_inventory:
           - agent-console-raw-context-denial
           - agent-console-replay-and-receipt-integrity
           - agent-console-composition-only-activation
+          - owner-evidence-profile-bounded-runtime-admission
         owner_artifacts:
+          - repo: context-governance-gateway
+            path: contracts/delivery-art-work-session/evidence-profile.json
           - repo: context-governance-gateway
             path: docs/operating-model/agent-console-projection.md
           - repo: context-governance-gateway

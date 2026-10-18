@@ -56,13 +56,13 @@ sequence before the Feature is operating-ready.
 
 ## Scope Delta
 
-### Current patch maintenance acceptance — 2026-10-17
+### Current patch maintenance acceptance — 2026-10-18
 
 The historical 2026-10-09 pins above remain historical evidence. For the
 existing `gate:agent-console-operating-acceptance` proof, this scoped delta
 approves the current reviewed local source set:
 
-- `context-governance-gateway@a2f4e9274338ddc55824616e78a1d01cee079227`
+- `context-governance-gateway@ddadcfaae6df7c868cfa43e53eb539878c48880e`
 - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
 - `platform-engineering@ac854a4e08a6d075bd1842127513c55de59f3997`
 - `governance-operations-console@b840fa731f25f2a39bb254d9a2607273625c7fcd`
@@ -72,6 +72,12 @@ Ollama is exactly `0.40.5`, with unchanged `qwen3:8b` digest
 `500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`.
 The exact Platform tree and full scope are accepted by the current
 [complete-runtime delta](2026-10-15-governance-console-platform-operation.md).
+CGG PR26 and Studio PR32 add only an evidence-profile entry for their existing
+suites and matching proof-boundary documentation. The composed review records
+CGG80tests, Studio78tests/full validators, exact provider checks and human
+review, and canonical profile coverage without claiming future cases passed.
+This metadata reacceptance changes no Agent Console task, context, identity,
+permission or invocation behavior and does not enable Prototype generation.
 Its additional maintenance reconciles existing WGCF consumer credentials and
 exact issuer expectations, corrects the existing Landing new-code revision
 mapping in Console PR89, and restores Landing's documented Prototype-local
