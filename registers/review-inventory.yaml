@@ -214,7 +214,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-17
+        reviewed_on: 2026-10-18
         status: current
         decision: approved
         review_areas:
@@ -224,6 +224,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-existing-landing-postmerge-cold-owner-continuation
           - console-prototype-landing-new-source-revision-binding
           - console-primary-owner-records-and-cold-workflow-readback
           - console-governed-ai-source-drafting
@@ -240,6 +241,14 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/prototype/presentation/workflows/landing/prototype-landing-modal.tsx
+          - repo: governance-operations-console
+            path: src/domain-workspaces/prototype/presentation/workflows/landing/prototype-landing-status-model.ts
+          - repo: governance-operations-console
+            path: tests/prototype/prototype-landing-run-controls.test.mjs
+          - repo: governance-operations-console
+            path: docs/product/prototype-landing-live-integration.md
           - repo: governance-operations-console
             path: src/domain-workspaces/prototype/server/prototype-landing-oos-client.ts
           - repo: governance-operations-console
@@ -379,6 +388,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governance-console-existing-landing-postmerge-cold-owner-continuation
           - governance-console-documented-landing-fixture-record-admission
           - governance-console-landing-draft-consumer-compatibility
           - governance-console-existing-landing-mapper-reacceptance
