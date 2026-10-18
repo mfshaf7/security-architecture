@@ -32,6 +32,14 @@ OOS `4c74d35b09864c12b4a63beb4fa8a23416381e70`, Console
 `ac854a4e08a6d075bd1842127513c55de59f3997`, with the other exact owners in
 that decision. It is not evidence that live product generation has succeeded.
 
+The current composed delta also reaccepts CGG PR26 and Studio PR32's existing
+test-suite evidence metadata. The new sandbox-runtime entries do not change
+model profiles, Delivery session eligibility, source paths, GitHub permissions
+or action authority. They neither authorize Prototype generation nor imply all
+projects require a repository, CI workflow or deployed runtime. The composed
+review binds the exact sources and proof limits; actual app operation remains
+separate evidence.
+
 Console PR90 restores continuation of the same pending Landing owner request
 after merged source and cold reload, without treating registry presence as
 terminal workflow success. It preserves readonly accepted drafts, server

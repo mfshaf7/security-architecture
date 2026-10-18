@@ -19,7 +19,7 @@
   - `platform-engineering@ac854a4e08a6d075bd1842127513c55de59f3997`
   - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
   - `workspace-governance-control-fabric@b30a94ea73e1528fefef4b1c05759edf16cea5bb`
-  - `workspace-prototype-studio@a4dff00628ad54b7c05bd48aebbbcf3ec2a18d6b`
+  - `workspace-prototype-studio@0754b123b5c58382feed39e66b213b45e9243e6c`
 - reviewed Platform tree:
   `platform-engineering-tree@cdc958bc3c31488193f868ed69507e7c918b693e`
 - source reviews:
@@ -78,6 +78,37 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Existing owner evidence-profile compatibility — 2026-10-18
+
+CGG PR26 merged `ddadcfaae6df7c868cfa43e53eb539878c48880e` and Studio PR32
+merged `0754b123b5c58382feed39e66b213b45e9243e6c`. Each changes only its
+Delivery ART evidence profile and README. Both expose the existing complete
+test suite as matching `sandbox-runtime` evidence, using the same dual-fidelity
+command pattern already present in OOS, Console and Platform. Every prior
+command, including Studio's separate live Preview operating command, remains
+unchanged. Actual CGG ASGI/local-custody tests and Studio loopback Preview
+process/HTTP tests support this bounded classification; it is not a claim of
+deployed-backend, future Prototype-authoring or app operating proof.
+
+Exact Gary heads `39f52518015b83086d7cf1e9607bcdf528a0e160` and
+`df894635973c5571ab0f5bfe8be303fe661a85d0` passed committed local CI-equivalent
+validation: CGG80tests plus compile/JSON checks, Studio78tests and every owner
+validator, canonical OOS profile validation and old-denied/new-covered planned
+case admission, and fetched-base whitespace. Provider checks39114224432 and
+39114231439 and exact-head human reviews passed. The profile proof explicitly
+does not report future conformance cases as passed. Studio's earlier dirty
+working-tree refusal was its unchanged clean-source guard, not a new defect;
+the complete committed suite passed without skips or guard changes.
+
+This accepts metadata compatibility only. Existing model purposes, caller and
+source authority, owner paths, data and mutation boundaries, GitHub permissions,
+runtime behavior and Platform tree are unchanged. The to-do remains one live
+witness, not a universal requirement for a new repository, CI workflow, runtime
+or Portfolio entry. Existing completed Landing request17922519451811 and its
+terminal receipt must survive normal coherent activation; no resubmission is
+authorized. Current exact-source reacceptance and later operating readback do
+not authorize the still-unimplemented Prototype generation purpose.
 
 #### Existing Landing cold readback continuation — 2026-10-18
 
