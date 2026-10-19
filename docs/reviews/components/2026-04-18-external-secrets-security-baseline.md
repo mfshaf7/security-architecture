@@ -1,5 +1,16 @@
 # External Secrets Security Baseline Review
 
+## Periodic Reassessment — 2026-10-19
+
+The [October reassessment](../../assessments/platform/2026-10-baseline-reassessment.md)
+records the inspected canonical owner revisions, current boundary conditions,
+retained findings and explicit operating-evidence limits for this subject.
+Continue this existing baseline subject to those conditions; next baseline
+review is 2027-04-19. Earlier remediation checkpoints remain unchanged.
+No pending Console authoring/bootstrap capability or new runtime is approved.
+The original April review below is retained as historical evidence; later
+accepted change reviews apply separately, not as blanket baseline permission.
+
 ## Scope
 
 Review External Secrets Operator as the delivery bridge from Vault-controlled
