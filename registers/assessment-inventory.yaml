@@ -1,5 +1,13 @@
 schema_version: 1
 assessment_inventory:
+  existing-security-baselines-2026-10:
+    scope: platform
+    path: docs/assessments/platform/2026-10-baseline-reassessment.md
+    status: published
+    reviewed_on: 2026-10-19
+    review_due_on: 2027-04-19
+    reviewers:
+      - mfshaf7
   platform-executive-2026-04:
     scope: platform
     path: docs/assessments/platform/2026-04-executive.md

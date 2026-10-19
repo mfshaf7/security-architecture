@@ -6,8 +6,8 @@ review_inventory:
       scope: platform
       baseline_review:
         path: docs/reviews/platform/2026-04-18-platform-engineering-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved-with-findings
       latest_change_review:
@@ -270,8 +270,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-openclaw-runtime-distribution-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -294,8 +294,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -308,8 +308,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-openclaw-telegram-channel-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -332,8 +332,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -425,8 +425,8 @@ review_inventory:
       scope: product
       baseline_review:
         path: docs/reviews/products/2026-04-18-openclaw-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -461,8 +461,8 @@ review_inventory:
       scope: product
       baseline_review:
         path: docs/reviews/products/2026-04-18-openproject-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved-with-findings
       latest_change_review:
@@ -495,8 +495,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-argo-cd-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -509,8 +509,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-vault-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -535,8 +535,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-external-secrets-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -549,8 +549,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-observability-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -582,8 +582,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-platform-postgresql-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -731,8 +731,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-openclaw-host-bridge-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -745,8 +745,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-openclaw-telegram-channel-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -769,8 +769,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-openclaw-runtime-distribution-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -793,8 +793,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-host-control-plugin-security-baseline.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
@@ -807,8 +807,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-18-operator-orchestration-service-runtime-admission.md
-        reviewed_on: 2026-04-18
-        review_due_on: 2026-10-18
+        reviewed_on: 2026-10-19
+        review_due_on: 2027-04-19
         status: active
         decision: approved
       latest_change_review:
