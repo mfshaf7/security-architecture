@@ -39,6 +39,15 @@ AI triage remains deferred.
 
 ## Current Admitted Runtime Shape
 
+The phase1 shape below is not the whole current local Console composition.
+The [current Console composed-operation review](../../../reviews/components/2026-10-15-governance-console-platform-operation.md)
+binds its exact source authorization, finite trusted owner bootstrap and bounded
+Prototype/Delivery authoring extension. Console remains a same-origin client;
+OOS owns canonical workflow/identity/approval/recovery, while Platform retains
+credentials/effects and Security retains acceptance. No model or browser gains
+owner, merge or release authority. The real Console-only operating journey is
+separate from source conformance and from the older phase1 admission below.
+
 - owner repo: `operator-orchestration-service`
 - platform runtime owner: `platform-engineering`
 - expected namespace: `operator-orchestration-service`

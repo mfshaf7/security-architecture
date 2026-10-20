@@ -3363,6 +3363,22 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-18-console-source-authoring.md
+  date: '2026-10-18'
+  short_title: 2026-10-18-console-source-authoring
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
@@ -3672,6 +3688,7 @@ change_records:
   - secrets
   - runtime
   - delivery
+  - ai
   findings: []
   risks: []
   workstreams:
@@ -3716,6 +3733,21 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-18-console-source-authoring.md
+  date: 2026-10-18.
+  short_title: 2026-10-18-console-source-authoring
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'
@@ -3782,4 +3814,18 @@ change_records:
   findings: []
   risks: []
   workstreams:
+  - WS-007
+- repo: workspace-governance-control-fabric
+  path: docs/records/change-records/2026-10-19-console-owner-admission-provider-binding.md
+  date: 2026-10-19.
+  short_title: 2026-10-19-console-owner-admission-provider-binding
+  review_areas:
+  - identity
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
   - WS-007

@@ -33,6 +33,14 @@ operators, CI, or automation:
 
 ## Current Admitted Shape
 
+The [current Console composed-operation review](../../../reviews/components/2026-10-15-governance-console-platform-operation.md)
+also accepts the exact bounded real-Prototype lifecycle-context subject. OOS
+consumes its admitted packet under the separately reviewed source-authoring
+purpose; CGG has no model, source, workflow or approval authority. This narrow
+consumer route does not activate CGG's generic provider-neutral downstream
+handoff or governed shared-service/stage/prod boundaries. Source acceptance
+still requires normal composition/readiness and actual operating proof.
+
 - owner repo: `context-governance-gateway`
 - workspace authority owner: `workspace-governance`
 - platform runtime owner: `platform-engineering`

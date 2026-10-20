@@ -2,7 +2,7 @@
 
 ## Summary
 
-- date: 2026-10-18
+- date: 2026-10-20
 - owner repo: `security-architecture`
 - delivery initiative: `openproject://work_packages/1275`
 - security acceptance item: `openproject://work_packages/1303`
@@ -14,15 +14,23 @@
 - architecture packet digest:
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
-  - `governance-operations-console@b840fa731f25f2a39bb254d9a2607273625c7fcd`
-  - `operator-orchestration-service@4c74d35b09864c12b4a63beb4fa8a23416381e70`
-  - `platform-engineering@ac854a4e08a6d075bd1842127513c55de59f3997`
-  - `workspace-governance@ec499fcbdd7d62687d704b9f9e50c87a601c48ee`
-  - `workspace-governance-control-fabric@b30a94ea73e1528fefef4b1c05759edf16cea5bb`
-  - `workspace-prototype-studio@0754b123b5c58382feed39e66b213b45e9243e6c`
+  - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
+  - `governance-operations-console@9e3d97f247f0b9990d202c274680ec89576e7d42`
+  - `operator-orchestration-service@73cb3ede81052de716da4e42f2ef93da94b2c770`
+  - `platform-engineering@72c3b13cf20329aaff34146c587fe2969b9d9a03`
+  - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
+  - `workspace-governance-control-fabric@f789a19c06f0896774a09ee8942c88c518c7bd70`
+  - `workspace-prototype-studio@05678a9a63cd998ef54dd17b45a3b7ec848e5615`
 - reviewed Platform tree:
-  `platform-engineering-tree@cdc958bc3c31488193f868ed69507e7c918b693e`
+  `platform-engineering-tree@e63d105593e1566f67042c757ccb8f0b32fdac41`
 - source reviews:
+  - [Console bounded authoring, owner bootstrap and recovery PR #91](https://github.com/mfshaf7/governance-operations-console/pull/91)
+  - [OOS canonical source-purpose and authoring consumers PR #350](https://github.com/mfshaf7/operator-orchestration-service/pull/350)
+  - [Platform bounded issuer, seven-owner binding and profile lifecycle PR #320](https://github.com/mfshaf7/platform-engineering/pull/320)
+  - [WG complete source-owner registration PR #282](https://github.com/mfshaf7/workspace-governance/pull/282)
+  - [WGCF current owner-registration contracts PR #116](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/116)
+  - [Studio deterministic owner preparation and source acceptance PR #33](https://github.com/mfshaf7/workspace-prototype-studio/pull/33)
+  - [CGG real Prototype context subject PR #28](https://github.com/mfshaf7/context-governance-gateway/pull/28)
   - [Console existing Landing post-merge cold continuation PR #90](https://github.com/mfshaf7/governance-operations-console/pull/90)
   - [Platform documented Landing fixture record admission PR #319](https://github.com/mfshaf7/platform-engineering/pull/319)
   - [Studio inert Landing draft compatibility PR #30](https://github.com/mfshaf7/workspace-prototype-studio/pull/30)
@@ -78,6 +86,116 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Canonical source authorization, trusted owner bootstrap and Prototype authoring — 2026-10-20
+
+This delta accepts only the seven actual merged revisions and Platform tree in
+the Summary and YAML. Their remote main references were freshly verified after
+the coordinated source window. Source-only merge was not runtime approval:
+Platform primary and the running gateway remain on the prior acceptance until
+this exact decision lands and normal explicit commissioning succeeds. The
+independent October19 baseline reassessment is an inherited floor, not acceptance
+of this new composition. No new Architecture Packet version, activation flag,
+identity, model, service or repair ART item is introduced.
+
+The following bounded extensions supersede older purpose denials only within
+this exact local composition. The prior dated sections below retain historical
+decisions and source sets; their references to the Summary mean the snapshot
+at that review date, not a claim that those sources are current today.
+
+- OOS derives source scope from a real canonical Delivery prospective start or
+  session, or a real Prototype registry identity and accepted source objective.
+  The browser and model cannot invent an ART session, repository, subject or
+  approval. Current canonical source, branch, base, caller/operator, expiry and
+  exact approval are rechecked before journal/source effects and provider I/O.
+- The existing Platform provider admits only `agent-source.issue`,
+  `agent-source.renew` and `agent-source.revoke` for those closed source intents.
+  Vault/key custody stays Platform-owned. App ownership and the selected
+  organization installation are distinct; the token has one verified provider
+  repository. GitHub tokens are not natively branch-scoped: the trusted executor
+  enforces branch/base/paths and human protected-main review. Renewed, stopped,
+  expired, unknown and revoked generations cannot silently regain authority.
+- Trusted owner bootstrap is a separate marked subject/purpose, not model
+  authoring or fake Delivery work. Current proposed Intake plus successful
+  shared-workspace custody precede checkout and are rechecked after provider
+  reads and before mint/publication. The finite trusted template writes at most
+  ten regular owner-control paths, preserves existing README purpose and uses
+  the actual selected evidence profile. Isolated owner validation cannot import
+  existing app/shadow code. Valid existing owners use non-source checkout, not
+  an invented PR or source token. Bootstrap proof is not application acceptance.
+- Optional CI requires its own explicit Workflows approval and verified provider
+  grant. Ordinary source/model consumers reject that credential shape and the
+  bootstrap purpose. The recorded engineering workflow-maintenance grant is
+  separate from normal project authorization; no project universally requires
+  a new repository, CI workflow, model generation or deployed runtime.
+- WG registration includes exact derived companions, provider-aware custody,
+  repo rules and bounded generated indexes as one reviewed transaction; it
+  grants source custody only, never shared Platform/Security authority. Active
+  Inventory retains consumed Intake lineage rather than requiring both rows.
+  OOS admission still requires canonical controls/checkout and a real accepted-
+  base project evidence profile. No validator, owner or review gate is waived.
+- Prototype generation uses its real subject through CGG and the distinct
+  `prototype-source-authoring-v1` purpose/caller/task contract, not a borrowed
+  Delivery identity. Only admitted model-safe packets reach the existing local
+  governed gateway. The model drafts inert bounded app/design source, not owner
+  controls, evidence, tools, secrets, classification, source approval or merge.
+  CGG retains context custody and has no model, ART, source or approval authority.
+- Studio deterministically prepares design/Preview and later source-transfer
+  metadata. Exact draft acceptance, executable Preview configuration, Baseline,
+  target source import and post-squash owner acceptance remain separate. No
+  pre-merge case requires its own future merge; actual canonical commit/readback
+  is bound only after it exists. Delivery performs real remaining product work.
+- Private durable metadata/payload separation, byte/count-bounded caller listing,
+  original-request cold recovery, digest/revision checks, uncertain-effect
+  reconciliation and terminal stop/cancel/revoke remain enforced. Existing
+  Repository Custody is shared authenticated-workspace truth; the new source
+  requests and approval sessions are caller/operator-bound. No fictional private
+  ownership, adoption mechanism or duplicate terminal Landing is introduced.
+- Model retirement preserves inert registry history but removes every live
+  plane/route/caller grant, retires all bindings and denies activation/inference.
+  Active profiles still require their grants; other eligible profiles operate
+  independently of legacy intake activation. All-inactive history cannot launch.
+  The same reviewed Ollama0.40.5/qwen3:8b binding and bounded limits are reused;
+  there is no implicit provider/model fallback or additional model download.
+
+Implemented-control evidence is the actual owner code plus native positive,
+denial, real-Git, source/credential, protocol, packaging and recovery checks.
+WG288, WGCF528, Studio90 and CGG93 owner tests passed. OOS's exact final head
+passed1529 tests (1527 passed, zero failures, two unchanged opt-in Studio skips),
+all documented API210 and CI-equivalent/base-aware checks, both packaged images
+and real isolated API/fail-closed worker smoke. Console's exact head passed a
+fresh fetched-base603/603 tests, architecture/types/build and dependency audit0;
+native final OOS-to-Console producer protocol7 and earlier isolated browser
+conformance passed. Platform's exact final head passed full committed make and
+CI extras, native source-intent37 and lifecycle13. An independent exact-source
+all-retired configuration ran all five affected suites:120 tests passed. Frozen
+unit fixtures are never runtime configuration or operating acceptance. Current
+provider checks and exact delegated human reviews passed before all seven merges.
+No live model call, app source, canonical owner admission or new-purpose runtime
+activation was performed by these engineering proofs.
+
+Commission only this exact source set through the existing complete-runtime
+procedure. Verify current identity/credential projections, shared lifecycle-
+context binding, deployed source revisions, per-purpose gateway readiness and
+normal Console recovery before business effects. Retained infrastructure
+bindings are prerequisites, not substitute operating evidence. Preserve the
+successful terminal Proposal1305 Landing and repository1421451929; do not reopen
+or resubmit them. Existing source publish credentials were revoked after each
+publication; only explicit normal project approvals can issue business scope.
+Rollback stops new-purpose actions, revokes their exact projections and uses
+the existing prior-composition restore, preserving journals, receipts, canonical
+records, unrelated bindings and all committed or unique source.
+
+This is controlled commissioning acceptance for a single-operator loopback/
+cluster-local dev-integration public synthetic exercise. It is not private-
+client, confidential-data, public hosting, stage/prod, autonomous governance or
+all-project support approval. The real Console-only Prototype/Preview/Baseline
+to Delivery to-do and applicable direct/no-repo/no-runtime, denial and cold-
+recovery route witnesses remain operating proof under `#1298`; no app or Epic
+completion follows from this decision. Existing registered baseline findings
+remain owned and unchanged; no new finding or accepted-risk waiver is invented.
+
+### Prior Maintenance Acceptances
 
 #### Existing owner evidence-profile compatibility — 2026-10-18
 
@@ -936,13 +1054,15 @@ The exact reviewed composition provides:
   replay inputs allow browser recovery without another source mutation;
 
 - an external Security decision contract whose gate, initiative, work item,
-  Architecture Packet, six owner revisions, and Platform tree must all match;
+  Architecture Packet, seven owner revisions, and Platform tree must all match;
 - selection of that decision only from clean current Security `origin/main`,
   followed by mode-`0600` private materialization rather than a circular
   post-review source-pin commit;
 - a finite Platform action set for start, status, access, smoke, stop, and
-  promotion check, with no caller-selected URL, method, header, executable,
-  secret, shell, or arbitrary input;
+  promotion check plus the three closed source-credential effects above, with
+  no caller-selected URL, method, header, executable, secret, shell or arbitrary
+  input; source coordinates are canonical OOS-derived approved scope, not free
+  browser/model-selected execution parameters;
 - exact command source version, canonical intent digest, operator approval,
   caller identity, idempotency identity, retry, cancellation, and terminal
   receipt bindings;
@@ -1093,7 +1213,7 @@ after activation and status readback.
 
 The negative decision is equally binding: the prior Architecture Packet
 digest or any prior Console, OOS, Workspace Governance, or WGCF revision set is
-stale evidence and cannot authorize the composed Platform merge. Component-only
+stale evidence and cannot authorize current composed runtime commissioning. Component-only
 proof, a partial source set, or the `#1295` continuity readback by itself also
 cannot satisfy `gate:platform-operation-security`.
 
@@ -1117,8 +1237,10 @@ remote, shared, stage, production, or public access.
 
 OOS and Platform independently validate the same finite action, subject,
 source version, capability, intent digest, and operator approval. Platform
-constructs every owner command itself. A caller cannot supply a repository,
-path, command, argument, destination, or credential. Terminal Platform
+constructs every owner command itself. The runtime catalog accepts no arbitrary
+repository, path, command, argument, destination or credential; closed source
+effects use only canonical scope derived and approved by the trusted OOS owner
+reader, as bounded in the current maintenance acceptance. Terminal Platform
 receipts and current Console readback—not OOS coordination state alone—are the
 effect evidence.
 
@@ -1200,7 +1322,7 @@ substitute component fixtures or source tests for that later proof.
 
 `approved`
 
-Security emits `gate:platform-operation-security` only for the six exact owner
+Security emits `gate:platform-operation-security` only for the seven exact owner
 revisions and Platform tree listed in the Summary and machine-readable decision,
 bound to the current Architecture Packet URI and digest. Historical source
 bindings above do not replace that current set.
