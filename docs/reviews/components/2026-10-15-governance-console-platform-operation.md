@@ -15,7 +15,7 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@0f85b5b91de8e55ccaa13554e6fed1d376fcab05`
+  - `governance-operations-console@8aac130ff442b65e20fa0e35564e082b419214ce`
   - `operator-orchestration-service@194845facc460af37c8b9644ce90b622886a270d`
   - `platform-engineering@f4d30696be19b3ec5a329e6b273eca4a7e2de3f5`
   - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
@@ -24,6 +24,7 @@
 - reviewed Platform tree:
   `platform-engineering-tree@3ac2b1295a315bad7b796589570e890bc3a3d4c5`
 - source reviews:
+  - [Console canonical source authorization recovery PR #93](https://github.com/mfshaf7/governance-operations-console/pull/93)
   - [Platform issuer service tool environment PR #324](https://github.com/mfshaf7/platform-engineering/pull/324)
   - [Platform current-provider commissioning PR #323](https://github.com/mfshaf7/platform-engineering/pull/323)
   - [Console canonical cold Landing projection PR #92](https://github.com/mfshaf7/governance-operations-console/pull/92)
@@ -93,7 +94,60 @@
 
 ### Current Maintenance Acceptance
 
-#### Provider issuer tool environment — 2026-10-20
+#### Canonical source authorization loading and retained choice — 2026-10-20
+
+After accepted provider activation, the old source command was correctly
+rejected against a newer executable revision. Actual Console revocation of its
+exact intent succeeded. A fresh browser then exposed a separate adapter gap:
+preparation was enabled while its canonical authorization list was still
+loading. The resulting unapproved preparation lacked its revoked predecessor.
+Exact scope inspection caught that before approval or issuance. Prototype also
+had no retained-scope selector, and the shared hook's selection refreshed back
+to newest. The incomplete preparation remains immutable, unapproved history;
+it grants no source access and is not rewritten or silently approved.
+
+The bounded Console-only delta preserves the existing shared hook and Teras
+panel. Pending, failed and changed-source reads cannot authorize preparation;
+an initial read failure is not an empty list. A version guard discards older
+read completion. Explicit selection persists only among matching validated
+canonical scopes, and owner-operation reconciliation verifies that exact intent
+before exposing it. A missing selection fails unavailable rather than silently
+choosing another scope. A successful preparation selects its newly returned
+scope. A successor can be prepared only from the selected confirmed-revoked
+predecessor; its new digest/expiry still require separate explicit approval.
+
+The existing scope-recovery action is exposed to Prototype and Bootstrap as
+well as Delivery. Existing Delivery decision recovery remains separate. No
+canonical record, issuer policy, source guard, permission, model, service,
+mutation API or credential custody changes. OOS and Platform retain independent
+exact-actor, subject/start, scope, executable-source and revocation checks. The
+adapter stores selection/read state, not approval authority. Platform remains
+the prior reviewed f4d source; current-source command approval must be fresh.
+
+Eight new units execute the real hook with deferred HTTP and native scope
+parsers across all three consumers, plus actual React-rendered panel branches.
+An isolated real React/Teras browser exercises initial pending, selected older
+revocation with a newer unapproved record, refresh, exact predecessor posting,
+new scope selection, unavailable recovery and confirmed-empty behavior. All
+HTTP is intercepted synthetic evidence with zero live effects; the temporary
+test route is removed before publication. Full committed Console validation
+and actual remote checks are required, followed by exact composed acceptance,
+activation and the same real business request's recovery. These engineering
+proofs are not source issuance, product Preview or Epic1275 completion.
+
+Gary candidate573e4a6 passed all architecture guards,613semantic tests,
+TypeScript, production build, repository validation/validator compilation and
+production dependency audit with zero vulnerabilities. GitHub CI39451317185
+passed. Publication initially returned a bounded provider error after
+the actual exact-head PR/review request existed; the same publisher reconciled
+that PR without duplicate source and publishing access was revoked. Delegated
+exact-head review preceded actual Console PR93 merge8aac130, treec34bb817.
+The current Summary/YAML bind that actual merge. Platform remainsf4d3069/
+tree3ac2b12 and the other five control sources are unchanged. No definition or
+source-purpose grant changed. Fresh composed activation and the same real
+request's correct predecessor-selection/issuance proof remain required.
+
+#### Prior accepted delta: provider issuer tool environment — 2026-10-20
 
 The original Console issue was approved, then the actual worker failed before
 mint. Retained intent phase is `preparing`, no credential projection exists,
@@ -131,8 +185,9 @@ activation fixture depending on installed host tools; the same PR explicitly
 mocks that prerequisite without relaxing real missing-tool denial. Corrected
 provider CI39444172310 and posture39444172324 passed. Delegated exact-head
 review preceded actual PR324 merge `f4d3069`, tree `3ac2b12`; publication access
-was revoked. Current Summary/YAML bind that merge/tree; the other six reviewed
-implementation sources and source-identity definition/anchor remain unchanged.
+was revoked. That prior acceptance bound the Platform merge/tree; current
+Summary/YAML also include the later Console loading/selection delta above.
+Source-identity definition/anchor remains unchanged.
 Read-only adjacent checks confirm the admitted supervisor resolves the tools
 and successful credential renewal uses in-pod Vault, so no global/timer changes
 are justified. Fresh accepted activation and original Console retry remain
