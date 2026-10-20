@@ -27,11 +27,20 @@ The current exact source set is the seven-owner set and Platform tree in
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision. Actual merged OOS
 `e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`, Console
-`673ecfc9cb724f2d8c08443aceedb21fb5658277`, Platform
+`7194cab55fa32446e496d4c20343ebe3bf67b9d4`, Platform
 `5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+Console PR99 coalesces only pending readonly application GETs for one exact
+identity. Success and failure release it; later Refresh is fresh and different
+identities remain independent. Validation, errors, timeout, apply and authority
+are unchanged; no settled cache or new credential control exists. Old-reader
+regression, fixed6 focused tests,627-test full local CI-equivalent, actual
+owner-response consumption with one GET for four callers and actual
+CI39512010889 passed before exact-head human review/merge. Normal activation
+and finite actual-browser current-source/original-receipt proof remain required.
 
 Console PR98 preserves already-validated Closure head/delegation proof across
 the server JSON and browser validation boundary. Human review is still derived
