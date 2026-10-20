@@ -33,6 +33,14 @@ and its YAML decision. Actual merged OOS
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
 
+WG's current exact baseline is
+`c508d9f30434de5138f31ea73f55d98dfc055104`. PR284 isolates two suites' synthetic
+provider identities from copied live Intake/Inventory data. Production duplicate
+and immutable-identity checks remain unchanged. Full290 tests and42 tests with
+the real proposed-record snapshot pass; actual GitHub CI passed. This test-only
+delta adds no authoring, admission, credential or execution authority. The existing
+composed review separates source acceptance from still-pending owner/app proof.
+
 Studio's current reviewed control baseline is
 `88ca4cd49cd0f12e70209e368cf4e7564c1aab85`. Studio PR37 and OOS PR352 align
 their distinct existing Maturity UTF-8 and Delivery ASCII packet contracts;
