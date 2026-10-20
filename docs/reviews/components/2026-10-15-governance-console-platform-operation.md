@@ -16,7 +16,7 @@
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
   - `governance-operations-console@9e3d97f247f0b9990d202c274680ec89576e7d42`
-  - `operator-orchestration-service@73cb3ede81052de716da4e42f2ef93da94b2c770`
+  - `operator-orchestration-service@194845facc460af37c8b9644ce90b622886a270d`
   - `platform-engineering@72c3b13cf20329aaff34146c587fe2969b9d9a03`
   - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
   - `workspace-governance-control-fabric@f789a19c06f0896774a09ee8942c88c518c7bd70`
@@ -24,6 +24,7 @@
 - reviewed Platform tree:
   `platform-engineering-tree@e63d105593e1566f67042c757ccb8f0b32fdac41`
 - source reviews:
+  - [OOS native runtime trusted-asset copy PR #351](https://github.com/mfshaf7/operator-orchestration-service/pull/351)
   - [Console bounded authoring, owner bootstrap and recovery PR #91](https://github.com/mfshaf7/governance-operations-console/pull/91)
   - [OOS canonical source-purpose and authoring consumers PR #350](https://github.com/mfshaf7/operator-orchestration-service/pull/350)
   - [Platform bounded issuer, seven-owner binding and profile lifecycle PR #320](https://github.com/mfshaf7/platform-engineering/pull/320)
@@ -86,6 +87,33 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Native runtime trusted-asset copy — 2026-10-20
+
+The exact OOS revision in the Summary and YAML includes the reviewed PR351
+correction to all three existing accepted-idea-delivery runtime preparations.
+Their private runtime volumes hid image contents and copied source/contracts
+without trusted bootstrap templates; actual activation therefore failed at API
+module import despite successful production-image proof. Copying the same
+owner-controlled templates restores the already accepted runtime boundary.
+It adds no executable choice, caller/model-authored template, credential scope,
+new owner, service, activation mechanism or authority. Template identity and
+exact re-rendering remain enforced; missing assets continue to fail visibly.
+
+The regression executed the actual native copy stanzas: the old source
+reproduced missing-template ENOENT, and the reviewed correction passed exact
+template digest, native API/worker-module loading, loopback API health and
+missing-asset denial for all three preparations. Committed pinned-runtime
+tests passed 1,530 total /1,528 passed /zero failed /two unchanged opt-in skips;
+native fetched-base validators, API210/210, both image builds and isolated
+smokes passed. Provider CI39414881187 and delegated exact-head human review
+preceded actual squash merge194845f. Publishing access was revoked.
+
+All other six implementation revisions and the Platform tree are unchanged.
+This refresh accepts the corrected source set, not successful commissioning:
+the first activation failed, and normal exact-source activation and the real
+Console/product journey remain required. Prior source-window holds below are
+historical; they do not authorize bypassing current clean-source acceptance.
 
 #### Canonical source authorization, trusted owner bootstrap and Prototype authoring — 2026-10-20
 

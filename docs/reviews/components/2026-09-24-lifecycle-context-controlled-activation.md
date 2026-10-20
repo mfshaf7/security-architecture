@@ -34,7 +34,7 @@ current seven-owner source set is reviewed in
 [the Console composed-operation delta](2026-10-15-governance-console-platform-operation.md)
 and its machine-readable decision. It explicitly includes CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` and OOS
-`73cb3ede81052de716da4e42f2ef93da94b2c770` for the real Prototype subject/context
+`194845facc460af37c8b9644ce90b622886a270d` for the real Prototype subject/context
 extension. The original review alone does not authorize that extension.
 
 The added subject is an actual canonical Prototype, with exact source/context
