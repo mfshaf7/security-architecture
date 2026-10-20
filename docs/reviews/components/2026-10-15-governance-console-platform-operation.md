@@ -15,8 +15,8 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@56cb42731ef0fe8aa9a1925ad87d489fbc681e20`
-  - `operator-orchestration-service@ce6422dd1ea8296fa315a7f96ae3f784768e229b`
+  - `governance-operations-console@3888ac6729248672067687bcbc09b0860e7783f6`
+  - `operator-orchestration-service@e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`
   - `platform-engineering@f4d30696be19b3ec5a329e6b273eca4a7e2de3f5`
   - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
   - `workspace-governance-control-fabric@5368dbb7bb33b8704762214c25e36cab317b045d`
@@ -24,6 +24,8 @@
 - reviewed Platform tree:
   `platform-engineering-tree@3ac2b1295a315bad7b796589570e890bc3a3d4c5`
 - source reviews:
+  - [OOS historical Baseline owner bridge PR #353](https://github.com/mfshaf7/operator-orchestration-service/pull/353)
+  - [Console native Closure cold subject PR #97](https://github.com/mfshaf7/governance-operations-console/pull/97)
   - [WG isolated provider test fixtures PR #284](https://github.com/mfshaf7/workspace-governance/pull/284)
   - [Studio native Maturity UTF-8 interoperability PR #37](https://github.com/mfshaf7/workspace-prototype-studio/pull/37)
   - [Console exact stopped Preview acknowledgement PR #96](https://github.com/mfshaf7/governance-operations-console/pull/96)
@@ -100,6 +102,40 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Closure historical Baseline and cold request interoperability — 2026-10-21
+
+OOS PR353 fixes the historical Baseline owner bridge to use Maturity's existing
+UTF-8 record digest. Closure's own source snapshots and history remain
+ASCII-escaped. An intact accepted Unicode receipt previously failed the bridge;
+the receipt, source and schema were not corrupt. Console PR97 binds cold
+Closure reads to the native OOS plain-slug `prototype://<slug>` subject, not a
+second Maturity-style prefix. Wrong subjects and ownership still fail closed.
+Neither change broadens approval, source custody, identity or runtime authority.
+
+Evidence: the regressions failed before and passed after repair. Committed local
+OOS CI-equivalent passed all1532 tests with real source enabled and zero skips,
+bundles, API/governance/base-aware controls, both images and smoke. Console
+passed all623 tests, architecture guards, type/build/repository and audit0.
+Actual CI39490544481 and39490393035 passed before exact-head human approval.
+The actual immutable Maturity receipt and its historical Studio commit passed
+the native Baseline reader. Native OOS HTTP output passed the corrected Console
+cold reader. Current Closure ASCII snapshot was unchanged; wrong subjects,
+tampered or resealed wrong source digests and pre-Closure writes remained denied.
+Optional source tests now observe eligible lifecycle and their disposable clone
+instead of assuming never-advanced source or a missing main branch.
+
+Decision: approve actual merged OOS
+`e7c79cf9f8f9834a8f80d35d16c0958a36eacdda` and Console
+`3888ac6729248672067687bcbc09b0860e7783f6` for the existing normal commissioning
+path. Other five implementation pins and Platform tree remain unchanged; the
+generated Security index includes the merged OOS change record. No schema
+repin, receipt rewrite, digest registry, new model or generic workflow is
+introduced. The original retryable Closure request is retained. Native source
+conformance is not live request completion: normal activation and same-request
+Console recovery/readiness/review/readback remain mandatory. Owner bootstrap,
+source transfer, runnable app, private-client/hosting and final qualification
+are not accepted by these engineering proofs.
 
 #### Isolated provider test identities — 2026-10-21
 

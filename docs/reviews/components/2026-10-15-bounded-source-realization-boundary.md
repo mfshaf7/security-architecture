@@ -26,12 +26,19 @@ or authorize merge by a model or Agent Gary.
 The current exact source set is the seven-owner set and Platform tree in
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision. Actual merged OOS
-`ce6422dd1ea8296fa315a7f96ae3f784768e229b`, Console
-`56cb42731ef0fe8aa9a1925ad87d489fbc681e20`, Platform
+`e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`, Console
+`3888ac6729248672067687bcbc09b0860e7783f6`, Platform
 `f4d30696be19b3ec5a329e6b273eca4a7e2de3f5` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+OOS PR353 preserves the historical Maturity UTF-8 digest at Closure's Baseline
+bridge; Closure source/history stay ASCII. Console PR97 cold reads bind the
+native plain-slug subject. Native historical owner/HTTP producer-consumer proof,
+all1532 source-enabled OOS tests, all623 Console tests and actual CIs passed.
+These adapter corrections add no authoring or approval authority and do not
+replace the retained request's post-activation Console operating witness.
 
 WG's current exact baseline is
 `c508d9f30434de5138f31ea73f55d98dfc055104`. PR284 isolates two suites' synthetic
