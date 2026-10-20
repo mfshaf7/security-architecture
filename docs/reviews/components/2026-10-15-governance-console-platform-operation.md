@@ -18,12 +18,13 @@
   - `governance-operations-console@56cb42731ef0fe8aa9a1925ad87d489fbc681e20`
   - `operator-orchestration-service@ce6422dd1ea8296fa315a7f96ae3f784768e229b`
   - `platform-engineering@f4d30696be19b3ec5a329e6b273eca4a7e2de3f5`
-  - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
+  - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
   - `workspace-governance-control-fabric@5368dbb7bb33b8704762214c25e36cab317b045d`
   - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
 - reviewed Platform tree:
   `platform-engineering-tree@3ac2b1295a315bad7b796589570e890bc3a3d4c5`
 - source reviews:
+  - [WG isolated provider test fixtures PR #284](https://github.com/mfshaf7/workspace-governance/pull/284)
   - [Studio native Maturity UTF-8 interoperability PR #37](https://github.com/mfshaf7/workspace-prototype-studio/pull/37)
   - [Console exact stopped Preview acknowledgement PR #96](https://github.com/mfshaf7/governance-operations-console/pull/96)
   - [OOS native Delivery packet codec PR #352](https://github.com/mfshaf7/operator-orchestration-service/pull/352)
@@ -99,6 +100,32 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Isolated provider test identities — 2026-10-21
+
+WG PR284 changes four test-only files. Intake and Inventory tests copied current
+governed records but assigned an actual operator repository's provider ID to an
+unrelated sample. The duplicate-provider guard correctly denied that collision.
+The tests now select an unused synthetic ID and name by independently reading
+their copied Intake, active and retired bindings. Explicit cases prove occupied
+IDs, case-insensitive names, determinism and unchanged input data. Existing
+duplicate-provider, immutable-ID and rename-preservation assertions remain.
+No production lookup, schema, custody record, source permission or runtime
+behavior changes; no real binding is renamed or deleted to satisfy a fixture.
+
+Evidence: full290 tests and native structure/contracts pass; both affected suites
+also pass42 tests with the exact real proposed-record snapshot that reproduced
+the original failure. Fetched-base diff check and actual full GitHub
+CI39482683716 passed before exact-head human approval. Actual merged source is
+`c508d9f30434de5138f31ea73f55d98dfc055104`, not its pre-squash Gary head.
+The original unmerged classification was cancelled through Console; failed
+checks are not waived or hidden by this test correction.
+
+Decision: approve this exact WG source baseline for normal commissioning through
+the existing composed decision. The other six owner pins and Platform tree remain
+unchanged. Test paths remain in the reviewed source set, not routine record data.
+This neither admits the reserved owner nor proves its app, source transfer,
+runtime, private-client operation, hosting or final Console qualification.
 
 #### Native artifact codecs and stopped Preview acknowledgement — 2026-10-21
 

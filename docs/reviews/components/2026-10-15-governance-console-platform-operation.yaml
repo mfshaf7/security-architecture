@@ -14,7 +14,7 @@ reviewed_revisions:
   governance-operations-console: 56cb42731ef0fe8aa9a1925ad87d489fbc681e20
   operator-orchestration-service: ce6422dd1ea8296fa315a7f96ae3f784768e229b
   platform-engineering: f4d30696be19b3ec5a329e6b273eca4a7e2de3f5
-  workspace-governance: 5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2
+  workspace-governance: c508d9f30434de5138f31ea73f55d98dfc055104
   workspace-governance-control-fabric: 5368dbb7bb33b8704762214c25e36cab317b045d
   workspace-prototype-studio: 88ca4cd49cd0f12e70209e368cf4e7564c1aab85
 reviewed_trees:
