@@ -15,7 +15,7 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@fb42aacd956946f7026886cf3c48bf3b7d298899`
+  - `governance-operations-console@28c85efa9603c4db157d68425ecdd9fe02896e27`
   - `operator-orchestration-service@194845facc460af37c8b9644ce90b622886a270d`
   - `platform-engineering@f4d30696be19b3ec5a329e6b273eca4a7e2de3f5`
   - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
@@ -24,6 +24,7 @@
 - reviewed Platform tree:
   `platform-engineering-tree@3ac2b1295a315bad7b796589570e890bc3a3d4c5`
 - source reviews:
+  - [Console pending promotion and current Preview navigation PR #95](https://github.com/mfshaf7/governance-operations-console/pull/95)
   - [Console canonical maturity evidence PR #94](https://github.com/mfshaf7/governance-operations-console/pull/94)
   - [WGCF active Candidate authority PR #117](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/117)
   - [Console canonical source authorization recovery PR #93](https://github.com/mfshaf7/governance-operations-console/pull/93)
@@ -95,6 +96,40 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Pending promotion and current Preview navigation — 2026-10-20
+
+Console PR95 repairs two existing projection handoffs. A pending Candidate or
+Baseline owner request keeps its resume action after canonical Studio source
+merge, until OOS produces its terminal receipt/readback. Canonical lifecycle
+remains visible and unchanged; terminal source lifecycles remain read-only.
+Older or stopped requests cannot reopen a completed latest promotion.
+
+The existing Candidate Preview step exposes Baseline review only for current
+running owner proof matching Prototype, profile and latest receipt reference
+and digest. Loading, unavailable, stopped, restarted or stale owner state cannot
+reuse a retained receipt as active proof. Historical evidence remains available.
+Preview does not replace a pending promotion route, approve a baseline, prove
+application behavior, or grant Delivery/runtime acceptance.
+
+This is navigation/evidence freshness maintenance, not a new workflow,
+coordinator, identity, API, credential, approval, model or execution boundary.
+Both pre-fix failures were reproduced. Native canonical projection and actual
+dialog-router tests cover both transitions, six pending states before/after
+merge, terminal owner/source states, ordered history and stopped attempts.
+Preview regressions cover current proof, stale/absent/mismatched receipts,
+owner/profile mismatch, unavailable/loading and pending-route preservation.
+The committed Console CI-equivalent passes guards,620 tests, types, production
+build, repository validation and production dependency audit with0 findings.
+Actual GitHub CI39468271830 passed before exact-head human review and merge.
+
+Decision: approved for normal exact-composition commissioning with the unchanged
+other six owners and Platform tree below. The already merged business Candidate
+record is data-only Studio ancestry, not a new control-code baseline. The same
+retained request must still complete through Console after activation. Real
+Preview/browser app behavior, Baseline approval, Delivery and durable owner
+acceptance remain separate unfinished operating evidence. No private-client,
+public hosting, stage/prod or autonomous governance qualification is inferred.
 
 #### Maturity source evidence and active Candidate authority — 2026-10-20
 

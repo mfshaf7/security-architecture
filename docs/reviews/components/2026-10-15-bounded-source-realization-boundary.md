@@ -27,11 +27,18 @@ The current exact source set is the seven-owner set and Platform tree in
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision. Actual merged OOS
 `194845facc460af37c8b9644ce90b622886a270d`, Console
-`fb42aacd956946f7026886cf3c48bf3b7d298899`, Platform
+`28c85efa9603c4db157d68425ecdd9fe02896e27`, Platform
 `f4d30696be19b3ec5a329e6b273eca4a7e2de3f5` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+Console PR95 preserves pending Candidate/Baseline continuation after canonical
+source merge and opens Baseline review from current running Preview proof.
+It changes no authoring, source authorization or human approval boundary.
+Retained stale receipts cannot serve as active runtime proof; runtime health
+does not imply browser behavior or Delivery acceptance. The composed decision
+records exact source conformance separately from still-pending operating proof.
 
 The existing Delivery purpose remains separate. Prototype authoring binds a
 real registry identity and accepted app/design objective, not a fabricated
