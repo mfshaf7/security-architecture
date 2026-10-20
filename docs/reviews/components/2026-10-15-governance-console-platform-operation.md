@@ -15,15 +15,17 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@8aac130ff442b65e20fa0e35564e082b419214ce`
+  - `governance-operations-console@fb42aacd956946f7026886cf3c48bf3b7d298899`
   - `operator-orchestration-service@194845facc460af37c8b9644ce90b622886a270d`
   - `platform-engineering@f4d30696be19b3ec5a329e6b273eca4a7e2de3f5`
   - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
-  - `workspace-governance-control-fabric@f789a19c06f0896774a09ee8942c88c518c7bd70`
+  - `workspace-governance-control-fabric@5368dbb7bb33b8704762214c25e36cab317b045d`
   - `workspace-prototype-studio@05678a9a63cd998ef54dd17b45a3b7ec848e5615`
 - reviewed Platform tree:
   `platform-engineering-tree@3ac2b1295a315bad7b796589570e890bc3a3d4c5`
 - source reviews:
+  - [Console canonical maturity evidence PR #94](https://github.com/mfshaf7/governance-operations-console/pull/94)
+  - [WGCF active Candidate authority PR #117](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/117)
   - [Console canonical source authorization recovery PR #93](https://github.com/mfshaf7/governance-operations-console/pull/93)
   - [Platform issuer service tool environment PR #324](https://github.com/mfshaf7/platform-engineering/pull/324)
   - [Platform current-provider commissioning PR #323](https://github.com/mfshaf7/platform-engineering/pull/323)
@@ -94,7 +96,57 @@
 
 ### Current Maintenance Acceptance
 
-#### Canonical source authorization loading and retained choice — 2026-10-20
+#### Maturity source evidence and active Candidate authority — 2026-10-20
+
+The actual Console Candidate request stopped before decision or source effects:
+the adapter submitted display receipt identifiers and an unresolved registry
+record reference as if they were committed evidence. WGCF correctly rejected
+them. Console PR94 changes only the existing projection/handoff: retain display
+receipts for inspection, submit canonical Landing/registry/Candidate references,
+and retain owner-declared design and active Candidate file references. Baseline
+uses its retained source selection instead of every UI evidence row. A live
+Preview receipt is a separate owner condition, not committed design evidence or
+proof of browser behavior. Missing source evidence still blocks at WGCF; an
+owner-declared reference is explicitly not a verified application claim.
+
+The existing owner-progress panel now exposes bounded readiness findings,
+responsible owner and required fix. Original stopped requests remain immutable;
+a corrected promotion uses the existing fresh preparation/request path. No
+verifier check, approval, caller identity, API, model purpose, credential, network
+surface, service or canonical ownership changes.
+
+Studio already declares a distinct active Candidate after reopening. WGCF PR117
+repairs its source lookup to honor that exact registry reference and bounded
+candidate or candidate-12hex stem. Legacy candidate.json is used only when the
+field is absent. A declared null, empty, cross-Prototype, unsafe, missing,
+schema-invalid or digest-invalid active record cannot fall back to history.
+Existing schema, digest, identity, linked-record and committed-Git checks remain
+mandatory. Historical records remain preserved, not promoted as current proof.
+
+The native Git regressions demonstrated eight pre-fix failures and now pass;
+the full committed WGCF suite passes530tests. Exact API and worker images build,
+packaged contracts load, health/readiness/source metadata and non-root file
+permissions pass, and both unapproved worker startup paths remain denied.
+Console committed guards,618semantic tests, types, production build, repository
+validation, diff checks and zero-vulnerability production audit pass. Six
+isolated composed cases execute actual Console serializers against native WGCF
+API/policy/ledger and real committed Git, including missing, mismatched and
+unsupported evidence denial. Rendered component units expose actual findings.
+These are engineering proofs using isolated authority, not live promotion,
+Preview browser proof, client isolation or Epic1275 completion.
+
+Actual GitHub CI39460859639(Console) and39461087219(WGCF) passed. Delegated exact
+Gary-head review preceded PR94 mergefb42aac and PR117 merge5368dbb. Both source
+publication credentials are revoked. Existing OOS Intake/Inventory authority
+snapshots remain valid because their pinned contract contents are unchanged;
+normal commissioning derives runtime implementation identity from accepted
+source. No snapshot repin or new OOS change is justified. Other five owner
+revisions, Platformf4d/tree3ac, Studio control baseline05678, source identity
+definition and architecture remain unchanged. The current Summary/YAML bind
+the actual merges. Fresh exact-composition activation and real Console
+Candidate/Preview/Baseline/Delivery proof remain required.
+
+#### Prior accepted delta: canonical source authorization loading and retained choice — 2026-10-20
 
 After accepted provider activation, the old source command was correctly
 rejected against a newer executable revision. Actual Console revocation of its
