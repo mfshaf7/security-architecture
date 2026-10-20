@@ -26,12 +26,22 @@ or authorize merge by a model or Agent Gary.
 The current exact source set is the seven-owner set and Platform tree in
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision. Actual merged OOS
-`e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`, Console
+`1d17556f28521932e6a1e2a1f1aadd36fdfb9777`, Console
 `7194cab55fa32446e496d4c20343ebe3bf67b9d4`, Platform
 `5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+OOS PR354 limits the existing optional owner CI to pull requests and pushes
+to qualified main. First review-branch/tag pushes lack a previous ref and are
+not selected; exact real app/base/head validation remains mandatory on the
+selected events. The generated template, API example digests and primary
+guidance change no permission, model, review or execution authority. All1533
+source-enabled local tests and full CI-equivalent plus actualCI39516002700
+passed before exact-head human review/merge. Native plan plus actual reviewed
+app proof is isolated engineering evidence, not app acceptance. Normal
+activation and fresh actual Console inspection/owner readback remain required.
 
 Console PR99 coalesces only pending readonly application GETs for one exact
 identity. Success and failure release it; later Refresh is fresh and different

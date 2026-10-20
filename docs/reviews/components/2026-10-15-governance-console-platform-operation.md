@@ -16,7 +16,7 @@
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
   - `governance-operations-console@7194cab55fa32446e496d4c20343ebe3bf67b9d4`
-  - `operator-orchestration-service@e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`
+  - `operator-orchestration-service@1d17556f28521932e6a1e2a1f1aadd36fdfb9777`
   - `platform-engineering@5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f`
   - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
   - `workspace-governance-control-fabric@5368dbb7bb33b8704762214c25e36cab317b045d`
@@ -213,6 +213,35 @@ validation with actual current WG data, not only a frozen baseline or the top
 coordinator. Accepted activation and the original Console request's actual
 readiness, review and readback remain required. No final app, transfer,
 private-client or public-hosting qualification is granted.
+
+#### Optional owner CI event bases — 2026-10-21
+
+OOS [PR354](https://github.com/mfshaf7/operator-orchestration-service/pull/354)
+merged as `1d17556f28521932e6a1e2a1f1aadd36fdfb9777` after actual
+CI39516002700 and exact-head delegated mfshaf7 review. Its optional trusted
+owner workflow now selects pull requests and main pushes, matching the
+already-qualified main-only bootstrap path. It no longer selects new review
+branches or tags without a previous ref. Exact checkout, base/head, actual app
+checks, read-only workflow permissions and separate workflow-write approval
+are unchanged. No guessed base, unconditional CI mandate or model authority.
+
+Evidence: old generated-trigger test failed; all7 focused tests pass with the
+correction. Committed full local CI-equivalent passes all1533 source-enabled
+tests with zero skips,210 API routes, bundles, governance, both images and
+health/fail-closed worker checks against fetched origin/main. Native trusted
+candidate plan materialized all ten files with actual reviewed Little List
+source in isolated Git; its9 app tests and real Git diff pass for PR/main
+pairs. The canonical Octokit new-branch payload independently proves the zero
+previous-ref input, which still fails if forced rather than being fabricated
+into a valid commit. This isolated engineering proof is not a provider run,
+live owner checkout, application acceptance or canonical mutation.
+
+Decision: accept only the actual OOS revision above; all other six source pins
+and the Platform tree remain unchanged. Generated OpenAPI examples update
+only template/plan digests, not routes or schemas. The generated Security index
+must include the actual merged owner record. Normal accepted activation and
+fresh Console plan inspection precede the first real bootstrap request;
+admission, app delivery and final operating qualification remain separate.
 
 #### Closure historical Baseline and cold request interoperability — 2026-10-21
 
