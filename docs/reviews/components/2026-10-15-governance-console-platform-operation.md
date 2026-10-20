@@ -2,7 +2,7 @@
 
 ## Summary
 
-- date: 2026-10-20
+- date: 2026-10-21
 - owner repo: `security-architecture`
 - delivery initiative: `openproject://work_packages/1275`
 - security acceptance item: `openproject://work_packages/1303`
@@ -15,7 +15,7 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@3888ac6729248672067687bcbc09b0860e7783f6`
+  - `governance-operations-console@673ecfc9cb724f2d8c08443aceedb21fb5658277`
   - `operator-orchestration-service@e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`
   - `platform-engineering@5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f`
   - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
@@ -24,6 +24,7 @@
 - reviewed Platform tree:
   `platform-engineering-tree@b6fb7fc69587c482a6daa0c73174757855308152`
 - source reviews:
+  - [Console Closure review-proof round trip PR #98](https://github.com/mfshaf7/governance-operations-console/pull/98)
   - [Platform nested reviewed-record authority PR #325](https://github.com/mfshaf7/platform-engineering/pull/325)
   - [OOS historical Baseline owner bridge PR #353](https://github.com/mfshaf7/operator-orchestration-service/pull/353)
   - [Console native Closure cold subject PR #97](https://github.com/mfshaf7/governance-operations-console/pull/97)
@@ -103,6 +104,39 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Closure review-proof server/browser round trip — 2026-10-21
+
+The original Closure succeeded canonically with a human-reviewed merged Studio
+record and terminal receipt, but the browser rejected its server projection:
+the server validated review head and delegation, then dropped those fields
+before the browser invoked the same validator again. Console PR98 retains only
+the already-validated head and bounded delegation reference, matching head,
+reviewer and execution marker. Human review remains derived from that proof;
+a supplied boolean cannot replace it. Unknown provider fields remain omitted.
+No approval, canonical mutation, custody, credential or runtime authority changes.
+The completed original owner request must not be reopened or duplicated.
+
+Evidence: the regression fails before and passes after repair. All four Closure
+actions across review/readback/terminal phases survive server validation, JSON
+serialization and browser revalidation, with wrong-head and forged-boolean
+denials. The actual immutable terminal OOS result passed the native Console
+server reader and browser parser repeatedly with the same owner receipt and
+merged readback, with zero writes. Full committed local CI-equivalent passed
+repository/compile checks, architecture guards,624 tests, typecheck, production
+build, audit0 and fetched-base diffcheck after restart. Earlier native-worker
+SIGSEGV attempts remain failed evidence; restart does not establish their root
+cause or hardware health. Actual CI39507547363 passed before exact-head human
+approval and source merge.
+
+Decision: accept actual merged Console
+`673ecfc9cb724f2d8c08443aceedb21fb5658277` for the existing normal commissioning
+path. Other six implementation pins and Platform tree remain unchanged. Native
+candidate acceptance must still cover the full nested validator with current
+approved WG record data. Actual activation and cold browser display of the
+original completed request and exact receipt remain required. This source
+acceptance does not qualify the pending durable owner, app delivery, runtime,
+private-client route or public hosting.
 
 #### Nested reviewed-record authority parity — 2026-10-21
 
