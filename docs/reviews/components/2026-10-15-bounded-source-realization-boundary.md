@@ -26,12 +26,20 @@ or authorize merge by a model or Agent Gary.
 The current exact source set is the seven-owner set and Platform tree in
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision. Actual merged OOS
-`194845facc460af37c8b9644ce90b622886a270d`, Console
-`28c85efa9603c4db157d68425ecdd9fe02896e27`, Platform
+`ce6422dd1ea8296fa315a7f96ae3f784768e229b`, Console
+`56cb42731ef0fe8aa9a1925ad87d489fbc681e20`, Platform
 `f4d30696be19b3ec5a329e6b273eca4a7e2de3f5` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+Studio's current reviewed control baseline is
+`88ca4cd49cd0f12e70209e368cf4e7564c1aab85`. Studio PR37 and OOS PR352 align
+their distinct existing Maturity UTF-8 and Delivery ASCII packet contracts;
+Console PR96 acknowledges a real stopped Preview without inventing running
+receipt state. These changes add no authoring, model, source, operator approval
+or execution authority. The current composed review records their native
+cross-owner proof and still-unfinished live Baseline/Delivery qualification.
 
 Console PR95 preserves pending Candidate/Baseline continuation after canonical
 source merge and opens Baseline review from current running Preview proof.

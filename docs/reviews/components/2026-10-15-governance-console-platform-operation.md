@@ -15,15 +15,18 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@28c85efa9603c4db157d68425ecdd9fe02896e27`
-  - `operator-orchestration-service@194845facc460af37c8b9644ce90b622886a270d`
+  - `governance-operations-console@56cb42731ef0fe8aa9a1925ad87d489fbc681e20`
+  - `operator-orchestration-service@ce6422dd1ea8296fa315a7f96ae3f784768e229b`
   - `platform-engineering@f4d30696be19b3ec5a329e6b273eca4a7e2de3f5`
   - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
   - `workspace-governance-control-fabric@5368dbb7bb33b8704762214c25e36cab317b045d`
-  - `workspace-prototype-studio@05678a9a63cd998ef54dd17b45a3b7ec848e5615`
+  - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
 - reviewed Platform tree:
   `platform-engineering-tree@3ac2b1295a315bad7b796589570e890bc3a3d4c5`
 - source reviews:
+  - [Studio native Maturity UTF-8 interoperability PR #37](https://github.com/mfshaf7/workspace-prototype-studio/pull/37)
+  - [Console exact stopped Preview acknowledgement PR #96](https://github.com/mfshaf7/governance-operations-console/pull/96)
+  - [OOS native Delivery packet codec PR #352](https://github.com/mfshaf7/operator-orchestration-service/pull/352)
   - [Console pending promotion and current Preview navigation PR #95](https://github.com/mfshaf7/governance-operations-console/pull/95)
   - [Console canonical maturity evidence PR #94](https://github.com/mfshaf7/governance-operations-console/pull/94)
   - [WGCF active Candidate authority PR #117](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/117)
@@ -96,6 +99,55 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Native artifact codecs and stopped Preview acknowledgement — 2026-10-21
+
+The real Candidate request completed through Console after accepted activation.
+The actual Console-started app passed seven browser checks, but its subsequent
+Baseline preparation exposed a native artifact mismatch: Studio borrowed the
+ASCII-escaped Delivery codec for Maturity, while Console/OOS/WGCF already use
+UTF-8. Studio PR37 aligns only Maturity wire artifacts, source-state and Candidate
+records. Unicode text is preserved without normalization, ASCII restrictions,
+historical rehash or digest fallback. Five existing Maturity records have ASCII
+semantic values and retain identical hashes. The separate declared Delivery
+packet codec remains ASCII-escaped.
+
+Whole-handoff real-Git proof then emitted a native Unicode Delivery packet.
+Studio, Console and WGCF accepted it, but OOS's packet gate borrowed generic
+ART UTF-8 hashing. OOS PR352 corrects only that packet-specific gate. Generic
+ART/event hashing, packet/source identity, operator binding, WGCF readiness,
+replay, tamper denial and target mutation order remain unchanged. No OpenProject
+field mutation contract changes are present. The generated source-change index
+is refreshed after the actual OOS owner merge, not fabricated against future main.
+
+Actual Preview stop ended the process but Console required a latest running
+receipt even for stopped status. Console PR96 accepts only a validated stop
+receipt and exact stopped readback with null latest receipt. Running commands
+and any non-null receipt require the exact reference and digest. Source, profile,
+expected-state, action, owner identity, stopped schema and proof denials remain
+mandatory. No second process/receipt registry or recovery mechanism is added.
+
+Engineering evidence: clean committed Studio93 tests/native validators; Console
+622 tests/guards/types/build/repository/audit0; OOS1529 passing tests with two
+existing optional Closure-source skips, focused8, API/bundle/governance and
+fetched-base checks, actual API/worker builds, loopback health and unapproved
+worker denial. Actual producer/consumer proof passes OOS source-client Unicode
+preparation, Studio real-Git merged readback and Delivery emission, Console
+packet shape, WGCF digest and repaired OOS gate. Actual Console adapter/native
+Studio processes pass start/proof/restart/stop, stopped-proof and stale-intent
+denials, and native original stop replay. All are isolated conformance, not
+business acceptance. Actual GitHub CI39474248726,39474276553,39474466158 passed
+before exact-head human approval and the three source merges.
+
+Decision: approved for normal exact-composition commissioning. This explicitly
+advances Studio's reviewed control baseline; it is not admitted as routine
+record data. Other four owners and the Platform tree stay unchanged. The failed
+old-source Baseline request is cancelled and immutable; a fresh explicit request
+on reviewed source must follow renewed current Preview/browser proof. Neither
+tests nor source acceptance approve the Baseline, Delivery, durable owner,
+private-client, public hosting, stage/prod or final qualification outcome.
+Prior maintenance subsections retain their historical source/evidence context;
+the exact current source set is the Summary/YAML above.
 
 #### Pending promotion and current Preview navigation — 2026-10-20
 
