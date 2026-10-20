@@ -27,11 +27,21 @@ The current exact source set is the seven-owner set and Platform tree in
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision. Actual merged OOS
 `e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`, Console
-`3888ac6729248672067687bcbc09b0860e7783f6`, Platform
+`673ecfc9cb724f2d8c08443aceedb21fb5658277`, Platform
 `5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+Console PR98 preserves already-validated Closure head/delegation proof across
+the server JSON and browser validation boundary. Human review is still derived
+from exact matching proof, not a supplied boolean; unknown provider fields are
+not forwarded. Native actual terminal-response conformance, all624 tests and
+full committed local CI-equivalent passed after restart, followed by actual
+CI39507547363 and exact-head human approval. Earlier native crashes are retained
+as failures with unproven cause. No source, model, approval or custody authority
+is added; the original completed Closure is not reopened. Normal activation
+and its cold actual browser receipt witness remain separate requirements.
 
 Platform PR325 propagates the already-approved reviewed-record-only boundary
 from complete policy generation to its nested launcher. The existing bounded

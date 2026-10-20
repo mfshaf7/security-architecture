@@ -11,7 +11,7 @@ architecture:
 review_ref: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
 reviewed_revisions:
   context-governance-gateway: f80c06d9ece3b8706211c0be536407e610ef13e0
-  governance-operations-console: 3888ac6729248672067687bcbc09b0860e7783f6
+  governance-operations-console: 673ecfc9cb724f2d8c08443aceedb21fb5658277
   operator-orchestration-service: e7c79cf9f8f9834a8f80d35d16c0958a36eacdda
   platform-engineering: 5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f
   workspace-governance: c508d9f30434de5138f31ea73f55d98dfc055104
