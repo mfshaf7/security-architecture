@@ -90,6 +90,13 @@ principal. It does not add an identity, permission, secret, repository, route,
 or exposure boundary. The included Next.js patch update changes no Proposal
 Target authority and removes the dependency advisories present at review time.
 
+That generic session reference is historical. The current exact composition's
+[accountable-operator review](2026-10-15-governance-console-platform-operation.md)
+aligns the same human's current session and workflow bindings to
+`operator:mfshaf7`, without an alias or role/permission change. Proposal Target
+command attribution remains the authenticated machine caller; the human
+session principal is not substituted for that API actor.
+
 The follow-up preparation-contract repair at
 `governance-operations-console@1c106066118c32d8db38cf34850a6560d821da66`
 removes the caller-supplied `prototype_id` from the OOS preparation request.
