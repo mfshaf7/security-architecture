@@ -17,13 +17,14 @@
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
   - `governance-operations-console@0f85b5b91de8e55ccaa13554e6fed1d376fcab05`
   - `operator-orchestration-service@194845facc460af37c8b9644ce90b622886a270d`
-  - `platform-engineering@7acd3eb260bf3e6299449577d532c540d3cee56c`
+  - `platform-engineering@d0bf3074e60ba547b4806c3fa6af4fc7e7a1a867`
   - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
   - `workspace-governance-control-fabric@f789a19c06f0896774a09ee8942c88c518c7bd70`
   - `workspace-prototype-studio@05678a9a63cd998ef54dd17b45a3b7ec848e5615`
 - reviewed Platform tree:
-  `platform-engineering-tree@0c23683b48094187984aa56e2a1fec852037296b`
+  `platform-engineering-tree@9c59eb3b0cf237e93567e8e6c1973c4059a1c219`
 - source reviews:
+  - [Platform current-provider commissioning PR #323](https://github.com/mfshaf7/platform-engineering/pull/323)
   - [Console canonical cold Landing projection PR #92](https://github.com/mfshaf7/governance-operations-console/pull/92)
   - [Platform accountable-operator consistency PR #322](https://github.com/mfshaf7/platform-engineering/pull/322)
   - [Platform installed Ollama patch binding PR #321](https://github.com/mfshaf7/platform-engineering/pull/321)
@@ -91,7 +92,47 @@
 
 ### Current Maintenance Acceptance
 
-#### Console accountable-operator consistency — 2026-10-20
+#### Provider source and capability freshness — 2026-10-20
+
+Actual Console source issuance after the prior accepted activation returned409
+`platform_operation_capability_unavailable` before dispatch. The exact prepared
+scope and original request remained unchanged, without a credential or source
+session. Actual provider metadata still advertised Platform72c3b13 from its
+boot process while the accepted source was7acd3eb; source issuance was visibly
+unavailable. Exact existing-service restart restored7acd and availability.
+That restart was containment, not evidence that activation itself was correct.
+
+The Platform delta reuses the existing authenticated catalog, exact unit and
+activation/status path. It checks the accepted Platform revision, exact subject
+and declared finite executable capabilities instead of trusting catalog
+`freshness: current` or process liveness. After the accepted active marker is
+written, a current provider is left untouched; only a stale/unavailable provider
+is restarted once, followed by at most thirty seconds of readiness polling.
+Persistent failure cannot report successful activation. Status enforces the
+same exact postcondition. This adds no daemon, reload protocol, worker/cgroup
+change, identity, credential, permission, model, public route or trust bypass.
+Existing same-source provider callbacks and retained operation recovery remain
+unchanged; no owner command or issuance is fabricated from readiness metadata.
+
+Gary candidatef3d7a8d passed full committed Platform CI-equivalent validation,
+four Helm renders and both unchanged environment source contracts. Focused
+runtime tests62 ran58passing/four existing opt-in skips, covering current/no-
+restart, stale source, unavailable/malformed capabilities, startup readiness,
+one-restart bounded failure and activation ordering. Native read-only candidate
+guard checks against the actual restored provider accept current source and
+reject a wrong expected revision, without a restart or business effect.
+
+Provider CI39435583038 and repository-posture39435582717 passed; main-only
+metadata publication correctly skipped. Delegated exact-head review preceded
+actual PR323 merge `d0bf307`, tree `9c59eb3`. Publishing access was revoked.
+The current Summary/YAML bind that actual reviewed Platform merge/tree;
+the other six implementation sources remain unchanged. The source-identity
+definition retains its unchanged anchor. Normal accepted activation must prove
+automatic provider freshness and actual same-scope Console issuance afterward.
+Engineering checks and manual containment do not satisfy that operating proof
+or complete Epic1275.
+
+#### Prior accepted delta: Console accountable-operator consistency — 2026-10-20
 
 Fresh full activation recovered the original prepared Prototype Preview request,
 but actual Console source-scope preparation returned403
@@ -131,14 +172,15 @@ remaining actual Console operating witness.
 Provider CI39428228546 and repository-posture39428228373 passed; main-only
 metadata publication correctly skipped. Delegated exact-head review preceded
 actual Platform PR322 merge7acd3eb/tree0c23683. Publishing access was revoked.
-The Summary/YAML bind that actual reviewed merge and tree. The separate Console projection delta
+Those source reviews remain prior delta evidence; the current Summary/YAML
+include the later provider-freshness delta above. The separate Console projection delta
 below is also bound in that source set; the other five implementation control
 revisions remain unchanged. Studio app data retains its accepted advancement
 boundary; the unchanged source-identity definition retains its existing anchor.
 Normal accepted activation and same-request Console scope/owner-profile proof
 remain required; this does not claim Epic or application qualification complete.
 
-#### Canonical cold Landing projection — 2026-10-20
+#### Prior accepted delta: canonical cold Landing projection — 2026-10-20
 
 Before final recommissioning, read-only actual Console inspection showed an
 already-landed source record beside the capture-only Complete Landing action.
