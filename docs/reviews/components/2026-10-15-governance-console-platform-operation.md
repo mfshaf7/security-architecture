@@ -15,15 +15,17 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@9e3d97f247f0b9990d202c274680ec89576e7d42`
+  - `governance-operations-console@0f85b5b91de8e55ccaa13554e6fed1d376fcab05`
   - `operator-orchestration-service@194845facc460af37c8b9644ce90b622886a270d`
-  - `platform-engineering@f160df340ce67594bc6e1bcb6c39e3c80c3120b7`
+  - `platform-engineering@7acd3eb260bf3e6299449577d532c540d3cee56c`
   - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
   - `workspace-governance-control-fabric@f789a19c06f0896774a09ee8942c88c518c7bd70`
   - `workspace-prototype-studio@05678a9a63cd998ef54dd17b45a3b7ec848e5615`
 - reviewed Platform tree:
-  `platform-engineering-tree@b1f856a6e48f24192307e7057230f1f1fcf6ccfa`
+  `platform-engineering-tree@0c23683b48094187984aa56e2a1fec852037296b`
 - source reviews:
+  - [Console canonical cold Landing projection PR #92](https://github.com/mfshaf7/governance-operations-console/pull/92)
+  - [Platform accountable-operator consistency PR #322](https://github.com/mfshaf7/platform-engineering/pull/322)
   - [Platform installed Ollama patch binding PR #321](https://github.com/mfshaf7/platform-engineering/pull/321)
   - [OOS native runtime trusted-asset copy PR #351](https://github.com/mfshaf7/operator-orchestration-service/pull/351)
   - [Console bounded authoring, owner bootstrap and recovery PR #91](https://github.com/mfshaf7/governance-operations-console/pull/91)
@@ -89,7 +91,91 @@
 
 ### Current Maintenance Acceptance
 
-#### Installed Ollama runtime patch reconciliation — 2026-10-20
+#### Console accountable-operator consistency — 2026-10-20
+
+Fresh full activation recovered the original prepared Prototype Preview request,
+but actual Console source-scope preparation returned403
+`prototype_source_authoring_identity_forbidden`. Protected live comparison
+proved the same Console caller uses `operator:mfshaf7` in source work and Agent
+Console, but the generic `operator:workspace-owner` in Platform Operations,
+Product Publication and the projected session principal. Owner authorization
+correctly denied that contradiction before issuance or source resources.
+
+The reviewed Platform delta aligns the five existing current policy references
+to the already-used accountable human actor `operator:mfshaf7`. Display name,
+Operator role and Workspace-owner authority are unchanged. It adds no alias,
+principal, caller, permission, App, model, provider or identity mechanism. The
+original request's actor and all historical approvals/receipts remain unchanged;
+historical generic-actor receipts cannot approve a newly bound source intent.
+OOS and Platform retain independent exact-actor authorization and human-review
+separation. No owner guard or source-identity definition changes.
+
+Static native policy checks compare the session principal, native source actor
+and all three current commissioning-policy references. Activation rejects a
+different selected dev-integration operator. The existing binding step updates
+only the already-commissioned Publication Console entry, preserves other
+callers, and never enables publication. Normal status reads only boolean actor
+matches for all four live OOS binding maps; missing or mismatched maps fail
+readiness without projecting tokens or the process environment.
+
+Gary candidateb7a3c5e passed full committed local Platform validation, the four
+Helm renders and both unchanged environment source contracts. The focused
+runtime suite ran57 with53passing/four pre-existing opt-in skips; provider13
+and cross-domain27 passed. Native OOS source-authority/resolver conformance,
+using actual Platform policy and disposable synthetic records, rejects the old
+mismatched actor, accepts the aligned scope with the original source digest,
+replays it unchanged, and denies another actor's recovery. It creates no live
+credential, session, branch or model call. This is engineering proof, not the
+remaining actual Console operating witness.
+
+Provider CI39428228546 and repository-posture39428228373 passed; main-only
+metadata publication correctly skipped. Delegated exact-head review preceded
+actual Platform PR322 merge7acd3eb/tree0c23683. Publishing access was revoked.
+The Summary/YAML bind that actual reviewed merge and tree. The separate Console projection delta
+below is also bound in that source set; the other five implementation control
+revisions remain unchanged. Studio app data retains its accepted advancement
+boundary; the unchanged source-identity definition retains its existing anchor.
+Normal accepted activation and same-request Console scope/owner-profile proof
+remain required; this does not claim Epic or application qualification complete.
+
+#### Canonical cold Landing projection — 2026-10-20
+
+Before final recommissioning, read-only actual Console inspection showed an
+already-landed source record beside the capture-only Complete Landing action.
+Canonical Studio record1305 carries accepted static/interactive/local-only
+setup and `candidate-promotion` as its next action. The original OOS Landing
+request is succeeded. The previous canonical mapper set landed state before
+replaying owner history, but retained the capture action; the idempotent local
+transition helper then skipped the already-landed record. No owner source
+failure or missing approval justified reopening or resubmitting Landing.
+
+The reviewed Console-only delta derives navigation from canonical setup and
+current lifecycle, validates the owner document's Prototype identity and
+closed next action, and restores the exact actual terminal Landing receipt
+link. Capture-only records remain unaccepted. Current later lifecycle is not
+reopened by older workflow history. Missing retained workflow history creates
+neither a fake receipt nor Preview proof. Source-presence and pending original
+merged-readback continuation remain distinct; only exact owner success is
+terminal workflow completion. No new mutation, credential, route or local
+simulation is introduced, and existing Teras layout is unchanged.
+
+Gary candidate2e04a69 passed16focused cases and the complete605semantic suite,
+architecture guards, TypeScript, production build, repository validation and
+production dependency audit with zero vulnerabilities. Candidate native
+projection on the actual selected Studio source and validated actual retained
+Console owner result changes the stale Landing action to Candidate while
+preserving original request17922519451811 and receipt
+`sha256:74afb40863ab806f906acf3313497110ae48b561452bfcfce7d2c7a1ed230ad5`.
+That check performs no business writes. Actual newly deployed Console readback
+and the remaining Preview/Baseline/Delivery journey are still required; these
+engineering results are not Epic completion or app operating acceptance.
+
+Provider CI39430436015 passed. Delegated exact-head review preceded actual
+Console PR92 merge0f85b5b. Publishing access was revoked. The Summary/YAML
+bind that actual merge; source-tree equivalence is required before clean
+primary advancement and normal accepted recommissioning.
+
+#### Prior delta: installed Ollama runtime patch reconciliation — 2026-10-20
 
 The current Platform source binding in the Summary/YAML reconciles the installed
 Ollama runtime0.40.6. After reboot, actual configured-provider metadata reported
@@ -1291,7 +1377,7 @@ cannot satisfy `gate:platform-operation-security`.
 The browser, Console machine caller, OOS caller/operator binding, Platform
 provider caller, Security reviewer, Agent Gary author, and human reviewer are
 distinct roles. Platform accepts only the configured OOS caller secret and the
-exact `operator:workspace-owner` approval binding. The Console-to-OOS,
+exact current `operator:mfshaf7` approval binding. The Console-to-OOS,
 Console-to-WGCF, and OOS-to-Platform credentials remain server-side and are
 stored only in private runtime files or Kubernetes Secrets. No machine identity
 may approve or merge its own source.
