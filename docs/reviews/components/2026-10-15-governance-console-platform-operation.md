@@ -17,13 +17,14 @@
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
   - `governance-operations-console@9e3d97f247f0b9990d202c274680ec89576e7d42`
   - `operator-orchestration-service@194845facc460af37c8b9644ce90b622886a270d`
-  - `platform-engineering@72c3b13cf20329aaff34146c587fe2969b9d9a03`
+  - `platform-engineering@f160df340ce67594bc6e1bcb6c39e3c80c3120b7`
   - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
   - `workspace-governance-control-fabric@f789a19c06f0896774a09ee8942c88c518c7bd70`
   - `workspace-prototype-studio@05678a9a63cd998ef54dd17b45a3b7ec848e5615`
 - reviewed Platform tree:
-  `platform-engineering-tree@e63d105593e1566f67042c757ccb8f0b32fdac41`
+  `platform-engineering-tree@b1f856a6e48f24192307e7057230f1f1fcf6ccfa`
 - source reviews:
+  - [Platform installed Ollama patch binding PR #321](https://github.com/mfshaf7/platform-engineering/pull/321)
   - [OOS native runtime trusted-asset copy PR #351](https://github.com/mfshaf7/operator-orchestration-service/pull/351)
   - [Console bounded authoring, owner bootstrap and recovery PR #91](https://github.com/mfshaf7/governance-operations-console/pull/91)
   - [OOS canonical source-purpose and authoring consumers PR #350](https://github.com/mfshaf7/operator-orchestration-service/pull/350)
@@ -88,7 +89,45 @@
 
 ### Current Maintenance Acceptance
 
-#### Native runtime trusted-asset copy — 2026-10-20
+#### Installed Ollama runtime patch reconciliation — 2026-10-20
+
+The current Platform source binding in the Summary/YAML reconciles the installed
+Ollama runtime0.40.6. After reboot, actual configured-provider metadata reported
+0.40.6 while all six profiles still required0.40.5. The exact-version guard
+correctly denied readiness. The selected qwen3:8b digest remains
+`500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`.
+
+This narrow delta changes only those six physical-runtime version scalars and
+the existing owner change record. No model, caller, purpose, route, budget,
+concurrency, source-identity definition, installation, secret scope or host
+update policy changes. Exact version and digest checks remain mandatory.
+Actual native adapter metadata proof rejects the previous version, accepts the
+installed version and verifies the unchanged model digest without inference,
+model loading or downloading. Frozen synthetic unit bindings remain0.40.5;
+they are test inputs, not claims about the installed provider.
+
+The OOS source identity anchor remains Platform72c3b13 because its referenced
+definition bytes are unchanged at digest5d5012280d8abb5494b5604d6540e195027562966fe0ec204d593925d34b0a85.
+An unrelated model-registry patch is not an identity-definition transition.
+The composed runtime source/tree binding is separately refreshed here. Other
+six implementation control revisions remain unchanged; Studio app data may
+advance through its already accepted record-only boundary.
+
+Exact Gary source399ec57 passed the full local Platform validation, four Helm
+renders and stage/prod source-contract checks. Provider CI39422853218 and
+repository-posture39422853216 passed; main-only metadata publication correctly
+skipped on the PR. Delegated exact-head human review preceded actual PR321
+squashf160df3; tree equivalence is required before primary advancement.
+Publishing access was revoked. No live model call was needed for this delta.
+
+This accepts the source-bound runtime patch, not an arbitrary future patch or
+an assurance about the repeated host crashes. The known-failing auto-resume
+attempt is stopped while acceptance is reconciled. Source qualification,
+exact-head review and normal activation must complete before readiness is
+claimed. The retained Preview request and externally authored app are preserved;
+no model-based app generation or fabricated source receipt is authorized.
+
+#### Prior delta: native runtime trusted-asset copy — 2026-10-20
 
 The exact OOS revision in the Summary and YAML includes the reviewed PR351
 correction to all three existing accepted-idea-delivery runtime preparations.
