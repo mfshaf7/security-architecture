@@ -12,7 +12,7 @@ review_ref: docs/reviews/components/2026-10-15-governance-console-platform-opera
 reviewed_revisions:
   context-governance-gateway: f80c06d9ece3b8706211c0be536407e610ef13e0
   governance-operations-console: 9e3d97f247f0b9990d202c274680ec89576e7d42
-  operator-orchestration-service: 73cb3ede81052de716da4e42f2ef93da94b2c770
+  operator-orchestration-service: 194845facc460af37c8b9644ce90b622886a270d
   platform-engineering: 72c3b13cf20329aaff34146c587fe2969b9d9a03
   workspace-governance: 5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2
   workspace-governance-control-fabric: f789a19c06f0896774a09ee8942c88c518c7bd70

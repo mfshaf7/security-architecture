@@ -26,7 +26,7 @@ or authorize merge by a model or Agent Gary.
 The current exact source set is the seven-owner set and Platform tree in
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision. Actual merged OOS
-`73cb3ede81052de716da4e42f2ef93da94b2c770`, Console
+`194845facc460af37c8b9644ce90b622886a270d`, Console
 `9e3d97f247f0b9990d202c274680ec89576e7d42`, Platform
 `72c3b13cf20329aaff34146c587fe2969b9d9a03` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
