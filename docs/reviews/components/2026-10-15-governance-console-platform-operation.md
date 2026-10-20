@@ -15,7 +15,7 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@673ecfc9cb724f2d8c08443aceedb21fb5658277`
+  - `governance-operations-console@7194cab55fa32446e496d4c20343ebe3bf67b9d4`
   - `operator-orchestration-service@e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`
   - `platform-engineering@5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f`
   - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
@@ -24,6 +24,7 @@
 - reviewed Platform tree:
   `platform-engineering-tree@b6fb7fc69587c482a6daa0c73174757855308152`
 - source reviews:
+  - [Console pending Delivery owner-read coalescing PR #99](https://github.com/mfshaf7/governance-operations-console/pull/99)
   - [Console Closure review-proof round trip PR #98](https://github.com/mfshaf7/governance-operations-console/pull/98)
   - [Platform nested reviewed-record authority PR #325](https://github.com/mfshaf7/platform-engineering/pull/325)
   - [OOS historical Baseline owner bridge PR #353](https://github.com/mfshaf7/operator-orchestration-service/pull/353)
@@ -104,6 +105,40 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Pending Prototype Delivery owner reads — 2026-10-21
+
+Finite normal Dashboard/Closure browser navigation launched four identical
+Delivery application GETs within300ms. All four reached the existing30s timeout,
+blocking current Closure preparation while the original terminal receipt
+remained valid and visible. Isolated native OOS and Console reads returned the
+same intact target/receipt in8–9s. No missing approval, corrupt data or persistent
+transport failure was established.
+
+Console PR99 retains one per-hook pending reader keyed by exact immutable
+application identity. Only overlapping readonly GETs share a promise. Different
+identities remain independent; success and rejection clear the pending entry,
+so later Refresh reaches the owner again. Result/packet validation, fail-closed
+errors, existing server timeout, caller authority and apply commands are
+unchanged. There is no settled-result cache or new backend/credential control.
+The documentation corrects a stale graduation statement; canonical Studio
+lifecycle/source-custody ownership and existing projection code do not change.
+
+Evidence: the extracted old reader fails the four-consumer regression4!=1.
+Fixed focused6 tests cover overlap, independent identities, fresh later reads,
+network/owner/malformed rejection and actual retry. Full committed local
+CI-equivalent passed627 tests, architecture/type/build/repository checks,
+audit0 and fetched-base diffcheck. Four consumers of the actual Console/OOS
+response shared one actual GET, followed by a second fresh GET, preserving the
+original target/receipt with zero business writes. Actual CI39512010889 passed
+before exact-head accountable review and source merge.
+
+Decision: accept actual merged Console
+`7194cab55fa32446e496d4c20343ebe3bf67b9d4` for normal commissioning, preserving
+the other six implementation pins and Platform tree. Native current-record
+nested acceptance remains mandatory. Source conformance does not substitute
+for the post-activation finite browser request/current-source/original-receipt
+witness, nor the remaining durable-owner/app qualification.
 
 #### Closure review-proof server/browser round trip — 2026-10-21
 
