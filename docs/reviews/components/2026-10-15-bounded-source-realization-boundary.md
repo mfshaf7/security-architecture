@@ -28,7 +28,7 @@ The current exact source set is the seven-owner set and Platform tree in
 and its YAML decision. Actual merged OOS
 `194845facc460af37c8b9644ce90b622886a270d`, Console
 `0f85b5b91de8e55ccaa13554e6fed1d376fcab05`, Platform
-`7acd3eb260bf3e6299449577d532c540d3cee56c` and CGG
+`d0bf3074e60ba547b4806c3fa6af4fc7e7a1a867` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
