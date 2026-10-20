@@ -12,7 +12,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-17
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,10 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - source-purpose-expiry-renewal-revocation
+          - trusted-bootstrap-and-separate-workflows-approval
+          - model-profile-native-lifecycle-consumer-coherence
+          - complete-runtime-seven-owner-context-binding
           - console-documented-landing-fixture-record-admission
           - console-existing-readiness-caller-and-reviewed-issuer-reconciliation
           - governed-ai-observed-provider-patch-and-readiness
@@ -43,6 +47,12 @@ review_inventory:
           - governance-console-failure-first-rollback-order
         owner_artifacts:
           - repo: platform-engineering
+            path: scripts/agent_source_intent.py
+          - repo: platform-engineering
+            path: scripts/validate_ai_model_profiles.py
+          - repo: platform-engineering
+            path: dev-integration/profiles/governed-ai-gateway/runtime/model_profile_resolver.py
+          - repo: platform-engineering
             path: products/governance-operations-console/scripts/console_record_authority.py
           - repo: platform-engineering
             path: products/governance-operations-console/scripts/test_console_record_authority.py
@@ -62,21 +72,28 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-12-product-publication-lifecycle-maintenance-boundary.md
-        reviewed_on: 2026-10-12
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-20
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
+          - atomic-complete-source-owner-registration
+          - source-only-provider-owner-boundary
+          - consumed-intake-inventory-lineage
           - product-publication-ordered-lifecycle-contract
           - product-publication-fresh-owner-manifest-boundaries
           - product-publication-registry-publication-separation
           - product-publication-restore-history-integrity
         owner_artifacts:
+          - repo: workspace-governance
+            path: scripts/workspace_inventory.py
+          - repo: workspace-governance
+            path: contracts/repos.yaml
           - repo: workspace-governance
             path: contracts/product-publication.yaml
           - repo: workspace-governance
@@ -94,7 +111,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-16
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -104,6 +121,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - source-owner-provider-provenance-bundle-parity
           - wgcf-current-studio-registry-consumer-compatibility
           - wgcf-read-only-record-checkpoint-freshness
           - wgcf-custody-source-activation-exact-composition
@@ -115,6 +133,8 @@ review_inventory:
           - delivery-art-superseded-architecture-custody-lineage
           - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
+          - repo: workspace-governance-control-fabric
+            path: contracts/workspace-intake/manifest.json
           - repo: workspace-governance-control-fabric
             path: contracts/prototype-landing/manifest.json
           - repo: workspace-governance-control-fabric
@@ -143,8 +163,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-18
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -154,6 +174,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - prototype-real-subject-context-binding
+          - prototype-packet-receipt-denial-replay
+          - context-only-no-model-action-authority
           - agent-console-dedicated-caller-binding
           - agent-console-redaction-budget-and-custody
           - agent-console-raw-context-denial
@@ -161,6 +184,8 @@ review_inventory:
           - agent-console-composition-only-activation
           - owner-evidence-profile-bounded-runtime-admission
         owner_artifacts:
+          - repo: context-governance-gateway
+            path: apps/api/src/cgg_api/lifecycle.py
           - repo: context-governance-gateway
             path: contracts/delivery-art-work-session/evidence-profile.json
           - repo: context-governance-gateway
@@ -180,7 +205,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-18
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -189,6 +214,8 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - prototype-deterministic-design-preview-preparation
+          - prototype-reviewed-source-import-owner-acceptance
           - preview-landing-inert-draft-consumer-compatibility
           - owner-evidence-profile-bounded-runtime-admission
           - preview-reviewed-control-and-current-record-snapshots
@@ -197,6 +224,10 @@ review_inventory:
           - preview-runtime-atomic-expected-state
           - preview-runtime-operating-proof-sequencing
         owner_artifacts:
+          - repo: workspace-prototype-studio
+            path: packages/prototype_authoring/preparation.py
+          - repo: workspace-prototype-studio
+            path: tests/test_prototype_authoring.py
           - repo: workspace-prototype-studio
             path: contracts/delivery-art-work-session/evidence-profile.json
           - repo: workspace-prototype-studio
@@ -220,7 +251,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-18
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -230,6 +261,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-source-purpose-identity-and-explicit-acceptance
+          - repository-owner-bootstrap-cold-original-request
           - console-existing-landing-postmerge-cold-owner-continuation
           - console-prototype-landing-new-source-revision-binding
           - console-primary-owner-records-and-cold-workflow-readback
@@ -247,6 +280,10 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/repository/server/repository-bootstrap-oos-client.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/prototype/presentation/workflows/source-authoring/prototype-source-authoring-modal.tsx
           - repo: governance-operations-console
             path: src/domain-workspaces/prototype/presentation/workflows/landing/prototype-landing-modal.tsx
           - repo: governance-operations-console
@@ -338,7 +375,7 @@ review_inventory:
         decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-16
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -348,6 +385,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - oos-canonical-source-intent-before-effects
+          - prototype-real-registry-context-authoring-and-source-transfer
+          - trusted-owner-bootstrap-and-current-admission
           - canonical-dependency-read-batching-and-error-preservation
           - oos-canonical-primary-record-collection
           - oos-governed-ai-source-drafting
@@ -364,6 +404,14 @@ review_inventory:
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/platform-operation/source-credential-authority.js
+          - repo: operator-orchestration-service
+            path: src/repository-owner-bootstrap/service.js
+          - repo: operator-orchestration-service
+            path: src/source-authoring/prototype-realization.js
+          - repo: operator-orchestration-service
+            path: docs/operations/prototype-source-authoring-operator-surface.md
           - repo: operator-orchestration-service
             path: src/platform-operation/contracts.js
           - repo: operator-orchestration-service
@@ -384,7 +432,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-18
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -394,6 +442,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governance-console-seven-owner-bounded-authoring-composition
+          - governance-console-native-profile-lifecycle-and-operating-proof-boundary
           - governance-console-existing-landing-postmerge-cold-owner-continuation
           - governance-console-documented-landing-fixture-record-admission
           - governance-console-landing-draft-consumer-compatibility
@@ -638,8 +688,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-delivery-art-superseded-architecture-lineage.md
-        reviewed_on: 2026-10-15
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -649,10 +699,13 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - source-owner-provider-provenance-bundle-parity
           - delivery-art-active-architecture-semantic-validation
           - delivery-art-superseded-architecture-custody-lineage
           - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
+          - repo: workspace-governance-control-fabric
+            path: contracts/workspace-intake/manifest.json
           - repo: workspace-governance-control-fabric
             path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
           - repo: workspace-governance-control-fabric
@@ -667,8 +720,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-18
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -678,6 +731,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - prototype-real-subject-context-binding
+          - prototype-packet-receipt-denial-replay
+          - context-only-no-model-action-authority
           - agent-console-dedicated-caller-binding
           - agent-console-redaction-budget-and-custody
           - agent-console-raw-context-denial
@@ -685,6 +741,8 @@ review_inventory:
           - agent-console-composition-only-activation
           - owner-evidence-profile-bounded-runtime-admission
         owner_artifacts:
+          - repo: context-governance-gateway
+            path: apps/api/src/cgg_api/lifecycle.py
           - repo: context-governance-gateway
             path: contracts/delivery-art-work-session/evidence-profile.json
           - repo: context-governance-gateway
@@ -703,8 +761,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-09-agent-console-composed-runtime.md
-        reviewed_on: 2026-10-16
+        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -714,12 +772,19 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - prototype-separate-profile-caller-task-purpose
+          - native-profile-retirement-without-live-grants
+          - independent-profile-eligibility-and-launch-denial
           - governed-ai-observed-provider-patch-and-readiness
           - agent-console-profile-and-caller-admission
           - agent-console-provider-and-model-selection-boundary
           - agent-console-response-schema-and-audit-binding
           - agent-console-controlled-activation-order
         owner_artifacts:
+          - repo: platform-engineering
+            path: dev-integration/profiles/governed-ai-gateway/runtime/model_profile_resolver.py
+          - repo: platform-engineering
+            path: scripts/test_model_profile_lifecycle.py
           - repo: platform-engineering
             path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
@@ -813,7 +878,7 @@ review_inventory:
         decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-16
+        reviewed_on: 2026-10-20
         status: current
         decision: approved
         review_areas:
@@ -823,11 +888,20 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - oos-canonical-source-intent-before-effects
+          - prototype-real-registry-context-authoring-and-source-transfer
+          - trusted-owner-bootstrap-and-current-admission
           - governance-console-platform-operation-exact-caller-approval
           - governance-console-finite-command-and-effect-boundary
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/platform-operation/source-credential-authority.js
+          - repo: operator-orchestration-service
+            path: src/source-authoring/prototype-realization.js
+          - repo: operator-orchestration-service
+            path: src/repository-owner-bootstrap/service.js
           - repo: operator-orchestration-service
             path: src/platform-operation/contracts.js
           - repo: operator-orchestration-service

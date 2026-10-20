@@ -21,7 +21,44 @@ as the bounded source-realization implementation. That source decision did not a
 commission a model profile, approve a network exposure, replace human review,
 or authorize merge by a model or Agent Gary.
 
-### Current composed operating-boundary delta — 2026-10-18
+### Current composed Prototype authoring delta — 2026-10-20
+
+The current exact source set is the seven-owner set and Platform tree in
+[the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
+and its YAML decision. Actual merged OOS
+`73cb3ede81052de716da4e42f2ef93da94b2c770`, Console
+`9e3d97f247f0b9990d202c274680ec89576e7d42`, Platform
+`72c3b13cf20329aaff34146c587fe2969b9d9a03` and CGG
+`f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
+source decisions below are historical; their Prototype-generation exclusion
+is superseded only for this explicitly reviewed bounded purpose.
+
+The existing Delivery purpose remains separate. Prototype authoring binds a
+real registry identity and accepted app/design objective, not a fabricated
+Delivery session. OOS reuses private source-work custody, exact operator/caller,
+base/branch/digest, current source lease and recovery controls. CGG admits only
+the real Prototype subject and safe packet; the governed gateway admits the
+distinct `prototype-source-authoring-v1` caller/task purpose using the existing
+local Ollama/qwen3:8b binding. Cross-purpose callers/tasks, stale subjects,
+raw context and caller-selected provider URLs remain denied. The model receives
+no source credentials, tools, owner-control writing, approval or merge rights.
+
+Deterministic Studio preparation, accepted draft, executable Preview, Baseline,
+reviewed source import and post-squash canonical owner acceptance remain separate
+evidence steps. Trusted owner bootstrap is a finite non-model control-template
+operation with its own marked purpose; ordinary authoring rejects that token.
+Optional CI needs a separate exact Workflows approval, not a universal project
+requirement. Current-source authorization precedes effects; uncertainty retains
+the original action, and cleanup preserves committed or unique source.
+
+The composed review records native owner, actual producer/consumer, real-Git,
+packaged-image and recovery proof. These engineering tests do not constitute
+live inference or application acceptance. Normal exact-composition commissioning
+and the real Console-only to-do/route witnesses remain mandatory. No generic
+coding agent, raw provider fallback, private-client qualification, public hosting,
+new model, stage/prod or autonomous governance is accepted.
+
+### Prior composed operating-boundary delta — 2026-10-18
 
 The exact source set and current approval authority are bound by
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)

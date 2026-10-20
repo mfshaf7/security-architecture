@@ -26,6 +26,33 @@ production use. Platform must prove the configured identity, secret custody,
 packet-first behavior, explicit raw fallback, restart, suspension, teardown,
 and rollback boundaries before the composition may be described as operating.
 
+## Current bounded Prototype-context extension — 2026-10-20
+
+The September24 revisions and findings below describe the original Delivery
+context boundary, not acceptance of every later CGG descendant. The exact
+current seven-owner source set is reviewed in
+[the Console composed-operation delta](2026-10-15-governance-console-platform-operation.md)
+and its machine-readable decision. It explicitly includes CGG
+`f80c06d9ece3b8706211c0be536407e610ef13e0` and OOS
+`73cb3ede81052de716da4e42f2ef93da94b2c770` for the real Prototype subject/context
+extension. The original review alone does not authorize that extension.
+
+The added subject is an actual canonical Prototype, with exact source/context
+bindings, rather than a fabricated ART/Delivery identity. Caller/operator,
+safe projection, budget, receipt, redaction, replay and denial controls remain
+intact. OOS alone requests the bounded source-authoring gateway purpose under
+the separately refreshed [source-realization review](2026-10-15-bounded-source-realization-boundary.md).
+CGG itself neither invokes a model nor acquires workflow, source, approval,
+raw-fallback or release authority. Browser-to-CGG access and implicit raw
+downgrade remain forbidden; the generic provider-neutral downstream handoff
+and shared stage/prod service boundaries remain outside this acceptance.
+
+This addendum does not relabel historical source/commissioning evidence as
+current operating proof, reopen a terminal work item or authorize new cleanup.
+Existing Platform-owned lifecycle bindings are prerequisites; normal current
+composition readback, per-purpose readiness, denial and the real Console
+journey must still prove the extended route before operating completion.
+
 ## Scope Delta
 
 ### Design Intent
