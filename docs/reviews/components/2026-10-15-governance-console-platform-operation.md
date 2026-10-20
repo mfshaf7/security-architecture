@@ -17,13 +17,14 @@
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
   - `governance-operations-console@3888ac6729248672067687bcbc09b0860e7783f6`
   - `operator-orchestration-service@e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`
-  - `platform-engineering@f4d30696be19b3ec5a329e6b273eca4a7e2de3f5`
+  - `platform-engineering@5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f`
   - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
   - `workspace-governance-control-fabric@5368dbb7bb33b8704762214c25e36cab317b045d`
   - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
 - reviewed Platform tree:
-  `platform-engineering-tree@3ac2b1295a315bad7b796589570e890bc3a3d4c5`
+  `platform-engineering-tree@b6fb7fc69587c482a6daa0c73174757855308152`
 - source reviews:
+  - [Platform nested reviewed-record authority PR #325](https://github.com/mfshaf7/platform-engineering/pull/325)
   - [OOS historical Baseline owner bridge PR #353](https://github.com/mfshaf7/operator-orchestration-service/pull/353)
   - [Console native Closure cold subject PR #97](https://github.com/mfshaf7/governance-operations-console/pull/97)
   - [WG isolated provider test fixtures PR #284](https://github.com/mfshaf7/workspace-governance/pull/284)
@@ -102,6 +103,47 @@
 - decision: `approved`
 
 ### Current Maintenance Acceptance
+
+#### Nested reviewed-record authority parity — 2026-10-21
+
+The first actual accepted activation after the Closure adapter repair failed
+at the nested cross-domain launcher: the complete coordinator admitted clean
+WG's reviewed Intake-record-only descendant, but its generated nested policy
+still selected exact old WG source. No record was corrupt and no missing
+approval or memory pressure caused that rejection. Its auto-retry was stopped;
+the original Closure request, accepted owner records and source remain intact.
+
+Platform PR325 propagates explicit `reviewed-record-only` authority through
+that existing policy and reuses the same bounded `console_record_authority`
+classifier in the nested validator. Default standalone exact behavior, older
+explicit minimum binding and exact other-owner pins remain unchanged. Clean
+tracked main, fetched ancestry, bounded approved data paths/modes and reviewed
+registration companion validation remain mandatory. Executable, schema,
+policy, dirty, non-main and unrelated-history deltas are denied. This is not a
+broad minimum-revision waiver or a reason to repin Security after each business
+record. No identity, credential or runtime effect authority is added.
+
+Evidence: the generated-policy regression failed before and passed after.
+Native real-Git tests execute the actual complete policy producer and nested
+consumer with positive data and independent denial cases. Focused28/65/17
+suites passed; four unchanged cluster-effect and one image opt-in cases were
+not invoked for this host-side source guard. Full committed local CI-equivalent
+passed Make/CI-locked OOS/Helm/Temporal/Terraform/contracts and source checks.
+Actual CI39494476284 and SecurityPosture39494476178 passed before exact-head
+human approval; the main-only metadata publication job was correctly skipped
+on the PR. Actual accepted authority to candidate generated policy to FULL
+native lower validation passed against the real WG c508-to-5ef record delta,
+with zero runtime or canonical writes; default exact still denied that delta.
+
+Decision: accept actual merged Platform
+`5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f`, exact tree
+`b6fb7fc69587c482a6daa0c73174757855308152`, for normal commissioning. Other
+six implementation pins remain unchanged. The generated index includes the
+merged Platform record. Candidate acceptance proof must include native nested
+validation with actual current WG data, not only a frozen baseline or the top
+coordinator. Accepted activation and the original Console request's actual
+readiness, review and readback remain required. No final app, transfer,
+private-client or public-hosting qualification is granted.
 
 #### Closure historical Baseline and cold request interoperability — 2026-10-21
 

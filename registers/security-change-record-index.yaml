@@ -3770,6 +3770,18 @@ change_records:
   workstreams:
   - WS-003
   - WS-005
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-21-console-nested-record-authority.md
+  date: 2026-10-21.
+  short_title: 2026-10-21-console-nested-record-authority
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-005
+  - WS-007
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'
