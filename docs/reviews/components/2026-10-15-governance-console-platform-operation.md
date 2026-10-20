@@ -17,13 +17,14 @@
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
   - `governance-operations-console@0f85b5b91de8e55ccaa13554e6fed1d376fcab05`
   - `operator-orchestration-service@194845facc460af37c8b9644ce90b622886a270d`
-  - `platform-engineering@d0bf3074e60ba547b4806c3fa6af4fc7e7a1a867`
+  - `platform-engineering@f4d30696be19b3ec5a329e6b273eca4a7e2de3f5`
   - `workspace-governance@5746fc7bf2b68cf1e21ce8a3981fc716b05e7eb2`
   - `workspace-governance-control-fabric@f789a19c06f0896774a09ee8942c88c518c7bd70`
   - `workspace-prototype-studio@05678a9a63cd998ef54dd17b45a3b7ec848e5615`
 - reviewed Platform tree:
-  `platform-engineering-tree@9c59eb3b0cf237e93567e8e6c1973c4059a1c219`
+  `platform-engineering-tree@3ac2b1295a315bad7b796589570e890bc3a3d4c5`
 - source reviews:
+  - [Platform issuer service tool environment PR #324](https://github.com/mfshaf7/platform-engineering/pull/324)
   - [Platform current-provider commissioning PR #323](https://github.com/mfshaf7/platform-engineering/pull/323)
   - [Console canonical cold Landing projection PR #92](https://github.com/mfshaf7/governance-operations-console/pull/92)
   - [Platform accountable-operator consistency PR #322](https://github.com/mfshaf7/platform-engineering/pull/322)
@@ -92,7 +93,52 @@
 
 ### Current Maintenance Acceptance
 
-#### Provider source and capability freshness — 2026-10-20
+#### Provider issuer tool environment — 2026-10-20
+
+The original Console issue was approved, then the actual worker failed before
+mint. Retained intent phase is `preparing`, no credential projection exists,
+and the owner operation permits retry of the same command. Protected actual
+service diagnostics proved that its PATH cannot find the installed user-local
+Vault binary. OpenSSL, Git and k3s already resolve. Read-only real Vault custody
+and App/installation identity verification pass with the proposed controlled
+PATH; these checks issue no installation token or private material projection.
+
+The bounded Platform delta supplies the existing service with the selected
+operator's `.local/bin` plus fixed standard system binary directories. It does
+not inherit arbitrary shell/manager PATH entries. Activation checks Vault,
+OpenSSL, Git and k3s against that identical path after Security/operator
+admission and before materialization, composition or credential effects.
+Missing tools cause a bounded explicit failure. Existing current-provider
+freshness/restart behavior remains unchanged. No global manager environment,
+root/package install, service, permission, secret logging or credential bypass
+is introduced. User-owned tools remain inside the already-admitted single-local-
+operator trust boundary; this is not approval for untrusted executable paths.
+
+The same original request, intent, approval, scope and command must be retained.
+Source validation is not actual issuance proof. After exact reviewed Platform
+source/tree acceptance, normal activation must prove actual service tool
+resolution, then Console must reconcile the original owner operation. Existing
+private custody, independent source-scope checks, pre-mint provider validation,
+revocation and Gary/human separation remain mandatory. This does not close
+Epic1275 or qualify application authorship, Preview or Delivery operation.
+
+Gary final candidatea05b822 passed the committed full Platform CI-equivalent
+suite, four Helm renders and both unchanged environment source contracts.
+Focused65tests/61passing/four existing opt-in skips cover exact service PATH,
+missing-tool denial on both the normal command and inner activation, and all
+prior freshness/operator cases. GitHub's first attempt exposed a simulated
+activation fixture depending on installed host tools; the same PR explicitly
+mocks that prerequisite without relaxing real missing-tool denial. Corrected
+provider CI39444172310 and posture39444172324 passed. Delegated exact-head
+review preceded actual PR324 merge `f4d3069`, tree `3ac2b12`; publication access
+was revoked. Current Summary/YAML bind that merge/tree; the other six reviewed
+implementation sources and source-identity definition/anchor remain unchanged.
+Read-only adjacent checks confirm the admitted supervisor resolves the tools
+and successful credential renewal uses in-pod Vault, so no global/timer changes
+are justified. Fresh accepted activation and original Console retry remain
+required before claiming this observed failure repaired in operation.
+
+#### Prior accepted delta: provider source and capability freshness — 2026-10-20
 
 Actual Console source issuance after the prior accepted activation returned409
 `platform_operation_capability_unavailable` before dispatch. The exact prepared
@@ -125,8 +171,9 @@ reject a wrong expected revision, without a restart or business effect.
 Provider CI39435583038 and repository-posture39435582717 passed; main-only
 metadata publication correctly skipped. Delegated exact-head review preceded
 actual PR323 merge `d0bf307`, tree `9c59eb3`. Publishing access was revoked.
-The current Summary/YAML bind that actual reviewed Platform merge/tree;
-the other six implementation sources remain unchanged. The source-identity
+That prior acceptance bound the reviewed Platform merge/tree; the current
+Summary/YAML include the later issuer-tool delta above. The other six
+implementation sources remain unchanged. The source-identity
 definition retains its unchanged anchor. Normal accepted activation must prove
 automatic provider freshness and actual same-scope Console issuance afterward.
 Engineering checks and manual containment do not satisfy that operating proof
@@ -173,7 +220,7 @@ Provider CI39428228546 and repository-posture39428228373 passed; main-only
 metadata publication correctly skipped. Delegated exact-head review preceded
 actual Platform PR322 merge7acd3eb/tree0c23683. Publishing access was revoked.
 Those source reviews remain prior delta evidence; the current Summary/YAML
-include the later provider-freshness delta above. The separate Console projection delta
+include the later provider-freshness and issuer-tool deltas above. The separate Console projection delta
 below is also bound in that source set; the other five implementation control
 revisions remain unchanged. Studio app data retains its accepted advancement
 boundary; the unchanged source-identity definition retains its existing anchor.
