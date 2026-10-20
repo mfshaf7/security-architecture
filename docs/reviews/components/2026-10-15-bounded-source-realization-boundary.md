@@ -28,10 +28,18 @@ The current exact source set is the seven-owner set and Platform tree in
 and its YAML decision. Actual merged OOS
 `e7c79cf9f8f9834a8f80d35d16c0958a36eacdda`, Console
 `3888ac6729248672067687bcbc09b0860e7783f6`, Platform
-`f4d30696be19b3ec5a329e6b273eca4a7e2de3f5` and CGG
+`5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+Platform PR325 propagates the already-approved reviewed-record-only boundary
+from complete policy generation to its nested launcher. The existing bounded
+classifier, companion validation and exact/default denials remain; no ordinary
+source, bootstrap, model, credential or review permission changes. Native
+actual-record generated-policy validation and full local/actual source CI
+passed. This source acceptance does not replace normal activation or the
+original request's Console witness, and it does not repin WG for business data.
 
 OOS PR353 preserves the historical Maturity UTF-8 digest at Closure's Baseline
 bridge; Closure source/history stay ASCII. Console PR97 cold reads bind the
