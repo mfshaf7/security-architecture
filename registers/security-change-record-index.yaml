@@ -3816,6 +3816,18 @@ change_records:
   workstreams:
   - WS-005
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-21-console-source-parent-mountpoints.md
+  date: '2026-10-21'
+  short_title: Prepare the existing read-only nested source mount topology.
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-005
+  - WS-007
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'
