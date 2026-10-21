@@ -28,10 +28,25 @@ The current exact source set is the seven-owner set and Platform tree in
 and its YAML decision. Actual merged OOS
 `d6c515c490ae3f2d535c37d4e3e00fb0bafed774`, Console
 `7c330d46c40deb3516c0fcaa91683618ea9cd520`, Platform
-`5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f` and CGG
+`769242e50dcbdc34fea34017d915d412aa769ccb` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+The current composition also binds actual WGCF118 merge
+`0c47261f49767a590acdeff54b5ae8ea764ab71a` and Platform326 merge above,
+tree`243c041854567626cdb9e8df6d71f06ede609a66`. Physical owner visibility uses
+Platform-selected committed Git snapshots, not live app workspaces, ignored
+local files or credential config. WGCF's exact-root read-only Git probe works
+at UID10001 without global trust. These are presence checks, not permission to
+execute app source, accept a product, admit Inventory or bypass bootstrap.
+Actual model digest500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41
+is unchanged; the six existing local Ollama bindings now pin actual0.40.7 after
+the host update. Version equality, task permissions, exact source acceptance,
+operator decisions, separate Gary source/human review and revocation remain.
+This does not qualify private/client or hostile source, attest host binary
+provenance beyond existing host trust, or authorize model app authorship for
+this exercise. Codex remains its approved external app author.
 
 OOS PR355 corrects the shared synchronous source readers' contract/control
 baseline distinction. The declared bundle activation authority remains an
