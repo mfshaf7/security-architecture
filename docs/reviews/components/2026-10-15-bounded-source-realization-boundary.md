@@ -28,14 +28,17 @@ The current exact source set is the seven-owner set and Platform tree in
 and its YAML decision. Actual merged OOS
 `d6c515c490ae3f2d535c37d4e3e00fb0bafed774`, Console
 `7c330d46c40deb3516c0fcaa91683618ea9cd520`, Platform
-`769242e50dcbdc34fea34017d915d412aa769ccb` and CGG
+`84fb9f72d3101a315dc4cd6160753e1accc2ca99` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
 
 The current composition also binds actual WGCF118 merge
-`0c47261f49767a590acdeff54b5ae8ea764ab71a` and Platform326 merge above,
-tree`243c041854567626cdb9e8df6d71f06ede609a66`. Physical owner visibility uses
+`0c47261f49767a590acdeff54b5ae8ea764ab71a` and Platform327 merge above,
+tree`29809321e95b7e9222d560fec262247123e13ecf`. Its exact three reserved empty
+directories permit the actual nested read-only mount topology; unsafe contents
+are preserved and denied, and empty directories are not repository evidence.
+Native OCI proof covers all child mounts, not only the parent. Physical owner visibility uses
 Platform-selected committed Git snapshots, not live app workspaces, ignored
 local files or credential config. WGCF's exact-root read-only Git probe works
 at UID10001 without global trust. These are presence checks, not permission to

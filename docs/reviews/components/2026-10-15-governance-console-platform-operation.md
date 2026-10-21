@@ -1,6 +1,35 @@
 # Governance Console Platform Operation Security Delta
 
-## Current physical-owner and host-version reassessment — 2026-10-21
+## Current nested source-mount reassessment — 2026-10-21
+
+Accept actual Platform327 merge `84fb9f72d3101a315dc4cd6160753e1accc2ca99`,
+tree `29809321e95b7e9222d560fec262247123e13ecf`. All other six source pins
+remain unchanged. This supersedes only the Platform source/tree in the prior
+physical-owner acceptance below; its trust and public-synthetic scope remains.
+
+The first normal activation exposed a missed physical composition condition:
+OCI cannot create the existing child mount targets inside the new read-only
+parent. Automatic retries were stopped, preserving all source and journals.
+Platform now reserves exactly the existing WG, Studio and Console empty owned
+directories, preserves them across refresh and denies non-empty, symlinked,
+file or foreign-owned targets without deletion. Empty mountpoints do not
+constitute repository-presence evidence. No additional repository, writable
+mount, live app root or host workspace becomes visible.
+
+Exact Gary head890fdd passed full committed fetched-base local Make/Helm/
+Temporal/Terraform validation and provider CI39594053425/39594053427, followed
+by exact mfshaf7 approval. The explicit native image regression exercised
+parent plus all three child mounts with read-only root, no network and UID10001.
+Actual canonical owner/WG sources were separately read-only inputs to an
+isolated native container proof: all child mounts are read-only, regular
+guidance and corrected presence probes succeed, and parent fallback is denied.
+The earlier parent-only test was insufficient; it is not represented as this
+nested topology proof. Actual normal activation and full native runtime
+readback are still required. Registry source repair, app delivery, admission,
+end-to-end completion, private/client/hostile sources, stage and production
+remain outside this acceptance's completion claims.
+
+## Prior physical-owner and host-version reassessment — 2026-10-21
 
 Decision: accept only the actual seven-source set and Platform tree listed
 below for normal local commissioning. Older source decisions in this record
@@ -72,13 +101,14 @@ private-client, public-hosting, stage or production claim is granted.
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
   - `governance-operations-console@7c330d46c40deb3516c0fcaa91683618ea9cd520`
   - `operator-orchestration-service@d6c515c490ae3f2d535c37d4e3e00fb0bafed774`
-  - `platform-engineering@769242e50dcbdc34fea34017d915d412aa769ccb`
+  - `platform-engineering@84fb9f72d3101a315dc4cd6160753e1accc2ca99`
   - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
   - `workspace-governance-control-fabric@0c47261f49767a590acdeff54b5ae8ea764ab71a`
   - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
 - reviewed Platform tree:
-  `platform-engineering-tree@243c041854567626cdb9e8df6d71f06ede609a66`
+  `platform-engineering-tree@29809321e95b7e9222d560fec262247123e13ecf`
 - source reviews:
+  - [Platform nested read-only source mountpoints #327](https://github.com/mfshaf7/platform-engineering/pull/327)
   - [Platform physical owner snapshots and exact Ollama version correction #326](https://github.com/mfshaf7/platform-engineering/pull/326)
   - [WGCF bounded cross-UID physical Git probe #118](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/118)
   - [Console pending Delivery owner-read coalescing PR #99](https://github.com/mfshaf7/governance-operations-console/pull/99)
