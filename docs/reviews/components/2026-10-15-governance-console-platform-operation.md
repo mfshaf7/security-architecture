@@ -15,8 +15,8 @@
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@7194cab55fa32446e496d4c20343ebe3bf67b9d4`
-  - `operator-orchestration-service@1d17556f28521932e6a1e2a1f1aadd36fdfb9777`
+  - `governance-operations-console@7c330d46c40deb3516c0fcaa91683618ea9cd520`
+  - `operator-orchestration-service@d6c515c490ae3f2d535c37d4e3e00fb0bafed774`
   - `platform-engineering@5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f`
   - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
   - `workspace-governance-control-fabric@5368dbb7bb33b8704762214c25e36cab317b045d`
@@ -213,6 +213,51 @@ validation with actual current WG data, not only a frozen baseline or the top
 coordinator. Accepted activation and the original Console request's actual
 readiness, review and readback remain required. No final app, transfer,
 private-client or public-hosting qualification is granted.
+
+#### Native source admission and named record dependency — 2026-10-21
+
+OOS [PR355](https://github.com/mfshaf7/operator-orchestration-service/pull/355)
+merged as `d6c515c490ae3f2d535c37d4e3e00fb0bafed774`; Console
+[PR100](https://github.com/mfshaf7/governance-operations-console/pull/100)
+merged as `7c330d46c40deb3516c0fcaa91683618ea9cd520`. Both exact Gary heads
+passed local committed CI-equivalent and actual provider CI before delegated
+mfshaf7 review and their actual merges. Other five implementation pins and
+the exact Platform tree remain unchanged.
+
+The shared synchronous reader now distinguishes the bundled operation's
+declared activation authority from Platform's later accepted control baseline.
+The former must be an ancestor of the latter, which must be an ancestor of
+the exact current cached main. This is not an arbitrary minimum-SHA waiver:
+the bundle pins the admitted WGCF/operation activation chain. Platform still
+classifies record-only advancement under its reviewed code and owns the fresh
+checkpoint. Required timestamps, owner, regular-file size, trusted ref, exact
+clean HEAD and source ancestry remain; no checkpoint edit, per-record repin,
+new environment switch, contract/schema change or credential expansion.
+
+Actual native before/after diagnostics invoke both proposed-bootstrap and
+ordinary-admitted-owner readers against the same unchanged fresh cache5ef,
+approved controlc508 and declared contract5746. Both old readers deny and both
+corrected readers accept; actual Git proves the ancestry, zero writes. Native
+real-Git tests cover exact/advanced accepted controls and older/unrelated/future
+required baseline, expired/invalid/wrong-owner checkpoint, dirty/untracked
+source, HEAD/ref mismatch and symlink denials. All1534 source-enabled committed
+OOS tests,210-route API, bundles, governance/mutation checks, both images and
+API/fail-closed worker pass; actualCI39519375715 passed.
+
+Console retains only the known `record_authority_unavailable` code and a fixed
+Platform-refresh instruction from a non-success response bounded to4096 bytes.
+Malformed, unknown and oversized errors remain opaque; upstream message or
+detail text is never projected. All628 committed tests/full build/audit0 and
+actualCI39519270392 pass. Actual native readonly exception, loopback error-
+contract serialization, actual Next response/JSON and actual browser API helper
+interoperate in isolated engineering proof, not claimed live dialog acceptance.
+
+The generated Security index must include the actual merged OOS WS007 record.
+Normal accepted activation, full native current-record guard and actual Console
+owner-setup witness remain mandatory. The first rejected create retained no
+canonical request, credential or target checkout; preserve its preparation and
+audit, re-read original owner state before further acceptance. No app, admission,
+private-client or Epic completion is granted by this source decision.
 
 #### Optional owner CI event bases — 2026-10-21
 

@@ -26,12 +26,25 @@ or authorize merge by a model or Agent Gary.
 The current exact source set is the seven-owner set and Platform tree in
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision. Actual merged OOS
-`1d17556f28521932e6a1e2a1f1aadd36fdfb9777`, Console
-`7194cab55fa32446e496d4c20343ebe3bf67b9d4`, Platform
+`d6c515c490ae3f2d535c37d4e3e00fb0bafed774`, Console
+`7c330d46c40deb3516c0fcaa91683618ea9cd520`, Platform
 `5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+OOS PR355 corrects the shared synchronous source readers' contract/control
+baseline distinction. The declared bundle activation authority remains an
+ancestor of current Platform-approved controls, then of exact fresh clean
+cached main; all freshness/ref/HEAD/dirt guards remain. Both actual native
+readers accept the unchanged cache after the fix, with actual before-denial
+and native Git negative coverage. All1534 source-enabled tests/full local
+CI-equivalent and actualCI39519375715 passed. Console PR100 names only the
+known bounded record dependency using fixed guidance, not raw upstream text;
+all628 tests/build/audit0 and actualCI39519270392 passed. The native error to
+Next/JSON/browser-helper proof is isolated engineering evidence. No source,
+checkpoint, review, model or credential authority is expanded. Actual accepted
+activation and owner workflow readback remain separate operating requirements.
 
 OOS PR354 limits the existing optional owner CI to pull requests and pushes
 to qualified main. First review-branch/tag pushes lack a previous ref and are
