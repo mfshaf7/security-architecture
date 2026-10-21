@@ -1,5 +1,60 @@
 # Governance Console Platform Operation Security Delta
 
+## Current physical-owner and host-version reassessment — 2026-10-21
+
+Decision: accept only the actual seven-source set and Platform tree listed
+below for normal local commissioning. Older source decisions in this record
+remain historical, not alternative current approvals. WGCF118 merged
+`0c47261f49767a590acdeff54b5ae8ea764ab71a`; Platform326 merged
+`769242e50dcbdc34fea34017d915d412aa769ccb`, exact tree
+`243c041854567626cdb9e8df6d71f06ede609a66`. Other five owner pins are unchanged.
+
+The native failure after completed bootstrap10cf was physical visibility:
+WGCF could not observe the new owner beneath its container source root, and
+its raw Git probe denied a foreign-owned read-only mount. The repaired probe
+trusts only the already bounded direct-child root per invocation, ignores
+ambient Git configuration, disables hooks/fsmonitor and preserves missing,
+parent-fallback and workspace-escaping-link denial. No global Git trust,
+canonical data mutation or source execution authority is added.
+
+Platform reuses its existing fresh WG record authority and minute refresh.
+It selects only bounded explicit-provider source-only proposed/admitted/active
+owners with owner-local validation. Actual physical clean main/ref, matching
+provider and regular guidance precede a sanitized committed-source Git clone.
+One fixed read-only parent exposes only those clones; existing more-specific
+WG/Studio/Console mounts remain. Host ignored files, Git credential config,
+runtime paths and the private record-cache parent are not mounted. Generated
+ignored/dirty/unattributed residue is preserved and denied. Obsolete attributed
+snapshots move outside visibility, never delete real owners or unique work.
+Tracked application content is not executed as control-plane code. This is the
+existing public synthetic qualification boundary, not private/hostile-source
+qualification or acceptance of arbitrary imported history/data.
+
+The interrupted host now serves Ollama0.40.7 rather than0.40.6. Actual native
+adapter binding verification proves0.40.7 and unchanged qwen3:8b digest
+`500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`.
+Only six existing version fields changed; model selection, permissions, task
+schemas, suggestion-only governance, exact integrity checks and source/human
+gates remain. No software downgrade, fallback, new model or automatic host
+upgrade acceptance is authorized. Codex still authors this exercise's app.
+
+Evidence: WGCF532 local tests, actual API/worker images and fail-closed workers;
+CI39568692419 passes both jobs. Platform final491 head passed complete local
+Make/Helm/Temporal/Terraform/source/base checks uninterrupted and actual
+CI39588918319 plus SecurityPosture39588918317 before exact mfshaf7 approval.
+Native actual Little List source at d48e597d projected into an isolated cache
+and read-only built WGCF image UID10001 reproduces raw Git ownership denial,
+corrected physical presence and regular guidance, with parent fallback denied.
+This is engineering evidence, not actual admission or runtime activation.
+
+Required next gates: exact existing decision/index source review; normal
+commissioning; full native nested validator and live gateway/OOS/source bindings;
+corrected Console Intake preserving its original candidate metadata; Inventory
+registration and actual app delivery/readback. The separately discovered Registry
+review/recovery controls are still pending owner maintenance and are NOT
+certified by this decision. No app, end-to-end Epic, global clean state,
+private-client, public-hosting, stage or production claim is granted.
+
 ## Summary
 
 - date: 2026-10-21
@@ -17,13 +72,15 @@
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
   - `governance-operations-console@7c330d46c40deb3516c0fcaa91683618ea9cd520`
   - `operator-orchestration-service@d6c515c490ae3f2d535c37d4e3e00fb0bafed774`
-  - `platform-engineering@5ec6a2b7af5a6957b49b464f1c80d8bbb049b39f`
+  - `platform-engineering@769242e50dcbdc34fea34017d915d412aa769ccb`
   - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
-  - `workspace-governance-control-fabric@5368dbb7bb33b8704762214c25e36cab317b045d`
+  - `workspace-governance-control-fabric@0c47261f49767a590acdeff54b5ae8ea764ab71a`
   - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
 - reviewed Platform tree:
-  `platform-engineering-tree@b6fb7fc69587c482a6daa0c73174757855308152`
+  `platform-engineering-tree@243c041854567626cdb9e8df6d71f06ede609a66`
 - source reviews:
+  - [Platform physical owner snapshots and exact Ollama version correction #326](https://github.com/mfshaf7/platform-engineering/pull/326)
+  - [WGCF bounded cross-UID physical Git probe #118](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/118)
   - [Console pending Delivery owner-read coalescing PR #99](https://github.com/mfshaf7/governance-operations-console/pull/99)
   - [Console Closure review-proof round trip PR #98](https://github.com/mfshaf7/governance-operations-console/pull/98)
   - [Platform nested reviewed-record authority PR #325](https://github.com/mfshaf7/platform-engineering/pull/325)
