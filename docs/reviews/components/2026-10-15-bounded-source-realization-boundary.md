@@ -26,12 +26,21 @@ or authorize merge by a model or Agent Gary.
 The current exact source set is the seven-owner set and Platform tree in
 [the Console composed-operation review](2026-10-15-governance-console-platform-operation.md)
 and its YAML decision. Actual merged OOS
-`d6c515c490ae3f2d535c37d4e3e00fb0bafed774`, Console
-`7c330d46c40deb3516c0fcaa91683618ea9cd520`, Platform
+`e7659bdb2d1a36363a917c723f2f3af232b333cb`, Console
+`abf76987e0685ef72860635136492125e5bdcb8f`, Platform
 `84fb9f72d3101a315dc4cd6160753e1accc2ca99` and CGG
 `f80c06d9ece3b8706211c0be536407e610ef13e0` are part of that set. Older
 source decisions below are historical; their Prototype-generation exclusion
 is superseded only for this explicitly reviewed bounded purpose.
+
+OOS356/Console101 add read-only, bounded caller/target/family Inventory journals
+and explicit original-request controls. Cold discovery/reopening performs no
+preparation, continuation or mutation; lost acknowledgement recovers the same
+original. New review remains explicit and pending-aware without changing
+generic backend concurrency or adding source/merge/issuer authority. Opaque
+native IDs are URL-encoded, not a source authorization namespace. Actual
+Inventory and app journey acceptance still require commissioned operating proof;
+isolated synthetic browser tests do not provide that evidence.
 
 The current composition also binds actual WGCF118 merge
 `0c47261f49767a590acdeff54b5ae8ea764ab71a` and Platform327 merge above,
