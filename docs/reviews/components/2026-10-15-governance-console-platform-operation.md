@@ -1,6 +1,53 @@
 # Governance Console Platform Operation Security Delta
 
-## Current nested source-mount reassessment — 2026-10-21
+## Current Registry original-request recovery reassessment — 2026-10-21
+
+Accept actual OOS356 merge `e7659bdb2d1a36363a917c723f2f3af232b333cb` and
+Console101 merge `abf76987e0685ef72860635136492125e5bdcb8f`. Preserve the other
+five owner pins, including Platform327 source/tree below. This supersedes only
+those two implementation pins; the earlier decisions remain historical.
+
+OOS extends existing caller-authorized Inventory Promotion and Lifecycle
+services with read-only original-request discovery for an exact kind/name.
+The current store is read without initialization, normalization or mutation.
+Metadata-only pages are bounded to25 rows/32KiB; cursors bind caller, family,
+target and original identity. Pending counts cover all pages. Persisted
+binding/corruption errors fail closed. No raw submitted values or evidence are
+projected and no new canonical writer, caller or mutation right is added.
+Generic backend submission/idempotency/concurrency semantics remain unchanged.
+
+Console consumes that same source-bound journal and reopens exact original
+locators using GET only. It adds the missing promotion Check Review/Open Review,
+original read/cancel controls and active-record promotion history. Lifecycle
+recovery never auto-prepares a replacement. Acknowledged commands cannot return
+to editing; terminal correction requires explicit fresh review with no pending
+original. Server submission repeats the pending preflight, without claiming an
+upstream global lock. Native opaque text identifiers are percent-encoded, not
+treated as authority or restricted to a Console-only namespace; submission
+intent namespaces remain unchanged. Offline/corrupt/mismatched/stale source
+never becomes empty successful history, fixture mutation or new work.
+
+Exact Gary heads a54f976/3d08720 passed full committed fetched-base local CI:
+1543 OOS source-enabled tests, API/docs/bundles/governance, both real images,
+API health and fail-closed worker;637 Console tests/guards/types/build and
+audit0. Provider CI39595436027 and Console exact-head repository checks pass,
+with exact mfshaf7 approval before the actual merges. Real persistent-store
+tests cover restart/no-write/replay, auth/target/family/cursor isolation,
+off-page pending, byte pagination and corruption denial. The final built
+Console passes isolated Playwright cold recovery, explicit review/continuation,
+uncertain cancellation acknowledgement, both families, active-record history,
+terminal new review and offline/corrupt denial. Its screenshot was inspected.
+Those intercepted synthetic APIs are engineering conformance, not live owner
+mutation or final app proof.
+
+Normal coordinated activation and actual native reader/Console Inventory
+recovery/readback remain required. The current Intake prerequisite is being
+reconciled through existing learning-record maintenance; no new ART child,
+authority mechanism, waived approval or duplicate pending request is approved.
+This decision does not claim app Delivery, whole-journey/Epic completion,
+private/client/hostile-source qualification, public hosting, stage or prod.
+
+## Prior nested source-mount reassessment — 2026-10-21
 
 Accept actual Platform327 merge `84fb9f72d3101a315dc4cd6160753e1accc2ca99`,
 tree `29809321e95b7e9222d560fec262247123e13ecf`. All other six source pins
@@ -99,8 +146,8 @@ private-client, public-hosting, stage or production claim is granted.
   `sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
 - reviewed exact revisions:
   - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
-  - `governance-operations-console@7c330d46c40deb3516c0fcaa91683618ea9cd520`
-  - `operator-orchestration-service@d6c515c490ae3f2d535c37d4e3e00fb0bafed774`
+  - `governance-operations-console@abf76987e0685ef72860635136492125e5bdcb8f`
+  - `operator-orchestration-service@e7659bdb2d1a36363a917c723f2f3af232b333cb`
   - `platform-engineering@84fb9f72d3101a315dc4cd6160753e1accc2ca99`
   - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
   - `workspace-governance-control-fabric@0c47261f49767a590acdeff54b5ae8ea764ab71a`
@@ -108,6 +155,8 @@ private-client, public-hosting, stage or production claim is granted.
 - reviewed Platform tree:
   `platform-engineering-tree@29809321e95b7e9222d560fec262247123e13ecf`
 - source reviews:
+  - [OOS bounded Inventory original-request journals #356](https://github.com/mfshaf7/operator-orchestration-service/pull/356)
+  - [Console Registry original-request controls #101](https://github.com/mfshaf7/governance-operations-console/pull/101)
   - [Platform nested read-only source mountpoints #327](https://github.com/mfshaf7/platform-engineering/pull/327)
   - [Platform physical owner snapshots and exact Ollama version correction #326](https://github.com/mfshaf7/platform-engineering/pull/326)
   - [WGCF bounded cross-UID physical Git probe #118](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/118)
