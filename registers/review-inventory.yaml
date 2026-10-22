@@ -49,6 +49,10 @@ review_inventory:
           - governance-console-failure-first-rollback-order
         owner_artifacts:
           - repo: platform-engineering
+            path: security/governed-ai-model-profiles.yaml
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-23-installed-ollama-0408.md
+          - repo: platform-engineering
             path: scripts/agent_source_identity.py
           - repo: platform-engineering
             path: scripts/repository_provider_identity.py

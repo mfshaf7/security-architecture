@@ -3875,6 +3875,16 @@ change_records:
   workstreams:
   - WS-007
 - repo: platform-engineering
+  path: docs/records/change-records/2026-10-23-installed-ollama-0408.md
+  date: '2026-10-23'
+  short_title: existing provider runtime patch alignment
+  review_areas:
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: platform-engineering
   path: docs/records/change-records/2026-10-23-native-owner-publication-source-freshness.md
   date: '2026-10-23'
   short_title: extend existing attributed source visibility and maintenance admission

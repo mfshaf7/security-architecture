@@ -13,9 +13,9 @@ reviewed_revisions:
   context-governance-gateway: f80c06d9ece3b8706211c0be536407e610ef13e0
   governance-operations-console: 711bc2299cf5dc75e5753d83158c68409b9c8f2c
   operator-orchestration-service: 9fa26709fa3d9c24d6aeae397db1686f75a3ca53
-  platform-engineering: b4c265e64d3dd49733553de0fd2df66351d8be09
+  platform-engineering: f7e42679230ffdfdaddd74bc336ad2e6551680a7
   workspace-governance: 739f67e3ddef2ece32e8b8a21678a79041af9db6
   workspace-governance-control-fabric: 0eddab78503aa8c9e11c005c85954f3472991d63
   workspace-prototype-studio: 88ca4cd49cd0f12e70209e368cf4e7564c1aab85
 reviewed_trees:
-  platform-engineering: 0fa2bda8ee258a9df257edc5ef0c9ecd41a37a6b
+  platform-engineering: da73f02c959153a841d7a8fd0b96a90e97528954
