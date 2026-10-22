@@ -1,5 +1,26 @@
 # Bounded Source Realization Security Delta
 
+## Current pre-Inventory review-control repair delta — 2026-10-23
+
+The exact source set is the current YAML decision and the bounded repair
+reassessment in the [composed-operation review](2026-10-15-governance-console-platform-operation.md).
+It accepts WG292, OOS357, Platform328 and Console102 only at their actual merged
+revisions, retaining the other three baselines. Older source decisions below
+remain historical. Proposed or admitted source-only Intake absent all Inventory
+may use the same finite trusted control workflow; ordinary source remains
+active-Inventory-only. Create absent review files and append missing AGENTS
+review guidance at its exact original digest; preserve app/profile/independent
+control bytes and block incomplete independent policy for explicit owner review.
+
+No model, app import, active-owner repair, private/client qualification or new
+merge/runtime power is granted. Native source replay and all four owner CI
+equivalents/provider checks pass. Only trusted validator bytes execute on
+isolated committed control data, not preserved project/independent commands.
+Full native registration plus the actual WG/OOS/Console/Platform wire prove
+engineering compatibility, not actual Console promotion or app acceptance.
+Final operating proof still follows normal exact activation and the original
+retained idea-to-product journey, without new ART repair children or gate waiver.
+
 ## Summary
 
 - date: 2026-10-15

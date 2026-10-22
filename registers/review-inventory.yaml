@@ -12,7 +12,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -47,6 +47,8 @@ review_inventory:
           - governance-console-failure-first-rollback-order
         owner_artifacts:
           - repo: platform-engineering
+            path: scripts/agent_source_bootstrap.py
+          - repo: platform-engineering
             path: scripts/agent_source_intent.py
           - repo: platform-engineering
             path: scripts/validate_ai_model_profiles.py
@@ -73,7 +75,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-22
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -90,6 +92,10 @@ review_inventory:
           - product-publication-registry-publication-separation
           - product-publication-restore-history-integrity
         owner_artifacts:
+          - repo: workspace-governance
+            path: scripts/workspace_repo_registration.py
+          - repo: workspace-governance
+            path: contracts/agent-source-implementation.yaml
           - repo: workspace-governance
             path: tests/test_delivery_art_lifecycle_parity.py
           - repo: workspace-governance
@@ -253,7 +259,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -282,6 +288,8 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/environment-lifecycle/live-runtime/source-authorization-contract.ts
           - repo: governance-operations-console
             path: src/domain-workspaces/repository/server/repository-bootstrap-oos-client.ts
           - repo: governance-operations-console
@@ -377,7 +385,7 @@ review_inventory:
         decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -407,6 +415,8 @@ review_inventory:
           - governance-console-external-security-tree-binding
         owner_artifacts:
           - repo: operator-orchestration-service
+            path: src/repository-owner-bootstrap/scaffold.js
+          - repo: operator-orchestration-service
             path: src/platform-operation/source-credential-authority.js
           - repo: operator-orchestration-service
             path: src/repository-owner-bootstrap/service.js
@@ -434,7 +444,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -880,7 +890,7 @@ review_inventory:
         decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -898,6 +908,8 @@ review_inventory:
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/repository-owner-bootstrap/scaffold.js
           - repo: operator-orchestration-service
             path: src/platform-operation/source-credential-authority.js
           - repo: operator-orchestration-service

@@ -1,5 +1,91 @@
 # Governance Console Platform Operation Security Delta
 
+## Current bounded pre-Inventory control repair reassessment — 2026-10-23
+
+Accept only the actual ordered merges WG292
+`26a401d2648087287fe35e9f4427121705cb44b0`, OOS357
+`dc95d0d74a5d51f5fb9f23559ba34755b946c92b`, Platform328
+`882cf0ae5e9434aff0a5badd01f3fa226f8b3156` (tree
+`14e4f35cdd58699c73ef6738fcf8e7a1d922f951`) and Console102
+`429f0ed8759c73ba78d1117cce7b95d818379b4d`. The YAML decision binds that
+set and retains the other three accepted owner baselines. Earlier source
+reassessments below are historical and do not accept different future code.
+
+### Scope Delta
+
+Native Inventory291 exposed missing existing review-control requirements and
+missing owner review files. Earlier maintenance proof covered one registration
+test, not the full later workflow. Neither the existing PR policy nor its gate
+is waived. The operator approved extension of the same trusted bootstrap for
+finite control-only repair of proposed or admitted source-only Intake absent
+active/retired Inventory. This is not a new workflow subsystem, generalized
+migration, app authoring or ordinary source identity.
+
+### Review Areas
+
+- Identity/delivery: WG and Platform independently require the exact current
+  Intake entry/version/digest and provider binding, source-only/non-Security
+  posture and absence from all Inventory. Ordinary source still requires
+  active Inventory with consumed admission lineage. Platform keeps selected
+  installation and single-repository tokens; review-only repair retains four
+  permissions. Workflow writing still needs the separate real grant.
+- Source integrity: OOS reproduces the exact finite trusted plan at the fetched
+  base. Missing CODEOWNERS and PR template may be created; missing AGENTS review
+  guidance is an exact append bound to original bytes. Valid profile, README,
+  application files and independent controls are preserved. Existing incomplete
+  independent review policy blocks for owner review, not automatic replacement.
+  Complete controls retain the non-source checkout path.
+- Host/runtime: only current trusted validator/script/schema bytes execute on
+  isolated exact committed control data. Preserved project/independent Makefiles
+  and commands do not execute as host bootstrap proof. This is explicitly
+  owner-control validation, not application evidence. Console accepts the same
+  finite plan and shared source-authorization scope; page-local state grants no
+  authority, and the original request/revision/replay controls remain.
+- Human/AI: operator exact-plan/source approval, Gary source publication and
+  separate accountable exact-head human review/merge remain. Bootstrap invokes
+  no model and imports no app. Main-agent Security judgment remains retained;
+  no sub-agents were delegated in this repair or review.
+
+### Implemented And Engineering Evidence
+
+All four exact Gary heads passed complete committed, fetched-origin/main local
+CI equivalents and actual provider checks before ordered human-approved merge:
+WG39812745549 (292tests), OOS39812077315 (1544passing/two existing skips,
+212API routes, native images/startup), Platform39812092696 plus39812092495
+(full make/locked-owner/bubblewrap/Helm/Terraform/environment checks), and
+Console39812138470 (637semantic tests, architecture/typecheck/build/audit0).
+Their head/merge trees match and exact source credentials are revoked.
+
+The complete isolated native291 registration replay used its actual preserved
+data, actual bootstrap-only owner base and the new trusted OOS plan. All twelve
+owners materialized; actual PR controls pass for12repos/14guidance files. Its
+initial review-expiry failure remains preserved: Security305 reassessed the
+existing delegation baseline after local midnight, then the same immutable
+candidate passed the failed gate and every remaining workflow step. That
+baseline renewal neither waived a date nor accepted this unmerged extension.
+
+Native real Git proves exact three-surface repair, unchanged app/independent
+Makefile, one-commit replay, source-scope denial and current eligibility checks.
+The actual WG data -> OOS native plan/session -> Console parsers -> Platform
+native eligibility chain passes with a labelled synthetic custody/operator
+wrapper, zero network/provider/business writes and no credential issuance.
+Private/client source, active/retired/control/Security-bound owners, wrong
+entry/provider, app paths and ordinary-purpose borrowing remain denied.
+
+### Decision And Operating Boundary
+
+`approved` for this exact local public-synthetic/main-based composed boundary.
+No application acceptance, actual Inventory promotion, full Console-only
+journey/Epic completion, arbitrary project/toolchain, private/client or hostile
+source, public hosting, stage or production readiness is claimed. Optional
+bootstrap CI does not waive the existing later active-Inventory PR policy.
+Normal exact accepted activation, actual Console owner repair/new promotion
+and the original Delivery1306 app journey remain required operating evidence.
+The original failed291 request was cancelled through actual Console and its
+closed unmerged source/history preserved; no old receipt or App branch was
+rewritten. Rollback restores a coherent prior source/acceptance set and retains
+business/source evidence; it cannot delete unique work or remint terminal grants.
+
 ## Current Inventory coverage parity reassessment — 2026-10-22
 
 Accept actual WG290 merge `61b9ea1d238cbc7facab155131997df373d66e64`.
