@@ -11,6 +11,17 @@ Accept only the actual ordered merges WG292
 set and retains the other three accepted owner baselines. Earlier source
 reassessments below are historical and do not accept different future code.
 
+The native acceptance reader binds these exact source coordinates:
+
+- `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
+- `governance-operations-console@429f0ed8759c73ba78d1117cce7b95d818379b4d`
+- `operator-orchestration-service@dc95d0d74a5d51f5fb9f23559ba34755b946c92b`
+- `platform-engineering@882cf0ae5e9434aff0a5badd01f3fa226f8b3156`
+- `workspace-governance@26a401d2648087287fe35e9f4427121705cb44b0`
+- `workspace-governance-control-fabric@0c47261f49767a590acdeff54b5ae8ea764ab71a`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@14e4f35cdd58699c73ef6738fcf8e7a1d922f951`
+
 ### Scope Delta
 
 Native Inventory291 exposed missing existing review-control requirements and
