@@ -1,5 +1,42 @@
 # Governance Console Platform Operation Security Delta
 
+## Current Inventory coverage parity reassessment — 2026-10-22
+
+Accept actual WG290 merge `61b9ea1d238cbc7facab155131997df373d66e64`.
+This supersedes only the WG pin below; the other six exact owner revisions
+and Platform tree remain unchanged. The prior decisions remain historical.
+
+The existing Inventory-derived source-owner qualification was already active.
+Native promotion PR289 exposed one stale test that compared Inventory only
+with the fixed core/exclusion lists. WG290 instead exercises existing production
+qualification against actual Inventory and exact owner rules, using clearly
+labelled temporary profile metadata. Production qualification, missing-profile
+denial, explicit exclusions, provider/classification boundaries and custom-rule
+denial are unchanged. No source permission, profile execution, raw projection,
+canonical writer, runtime capability or broader admission is introduced.
+
+Exact Gary head `7df812f449be871c0a884e6f5d70c91c31a00c0c` passed all290
+unit tests and the complete committed fetched-origin/main local CI workflow;
+provider39795491071 passed before exact mfshaf7 approval and squash merge.
+An isolated read-only comparison against the preserved native PR289 Inventory
+reproduces the original test failure and repaired success with identical
+production code. This is qualification engineering proof, not app acceptance.
+The existing open learning record preserves the findings and missed checkpoints.
+
+Real Console recovery reopened the original request919 after restart. Explicit
+Console cancellation then returned cancelled/complete and closed PR289 unmerged;
+its original source patch and request evidence are preserved. No force-push,
+duplicate pending promotion or CLI business repair occurred. The bounded caller
+timeout did not lose the original; its successful recovery does not authorize
+an invented timeout requirement or another mechanism. First provider rejection
+remains unproven rather than attributed to that timeout.
+
+Normal exact accepted recommissioning/current readback and one fresh promotion
+of the same admitted/v2 entrant remain required. The earlier restored runtime
+is historical operating evidence for its prior accepted source, not proof of
+this new pin. No app delivery, whole-journey/Epic completion, private/client or
+hostile-source qualification, public hosting, stage or production is claimed.
+
 ## Current Registry original-request recovery reassessment — 2026-10-21
 
 Accept actual OOS356 merge `e7659bdb2d1a36363a917c723f2f3af232b333cb` and
@@ -133,7 +170,7 @@ private-client, public-hosting, stage or production claim is granted.
 
 ## Summary
 
-- date: 2026-10-21
+- date: 2026-10-22
 - owner repo: `security-architecture`
 - delivery initiative: `openproject://work_packages/1275`
 - security acceptance item: `openproject://work_packages/1303`
@@ -149,12 +186,13 @@ private-client, public-hosting, stage or production claim is granted.
   - `governance-operations-console@abf76987e0685ef72860635136492125e5bdcb8f`
   - `operator-orchestration-service@e7659bdb2d1a36363a917c723f2f3af232b333cb`
   - `platform-engineering@84fb9f72d3101a315dc4cd6160753e1accc2ca99`
-  - `workspace-governance@c508d9f30434de5138f31ea73f55d98dfc055104`
+  - `workspace-governance@61b9ea1d238cbc7facab155131997df373d66e64`
   - `workspace-governance-control-fabric@0c47261f49767a590acdeff54b5ae8ea764ab71a`
   - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
 - reviewed Platform tree:
   `platform-engineering-tree@29809321e95b7e9222d560fec262247123e13ecf`
 - source reviews:
+  - [WG Inventory-derived coverage test parity #290](https://github.com/mfshaf7/workspace-governance/pull/290)
   - [OOS bounded Inventory original-request journals #356](https://github.com/mfshaf7/operator-orchestration-service/pull/356)
   - [Console Registry original-request controls #101](https://github.com/mfshaf7/governance-operations-console/pull/101)
   - [Platform nested read-only source mountpoints #327](https://github.com/mfshaf7/platform-engineering/pull/327)
