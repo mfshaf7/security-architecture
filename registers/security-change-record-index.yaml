@@ -3445,6 +3445,18 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-23-native-durable-owner-source-proof.md
+  date: '2026-10-23'
+  short_title: 2026-10-23-native-durable-owner-source-proof
+  review_areas:
+  - identity
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
@@ -3858,6 +3870,18 @@ change_records:
   review_areas:
   - identity
   - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-23-native-owner-publication-source-freshness.md
+  date: '2026-10-23'
+  short_title: extend existing attributed source visibility and maintenance admission
+  review_areas:
+  - identity
+  - delivery
+  - runtime
   findings: []
   risks: []
   workstreams:

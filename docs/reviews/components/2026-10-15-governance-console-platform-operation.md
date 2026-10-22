@@ -1,6 +1,126 @@
 # Governance Console Platform Operation Security Delta
 
-## Current bounded pre-Inventory control repair reassessment — 2026-10-23
+## Current native durable-owner terminal-path reassessment — 2026-10-23
+
+### Summary
+
+Accept only the actual ordered source merges WG294
+`739f67e3ddef2ece32e8b8a21678a79041af9db6`, OOS358
+`9fa26709fa3d9c24d6aeae397db1686f75a3ca53`, WGCF119
+`0eddab78503aa8c9e11c005c85954f3472991d63` and Console103
+`711bc2299cf5dc75e5753d83158c68409b9c8f2c`, and Platform329
+`b4c265e64d3dd49733553de0fd2df66351d8be09`, tree
+`0fa2bda8ee258a9df257edc5ef0c9ecd41a37a6b`. Preserve the other two accepted
+execution baselines and the current architecture/gate; fresh business records
+remain subject to the existing record-only admission rules. Older sections
+below preserve historical decisions, not acceptance of different future code.
+
+The native acceptance reader binds exactly:
+
+- `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
+- `governance-operations-console@711bc2299cf5dc75e5753d83158c68409b9c8f2c`
+- `operator-orchestration-service@9fa26709fa3d9c24d6aeae397db1686f75a3ca53`
+- `platform-engineering@b4c265e64d3dd49733553de0fd2df66351d8be09`
+- `workspace-governance@739f67e3ddef2ece32e8b8a21678a79041af9db6`
+- `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@0fa2bda8ee258a9df257edc5ef0c9ecd41a37a6b`
+
+Existing `gate:platform-operation-security` remains bound to
+`wgcf://artifacts/delivery-art/sha256/02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
+and digest
+`sha256:02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`.
+There is no replacement architecture packet or new action authority.
+
+### Scope Delta
+
+The already accepted Console-only product journey reaches two existing
+consumers that previously had only injected owner proof or one configured
+product owner. Extend those consumers, not the lifecycle or authority model:
+
+- Inert source-import metadata records the actual accepted Studio/Delivery
+  bindings and exact file mapping. It contains no future owner merge,
+  approval, self-authored acceptance receipt or runtime grant.
+- OOS resolves its existing durable finalized merged-PR Review Packet, actual
+  accepted Delivery application, current active provider-bound Inventory,
+  exact approved Studio files and canonical public owner merge. The same
+  native packet may prove distinct independently checked acceptance/transfer
+  facts. Exact acceptance-reference lookup avoids global session discovery.
+- WGCF uses existing Inventory admission and the fixed read-only source
+  parent for active registered product owners. Platform adds expiring public
+  canonical-main observation to its existing attribution marker. No new mount,
+  source service, arbitrary-root reader or approval ledger is introduced.
+
+### Review Areas
+
+- Identity and source integrity: OOS retains authenticated caller identity and
+  the existing accepted caller-to-accountable-operator map. Durable custody,
+  finalized review status, exact operator/Delivery/provider/import-path binding
+  and canonical merge ancestry remain required. Every approved Studio file
+  must map uniquely to identical committed owner bytes, mode and size. No
+  caller-defined mapping of identities, fabricated receipt or local directory
+  grants acceptance. Import metadata is bounded, inert and schema validated.
+- Public-source boundary: fixed anonymous provider reads admit only the exact
+  public, active, main-based repository. Redirect/private/cross-owner/stale or
+  unsafe source fails closed. File/tree/blob bounds and non-execution remain;
+  Git blob comparison is qualified for public synthetic non-hostile source,
+  not a hostile-content or private/client-source security claim.
+- Publication: current typed active promoted owner and active product,
+  unambiguous provider, regular attributed Git snapshot, clean source and
+  expiring observation are independently checked by the actual consumer.
+  Same-source timer ticks cannot renew observation age. Provider failure
+  removes freshness but preserves valid physical source and unique work.
+- Credentials: maintenance CLI reuses canonical committed-record admission
+  with fixed WG provider/main and a pre-issuance recheck. Its original eleven
+  legacy owners remain filtered by current eligibility; newly promoted owners
+  still require the native source-intent installation/approval/revocation
+  path. The immutable legacy-blob recovery mode does not admit new owners.
+  No new App, installation, permission, secret or browser credential is added.
+- Runtime/recovery: only Closure issue uses the existing bounded ASGI thread
+  pool so its authenticated OOS-to-artifact callback can execute with one API
+  worker. Bounded owner-read and Console command budgets preserve the original
+  request, short preparation/read deadlines, authority expiry and exact proof.
+  No polling engine, receipt cache or replacement-request semantics are added.
+- Dependencies: Console updates Next15.5.27 to15.5.28 within its existing major
+  and retains Sharp0.35.5. That existing Sharp override already satisfies the
+  RCE advisory workaround; neither exploitation nor native-crash causality is
+  inferred. The patch clears both current advisory version ranges and the
+  required production audit. This review does not broaden network exposure.
+
+### Implemented And Engineering Evidence
+
+WG exact local workflow/provider39830103378 passed; OOS full local1555tests,
+native images/startup and provider39838385603 passed; WGCF539tests, both native
+images and provider39840904920 passed; Console637tests, architecture/typecheck/
+production build/audit0 and provider39859832140 passed. Platform exact committed
+local make/locked-source/bubblewrap/Helm/Terraform/environment proof passed;
+provider39860431756 and posture39860431763 passed before exact-head human
+approval and actual merge. The reviewed candidate and merge trees match.
+
+Real single-worker HTTP reproduces the Closure callback deadlock before the
+bounded handler change and passes afterward. Real-Git Platform producer to
+actual merged WGCF consumer passes six cases: full current Inventory/schema
+consumption; no timer-age renewal; expiry denial; failed-public-observation
+freshness removal with source preservation; fresh recovery; dirty-source
+preservation/denial. Product/provider seams there are explicitly synthetic,
+not actual product registration, app acceptance or operating evidence.
+
+### Decision And Operating Boundary
+
+`approved` for this exact local public-synthetic/main-based composed boundary.
+The machine decision and this review must land together through the separate
+accountable exact-head review. Normal composed activation and actual Console
+continuation remain required; the original requests, receipts and source
+histories are preserved. Source-level acceptance does not certify operating
+readiness or accept a stale, partial, dirty or differently composed runtime.
+Rollback restores one coherent accepted source set without deleting business
+history, unique work or revocation evidence. Private/client/hostile source,
+public hosting, stage/prod, arbitrary toolchains, new model authority and
+whole-system/whole-journey readiness are not accepted by these engineering
+proofs. The real Little List import, native graduation/product admission and
+final browser/publication/recovery route witnesses remain #1298 obligations.
+
+## Historical bounded pre-Inventory control repair reassessment — 2026-10-23
 
 Accept only the actual ordered merges WG292
 `26a401d2648087287fe35e9f4427121705cb44b0`, OOS357
