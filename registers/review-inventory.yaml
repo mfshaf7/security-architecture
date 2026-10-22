@@ -73,7 +73,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-22
         status: current
         decision: approved
         review_areas:
@@ -90,6 +90,8 @@ review_inventory:
           - product-publication-registry-publication-separation
           - product-publication-restore-history-integrity
         owner_artifacts:
+          - repo: workspace-governance
+            path: tests/test_delivery_art_lifecycle_parity.py
           - repo: workspace-governance
             path: scripts/workspace_inventory.py
           - repo: workspace-governance
