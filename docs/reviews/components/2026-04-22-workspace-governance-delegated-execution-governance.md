@@ -1,5 +1,42 @@
 # Workspace Governance Delegated Execution Governance Review
 
+## Periodic Baseline Reassessment — 2026-10-23
+
+The April review below remains historical evidence. This periodic reassessment
+renews its existing scope at current merged Workspace Governance
+`61b9ea1d238cbc7facab155131997df373d66e64`; it does not backdate the October22
+expiry or accept the unmerged pre-Inventory bootstrap extension.
+
+Design intent: bounded implementation delegation with main-agent-only work
+mutation, live mutation, Security closure, final proof/completion and planning.
+Current `contracts/delegation-policy.yaml` and `docs/delegated-execution.md`
+retain that split, disjoint write scopes, exact task packets, journal duties,
+zero delegated live-control workers and a maximum of two bounded implementation
+workers. The contract-foundation marker is not evidence of per-worker runtime
+sandboxing. Separate agent-action authority is still required for AI actions.
+
+Implemented control: current policy, registered skills and journal validator
+retain the same owner boundaries; the live installed16-skill check and current
+canonical delegation-journal validation pass. The complete current contract
+and original review were read for this reassessment. Existing Security findings,
+risk and remediation inventories contain no separate delegation-specific
+finding to retire; the original narrative restrictions below remain in force.
+
+Operating evidence: no sub-agents were delegated in this recovery. That fact
+does not certify hypothetical delegated live actions. The October23 isolated
+native registration rehearsal passes all292 Workspace Governance tests before
+the independent review-coverage expiry gate. Its test result is engineering
+evidence, not acceptance of the proposed source repair or a clean-state claim.
+
+Decision: `approved-with-findings`, retaining the three original restrictions
+below. Main-agent Security and landing judgment stay explicit; no new identity,
+secret distribution, independent approval, live delegation or risk acceptance
+is granted. Owner remains Workspace Governance, Security retains review closure.
+The next baseline review is2027-04-23, preserving the existing six-month review
+interval. Any trust-boundary change requires its own delta before that date.
+The latest exact composed-operation review remains separately required for
+Console/runtime changes and is unchanged by this baseline renewal.
+
 ## Summary
 
 - date: 2026-04-22
