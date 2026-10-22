@@ -94,6 +94,7 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - complete-composition-dedicated-work-design-context-binding
           - inert-prototype-source-import-metadata-boundary
           - atomic-complete-source-owner-registration
           - source-only-provider-owner-boundary
@@ -103,6 +104,8 @@ review_inventory:
           - product-publication-registry-publication-separation
           - product-publication-restore-history-integrity
         owner_artifacts:
+          - repo: workspace-governance
+            path: contracts/developer-integration-profiles.yaml
           - repo: workspace-governance
             path: contracts/schemas/prototype-source-import-manifest.schema.json
           - repo: workspace-governance
@@ -194,7 +197,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -204,6 +207,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - complete-composition-dedicated-work-design-caller-denial
           - prototype-real-subject-context-binding
           - prototype-packet-receipt-denial-replay
           - context-only-no-model-action-authority
@@ -214,6 +218,8 @@ review_inventory:
           - agent-console-composition-only-activation
           - owner-evidence-profile-bounded-runtime-admission
         owner_artifacts:
+          - repo: context-governance-gateway
+            path: dev-integration/profiles/context-governance-gateway/scripts/common.sh
           - repo: context-governance-gateway
             path: apps/api/src/cgg_api/lifecycle.py
           - repo: context-governance-gateway
@@ -291,6 +297,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-canonical-parent-matrix-and-pi-objective-add
           - console-bounded-native-owner-closure-command-recovery
           - console-patched-next-dependency-audit
           - console-source-purpose-identity-and-explicit-acceptance
@@ -312,6 +319,10 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/work-model/execution/execution-tree-change-plan.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/surfaces/execution-board/execution-tree-edit-view.tsx
           - repo: governance-operations-console
             path: src/domain-workspaces/prototype/server/prototype-closure-oos-client.ts
           - repo: governance-operations-console
@@ -423,6 +434,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - canonical-refinement-form-capabilities-and-explicit-target-effects
           - prototype-finalized-native-owner-packet-and-source-readback
           - oos-canonical-source-intent-before-effects
           - prototype-real-registry-context-authoring-and-source-transfer
@@ -443,6 +455,12 @@ review_inventory:
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/refinement/packet-model.js
+          - repo: operator-orchestration-service
+            path: src/refinement/activities.js
+          - repo: operator-orchestration-service
+            path: src/openproject-client.js
           - repo: operator-orchestration-service
             path: src/prototype-closure/durable-owner-reader.js
           - repo: operator-orchestration-service
@@ -773,7 +791,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -783,6 +801,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - complete-composition-dedicated-work-design-caller-denial
           - prototype-real-subject-context-binding
           - prototype-packet-receipt-denial-replay
           - context-only-no-model-action-authority
@@ -793,6 +812,8 @@ review_inventory:
           - agent-console-composition-only-activation
           - owner-evidence-profile-bounded-runtime-admission
         owner_artifacts:
+          - repo: context-governance-gateway
+            path: dev-integration/profiles/context-governance-gateway/scripts/common.sh
           - repo: context-governance-gateway
             path: apps/api/src/cgg_api/lifecycle.py
           - repo: context-governance-gateway

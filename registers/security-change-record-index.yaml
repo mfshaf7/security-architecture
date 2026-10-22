@@ -3446,6 +3446,19 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-23-console-planning-handoff.md
+  date: '2026-10-23'
+  short_title: 2026-10-23-console-planning-handoff
+  review_areas:
+  - ai
+  - delivery
+  - identity
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-23-native-durable-owner-source-proof.md
   date: '2026-10-23'
   short_title: 2026-10-23-native-durable-owner-source-proof
