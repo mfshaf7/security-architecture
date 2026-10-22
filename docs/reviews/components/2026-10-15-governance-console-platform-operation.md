@@ -1,6 +1,85 @@
 # Governance Console Platform Operation Security Delta
 
-## Current native durable-owner terminal-path reassessment — 2026-10-23
+## Current Console planning handoff reassessment — 2026-10-23
+
+### Summary
+
+Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
+not a replacement workflow or architecture. The current exact set is:
+
+- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `governance-operations-console@435e11913852b1a2287ad3dd52404aa7e133d005`
+- `operator-orchestration-service@115c57fdd9ed4970063a8f58656d4b256243a868`
+- `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
+- `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
+- `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@da73f02c959153a841d7a8fd0b96a90e97528954`
+
+Retain the existing architecture packet, gate and seven-owner source boundary.
+Older sections below are historical acceptance, not authority for future code.
+
+### Scope Delta
+
+The actual Console Context Session for Delivery1306 returned503 before CGG or
+model execution because the complete composition omitted Work Design. Reuse
+its existing dedicated endpoint/caller/credential in the registered complete
+composition as well as the existing standalone advice composition. Both native
+consumer guards, Secret reconciliation and readiness use that same contract.
+No new caller, model, service, permission or borrowed Refinement credential.
+
+Refinement projects actual per-target OpenProject forms and canonical contract
+text, roles, classification and typed objective/risk fields. Console exposes the
+existing legal child operations, including PI Objective under Epic, rather than
+changing Work Design's tree schema or inventing a placeholder story.
+
+### Review Areas
+
+- Identity/secrets/runtime: caller-bound authenticated CGG APIs and dedicated
+  purpose-specific credentials remain. Only the two registered composition
+  shapes are admitted; incomplete, foreign and mismatched bindings deny.
+  Secret rendering stays private and teardown owned. No browser credential,
+  direct backend call or manual live Secret repair is accepted.
+- Delivery integrity: field kinds and choices come from current forms, not
+  guessed enums. Explicit target ids bind edits and canonical readback; form
+  capability changes affect packet revision. Missing required read-only values
+  stay blocked; populated read-only values are preserved. Existing immutable
+  operator acceptance, canonical writers, replay and work-start guards remain.
+- AI/human boundary: advice remains suggestion-only metadata, not model app
+  source authoring. Planned objective value is distinct from later earned
+  Actual Business Value and PI review; no future outcome score is fabricated.
+  Gary source publication and separate delegated accountable review remain.
+
+### Implemented And Engineering Evidence
+
+Exact committed actual-workflow local CI and provider checks passed before
+each merge: WG39872290604, OOS39872799205 (1559tests, zero skips, native API/
+denied-worker images), CGG39872810149 (96tests), Console39872822729 (638tests,
+architecture/typecheck/production build and zero production advisories).
+Each Gary head received exact-head delegated review and matches its merge tree.
+
+Actual read-only OpenProject form inspection made zero business mutations.
+Native current-form reader-to-packet tests cover text, real allowed choices,
+canonical values, missing read-only required fields and capability revision.
+The actual Platform composition producer reaches both actual consumer guards
+and Secret renderers for both compositions with distinct synthetic credentials;
+missing/foreign bindings deny. Native OOS packet passes the actual Console
+parser/editor target model. Native backend/UI parent matrices agree for all
+eight types. These transport seams are engineering proof, not app acceptance.
+
+### Decision
+
+`approved` only for this exact local public-synthetic/main-based source set.
+Normal whole-runtime activation and the same Console request/metadata apply
+and canonical readback are still required operating evidence. Preserve failed
+requests and history; do not substitute health checks for business acceptance.
+Rollback restores one coherent accepted set without deleting unique work.
+Private/client/hostile source, public hosting, stage/prod, new model authority,
+host-crash resolution and whole-journey/Epic completion are not claimed. The
+actual app import, graduation/product admission, browser/publication/recovery
+and remaining route witnesses remain existing #1298 obligations.
+
+## Historical native durable-owner terminal-path reassessment — 2026-10-23
 
 ### Summary
 
