@@ -10,8 +10,11 @@ Accept only the actual ordered source merges WG294
 `0eddab78503aa8c9e11c005c85954f3472991d63` and Console103
 `711bc2299cf5dc75e5753d83158c68409b9c8f2c`, and Platform329
 `b4c265e64d3dd49733553de0fd2df66351d8be09`, tree
-`0fa2bda8ee258a9df257edc5ef0c9ecd41a37a6b`. Preserve the other two accepted
-execution baselines and the current architecture/gate; fresh business records
+`0fa2bda8ee258a9df257edc5ef0c9ecd41a37a6b`, followed by version-only Platform330
+`f7e42679230ffdfdaddd74bc336ad2e6551680a7`, tree
+`da73f02c959153a841d7a8fd0b96a90e97528954`. Platform330 is the current accepted
+Platform revision; its predecessor is reviewed history. Preserve the other two
+accepted execution baselines and the current architecture/gate; fresh business records
 remain subject to the existing record-only admission rules. Older sections
 below preserve historical decisions, not acceptance of different future code.
 
@@ -20,11 +23,11 @@ The native acceptance reader binds exactly:
 - `context-governance-gateway@f80c06d9ece3b8706211c0be536407e610ef13e0`
 - `governance-operations-console@711bc2299cf5dc75e5753d83158c68409b9c8f2c`
 - `operator-orchestration-service@9fa26709fa3d9c24d6aeae397db1686f75a3ca53`
-- `platform-engineering@b4c265e64d3dd49733553de0fd2df66351d8be09`
+- `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
 - `workspace-governance@739f67e3ddef2ece32e8b8a21678a79041af9db6`
 - `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
 - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
-- `platform-engineering-tree@0fa2bda8ee258a9df257edc5ef0c9ecd41a37a6b`
+- `platform-engineering-tree@da73f02c959153a841d7a8fd0b96a90e97528954`
 
 Existing `gate:platform-operation-security` remains bound to
 `wgcf://artifacts/delivery-art/sha256/02840790fc36f5f8311d2d66cadec0d5e9ad98184aff3d88c6ff106a2d0afef4`
@@ -52,6 +55,16 @@ product owner. Extend those consumers, not the lifecycle or authority model:
   source service, arbitrary-root reader or approval ledger is introduced.
 
 ### Review Areas
+
+- Installed-provider delta: actual Windows `/api/version` reports0.40.8 and
+  `/api/tags` confirms unchanged qwen3:8b digest
+  `500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`.
+  The prior accepted0.40.7 bindings correctly failed readiness. Platform330
+  changes only the six existing runtime-version pins and its change record;
+  exact integrity, model, caller/task permissions, isolation and fail-closed
+  behavior remain unchanged. No host downgrade, update-policy change, model
+  download or broader version admission is accepted. Recheck live provider
+  metadata before activation; this is not proof of host-crash resolution.
 
 - Identity and source integrity: OOS retains authenticated caller identity and
   the existing accepted caller-to-accountable-operator map. Durable custody,
@@ -88,6 +101,18 @@ product owner. Extend those consumers, not the lifecycle or authority model:
   required production audit. This review does not broaden network exposure.
 
 ### Implemented And Engineering Evidence
+
+Version-only Platform330 Garyhead
+`dc38752724e5276c2b41bbf871fb7d980274cfce` passed24profile and10adapter focused
+tests and complete exact committed local CI-equivalent against fetchedb4c265e.
+Actual provider39863370481 passed3m48s and posture39863370392 passed6s before
+delegated exact-head approval and actual canonical merge. Candidate/merge tree
+equality, exact credential revocation, clean primary fast-forward, owned source
+resource retirement and strict exact-owner auditPASS0 are proven. Live provider
+version/digest was rechecked unchanged before this acceptance refresh. The first
+normal activation correctly timed out at the mismatched gateway; known-failing
+automatic composition retries were stopped. Normal accepted activation and
+actual readiness remain required; no partial runtime is accepted as ready.
 
 WG exact local workflow/provider39830103378 passed; OOS full local1555tests,
 native images/startup and provider39838385603 passed; WGCF539tests, both native
