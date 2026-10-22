@@ -22,6 +22,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - current-committed-legacy-maintenance-admission
+          - registered-product-expiring-source-attribution
           - source-purpose-expiry-renewal-revocation
           - trusted-bootstrap-and-separate-workflows-approval
           - model-profile-native-lifecycle-consumer-coherence
@@ -46,6 +48,10 @@ review_inventory:
           - governance-console-private-runtime-state-binding
           - governance-console-failure-first-rollback-order
         owner_artifacts:
+          - repo: platform-engineering
+            path: scripts/agent_source_identity.py
+          - repo: platform-engineering
+            path: scripts/repository_provider_identity.py
           - repo: platform-engineering
             path: scripts/agent_source_bootstrap.py
           - repo: platform-engineering
@@ -84,6 +90,7 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - inert-prototype-source-import-metadata-boundary
           - atomic-complete-source-owner-registration
           - source-only-provider-owner-boundary
           - consumed-intake-inventory-lineage
@@ -92,6 +99,10 @@ review_inventory:
           - product-publication-registry-publication-separation
           - product-publication-restore-history-integrity
         owner_artifacts:
+          - repo: workspace-governance
+            path: contracts/schemas/prototype-source-import-manifest.schema.json
+          - repo: workspace-governance
+            path: docs/prototype-closure.md
           - repo: workspace-governance
             path: scripts/workspace_repo_registration.py
           - repo: workspace-governance
@@ -119,7 +130,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -129,6 +140,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - registered-owner-publication-freshness-and-native-callback
           - source-owner-provider-provenance-bundle-parity
           - wgcf-current-studio-registry-consumer-compatibility
           - wgcf-read-only-record-checkpoint-freshness
@@ -141,6 +153,12 @@ review_inventory:
           - delivery-art-superseded-architecture-custody-lineage
           - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/product_publication_contracts.py
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/prototype_closure_oos_reader.py
+          - repo: workspace-governance-control-fabric
+            path: apps/api/src/wgcf_api/app.py
           - repo: workspace-governance-control-fabric
             path: contracts/workspace-intake/manifest.json
           - repo: workspace-governance-control-fabric
@@ -269,6 +287,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-bounded-native-owner-closure-command-recovery
+          - console-patched-next-dependency-audit
           - console-source-purpose-identity-and-explicit-acceptance
           - repository-owner-bootstrap-cold-original-request
           - console-existing-landing-postmerge-cold-owner-continuation
@@ -288,6 +308,10 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/prototype/server/prototype-closure-oos-client.ts
+          - repo: governance-operations-console
+            path: package-lock.json
           - repo: governance-operations-console
             path: src/environment-lifecycle/live-runtime/source-authorization-contract.ts
           - repo: governance-operations-console
@@ -395,6 +419,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - prototype-finalized-native-owner-packet-and-source-readback
           - oos-canonical-source-intent-before-effects
           - prototype-real-registry-context-authoring-and-source-transfer
           - trusted-owner-bootstrap-and-current-admission
@@ -414,6 +439,12 @@ review_inventory:
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/prototype-closure/durable-owner-reader.js
+          - repo: operator-orchestration-service
+            path: src/prototype-closure/source-client.js
+          - repo: operator-orchestration-service
+            path: src/repository-owner-bootstrap/source-reader.js
           - repo: operator-orchestration-service
             path: src/repository-owner-bootstrap/scaffold.js
           - repo: operator-orchestration-service
@@ -701,7 +732,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        reviewed_on: 2026-10-23
         status: current
         decision: approved
         review_areas:
@@ -713,6 +744,7 @@ review_inventory:
         review_trigger_ids:
           - source-owner-provider-provenance-bundle-parity
           - delivery-art-active-architecture-semantic-validation
+          - registered-owner-publication-freshness-and-native-callback
           - delivery-art-superseded-architecture-custody-lineage
           - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
@@ -722,6 +754,10 @@ review_inventory:
             path: packages/control_fabric_core/src/control_fabric_core/delivery_art_readiness.py
           - repo: workspace-governance-control-fabric
             path: tests/test_delivery_art_readiness.py
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/product_publication_contracts.py
+          - repo: workspace-governance-control-fabric
+            path: apps/api/src/wgcf_api/app.py
     context-governance-gateway:
       owner_repo: context-governance-gateway
       scope: component
@@ -901,6 +937,7 @@ review_inventory:
           - ai
         review_trigger_ids:
           - oos-canonical-source-intent-before-effects
+          - prototype-finalized-native-owner-packet-and-source-readback
           - prototype-real-registry-context-authoring-and-source-transfer
           - trusted-owner-bootstrap-and-current-admission
           - governance-console-platform-operation-exact-caller-approval
@@ -910,6 +947,12 @@ review_inventory:
         owner_artifacts:
           - repo: operator-orchestration-service
             path: src/repository-owner-bootstrap/scaffold.js
+          - repo: operator-orchestration-service
+            path: src/prototype-closure/durable-owner-reader.js
+          - repo: operator-orchestration-service
+            path: src/prototype-closure/source-client.js
+          - repo: operator-orchestration-service
+            path: src/repository-owner-bootstrap/source-reader.js
           - repo: operator-orchestration-service
             path: src/platform-operation/source-credential-authority.js
           - repo: operator-orchestration-service
