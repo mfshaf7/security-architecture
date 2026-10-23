@@ -5,15 +5,15 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360-367, Console105-110 and Platform331, not a replacement workflow
+including terminal follow-ups OOS360-368, WGCF120, Console105-110 and Platform331, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
 - `governance-operations-console@528600897113708ce846e98fc09d3e1f08e0228e`
-- `operator-orchestration-service@f03498e56a78bafab5d8e936de9a250ea923838d`
+- `operator-orchestration-service@0b29cdee7c85c5fc1d3d805dda6f506d3d3f4b3a`
 - `platform-engineering@552795b69f2795542dae7a841d33097a9a940034`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
-- `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
+- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
 - `platform-engineering-tree@f9562fdaa5ae39b3cf307400647afb120efa95be`
 
@@ -21,6 +21,33 @@ Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+The actual source graduation retained its original request after a readiness
+dependency error. Native evidence proves the original trusted application
+activity and receipt remain valid, with the same Delivery target and owner;
+complete narrative replacement had dropped the description's tracking marker.
+OOS368 preserves that existing marker and current typed ART artifact-reference
+entries through initiative/tree/work-item narrative replacement, retaining
+original projection times, rejecting changed/duplicate Prototype bindings
+and narrative replacement of current ART pointers. Controlled evidence
+projection remains unchanged. Native writer to
+original trusted receipt and context rewrite tests prove the correction; this
+does not create source acceptance or another receipt.
+
+WGCF120 scopes graduation's existing owner lookup to the Delivery target
+already in committed Studio source when the request has no explicit target.
+OOS's independent recheck uses the verified readiness row subject for that
+same existing native target read, including the unchanged retained snapshot.
+Current target, owner, version, receipt, packet, actor and source checks remain;
+no caller proof body, deadline expansion or authority bypass is introduced.
+The actual Console must restore only the original marker reconstructed from
+trusted activity through reviewed narrative editing, then continue the same
+graduation request after normal activation. It must not replay target
+application or recreate the accepted app. Local full OOS1589/zero skips and
+WGCF540 tests, schema/governance/base-aware checks and API/worker image proofs
+passed; provider39944330096 and39943828856 passed with exact-head human reviews.
+Original app source1308 is merged, finalized, revoked and retired; graduation,
+product admission and publication remain operating proof to complete.
 
 Actual Gary app PR5 publication and passing provider CI exposed a source-status
 read mismatch in a trusted main-only bootstrap clone. OOS367 reads the exact
