@@ -5,12 +5,12 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360-366, Console105-110 and Platform331, not a replacement workflow
+including terminal follow-ups OOS360-367, Console105-110 and Platform331, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
 - `governance-operations-console@528600897113708ce846e98fc09d3e1f08e0228e`
-- `operator-orchestration-service@094aec100c6ba83c4b72b4207fd92d980ee442a0`
+- `operator-orchestration-service@f03498e56a78bafab5d8e936de9a250ea923838d`
 - `platform-engineering@552795b69f2795542dae7a841d33097a9a940034`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
 - `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
@@ -21,6 +21,20 @@ Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+Actual Gary app PR5 publication and passing provider CI exposed a source-status
+read mismatch in a trusted main-only bootstrap clone. OOS367 reads the exact
+`refs/remotes/origin/<Landing Unit branch>` bookmark that native publication
+records after verifying the provider head, instead of Git's unavailable upstream
+mapping. The real Git regression proves this original clone shape and denies
+stale, missing and unrelated refs. Source cleanliness, recorded branch/base,
+provider PR head, exact human review and merge custody remain enforced. No Git
+configuration, source permission, App installation, publication operation,
+session or application source changes are authorized by this read correction.
+Preserve the existing app session and PR5. Local exact-head CI passed 1587 tests
+with zero skips, schema/API/governance/base-aware checks and API/denied-worker
+image smoke; provider run39933151429 passed. Live reconciliation remains to be
+proved after ordinary activation; this review does not certify app completion.
 
 The owner-bootstrap producer and generated control smoke test no longer force
 an architecture-bound command into every profile. A schema-valid ordinary
