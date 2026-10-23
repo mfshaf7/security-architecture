@@ -5,11 +5,11 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360 and Console105, not a replacement workflow
+including terminal follow-ups OOS360, Console105 and Console106, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
-- `governance-operations-console@6370f19a92c9be516ed41aee8ef11c3135646037`
+- `governance-operations-console@f89a42221ef1a63c2b3a75898d26545b5d3d39fd`
 - `operator-orchestration-service@81c244a7e4b84075ce36040f65b6d3b975cbdbf5`
 - `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
@@ -21,6 +21,17 @@ Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+Console106 is presentation-only maintenance after the actual Delivery1306
+Work Design apply returned201 with complete readback and durable activity7885.
+Existing current move, progress, history, inputs and log now distinguish the
+validated OOS receipt from disconnected-preview evidence. History preserves
+the actual receipt on canonical projection recovery instead of replacing it
+with a generic completion label. Context snapshot files remain browser-local;
+the application receipt does not attest backend snapshot upload. The log is a
+returned-evidence summary, not a new backend event stream. Suggestion-only advice
+does not activate a tool profile. No canonical writer, acceptance/replay rule,
+credential, endpoint, runtime profile, authority or other owner revision changes.
 
 The actual Console Context Session for Delivery1306 returned503 before CGG or
 model execution because the complete composition omitted Work Design. Reuse
@@ -66,6 +77,18 @@ short. No model timeout, retry count or concurrency limit is changed.
   idempotency identity, response checks and current source binding.
 
 ### Implemented And Engineering Evidence
+
+Console106 Garyhead b484472432400592835e54e6c3759ee8b7114413 passed the complete
+committed owner workflow:647tests/zero skips, architecture, typecheck, production
+build, repository/source safety and production dependency audit0. Provider
+39880692966 passed before exact-head delegated review and actual merge
+f89a42221ef1a63c2b3a75898d26545b5d3d39fd with the same Git tree. Eight new
+presentation cases cover live/preview, receipt/time preservation, cold recovered
+projection, missing evidence, source-only completion, refresh failure, local
+snapshot truth and actual component prop wiring. The existing OOS validated
+result and projection admission remain unchanged; no local flag is new authority.
+Actual same-receipt UI readback follows normal accepted runtime activation.
+The successful canonical Work Design write is not replayed for this display fix.
 
 Exact committed actual-workflow local CI and provider checks passed before
 each merge: WG39872290604, OOS39872799205 (1559tests, zero skips, native API/

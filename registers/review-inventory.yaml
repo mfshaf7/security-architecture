@@ -297,6 +297,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - canonical-work-design-receipt-versus-local-snapshot-presentation
           - planning-advice-bounded-deadline-and-explicit-invocation-identity
           - console-canonical-parent-matrix-and-pi-objective-add
           - console-bounded-native-owner-closure-command-recovery
@@ -320,6 +321,8 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/workflows/work-design/view-model/work-design-history-model.ts
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/server/work-design-oos-client.ts
           - repo: governance-operations-console
