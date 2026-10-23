@@ -5,11 +5,11 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360, Console105 and Console106, not a replacement workflow
+including terminal follow-ups OOS360 and Console105-107, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
-- `governance-operations-console@f89a42221ef1a63c2b3a75898d26545b5d3d39fd`
+- `governance-operations-console@6f2c7cb6da8cc1e13cffd9a3f86db3946205058b`
 - `operator-orchestration-service@81c244a7e4b84075ce36040f65b6d3b975cbdbf5`
 - `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
@@ -21,6 +21,24 @@ Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+Console canonical-navigation maintenance reuses the existing direct ART entry
+for read-only initiative/child inspection before execution eligibility. The
+current canonical inventory resolves exactly one initiative; the normal board
+still lists execution/audit work. A visible planning tree neither starts source
+work nor marks it Ready. Local Edit ART Tree first reads fresh OOS change truth;
+existing typed tree changes, operator review, source revision and authenticated
+server-side mutation checks remain. Native closeout inspection opens only the
+existing owner flow and does not grant closure. There is no synthetic lifecycle
+action or new API, writer, permission, credential or persistent state.
+
+The existing Refinement handoff dialog reads strict OOS Work Design history,
+binds the expected application and target, and shows its real durable receipt.
+Missing, mismatched, offline, invalid or disconnected live evidence does not
+fall back to a local finalized brief. Canonical receipt availability is distinct
+from browser-local brief/snapshot files. Home/persistent status reports canonical
+inventory and workflow-scoped authority rather than future/local wiring or a
+blanket write-ready claim. Explicit disconnected-preview behavior remains local.
 
 Console106 is presentation-only maintenance after the actual Delivery1306
 Work Design apply returned201 with complete readback and durable activity7885.
@@ -77,6 +95,24 @@ short. No model timeout, retry count or concurrency limit is changed.
   idempotency identity, response checks and current source binding.
 
 ### Implemented And Engineering Evidence
+
+Console107 exact Garyhead d6ff33e56ee0b1d5bf245cee275229fcb91d4728 passed the
+full committed owner workflow:655tests/zero skips, architecture, typecheck,
+production build, repository/public-source safety and audit0; provider
+39884434256 passed before exact-head delegated review and actual merge
+6f2c7cb6da8cc1e13cffd9a3f86db3946205058b. Read-only candidate browser engineering
+used actual accepted Console GET responses, with every non-GET API blocked and
+zero attempted writes. Planning initiative inspection reached the fresh native
+tree editor, legal PI Objective input and exactly one reviewed local add, with
+no unrelated changes. Closing that context discarded the test draft.
+Fresh-context Refinement handoff recovered actual activity7885, application,
+time, digests and created references without a local brief prerequisite.
+An input accessible-name defect was corrected before commit. Later polling
+exceeded the engineering proxy's30second transport budget; its failure remains
+preserved, not a production root-cause claim. Closeout entry reached its existing
+panel but owner readback was still loading when that helper ended; no closeout
+or actual business apply proof is claimed. Accepted deployment and actual UI
+PI creation/readback remain separate from this source/read-only proof.
 
 Console106 Garyhead b484472432400592835e54e6c3759ee8b7114413 passed the complete
 committed owner workflow:647tests/zero skips, architecture, typecheck, production
