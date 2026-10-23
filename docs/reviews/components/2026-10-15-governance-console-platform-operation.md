@@ -5,12 +5,12 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360 and Console105-107, not a replacement workflow
+including terminal follow-ups OOS360-361 and Console105-108, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
-- `governance-operations-console@6f2c7cb6da8cc1e13cffd9a3f86db3946205058b`
-- `operator-orchestration-service@81c244a7e4b84075ce36040f65b6d3b975cbdbf5`
+- `governance-operations-console@be07c72e73701eb43bf84a447b84a9038af3211d`
+- `operator-orchestration-service@cdbc0fc49c9044ea910418e3a2b64a0cb158dff1`
 - `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
 - `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
@@ -21,6 +21,28 @@ Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+Native planning-write fidelity maintenance follows an actual PI Objective
+create rejection with identical before/after source revisions and no created
+record. Console108 captures explicit Target PI and compatible Iteration before
+review; native guards remain decisive. Creation is not an automatic Ready
+transition. OOS361 routes accepted work-item planning fields through existing
+coordinated plan/apply, since generic Feature updates intentionally reject PI
+commitment. The reviewed hierarchy is checked against fresh native ids, parents,
+types and subjects before native parent/type/subject reconciliation. Current
+taxonomy is preserved during planning; accepted classification applies later
+through the existing explicit-id metadata writer, avoiding a new prefixed plan
+identity. Read-only/unreviewed planning fields are retained natively, not
+resubmitted. No status or narrative transition, arbitrary creation, new id API,
+permission, profile, workflow engine or architecture version is introduced.
+
+Planning replay reuses already accepted canonical fields. Unexpected creation,
+changed or ambiguous hierarchy, absent metadata targets and missing accepted
+values fail visibly. One fresh final snapshot verifies every effectful accepted
+field before receipt construction; returned record references alone cannot
+certify success. No automatic deletion or compensating fabricated receipt is
+authorized. Existing Temporal run identity and authenticated server-side
+operator/caller boundaries remain unchanged.
 
 Console canonical-navigation maintenance reuses the existing direct ART entry
 for read-only initiative/child inspection before execution eligibility. The
@@ -95,6 +117,26 @@ short. No model timeout, retry count or concurrency limit is changed.
   idempotency identity, response checks and current source binding.
 
 ### Implemented And Engineering Evidence
+
+OOS361 Garyhead e730311ea1d7dfed4123774b456d0b5eb97c666b passed full fetched-base
+CI-equivalent validation:1577tests/zero skips, native service/OpenProject create
+for all seven child types, coordinated existing Feature PI/Iteration writes,
+roadmap projection, zero-creation replay, stale/ambiguous scope and ignored-value
+readback denials, contract/OpenAPI/docs/mutation validators, API and denied-worker
+images. Provider39899507212 passed before exact-head delegated review and actual
+merge cdbc0fc49c9044ea910418e3a2b64a0cb158dff1 with identical Git tree.
+Console108 Garyhead dc74f077face92e331c7accba8deedd05f80c22d passed the full
+owner workflow:656tests/zero skips, architecture, typecheck, production build,
+repository safety and production audit0. Provider39899814394 passed before exact
+review and merge be07c72e73701eb43bf84a447b84a9038af3211d with identical tree.
+Read-only candidate browser engineering proved missing PI/Iteration and
+mismatched Iteration denial, valid input enablement and exactly one local
+review containing both submitted values, with zero API writes attempted. The
+browser closed and discarded the engineering draft; a pending GET callback's
+disposed-context error during teardown is not product operating evidence.
+Cross-owner native packet/parser/editor/Apply-gate conformance passed. Normal
+whole-runtime activation and the actual same-record Console write/readback
+remain pending; source tests do not claim business acceptance or app readiness.
 
 Console107 exact Garyhead d6ff33e56ee0b1d5bf245cee275229fcb91d4728 passed the
 full committed owner workflow:655tests/zero skips, architecture, typecheck,
