@@ -1,15 +1,15 @@
 # Governance Console Platform Operation Security Delta
 
-## Current direct Intake entry and recovery reassessment — 2026-10-23
+## Current Intake entry, reclassification and recovery reassessment — 2026-10-23
 
 ### Summary
 
-Accept actual merged OOS370 and Console112 as an extension of the existing
+Accept actual merged OOS370 and Console112-113 as an extension of the existing
 operator-authored direct Intake contract, not a new authority or workflow.
 The current exact source set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
-- `governance-operations-console@8b99cca20cfd9e56754982492144efd7f3c9d507`
+- `governance-operations-console@df95510dd673214d845612a87b7831f788f91e22`
 - `operator-orchestration-service@423e6a6d23bdf621f6ed553f7a159796b29537ea`
 - `platform-engineering@0a300dec0d38ee535541710d94a41e9ce699ac11`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
@@ -18,11 +18,33 @@ The current exact source set is:
 - `platform-engineering-tree@135b2c062b9c39148053ab29eda880b0e9498b3f`
 
 Retain the current architecture packet, gate, seven-owner boundary and other
-five owner pins. Older sections record historical acceptance. This review
+six owner pins. Older sections record historical acceptance. This review
 accepts source qualification for the existing local single-operator runtime;
 normal Platform commissioning and actual Console operating proof still follow.
 
 ### Scope And Security Judgment
+
+Console113 addresses two proven operator-surface gaps. Actual Admitted update
+d3ba01f5 was correctly denied because adding context in a new-candidate form
+changed the original entrant source identity. The Console previously hid that
+owner finding and could reopen, but not reclassify, a completed candidate.
+The existing journal now explicitly reuses a selected successful direct
+candidate's original source and recorded metadata in a fresh classification
+review. It rereads whole-journal pending visibility, preserves selection from
+an older page, denies pending/foreign/incomplete candidates and active
+Inventory, and still performs normal fresh preparation and explicit acceptance.
+The completed request remains immutable; no source attestation is created or
+substituted. Original provenance is preserved, not silently recomputed.
+
+The existing result projection validates native owner findings against the
+exact request and readiness outcome, admits only code/message/blocking severity/
+next action, and rejects malformed, contradictory or conflicting projections.
+The UI displays those diagnostics for correction; raw readiness receipts stay
+server-side. No OOS API/source, identity, credential, metadata editor, new
+response limit, timeout policy or architecture changes. The native provenance
+guard remains authoritative. After ordinary commissioning, actual Console
+proof must show the original rejection and successful Proposed-to-Admitted
+reclassification using the retained original origin.
 
 Direct product/component classification already exists in the canonical
 Intake contract and OOS submission. The Console previously exposed product
@@ -55,12 +77,12 @@ authority or new ledger. Unavailable state cannot imply an empty journal.
 
 Local frozen-head CI-equivalent proof passed: OOS1594 tests with zero skips,
 all bundles/API/schema/governance/base-aware checks and API/denied-worker image
-smoke; Console666 tests with zero skips, repository/public-source validation,
+smoke; Console670 tests with zero skips, repository/public-source validation,
 architecture guards, types, production build and zero production advisories.
 Synthetic native service/store proof also demonstrates that a same-caller
 attested Prototype command and another caller's direct command cannot enter
 the selected direct journal; it performs no canonical writes or external calls.
-Provider39959803415 and39960575928 passed on exact Gary heads, independently
+Provider39959803415 and39972940287 passed on exact Gary heads, independently
 approved and merged under standing delegated mfshaf7 authority.
 
 The accepted app source, finalized Review Packet, original graduation receipt
