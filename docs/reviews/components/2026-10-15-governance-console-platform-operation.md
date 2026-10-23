@@ -5,12 +5,12 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360-363 and Console105-109, not a replacement workflow
+including terminal follow-ups OOS360-364 and Console105-110, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
-- `governance-operations-console@411eff5cd4065fb4582fa652dd258ae8ba87231c`
-- `operator-orchestration-service@46774e523d528d859c03efc6685ef6587feea754`
+- `governance-operations-console@528600897113708ce846e98fc09d3e1f08e0228e`
+- `operator-orchestration-service@63759f8f2100cf8dba7d3c212ded5d13183f23e5`
 - `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
 - `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
@@ -21,6 +21,32 @@ Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+Ordinary app source entry does not require an invented Architecture Packet.
+OOS364 maps only the native optional-reference absence (not_found, HTTP404,
+delivery_art_reference_missing) to no current packet. Missing work records,
+backend failures and invalid current packets still deny; required architecture
+still binds its current durable packet. Source-intent, caller, credential,
+acceptance and stale-command boundaries remain unchanged.
+
+Canonical tree editing now carries complete native descriptions in the existing
+scoped source projection and digest. Missing native descriptions fail visibly.
+Console110 preserves that text and refuses to edit absent text. Root Epic
+revisions use the existing initiative writer, with explicit supported fields;
+children retain their existing writer. Root Subject updates require the actual
+native form to expose a writable nonblank field. Unsupported root fields deny
+before mutation. Returned native errors are visible in the existing review flow.
+The actual rejected root narrative batch changed no records and must not be
+replayed or described as requiring compensation. No new writer, endpoint,
+permission, architecture version or ART repair child is introduced.
+
+The separate app-owner baseline repair preserves its existing nine-unit-test
+and Git commands, making tests unconditional for ordinary source work. It is
+not added to this seven-owner runtime source set. Its explicitly bounded
+one-time human publication exception retains Gary commit authorship; it does
+not widen the legacy maintenance installation scope or grant human publication
+for subsequent app source. Normal app source requires the native Console/OOS
+source-intent and separate accountable review.
 
 First-entry work-session read maintenance follows actual native200
 decision-required status with null session_revision and a502 canonical envelope.
@@ -146,6 +172,25 @@ short. No model timeout, retry count or concurrency limit is changed.
   idempotency identity, response checks and current source binding.
 
 ### Implemented And Engineering Evidence
+
+OOS364 Garyhead7118ca9978ea00433809367192a960ce110aa55d passed full committed
+fetched-base validation:1583 tests, zero skips, API/OpenAPI/docs and mutation
+guards, API and denied-worker image builds. Focused135 tests cover optional
+packet absence versus errors, root routing/replay/unsupported fields, title
+form capability and complete narrative revision binding. Native diagnostic
+form1306 confirms writable Subject and Description without business mutation.
+Provider39915059124 passed before delegated exact-head approval and merge
+63759f8f2100cf8dba7d3c212ded5d13183f23e5.
+Console110 Garyhead5cad02e29d415749decbea147c0e600c31f0601d passed full
+committed fetched-base workflow:662 tests, zero skips, architecture/type checks,
+production build, public-source safety and production audit0. Provider39915502121
+passed before delegated exact-head approval and merge
+528600897113708ce846e98fc09d3e1f08e0228e. Both squash trees equal their reviewed
+Gary heads; exact grants are revoked and exact-owner strict cleanup audits pass.
+This accepts those two source deltas only. Normal full activation, fresh native
+security readback, actual Console narrative editing and ordinary app source
+entry remain required operating proof; app import and Epic completion are not
+claimed. Previous source/evidence paragraphs below are historical snapshots.
 
 OOS363 Garyhead afef00b89b49f3c424d05358a11ed968fc32a4a0 passed the committed
 full fetched-base workflow:1580tests/zero skips, contract/OpenAPI/docs and
