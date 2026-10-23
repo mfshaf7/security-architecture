@@ -1,26 +1,77 @@
 # Governance Console Platform Operation Security Delta
 
-## Current Console planning handoff reassessment — 2026-10-23
+## Current Console graduation completion reassessment — 2026-10-23
 
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360-368, WGCF120, Console105-110 and Platform331, not a replacement workflow
+including terminal follow-ups OOS360-369, WGCF120, Console105-111 and Platform331-332, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
-- `governance-operations-console@528600897113708ce846e98fc09d3e1f08e0228e`
-- `operator-orchestration-service@0b29cdee7c85c5fc1d3d805dda6f506d3d3f4b3a`
-- `platform-engineering@552795b69f2795542dae7a841d33097a9a940034`
+- `governance-operations-console@1b5d8e48401374013b5f17eb5ca476d73480da01`
+- `operator-orchestration-service@768acca6ac32d719bde8aa1884785ac9822ba4c9`
+- `platform-engineering@0a300dec0d38ee535541710d94a41e9ce699ac11`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
-- `platform-engineering-tree@f9562fdaa5ae39b3cf307400647afb120efa95be`
+- `platform-engineering-tree@135b2c062b9c39148053ab29eda880b0e9498b3f`
 
 Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+Studio's actual graduation PR41 is merged at e04dfd2. The same retained
+OOS request still needs its independent review observation, merged readback,
+Platform disposition and terminal receipt. Console111 preserves that exact
+nonterminal continuation after Studio says graduated or retired, keeps History
+available, and resumes the current request rather than an older inspected
+event. This does not reopen source authoring, submit another Closure or infer
+OOS completion from Studio lifecycle.
+
+Platform332 extends its existing authenticated provider with one bounded
+post-graduation evidence lookup. OOS supplies only the Prototype, actual merged
+Studio revision and event identifier. Platform requires the current accepted
+record-authority checkpoint, reviewed event schema, canonical first-parent
+merge/event introduction and unchanged current custody. It checks the existing
+managed Preview inventory, absence of retained process state, native stopped
+status and unoccupied loopback endpoint. Ambiguous, running, stale, changed,
+occupied, missing-authority and unavailable states cannot produce acceptance.
+The existing private evidence recorder emits the existing content-addressed
+absence proof. No caller chooses a disposition, path, executable or proof body;
+the lookup neither stops resources nor executes application code. Normal and
+squash merges, unrelated later metadata and the existing owner identifier
+vocabulary remain supported.
+
+OOS369 wires this reader through the already accepted server-held Platform
+credential and fixed provider destination. It bounds transport, independently
+checks proof digest and exact Prototype/merged source, and preserves the
+original pending phase on failure. The commissioned reader never substitutes
+historical file evidence for an unavailable owner. Existing file-backed
+pre-merge retirement and explicit engineering recovery retain their boundary.
+No new identity, credential, permission, runtime action, ledger, architecture
+version or ART repair child is introduced.
+
+Exact-head local full checks passed: Platform's complete CI-equivalent suite,
+seven real-Git/owner cases and fifteen provider tests; OOS1591 with zero skips
+plus schema/API/governance/base-aware and API/denied-worker image checks;
+Console663 with zero skips plus guards, repository, type, build and audit.
+Provider39952407133/39952407105,39952689577 and39952929489 passed; exact Gary
+heads were independently reviewed under standing delegated human authority.
+Each owner grant was revoked and its source resources retired with strict
+owner audit passing. A read-only candidate check against the actual immutable
+Studio event and current native Preview proved absence without issuing live
+evidence, advancing a request or changing source.
+
+This review approves those exact sources for normal bounded local activation.
+It does not certify that the old runtime already implements them. Refresh the
+composed policies and runtime through ordinary Platform activation, then prove
+the same actual Console request's review/readback, native Platform response,
+terminal receipt and cold recovery. Product admission and final publication
+remain separate earned outcomes. The four other accepted owner pins, existing
+architecture packet, local synthetic boundary, and denied private/client,
+public-hosting and stage/prod claims remain unchanged.
 
 The actual source graduation retained its original request after a readiness
 dependency error. Native evidence proves the original trusted application
@@ -40,9 +91,9 @@ OOS's independent recheck uses the verified readiness row subject for that
 same existing native target read, including the unchanged retained snapshot.
 Current target, owner, version, receipt, packet, actor and source checks remain;
 no caller proof body, deadline expansion or authority bypass is introduced.
-The actual Console must restore only the original marker reconstructed from
-trusted activity through reviewed narrative editing, then continue the same
-graduation request after normal activation. It must not replay target
+The actual Console restored only the original marker reconstructed from
+trusted activity through reviewed narrative editing and continued the same
+graduation request through source preparation and merge. It did not replay target
 application or recreate the accepted app. Local full OOS1589/zero skips and
 WGCF540 tests, schema/governance/base-aware checks and API/worker image proofs
 passed; provider39944330096 and39943828856 passed with exact-head human reviews.
