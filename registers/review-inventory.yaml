@@ -449,6 +449,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - first-and-ordinary-session-observations-without-command-revision-fabrication
           - aggregate-planning-observation-order-with-input-concurrency-preserved
           - coordinated-native-planning-and-accepted-value-readback
           - native-reviewed-metadata-apply-gate-binding
