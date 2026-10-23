@@ -5,22 +5,48 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360-364 and Console105-110, not a replacement workflow
+including terminal follow-ups OOS360-366, Console105-110 and Platform331, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
 - `governance-operations-console@528600897113708ce846e98fc09d3e1f08e0228e`
-- `operator-orchestration-service@63759f8f2100cf8dba7d3c212ded5d13183f23e5`
-- `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
+- `operator-orchestration-service@094aec100c6ba83c4b72b4207fd92d980ee442a0`
+- `platform-engineering@552795b69f2795542dae7a841d33097a9a940034`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
 - `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
 - `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
-- `platform-engineering-tree@da73f02c959153a841d7a8fd0b96a90e97528954`
+- `platform-engineering-tree@f9562fdaa5ae39b3cf307400647afb120efa95be`
 
 Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+The owner-bootstrap producer and generated control smoke test no longer force
+an architecture-bound command into every profile. A schema-valid ordinary
+baseline may use unconditional tests/validations; existing conditional profiles
+and independent owner policy remain intact. Actual case/kind/fidelity coverage
+is still enforced at source preflight. The regression crosses the real trusted
+scaffold, native evidence-profile consumer and generated Python controls, while
+retaining explicit no-application-acceptance output. The ordinary documentation
+example is unconditional. Existing accepted bootstrap provenance is historical,
+not rewritten to the new trusted-template digest. No new template version,
+source purpose, privilege, fake app check or bootstrap application import.
+
+Explicit engineering owner maintenance now reuses the current canonical active
+Inventory admission and already-approved selected App installation for a
+promoted product owner. Platform selects exact canonical provider coordinates
+and rechecks admission/installation before minting the same short-lived,
+one-repository permission set. Commissioning and immutable pinned-blob recovery
+remain legacy-only. Validated retained revocation works after owner retirement
+or admission loss; legacy already-absent revocation remains available offline.
+OOS organization maintenance requires its existing freshness-checked canonical
+reader, exact provider-origin equality and an origin recheck before source
+effects. A URL is a selector, not admission. Source publication remains Gary;
+human review, merge and cleanup remain separate. This trusted engineering
+repair path does not replace normal Console Delivery source-intent approval,
+session, per-action authorization or terminal revocation. No App installation,
+repository selection, permission, new source purpose or GitHub rule is added.
 
 Ordinary app source entry does not require an invented Architecture Packet.
 OOS364 maps only the native optional-reference absence (not_found, HTTP404,
@@ -42,11 +68,13 @@ permission, architecture version or ART repair child is introduced.
 
 The separate app-owner baseline repair preserves its existing nine-unit-test
 and Git commands, making tests unconditional for ordinary source work. It is
-not added to this seven-owner runtime source set. Its explicitly bounded
-one-time human publication exception retains Gary commit authorship; it does
-not widen the legacy maintenance installation scope or grant human publication
-for subsequent app source. Normal app source requires the native Console/OOS
-source-intent and separate accountable review.
+not added to this seven-owner runtime source set. The attempted human-published
+app PR3 was withdrawn unmerged after the operator reaffirmed that Gary must be
+author, committer, pusher and PR creator. No repository rule changed. The prior
+human-publication exception language is withdrawn; it grants no authority.
+Use the repaired admitted maintenance path for the baseline only. Normal app
+source requires the native Console/OOS source-intent and separate accountable
+review. App source import, graduation and publication are still unproven.
 
 First-entry work-session read maintenance follows actual native200
 decision-required status with null session_revision and a502 canonical envelope.
@@ -172,6 +200,49 @@ short. No model timeout, retry count or concurrency limit is changed.
   idempotency identity, response checks and current source binding.
 
 ### Implemented And Engineering Evidence
+
+The causal bootstrap profile repair passed18 focused producer/preparation/
+session tests, including ordinary no-architecture coverage, unchanged actual
+conditional-case semantics and generated control validation without app source.
+Garyf7bffae0a68a7f14ec51ea7aa555a0fb5a1f89d4 passed the full committed
+fetched-base workflow:1586 tests, zero skips, API/OpenAPI/docs/mutation checks,
+API and denied-worker image builds. Provider39926485746 passed before delegated
+exact-head approval and merge094aec100c6ba83c4b72b4207fd92d980ee442a0.
+The reviewed head and squash tree are equal. This producer repair and the
+preceding issuer/publisher repair share this final exact composition acceptance
+and one normal activation; the app baseline repair remains separate source.
+
+Promoted-owner maintenance qualification uses the existing real Git current
+Inventory reader plus the actual loopback issuer/provider/projection boundary.
+The final Platform owner tests cover promoted admission, unchanged commissioning
+scope, unknown installation denial, suspension, pre-mint admission change,
+unchanged single-repository permissions, post-retirement retained revocation and
+offline legacy already-absent revocation. Final focused23 identity and38 native
+source-intent tests passed. Gary9af9e5602b082322c2b847dc8d32e8638ad329dd passed
+the full committed fetched-base Platform workflow, including runtime/record
+governance, Helm and Terraform. Provider39923258684 and posture39923258817 passed
+before delegated exact-head approval and merge
+552795b69f2795542dae7a841d33097a9a940034. Its reviewed head and squash source tree
+are equal; exact grant revocation and strict exact-owner cleanup passed before
+normal commissioning. The generated owner change-record index remains current.
+
+OOS365 Gary9d46284f4399f0e012056b5843de2bcaa8866aad passed full committed
+fetched-base validation:1585 tests, zero skips, contract/OpenAPI/docs and
+mutation guards, API and denied-worker builds. Focused23 tests cover publisher
+origin binding and the actual source identity adapter. A read-only native
+freshness-checked authority read resolved the existing app repository1421451929
+without issuing credentials. Provider39922682280 passed before exact delegated
+review and mergee179f308cc8b520bcb85aa74c27288e01368443e, with identical source
+tree, exact credential revocation and strict exact-owner cleanup PASS.
+
+The prior full activation20261023T072515Z and native nested readback passed for
+the preceding source set. Actual Console applied six narrative corrections once
+with durable receipts and native full-text readback; ordinary1308 preparation
+now reports no required Architecture Packet and a satisfied narrative contract.
+Actual native authorized read-only preflight confirms only the incomplete app
+evidence-profile baseline blocks that planned start. These observations do not
+certify the new maintenance issuer, app source import or Epic completion. Fresh
+coherent activation and actual Gary app-repair publication remain required.
 
 OOS364 Garyhead7118ca9978ea00433809367192a960ce110aa55d passed full committed
 fetched-base validation:1583 tests, zero skips, API/OpenAPI/docs and mutation
