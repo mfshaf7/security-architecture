@@ -297,6 +297,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - planning-advice-bounded-deadline-and-explicit-invocation-identity
           - console-canonical-parent-matrix-and-pi-objective-add
           - console-bounded-native-owner-closure-command-recovery
           - console-patched-next-dependency-audit
@@ -319,6 +320,10 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/server/work-design-oos-client.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/server/refinement-catalog-oos-client.ts
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/work-model/execution/execution-tree-change-plan.ts
           - repo: governance-operations-console
@@ -434,6 +439,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-reviewed-metadata-apply-gate-binding
           - canonical-refinement-form-capabilities-and-explicit-target-effects
           - prototype-finalized-native-owner-packet-and-source-readback
           - oos-canonical-source-intent-before-effects

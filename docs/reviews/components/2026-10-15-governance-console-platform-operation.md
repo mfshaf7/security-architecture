@@ -5,11 +5,12 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-not a replacement workflow or architecture. The current exact set is:
+including terminal follow-ups OOS360 and Console105, not a replacement workflow
+or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
-- `governance-operations-console@435e11913852b1a2287ad3dd52404aa7e133d005`
-- `operator-orchestration-service@115c57fdd9ed4970063a8f58656d4b256243a868`
+- `governance-operations-console@6370f19a92c9be516ed41aee8ef11c3135646037`
+- `operator-orchestration-service@81c244a7e4b84075ce36040f65b6d3b975cbdbf5`
 - `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
 - `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
@@ -33,6 +34,14 @@ text, roles, classification and typed objective/risk fields. Console exposes the
 existing legal child operations, including PI Objective under Epic, rather than
 changing Work Design's tree schema or inventing a placeholder story.
 
+The native metadata-review gate now names its existing editable Delivery
+route, so an accepted metadata draft can reach Apply without a CLI pre-write.
+Actual Console advice subsequently reached OOS/CGG/gateway and completed in
+about40 seconds, after Console's12-second deadline had returned502. Work Design
+POST advice/apply now uses a bounded180-second command deadline; Refinement
+advice uses that budget while reads and asynchronous acknowledgements remain
+short. No model timeout, retry count or concurrency limit is changed.
+
 ### Review Areas
 
 - Identity/secrets/runtime: caller-bound authenticated CGG APIs and dedicated
@@ -49,6 +58,12 @@ changing Work Design's tree schema or inventing a placeholder story.
   source authoring. Planned objective value is distinct from later earned
   Actual Business Value and PI review; no future outcome score is fabricated.
   Gary source publication and separate delegated accountable review remain.
+- Invocation/replay: each explicit suggestion-only advice call has a fresh
+  invocation identity because OOS binds a fresh requested_at into CGG context.
+  Reusing an old call id with a new timestamp would correctly conflict. No
+  automatic retry, new API field, receipt store or CGG replay weakening is
+  admitted. Accepted canonical apply keeps its exact stable acceptance and
+  idempotency identity, response checks and current source binding.
 
 ### Implemented And Engineering Evidence
 
@@ -66,6 +81,22 @@ and Secret renderers for both compositions with distinct synthetic credentials;
 missing/foreign bindings deny. Native OOS packet passes the actual Console
 parser/editor target model. Native backend/UI parent matrices agree for all
 eight types. These transport seams are engineering proof, not app acceptance.
+
+OOS360 exact Garyhead d60697c9678f81e455b0f4c943ca4e022dbffd12 passed the full
+committed workflow,1559tests/zero skips, images and provider39874707118 before
+exact-head review/merge. Native packet passes the actual Console metadata
+workbench summary and Apply decision for unresolved denial, reviewed acceptance,
+blocked/stale packet denial and blocked-field non-bypass. The earlier parser-
+only proof missed that gate; its original failure remains recorded.
+Console105 Garyhead a6e3cb7687c0eae43ee97503a07a01dc235ed22f passed639tests,
+architecture/typecheck/production build/audit0 and provider39875758626 before
+exact-head review/merge. Real delayed HTTP with scaled native timeout clocks,
+exact per-operation budgets, distinct repeated advice and unchanged accepted
+apply replay are covered. Browser and same-origin route layers add no shorter
+request timeout. The original OOS advice_ready audit is preserved separately
+from the failed Console response; successful backend inference was not treated
+as Console acceptance. The existing pending learning record captures both
+terminal-path misses rather than claiming the earlier transport proof complete.
 
 ### Decision
 
