@@ -308,6 +308,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-completion-response-budget-and-format-feedback
           - native-evidence-only-completion-and-parent-closeout
           - real-owner-publication-intent-current-registry-and-original-request-recovery
           - intake-retained-origin-reclassification-and-owner-findings
@@ -340,6 +341,12 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/live-runtime/delivery-item-completion-contract.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/surfaces/execution-board/work-session/execution-item-completion-modal.tsx
+          - repo: governance-operations-console
+            path: tests/operation-runtime/delivery-item-completion.test.mjs
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/server/delivery-item-completion-client.ts
           - repo: governance-operations-console
@@ -586,6 +593,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-completion-response-budget-and-format-feedback
           - native-evidence-only-completion-and-parent-closeout
           - real-owner-publication-intent-current-registry-and-original-request-recovery
           - governance-console-seven-owner-bounded-authoring-composition
@@ -610,6 +618,12 @@ review_inventory:
           - governance-console-private-runtime-state-binding
           - governance-console-failure-first-rollback-order
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/live-runtime/delivery-item-completion-contract.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/surfaces/execution-board/work-session/execution-item-completion-modal.tsx
+          - repo: governance-operations-console
+            path: tests/operation-runtime/delivery-item-completion.test.mjs
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/server/delivery-item-completion-client.ts
           - repo: governance-operations-console

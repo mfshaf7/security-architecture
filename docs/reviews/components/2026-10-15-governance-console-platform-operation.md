@@ -1,6 +1,63 @@
 # Governance Console Platform Operation Security Delta
 
-## Current final Console handoff reassessment — 2026-10-24
+## Current native completion feedback reassessment — 2026-10-24
+
+### Summary
+
+Accept the actually merged Console115 completion-feedback correction within
+the existing composition. Only the Console source pin changes; the other six
+implementation revisions, Platform tree, architecture and gate are unchanged.
+
+- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `governance-operations-console@8187bf71f04648afecb483ac3e999007415ea807`
+- `operator-orchestration-service@423e6a6d23bdf621f6ed553f7a159796b29537ea`
+- `platform-engineering@5f2ea37da1b8a50ea90e6929fb30b894ce3c0ad8`
+- `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
+- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@d7b0f49f9b886ed77fae99a2788d403a10b2b681`
+
+### Scope Delta
+
+The first live1309 submission correctly failed native Changed Surfaces format:
+operator paragraphs did not satisfy the existing explained flat-bullet and
+reference-decoration rules. The generic12s Console request window hid the
+owner rejection, which arrived more than17s after native readiness. Corrected
+actual input passed the native validator; its submission completed in the owner
+and the Console recovered done/valid state by reading the original target.
+
+This source change reuses the existing75s governed native ART operation budget
+for completion context, complete and stale-open calls, so actual native owner
+rejections can reach the operator. It keeps bounded transport, explicit
+original-target recovery and the prohibition on automatic replacement writes.
+Field guidance states paragraph summary, flat explained outcome bullets and
+code-formatted/linked paths and receipt URIs. Basic client format checks reject
+the observed paragraph/bullet mismatch. OOS remains the semantic validator;
+no mandatory file, receipt, source session, schema, API or readiness bypass is
+introduced. Source work still uses its existing session lifecycle.
+
+### Review Areas
+
+Delivery/operator feedback and bounded runtime behavior only. Session and
+caller attribution, source custody, secrets, finite native operations, owner
+validation and independent review remain intact. OOS, WGCF, Platform, AI and
+publication permissions do not change.
+
+### Decision
+
+Approved for the existing local composition after native candidate-reader and
+fresh workspace-context evidence pass. Frozen Console CI passed681 tests with
+zero skips, all architecture guards, types, production build, source safety and
+no production advisories. Eight focused completion cases include the actual
+format miss and a simulated expired generic window that still surfaces the
+native422 without replay. The corrected actual input also passed the existing
+OOS validator. Actual1309 done/valid readback is operating evidence for the
+prior completion path, not proof that this new feedback revision is activated.
+Normal full activation/current reader and live operator feedback qualification
+remain required before proceeding to source item1310. No new environment,
+identity, exposure, client/public or stage/prod acceptance is granted.
+
+## Historical final Console handoff reassessment — 2026-10-24
 
 ### Summary
 
