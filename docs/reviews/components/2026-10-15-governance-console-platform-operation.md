@@ -1,6 +1,80 @@
 # Governance Console Platform Operation Security Delta
 
-## Current native completion feedback reassessment — 2026-10-24
+## Current earned review and guided closeout reassessment — 2026-10-24
+
+### Summary
+
+Accept the merged OOS371 and Console116 corrections within the existing local
+composition. Only those two implementation pins change. The other five pins,
+Platform tree, gate and Architecture Packet remain unchanged.
+
+- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `governance-operations-console@80214075702632ef21039fc9db7c9fab26ae10b3`
+- `operator-orchestration-service@572eb8131540d06f3df03d38b46c1c915f40deca`
+- `platform-engineering@5f2ea37da1b8a50ea90e6929fb30b894ce3c0ad8`
+- `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
+- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@d7b0f49f9b886ed77fae99a2788d403a10b2b681`
+
+### Scope Delta
+
+The native PI-review operation already owns earned value and review outcome.
+The Console now exposes that operation in its existing completion surface,
+bound to the exact current objective, initiative and PI. Current native
+metadata participates in the reviewed revision; changed, foreign or unavailable
+metadata and source sessions fail closed. The verified server session and
+existing OOS operator credential retain attribution. Browser input contains
+only earned review values and an optional note, never a credential, arbitrary
+target list or source authority. The native backend validates current form
+choices. Explicit review and canonical readback leave objective status unchanged;
+completion is a separate evidence-backed approval. An interrupted response keeps
+the original target locked until matching canonical fields are read. Matching
+existing values need no repeated native write or duplicate review note.
+
+A successful native closeout GET has just read canonical ART and outcome history.
+It attests current source freshness even when domain readiness is not-ready.
+Domain blockers, expiry, exact source binding and owner failures retain their
+independent checks; the generic freshness mapper for other paths is unchanged.
+An unavailable canonical owner never receives a successful current envelope.
+
+The existing guided closeout records Demo, validates entry to Closing, records
+Inspect & Adapt, and validates final completion. Its earlier precondition
+required those same fields to have been written before invocation. OOS now
+offers its existing prepare action when all six execution/evidence/ownership
+counts are zero and the only remaining reasons are those three inline steps.
+Unknown reasons, open work, missing or weak evidence, missing ownership,
+stale source revisions and reconciliation retain denial. Raw canonical
+readiness stays false until actual backend transitions occur. The Console
+follows that owner action and still requires complete reviewed evidence,
+impact and acceptance before submitting the unchanged native command.
+
+### Review Areas
+
+Delivery, operator review, canonical-source integrity and bounded runtime
+composition. No new backend operation, workflow engine, actor, permission,
+credential, host capability, publication posture or environment is introduced.
+Source custody and human source review remain separate from PI/ART review.
+
+### Decision
+
+Accepted for the existing local composition. Exact committed CI-equivalent
+proof passed 1,598 OOS tests and 687 Console tests with zero skips, the native
+bundle/API/governance/base-aware gates, both OOS image builds and startup checks,
+Console architecture/types/production build and dependency audit. Provider runs
+40010846007 and 40011230979 passed; separate exact-head human approvals preceded
+the two merges. Focused tests prove native review scope, stale/source denial,
+owner rejection, cold recovery, guided evidence preparation and all six blocker
+count classes plus unknown-reason denial. Native read-only PI form preflight
+proved earned fields writable and the three actual review choices.
+
+Fresh Security validation, generated-index checks and precommissioning native
+consumer proof precede this review's merge. Normal complete-runtime activation,
+an unflagged native reader and the actual Console objective/Epic closeout are
+required operating proof afterward. This source decision does not claim those
+future operations or the primary Epic complete.
+
+## Historical native completion feedback reassessment — 2026-10-24
 
 ### Summary
 
