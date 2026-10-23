@@ -308,6 +308,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - private-transaction-process-death-and-pid-reuse-recovery
           - native-completion-response-budget-and-format-feedback
           - native-evidence-only-completion-and-parent-closeout
           - real-owner-publication-intent-current-registry-and-original-request-recovery
@@ -593,6 +594,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - private-transaction-process-death-and-pid-reuse-recovery
           - native-completion-response-budget-and-format-feedback
           - native-evidence-only-completion-and-parent-closeout
           - real-owner-publication-intent-current-registry-and-original-request-recovery
