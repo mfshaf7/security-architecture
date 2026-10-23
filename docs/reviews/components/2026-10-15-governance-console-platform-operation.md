@@ -5,12 +5,12 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360-362 and Console105-109, not a replacement workflow
+including terminal follow-ups OOS360-363 and Console105-109, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
 - `governance-operations-console@411eff5cd4065fb4582fa652dd258ae8ba87231c`
-- `operator-orchestration-service@d955cd4b47b3997337b07ef3e33610e539c1ae43`
+- `operator-orchestration-service@46774e523d528d859c03efc6685ef6587feea754`
 - `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
 - `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
@@ -21,6 +21,17 @@ Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+First-entry work-session read maintenance follows actual native200
+decision-required status with null session_revision and a502 canonical envelope.
+The HTTP descriptor had assumed updated_at, which is not a domain status field.
+Status now uses the existing complete-observation digest and read time for
+absent, ordinary and source-authorized sessions. Domain session_revision is
+unchanged and remains nullable before work starts; it is still the exact
+command concurrency token. No dummy session, credential, source intent or CLI
+business write may substitute for a successful first Console status read.
+Caller/operator identity, source acceptance, stale-command and replay checks
+remain unchanged. No new schema, workflow, profile, permission or authority.
 
 Actual Refinement completed once with durable activity7896 and accepted-value
 readback. The subsequent Console poll rejected the native run resource because
@@ -135,6 +146,19 @@ short. No model timeout, retry count or concurrency limit is changed.
   idempotency identity, response checks and current source binding.
 
 ### Implemented And Engineering Evidence
+
+OOS363 Garyhead afef00b89b49f3c424d05358a11ed968fc32a4a0 passed the committed
+full fetched-base workflow:1580tests/zero skips, contract/OpenAPI/docs and
+base-aware mutation checks, API and denied-worker images. Provider39907969664
+passed before exact-head review and merge46774e523d528d859c03efc6685ef6587feea754
+with identical source tree. Native producer-to-actual-Console-consumer checks
+reproduced the missing-revision denial with the retained first-entry projection,
+then accepted absent, ordinary and source-authorized repeated reads. Later
+states in this engineering check are explicitly synthetic; the first-entry
+body is retained actual native state. Focused21 tests also cover the original
+source-successor path, unchanged command revision and stale/caller denials.
+Deployed first-entry UI/readback remains pending normal activation; no source
+session or canonical business operation was started by these diagnostics.
 
 OOS362 Garyhead cb3b6060c7ed7316dfea24e27eda829e047181cf passed the committed
 full fetched-base workflow:1579tests/zero skips, contract/OpenAPI/docs checks,
