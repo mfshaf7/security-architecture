@@ -1,6 +1,76 @@
 # Governance Console Platform Operation Security Delta
 
-## Current earned review and guided closeout reassessment — 2026-10-24
+## Current private transaction process recovery reassessment — 2026-10-24
+
+### Summary
+
+Accept merged OOS372 within the existing local composition. Only the OOS
+implementation pin changes; the other six pins, Platform tree, gate and
+Architecture Packet remain unchanged. The final Workspace Governance source
+is still in review and is not accepted by this decision.
+
+- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `governance-operations-console@80214075702632ef21039fc9db7c9fab26ae10b3`
+- `operator-orchestration-service@b3120858c3dfea51748b87495dec244740f440c9`
+- `platform-engineering@5f2ea37da1b8a50ea90e6929fb30b894ce3c0ad8`
+- `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
+- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@d7b0f49f9b886ed77fae99a2788d403a10b2b681`
+
+### Scope Delta
+
+The private transaction helper formerly inferred ownership from a PID-only
+file. A real API replacement reused PID 1 after source publication, so the
+new process was mistaken for the dead lease holder and normal evidence
+continuation was denied. The repair retains the existing synchronous and
+asynchronous store interfaces and holds a kernel flock through the complete
+effect, using a parent-owned descriptor inherited by the finite flock helper.
+Descriptor close or actual process death releases ownership. Concurrent live
+effects and source revocation remain excluded; no timeout assumes ownership
+has expired. Persistent flock inodes are not unlinked.
+
+Legacy PID records fail closed without guessing whether a foreign-namespace
+PID is alive. Platform must quiesce all old-version writers sharing each state
+root, preserve and archive verified legacy locks, then activate the reviewed
+source with no mixed-protocol writers. Rollback has the same quiescence
+requirement. The existing runtime images already contain util-linux; no new
+service, lease controller, timer, privilege, identity, credential, API or
+host command is introduced. Existing workflow records and provider outcomes
+remain authoritative; recovery must not republish successful source effects.
+
+### Review Areas
+
+Runtime persistence and Delivery/source-lease integrity. Existing authenticated
+caller/operator attribution, exact source scope, independent human review,
+secrets custody, finite effect dispatch and Security/Platform acceptance remain
+unchanged. The helper also serves existing Prototype Source Authoring and
+Repository Owner Bootstrap stores; tests preserve their shared API contract.
+
+### Decision
+
+Approved for the existing local composition. Reviewed Gary head
+`9f110b4e271305c4db4df61acf16ea7abe93598d` is tree-identical to canonical
+OOS merge `b3120858c3dfea51748b87495dec244740f440c9`. All eleven local native
+CI validation/build/smoke steps passed. The suite reported 1,604 cases,
+1,602 passing and two optional Studio-owner cases skipped without their root;
+both were subsequently exercised against freshly fetched real Studio authority
+in isolated clones, with all three tests in those files passing and zero
+skipped. Forty-eight focused tests passed. Provider CI and exact-head human
+approval preceded merge.
+
+The actual API image additionally proved that a PID 1 holder excludes a
+separate PID 1 container, and that after SIGKILL a replacement PID 1 acquires
+the same shared-state lock immediately. This is isolated engineering proof,
+not a claim that the repaired runtime is already active. Fresh owner/index
+validation and native precommissioning denial precede this Security merge.
+Quiesced migration, normal full activation, current-source readback and actual
+original-session continuation remain mandatory operating proof afterward.
+Automatic record freshness must be restored immediately after each bounded
+migration window; its guard must not be weakened to accommodate downtime.
+No new public/client or stage/production acceptance is granted.
+
+## Historical earned review and guided closeout reassessment — 2026-10-24
 
 ### Summary
 
