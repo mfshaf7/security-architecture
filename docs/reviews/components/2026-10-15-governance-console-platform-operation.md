@@ -1,6 +1,77 @@
 # Governance Console Platform Operation Security Delta
 
-## Current Console graduation completion reassessment — 2026-10-23
+## Current direct Intake entry and recovery reassessment — 2026-10-23
+
+### Summary
+
+Accept actual merged OOS370 and Console112 as an extension of the existing
+operator-authored direct Intake contract, not a new authority or workflow.
+The current exact source set is:
+
+- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `governance-operations-console@8b99cca20cfd9e56754982492144efd7f3c9d507`
+- `operator-orchestration-service@423e6a6d23bdf621f6ed553f7a159796b29537ea`
+- `platform-engineering@0a300dec0d38ee535541710d94a41e9ce699ac11`
+- `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
+- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@135b2c062b9c39148053ab29eda880b0e9498b3f`
+
+Retain the current architecture packet, gate, seven-owner boundary and other
+five owner pins. Older sections record historical acceptance. This review
+accepts source qualification for the existing local single-operator runtime;
+normal Platform commissioning and actual Console operating proof still follow.
+
+### Scope And Security Judgment
+
+Direct product/component classification already exists in the canonical
+Intake contract and OOS submission. The Console previously exposed product
+Intake only after applied Delivery closeout, preventing registration before
+Publication in the accepted current Delivery sequence. Registry now exposes
+that existing direct route and the same shared Decision / Review / Result
+dialog. No premature Delivery closeout, repeated repository admission, new
+ART child, source-owner impersonation or separate mutation writer is accepted.
+
+Console entry requires canonical current Registry continuity and executable
+live isolation. Loading, unavailable, contradictory and fixture states cannot
+open it. Operator metadata selects active owners explicitly, records purpose
+and evidence, and carries validation posture, graph role, optional catalog
+references and explanation required by the native Inventory candidate builder.
+Contextual references remain in exact reviewed notes. A digest labels direct
+operator-authored metadata; it never grants Prototype/Delivery/custody owner
+attestation. Server-built commands still bind current preparation, caller,
+explicit acceptance and the exact normalized requested record.
+
+OOS extends its existing read-only durable request journal. Direct selection
+requires one exact product/component target and excludes custody selectors.
+Caller, target and source scope bind records and opaque cursors; repository
+custody and authenticated source-owner candidate verification are preserved.
+Store integrity, accepted command binding, response count/byte limits and
+source-authority projection remain mandatory. Direct candidate projections
+never enter the source-owner attestation binder. Off-page pending counts block
+new Console classifications. Cold reopen reads the original acknowledged
+request into Result, with no preparation, resubmission, browser-storage
+authority or new ledger. Unavailable state cannot imply an empty journal.
+
+Local frozen-head CI-equivalent proof passed: OOS1594 tests with zero skips,
+all bundles/API/schema/governance/base-aware checks and API/denied-worker image
+smoke; Console666 tests with zero skips, repository/public-source validation,
+architecture guards, types, production build and zero production advisories.
+Synthetic native service/store proof also demonstrates that a same-caller
+attested Prototype command and another caller's direct command cannot enter
+the selected direct journal; it performs no canonical writes or external calls.
+Provider39959803415 and39960575928 passed on exact Gary heads, independently
+approved and merged under standing delegated mfshaf7 authority.
+
+The accepted app source, finalized Review Packet, original graduation receipt
+and dedicated-owner custody remain intact. Intake admission, active Inventory,
+product maturity, runtime and Publication remain separate decisions. This
+source review does not forecast any of those business receipts. Rollback uses
+the ordinary previously accepted composition and preserves durable requests
+and canonical record history. No new credentials, permissions, deployment
+lane, model behavior or privileged effect is introduced.
+
+## Prior Console graduation completion reassessment — 2026-10-23
 
 ### Summary
 
