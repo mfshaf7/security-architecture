@@ -302,6 +302,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - direct-product-component-intake-entry-and-native-request-recovery
           - terminal-studio-source-retained-closure-continuation
           - canonical-refinement-native-run-binding-and-receipt-recovery
           - native-child-planning-input-fidelity-without-execution-authority
@@ -332,6 +333,12 @@ review_inventory:
         owner_artifacts:
           - repo: governance-operations-console
             path: src/domain-workspaces/prototype/presentation/dashboards/prototype-dashboard/prototype-dashboard-lifecycle-panel.tsx
+          - repo: governance-operations-console
+            path: src/workspace-registry/presentation/workspace-registry-intake-dialog.tsx
+          - repo: governance-operations-console
+            path: src/console-integration/workspace-intake/workspace-intake-direct-candidate.ts
+          - repo: governance-operations-console
+            path: src/console-integration/workspace-intake/server/workspace-intake-oos-client.ts
           - repo: governance-operations-console
             path: src/domain-workspaces/prototype/presentation/dialogs/history/prototype-history-modal.tsx
           - repo: governance-operations-console
@@ -459,6 +466,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - direct-intake-caller-target-source-journal-without-owner-attestation
           - retained-closure-authenticated-current-platform-disposition
           - first-and-ordinary-session-observations-without-command-revision-fabrication
           - aggregate-planning-observation-order-with-input-concurrency-preserved
@@ -485,6 +493,10 @@ review_inventory:
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/workspace-intake/service.js
+          - repo: operator-orchestration-service
+            path: scripts/sync_workspace_intake_openapi.mjs
           - repo: operator-orchestration-service
             path: src/prototype-closure/platform-evidence-reader.js
           - repo: operator-orchestration-service
