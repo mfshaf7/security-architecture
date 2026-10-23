@@ -297,6 +297,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - canonical-refinement-native-run-binding-and-receipt-recovery
           - native-child-planning-input-fidelity-without-execution-authority
           - canonical-planning-inspection-and-durable-handoff-recovery
           - canonical-work-design-receipt-versus-local-snapshot-presentation
@@ -448,6 +449,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - aggregate-planning-observation-order-with-input-concurrency-preserved
           - coordinated-native-planning-and-accepted-value-readback
           - native-reviewed-metadata-apply-gate-binding
           - canonical-refinement-form-capabilities-and-explicit-target-effects
