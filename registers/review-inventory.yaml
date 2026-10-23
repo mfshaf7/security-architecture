@@ -308,6 +308,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - approved-source-selected-intent-continuation
           - private-transaction-process-death-and-pid-reuse-recovery
           - native-completion-response-budget-and-format-feedback
           - native-evidence-only-completion-and-parent-closeout
@@ -342,6 +343,14 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/environment-lifecycle/presentation/source-authorization-panel.tsx
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/surfaces/execution-board/work-session/execution-source-access.ts
+          - repo: governance-operations-console
+            path: tests/environment-lifecycle/source-authorization-loading.test.mjs
+          - repo: governance-operations-console
+            path: tests/delivery/execution-source-access.test.mjs
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/live-runtime/delivery-item-completion-contract.ts
           - repo: governance-operations-console
@@ -594,6 +603,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - approved-source-selected-intent-continuation
           - private-transaction-process-death-and-pid-reuse-recovery
           - native-completion-response-budget-and-format-feedback
           - native-evidence-only-completion-and-parent-closeout
@@ -620,6 +630,14 @@ review_inventory:
           - governance-console-private-runtime-state-binding
           - governance-console-failure-first-rollback-order
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/environment-lifecycle/presentation/source-authorization-panel.tsx
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/surfaces/execution-board/work-session/execution-source-access.ts
+          - repo: governance-operations-console
+            path: tests/environment-lifecycle/source-authorization-loading.test.mjs
+          - repo: governance-operations-console
+            path: tests/delivery/execution-source-access.test.mjs
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/live-runtime/delivery-item-completion-contract.ts
           - repo: governance-operations-console

@@ -1,6 +1,71 @@
 # Governance Console Platform Operation Security Delta
 
-## Current private transaction process recovery reassessment — 2026-10-24
+## Current approved-source continuation reassessment — 2026-10-24
+
+### Summary
+
+Accept merged Console117 within the existing local composition. Only the
+Console implementation pin changes; the other six pins, Platform tree, gate
+and Architecture Packet remain unchanged. The final Workspace Governance
+source remains in review and is not accepted by this decision.
+
+- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `governance-operations-console@7eadcd87cd1f41b0de4754d76e5ba8c58fd6a156`
+- `operator-orchestration-service@b3120858c3dfea51748b87495dec244740f440c9`
+- `platform-engineering@5f2ea37da1b8a50ea90e6929fb30b894ce3c0ad8`
+- `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
+- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@d7b0f49f9b886ed77fae99a2788d403a10b2b681`
+
+### Scope Delta
+
+The selected source approval can remain valid after its hourly credential
+expires. OOS already renews that exact immutable scope before a real source
+continuation. The Console previously displayed only the generic waiting owner
+state, with no supporting action to reach this renewal path.
+
+Source Authorization now offers Continue Approved Source Access only when
+its canonical selection is ready and approved and the current live Delivery
+session has a revision and the exact agent-source-credential-required owner
+action. It submits the selected intent to the existing guarded continuation.
+Pending scope or continuation disables dispatch; revocation remains available.
+Absent, loading, offline, unrelated, invalid, revoked or suspended state does
+not expose this action. The primary OOS action is unchanged. The Console does
+not mint credentials, extend approval, infer successful renewal or report local
+source success. OOS retains caller/operator, scope, expiry, revocation, source,
+provider, lease and publication checks. Missing or revoked scope is not replaced
+by ambient credentials. No backend API or workflow semantics change.
+
+### Review Areas
+
+Identity, secrets and Delivery interaction. No new principal, permission,
+credential store, browser secret, provider action, timer, service, host command,
+AI authority or environment is introduced. Tokens remain server-held. Exact
+selected approval and independent human source review remain distinct controls.
+
+### Decision
+
+Approved for the existing local composition. Gary source head
+`0bdce28d36d461b4fce39bfe600678dd974a0f4b` is tree-identical to canonical
+Console merge `7eadcd87cd1f41b0de4754d76e5ba8c58fd6a156`. All native local CI commands passed:
+repository validation and compilation, 689 semantic tests with zero skips,
+architecture guards, types, production build and production dependency audit.
+Provider run40039156934 passed and an exact-head delegated human approval
+preceded merge. Component tests exercise real panel rendering and selected-
+intent dispatch, pending states, independent revocation and denied approvals;
+current-session tests reject disconnected, stale/offline, missing revision or
+session, absent action and unrelated owner gates.
+
+This is implementation acceptance, not operating proof. Fresh workspace-context
+validation and the native candidate reader must pass. Normal Platform
+activation and unflagged current-source readback precede actual expired-token
+continuation through the original approved Console session. No new scope,
+replacement source history, private-client claim or stage/prod acceptance is
+granted. Rollback reverts the Console revision through the existing composition;
+OOS authorization and provider records remain authoritative.
+
+## Historical private transaction process recovery reassessment — 2026-10-24
 
 ### Summary
 
