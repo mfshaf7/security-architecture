@@ -302,6 +302,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - intake-retained-origin-reclassification-and-owner-findings
           - direct-product-component-intake-entry-and-native-request-recovery
           - terminal-studio-source-retained-closure-continuation
           - canonical-refinement-native-run-binding-and-receipt-recovery
@@ -337,6 +338,10 @@ review_inventory:
             path: src/workspace-registry/presentation/workspace-registry-intake-dialog.tsx
           - repo: governance-operations-console
             path: src/console-integration/workspace-intake/workspace-intake-direct-candidate.ts
+          - repo: governance-operations-console
+            path: src/console-integration/workspace-intake/workspace-intake-live-contract.ts
+          - repo: governance-operations-console
+            path: src/console-integration/workspace-intake/presentation/workspace-intake-dialog.tsx
           - repo: governance-operations-console
             path: src/console-integration/workspace-intake/server/workspace-intake-oos-client.ts
           - repo: governance-operations-console
