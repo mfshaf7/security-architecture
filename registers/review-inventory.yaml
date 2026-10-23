@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-graduation-runtime-absence-owner-query
           - current-committed-legacy-maintenance-admission
           - registered-product-expiring-source-attribution
           - source-purpose-expiry-renewal-revocation
@@ -48,6 +49,10 @@ review_inventory:
           - governance-console-private-runtime-state-binding
           - governance-console-failure-first-rollback-order
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/prototype_closure_disposition.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/platform_operation_provider.py
           - repo: platform-engineering
             path: security/governed-ai-model-profiles.yaml
           - repo: platform-engineering
@@ -297,6 +302,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - terminal-studio-source-retained-closure-continuation
           - canonical-refinement-native-run-binding-and-receipt-recovery
           - native-child-planning-input-fidelity-without-execution-authority
           - canonical-planning-inspection-and-durable-handoff-recovery
@@ -324,6 +330,10 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/prototype/presentation/dashboards/prototype-dashboard/prototype-dashboard-lifecycle-panel.tsx
+          - repo: governance-operations-console
+            path: src/domain-workspaces/prototype/presentation/dialogs/history/prototype-history-modal.tsx
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/presentation/workflows/shared/package-actions/package-work-design-receipt-dialog.tsx
           - repo: governance-operations-console
@@ -449,6 +459,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - retained-closure-authenticated-current-platform-disposition
           - first-and-ordinary-session-observations-without-command-revision-fabrication
           - aggregate-planning-observation-order-with-input-concurrency-preserved
           - coordinated-native-planning-and-accepted-value-readback
@@ -474,6 +485,8 @@ review_inventory:
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/prototype-closure/platform-evidence-reader.js
           - repo: operator-orchestration-service
             path: src/refinement/packet-model.js
           - repo: operator-orchestration-service
