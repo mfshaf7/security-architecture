@@ -5,12 +5,12 @@
 ### Summary
 
 Accept the actual merged planning repair WG295, OOS359, CGG29 and Console104,
-including terminal follow-ups OOS360-361 and Console105-108, not a replacement workflow
+including terminal follow-ups OOS360-362 and Console105-109, not a replacement workflow
 or architecture. The current exact set is:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
-- `governance-operations-console@be07c72e73701eb43bf84a447b84a9038af3211d`
-- `operator-orchestration-service@cdbc0fc49c9044ea910418e3a2b64a0cb158dff1`
+- `governance-operations-console@411eff5cd4065fb4582fa652dd258ae8ba87231c`
+- `operator-orchestration-service@d955cd4b47b3997337b07ef3e33610e539c1ae43`
 - `platform-engineering@f7e42679230ffdfdaddd74bc336ad2e6551680a7`
 - `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
 - `workspace-governance-control-fabric@0eddab78503aa8c9e11c005c85954f3472991d63`
@@ -21,6 +21,24 @@ Retain the existing architecture packet, gate and seven-owner source boundary.
 Older sections below are historical acceptance, not authority for future code.
 
 ### Scope Delta
+
+Actual Refinement completed once with durable activity7896 and accepted-value
+readback. The subsequent Console poll rejected the native run resource because
+it expected the packet's OpenProject coordinates. Console109 instead binds the
+native package and exact OOS run route, and checks the returned run, poll path
+and completed receipt target. Foreign coordinates still deny. Authorized
+read-only history does not gain a same-operator restriction; authenticated
+apply acceptance is unchanged. Recovered history retains the canonical URI,
+digests, operator, revision and event times, distinct from local previews and
+the earlier Work Design handoff time. Completed work must not be reapplied to
+repair its display.
+
+Repeated native Work Design and Refinement packet reads also exposed unchanged
+input-version event sequences with changing projection timestamps. OOS362 uses
+the existing full-observation digest and projection-time ordering for those two
+aggregate envelopes. Domain input versions remain unchanged for optimistic
+mutation checks. Consumer integrity/replay guards remain unchanged. There is
+no new counter, ledger, protocol, writer, permission, profile or architecture.
 
 Native planning-write fidelity maintenance follows an actual PI Objective
 create rejection with identical before/after source revisions and no created
@@ -117,6 +135,22 @@ short. No model timeout, retry count or concurrency limit is changed.
   idempotency identity, response checks and current source binding.
 
 ### Implemented And Engineering Evidence
+
+OOS362 Garyhead cb3b6060c7ed7316dfea24e27eda829e047181cf passed the committed
+full fetched-base workflow:1579tests/zero skips, contract/OpenAPI/docs checks,
+base-aware mutation checks and API/denied-worker image builds. Provider39906493596
+passed before exact-head approval and merge d955cd4b47b3997337b07ef3e33610e539c1ae43.
+Console109 Garyhead d287b3328eb77e06c68ba509c08496cf11e0e2fd passed the committed
+owner workflow:661tests/zero skips, architecture/type checks, production build,
+repository/public-source safety and production audit0. Provider39906686782 passed
+before exact-head approval and merge411eff5cd4065fb4582fa652dd258ae8ba87231c.
+Both squash merges have identical source trees to the reviewed Gary heads.
+Native OOS producer-to-Console consumer engineering covered retained running,
+completed and repeated cold run reads plus repeated Work Design/Refinement
+aggregate observations. The prior bindings/order failed as expected; candidates
+passed without relaxing admission. These are engineering checks using retained
+domain observations, not proof of deployed UI acceptance. After normal full
+activation, reread the same completed run and its Console history without apply.
 
 OOS361 Garyhead e730311ea1d7dfed4123774b456d0b5eb97c666b passed full fetched-base
 CI-equivalent validation:1577tests/zero skips, native service/OpenProject create
