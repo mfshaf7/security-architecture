@@ -12,7 +12,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        reviewed_on: 2026-10-24
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - existing-publication-server-binding-and-live-route-readback
+          - registered-public-main-generated-clone-without-host-alignment
           - native-graduation-runtime-absence-owner-query
           - current-committed-legacy-maintenance-admission
           - registered-product-expiring-source-attribution
@@ -49,6 +51,10 @@ review_inventory:
           - governance-console-private-runtime-state-binding
           - governance-console-failure-first-rollback-order
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_complete_runtime.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_cross_domain_activation.py
           - repo: platform-engineering
             path: products/governance-operations-console/scripts/prototype_closure_disposition.py
           - repo: platform-engineering
@@ -292,7 +298,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        reviewed_on: 2026-10-24
         status: current
         decision: approved
         review_areas:
@@ -302,6 +308,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-evidence-only-completion-and-parent-closeout
+          - real-owner-publication-intent-current-registry-and-original-request-recovery
           - intake-retained-origin-reclassification-and-owner-findings
           - direct-product-component-intake-entry-and-native-request-recovery
           - terminal-studio-source-retained-closure-continuation
@@ -332,6 +340,14 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/server/delivery-item-completion-client.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/portfolio/live-runtime/owner-publication-intent.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/portfolio/presentation/surfaces/publication/owner-publication-surface.tsx
+          - repo: governance-operations-console
+            path: src/domain-workspaces/portfolio/server/product-publication-oos-client.ts
           - repo: governance-operations-console
             path: src/domain-workspaces/prototype/presentation/dashboards/prototype-dashboard/prototype-dashboard-lifecycle-panel.tsx
           - repo: governance-operations-console
@@ -560,7 +576,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        reviewed_on: 2026-10-24
         status: current
         decision: approved
         review_areas:
@@ -570,6 +586,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-evidence-only-completion-and-parent-closeout
+          - real-owner-publication-intent-current-registry-and-original-request-recovery
           - governance-console-seven-owner-bounded-authoring-composition
           - governance-console-native-profile-lifecycle-and-operating-proof-boundary
           - governance-console-existing-landing-postmerge-cold-owner-continuation
@@ -592,6 +610,14 @@ review_inventory:
           - governance-console-private-runtime-state-binding
           - governance-console-failure-first-rollback-order
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/server/delivery-item-completion-client.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/portfolio/live-runtime/owner-publication-intent.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/portfolio/presentation/surfaces/publication/owner-publication-surface.tsx
+          - repo: governance-operations-console
+            path: src/domain-workspaces/portfolio/server/product-publication-oos-client.ts
           - repo: governance-operations-console
             path: src/workspace-continuity/workspace-continuity-contract.ts
           - repo: operator-orchestration-service
