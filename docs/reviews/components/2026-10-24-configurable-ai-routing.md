@@ -20,7 +20,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@f7c0121992e6e0a56146fd5aa4d331270c1e833e`
+- `governance-operations-console@34ed8eaa8c1681a3fb75c08be5b806ed748cd439`
 - `operator-orchestration-service@4105930df00ae959e086e73f9c0121ae6e0acbf1`
 - `platform-engineering@01eb703385239cb092e79d86a4e3dd11f5bca186`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
@@ -49,7 +49,7 @@ Their independent owner gates and exact bindings remain enforced.
 
 ### Agent Focus reference projection maintenance
 
-The exact Console candidate above repairs its existing producer-to-request
+The exact Console revision above repairs its existing producer-to-request
 boundary. Focus previously concatenated subject, source, receipt and evidence
 references without the request validator's eight-entry bound. It now selects
 unique references in that stable order within the same limit, preserves the
@@ -66,7 +66,10 @@ producer-to-request regression reproduces the original422 before correction,
 then covers the boundary, larger lists, duplicates, unchanged source evidence,
 CGG-required policy and independent safety denials. All708 product tests,
 architecture guards, type checking, production build, repository validation and
-production dependency audit passed locally on the exact candidate. That is
+production dependency audit passed locally on reviewed Gary candidate
+`f7c0121992e6e0a56146fd5aa4d331270c1e833e`; source CI40133194994 passed and
+Console PR120 merged with the identical tree at the selected revision above.
+The runtime requires that actual merged Console identity. That is
 source proof; final accepted-source browser invocation and receipt readback are
 required after commissioning and are not asserted by this review.
 
