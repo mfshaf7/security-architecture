@@ -1,6 +1,79 @@
 # Governance Console Platform Operation Security Delta
 
-## Current approved-source continuation reassessment — 2026-10-24
+## Current same-source evidence revision reassessment — 2026-10-24
+
+### Summary
+
+Accept merged OOS373 within the existing local composition. Only the OOS
+implementation pin changes; Console117 and the other five pins, Platform tree,
+gate and Architecture Packet remain unchanged. The final Workspace Governance
+source remains in review and is not accepted by this decision.
+
+- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `governance-operations-console@7eadcd87cd1f41b0de4754d76e5ba8c58fd6a156`
+- `operator-orchestration-service@7455369a62888aaa422e7cc26ea0fbfa80bfab2f`
+- `platform-engineering@5f2ea37da1b8a50ea90e6929fb30b894ce3c0ad8`
+- `workspace-governance@c3d13dadb46cb26ff02788081b4f833430e18b53`
+- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@d7b0f49f9b886ed77fae99a2788d403a10b2b681`
+
+### Scope Delta
+
+The existing pre-merge lifecycle explicitly re-drafts when editable evidence
+changes. Source-only packet identity gave changed proof bytes the same
+immutable registry key. A complete normal-controller reproduction fails at
+that actual key-reuse boundary. Normal continuation also automatically acquires,
+drafts and seals before returning to an operator gate, contradicting the
+working plan's assumed pause before a supplemental validation attachment.
+
+Existing deterministic identity now includes the complete normalized Landing
+Unit, evidence and exceptions. Authoring timestamps and custody remain outside
+that identity. Local-draft classification uses the same payload. The normal
+transition obtains new immutable custody for changed proof at the same source
+head; unchanged proof retains its packet. Current historical durable packets
+remain valid, and the existing earlier-local-draft reconciliation path can
+regenerate older identities without rewriting historical records.
+
+No schema, API, permission, principal, workflow engine, registry mutability,
+source-head workaround or version counter is introduced. Required evidence,
+current source and PR checks, exception approval, independent human source
+review and receipt binding remain enforced. Finalization supersession remains
+post-merge only. Original-session recovery must revise its editable evidence
+and use the normal Console transition, preserving earlier custody.
+
+### Review Areas
+
+Delivery evidence integrity and review lineage. Provider and browser secrets,
+caller/operator attribution, source scope and leases, AI permissions and host
+control are unchanged. The new identifier names reviewed content; it grants
+no authority and cannot make malformed or unapproved proof admissible.
+
+### Decision
+
+Approved for the existing local composition. Gary source head
+`0d9dd3fc1582bd913f28014483ba500fbbc90808` is tree-identical to canonical OOS merge
+`7455369a62888aaa422e7cc26ea0fbfa80bfab2f`. All eleven native local CI validation/build/smoke steps
+passed on that exact head, including both runtime images, startup checks,
+API/bundle/governance/base-aware controls and the 1,605-case suite. The suite
+passed 1,603 cases and skipped two optional Studio-owner cases without a root;
+all three tests in their two files then passed against fresh full remote Studio
+history with zero skips. All twenty focused lifecycle-controller cases passed.
+The new regression fails before the correction, then exercises native same-head
+revision through immutable-key enforcement, intact prior custody and repeated
+unchanged-proof reuse. Provider run40043840831 and an exact separate human
+approval preceded merge.
+
+The owner-record Security index must include this actual merged change record.
+Fresh remote workspace-context validation and the native candidate reader are
+required; the old running OOS source must remain denied before normal activation.
+After commissioning, require the unflagged current-source reader and actual
+original-session evidence revision/custody readback. This source acceptance does
+not claim that operating result, final guidance acceptance, private-client or
+stage/production readiness. Rollback retains all immutable artifacts and the
+existing post-merge lineage rules.
+
+## Historical approved-source continuation reassessment — 2026-10-24
 
 ### Summary
 

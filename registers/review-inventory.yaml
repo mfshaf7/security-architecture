@@ -494,7 +494,7 @@ review_inventory:
         decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        reviewed_on: 2026-10-24
         status: current
         decision: approved
         review_areas:
@@ -504,6 +504,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - existing-premerge-evidence-revision-identity
           - direct-intake-caller-target-source-journal-without-owner-attestation
           - retained-closure-authenticated-current-platform-disposition
           - first-and-ordinary-session-observations-without-command-revision-fabrication
@@ -531,6 +532,14 @@ review_inventory:
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/delivery-art/lifecycle-authoring.js
+          - repo: operator-orchestration-service
+            path: src/delivery-art/lifecycle-controller.js
+          - repo: operator-orchestration-service
+            path: test/delivery-art-lifecycle-controller.test.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-24-review-packet-evidence-revision.md
           - repo: operator-orchestration-service
             path: src/workspace-intake/service.js
           - repo: operator-orchestration-service
@@ -1074,7 +1083,7 @@ review_inventory:
         decision: approved
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        reviewed_on: 2026-10-24
         status: current
         decision: approved
         review_areas:
@@ -1084,6 +1093,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - existing-premerge-evidence-revision-identity
           - oos-canonical-source-intent-before-effects
           - prototype-finalized-native-owner-packet-and-source-readback
           - prototype-real-registry-context-authoring-and-source-transfer
@@ -1093,6 +1103,14 @@ review_inventory:
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/delivery-art/lifecycle-authoring.js
+          - repo: operator-orchestration-service
+            path: src/delivery-art/lifecycle-controller.js
+          - repo: operator-orchestration-service
+            path: test/delivery-art-lifecycle-controller.test.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-24-review-packet-evidence-revision.md
           - repo: operator-orchestration-service
             path: src/repository-owner-bootstrap/scaffold.js
           - repo: operator-orchestration-service
