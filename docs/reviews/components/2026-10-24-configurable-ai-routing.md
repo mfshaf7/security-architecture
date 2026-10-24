@@ -26,9 +26,9 @@ Reviewed exact sources:
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@e04dfd2dd8ac6aa5b7049ccb8bde7f2452c0f5e1`
-- `platform-engineering-tree@c9a7d748c1aef8b82e6bc8644c614dd45452907d`
+- `platform-engineering-tree@633b4b3c8b5a3f2a9f12a0ec1fa2721c6308866e`
 
-The Platform revision is the actual Gary-authored retained-audit ownership correction.
+The Platform revision is the Gary-authored native account admission correction.
 Its source tree must be identical after merge. The merged initial commissioning
 PR336, foundation PR334, custody correction PR335 and image-delivery correction
 PR337, execution-binding correction PR338 and metadata-budget correction PR339
