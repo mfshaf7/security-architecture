@@ -20,7 +20,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@aba9c07423dbd83a24fa81d92222ebe747a73772`
+- `governance-operations-console@f7c0121992e6e0a56146fd5aa4d331270c1e833e`
 - `operator-orchestration-service@4105930df00ae959e086e73f9c0121ae6e0acbf1`
 - `platform-engineering@01eb703385239cb092e79d86a4e3dd11f5bca186`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
@@ -46,6 +46,29 @@ the [preceding complete-runtime acceptance](2026-10-15-governance-console-platfo
 Their independent owner gates and exact bindings remain enforced.
 
 ## Review Areas
+
+### Agent Focus reference projection maintenance
+
+The exact Console candidate above repairs its existing producer-to-request
+boundary. Focus previously concatenated subject, source, receipt and evidence
+references without the request validator's eight-entry bound. It now selects
+unique references in that stable order within the same limit, preserves the
+complete owner lists, and discloses a bounded selection in the visible context
+signals. The browser reports context submission for validation without claiming
+an OOS acknowledgement. These are Console projection and status corrections;
+OOS, CGG, gateway, provider, caller, data and action permissions are unchanged.
+
+The independent server validator shares the existing list limit and continues
+to reject oversized or secret-like direct browser input. Full evidence remains
+available in Focus and the owning surface; no local admission, raw-context
+fallback, arbitrary limit increase or canonical mutation is introduced. The
+producer-to-request regression reproduces the original422 before correction,
+then covers the boundary, larger lists, duplicates, unchanged source evidence,
+CGG-required policy and independent safety denials. All708 product tests,
+architecture guards, type checking, production build, repository validation and
+production dependency audit passed locally on the exact candidate. That is
+source proof; final accepted-source browser invocation and receipt readback are
+required after commissioning and are not asserted by this review.
 
 ### Identity and source separation
 

@@ -307,8 +307,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-24
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
+        reviewed_on: 2026-10-25
         status: current
         decision: approved
         review_areas:
@@ -353,6 +353,7 @@ review_inventory:
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
           - configurable-ai-native-model-management-composed-boundary
+          - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
           - repo: governance-operations-console
             path: src/environment-lifecycle/presentation/source-authorization-panel.tsx
