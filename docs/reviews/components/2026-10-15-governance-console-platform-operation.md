@@ -1,6 +1,72 @@
 # Governance Console Platform Operation Security Delta
 
-## Current merged final-guidance source reassessment — 2026-10-24
+## Current merged candidate-closure metadata reassessment — 2026-10-24
+
+### Summary
+
+Accept merged Workspace Governance PR301 in the existing local composition.
+Only its reviewed source pin advances. The other six implementation pins,
+Platform tree, gate, Architecture Packet and current authority boundaries remain
+the same.
+
+- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `governance-operations-console@7eadcd87cd1f41b0de4754d76e5ba8c58fd6a156`
+- `operator-orchestration-service@7455369a62888aaa422e7cc26ea0fbfa80bfab2f`
+- `platform-engineering@5f2ea37da1b8a50ea90e6929fb30b894ce3c0ad8`
+- `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
+- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@d7b0f49f9b886ed77fae99a2788d403a10b2b681`
+
+### Scope And Security Judgment
+
+The source reconciles eleven carried improvement records and four unique
+historical records against existing durable controls and actual owner proof.
+Their findings, original scope and missed follow-up history remain available.
+Stale proposed mechanisms receive explicit dispositions. Current source contains
+148 closed candidate records and zero pending candidates. The qualification
+report records actual Epic1275 terminal acceptance and its native receipt.
+
+The capability contract changes only `operating_truth.observed_at`, from the
+stale October15 timestamp to canonical qualification readback at
+`2026-10-24T01:51:43.133012Z`. All capability statuses, source references,
+fresh-evidence requirements and stale/missing denial semantics remain identical.
+The generated compact view reflects that date. This observation remains evidence
+data; every future owner mutation still requires its current readiness and
+authority checks.
+
+The accepted public-source, browser-local and internal-publication scope is
+unchanged. Private client source, hosting and stage/prod remain unqualified.
+Gary source authorship and delegated external human review retain their existing
+roles. Existing identity, secret, provider, runtime, AI and host permissions are
+preserved. The current metadata contract exceeds the closed record-only refresh
+allowance, so the normal exact-source acceptance and activation path applies.
+
+### Evidence And Decision
+
+Approved for the existing local composition. Exact Gary head
+`923dec0921c1b2e3d509f2819270c1d76ef8482e` is tree-identical to actual canonical
+merge `ebb2693615c58448d904cbd6f0772073820fecf1`. All23 native WG CI-equivalent
+steps passed against fetched `origin/main` at
+`2a6ed1dfd5849f837083eadba629f65ab76cf49e`, including298 tests. Provider run
+`40053080429` passed and the delegated human approved the exact source head.
+All15 record resolutions passed immediate structured-record validation.
+
+Actual Console command
+`delivery-closeout-command:console-5f6a9d32-728a-4125-aa18-8fa998c2c2ce` completed
+Epic1275, receipt digest
+`sha256:ad6de83b461eaa1bfc8a93f98b09fffe7c483db948b9e23c3d6128dddec945c0`.
+The retained pre-maintenance clean-state receipt is separate from final
+maintenance cleanup. Native Platform checks qualified the older Kubernetes
+lesson with four existing ownership tests, five actual producer revocation
+patches under server dry-run and five current Secret metadata checks.
+
+Native Security validation and the composed candidate reader must pass for this
+exact source. Normal complete-runtime activation, current owner readback and
+final source cleanup provide the later operating evidence. This source review
+does not replace their receipts.
+
+## Historical merged final-guidance source reassessment — 2026-10-24
 
 ### Summary
 
