@@ -21,7 +21,7 @@ Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@aba9c07423dbd83a24fa81d92222ebe747a73772`
-- `operator-orchestration-service@fe3396df56576a439897866b4b844a03491a77fe`
+- `operator-orchestration-service@4105930df00ae959e086e73f9c0121ae6e0acbf1`
 - `platform-engineering@6d798f1a2f410e1c39c242fb4688a96e7d08eebe`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -404,7 +404,43 @@ compilation, shell syntax, JSON contracts and fetched-base checks pass at the
 exact published head; provider CI40120362160 passed and accountable human review
 approved the merge. The decision binds the actual merged CGG revision; unchanged
 Platform candidate/tree and other owner bindings remain intact. Use the existing
-complete-runtime restart to reconcile the composition, then prove the original
+complete-runtime activation to reapply the changed CGG profile, then prove the original
 normal Console short-text request, actual redacted CGG receipt, model selection
 and unchanged account/configuration before operating closure. Source acceptance
 alone does not claim that live proof.
+
+## Distinct Refinement projection and assist-context digests
+
+Actual CGG returned200 ready after its dedicated runtime binding was restored,
+but OOS rejected the receipt. CGG request_digest hashes the canonical envelope
+{binding, refinement_context: assist_request}; binding.context_digest separately
+binds the canonical assist request. OOS and its fixture mistakenly required the
+two digests to be equal. The correction restores the existing owner receipt
+semantics rather than changing its schema or reducing integrity checks.
+
+OOS PR375 actual merge4105930df00ae959e086e73f9c0121ae6e0acbf1 retains
+Gary9fb96d2f84329a12f2158d8444c55bc07ffc6f25 exactly
+(tree923e6341c7416225221525706da9eb43d8ff786f). It verifies the full envelope
+and retains the independent context digest, caller/operator, workflow/execution,
+source/packet revisions, selected field/nodes, task, time, budget, redaction and
+suggestion-only authority checks before model invocation. The corrected owner-
+formula fixture fails against the old comparison. Negative tests reject the
+context-only digest and operator/packet/node/context tampering; recomputing the
+envelope hash for tampered bindings still cannot bypass separate binding checks.
+
+All1621 tests passed with two documented skips and no failures. Nineteen exact
+committed local CI-equivalent checks against fetched origin/main, API/worker
+image builds, actual API HTTP startup and fail-closed worker image smoke passed.
+Provider CI40122095432 passed and accountable human review approved the exact
+Gary head before merge. The owner change-record index is regenerated for the
+landed OOS record. No caller, data, task, model, canonical apply, privilege or
+network authority changes. Other accepted owner revisions and Platform's
+original reviewed candidate/tree remain unchanged.
+
+The preceding full CGG composition activation20261024T184056Z and independent
+status20261024T184251Z passed. Dedicated account/configuration13 survived and
+normal Console Work Design context/tree advice completed with actual Codex high.
+After this OOS source acceptance, use the existing complete-runtime restart to
+reload the exact source, then require the unchanged normal short-text Refinement
+request to return actual CGG/gateway/selection evidence before qualification
+closure. Source acceptance alone is not live inference or canonical apply proof.
