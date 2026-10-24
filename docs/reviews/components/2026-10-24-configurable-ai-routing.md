@@ -22,21 +22,21 @@ Reviewed exact sources:
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
 - `governance-operations-console@6c9d407d85a0344509024a0f01c6b616366f3015`
 - `operator-orchestration-service@fe3396df56576a439897866b4b844a03491a77fe`
-- `platform-engineering@2a181e879f0419ee795dbca13be0f006f857a41d`
+- `platform-engineering@5da7ee0acac75918cc54d6d5d67aeec6c56a1b52`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@e04dfd2dd8ac6aa5b7049ccb8bde7f2452c0f5e1`
-- `platform-engineering-tree@b65f7c381b3dcada8579253cb3dbe3fad9338b70`
+- `platform-engineering-tree@26b323ba437caa57b5f6e8816a977a3ea5ddca0e`
 
-The Platform revision is the actual Gary-authored [PR338 execution-binding candidate](https://github.com/mfshaf7/platform-engineering/pull/338).
+The Platform revision is the actual Gary-authored metadata-budget correction.
 Its source tree must be identical after merge. The merged initial commissioning
 PR336, foundation PR334, custody correction PR335 and image-delivery correction
-PR337 are already in its base. OOS
+PR337 plus execution-binding correction PR338 are already in its base. OOS
 PR374 and Console PR118 are merged. The other execution owners retain their
 previous implementation. Studio's intervening changes are bounded Prototype
 lifecycle/design records, with no change to its execution controls.
 
-The reviewed [Platform composition](https://github.com/mfshaf7/platform-engineering/blob/2a181e879f0419ee795dbca13be0f006f857a41d/products/governance-operations-console/scripts/console_model_management.py)
+The reviewed [Platform composition](https://github.com/mfshaf7/platform-engineering/blob/5da7ee0acac75918cc54d6d5d67aeec6c56a1b52/products/governance-operations-console/scripts/console_model_management.py)
 is part of the existing complete-runtime operator path. Its parent consumes
 this decision before runtime image resolution, credential issuance or workload effects.
 This review also retains the inherited finite Platform-operation, repository
@@ -273,6 +273,29 @@ and marker gives one assertion failure and no setup errors; the corrected
 regression passes with global/system Git config disabled and ambient operator
 identity excluded. Provider CI and exact-head accountable review remain required
 before this maintenance source merges. Real runtime completion remains separate.
+
+## Metadata budget correction
+
+Actual Console verification of the admitted local model failed before inference
+because its 4096-byte task-output allowance was also applied to the 5242-byte
+provider inventory. The same synthetic chat independently returned valid JSON;
+the exact gateway adapter reproduced the inventory-size rejection. Preserve both
+rejected requests as evidence rather than editing registration state.
+
+The candidate separates bounded GET metadata from POST model output, using the
+catalogue's existing 1 MB metadata cap. Inference response limits, runtime/model
+identity checks, native effort, schema validation, single-slot execution and
+no-fallback integrity remain enforced. It changes no provider/account/network
+permission or image input. This remains within the accepted existing composition.
+
+The real HTTP regression exercises complete model registration with inventory
+larger than the output allowance, replay of its receipt without another chat,
+oversized-output rejection and oversized-metadata rejection before inference.
+It reproduces the exact pre-inference failure with the previous adapter and
+passes with the candidate. Existing adapter and routing suites also pass.
+Exact-head owner CI-equivalent checks, provider checks and accountable review
+remain source landing gates. Recommission the exact accepted merged tree before
+repeating Console qualification; never hot-patch the running gateway module.
 
 ## Decision
 
