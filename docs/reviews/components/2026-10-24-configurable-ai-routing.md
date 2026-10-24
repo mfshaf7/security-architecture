@@ -22,20 +22,21 @@ Reviewed exact sources:
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
 - `governance-operations-console@6c9d407d85a0344509024a0f01c6b616366f3015`
 - `operator-orchestration-service@fe3396df56576a439897866b4b844a03491a77fe`
-- `platform-engineering@bf5e6484edbb26baace6c88240c8de36c414196e`
+- `platform-engineering@2a181e879f0419ee795dbca13be0f006f857a41d`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@e04dfd2dd8ac6aa5b7049ccb8bde7f2452c0f5e1`
-- `platform-engineering-tree@17a7511bee01a0171d619b617a33d9e2cbce00e0`
+- `platform-engineering-tree@b65f7c381b3dcada8579253cb3dbe3fad9338b70`
 
-The Platform revision is the actual Gary-authored [PR337 corrective candidate](https://github.com/mfshaf7/platform-engineering/pull/337).
+The Platform revision is the actual Gary-authored [PR338 execution-binding candidate](https://github.com/mfshaf7/platform-engineering/pull/338).
 Its source tree must be identical after merge. The merged initial commissioning
-PR336, foundation PR334 and custody correction PR335 are already in its base. OOS
+PR336, foundation PR334, custody correction PR335 and image-delivery correction
+PR337 are already in its base. OOS
 PR374 and Console PR118 are merged. The other execution owners retain their
 previous implementation. Studio's intervening changes are bounded Prototype
 lifecycle/design records, with no change to its execution controls.
 
-The reviewed [Platform composition](https://github.com/mfshaf7/platform-engineering/blob/bf5e6484edbb26baace6c88240c8de36c414196e/products/governance-operations-console/scripts/console_model_management.py)
+The reviewed [Platform composition](https://github.com/mfshaf7/platform-engineering/blob/2a181e879f0419ee795dbca13be0f006f857a41d/products/governance-operations-console/scripts/console_model_management.py)
 is part of the existing complete-runtime operator path. Its parent consumes
 this decision before runtime image resolution, credential issuance or workload effects.
 This review also retains the inherited finite Platform-operation, repository
@@ -142,6 +143,31 @@ credential issuance. Source checks do not assert package visibility or successfu
 node pull; commissioning must prove those actual dependencies. Gateway, account,
 model and consumer controls reviewed above remain unchanged.
 
+### Reviewed provenance and actual execution identity
+
+PR337's published immutable artifact actually deployed, and the authenticated
+Console model registry returned HTTP200. The final provider check then rejected
+a healthy/current provider with all nine finite capabilities: it compared
+reviewed candidate `bf5e6484edbb26baace6c88240c8de36c414196e` with actual
+squash merge `cc254ddc4ee6d0b25e7d8f15ba6fd44507fd2bd4`, even though the strict
+accepted tree check had passed. Repeated provider restart cannot change those
+legitimate distinct Git identities.
+
+PR338 derives the execution revision from the actual selected Platform source
+only after the existing exact-tree, clean-source and other-owner gates pass.
+Original reviewed revisions, accepted tree and decision digest remain the
+Security provenance. The active marker records that validated execution snapshot
+instead of stamping a later unvalidated Git tip. Actual provider readback must
+match the execution revision; changed/dirty source and later provider drift
+remain denied. This is a correction to the existing binding, not an ancestry
+waiver, a private-policy edit or a new completion mechanism. No post-merge
+source-pin update is required for an identical-tree squash merge.
+
+The six other execution owners, image inputs and published artifact, account
+custody, model/task/data permissions, gateway isolation and source/human approval
+boundaries remain unchanged. This bounded maintenance uses ordinary Gary source
+scope and the existing accountable review/merge path.
+
 ### Model choices, context and fallback
 
 The existing six profiles retain purpose, caller, CGG model-safe data, task,
@@ -233,6 +259,20 @@ anonymous node pull and account/provider operation remain commissioning evidence
 not claims made by these local tests. The existing bounded maintenance path
 retains Gary authorship and accountable human review; the original ART source
 packet is preserved rather than rewritten to pretend it covered a later fix.
+
+The execution-binding candidate `2a181e879f0419ee795dbca13be0f006f857a41d`
+passed all twelve exact-head local CI-equivalent checks against fetched
+`origin/main@cc254ddc4ee6d0b25e7d8f15ba6fd44507fd2bd4` in the owner evidence
+environment. The complete-runtime suite reports 70 tests with four explicit
+optional skips. The new full resolver-to-catalog test uses real Git candidate
+and squash commits with identical trees and differing IDs. It preserves the
+reviewed candidate/digest while accepting the actual execution revision, denies
+dirty/changed source, and prevents a later provider revision from reusing the
+validated marker. Running the same regression with the old accepted resolver
+and marker gives one assertion failure and no setup errors; the corrected
+regression passes with global/system Git config disabled and ambient operator
+identity excluded. Provider CI and exact-head accountable review remain required
+before this maintenance source merges. Real runtime completion remains separate.
 
 ## Decision
 
