@@ -318,6 +318,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - agent-workspace-current-owner-read-context-and-partial-coverage
+          - agent-native-dialog-presentation-and-mode-session-handover
           - approved-source-selected-intent-continuation
           - private-transaction-process-death-and-pid-reuse-recovery
           - native-completion-response-budget-and-format-feedback
@@ -355,6 +357,12 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/console-shell/context/agent-workspace-context.ts
+          - repo: governance-operations-console
+            path: tests/console-architecture/agent-workspace-context.test.mjs
+          - repo: governance-operations-console
+            path: tests/browser/agent-workspace.spec.mjs
           - repo: governance-operations-console
             path: src/environment-lifecycle/presentation/source-authorization-panel.tsx
           - repo: governance-operations-console
@@ -615,7 +623,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
-        reviewed_on: 2026-10-24
+        reviewed_on: 2026-10-25
         status: current
         decision: approved
         review_areas:
@@ -625,6 +633,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - agent-workspace-current-owner-read-context-and-partial-coverage
+          - agent-native-dialog-presentation-and-mode-session-handover
           - approved-source-selected-intent-continuation
           - private-transaction-process-death-and-pid-reuse-recovery
           - native-completion-response-budget-and-format-feedback
@@ -653,6 +663,12 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/console-shell/context/agent-workspace-context.ts
+          - repo: governance-operations-console
+            path: tests/console-architecture/agent-workspace-context.test.mjs
+          - repo: governance-operations-console
+            path: tests/browser/agent-workspace.spec.mjs
           - repo: governance-operations-console
             path: src/environment-lifecycle/presentation/source-authorization-panel.tsx
           - repo: governance-operations-console
