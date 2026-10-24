@@ -19,7 +19,7 @@ current clean Security main and verify the exact source/tree bindings.
 
 Reviewed exact sources:
 
-- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@aba9c07423dbd83a24fa81d92222ebe747a73772`
 - `operator-orchestration-service@fe3396df56576a439897866b4b844a03491a77fe`
 - `platform-engineering@6d798f1a2f410e1c39c242fb4688a96e7d08eebe`
@@ -378,3 +378,33 @@ Retain source/receipt correlation, revocation, rollback and owned-resource clean
 Do not infer private client custody, autonomous code quality or stage/prod from
 this acceptance. Existing baseline findings and separate authority gates remain
 in their own inventories; none is silently closed by this delta.
+
+## Registered Refinement projection credential delivery
+
+The unchanged normal Console short-text advice reached CGG403 after the producer
+DTO correction: the shared CGG profile omitted the already contracted Refinement
+caller credential. Existing workspace composition declares caller and credential
+projections, and CGG requires the dedicated matching secret. Work Design and
+Agent Console admission do not substitute for this separate projection boundary.
+
+CGG PR30, actual merge f017980f265657dfdad6d70e6dc924b99276b266, preserves the
+reviewed Gary candidate dda55f474709c3fb7f6d280e15341954e90df6db exactly
+(tree4bae0e1e7244edf1883a7c137f3b4d22acbd43dd). Its profile now requires the
+registered refinement-catalog composition, exact OOS allowlist and a dedicated
+credential, rejects missing or newline-bearing bindings before launch, and
+projects that credential through its own ephemeral Kubernetes secret. The API
+manifest references the secret optionally so standalone stays default-off; it
+never contains the credential value. Status compares only that binding, reports
+missing/mismatch without disclosure, and teardown/failed activation remove it.
+No cross-boundary secret substitution, raw projection, extra caller, canonical
+mutation, task permission or model/account authority is introduced.
+
+The new boundary tests fail against the old profile. All98 tests, Python
+compilation, shell syntax, JSON contracts and fetched-base checks pass at the
+exact published head; provider CI40120362160 passed and accountable human review
+approved the merge. The decision binds the actual merged CGG revision; unchanged
+Platform candidate/tree and other owner bindings remain intact. Use the existing
+complete-runtime restart to reconcile the composition, then prove the original
+normal Console short-text request, actual redacted CGG receipt, model selection
+and unchanged account/configuration before operating closure. Source acceptance
+alone does not claim that live proof.
