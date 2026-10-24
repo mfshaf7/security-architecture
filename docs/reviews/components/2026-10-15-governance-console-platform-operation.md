@@ -1,6 +1,86 @@
 # Governance Console Platform Operation Security Delta
 
-## Current same-source evidence revision reassessment — 2026-10-24
+## Current merged final-guidance source reassessment — 2026-10-24
+
+### Summary
+
+Accept the actually Console-merged Workspace Governance PR300 within the existing
+local composition. Only the Workspace Governance implementation pin changes;
+the other six pins, Platform tree, gate and Architecture Packet remain unchanged.
+
+- `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
+- `governance-operations-console@7eadcd87cd1f41b0de4754d76e5ba8c58fd6a156`
+- `operator-orchestration-service@7455369a62888aaa422e7cc26ea0fbfa80bfab2f`
+- `platform-engineering@5f2ea37da1b8a50ea90e6929fb30b894ce3c0ad8`
+- `workspace-governance@2a6ed1dfd5849f837083eadba629f65ab76cf49e`
+- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
+- `workspace-prototype-studio@88ca4cd49cd0f12e70209e368cf4e7564c1aab85`
+- `platform-engineering-tree@d7b0f49f9b886ed77fae99a2788d403a10b2b681`
+
+### Scope Delta
+
+The source publishes the connected primary operator procedure, bounded dated
+qualification report and correlated native app journey evidence. Its capability
+observations cite the actual qualified journey rather than fixture success.
+Public source, browser-local runtime and internal publication remain the proven
+scope. Private client source, managed hosting, stage/prod and autonomous model
+source quality are not inferred. Gary authors source; delegated external human
+review and bounded engineering diagnostics remain explicit exceptions.
+
+The cross-repo evidence-profile validator retains tests and validations for
+all owners and the established matching-fidelity minimum for explicitly
+activated control-plane owners. An Inventory-derived source-only product with
+no architecture cases does not need invented case bindings. Exact-base
+work-start still matches every actual architecture case's evidence kind and
+fidelity. This is consistent with current owner admission, not a new Source,
+Platform or Security permission.
+
+Existing learning records preserve observed failures and actual landed control
+history, keep pending ownership explicit and close the completed kernel-lease
+repair with native source/operating evidence. All remaining improvement
+candidates, including unique older review records, must be resolved and closed
+following the Epic; preservation and updated dates do not claim completion.
+A non-blocking catalogue-data finding remains in that existing cleanup: its
+observation timestamp was left at the original audit when qualification values
+changed. Correct it from a fresh canonical observation. Fresh owner evidence is
+still mandatory and stale or missing evidence is not reusable; that timestamp
+does not grant runtime, lifecycle or deployment authority.
+
+### Review Areas
+
+Delivery evidence, owner-bound governance data and trusted validator source.
+No authentication, secret, provider, AI action, host, runtime exposure or
+source-writer permission changes. The existing complete composition keeps
+reviewed execution code separate from refreshed canonical records. These
+changed guidance/contract/validator paths exceed its record-only allowance,
+so this exact-source readmission precedes post-merge operating checks.
+
+### Decision
+
+Approved for the existing local composition. Exact Gary head
+`ada433ee64b59f51b47ef1bcba1a704e1e12439a` is tree-identical to canonical merge
+`2a6ed1dfd5849f837083eadba629f65ab76cf49e`. All 23 native local CI run steps passed, including 298
+owner tests, fresh remote owner context, base-aware controls, source safety,
+Security/review/learning checks, agent conformance and installed-skill checks.
+Provider run40041483152 passed and exact human review5635653222 approved that
+head. Actual Console source merge completed with HTTP200 and native command
+receipt console-merge-03fc9466-2c6d-4984-809e-92c0ab430568.
+
+Before merge, the normal revised immutable packet
+`wgcf://artifacts/delivery-art/sha256/8444bd6bc85c536e2af7085560d3946d45031b12ee40b0dc2a3f5e37e25b0879`
+covered the full local CI command, fetched base and passing result, supported by
+the actual exact-head human attestation. It retained the same source and original
+session while preserving earlier custody. The source-approval expiry used the
+existing explicit revoke/successor flow; no approval or credential guard was
+bypassed.
+
+Fresh native Security validation and the composed source reader must pass.
+Normal activation and the unflagged current-source reader precede #1299
+operating readiness, finalization, cleanup and parent/Epic acceptance. Source
+acceptance does not claim those later outcomes or completion of pending
+candidates. No new public/client or governed environment acceptance is granted.
+
+## Historical same-source evidence revision reassessment — 2026-10-24
 
 ### Summary
 

@@ -90,13 +90,13 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-22-workspace-governance-delegated-execution-governance.md
-        reviewed_on: 2026-10-23
+        reviewed_on: 2026-10-24
         review_due_on: 2027-04-23
         status: active
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        reviewed_on: 2026-10-24
         status: current
         decision: approved
         review_areas:
@@ -105,6 +105,7 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - final-guidance-native-qualification-and-owner-profile-boundary
           - complete-composition-dedicated-work-design-context-binding
           - inert-prototype-source-import-metadata-boundary
           - atomic-complete-source-owner-registration
@@ -115,6 +116,12 @@ review_inventory:
           - product-publication-registry-publication-separation
           - product-publication-restore-history-integrity
         owner_artifacts:
+          - repo: workspace-governance
+            path: contracts/console-operational-capabilities.yaml
+          - repo: workspace-governance
+            path: reports/console-journey-1275-qualification.md
+          - repo: workspace-governance
+            path: scripts/validate_cross_repo_truth.py
           - repo: workspace-governance
             path: contracts/developer-integration-profiles.yaml
           - repo: workspace-governance
