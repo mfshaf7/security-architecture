@@ -20,7 +20,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@34ed8eaa8c1681a3fb75c08be5b806ed748cd439`
+- `governance-operations-console@b98956a0ab10c11c933c1b9ec7d3ad781967509d`
 - `operator-orchestration-service@4105930df00ae959e086e73f9c0121ae6e0acbf1`
 - `platform-engineering@01eb703385239cb092e79d86a4e3dd11f5bca186`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
@@ -72,6 +72,45 @@ Console PR120 merged with the identical tree at the selected revision above.
 The runtime requires that actual merged Console identity. That is
 source proof; final accepted-source browser invocation and receipt readback are
 required after commissioning and are not asserted by this review.
+
+### Agent mode and native-dialog maintenance
+
+The selected Console source extends the existing read-only candidate composition.
+Focus uses the selected page/record; Workspace uses a bounded cross-Console
+summary of the already validated same-origin owner reads. Registry has its own
+identity. Mode/scope checks remain independent at the server, eight-entry and
+character limits remain unchanged, and the visible candidate still passes through
+OOS session custody, CGG admission/redaction and the governed model/audit path.
+Current, unavailable/expired and disconnected-preview coverage are explicit;
+failed reads attach no retained facts and preview fixtures cannot qualify as live
+workspace information. Counts and bounded status/identity summaries do not imply
+exhaustive knowledge of owner records. Raw source, logs, host telemetry, native
+sign-in data, credentials and connection details are excluded. This grants no new
+API, model tool, source authoring, canonical write or release permission.
+
+The floating presentation enters only opted-in native workspace dialogs. Its
+provider and request controller stay mounted; nested approval/review dialogs hide
+that presentation and retain native focus and Escape. The existing modal scroll
+counter is shared with expanded Agent presentation. Pending requests retain their
+original candidate, nonce and invocation while navigating; mode changes close the
+old session before rotating, and open-and-run waits for the new mode/session
+render. No model-owned authority or alternate dialog/approval manager is added.
+
+Gary candidate `e6b7366a66858bda993dd8f443e60a641f0c43b5` passed all713
+semantic tests, guards, types, production build, repository validation and
+dependency audit. Eight synthetic browser cases passed; CI40140638181 passed.
+Console PR121 merged as the exact selected revision above with an identical
+source tree. Read-only current-owner composition qualified all8 sources and
+passed the independent request contract. This is source and read proof, not a
+completed model invocation on the newly commissioned runtime.
+
+Source evidence covers owner DTOs, producer-to-request combinations for every
+registered workspace, independent mismatch denials, partial/stale/preview
+coverage, the unchanged context budget, native-dialog clicks and keyboard
+behavior, retained prompts/transcripts, nested guards and a pending invocation.
+Browser source tests explicitly use synthetic owner responses; they are not
+operating evidence. Exact accepted-source commissioning, real browser invocation
+and OOS/CGG/model receipt readback remain required after this review lands.
 
 ### Identity and source separation
 
