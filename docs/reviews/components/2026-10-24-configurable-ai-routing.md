@@ -20,7 +20,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
-- `governance-operations-console@6c9d407d85a0344509024a0f01c6b616366f3015`
+- `governance-operations-console@aba9c07423dbd83a24fa81d92222ebe747a73772`
 - `operator-orchestration-service@fe3396df56576a439897866b4b844a03491a77fe`
 - `platform-engineering@6d798f1a2f410e1c39c242fb4688a96e7d08eebe`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
@@ -331,6 +331,37 @@ tests cover missing/nonregular storage before provider dispatch and Recreate
 manifest semantics. Exact-head CI-equivalent, provider and human review gates
 still precede landing, then existing full commissioning and actual invocation
 readback must prove operation. The fixed image inputs remain unchanged.
+
+## Required empty Refinement options
+
+The normal Console short-text Refinement route was rejected before inference:
+its producer omitted target.allowed_values for an empty list although the OOS
+assist-request schema requires that array for every field type. A generic model
+profile call did not exercise this producer/owner DTO boundary. Preserve the
+original failing field and the owner contract; do not switch to a nonempty select
+field to hide the mismatch or expand model permissions.
+
+The reviewed Console candidate e62ba642de8d4df78131c3d40202872e0c61202e
+(tree757a8a85e0d8d2939fb069204b3cc974c74f7759) always serializes the required
+array, including[]. A producer wire-contract test covers all four admitted field
+types and existing nonempty-select behavior remains covered. The test fails
+against the old producer before correction; all705 Console tests, architecture
+guards, type/build/repository checks and the dependency audit pass at the exact
+candidate. No owner schema, task purpose, caller, data scope, approval, canonical
+apply or provider authority changes. This is an existing bounded consumer repair.
+
+The actual Console PR119 merge is aba9c07423dbd83a24fa81d92222ebe747a73772
+with the identical reviewed tree. Its provider CI passed at the exact Gary head;
+accountable review and source merge are recorded. The decision binds that actual
+merged Console revision without inventing a future commit or repinning unchanged
+Platform execution source.
+
+The composed decision must bind the actual merged Console source after normal
+Gary publication and accountable review. Use the existing complete-runtime
+restart/status path for the changed Console acceptance; the Platform source,
+gateway code/image, account custody and other owner revisions remain unchanged.
+Actual normal short-text advice and its selection/owner receipts must pass before
+operating closure. The source change is not proof of provider entitlement.
 
 ## Decision
 
