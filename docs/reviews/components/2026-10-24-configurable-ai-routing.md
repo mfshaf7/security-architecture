@@ -22,21 +22,22 @@ Reviewed exact sources:
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
 - `governance-operations-console@6c9d407d85a0344509024a0f01c6b616366f3015`
 - `operator-orchestration-service@fe3396df56576a439897866b4b844a03491a77fe`
-- `platform-engineering@5da7ee0acac75918cc54d6d5d67aeec6c56a1b52`
+- `platform-engineering@6d798f1a2f410e1c39c242fb4688a96e7d08eebe`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@e04dfd2dd8ac6aa5b7049ccb8bde7f2452c0f5e1`
-- `platform-engineering-tree@26b323ba437caa57b5f6e8816a977a3ea5ddca0e`
+- `platform-engineering-tree@c9a7d748c1aef8b82e6bc8644c614dd45452907d`
 
-The Platform revision is the actual Gary-authored metadata-budget correction.
+The Platform revision is the actual Gary-authored retained-audit ownership correction.
 Its source tree must be identical after merge. The merged initial commissioning
 PR336, foundation PR334, custody correction PR335 and image-delivery correction
-PR337 plus execution-binding correction PR338 are already in its base. OOS
+PR337, execution-binding correction PR338 and metadata-budget correction PR339
+are already in its base. OOS
 PR374 and Console PR118 are merged. The other execution owners retain their
 previous implementation. Studio's intervening changes are bounded Prototype
 lifecycle/design records, with no change to its execution controls.
 
-The reviewed [Platform composition](https://github.com/mfshaf7/platform-engineering/blob/5da7ee0acac75918cc54d6d5d67aeec6c56a1b52/products/governance-operations-console/scripts/console_model_management.py)
+The reviewed [Platform composition](https://github.com/mfshaf7/platform-engineering/blob/6d798f1a2f410e1c39c242fb4688a96e7d08eebe/products/governance-operations-console/scripts/console_model_management.py)
 is part of the existing complete-runtime operator path. Its parent consumes
 this decision before runtime image resolution, credential issuance or workload effects.
 This review also retains the inherited finite Platform-operation, repository
@@ -296,6 +297,40 @@ passes with the candidate. Existing adapter and routing suites also pass.
 Exact-head owner CI-equivalent checks, provider checks and accountable review
 remain source landing gates. Recommission the exact accepted merged tree before
 repeating Console qualification; never hot-patch the running gateway module.
+
+## Retained audit ownership correction
+
+After actual model registration and browser routing saves passed, real consumer
+calls reached the legacy root-owned0644 audit ledger from the nonroot gateway.
+The new configuration and invocation directories are owned by UID1000; this
+single retained file cannot accept an append. Preserve the historical audit
+and the original uncertain invocation records. A missing audit receipt is not
+evidence that a submitted model turn did not run.
+
+The candidate uses the existing writable volume to stream the exact stopped
+writer's legacy bytes into a private current-owner file and atomically replace
+the ledger. It requires a regular path, refuses changed input during handoff,
+syncs the file/directory and proves private append capability before serving.
+It does not change event bytes, recursively chown storage, gain root capability
+or delete history. Recreate cutover stops the preceding single-replica writer
+before this operation. Provider processes remain nonroot, readonly and bounded.
+No init-container, service-account, host/project mount or secret grant is added.
+
+Readiness and inference also reject unavailable private audit storage before
+provider dispatch. Nonblocking descriptor checks reject FIFOs without waiting;
+no audit reference or successful provider outcome is invented for that denial.
+Retained unknown invocation identities remain frozen and cannot silently invoke
+again after recovery. Existing task/output/configuration permissions are intact.
+
+The disposable container proof creates real root-owned0644 history, drops to
+actual UID1000 before exercising the serving code, reproduces the prior append
+denial, then verifies exact-byte handoff, private ownership, actual append,
+idempotent startup, unwritable-storage denial and symlink denial. Only synthetic
+tmpfs is writable in that proof; no live volume or credential is mounted. Owner
+tests cover missing/nonregular storage before provider dispatch and Recreate
+manifest semantics. Exact-head CI-equivalent, provider and human review gates
+still precede landing, then existing full commissioning and actual invocation
+readback must prove operation. The fixed image inputs remain unchanged.
 
 ## Decision
 
