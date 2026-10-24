@@ -3980,6 +3980,19 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-25-codex-account-contention-fallback.md
+  date: '2026-10-25'
+  short_title: Preserve configured fallback when native account admission is busy
+  review_areas:
+  - identity
+  - secrets
+  - runtime
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'

@@ -22,7 +22,7 @@ Reviewed exact sources:
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@aba9c07423dbd83a24fa81d92222ebe747a73772`
 - `operator-orchestration-service@4105930df00ae959e086e73f9c0121ae6e0acbf1`
-- `platform-engineering@6d798f1a2f410e1c39c242fb4688a96e7d08eebe`
+- `platform-engineering@01eb703385239cb092e79d86a4e3dd11f5bca186`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@e04dfd2dd8ac6aa5b7049ccb8bde7f2452c0f5e1`
@@ -444,3 +444,45 @@ After this OOS source acceptance, use the existing complete-runtime restart to
 reload the exact source, then require the unchanged normal short-text Refinement
 request to return actual CGG/gateway/selection evidence before qualification
 closure. Source acceptance alone is not live inference or canonical apply proof.
+
+## Native account admission and explicit provider fallback
+
+The real Codex-primary concurrency test held a real source-profile turn, which
+completed200, while an independent intake identity returned409 invocation-in-
+progress without its explicit local fallback. The account projection acquires
+its own nonblocking filesystem mutex before dispatch. Its raw BlockingIOError
+escaped the selected adapter and was mistaken for the invocation journal lock.
+This differs from a repeated invocation and from uncertainty after submission.
+
+The reviewed Platform candidate01eb703385239cb092e79d86a4e3dd11f5bca186
+(tree633b4b3c8b5a3f2a9f12a0ec1fa2721c6308866e) catches contention only while
+entering the existing account projection and maps it to existing ProviderBusy.
+ExitStack leaves adapter dispatch, account persistence and context-exit failures
+outside that catch. Account serialization, private ephemeral custody and CAS
+persistence remain intact. No caller, data, model, canonical action, privilege,
+network or fallback-policy boundary is broadened. Only already configured and
+purpose-admitted fallbacks may run before submission; uncertain prior work is
+never silently dispatched again.
+
+The actual account projection/flock through routed invocation reproduces the
+old409. The correction proves configured local fallback,503 exhaustion without
+fallback and original frozen-result replay after the account is free and routes
+change. Separate dispatch/context-exit tests prevent broad busy reclassification;
+the existing post-completion custody tests retain uncertainty and no fallback.
+All25 focused tests and12 exact committed local CI-equivalent checks pass,
+including the full dev-integration suite that loads the routing regressions.
+Provider CI40125875053 and repo-posture40125875085 passed at the exact Gary
+head. Accountable review approved Platform341 before actual merge
+4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1, whose tree exactly matches the
+reviewed candidate. The full dev-integration suite passed90 tests. The owner
+change-record index is regenerated for the landed record. No live reverse-
+fallback result is claimed from these owner tests.
+
+After owner and Security acceptance, land the learning records and freeze all
+selected source heads before the existing composed activation. Publish/reuse only
+the normal accepted runtime image, retain the dedicated native account and model
+configuration, then prove actual Codex-to-local fallback and no-fallback behavior
+with fresh explicit test identities. Original409 identities stay frozen/unknown.
+The existing non-source1321 operating qualification owns that final live proof,
+current source/configuration readback and native closure; this review does not
+claim whole-Epic completion or provider entitlement.
