@@ -22,22 +22,22 @@ Reviewed exact sources:
 - `context-governance-gateway@46ae520359bbce1b2bf0e06cd8a3f638c2684169`
 - `governance-operations-console@6c9d407d85a0344509024a0f01c6b616366f3015`
 - `operator-orchestration-service@fe3396df56576a439897866b4b844a03491a77fe`
-- `platform-engineering@4501e9ab2b674ca0a06a46a2b25d28cdaa316a53`
+- `platform-engineering@bf5e6484edbb26baace6c88240c8de36c414196e`
 - `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@e04dfd2dd8ac6aa5b7049ccb8bde7f2452c0f5e1`
-- `platform-engineering-tree@cf99a8eb54f84ca0d3073e6da6736562a5e249af`
+- `platform-engineering-tree@17a7511bee01a0171d619b617a33d9e2cbce00e0`
 
-The Platform revision is the actual Gary-authored [PR336 candidate](https://github.com/mfshaf7/platform-engineering/pull/336),
-not an invented future merge. Its source tree must be identical after merge.
-Foundation PR334 and custody correction PR335 are already in its base. OOS
+The Platform revision is the actual Gary-authored [PR337 corrective candidate](https://github.com/mfshaf7/platform-engineering/pull/337).
+Its source tree must be identical after merge. The merged initial commissioning
+PR336, foundation PR334 and custody correction PR335 are already in its base. OOS
 PR374 and Console PR118 are merged. The other execution owners retain their
 previous implementation. Studio's intervening changes are bounded Prototype
 lifecycle/design records, with no change to its execution controls.
 
-The reviewed [Platform composition](https://github.com/mfshaf7/platform-engineering/blob/4501e9ab2b674ca0a06a46a2b25d28cdaa316a53/products/governance-operations-console/scripts/console_model_management.py)
+The reviewed [Platform composition](https://github.com/mfshaf7/platform-engineering/blob/bf5e6484edbb26baace6c88240c8de36c414196e/products/governance-operations-console/scripts/console_model_management.py)
 is part of the existing complete-runtime operator path. Its parent consumes
-this decision before image import, credential issuance or workload effects.
+this decision before runtime image resolution, credential issuance or workload effects.
 This review also retains the inherited finite Platform-operation, repository
 provisioning, source-authoring, publication and owner-record boundaries from
 the [preceding complete-runtime acceptance](2026-10-15-governance-console-platform-operation.md).
@@ -109,6 +109,39 @@ invalid structured output. Native output-token control is not offered by this
 installed protocol; elapsed time, queues/messages, final bytes and container
 resources remain enforced. Private reasoning is not returned to consumers.
 
+### Runtime artifact delivery correction
+
+The initial accepted activation of PR336 failed at host image import: the
+admitted user-systemd operator cannot access the root-only containerd socket.
+That failure did not qualify model management or any provider. PR337 replaces
+the local import assumption with Platform's existing GitHub Actions/GHCR image
+publication and ordinary Kubernetes pull pattern. It creates no service,
+privileged importer, socket grant, host mount or additional provider route.
+
+Only reviewed main can execute the publishing job. Its existing GitHub Actions
+token receives repository read and package write; no provider account or project
+content enters the build. Gary uses the already-approved explicit workflow-
+maintenance source purpose for the reviewed workflow file. Ordinary source
+tokens, model permissions and installation scope remain separate. The bounded
+workflow-purpose credential is revoked after publication.
+
+The workflow streams only the named public release executable and verifies the
+accepted raw SHA256 before building the fixed Python base plus its executable
+layer. The image input tag depends on that binary/version/base tuple. Control
+code and purpose policy remain separately bound to this exact composed source
+decision; an unrelated business-record change does not authorize new runtime
+inputs. The package contains public software only.
+
+Activation uses an empty temporary Docker configuration to prove anonymous
+artifact access without adopting a host registry login. It checks source/input
+labels, the exact base layers plus one executable layer, actual executable
+digest and a valid immutable registry reference. Both pod containers consume
+that digest with ordinary image pulls. A private/unpublished package, changed
+base or binary, invalid digest or unavailable registry blocks before new
+credential issuance. Source checks do not assert package visibility or successful
+node pull; commissioning must prove those actual dependencies. Gateway, account,
+model and consumer controls reviewed above remain unchanged.
+
 ### Model choices, context and fallback
 
 The existing six profiles retain purpose, caller, CGG model-safe data, task,
@@ -157,7 +190,7 @@ public-source/dependency checks. Isolated browser proof covers cold registration
 native effort/fallback, dirty guards, response loss and original-ID reload,
 stale revisions, native cancellation and unavailable-owner denial.
 
-The actual commissioning manifest passed Kubernetes server dry-run without a
+The initial PR336 commissioning manifest passed Kubernetes server dry-run without a
 deployment. A local image passed executable digest/version checks. Its runtime
 image inputs are unchanged by the final test-only correction. The exact corrected
 candidate passed 87 tests in the existing admitted runner environment. Its
@@ -167,16 +200,39 @@ synthetic protocol behavior, not provider account entitlement or real workflow
 completion. Source-local checks and provider CI are retained with the PR; native
 ART evidence must cover the final exact head before source merge.
 
-That final native acquisition passed at
-`4501e9ab2b674ca0a06a46a2b25d28cdaa316a53`; OOS reports current merge-ready
-evidence and blocks the candidate specifically on this planned Security gate.
+That initial native acquisition passed at
+`4501e9ab2b674ca0a06a46a2b25d28cdaa316a53`; its merge-ready evidence satisfied
+the original source gate before PR336 merged as
+`f7b1883ee3a65cd132bece0a611255bea7009d3d`.
 The exact-head [Platform CI run](https://github.com/mfshaf7/platform-engineering/actions/runs/40099191216)
-and repository-posture check passed. No commissioning merge or activation is
-claimed by those results.
+and repository-posture check passed. These are historical source proofs; the
+subsequent real activation failed at image import and #1320 remains blocked
+until the image-delivery correction is accepted and commissioned.
 
 The correction makes the existing tests bind their fixture operator instead of
 inheriting terminal identity. Runtime identity policy, evidence isolation and
 authority remain unchanged. This is not a new workflow mechanism.
+
+The corrective candidate `bf5e6484edbb26baace6c88240c8de36c414196e` passed all
+twelve local CI-equivalent changed-surface checks against fetched
+`origin/main@f7b1883ee3a65cd132bece0a611255bea7009d3d`, under the existing owner
+evidence environment with terminal operator identity excluded. These include
+87 runner tests, model-profile/gateway checks and owner host-service/composition
+tests. Fourteen focused composition tests additionally cover anonymous registry
+verification, immutable digest use, denied source/base/binary/digest cases,
+unchanged pod bounds and failure before credential effects. The two embedded
+workflow Python blocks compile. The exact public release executable matches
+the accepted raw hash; the actual constructed image has the exact base layers
+plus one executable layer and passes checksum/native-version execution as its
+nonroot user.
+
+The corrective [provider CI run](https://github.com/mfshaf7/platform-engineering/actions/runs/40103844772)
+and repository-posture check passed at that exact candidate. Final human review
+remains required before its source merge. Package publication,
+anonymous node pull and account/provider operation remain commissioning evidence,
+not claims made by these local tests. The existing bounded maintenance path
+retains Gary authorship and accountable human review; the original ART source
+packet is preserved rather than rewritten to pretend it covered a later fix.
 
 ## Decision
 
