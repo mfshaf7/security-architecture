@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
         reviewed_on: 2026-10-24
         status: current
         decision: approved
@@ -50,6 +50,7 @@ review_inventory:
           - governance-console-recovery-rollback-revocation
           - governance-console-private-runtime-state-binding
           - governance-console-failure-first-rollback-order
+          - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
           - repo: platform-engineering
             path: products/governance-operations-console/scripts/console_complete_runtime.py
@@ -95,7 +96,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
         reviewed_on: 2026-10-24
         status: current
         decision: approved
@@ -351,6 +352,7 @@ review_inventory:
           - governance-console-workspace-continuity-no-fixture-fallback
           - governance-console-registry-portfolio-canonical-identity
           - governance-console-owner-contradiction-fail-closed
+          - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
           - repo: governance-operations-console
             path: src/environment-lifecycle/presentation/source-authorization-panel.tsx
@@ -502,7 +504,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
         reviewed_on: 2026-10-24
         status: current
         decision: approved
@@ -540,6 +542,7 @@ review_inventory:
           - governance-console-finite-command-and-effect-boundary
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
+          - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
           - repo: operator-orchestration-service
             path: src/delivery-art/lifecycle-authoring.js
@@ -610,7 +613,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
         reviewed_on: 2026-10-24
         status: current
         decision: approved
@@ -647,6 +650,7 @@ review_inventory:
           - governance-console-recovery-rollback-revocation
           - governance-console-private-runtime-state-binding
           - governance-console-failure-first-rollback-order
+          - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
           - repo: governance-operations-console
             path: src/environment-lifecycle/presentation/source-authorization-panel.tsx
@@ -975,7 +979,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
         reviewed_on: 2026-10-20
         status: current
         decision: approved
@@ -994,6 +998,7 @@ review_inventory:
           - agent-console-provider-and-model-selection-boundary
           - agent-console-response-schema-and-audit-binding
           - agent-console-controlled-activation-order
+          - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
           - repo: platform-engineering
             path: dev-integration/profiles/governed-ai-gateway/runtime/model_profile_resolver.py
@@ -1091,7 +1096,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
         reviewed_on: 2026-10-24
         status: current
         decision: approved
@@ -1111,6 +1116,7 @@ review_inventory:
           - governance-console-finite-command-and-effect-boundary
           - governance-console-composed-denial-replay-and-recovery
           - governance-console-external-security-tree-binding
+          - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
           - repo: operator-orchestration-service
             path: src/delivery-art/lifecycle-authoring.js
