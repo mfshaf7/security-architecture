@@ -121,6 +121,8 @@ review_inventory:
           - repo: workspace-governance
             path: reports/console-journey-1275-qualification.md
           - repo: workspace-governance
+            path: reviews/improvement-candidates/2026-10-15-console-capability-operating-truth-regression.yaml
+          - repo: workspace-governance
             path: scripts/validate_cross_repo_truth.py
           - repo: workspace-governance
             path: contracts/developer-integration-profiles.yaml
