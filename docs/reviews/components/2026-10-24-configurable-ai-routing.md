@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@fd2fdc679b6b136fece63381741496255aef630f`
+- `governance-operations-console@48d7602b3e2ca76c5323e37bfedfdf2964db5983`
 - `operator-orchestration-service@8c79430954350975a4b7175150c8c1efc6b0a72e`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
