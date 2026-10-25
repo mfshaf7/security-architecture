@@ -307,7 +307,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
+        path: docs/reviews/components/2026-10-25-console-source-editor-import.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
@@ -318,6 +318,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governance-console-live-integration
+          - governance-console-source-graduation
           - agent-workspace-current-owner-read-context-and-partial-coverage
           - agent-native-dialog-presentation-and-mode-session-handover
           - approved-source-selected-intent-continuation
@@ -357,6 +359,12 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/console-integration/source-authoring/server/source-editor-evidence.ts
+          - repo: governance-operations-console
+            path: docs/product/source-editor-and-import.md
+          - repo: governance-operations-console
+            path: src/teras/teras-code-state.ts
           - repo: governance-operations-console
             path: src/console-shell/context/agent-workspace-context.ts
           - repo: governance-operations-console
@@ -513,8 +521,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
-        reviewed_on: 2026-10-24
+        path: docs/reviews/components/2026-10-25-console-source-editor-import.md
+        reviewed_on: 2026-10-25
         status: current
         decision: approved
         review_areas:
@@ -553,6 +561,10 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/source-authoring/operator-drafts.js
+          - repo: operator-orchestration-service
+            path: docs/operations/operator-source-editing.md
           - repo: operator-orchestration-service
             path: src/delivery-art/lifecycle-authoring.js
           - repo: operator-orchestration-service
@@ -622,7 +634,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
+        path: docs/reviews/components/2026-10-25-console-source-editor-import.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
@@ -633,6 +645,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governance-console-live-integration
+          - governance-console-source-graduation
           - agent-workspace-current-owner-read-context-and-partial-coverage
           - agent-native-dialog-presentation-and-mode-session-handover
           - approved-source-selected-intent-continuation
@@ -663,6 +677,12 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/console-integration/source-authoring/server/source-editor-evidence.ts
+          - repo: governance-operations-console
+            path: docs/product/source-editor-and-import.md
+          - repo: governance-operations-console
+            path: src/teras/teras-code-state.ts
           - repo: governance-operations-console
             path: src/console-shell/context/agent-workspace-context.ts
           - repo: governance-operations-console
@@ -1113,8 +1133,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
-        reviewed_on: 2026-10-24
+        path: docs/reviews/components/2026-10-25-console-source-editor-import.md
+        reviewed_on: 2026-10-25
         status: current
         decision: approved
         review_areas:
@@ -1135,6 +1155,10 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/source-authoring/operator-drafts.js
+          - repo: operator-orchestration-service
+            path: docs/operations/operator-source-editing.md
           - repo: operator-orchestration-service
             path: src/delivery-art/lifecycle-authoring.js
           - repo: operator-orchestration-service
