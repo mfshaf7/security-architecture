@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@e83dcbf7854897c3641326c4694e05bbad3ef9ff`
+- `governance-operations-console@5e77181f0eaf963639d8a368ec2b5312338c2caa`
 - `operator-orchestration-service@bb53937dbf37127567441b51ce1ab40d8ab9e974`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
@@ -624,3 +624,14 @@ operating proof remain required before1328/1329 closure.
 ## Native Delivery source HTTP errors
 
 The selected OOS source includes PR380. The [typed error review](2026-10-25-delivery-realization-http-errors.md) accepts the existing native source-realization error projection: an absent initial draft remains404, stale source remains409, and unknown failures remain bounded500. Draft, identity, source-scope, model and source-effect semantics are unchanged. The existing full activation/status path commissions the changed broker/source executor, then the same active1329 session must prove actual first-use editing and file import before final operating closure.
+
+## Current Prototype lifecycle presentation
+
+The selected Console source includes PR125. The
+[terminal-status review](2026-10-25-prototype-terminal-status.md) accepts
+lifecycle-correct derived badges, readiness counts, Dashboard history and
+terminal source-action visibility. Current Studio lifecycle outranks retained
+baseline or Closure inputs; original owner records and backend authority stay
+unchanged. The existing complete-runtime restart/status commissions this
+Console-only correction with unchanged backend image inputs, followed by actual
+live register, summary, selected-panel and Dashboard verification.

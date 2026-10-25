@@ -309,7 +309,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-prototype-draft-history-reference.md
+        path: docs/reviews/components/2026-10-25-prototype-terminal-status.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
@@ -361,6 +361,10 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/prototype/read-model/selectors/prototype-workspace-selectors.ts
+          - repo: governance-operations-console
+            path: tests/prototype/prototype-terminal-status.test.mjs
           - repo: governance-operations-console
             path: src/console-integration/source-authoring/server/source-editor-evidence.ts
           - repo: governance-operations-console
@@ -655,7 +659,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-prototype-draft-history-reference.md
+        path: docs/reviews/components/2026-10-25-prototype-terminal-status.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
@@ -698,6 +702,10 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/prototype/read-model/selectors/prototype-workspace-selectors.ts
+          - repo: governance-operations-console
+            path: tests/prototype/prototype-terminal-status.test.mjs
           - repo: governance-operations-console
             path: src/console-integration/source-authoring/server/source-editor-evidence.ts
           - repo: governance-operations-console
