@@ -21,8 +21,8 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@bb320511a98dc95ea39a5a51aee7580d9df28b47`
-- `operator-orchestration-service@bb53937dbf37127567441b51ce1ab40d8ab9e974`
+- `governance-operations-console@fd2fdc679b6b136fece63381741496255aef630f`
+- `operator-orchestration-service@89f5ea34a09cce03d3993fadae7b837c0bbf43f1`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -648,3 +648,14 @@ profile evidence inside a configured-live Console is unavailable. Models &
 routing remains independent. No canonical mutation, model invocation, source
 custody or new authority is introduced. Existing full activation and fresh
 status precede actual native browser verification and learning closure.
+
+
+## Native Delivery current and retained owner history
+
+The selected OOS source includes PR381 and Console source PR127. The
+[Delivery owner-history review](2026-10-26-delivery-owner-history.md) accepts
+bounded authenticated original Intake and package history reads plus coherent
+Current/History discoverability, summary and selection. Existing trusted owner
+receipts, historical custody, command authorization and Catalog authority stay
+intact. Unavailable evidence cannot become successful or empty history. Fresh
+full activation and status precede actual cold cross-surface product proof.
