@@ -309,8 +309,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-prototype-terminal-status.md
-        reviewed_on: 2026-10-25
+        path: docs/reviews/components/2026-10-26-console-current-owner-status.md
+        reviewed_on: 2026-10-26
         status: current
         decision: approved
         review_areas:
@@ -320,6 +320,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - current-repository-inventory-over-custody-history
+          - purpose-profile-live-owner-source-without-fixture-substitution
           - governance-console-live-integration
           - governance-console-source-graduation
           - agent-workspace-current-owner-read-context-and-partial-coverage
@@ -361,6 +363,20 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/repository/live-runtime/repository-inventory-live-projection.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/repository/presentation/surface/use-repository-control-controller.ts
+          - repo: governance-operations-console
+            path: tests/operation-runtime/repository-current-inventory.test.mjs
+          - repo: governance-operations-console
+            path: src/domain-workspaces/model-operations/server/model-operations-api-routes.ts
+          - repo: governance-operations-console
+            path: tests/model-operations/model-operations-live-integration.test.mjs
+          - repo: governance-operations-console
+            path: docs/product/repository-custody-live-integration.md
+          - repo: governance-operations-console
+            path: docs/product/model-operations-live-integration.md
           - repo: governance-operations-console
             path: src/domain-workspaces/prototype/read-model/selectors/prototype-workspace-selectors.ts
           - repo: governance-operations-console
@@ -659,8 +675,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-prototype-terminal-status.md
-        reviewed_on: 2026-10-25
+        path: docs/reviews/components/2026-10-26-console-current-owner-status.md
+        reviewed_on: 2026-10-26
         status: current
         decision: approved
         review_areas:
@@ -670,6 +686,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - current-repository-inventory-over-custody-history
+          - purpose-profile-live-owner-source-without-fixture-substitution
           - governance-console-live-integration
           - governance-console-source-graduation
           - agent-workspace-current-owner-read-context-and-partial-coverage
@@ -702,6 +720,20 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/repository/live-runtime/repository-inventory-live-projection.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/repository/presentation/surface/use-repository-control-controller.ts
+          - repo: governance-operations-console
+            path: tests/operation-runtime/repository-current-inventory.test.mjs
+          - repo: governance-operations-console
+            path: src/domain-workspaces/model-operations/server/model-operations-api-routes.ts
+          - repo: governance-operations-console
+            path: tests/model-operations/model-operations-live-integration.test.mjs
+          - repo: governance-operations-console
+            path: docs/product/repository-custody-live-integration.md
+          - repo: governance-operations-console
+            path: docs/product/model-operations-live-integration.md
           - repo: governance-operations-console
             path: src/domain-workspaces/prototype/read-model/selectors/prototype-workspace-selectors.ts
           - repo: governance-operations-console

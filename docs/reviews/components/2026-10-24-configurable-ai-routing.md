@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@5e77181f0eaf963639d8a368ec2b5312338c2caa`
+- `governance-operations-console@bb320511a98dc95ea39a5a51aee7580d9df28b47`
 - `operator-orchestration-service@bb53937dbf37127567441b51ce1ab40d8ab9e974`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
@@ -635,3 +635,16 @@ baseline or Closure inputs; original owner records and backend authority stay
 unchanged. The existing complete-runtime restart/status commissions this
 Console-only correction with unchanged backend image inputs, followed by actual
 live register, summary, selected-panel and Dashboard verification.
+
+
+## Current repository inventory and Purpose profile source selection
+
+The selected Console source includes PR126. Its
+[current-owner review](2026-10-26-console-current-owner-status.md) accepts current
+canonical repository admission ahead of historical custody handoffs, with exact
+identity matching and unavailable-source intake denial. Purpose profile samples
+are confined to the explicitly disconnected design preview; missing accepted
+profile evidence inside a configured-live Console is unavailable. Models &
+routing remains independent. No canonical mutation, model invocation, source
+custody or new authority is introduced. Existing full activation and fresh
+status precede actual native browser verification and learning closure.
