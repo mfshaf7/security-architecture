@@ -22,7 +22,7 @@ Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@fd2fdc679b6b136fece63381741496255aef630f`
-- `operator-orchestration-service@89f5ea34a09cce03d3993fadae7b837c0bbf43f1`
+- `operator-orchestration-service@8c79430954350975a4b7175150c8c1efc6b0a72e`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`

@@ -5,9 +5,10 @@
 Accept the bounded read-only native Delivery Intake and package history delta
 within the existing local dev-integration composition. Accept exact merged owners:
 
-- `operator-orchestration-service@89f5ea34a09cce03d3993fadae7b837c0bbf43f1`,
-  Gary PR381 candidate `422ddc2dc62aa473b53d75e14bf0bda388b66034`,
-  accountable exact-head approval and successful CI40220804839.
+- `operator-orchestration-service@8c79430954350975a4b7175150c8c1efc6b0a72e`,
+  Gary PR381 plus final receipt-normalization PR382 candidate
+  `2ef0223c6853fbbef8ede0f5247584411c11741c`, accountable exact-head
+  approval and successful CI40221770396 (earlier CI40220804839 also passed).
 - `governance-operations-console@fd2fdc679b6b136fece63381741496255aef630f`,
   Gary PR127 candidate `387421bae271f9e9179acc63c6e297321b51ae19`,
   accountable exact-head approval and successful CI40220647432.
@@ -40,7 +41,12 @@ application events and exact packet/target binding. Duplicate bindings fail
 closed. Original historical custody is preserved across legitimate later owner
 changes; the existing acceptance authority and stricter mutation checks remain
 unchanged. Proposal history requires its applied reciprocal target, native
-receipt and resolved custody. Unknown historical time remains unprojected.
+receipt and resolved custody. Unknown historical time and source version remain
+unprojected; the current version cannot stand in for historical evidence.
+Closeout keeps original native receipt refs/digests separate from outcome links
+and command digests. Actual retained data through the reader and the Console
+validator matches all seven original product events and exact receipt/digest
+coordinates before commissioning. Rejected outcomes retain error posture.
 
 The Console rejects foreign source envelopes, conflicting page identities,
 repeated cursors, malformed records and out-of-inventory sources. Intake owner
