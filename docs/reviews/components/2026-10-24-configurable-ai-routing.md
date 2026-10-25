@@ -22,7 +22,7 @@ Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@3d41dfe71ead39c01ef7032d80824929559d3853`
-- `operator-orchestration-service@817398a4c640427e0195aa16ae1e2881424b743a`
+- `operator-orchestration-service@104739ad8c27059b747caab90ee08d2d1cef5318`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -586,3 +586,14 @@ replay and emitted evidence. Existing Delivery/Closure and imported-file codecs
 retain their separate formats. The same exact-source activation contract applies;
 new1328 operating proof remains required and the earlier failed Landing request
 is preserved. No new runtime capability or source-authority flag is introduced.
+
+## Prototype source canonical-main observation
+
+The selected OOS source includes PR378 at104739ad. Its
+[source-ref freshness review](2026-10-25-prototype-source-ref-freshness.md)
+accepts the existing inspector's bounded fixed owner-main fetch before ancestry
+and detached data inspection. The commissioned Studio code revision remains84b;
+its actual merged Landing data32e is an admitted data-only descendant. Source
+inspection retains its original read-only authority and cannot obtain a source
+grant, invoke a model or advance the executable checkout. Exact source
+commissioning and the original1328 native operating proof remain required.
