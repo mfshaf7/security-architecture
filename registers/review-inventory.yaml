@@ -309,7 +309,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-26-console-current-owner-status.md
+        path: docs/reviews/components/2026-10-26-delivery-owner-history.md
         reviewed_on: 2026-10-26
         status: current
         decision: approved
@@ -320,6 +320,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-delivery-current-history-original-owner-evidence
           - current-repository-inventory-over-custody-history
           - purpose-profile-live-owner-source-without-fixture-substitution
           - governance-console-live-integration
@@ -363,6 +364,16 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/delivery-history-reader.js
+          - repo: operator-orchestration-service
+            path: test/delivery-history-api.test.js
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/live-runtime/delivery-history-projection.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/workflows/shared/history/delivery-history-dialog.tsx
+          - repo: governance-operations-console
+            path: tests/operation-runtime/delivery-history-truth.test.mjs
           - repo: governance-operations-console
             path: src/domain-workspaces/repository/live-runtime/repository-inventory-live-projection.ts
           - repo: governance-operations-console
@@ -675,7 +686,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-26-console-current-owner-status.md
+        path: docs/reviews/components/2026-10-26-delivery-owner-history.md
         reviewed_on: 2026-10-26
         status: current
         decision: approved
@@ -686,6 +697,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-delivery-current-history-original-owner-evidence
           - current-repository-inventory-over-custody-history
           - purpose-profile-live-owner-source-without-fixture-substitution
           - governance-console-live-integration
@@ -720,6 +732,16 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/delivery-history-reader.js
+          - repo: operator-orchestration-service
+            path: test/delivery-history-api.test.js
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/live-runtime/delivery-history-projection.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/workflows/shared/history/delivery-history-dialog.tsx
+          - repo: governance-operations-console
+            path: tests/operation-runtime/delivery-history-truth.test.mjs
           - repo: governance-operations-console
             path: src/domain-workspaces/repository/live-runtime/repository-inventory-live-projection.ts
           - repo: governance-operations-console
@@ -1194,8 +1216,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-delivery-realization-http-errors.md
-        reviewed_on: 2026-10-25
+        path: docs/reviews/components/2026-10-26-delivery-owner-history.md
+        reviewed_on: 2026-10-26
         status: current
         decision: approved
         review_areas:
@@ -1205,6 +1227,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-delivery-current-history-original-owner-evidence
           - existing-premerge-evidence-revision-identity
           - oos-canonical-source-intent-before-effects
           - prototype-finalized-native-owner-packet-and-source-readback
@@ -1216,6 +1239,16 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/delivery-history-reader.js
+          - repo: operator-orchestration-service
+            path: test/delivery-history-api.test.js
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/live-runtime/delivery-history-projection.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/workflows/shared/history/delivery-history-dialog.tsx
+          - repo: governance-operations-console
+            path: tests/operation-runtime/delivery-history-truth.test.mjs
           - repo: operator-orchestration-service
             path: src/source-authoring/operator-drafts.js
           - repo: operator-orchestration-service
