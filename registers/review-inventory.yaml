@@ -320,6 +320,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-native-unverified-intake-register-layout
           - native-delivery-current-history-original-owner-evidence
           - current-repository-inventory-over-custody-history
           - purpose-profile-live-owner-source-without-fixture-substitution
@@ -364,6 +365,10 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/surfaces/intake/intake-surface.tsx
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/surfaces/intake/intake-view-model.ts
           - repo: operator-orchestration-service
             path: src/delivery-history-reader.js
           - repo: operator-orchestration-service
@@ -697,6 +702,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-native-unverified-intake-register-layout
           - native-delivery-current-history-original-owner-evidence
           - current-repository-inventory-over-custody-history
           - purpose-profile-live-owner-source-without-fixture-substitution
@@ -732,6 +738,10 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/surfaces/intake/intake-surface.tsx
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/surfaces/intake/intake-view-model.ts
           - repo: operator-orchestration-service
             path: src/delivery-history-reader.js
           - repo: operator-orchestration-service

@@ -9,9 +9,10 @@ within the existing local dev-integration composition. Accept exact merged owner
   Gary PR381 plus final receipt-normalization PR382 candidate
   `2ef0223c6853fbbef8ede0f5247584411c11741c`, accountable exact-head
   approval and successful CI40221770396 (earlier CI40220804839 also passed).
-- `governance-operations-console@fd2fdc679b6b136fece63381741496255aef630f`,
-  Gary PR127 candidate `387421bae271f9e9179acc63c6e297321b51ae19`,
-  accountable exact-head approval and successful CI40220647432.
+- `governance-operations-console@48d7602b3e2ca76c5323e37bfedfdf2964db5983`,
+  Gary PR127 plus native layout follow-up PR128 candidate
+  `1879a5de5fdf737a7674055744f169a1557e829e`, accountable exact-head
+  approval and successful CI40224555069 (earlier CI40220647432 also passed).
 
 The [paired decision](2026-10-24-configurable-ai-routing.yaml) retains its
 identity, architecture, gate, all other source bindings and Platform tree.
@@ -92,3 +93,25 @@ refresh, partial owner coverage and out-of-inventory/foreign/conflicting data.
 The operator approved owner maintenance and retains standing delegated
 accountable review/merge authority. No new ART item, reopened completed work,
 private-client qualification, stage or production authorization is granted.
+
+
+## Bounded Intake evidence layout follow-up
+
+The first actual native six-surface Current inspection showed37 historical
+Proposal backlinks without verifiable original handoff proof. They remain
+explicit evidence absences, not new delivery defects. The unbounded list of
+those issues crowded the Intake register. The Console follow-up uses the
+existing Teras short scrolling list, keeps issue rows within the selected
+Current/History scope and text search, and prevents an unverified source from
+pretending to match a proved owner or consumption-state filter. Verified
+consumed sources, original receipts, overall partial coverage and backend
+command authority are preserved.
+
+The full Console check now passes all746 semantic tests, architecture,
+TypeScript, production build, staged public-source validation and compile,
+production dependency audit with zero vulnerabilities, and fetched-base
+whitespace. The extra case covers a long historical issue set, active versus
+retained scope, exact target search and unknown owner/state filtering. The
+post-source operating proof remains pending until the existing runtime is
+healthy and fresh native browser inspection passes; source review does not
+turn failed startup reads into successful commissioning.
