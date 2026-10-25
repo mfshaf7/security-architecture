@@ -523,7 +523,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-console-source-editor-import.md
+        path: docs/reviews/components/2026-10-25-prototype-source-ref-freshness.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
@@ -563,6 +563,10 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/source-authoring/prototype-source-adapter.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-25-prototype-source-ref-freshness.md
           - repo: operator-orchestration-service
             path: src/source-authoring/operator-drafts.js
           - repo: operator-orchestration-service
