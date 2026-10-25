@@ -320,6 +320,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-global-read-performance-capability-equivalence
+          - immutable-owner-snapshot-with-fresh-authority
           - bounded-native-unverified-intake-register-layout
           - native-delivery-current-history-original-owner-evidence
           - current-repository-inventory-over-custody-history
@@ -702,6 +704,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-global-read-performance-capability-equivalence
+          - immutable-owner-snapshot-with-fresh-authority
           - bounded-native-unverified-intake-register-layout
           - native-delivery-current-history-original-owner-evidence
           - current-repository-inventory-over-custody-history
