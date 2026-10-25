@@ -5,10 +5,10 @@
 Accept the bounded read-only native Delivery Intake and package history delta
 within the existing local dev-integration composition. Accept exact merged owners:
 
-- `operator-orchestration-service@8c79430954350975a4b7175150c8c1efc6b0a72e`,
-  Gary PR381 plus final receipt-normalization PR382 candidate
-  `2ef0223c6853fbbef8ede0f5247584411c11741c`, accountable exact-head
-  approval and successful CI40221770396 (earlier CI40220804839 also passed).
+- `operator-orchestration-service@c4b5481316e8b65bee9bcedebe9dff44e4c72652`,
+  Gary PR381/382 plus bounded-read PR383 candidate
+  `63c72daa7b801c14891f69e5f1742e1b8c6d7467`, accountable exact-head
+  approval and successful CI40227589109 (earlier source checks also passed).
 - `governance-operations-console@48d7602b3e2ca76c5323e37bfedfdf2964db5983`,
   Gary PR127 plus native layout follow-up PR128 candidate
   `1879a5de5fdf737a7674055744f169a1557e829e`, accountable exact-head
@@ -115,3 +115,35 @@ retained scope, exact target search and unknown owner/state filtering. The
 post-source operating proof remains pending until the existing runtime is
 healthy and fresh native browser inspection passes; source review does not
 turn failed startup reads into successful commissioning.
+
+
+## Native Intake read amplification follow-up
+
+A controlled startup later proved the Delivery primary read reached the
+existing90-second deadline while the broker still returned correct data.
+Captured timestamps isolated46–103 seconds after inventory to Intake. Native
+owner profiling measured221 requests and45 schema forms for four verified
+sources and37 explicit missing-proof results. Target enumeration repeatedly
+scanned all ART descendants; every Proposal candidate then reread the same
+fresh listed target and its schema form.
+
+The correction filters collection reads by the configured Epic type while
+retaining explicit all-status behavior and local parent/type checks. A native
+read-only parity probe returned the same43targets:38done,1parked,4retired.
+Proposal Intake reuses that fresh owner-list target snapshot and rereads its
+exact reciprocal Proposal proof on every request. Prototype entries retain
+trusted activity reads; exact package history retains its fresh target read
+and project scope check. No cross-request cache, extra mechanism, altered
+timeout, command authority or readiness bypass is introduced.
+
+An isolated read-only program evaluated candidate source through the actual
+production owner transport and backend. Intake fell from79485ms to5045ms,
+requests221to93, and schema forms45to5. Source records and missing-proof results
+were exactly equal, including original receipt custody. All40Proposal origins
+were distinct, so no unneeded Proposal cache or coalescing was added.
+Full broker suite passed1648cases with2skips and no failures; focused cases,
+all12 bundle/schema/API/governance checks, fetched-base gates and API/worker
+image/health/fail-closed smoke passed before publication. Request counts above
+include the preliminary target-list comparison; timed values cover the three
+Intake pages. Commissioning and native browser proof remain separate operating
+requirements.

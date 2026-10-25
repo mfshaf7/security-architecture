@@ -1237,6 +1237,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-native-intake-owner-read-amplification
           - native-delivery-current-history-original-owner-evidence
           - existing-premerge-evidence-revision-identity
           - oos-canonical-source-intent-before-effects
@@ -1249,6 +1250,12 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/openproject-client.js
+          - repo: operator-orchestration-service
+            path: test/openproject-client.test.js
+          - repo: operator-orchestration-service
+            path: test/delivery-history-reader.test.js
           - repo: operator-orchestration-service
             path: src/delivery-history-reader.js
           - repo: operator-orchestration-service
