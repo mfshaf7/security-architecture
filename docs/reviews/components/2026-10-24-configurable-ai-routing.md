@@ -26,7 +26,7 @@ Reviewed exact sources:
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
-- `workspace-prototype-studio@e04dfd2dd8ac6aa5b7049ccb8bde7f2452c0f5e1`
+- `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
 - `platform-engineering-tree@633b4b3c8b5a3f2a9f12a0ec1fa2721c6308866e`
 
 The Platform revision is the Gary-authored native account admission correction.
@@ -35,8 +35,9 @@ PR336, foundation PR334, custody correction PR335 and image-delivery correction
 PR337, execution-binding correction PR338 and metadata-budget correction PR339
 are already in its base. OOS
 PR374 and Console PR118 are merged. The other execution owners retain their
-previous implementation. Studio's intervening changes are bounded Prototype
-lifecycle/design records, with no change to its execution controls.
+previous implementation. Studio additionally contains the reviewed Landing-local Unicode integrity
+correction described in [its fresh delta](2026-10-25-prototype-landing-unicode.md).
+Its existing source, identity and lifecycle authority remains unchanged.
 
 The reviewed [Platform composition](https://github.com/mfshaf7/platform-engineering/blob/6d798f1a2f410e1c39c242fb4688a96e7d08eebe/products/governance-operations-console/scripts/console_model_management.py)
 is part of the existing complete-runtime operator path. Its parent consumes
@@ -575,3 +576,13 @@ no new flag, decision protocol or activation bypass is created. All ten existing
 source/tree/architecture tokens above remain authoritative. This accepts source
 and commissioning scope only:1328 live source/dependency/refresh readback and
 Prototype proof, followed by1329 real LittleList delivery, remain outstanding.
+
+## Prototype Landing native Unicode compatibility
+
+The selected Studio source includes PR42 at84b7e7a. Its
+[Unicode integrity delta](2026-10-25-prototype-landing-unicode.md) reviews the
+Landing-local native format across state, input artifacts, owner application,
+replay and emitted evidence. Existing Delivery/Closure and imported-file codecs
+retain their separate formats. The same exact-source activation contract applies;
+new1328 operating proof remains required and the earlier failed Landing request
+is preserved. No new runtime capability or source-authority flag is introduced.
