@@ -5,17 +5,76 @@
 Accept the bounded read-only native Delivery Intake and package history delta
 within the existing local dev-integration composition. Accept exact merged owners:
 
-- `operator-orchestration-service@c4b5481316e8b65bee9bcedebe9dff44e4c72652`,
-  Gary PR381/382 plus bounded-read PR383 candidate
-  `63c72daa7b801c14891f69e5f1742e1b8c6d7467`, accountable exact-head
-  approval and successful CI40227589109 (earlier source checks also passed).
-- `governance-operations-console@48d7602b3e2ca76c5323e37bfedfdf2964db5983`,
-  Gary PR127 plus native layout follow-up PR128 candidate
-  `1879a5de5fdf737a7674055744f169a1557e829e`, accountable exact-head
-  approval and successful CI40224555069 (earlier CI40220647432 also passed).
+- `operator-orchestration-service@f06880edd177516835699651ace3861ff0a81939`,
+  Gary PR384 candidate `28f9df8021217ec338151cc79d6deb60018677a1`,
+  accountable exact-head approval and successful CI40244486565. Its merged
+  tree exactly equals the reviewed source; earlier owner-history work is retained.
+- `governance-operations-console@2139f99f2a1a487ca8a30c9862b30e75eea07a9a`,
+  Gary PR129 final candidate `7d1802c59558f68bf9f689494ec81e3c49b9f825`,
+  accountable exact-head approval and successful CI40244931536. Its merged
+  tree exactly equals the reviewed source; earlier owner-history work is retained.
 
 The [paired decision](2026-10-24-configurable-ai-routing.yaml) retains its
 identity, architecture, gate, all other source bindings and Platform tree.
+
+## Global read performance delta
+
+Accept the existing authenticated read-path extension, with global capability
+equivalence as an acceptance condition. The unmerged selected-only Delivery
+design was rejected; it is not part of this source acceptance. The overview
+keeps every root, backend status, global package total and full active/parked
+execution tree. Terminal child graphs are explicitly deferred with unknown
+counts; original exact owner history stays available. Lists and pending reads
+grant no command, source, review, release or completion authority.
+
+Native Intake pages inspect at most20 project/type/root-scoped targets and
+retain original trusted activity, reciprocal target, custody and receipt checks.
+The inspected-root list includes targets without ingress. Global admission
+totals remain incomplete until the full inspected set reconciles with current
+inventory. Duplicate, changing, foreign or missing scope cannot become empty
+history or successful custody. The legacy full scan retains its512-target
+bound; overview/global Proposal reads admit at most8192 records, and full
+operational tree/file/byte limits remain explicit.
+
+Proposal projection plus original first-page history uses one fresh owner scan
+with the exact nested source revision, freshness and target bound into the
+canonical envelope. Native page numbers advance by one; the consumer follows
+all bounded global pages and rejects shifted totals/repeated identities.
+Snapshot dispatch is bounded to four. There is no settled mutable-result cache.
+
+Prototype holds one parsed immutable Git snapshot keyed by exact revision.
+Source admission, current revision and both trusted-ref checks run on every
+request, including cache hits. Returned objects are cloned. Landing, Maturity
+and Closure journals are read fresh; invalid or advanced source cannot reuse
+the old parsed content. Cold reads retain existing file/byte limits and at
+most four concurrent file operations.
+
+Console sharing is limited to32 pending GETs keyed by configuration,
+credentials, operator attribution, endpoint, read scope and transport. Each
+consumer gets a clone; completion and failure evict the entry. Commands never
+share cached authority. A failed refresh may show last verified rows with their
+original observation and stale/read-only posture; denied access clears them.
+Later evidence success cannot make a failed inventory refresh current. Old
+mount responses cannot replace current source state. The source changes no
+credentials, privilege, model dispatch, storage, network or mutation contract.
+
+Local OOS validation passed1654 tests with two intentional skips, then91 final
+HTTP tests including negotiated snapshot/overview authority and denied callers;
+provider CI passed the complete final source. Bundles, all225 OpenAPI routes,
+governance, fetched-base record/mutation gates and API/worker build/health proof
+passed. Console passed752 semantic tests, all architecture guards, TypeScript,
+production build, staged public-source checks, validator compile, zero production
+dependency vulnerabilities and fetched-base whitespace. Cases include2000
+archived packages,142 Proposals, original custody, pending-read isolation,
+immutable clone safety, trusted-ref revocation and bounded concurrency.
+
+Native candidate reads retained all43 Delivery roots and exact scoped-summary
+parity at7683ms versus14749ms for full inventory. All42 Proposals read in3908ms,
+with no failed record or projection/history version mismatch. These owner-call
+measurements support the implementation review; actual cold/warm Console,
+refresh/two-tab, stale/error and original7-event product-history verification
+remain operating requirements after the existing full activation/status path.
+No new ART item, architecture decision or activation mechanism is introduced.
 
 ## Scope Delta
 
