@@ -22,7 +22,7 @@ Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@e83dcbf7854897c3641326c4694e05bbad3ef9ff`
-- `operator-orchestration-service@8827eaa66d97ba0b247b4238aa577794d7501b65`
+- `operator-orchestration-service@bb53937dbf37127567441b51ce1ab40d8ab9e974`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -620,3 +620,7 @@ Owner custody, original model evidence and actual saved bytes stay unchanged.
 The existing governed restart/status path commissions this Console-only change
 with unchanged OOS/CGG images; original-save reconciliation and actual browser
 operating proof remain required before1328/1329 closure.
+
+## Native Delivery source HTTP errors
+
+The selected OOS source includes PR380. The [typed error review](2026-10-25-delivery-realization-http-errors.md) accepts the existing native source-realization error projection: an absent initial draft remains404, stale source remains409, and unknown failures remain bounded500. Draft, identity, source-scope, model and source-effect semantics are unchanged. The existing full activation/status path commissions the changed broker/source executor, then the same active1329 session must prove actual first-use editing and file import before final operating closure.

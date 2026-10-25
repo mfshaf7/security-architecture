@@ -3516,6 +3516,17 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-25-delivery-realization-http-errors.md
+  date: '2026-10-25'
+  short_title: 2026-10-25-delivery-realization-http-errors
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-25-lifecycle-context-unicode-wire.md
   date: '2026-10-25'
   short_title: 2026-10-25-lifecycle-context-unicode-wire

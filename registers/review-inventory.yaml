@@ -523,7 +523,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-lifecycle-context-unicode-wire.md
+        path: docs/reviews/components/2026-10-25-delivery-realization-http-errors.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
@@ -623,6 +623,13 @@ review_inventory:
             path: src/platform-operation/provider-client.js
           - repo: operator-orchestration-service
             path: test/platform-operation.test.js
+          - repo: operator-orchestration-service
+            path: src/app.js
+          - repo: operator-orchestration-service
+            path: test/delivery-art-work-session-service.test.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-25-delivery-realization-http-errors.md
+
   products:
     console-todo-1275:
       owner_repo: platform-engineering
@@ -1147,7 +1154,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-prototype-draft-history-reference.md
+        path: docs/reviews/components/2026-10-25-delivery-realization-http-errors.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
@@ -1201,3 +1208,9 @@ review_inventory:
             path: src/platform-operation/service.js
           - repo: operator-orchestration-service
             path: test/platform-operation.test.js
+          - repo: operator-orchestration-service
+            path: src/app.js
+          - repo: operator-orchestration-service
+            path: test/delivery-art-work-session-service.test.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-25-delivery-realization-http-errors.md
