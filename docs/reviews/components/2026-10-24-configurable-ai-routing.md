@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@3d41dfe71ead39c01ef7032d80824929559d3853`
+- `governance-operations-console@e83dcbf7854897c3641326c4694e05bbad3ef9ff`
 - `operator-orchestration-service@8827eaa66d97ba0b247b4238aa577794d7501b65`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
@@ -609,3 +609,14 @@ owner denials retain their code without exposing private details. Normal
 exact-source commissioning and a native explicitly linked generation retry
 remain required; failed source/model history is preserved, with no raw fallback
 or new source permission.
+
+## Native Prototype history reference readback
+
+The selected Console source includes PR124 ate83dcbf7. Its
+[history-reference review](2026-10-25-prototype-draft-history-reference.md) accepts
+Prototype's closed request-bound artifact reference while retaining Delivery's
+existing string contract and strict malformed/foreign/cross-domain denials.
+Owner custody, original model evidence and actual saved bytes stay unchanged.
+The existing governed restart/status path commissions this Console-only change
+with unchanged OOS/CGG images; original-save reconciliation and actual browser
+operating proof remain required before1328/1329 closure.
