@@ -2,8 +2,9 @@
 
 ## Summary
 
-Approve the exact Epic 1313 local dev-integration composition for source landing
-and subsequent commissioning. This decision extends the existing Console/OOS/
+Approve the exact local dev-integration composition for source landing and
+subsequent commissioning, including the Epic1323 editor/import delta reviewed
+[in its fresh security review](2026-10-25-console-source-editor-import.md). This decision extends the existing Console/OOS/
 governed gateway boundary with operator-configured backend/model/native effort
 and explicit fallback. It does not create a second control plane or give a model
 source, account, approval, merge, deployment or canonical mutation authority.
@@ -20,10 +21,10 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@b98956a0ab10c11c933c1b9ec7d3ad781967509d`
-- `operator-orchestration-service@4105930df00ae959e086e73f9c0121ae6e0acbf1`
-- `platform-engineering@01eb703385239cb092e79d86a4e3dd11f5bca186`
-- `workspace-governance@ebb2693615c58448d904cbd6f0772073820fecf1`
+- `governance-operations-console@3d41dfe71ead39c01ef7032d80824929559d3853`
+- `operator-orchestration-service@817398a4c640427e0195aa16ae1e2881424b743a`
+- `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
+- `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@e04dfd2dd8ac6aa5b7049ccb8bde7f2452c0f5e1`
 - `platform-engineering-tree@633b4b3c8b5a3f2a9f12a0ec1fa2721c6308866e`
@@ -68,7 +69,8 @@ CGG-required policy and independent safety denials. All708 product tests,
 architecture guards, type checking, production build, repository validation and
 production dependency audit passed locally on reviewed Gary candidate
 `f7c0121992e6e0a56146fd5aa4d331270c1e833e`; source CI40133194994 passed and
-Console PR120 merged with the identical tree at the selected revision above.
+Console PR120 merged with the identical tree before the selected PR121/122/123
+composition above.
 The runtime requires that actual merged Console identity. That is
 source proof; final accepted-source browser invocation and receipt readback are
 required after commissioning and are not asserted by this review.
@@ -99,8 +101,8 @@ render. No model-owned authority or alternate dialog/approval manager is added.
 Gary candidate `e6b7366a66858bda993dd8f443e60a641f0c43b5` passed all713
 semantic tests, guards, types, production build, repository validation and
 dependency audit. Eight synthetic browser cases passed; CI40140638181 passed.
-Console PR121 merged as the exact selected revision above with an identical
-source tree. Read-only current-owner composition qualified all8 sources and
+Console PR121 merged at the historical b98956a baseline with an identical
+source tree; the selected composition now additionally includes PR122/123. Read-only current-owner composition qualified all8 sources and
 passed the independent request contract. This is source and read proof, not a
 completed model invocation on the newly commissioned runtime.
 
@@ -551,3 +553,25 @@ with fresh explicit test identities. Original409 identities stay frozen/unknown.
 The existing non-source1321 operating qualification owns that final live proof,
 current source/configuration readback and native closure; this review does not
 claim whole-Epic completion or provider entitlement.
+
+## Bounded editor/import source extension
+
+The selected OOS source includes PR376 at26fcc588 and the PR377 original-objective
+readback correction at817398a4. The selected Console source includes PR122 at
+a9711c0 and documentation-only PR123 at3d41dfe. The fresh
+[editor/import delta review](2026-10-25-console-source-editor-import.md) approves
+that implementation and distinguishes inert private draft custody from exact
+inspection, acceptance, Gary source application, human review and native merge.
+The Console's local-development procedure now requires proving actual frontend
+and refresh source consumers before checkout advancement. The existing Platform
+source tree, runtime capability, provider account and source permissions are
+unchanged. The selected Workspace Governance source includes record-only learning
+closure after the earlier reviewed executable baseline.
+
+The paired decision deliberately retains its existing finite decision/gate and
+Epic1313 architecture identifiers, which are consumed by the current Platform
+resolver. The linked Epic1323 review binds the additional editor architecture;
+no new flag, decision protocol or activation bypass is created. All ten existing
+source/tree/architecture tokens above remain authoritative. This accepts source
+and commissioning scope only:1328 live source/dependency/refresh readback and
+Prototype proof, followed by1329 real LittleList delivery, remain outstanding.
