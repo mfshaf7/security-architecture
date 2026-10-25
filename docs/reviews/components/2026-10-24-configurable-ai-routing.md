@@ -22,7 +22,7 @@ Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@3d41dfe71ead39c01ef7032d80824929559d3853`
-- `operator-orchestration-service@104739ad8c27059b747caab90ee08d2d1cef5318`
+- `operator-orchestration-service@8827eaa66d97ba0b247b4238aa577794d7501b65`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -597,3 +597,15 @@ its actual merged Landing data32e is an admitted data-only descendant. Source
 inspection retains its original read-only authority and cannot obtain a source
 grant, invoke a model or advance the executable checkout. Exact source
 commissioning and the original1328 native operating proof remain required.
+
+## Lifecycle context native Unicode compatibility
+
+The selected OOS source includes PR379 at8827eaa6. Its
+[lifecycle wire review](2026-10-25-lifecycle-context-unicode-wire.md) accepts the
+existing CGG ASCII-escaped canonical format at both authoring source-list
+producers and shared retained-request/response validation. Source text,
+ART/Landing/internal custody and CGG source remain unchanged. Actual nested
+owner denials retain their code without exposing private details. Normal
+exact-source commissioning and a native explicitly linked generation retry
+remain required; failed source/model history is preserved, with no raw fallback
+or new source permission.
