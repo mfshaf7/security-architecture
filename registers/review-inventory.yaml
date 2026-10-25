@@ -261,8 +261,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-20
+        path: docs/reviews/components/2026-10-25-prototype-landing-unicode.md
+        reviewed_on: 2026-10-25
         status: current
         decision: approved
         review_areas:
@@ -281,6 +281,8 @@ review_inventory:
           - preview-runtime-atomic-expected-state
           - preview-runtime-operating-proof-sequencing
         owner_artifacts:
+          - repo: workspace-prototype-studio
+            path: docs/prototype-landing.md
           - repo: workspace-prototype-studio
             path: packages/prototype_authoring/preparation.py
           - repo: workspace-prototype-studio
