@@ -309,7 +309,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-console-source-editor-import.md
+        path: docs/reviews/components/2026-10-25-prototype-draft-history-reference.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
@@ -648,7 +648,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-console-source-editor-import.md
+        path: docs/reviews/components/2026-10-25-prototype-draft-history-reference.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
@@ -1147,7 +1147,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-console-source-editor-import.md
+        path: docs/reviews/components/2026-10-25-prototype-draft-history-reference.md
         reviewed_on: 2026-10-25
         status: current
         decision: approved
