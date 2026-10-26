@@ -693,7 +693,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-26-delivery-owner-history.md
+        path: docs/reviews/components/2026-10-26-console-cockpit-truthfulness.md
         reviewed_on: 2026-10-26
         status: current
         decision: approved
@@ -704,6 +704,10 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-cockpit-current-owner-and-partial-coverage
+          - console-enforcing-session-identity-projection
+          - console-native-handoff-history-without-invented-control-events
+          - console-probe-model-and-memory-claim-boundaries
           - console-global-read-performance-capability-equivalence
           - immutable-owner-snapshot-with-fresh-authority
           - bounded-native-unverified-intake-register-layout
@@ -742,6 +746,14 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/console-integration/live-attention.ts
+          - repo: governance-operations-console
+            path: src/console-integration/identity/server/console-operator-identity-route.ts
+          - repo: governance-operations-console
+            path: src/lifecycle-transitions/read-model/native-transition-composition.ts
+          - repo: governance-operations-console
+            path: tests/console-architecture/console-cockpit-truth.test.mjs
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/presentation/surfaces/intake/intake-surface.tsx
           - repo: governance-operations-console
