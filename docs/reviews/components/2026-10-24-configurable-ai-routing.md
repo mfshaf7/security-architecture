@@ -23,11 +23,11 @@ Reviewed exact sources:
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@f208f67c03e2cce1d036d108636328b11d6164aa`
 - `operator-orchestration-service@f06880edd177516835699651ace3861ff0a81939`
-- `platform-engineering@2a04edacd6674e0094403b156f22c7d3a6f6179d`
+- `platform-engineering@e43abde20b01dfea997c55d3149f1ecb02e0665e`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@75096a11ace5a3f0b3f190794c595bf5986b404c`
+- `platform-engineering-tree@b5a4c020860aa4570b489826bd3173fc8b5f9cc5`
 
 The exact owners above include Gary OOS PR384 and Console PR129/130, accepted in
 the [global read-performance delta](2026-10-26-delivery-owner-history.md).
@@ -692,12 +692,26 @@ host activation evidence remain required in the existing maintenance closeout.
 
 ## Restart recovery registration
 
-The selected Platform source includes Gary PR343 and the
+The selected Platform source retains Gary PR343 and the
 [restart-recovery delta](2026-10-26-console-restart-recovery.md).
-Merged revision `2a04edacd6674e0094403b156f22c7d3a6f6179d` has the identical reviewed
+Historical merged revision `2a04edacd6674e0094403b156f22c7d3a6f6179d` has the identical reviewed
 tree `75096a11ace5a3f0b3f190794c595bf5986b404c`. Compensation for a failed start
 preserves its retry registration; intentional shutdown remains effective.
 Cold-boot dependency waits are bounded and read-only before runtime effects.
 All other execution pins, architecture, gate, identity and command permissions
 remain unchanged. Normal full commissioning and fresh native/restart proof
 are operating requirements; source approval does not claim PC availability.
+
+## Installed provider runtime alignment
+
+The exact selected Platform source includes Gary PR344 and the
+[startup provider-version delta](2026-10-27-console-startup-runtime-alignment.md).
+The reviewed candidate `a3412fbd89ee953a7e9450e412068a13854e2236` and merged
+revision `e43abde20b01dfea997c55d3149f1ecb02e0665e` have the identical tree
+`b5a4c020860aa4570b489826bd3173fc8b5f9cc5`. All six active local Ollama bindings
+select observed runtime0.40.11 while retaining the exact qwen3:8b digest and
+all existing callers, purposes, routing, data and limits. Metadata integrity
+remains fail closed; a version mismatch is not a segmentation fault or proof
+of source corruption. The unchanged start-rate policy is documented accurately;
+slow failures may retry across windows. Current native acceptance and the
+unverified cross-runtime crash cause remain separate from source approval.

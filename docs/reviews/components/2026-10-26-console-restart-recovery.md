@@ -40,7 +40,8 @@ Preserving the controller is not activation acceptance or permission to skip
 cleanup. An intentional shutdown still prevents unintended auto-resume. The
 existing policy remains three starts in ten minutes with sixty seconds between
 attempts. Unavailable dependencies and persistent native crashes remain visible
-failures; there is no infinite retry or claim of unconditional PC availability.
+failures. This is a start-rate limit, not a lifetime attempt cap; slow faults
+can retry across windows. It does not guarantee PC availability.
 
 Identity/secrets: exact source/Security acceptance still precedes activation,
 and caller/session/provider authority is unchanged. The new metadata contains
