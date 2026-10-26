@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
-        reviewed_on: 2026-10-24
+        path: docs/reviews/components/2026-10-27-console-startup-runtime-alignment.md
+        reviewed_on: 2026-10-27
         status: current
         decision: approved
         review_areas:
@@ -693,8 +693,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-26-console-restart-recovery.md
-        reviewed_on: 2026-10-26
+        path: docs/reviews/components/2026-10-27-console-startup-runtime-alignment.md
+        reviewed_on: 2026-10-27
         status: current
         decision: approved
         review_areas:
@@ -704,6 +704,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governed-ai-observed-provider-patch-and-readiness
           - console-failed-start-compensation-retains-recovery-registration
           - console-bounded-cold-boot-dependency-readiness
           - console-source-bound-standalone-runtime-and-isolated-development
@@ -1144,8 +1145,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
-        reviewed_on: 2026-10-20
+        path: docs/reviews/components/2026-10-27-console-startup-runtime-alignment.md
+        reviewed_on: 2026-10-27
         status: current
         decision: approved
         review_areas:
