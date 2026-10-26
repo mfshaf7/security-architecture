@@ -568,8 +568,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-25-delivery-realization-http-errors.md
-        reviewed_on: 2026-10-25
+        path: docs/reviews/components/2026-10-27-console-source-read-views.md
+        reviewed_on: 2026-10-27
         status: current
         decision: approved
         review_areas:
@@ -577,8 +577,8 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
+          - broker-runtime-and-caller-surface
           - existing-premerge-evidence-revision-identity
           - direct-intake-caller-target-source-journal-without-owner-attestation
           - retained-closure-authenticated-current-platform-disposition
@@ -608,6 +608,10 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/console-source-authority.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-27-source-read-view-identity.md
           - repo: operator-orchestration-service
             path: src/source-authoring/context-contract.js
           - repo: operator-orchestration-service
@@ -1269,8 +1273,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-26-delivery-owner-history.md
-        reviewed_on: 2026-10-26
+        path: docs/reviews/components/2026-10-27-console-source-read-views.md
+        reviewed_on: 2026-10-27
         status: current
         decision: approved
         review_areas:
@@ -1278,8 +1282,8 @@ review_inventory:
           - secrets
           - delivery
           - runtime
-          - ai
         review_trigger_ids:
+          - broker-runtime-and-caller-surface
           - bounded-native-intake-owner-read-amplification
           - native-delivery-current-history-original-owner-evidence
           - existing-premerge-evidence-revision-identity
@@ -1293,6 +1297,10 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/console-source-authority.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-27-source-read-view-identity.md
           - repo: operator-orchestration-service
             path: src/openproject-client.js
           - repo: operator-orchestration-service

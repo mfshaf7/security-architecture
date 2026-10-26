@@ -22,7 +22,7 @@ Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@f208f67c03e2cce1d036d108636328b11d6164aa`
-- `operator-orchestration-service@f06880edd177516835699651ace3861ff0a81939`
+- `operator-orchestration-service@8519ff0537ae6cd00ae7f45d835e41723985ee18`
 - `platform-engineering@1e687aac02ec04b504c925fcf1e8f05820a2fde7`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -732,3 +732,13 @@ records hosted validation, delegated source review, privileged scope and
 remaining native proof. The paired finite decision selects that merged source
 without changing the other executable-owner pins or architecture/gate identity.
 Root installation and automatic recovery remain operating requirements.
+
+
+## Canonical read-view identity maintenance
+
+The selected OOS source includes Gary PR385 at8519ff0537ae6cd00ae7f45d835e41723985ee18.
+Its [read-view security delta](2026-10-27-console-source-read-views.md) accepts
+stable representation-scoped bindings without changing canonical versions,
+commands, callers or the Console integrity/replay checks. The original accepted
+Proposal1331 and Handoff identity are retained. Exact-source Platform activation
+and the same original native Handoff remain separate operating requirements.
