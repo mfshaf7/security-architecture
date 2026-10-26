@@ -9,9 +9,9 @@ within the existing local dev-integration composition. Accept exact merged owner
   Gary PR384 candidate `28f9df8021217ec338151cc79d6deb60018677a1`,
   accountable exact-head approval and successful CI40244486565. Its merged
   tree exactly equals the reviewed source; earlier owner-history work is retained.
-- `governance-operations-console@2139f99f2a1a487ca8a30c9862b30e75eea07a9a`,
-  Gary PR129 final candidate `7d1802c59558f68bf9f689494ec81e3c49b9f825`,
-  accountable exact-head approval and successful CI40244931536. Its merged
+- `governance-operations-console@1fefa9d7c560796a4553ecee343c97e5721ef549`,
+  Gary PR130 candidate `dc339ee0b880109d5c09c7a8b8689fafca10a710`,
+  accountable exact-head approval and successful CI40247456708. Its merged
   tree exactly equals the reviewed source; earlier owner-history work is retained.
 
 The [paired decision](2026-10-24-configurable-ai-routing.yaml) retains its
@@ -75,6 +75,31 @@ measurements support the implementation review; actual cold/warm Console,
 refresh/two-tab, stale/error and original7-event product-history verification
 remain operating requirements after the existing full activation/status path.
 No new ART item, architecture decision or activation mechanism is introduced.
+
+## Native refresh continuity correction
+
+The first commissioned browser read retained all43 roots in7493ms, with a
+subsequent read in5879ms. Original Intake still had four admissions and37
+explicit missing-proof records; History Home retained the original seven-event
+Little List chain. Native navigation then exposed a presentation regression:
+the next poll published its partial first Intake page over the complete list,
+temporarily removing the filtered source. This was a failed operating proof,
+not missing backend data or a successful closure.
+
+The corrected source keeps a complete verified same-scope snapshot visible
+until its replacement is complete. A transient failure retains it with explicit
+stale coverage and the original observation for at most the existing five-minute
+bound. Denied access clears it, before parsing even an invalid denial body.
+Initial unknown totals and filter results remain loading instead of zero or a
+claim of no matches. No scope, native owner proof or command authority changes.
+
+Console passed all753 semantic tests, architecture, TypeScript, production
+build, staged public-source validation, validator compile, zero production
+dependency vulnerabilities, fetched-base whitespace and exact-head provider
+CI. The additional case covers partial background pages, completed replacement,
+transient failure, retained observation, expiry and scope changes. Repeat the
+same actual browser proof after normal complete-runtime activation/status; the
+earlier failed witness is retained separately and is not rewritten as success.
 
 ## Scope Delta
 

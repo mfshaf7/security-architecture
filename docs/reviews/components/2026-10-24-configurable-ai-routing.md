@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources:
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@2139f99f2a1a487ca8a30c9862b30e75eea07a9a`
+- `governance-operations-console@1fefa9d7c560796a4553ecee343c97e5721ef549`
 - `operator-orchestration-service@f06880edd177516835699651ace3861ff0a81939`
 - `platform-engineering@4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
@@ -29,7 +29,7 @@ Reviewed exact sources:
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
 - `platform-engineering-tree@633b4b3c8b5a3f2a9f12a0ec1fa2721c6308866e`
 
-The exact owners above include Gary OOS PR384 and Console PR129, accepted in
+The exact owners above include Gary OOS PR384 and Console PR129/130, accepted in
 the [global read-performance delta](2026-10-26-delivery-owner-history.md).
 The complete global register, operational board, original history and command
 authority are preserved. Parsed immutable Git content is reused only after
