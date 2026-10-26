@@ -693,7 +693,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-26-console-cockpit-truthfulness.md
+        path: docs/reviews/components/2026-10-26-console-prebuilt-runtime-memory.md
         reviewed_on: 2026-10-26
         status: current
         decision: approved
@@ -704,6 +704,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-source-bound-standalone-runtime-and-isolated-development
+          - console-measured-memory-and-wsl-reclaim-boundaries
+          - protected-live-source-local-evidence-custody
           - console-cockpit-current-owner-and-partial-coverage
           - console-enforcing-session-identity-projection
           - console-native-handoff-history-without-invented-control-events
@@ -746,6 +749,14 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_frontend_artifact.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_cross_domain_activation.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/test_console_frontend_artifact.py
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-26-console-prebuilt-runtime-memory.md
           - repo: governance-operations-console
             path: src/console-integration/live-attention.ts
           - repo: governance-operations-console

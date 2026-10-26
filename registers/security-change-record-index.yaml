@@ -4065,6 +4065,19 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-26-console-prebuilt-runtime-memory.md
+  date: '2026-10-26'
+  short_title: Serve the everyday Console from an exact-source standalone artifact.
+  review_areas:
+  - runtime
+  - secrets
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'
