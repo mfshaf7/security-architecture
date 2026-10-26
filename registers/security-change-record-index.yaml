@@ -4078,6 +4078,18 @@ change_records:
   workstreams:
   - WS-003
   - WS-005
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-26-console-restart-recovery.md
+  date: '2026-10-26'
+  short_title: Preserve restart recovery through failed-start compensation.
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'

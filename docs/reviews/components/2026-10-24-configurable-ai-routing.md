@@ -23,11 +23,11 @@ Reviewed exact sources:
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@f208f67c03e2cce1d036d108636328b11d6164aa`
 - `operator-orchestration-service@f06880edd177516835699651ace3861ff0a81939`
-- `platform-engineering@3a686e9ee4eafb2e3a617b0248731cbfc5564af5`
+- `platform-engineering@2a04edacd6674e0094403b156f22c7d3a6f6179d`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@33ffd32dad2a59fe3fb51dcbffaa74a379f83059`
+- `platform-engineering-tree@75096a11ace5a3f0b3f190794c595bf5986b404c`
 
 The exact owners above include Gary OOS PR384 and Console PR129/130, accepted in
 the [global read-performance delta](2026-10-26-delivery-owner-history.md).
@@ -682,10 +682,22 @@ whole-Console operating proof precede maintenance completion.
 
 ## Everyday runtime and workstation memory maintenance
 
-The selected Platform revision includes Gary PR342 and the
+The historical memory-maintenance Platform revision `3a686e9ee4eafb2e3a617b0248731cbfc5564af5` includes Gary PR342 and the
 [standalone runtime/memory delta](2026-10-26-console-prebuilt-runtime-memory.md).
 Its merged tree equals the reviewed candidate tree
 `33ffd32dad2a59fe3fb51dcbffaa74a379f83059`. All other execution pins,
 architecture/gate identifiers, caller and owner permissions remain unchanged.
 Source approval precedes normal commissioning; native capability, memory and
 host activation evidence remain required in the existing maintenance closeout.
+
+## Restart recovery registration
+
+The selected Platform source includes Gary PR343 and the
+[restart-recovery delta](2026-10-26-console-restart-recovery.md).
+Merged revision `2a04edacd6674e0094403b156f22c7d3a6f6179d` has the identical reviewed
+tree `75096a11ace5a3f0b3f190794c595bf5986b404c`. Compensation for a failed start
+preserves its retry registration; intentional shutdown remains effective.
+Cold-boot dependency waits are bounded and read-only before runtime effects.
+All other execution pins, architecture, gate, identity and command permissions
+remain unchanged. Normal full commissioning and fresh native/restart proof
+are operating requirements; source approval does not claim PC availability.
