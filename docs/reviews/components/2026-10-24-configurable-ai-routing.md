@@ -23,11 +23,11 @@ Reviewed exact sources:
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@f208f67c03e2cce1d036d108636328b11d6164aa`
 - `operator-orchestration-service@f06880edd177516835699651ace3861ff0a81939`
-- `platform-engineering@e43abde20b01dfea997c55d3149f1ecb02e0665e`
+- `platform-engineering@1e687aac02ec04b504c925fcf1e8f05820a2fde7`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@b5a4c020860aa4570b489826bd3173fc8b5f9cc5`
+- `platform-engineering-tree@a95a67d0916ec3be8b147acbbb378afabb9bbfe5`
 
 The exact owners above include Gary OOS PR384 and Console PR129/130, accepted in
 the [global read-performance delta](2026-10-26-delivery-owner-history.md).
@@ -704,6 +704,13 @@ are operating requirements; source approval does not claim PC availability.
 
 ## Installed provider runtime alignment
 
+The successor [bounded artifact recovery delta](2026-10-27-bounded-artifact-recovery.md)
+admits the finite local cache maintenance boundary in the selected exact
+Platform tree. It inherits all provider/version, identity and other-owner
+bindings described below. Root installation and native automatic recovery proof
+remain separate operating requirements; source acceptance alone does not prove
+current availability or database integrity.
+
 The exact selected Platform source includes Gary PR344 and the
 [startup provider-version delta](2026-10-27-console-startup-runtime-alignment.md).
 The reviewed candidate `a3412fbd89ee953a7e9450e412068a13854e2236` and merged
@@ -715,3 +722,13 @@ remains fail closed; a version mismatch is not a segmentation fault or proof
 of source corruption. The unchanged start-rate policy is documented accurately;
 slow failures may retry across windows. Current native acceptance and the
 unverified cross-runtime crash cause remain separate from source approval.
+
+## Accepted bounded artifact recovery source
+
+Gary Platform PR345 merged as `1e687aac02ec04b504c925fcf1e8f05820a2fde7`,
+with exact reviewed tree `a95a67d0916ec3be8b147acbbb378afabb9bbfe5`. The
+[bounded artifact recovery review](2026-10-27-bounded-artifact-recovery.md)
+records hosted validation, delegated source review, privileged scope and
+remaining native proof. The paired finite decision selects that merged source
+without changing the other executable-owner pins or architecture/gate identity.
+Root installation and automatic recovery remain operating requirements.

@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-console-startup-runtime-alignment.md
+        path: docs/reviews/components/2026-10-27-bounded-artifact-recovery.md
         reviewed_on: 2026-10-27
         status: current
         decision: approved
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governance-console-bounded-artifact-integrity-recovery
           - existing-publication-server-binding-and-live-route-readback
           - registered-public-main-generated-clone-without-host-alignment
           - native-graduation-runtime-absence-owner-query
@@ -52,6 +53,12 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: scripts/runtime_artifact_integrity.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/runtime-integrity-policy.json
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_artifact_recovery.py
           - repo: platform-engineering
             path: products/governance-operations-console/scripts/console_complete_runtime.py
           - repo: platform-engineering
