@@ -548,7 +548,7 @@ All25 focused tests and12 exact committed local CI-equivalent checks pass,
 including the full dev-integration suite that loads the routing regressions.
 Provider CI40125875053 and repo-posture40125875085 passed at the exact Gary
 head. Accountable review approved Platform341 before actual merge
-3a686e9ee4eafb2e3a617b0248731cbfc5564af5, whose tree exactly matches the
+4bcd94ed47d0fc2c146848b6c8b249d4d7278bc1, whose tree exactly matches the
 reviewed candidate. The full dev-integration suite passed90 tests. The owner
 change-record index is regenerated for the landed record. No live reverse-
 fallback result is claimed from these owner tests.
