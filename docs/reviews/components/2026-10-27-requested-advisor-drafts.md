@@ -29,6 +29,40 @@ separate from normal Platform commissioning and native operating proof.
 
 ## Scope Delta
 
+### Native outgoing draft scope correction
+
+On accepted Console4587794, the Work Design question reached its configured
+gpt-6.1-sol High route with a normal200 response. The final Console-to-OOS
+body builder had dropped the optional draft scope, so the model returned ordinary
+prose. Strict draft parsing preserved the unchanged canvas; retain that original
+invocation/result. The missing format and selected-field context was a Console
+transport omission, not a model-capability or planning-gate failure.
+
+Reviewed Console correction `0319baca1077de4839487d0de2401d55c27a62c0`, tree
+`72ebda6de19e756d366ad420db2fb26f38d68dd2`, forwards the already validated scope,
+bounded conversation and instructions into the existing optional OOS contract.
+The existing CGG digest/admission and configured Work Design profile remain.
+No prompt-context bypass, new route, authority, OOS/Platform delta or parser
+relaxation is introduced. A real HTTP regression failed before the two-line
+transport/type correction and passes after it for both Context and Build Tree,
+including public-to-native identity, emitted scope and normalized reply. Legacy
+advice still omits that optional scope. Full772semantic tests, architecture,
+types, production build, repository validation and production audit passed.
+Gary [Console134](https://github.com/mfshaf7/governance-operations-console/pull/134)
+passed exact-head hosted validation and delegated review, then merged as
+`06aba3e6b98d9651db1566f9ec095314f21628cc`. Readback proved the merged tree equals
+the reviewed tree above. The finite decision advances only this Console source.
+Renewed activation and native diagram/tree proof remain open.
+
+The unchanged generic advisor also passed native in-flight manual-edit
+protection: a later receipted model proposal did not overwrite the operator's
+edit. Predispatch cancellation preserved field/classification and returned to
+idle. These are the stated guard cases, not proof of provider-side cancellation.
+Existing nested-dialog Agent-host admission remains intact; the operator
+procedure now explicitly limits primary-agent presentation to admitted surfaces
+and directs nested drafting to its owning workflow advisor. It does not expand
+floating access to authority dialogs.
+
 ### Native Work Design identity correction
 
 The first commissioned question returned400 before inference: the scope used
