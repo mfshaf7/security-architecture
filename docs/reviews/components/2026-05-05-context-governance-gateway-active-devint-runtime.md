@@ -219,3 +219,45 @@ production.
 - `context-governance-gateway/docs/operating-model/dev-integration-service.md`
 - `platform-engineering/docs/components/context-governance-gateway/access.md`
 - `platform-engineering/docs/records/change-records/2026-05-05-cgg-devint-platform-activation-acceptance.md`
+
+
+## 2026-10-27 Bounded API startup delta
+
+Decision: accepted for the existing local dev-integration profile. Extend its
+existing Kubernetes health boundary with a startup probe on `/healthz`, named
+HTTP port, five-second period, one-second timeout and sixty failures (at most
+five minutes). Normal `/readyz` readiness and `/healthz` liveness thresholds
+remain unchanged, with the existing ten-minute rollout wait. This does not
+claim stage/production readiness or grant caller/model/context authority.
+
+Actual normal Console commissioning exposed liveness killing the API while its
+admitted startup dependency download was still running. Kubernetes events and
+retained install logs distinguish this from OOM or source corruption. Scoped
+same-manifest live containment completed the download and API startup with zero
+restarts and successful health/readiness. This is operating containment, not a
+substitute for merged source, exact composed acceptance and normal commissioning.
+
+The owner change adds only this bounded startup probe, a rendered-manifest
+regression and primary service troubleshooting guidance. It adds no image,
+package permission, identity, secret, listener, external dependency, monitor or
+recovery controller. Failed installation/application startup remains failed;
+health/readiness is not fabricated. Existing local caller bindings, context
+redaction/admission, raw projection denial and audit custody are unchanged.
+
+All99owner tests, compile checks,28JSON contracts/profiles, shell syntax and diff
+checks pass locally. The rendered regression verifies the startup budget fits
+within rollout, preserves ordinary probes, and leaves the existing startup
+command/authority intact. Exact candidate, provider review and merged source
+binding follow below. Rollback reverts the owner manifest with its paired finite
+acceptance; preserve canonical work, receipts, PVC custody and unrelated services.
+
+
+Exact source: Gary CGG PR31 candidate
+`df8a0e8f421ba776ae77f42e5226adc6491f8815` merged as
+`e29c59a4ed56048f6aa47bb924899566a5e68bae`, identical tree
+`842a8722ed1a0e85b905b7410ee1843047fddf09`. All99owner tests, compilation,
+28JSON contracts/profiles, shell syntax and hosted validate passed; delegated
+review bound the exact Gary head. The paired composed decision advances only
+this CGG source and retains every other executable-owner pin and Platform tree.
+Fresh ordinary complete-runtime activation/status and actual native1332
+Refinement/inspection are required before maintenance completion.
