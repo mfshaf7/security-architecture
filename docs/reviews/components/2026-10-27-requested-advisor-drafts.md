@@ -29,6 +29,40 @@ separate from normal Platform commissioning and native operating proof.
 
 ## Scope Delta
 
+### Native fractional canvas JSON
+
+The corrected Console transport exposed a real decimal custom-item coordinate.
+OOS's advice path attempted to serialize the new local scope with Delivery ART's
+integer-only artifact serializer and returned500 before CGG/model dispatch.
+The exact retained request reproduces that failure locally. Preserve its
+invocation and native geometry; no rounding, ART rule relaxation, or model
+rerouting is justified.
+
+Reviewed OOS correction `896b813632f9664377eb53ba9c1ba9fb90eca033`, tree
+`4585b0866fc776227463a5470e5d33559f19ea0f`, represents the existing optional local
+scope as exact JSON text inside the canonical advice context and request
+binding. This reuses the generic advisor data pattern. Role/source/revision
+validation remains before encoding; CGG digest admission precedes invocation.
+The same bytes reach the existing Work Design profile. Unscoped advice and
+canonical ART/application behavior remain unchanged, with no new principal,
+route, credential, profile or execution authority.
+
+A faithful fractional custom-card, position and sketch regression failed before
+the correction and passes through service/context/gateway handoff afterward.
+It separately proves ART canonical numbers remain restricted. Focused21tests
+and full1663tests passed with1661passes/two intentional skips. Bundle/API,
+governance, fetched-base owner-record/mutation and image checks are recorded in
+the exact owner landing evidence. The owner-record index check is current;
+its unchanged metadata needs no generated-content delta. Exact source landing,
+normal activation and native diagram/tree proof remain required. Console and
+Platform sources are unchanged by this correction.
+Gary [OOS387](https://github.com/mfshaf7/operator-orchestration-service/pull/387)
+passed exact-head hosted validation and delegated review, then merged as
+`0757a005ad2064c71003ea8a2e8d71cf1cfd930e`. Readback proved its merged tree equals
+the reviewed candidate tree above. Both runtime images and API-health/default
+worker-denial checks passed locally. The finite decision advances only OOS;
+native operating proof still follows normal commissioning.
+
 ### Native outgoing draft scope correction
 
 On accepted Console4587794, the Work Design question reached its configured
