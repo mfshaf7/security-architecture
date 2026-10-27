@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
-        reviewed_on: 2026-10-27
+        path: docs/reviews/components/2026-10-28-console-capabilities-source-design.md
+        reviewed_on: 2026-10-28
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-bounded-source-design
           - governance-console-bounded-artifact-integrity-recovery
           - existing-publication-server-binding-and-live-route-readback
           - registered-public-main-generated-clone-without-host-alignment
@@ -568,8 +569,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
-        reviewed_on: 2026-10-27
+        path: docs/reviews/components/2026-10-28-console-capabilities-source-design.md
+        reviewed_on: 2026-10-28
         status: current
         decision: approved
         review_areas:
@@ -579,6 +580,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-bounded-source-design
           - broker-runtime-and-caller-surface
           - existing-premerge-evidence-revision-identity
           - direct-intake-caller-target-source-journal-without-owner-attestation
@@ -1274,8 +1276,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
-        reviewed_on: 2026-10-27
+        path: docs/reviews/components/2026-10-28-console-capabilities-source-design.md
+        reviewed_on: 2026-10-28
         status: current
         decision: approved
         review_areas:
@@ -1285,6 +1287,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-bounded-source-design
           - broker-runtime-and-caller-surface
           - bounded-native-intake-owner-read-amplification
           - native-delivery-current-history-original-owner-evidence
