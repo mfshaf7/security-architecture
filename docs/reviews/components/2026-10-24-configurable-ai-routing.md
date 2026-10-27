@@ -20,7 +20,7 @@ current clean Security main and verify the exact source/tree bindings.
 
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
-- `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
+- `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@d34dbc96dbcd094bede6f42f5d3cee7d0b5f7e1d`
 - `operator-orchestration-service@198c54405b7a1c3f0741b8521469540884b0ea8e`
 - `platform-engineering@25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9`
@@ -755,3 +755,14 @@ Only the paired OOS and Console exact source pins advance. Unchanged Platform
 tree and all other owner/identity/model bindings remain authoritative. Normal
 complete-runtime commissioning/status and actual same1332 native selection and
 Refinement readback precede operating completion.
+
+
+## Bounded Context Gateway startup
+
+The [CGG startup delta](2026-05-05-context-governance-gateway-active-devint-runtime.md#2026-10-27-bounded-api-startup-delta)
+accepts Gary CGG PR31's bounded startup probe before normal API liveness. The
+actual slow installation completed with zero restarts and successful health and
+readiness under the matching scoped containment. Only the exact CGG source pin
+advances; normal complete commissioning/status remain required for operating
+closure. Existing endpoints, readiness/liveness thresholds, source/credential
+custody, identities and all other finite owner bindings stay authoritative.
