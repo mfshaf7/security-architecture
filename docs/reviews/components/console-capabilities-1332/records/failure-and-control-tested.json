@@ -1,0 +1,8 @@
+{
+  "gate_id": "failure-and-control-tested",
+  "outcome": "accepted",
+  "owner": "operator-orchestration-service",
+  "record_ref": "https://github.com/mfshaf7/operator-orchestration-service/actions/runs/40550401315",
+  "schema_version": 1,
+  "source_version": "5df11256a02298bce88707c89c9faa9bef6f454d"
+}

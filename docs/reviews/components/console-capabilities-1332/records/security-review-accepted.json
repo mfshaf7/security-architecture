@@ -1,0 +1,8 @@
+{
+  "gate_id": "security-review-accepted",
+  "outcome": "accepted",
+  "owner": "security-architecture",
+  "record_ref": "openproject://work_packages/1345",
+  "schema_version": 1,
+  "source_version": "security-review:delivery-1332:1345"
+}

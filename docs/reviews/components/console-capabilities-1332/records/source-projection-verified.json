@@ -1,0 +1,8 @@
+{
+  "gate_id": "source-projection-verified",
+  "outcome": "accepted",
+  "owner": "workspace-governance-control-fabric",
+  "record_ref": "https://github.com/mfshaf7/workspace-governance-control-fabric/actions/runs/39944188220",
+  "schema_version": 1,
+  "source_version": "1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144"
+}

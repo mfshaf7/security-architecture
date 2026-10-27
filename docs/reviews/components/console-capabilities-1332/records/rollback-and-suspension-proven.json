@@ -1,0 +1,8 @@
+{
+  "gate_id": "rollback-and-suspension-proven",
+  "outcome": "accepted",
+  "owner": "platform-engineering",
+  "record_ref": "platform-engineering://source-evidence/delivery-1332/28694955bcdc109accce63a2e69b1c105bce6969e08be06cd0f4a2d370658889",
+  "schema_version": 1,
+  "source_version": "a2fd8102881779cdaec7adf1368f8869372f8c51"
+}

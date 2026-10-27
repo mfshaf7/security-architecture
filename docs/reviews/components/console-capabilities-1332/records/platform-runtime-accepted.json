@@ -1,0 +1,8 @@
+{
+  "gate_id": "platform-runtime-accepted",
+  "outcome": "accepted",
+  "owner": "platform-engineering",
+  "record_ref": "platform-engineering://runtime-observations/7df55a513a7fefa926a076030bcfccba29d8acd532bbae35d26483c8ee364009",
+  "schema_version": 1,
+  "source_version": "25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9"
+}

@@ -1,0 +1,8 @@
+{
+  "gate_id": "dev-integration-profile-active",
+  "outcome": "accepted",
+  "owner": "platform-engineering",
+  "record_ref": "https://github.com/mfshaf7/platform-engineering/blob/25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9/dev-integration/profiles/temporal/profile.yaml",
+  "schema_version": 1,
+  "source_version": "25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9"
+}

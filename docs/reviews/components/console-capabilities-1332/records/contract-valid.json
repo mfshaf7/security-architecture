@@ -1,0 +1,8 @@
+{
+  "gate_id": "contract-valid",
+  "outcome": "accepted",
+  "owner": "workspace-governance",
+  "record_ref": "https://github.com/mfshaf7/workspace-governance/blob/912fbd2131101fce75acc5efc34a94b5f6366835/contracts/durable-orchestration.yaml",
+  "schema_version": 1,
+  "source_version": "912fbd2131101fce75acc5efc34a94b5f6366835"
+}

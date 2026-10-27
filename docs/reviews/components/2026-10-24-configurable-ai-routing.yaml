@@ -13,9 +13,13 @@ reviewed_revisions:
   context-governance-gateway: e29c59a4ed56048f6aa47bb924899566a5e68bae
   governance-operations-console: d0df22a5b9b88157409f6c877f53aa4b6e4714a7
   operator-orchestration-service: 5df11256a02298bce88707c89c9faa9bef6f454d
-  platform-engineering: 25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9
+  platform-engineering: a2fd8102881779cdaec7adf1368f8869372f8c51
   workspace-governance: 912fbd2131101fce75acc5efc34a94b5f6366835
   workspace-governance-control-fabric: 1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144
   workspace-prototype-studio: 84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6
 reviewed_trees:
-  platform-engineering: 3bba1ac0584f068bb04bb75205c02e90cbaedb7a
+  platform-engineering: af13ceec2792db3e87c000e4d92734c874182b21
+durable_orchestration:
+  manifest_path: docs/reviews/components/console-capabilities-1332/manifest.json
+  manifest_digest: sha256:c786d34579937ab09eb12340b5ac2e4831783416bf111a66bd7ca9898465cc73
+  wgcf_worker_image: ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:b6f76760c67c64264bdd652d6da9365e8cd34fba73f583a18b6180a563419c97
