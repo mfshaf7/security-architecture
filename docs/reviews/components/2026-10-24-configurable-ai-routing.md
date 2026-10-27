@@ -21,8 +21,8 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@d34dbc96dbcd094bede6f42f5d3cee7d0b5f7e1d`
-- `operator-orchestration-service@198c54405b7a1c3f0741b8521469540884b0ea8e`
+- `governance-operations-console@d0df22a5b9b88157409f6c877f53aa4b6e4714a7`
+- `operator-orchestration-service@5df11256a02298bce88707c89c9faa9bef6f454d`
 - `platform-engineering@25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -766,3 +766,54 @@ readiness under the matching scoped containment. Only the exact CGG source pin
 advances; normal complete commissioning/status remain required for operating
 closure. Existing endpoints, readiness/liveness thresholds, source/credential
 custody, identities and all other finite owner bindings stay authoritative.
+
+
+## 2026-10-28 native source-scope maintenance
+
+This finite decision incorporates Console PR138/139/140 and OOS PR389 at the
+exact merged revisions above. It accepts recommissioning of the existing
+composition with durable execution still disabled by default. The
+[initial Epic1332 source-design review](2026-10-28-console-capabilities-source-design.md)
+and final exact Platform candidate gate1345 remain distinct; this update does
+not activate Temporal, admit another definition, fulfill a profile request or
+claim the three operating capabilities complete.
+
+The Console now retains explicit multi-item source coverage through the reviewed
+form, original source authorization, fresh server-prepared decision and original
+scope recovery. The selected target must remain included. Empty, duplicate or
+malformed references are rejected; browser-supplied caller/operator values do not
+replace server identity. OOS retains all owner, readiness, exact Architecture
+Packet coverage and source-start digest checks. This is an existing source
+authoring input, not a new permission or autonomous model action. The timeout
+repair retains the original command after an uncertain server response and
+exposes read-only reconciliation. No final decision or source publication is
+inferred from a timeout.
+
+The same Console source contains first-use registry and original-request history
+adapters. Their absent or mismatched evidence remains unavailable. Purpose
+request runtime bindings and actual request/review/distinct fulfillment/restore
+proof remain under1338/1339. Existing model choices, configuration baseline and
+dedicated account custody remain unchanged.
+
+The OOS launcher now conditionally reuses its existing exact role-aware activation
+validator before runtime mutation. Its default still configures zero workers and
+disables execution. Both process roles use the same read-only accepted bundle,
+with distinct identities; the worker receives no API caller credentials or
+profile-request state. Forwarded profile settings preserve existing explicit
+operator review and distinct Platform fulfillment. This finite maintenance
+commissioning does not supply the later Platform activation bundle.
+
+Console validation at Gary7ace8f1b8ac59746b1701d14fa8d3f1fc360acd9 passed792tests,
+architecture guards, TypeScript, production build, repository/validator checks
+and production audit, followed by successful hostedCI. OOS validation at
+Garyf3244423b2adaa90e6b65200fb43b67bb9241e21 passed1667tests with two intentional
+skips, workflow bundles, schema/API and governance/base checks, both image builds
+and execution-disabled smoke, followed by successful hostedCI. These are source
+checks; they do not substitute for native operating receipts.
+
+Normal commissioning/status must precede native multi-item scope proof. Current
+accepted source remains available during staging through the existing bounded
+source-path parameter. After commissioning, remove the temporary old-source
+refresh binding, prove ordinary credential/record refresh and retire its source
+worktree. Final Epic1332 composition still requires its exact candidate review
+before merge/activation and the three real operating exercises afterward.
