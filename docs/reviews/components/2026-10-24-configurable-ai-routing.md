@@ -22,7 +22,7 @@ Reviewed exact sources, including the [requested local advisor drafting delta](2
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
 - `governance-operations-console@06aba3e6b98d9651db1566f9ec095314f21628cc`
-- `operator-orchestration-service@54fbd71bcb21209b0abfafc357628762975ffc24`
+- `operator-orchestration-service@0757a005ad2064c71003ea8a2e8d71cf1cfd930e`
 - `platform-engineering@25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
