@@ -18,16 +18,16 @@ current clean Security main and verify the exact source/tree bindings.
 
 ## Scope Delta
 
-Reviewed exact sources:
+Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@f017980f265657dfdad6d70e6dc924b99276b266`
-- `governance-operations-console@f208f67c03e2cce1d036d108636328b11d6164aa`
-- `operator-orchestration-service@8519ff0537ae6cd00ae7f45d835e41723985ee18`
-- `platform-engineering@1e687aac02ec04b504c925fcf1e8f05820a2fde7`
+- `governance-operations-console@3d1eb4f8a02ceab82d52b07d0ac0e84c657bae9c`
+- `operator-orchestration-service@54fbd71bcb21209b0abfafc357628762975ffc24`
+- `platform-engineering@25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@a95a67d0916ec3be8b147acbbb378afabb9bbfe5`
+- `platform-engineering-tree@3bba1ac0584f068bb04bb75205c02e90cbaedb7a`
 
 The exact owners above include Gary OOS PR384 and Console PR129/130, accepted in
 the [global read-performance delta](2026-10-26-delivery-owner-history.md).

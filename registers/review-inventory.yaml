@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-bounded-artifact-recovery.md
+        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
         reviewed_on: 2026-10-27
         status: current
         decision: approved
@@ -316,8 +316,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-26-delivery-owner-history.md
-        reviewed_on: 2026-10-26
+        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
+        reviewed_on: 2026-10-27
         status: current
         decision: approved
         review_areas:
@@ -568,7 +568,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-console-source-read-views.md
+        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
         reviewed_on: 2026-10-27
         status: current
         decision: approved
@@ -577,6 +577,7 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
           - broker-runtime-and-caller-surface
           - existing-premerge-evidence-revision-identity
@@ -704,7 +705,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-console-startup-runtime-alignment.md
+        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
         reviewed_on: 2026-10-27
         status: current
         decision: approved
@@ -1156,7 +1157,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-console-startup-runtime-alignment.md
+        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
         reviewed_on: 2026-10-27
         status: current
         decision: approved
@@ -1273,7 +1274,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-console-source-read-views.md
+        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
         reviewed_on: 2026-10-27
         status: current
         decision: approved
@@ -1282,6 +1283,7 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
           - broker-runtime-and-caller-surface
           - bounded-native-intake-owner-read-amplification
