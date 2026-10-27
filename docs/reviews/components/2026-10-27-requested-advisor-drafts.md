@@ -29,6 +29,39 @@ separate from normal Platform commissioning and native operating proof.
 
 ## Scope Delta
 
+### Native Work Design autosave continuity
+
+After normal commissioning, the actual Work Design model answered without
+edits, drafted the requested planning note, and created twelve diagram cards
+and nine connections while preserving the manual card and fractional geometry.
+Reopening exposed a separate local continuity error: resume selected an older
+named checkpoint before the changed current autosave. Private pre-hydration
+readback preserved the original thirteen-card autosave and one-card checkpoint;
+no canonical ART apply or final decision occurred.
+
+Reviewed Console correction `51066745676015cc5fc350a0af941f571a6bf45f`, tree
+`889f0775b4ac711c1c572b631b8d61df00d0ecc0`, restores changed current content
+before its named baseline. Authoritative source seeds retain priority and equal
+content retains its checkpoint identity. The existing validated persistence
+format, source binding, explicit save/finalize/apply controls and operator
+authority remain intact. This is a restore-precedence correction under the
+existing autosave contract, with no new storage, model, credential, endpoint or
+execution authority. OOS and Platform sources are unchanged.
+
+Three focused recovery cases and all775 semantic tests passed, together with
+architecture/type/production build, repository validation and production
+dependency audit. Exact-head review, finite Console source advancement and
+normal activation remain required. Operating proof must reopen the original
+model-authored diagram, then exercise revision, undo and explicit save/reopen;
+source tests do not establish that operating result.
+
+Gary [Console135](https://github.com/mfshaf7/governance-operations-console/pull/135)
+passed exact-head hosted validation and delegated approval, then merged as
+`90a7e58fee4c5bfcdca42a97a9d9f4ec2a4d2aef`. Primary-source readback proved
+its tree equals the reviewed candidate tree above. The finite composed decision
+advances only the Console pin; normal activation and native recovery proof are
+still outstanding.
+
 ### Native fractional canvas JSON
 
 The corrected Console transport exposed a real decimal custom-item coordinate.
