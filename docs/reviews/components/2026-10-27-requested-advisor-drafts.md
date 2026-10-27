@@ -22,11 +22,42 @@ hosted validation and exact-head delegated approval, then merged respectively as
 `3d1eb4f8a02ceab82d52b07d0ac0e84c657bae9c`,
 `54fbd71bcb21209b0abfafc357628762975ffc24` and
 `25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9`. Readback must preserve the exact
-reviewed candidate trees. The finite decision selects these merged sources.
+reviewed candidate trees. The correction below advances only the Console source
+selected by the finite decision.
 Source approval is
 separate from normal Platform commissioning and native operating proof.
 
 ## Scope Delta
+
+### Native Work Design identity correction
+
+The first commissioned question returned400 before inference: the scope used
+the public register ID `delivery-1332`, while the existing native assist route
+requires `delivery-package:1332`. This was a new Console adapter mistake, not a
+planning-gate defect or permission issue. The failed request and result remain
+retained. Manual drafts were unchanged. Canonical-only fixtures had missed the
+public-record composition boundary.
+
+Reviewed correction `4600f5caa2ee254ec2568a69dfb6414d5eb9ad8b`, tree
+`53c868eb2d3684c57f23788393d0daeb6a624219`, makes Context and Build Tree reuse the
+existing canonical Delivery identity adapter. It keeps the local selection
+reference separate and preserves strict server/OOS binding. A public-ID-shaped
+record now proves both roles;771semantic tests, architecture/type/build,
+repository and production dependency checks passed. OOS, CGG, Platform, model
+profiles and final authority are unchanged. Exact source landing and renewed
+native Work Design proof remain required; a fixture pass is not operating proof.
+Gary [Console133](https://github.com/mfshaf7/governance-operations-console/pull/133)
+passed hosted checks and exact-head delegated approval, then merged as
+`458779470f2845af05be488d8b79d2382635c937`. Readback proved the merged tree equals
+the reviewed candidate tree above. The finite decision advances only this
+Console revision; renewed activation and native Work Design proof remain open.
+
+On the preceding accepted composition, the actual Definition advisor returned
+a receipted draft for only the requested Execution problem field. It survived
+reopening; a separate explicit revision changed that field and same-session
+Undo restored the original text. Classification and final decisions remained
+unchanged, with no page errors. This qualifies those generic field cases only;
+it does not substitute for Work Design diagram/tree or the remaining guard cases.
 
 Explicit chat requests can propose bounded text, diagram and tree edits in the
 selected local workflow draft. Questions and ambiguous requests do not edit.
