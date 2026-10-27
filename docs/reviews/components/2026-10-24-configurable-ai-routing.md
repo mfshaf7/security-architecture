@@ -21,13 +21,13 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@d0df22a5b9b88157409f6c877f53aa4b6e4714a7`
+- `governance-operations-console@0f58ce9b9226b42b30cbb617155404c6e5336d90`
 - `operator-orchestration-service@80323d653575cd19b77d51e2fe6be5aca995b490`
-- `platform-engineering@a2fd8102881779cdaec7adf1368f8869372f8c51`
+- `platform-engineering@1f9e65b3f58c7af2bb560447a17f2389d63a71c0`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@af13ceec2792db3e87c000e4d92734c874182b21`
+- `platform-engineering-tree@0547b1607e2a069421f99d533a887d02c493f88d`
 
 The exact owners above include Gary OOS PR384 and Console PR129/130, accepted in
 the [global read-performance delta](2026-10-26-delivery-owner-history.md).
@@ -56,6 +56,17 @@ the [preceding complete-runtime acceptance](2026-10-15-governance-console-platfo
 Their independent owner gates and exact bindings remain enforced.
 
 ## Review Areas
+
+### Capability commissioning recovery
+
+The [bounded commissioning recovery review](2026-10-28-console-capability-recovery.md)
+accepts Console PR141's admitted Start Run and original-run recovery adapter,
+and Platform PR348's binding of the existing fulfiller consumer to the actual
+Secret publication. The exact merged Console revision and validated Platform
+candidate/tree above replace their preceding selections together. The existing
+durable manifest, worker digest, generation, identities and source authority
+remain unchanged. This accepts source and subsequent normal commissioning;
+native Purpose, health and durable-run proof are still required.
 
 ### Corrected local source before merge
 
