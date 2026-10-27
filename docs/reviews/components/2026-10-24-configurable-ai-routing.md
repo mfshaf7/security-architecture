@@ -23,11 +23,11 @@ Reviewed exact sources, including the [requested local advisor drafting delta](2
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@d0df22a5b9b88157409f6c877f53aa4b6e4714a7`
 - `operator-orchestration-service@5df11256a02298bce88707c89c9faa9bef6f454d`
-- `platform-engineering@25ab9f3862b3c7b3b455188f90b6223f0d4ea9a9`
+- `platform-engineering@a2fd8102881779cdaec7adf1368f8869372f8c51`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@3bba1ac0584f068bb04bb75205c02e90cbaedb7a`
+- `platform-engineering-tree@af13ceec2792db3e87c000e4d92734c874182b21`
 
 The exact owners above include Gary OOS PR384 and Console PR129/130, accepted in
 the [global read-performance delta](2026-10-26-delivery-owner-history.md).
@@ -36,7 +36,8 @@ authority are preserved. Parsed immutable Git content is reused only after
 fresh admission/trusted-ref checks; mutable reads share only pending requests.
 Native commissioning and full-screen acceptance remain separate requirements.
 
-The Platform revision is the Gary-authored native account admission correction.
+The Platform revision includes the Gary-authored native account admission correction
+and the exact Console capability composition reviewed below.
 Its source tree must be identical after merge. The merged initial commissioning
 PR336, foundation PR334, custody correction PR335 and image-delivery correction
 PR337, execution-binding correction PR338 and metadata-budget correction PR339
@@ -55,6 +56,19 @@ the [preceding complete-runtime acceptance](2026-10-15-governance-console-platfo
 Their independent owner gates and exact bindings remain enforced.
 
 ## Review Areas
+
+### Epic1332 exact capability composition
+
+The [final exact-composition review](2026-10-28-console-capabilities-exact-composition.md)
+accepts the merged Console/OOS sources and validated unmerged Platform tree above.
+It covers current registry and original request history, the distinct Platform
+fulfiller and existing human review semantics, independent120-second observations,
+and the existing OOS/WGCF durable definition under exact activation evidence.
+The paired YAML selects the reviewed proposed Platform bundle and immutable
+activity-worker digest. Source landing and bounded commissioning are approved;
+native1339/1341/1346 remain separate operating acceptance and are not claimed done.
+Keep current exact execution sources available to refresh while source is staged;
+restore normal bindings and retire temporary source after coordinated activation.
 
 ### Agent Focus reference projection maintenance
 

@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
+        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
           - console-capabilities-bounded-source-design
           - governance-console-bounded-artifact-integrity-recovery
@@ -105,8 +106,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
-        reviewed_on: 2026-10-24
+        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
+        reviewed_on: 2026-10-28
         status: current
         decision: approved
         review_areas:
@@ -114,7 +115,9 @@ review_inventory:
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
+          - console-capabilities-exact-composition
           - final-guidance-native-qualification-and-owner-profile-boundary
           - complete-composition-dedicated-work-design-context-binding
           - inert-prototype-source-import-metadata-boundary
@@ -166,8 +169,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
+        reviewed_on: 2026-10-28
         status: current
         decision: approved
         review_areas:
@@ -177,6 +180,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-exact-composition
           - registered-owner-publication-freshness-and-native-callback
           - source-owner-provider-provenance-bundle-parity
           - wgcf-current-studio-registry-consumer-compatibility
@@ -318,7 +322,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
+        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -329,6 +333,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
           - console-global-read-performance-capability-equivalence
           - immutable-owner-snapshot-with-fresh-authority
@@ -571,7 +576,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
+        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -582,6 +587,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
           - console-capabilities-bounded-source-design
           - broker-runtime-and-caller-surface
@@ -710,7 +716,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
+        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -721,6 +727,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
           - governed-ai-observed-provider-patch-and-readiness
           - console-failed-start-compensation-retains-recovery-registration
@@ -1045,16 +1052,18 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-14-temporal-chronology-correct-commissioning-authorization.md
-        reviewed_on: 2026-08-14
+        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
+        reviewed_on: 2026-10-28
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
+          - ai
         review_trigger_ids:
+          - console-capabilities-exact-composition
           - temporal-controlled-runtime-proof-authorization
           - temporal-component-commissioning-runtime-drill
           - temporal-baseline-attestation-and-exact-restore
@@ -1082,8 +1091,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
+        reviewed_on: 2026-10-28
         status: current
         decision: approved
         review_areas:
@@ -1093,6 +1102,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-exact-composition
           - source-owner-provider-provenance-bundle-parity
           - delivery-art-active-architecture-semantic-validation
           - registered-owner-publication-freshness-and-native-callback
@@ -1280,7 +1290,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
+        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -1291,6 +1301,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
           - console-capabilities-bounded-source-design
           - broker-runtime-and-caller-surface

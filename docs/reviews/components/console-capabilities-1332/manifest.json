@@ -1,0 +1,64 @@
+{
+  "decision": "accepted",
+  "decision_ref": "security-architecture://reviews/console-capabilities-1332/exact-composition",
+  "definition_id": "validation-readiness-run",
+  "definition_version": 1,
+  "environment": "dev-integration",
+  "evidence": {
+    "activity-idempotency-tested": {
+      "artifact_digest": "sha256:4f67115728193c8eb61f903847516e836b5742a71291f0426ee6e6bc434431ab",
+      "artifact_path": "records/activity-idempotency-tested.json"
+    },
+    "contract-valid": {
+      "artifact_digest": "sha256:92413617f9ba5ce136d6da54658af98d0a11710c7b1544e25d61272443e60095",
+      "artifact_path": "records/contract-valid.json"
+    },
+    "deterministic-replay-tested": {
+      "artifact_digest": "sha256:93a5dfb66e928150b519af4c5fa0d85642f535dcab65259bac055b209315078a",
+      "artifact_path": "records/deterministic-replay-tested.json"
+    },
+    "dev-integration-profile-active": {
+      "artifact_digest": "sha256:5b9147bf8096e4a522692a50857ab2c63bb1d0bbc2f4bb575c05d4a342ba7ec0",
+      "artifact_path": "records/dev-integration-profile-active.json"
+    },
+    "failure-and-control-tested": {
+      "artifact_digest": "sha256:0f0b2316eea70883bacf66d6ff429067faaf9929c4fc30edbb935c4ffb67a225",
+      "artifact_path": "records/failure-and-control-tested.json"
+    },
+    "implementation-reviewed": {
+      "artifact_digest": "sha256:b7e0c21b04bbd4d68b6be6f25318b910461bbfe6dae903ace30d2b53e1288c88",
+      "artifact_path": "records/implementation-reviewed.json"
+    },
+    "platform-runtime-accepted": {
+      "artifact_digest": "sha256:ee1bba216fee3f8f908b3ac93ec6393bd7ef022a253d8689a93a0c32d1647ded",
+      "artifact_path": "records/platform-runtime-accepted.json"
+    },
+    "rollback-and-suspension-proven": {
+      "artifact_digest": "sha256:5154fd8f6602a9c76e25c353b183cecc548331ff75a0f7186fb0ca9ebf6c3902",
+      "artifact_path": "records/rollback-and-suspension-proven.json"
+    },
+    "security-review-accepted": {
+      "artifact_digest": "sha256:ad97aa399d63eb6d86406374bd19d7fc8fe27eebb363dea5f80184425a30c39a",
+      "artifact_path": "records/security-review-accepted.json"
+    },
+    "source-projection-verified": {
+      "artifact_digest": "sha256:7053939c2da6ca0f65972105f89932568248cf4947f85032313e52057cb90887",
+      "artifact_path": "records/source-projection-verified.json"
+    }
+  },
+  "expires_at": "2027-01-25T20:38:00.181250Z",
+  "issued_at": "2026-10-27T20:38:00.181250Z",
+  "issued_by": "platform-engineering",
+  "manifest_id": "platform-engineering://activation/validation-readiness-run/v1/dev-integration/delivery-1332",
+  "profile_id": "temporal",
+  "profile_lifecycle": "active",
+  "schema_version": 1,
+  "temporal_target": {
+    "address": "temporal-frontend.devint-temporal-mfshaf7.svc.cluster.local:7233",
+    "identities": {
+      "api": "operator-orchestration-service-api",
+      "workflow_worker": "oos-workflow-worker"
+    },
+    "namespace": "governance-mfshaf7"
+  }
+}
