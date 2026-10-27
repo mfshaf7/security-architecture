@@ -29,6 +29,46 @@ separate from normal Platform commissioning and native operating proof.
 
 ## Scope Delta
 
+### Native note capacity and manual correction
+
+The preceding commissioned source passed original thirteen-card reopen,
+model revision and full-snapshot Undo, model note drafting, explicit save and
+fresh reopen. The regenerated note then revealed a content boundary mismatch:
+the model returned9347 characters and the new scope's default24000 limit
+admitted it, while native OOS assist and apply contracts allow8000. Validation
+of the actual retained note against the existing owner schema rejected it.
+The note had no ordinary manual editor, so that accepted draft could block
+subsequent owner actions. No canonical application was attempted.
+
+Reviewed Console `6df7ed01b142f3f044f169a9d926383a635ff5cb`, tree
+`0cadba52bd75e1555f57130ee3caeec9f5914ba9`, carries the existing8000 limit
+in the actual note scope and exposes the normal Teras note editor. Overlong
+retained text stays visible for correction without truncation. Finalization
+is blocked until valid; finalized/read-only sessions remain locked. Manual
+changes reuse the existing dirty/acceptance invalidation, source and stale
+guards, autosave and separate final controls. A faithful scope test accepts
+the boundary, rejects an oversized model proposal before setters, and retains
+older text for manual recovery. Tree text limits already match native owner
+limits and were not changed.
+
+The already-recorded Proposal Capture caption now uses the actual disconnected
+preview posture. Live capture describes Workspace Proposals and its separate
+reviewed actions; preview describes its local-only outcome. The existing live
+capture command, credentials and canonical handoff remain unchanged.
+
+All776 semantic tests, architecture/type/production build, repository and
+production dependency checks passed. No new endpoint, credential, model,
+authority or storage format is introduced; OOS and Platform are unchanged.
+After exact source landing and normal activation, recover the earlier valid
+model-authored note through the editor while retaining the complete diagram,
+then verify advisory and final-control separation through the native route.
+
+Gary [Console136](https://github.com/mfshaf7/governance-operations-console/pull/136)
+passed exact-head hosted validation and delegated approval, then merged as
+`4b4cf9f1eab78887270b8a5d1007400aec95bcae`. Primary-source readback proved
+its tree equals the reviewed candidate tree above. The finite decision advances
+only Console; normal activation and native note recovery remain required.
+
 ### Native Work Design autosave continuity
 
 After normal commissioning, the actual Work Design model answered without
