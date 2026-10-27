@@ -576,7 +576,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
+        path: docs/reviews/components/2026-10-28-premerge-local-source-recovery.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -587,6 +587,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - corrected-local-source-before-merge
           - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
           - console-capabilities-bounded-source-design
@@ -716,7 +717,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
+        path: docs/reviews/components/2026-10-28-premerge-local-source-recovery.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -727,6 +728,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - corrected-local-source-before-merge
           - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
           - governed-ai-observed-provider-patch-and-readiness
@@ -1290,7 +1292,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
+        path: docs/reviews/components/2026-10-28-premerge-local-source-recovery.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -1301,6 +1303,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - corrected-local-source-before-merge
           - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
           - console-capabilities-bounded-source-design

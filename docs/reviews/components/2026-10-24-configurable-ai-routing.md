@@ -22,7 +22,7 @@ Reviewed exact sources, including the [requested local advisor drafting delta](2
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@d0df22a5b9b88157409f6c877f53aa4b6e4714a7`
-- `operator-orchestration-service@5df11256a02298bce88707c89c9faa9bef6f454d`
+- `operator-orchestration-service@80323d653575cd19b77d51e2fe6be5aca995b490`
 - `platform-engineering@a2fd8102881779cdaec7adf1368f8869372f8c51`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -56,6 +56,16 @@ the [preceding complete-runtime acceptance](2026-10-15-governance-console-platfo
 Their independent owner gates and exact bindings remain enforced.
 
 ## Review Areas
+
+### Corrected local source before merge
+
+The [pre-merge local-source review](2026-10-28-premerge-local-source-recovery.md)
+accepts OOS PR390 at the exact merged revision above. It restores current local
+source observation and existing Gary publication/renewal while the same PR is
+open. Exact-head evidence, CI, human decisions and immutable prior packets stay
+enforced. The paired runtime source selection advances only OOS; accepted
+Platform tree, durable manifest, worker digest and original generation remain
+unchanged. Commissioning and native operating acceptance remain separate.
 
 ### Epic1332 exact capability composition
 
