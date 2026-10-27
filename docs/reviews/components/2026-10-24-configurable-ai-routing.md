@@ -742,3 +742,16 @@ stable representation-scoped bindings without changing canonical versions,
 commands, callers or the Console integrity/replay checks. The original accepted
 Proposal1331 and Handoff identity are retained. Exact-source Platform activation
 and the same original native Handoff remain separate operating requirements.
+
+
+## Current versus historical planning scope correction
+
+The [existing Refinement boundary delta](2026-08-26-refinement-catalog-dev-integration-boundary.md#2026-10-27-terminal-metadata-eligibility-delta)
+accepts OOS PR388's exclusion of terminal work from current metadata/form reads,
+preserving full historical hierarchy and current descendants. The coordinated
+Console selection correction retains explicitly inspected planning packages
+without adding them to execution counts or changing canonical action authority.
+Only the paired OOS and Console exact source pins advance. Unchanged Platform
+tree and all other owner/identity/model bindings remain authoritative. Normal
+complete-runtime commissioning/status and actual same1332 native selection and
+Refinement readback precede operating completion.

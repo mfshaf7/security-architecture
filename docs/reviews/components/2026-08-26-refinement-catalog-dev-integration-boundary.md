@@ -284,3 +284,86 @@ Approval is revoked for this decision scope if any of the following occurs:
 - `workspace-governance-control-fabric/contracts/repository-readiness/manifest.json`
 - `governance-operations-console/docs/security-and-data-boundaries.md`
 - `security-architecture/docs/reviews/components/2026-08-25-work-design-dev-integration-composition-boundary.md`
+
+
+## 2026-10-27 Terminal metadata eligibility delta
+
+Decision: accepted for the existing local dev-integration boundary, conditional
+on exact reviewed source, unchanged composed acceptance and ordinary Platform
+activation. Operating proof remains separate; this is not completion of1332.
+
+The OOS maintenance `maintenance-refinement-terminal-scope-oos` corrects an
+existing current-versus-historical scope error. The actual Work Design
+application8220 is valid and created1337-1346 under current1333-1335. Canonical
+1336 is retired. Refinement must not require new PI, roles or contract text on
+that historical Feature as a condition of refining current work.
+
+Reviewed surface: `src/refinement/packet-model.js`,
+`src/openproject-client.js`, the existing native planning contract and operator
+surface, and native reader/source/writer regressions. The exact candidate and
+merged revision are recorded below after source review. Exclude only canonical
+`done` and `retired` nodes from work-item metadata targets and mutable-form
+reads. Keep full source hierarchy and historical descriptions, root governance,
+active descendants under closed ancestors, and packet/source revision binding.
+Unknown or active states retain current required fields; no new editable field,
+API, credential, role or model authority is introduced.
+
+Explicit authenticated acceptance, current form permissions/allowed values,
+strict target/value coverage, stale packet denial, original idempotency/run,
+canonical status retention and final readback remain authoritative. A terminal
+ancestor cannot hide current descendants. A terminal-only descendant set cannot
+fall back to fabricating work-item metadata on the root. Native coordinated
+planning must leave historical1336-equivalent records unchanged rather than
+reopening, deleting, PI-committing or silently repairing them.
+
+Implemented proof: mixed current/done/retired canonical reader-to-packet tests
+preserve historical descriptions and refuse terminal form calls; a blocked
+current child beneath a retired parent remains required; a terminal-only tree
+has no root fallback; changed current scope changes the packet revision; the
+existing Delivery service/OpenProject plan writer applies and replays current
+PI/Iteration with no creation and byte-identical retired history. Full owner
+CI-equivalent checks and provider checks bind the exact source before merge.
+
+Required operating proof: normal complete-runtime activation/status and fresh
+same1332 owner projection show13current descendants as work-item targets,
+exclude1336 from required metadata while retaining its canonical tree/history,
+and preserve the ordinary explicit review/apply path. No fabricated successful
+receipt, source-only claim of live completion, or new ART repair item is allowed.
+Rollback reverts the owner source with composed reacceptance and preserves
+canonical history, original requests, receipts, and unrelated workloads.
+
+
+### Exact source and composed Console inspection
+
+OOS Gary PR388 reviewed candidate
+`d9ae1d88e93411cdfe2da49e405d6594902df321`, merged
+`198c54405b7a1c3f0741b8521469540884b0ea8e`, identical tree
+`da7d475e7b0b46020c311e960850393e8682b152`. Full owner proof passes1662tests
+with2documented skips, bundles/API/governance/base-aware mutation contracts and
+API/default-denied-worker image smoke; hosted CI and delegated exact-head review
+passed. Credential revoked and exact-owner strict cleanup passed.
+
+Native follow-up also proves the Console direct planning inspection resolver
+returned1332 but its selected-package view filtered the target back out. Review
+Console Gary PR137 candidate `6ef8f1b305254b4317a6be685caf8d44c97fd233`, merged
+`d34dbc96dbcd094bede6f42f5d3cee7d0b5f7e1d`, identical tree
+`c5f98aa57f2b8820fd8e59422f245f26ecd53fac`: resolve explicitly selected packages
+from the same canonical inventory, retaining current execution-register filters
+and counts. No new available action is invented; current OOS change projection,
+review, explicit Apply and source-revision guards still decide tree editing.
+Unknown/missing targets remain unavailable and canonical selection is not a grant
+of execution rights. Source and actual native selection must both be proved;
+the earlier resolver-only test was insufficient.
+
+The composed decision may advance only these OOS and Console revisions. Platform,
+CGG, WGCF, Studio, WG decision, identities, routing/effort and data boundaries stay
+at their separately accepted bindings. Normal whole-runtime commissioning and
+native same-item Refinement/inspection are still required after source acceptance.
+
+
+Console777semantic tests, architecture guards, type checks, production build,
+repository/public-source validation and production dependency audit passed with
+zero vulnerabilities. The exact final source plus primary-surface documentation
+passed hosted repository CI and delegated accountable review before merge.
+Source acceptance permits the normal existing commissioning procedure; it does
+not assert that the replacement runtime or native1332 proof is already current.
