@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-console-capability-recovery.md
+        path: docs/reviews/components/2026-10-28-purpose-lifecycle-qualification.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -22,6 +22,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - purpose-lifecycle-suspended-qualification-and-exact-restoration
+          - shared-platform-control-plane-and-secrets
           - console-capability-commissioning-recovery
           - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
