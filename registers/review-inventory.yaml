@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - purpose-lifecycle-qualification-fixture-isolation-and-final-tree
           - purpose-lifecycle-suspended-qualification-and-exact-restoration
           - shared-platform-control-plane-and-secrets
           - console-capability-commissioning-recovery
