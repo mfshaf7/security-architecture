@@ -110,7 +110,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
+        path: docs/reviews/components/2026-10-28-durable-owner-result-recovery.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -121,6 +121,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - durable-independent-owner-result-and-mounted-metadata
           - console-capabilities-exact-composition
           - final-guidance-native-qualification-and-owner-profile-boundary
           - complete-composition-dedicated-work-design-context-binding
@@ -581,7 +582,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-premerge-local-source-recovery.md
+        path: docs/reviews/components/2026-10-28-durable-owner-result-recovery.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -592,6 +593,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - durable-independent-owner-result-and-mounted-metadata
           - corrected-local-source-before-merge
           - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
