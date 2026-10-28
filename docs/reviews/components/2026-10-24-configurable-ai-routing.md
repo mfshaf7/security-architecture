@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@0f58ce9b9226b42b30cbb617155404c6e5336d90`
+- `governance-operations-console@862bb5caf0c731c7ed8ad7b975e577d250c89bdb`
 - `operator-orchestration-service@2ba65433b2ef3f78c36143559821c1189c27e463`
 - `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
@@ -56,6 +56,18 @@ the [preceding complete-runtime acceptance](2026-10-15-governance-console-platfo
 Their independent owner gates and exact bindings remain enforced.
 
 ## Review Areas
+
+### Restored full Delivery History inspection
+
+The [read-only History review](2026-10-28-delivery-history-readonly.md) accepts
+Console PR142 at the exact merged revision above. Normal registers, workflow
+sections, Execution views and selected ART hierarchy return without mounting
+authoring, advisor, preparation or apply controllers in History. Original
+receipts remain supplemental evidence. Current ART and Refinement packet data
+are labelled separately from original snapshots that were never retained.
+Only the Console selection advances; all other reviewed sources, the Platform
+tree, worker digest and original durable generation are unchanged. Final
+native readback follows normal commissioning.
 
 ### Restored Purpose qualification source
 
