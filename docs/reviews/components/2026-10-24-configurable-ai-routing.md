@@ -23,11 +23,11 @@ Reviewed exact sources, including the [requested local advisor drafting delta](2
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@0f58ce9b9226b42b30cbb617155404c6e5336d90`
 - `operator-orchestration-service@80323d653575cd19b77d51e2fe6be5aca995b490`
-- `platform-engineering@1f9e65b3f58c7af2bb560447a17f2389d63a71c0`
+- `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
 - `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@0547b1607e2a069421f99d533a887d02c493f88d`
+- `platform-engineering-tree@8bc54e24ba844ebaf90b5281a538b11bd3ac87d5`
 
 The exact owners above include Gary OOS PR384 and Console PR129/130, accepted in
 the [global read-performance delta](2026-10-26-delivery-owner-history.md).
@@ -56,6 +56,21 @@ the [preceding complete-runtime acceptance](2026-10-15-governance-console-platfo
 Their independent owner gates and exact bindings remain enforced.
 
 ## Review Areas
+
+### Restored Purpose qualification source
+
+The [existing qualification review](2026-10-28-purpose-lifecycle-qualification.md)
+now covers the actual native request, merged source and applied fulfillment,
+plus the exact restoration candidate selected above. Its three profile source
+documents reproduce the original accepted baseline byte for byte. Only the
+synthetic management test's use of existing disposable fixtures and its fixture
+documentation remain different from the previous accepted Platform tree. The
+runtime management guard, six task scopes, provider/model/account choices,
+Console/OOS/WGCF source and durable activation bundle are unchanged. No seventh
+profile is admitted for runtime activation. The restored candidate must land
+with the exact reviewed tree before coordinated normal commissioning; native
+source history, final restoration readback and durable recovery remain separate
+operating obligations.
 
 ### Capability commissioning recovery
 
