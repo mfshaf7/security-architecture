@@ -327,7 +327,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-console-capability-recovery.md
+        path: docs/reviews/components/2026-10-28-delivery-history-readonly.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -338,6 +338,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - delivery-history-full-readonly-workflow-inspection
           - console-capability-commissioning-recovery
           - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
@@ -388,6 +389,12 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: docs/product/delivery-history-inspection.md
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/live-runtime/delivery-history-tree.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/workflows/shared/history/delivery-readonly-workflow-session.tsx
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/presentation/surfaces/intake/intake-surface.tsx
           - repo: governance-operations-console
