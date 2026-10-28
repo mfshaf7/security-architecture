@@ -327,7 +327,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-delivery-history-readonly.md
+        path: docs/reviews/components/2026-10-28-native-completed-work-lock.md
         reviewed_on: 2026-10-28
         status: current
         decision: approved
@@ -338,6 +338,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - delivery-history-original-workflow-completed-locks
           - delivery-history-full-readonly-workflow-inspection
           - console-capability-commissioning-recovery
           - console-capabilities-exact-composition
@@ -394,7 +395,9 @@ review_inventory:
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/live-runtime/delivery-history-tree.ts
           - repo: governance-operations-console
-            path: src/domain-workspaces/delivery/presentation/workflows/shared/history/delivery-readonly-workflow-session.tsx
+            path: src/domain-workspaces/delivery/presentation/workflows/work-design/session/work-design-session-modal.tsx
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/workflows/refinement/session/refinement-session-modal.tsx
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/presentation/surfaces/intake/intake-surface.tsx
           - repo: governance-operations-console
