@@ -90,6 +90,34 @@ logical paging is not a server-side scalability claim. Existing API bounds,
 owner timeout and explicit read errors remain. This repair does not add storage
 or a new indexing subsystem.
 
+### Original history scrolling correction
+
+A subsequent real desktop wheel check found an operating gap beyond the data
+readback: panels had127px visible height against939px activity content, overflow
+hidden, and wheel input did not change any scroll position. Automated clicks
+could scroll those hidden ancestors programmatically; that was insufficient proof
+of usable human inspection. The correction retains the same original interfaces.
+The existing full-height modal now honors its declared scroll body. The existing
+Teras field stack gains opt-in bounded scrolling with natural content rows; the
+shared owner-history content uses it in Work Design, Refinement and Execution.
+No content, workflow status, command, receipt, backend, identity or approval logic
+changes. Unconfigured stacks and fill-body editor layouts retain their behavior.
+Gary candidate `06f7bc57de03600a5a46e62b83769e93f6335854` merged as
+`3f88ca468ef26ad604e50ee7a04b0290ba95a44b` in
+[Console PR145](https://github.com/mfshaf7/governance-operations-console/pull/145).
+Candidate and merge trees are identical. Implementation805tests, architecture,
+types and production build passed; the final contract-only documentation addition
+passed repository and architecture checks and the exact final hosted check
+[40744535047](https://github.com/mfshaf7/governance-operations-console/actions/runs/40744535047).
+Native real-owner wheel checks passed in Work Design, Refinement and Execution,
+plus compact-width Execution: scroll position0to800, no clipped evidence panels,
+no API/draft writes and no browser errors. The preceding commissioned13browser
+checks and all44successful item-history reads remain original backend/fidelity
+proof; OOS source is unchanged. Final actual-source wheel/keyboard and retained
+version readback follows normal commissioning.
+Only the Console source selection advances from the preceding accepted pair;
+OOS and every other source/tree/durable binding remain unchanged.
+
 ## Decision
 
 `approved` for the exact sources selected in the paired finite decision within
