@@ -22,9 +22,9 @@ Reviewed exact sources, including the [requested local advisor drafting delta](2
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@0f58ce9b9226b42b30cbb617155404c6e5336d90`
-- `operator-orchestration-service@80323d653575cd19b77d51e2fe6be5aca995b490`
+- `operator-orchestration-service@2ba65433b2ef3f78c36143559821c1189c27e463`
 - `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
-- `workspace-governance@912fbd2131101fce75acc5efc34a94b5f6366835`
+- `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
 - `platform-engineering-tree@8bc54e24ba844ebaf90b5281a538b11bd3ac87d5`
@@ -867,3 +867,27 @@ source-path parameter. After commissioning, remove the temporary old-source
 refresh binding, prove ordinary credential/record refresh and retire its source
 worktree. Final Epic1332 composition still requires its exact candidate review
 before merge/activation and the three real operating exercises afterward.
+
+## Independent durable owner outcomes and mounted origin metadata
+
+The paired [bounded review](2026-10-28-durable-owner-result-recovery.md) accepts
+Workspace Governance's command-scoped exact-root origin read and OOS's truthful
+handling of independent validation and repository readiness. Failed validation
+still blocks aggregate readiness and retains the genuine owner receipt. False
+success, malformed reason counts, mismatched requests and forged receipt
+bindings remain rejected. No persistent Git trust, ownership change, new
+permission or definition is introduced.
+
+The exact owner merges selected above preserve the reviewed Gary candidate
+trees. Workspace Governance passed its full23-step local workflow,300tests and
+hosted40623393681. OOS passed its full13-step local workflow,1672tests with2
+existing skips, image smoke and hosted40622933716. The original live Temporal
+history replayed successfully under the corrected OOS source. The candidate
+validator also passed a read-only check inside the actual foreign-owned mount.
+These are source and pre-merge diagnostic facts, not completed native operation.
+Normal commissioning and original-run recovery/resume remain required.
+
+The existing Platform tree, architecture, source custody, originalC786 durable
+activation generation, exact WGCF worker image, model/account choices and all
+human approval gates remain unchanged. The generated owner-record index covers
+the OOS maintenance record; no improvement record or new ART item is added.
