@@ -21,8 +21,8 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@ee472720db3fac9a3573c1f68b3604f6ba3ee38e`
-- `operator-orchestration-service@2ba65433b2ef3f78c36143559821c1189c27e463`
+- `governance-operations-console@eea99305ba7ee06fff7755162e0b82051954e53f`
+- `operator-orchestration-service@d219e37c02170c9ecf7900fbd8b2a0561f3dfea7`
 - `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -56,6 +56,17 @@ the [preceding complete-runtime acceptance](2026-10-15-governance-console-platfo
 Their independent owner gates and exact bindings remain enforced.
 
 ## Review Areas
+
+### Original Delivery artifact fidelity and independent item history
+
+The [Delivery history fidelity review](2026-10-29-delivery-history-fidelity.md)
+accepts OOS PR392 and Console PR144 at the exact merged revisions above. It
+preserves selected original artifacts, independent retained stage evidence and
+real item activity without current authoring prerequisites. Pure inspection and
+shared snapshot zoom remain available while completed-work mutations stay locked.
+Missing artifacts and partial coverage remain explicit. Only those two source
+selections advance; all other pins, Platform tree and durable bindings remain.
+Normal commissioning must prove actual served sources and native read behavior.
 
 ### Original Delivery interfaces with completed-work controls locked
 
