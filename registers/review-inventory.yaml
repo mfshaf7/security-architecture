@@ -527,6 +527,12 @@ review_inventory:
             path: src/domain-workspaces/delivery/local-runtime/persistence/work-design-context-resume.ts
           - repo: governance-operations-console
             path: src/teras/teras-media.tsx
+          - repo: governance-operations-console
+            path: src/teras/teras-field-layout.tsx
+          - repo: governance-operations-console
+            path: src/teras/teras-patterns.module.css
+          - repo: governance-operations-console
+            path: docs/product/teras-contract.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component

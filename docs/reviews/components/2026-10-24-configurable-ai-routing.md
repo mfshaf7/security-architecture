@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@eea99305ba7ee06fff7755162e0b82051954e53f`
+- `governance-operations-console@3f88ca468ef26ad604e50ee7a04b0290ba95a44b`
 - `operator-orchestration-service@d219e37c02170c9ecf7900fbd8b2a0561f3dfea7`
 - `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
@@ -56,6 +56,16 @@ the [preceding complete-runtime acceptance](2026-10-15-governance-console-platfo
 Their independent owner gates and exact bindings remain enforced.
 
 ## Review Areas
+
+### Original history content remains reachable
+
+The [same fresh History review](2026-10-29-delivery-history-fidelity.md) also
+accepts Console PR145 at the exact revision above. Its existing modal/stack
+scrolling correction preserves original panels, data and mutation locks while
+making clipped evidence reachable by real mouse input. Full owner checks and
+native desktop/compact wheel checks passed. Only Console advances from the
+preceding accepted pair; other sources, Platform tree and durable bindings remain.
+Actual served-source wheel/keyboard proof follows normal commissioning.
 
 ### Original Delivery artifact fidelity and independent item history
 
