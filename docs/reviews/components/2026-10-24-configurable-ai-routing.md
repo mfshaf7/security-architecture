@@ -22,18 +22,26 @@ Reviewed exact sources, including the [requested local advisor drafting delta](2
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@8219c08256a2cc119ef5df476708fab00a7094c6`
-- `operator-orchestration-service@670dc727194facae776633656b71417c993b824d`
-- `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
+- `operator-orchestration-service@17358f6deefa9e4b0b0dcee50366dc5b67ac86f4`
+- `platform-engineering@d81dca004a90103327af22d4005adce187d1886f`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@8bc54e24ba844ebaf90b5281a538b11bd3ac87d5`
+- `platform-engineering-tree@f03abc08e0dbe3be6975e76cf54f034ec7900a72`
 
-The [saved operator work review](2026-10-29-saved-operator-work.md) accepts
+The [recovery timing and dependency-cache delta](2026-10-30-console-recovery-timing.md)
+accepts Gary OOS PR395 and Platform PR351 at the exact merged revisions/tree
+above. It corrects dependency download reuse, worker and complete-lifecycle
+budgets, and private interrupted-startup diagnostics. Other owner selections,
+caller authority, the original durable manifest, worker digest and activation
+generation remain unchanged. Source acceptance does not establish operating
+completion; require fresh native complete-runtime status and cold/warm proof.
+
+The prior [saved operator work review](2026-10-29-saved-operator-work.md) accepted
 Gary OOS PR394 and Console PR146/147 for private saved drafts, original browser
 recovery and truthful save acknowledgement across the three existing editors.
-Only those two source pins change. Existing canonical workflow authority,
-other source pins, Platform tree and activation manifest remain unchanged.
+That amendment advanced only those two source pins and left canonical workflow
+authority, other source pins, Platform tree and activation manifest unchanged.
 
 The exact owners above include Gary OOS PR384 and Console PR129/130, accepted in
 the [global read-performance delta](2026-10-26-delivery-owner-history.md).
