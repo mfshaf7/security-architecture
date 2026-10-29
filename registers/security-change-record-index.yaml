@@ -3646,6 +3646,18 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-29-durable-saved-work.md
+  date: '2026-10-29'
+  short_title: 2026-10-29-durable-saved-work
+  review_areas:
+  - runtime
+  - delivery
+  - identity
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-29-refinement-backlog-planning.md
   date: '2026-10-29'
   short_title: 2026-10-29-refinement-backlog-planning

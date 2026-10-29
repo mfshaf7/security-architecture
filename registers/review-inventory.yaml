@@ -327,7 +327,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-29-delivery-history-fidelity.md
+        path: docs/reviews/components/2026-10-29-saved-operator-work.md
         reviewed_on: 2026-10-29
         status: current
         decision: approved
@@ -338,6 +338,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - private-saved-work-and-browser-recovery
           - delivery-history-original-version-and-independent-owner-activity
           - delivery-history-original-workflow-completed-locks
           - delivery-history-full-readonly-workflow-inspection
@@ -391,6 +392,10 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/console-integration/saved-work/browser-session.ts
+          - repo: governance-operations-console
+            path: docs/product/durable-saved-work.md
           - repo: governance-operations-console
             path: docs/product/delivery-history-inspection.md
           - repo: governance-operations-console
@@ -605,7 +610,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-29-delivery-history-fidelity.md
+        path: docs/reviews/components/2026-10-29-saved-operator-work.md
         reviewed_on: 2026-10-29
         status: current
         decision: approved
@@ -616,6 +621,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - private-saved-work-and-browser-recovery
           - delivery-history-original-version-and-independent-owner-activity
           - durable-independent-owner-result-and-mounted-metadata
           - corrected-local-source-before-merge
@@ -652,6 +658,10 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/saved-work/store.js
+          - repo: operator-orchestration-service
+            path: docs/operations/saved-operator-work.md
           - repo: operator-orchestration-service
             path: src/console-source-authority.js
           - repo: operator-orchestration-service
@@ -1333,7 +1343,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-29-refinement-backlog-planning.md
+        path: docs/reviews/components/2026-10-29-saved-operator-work.md
         reviewed_on: 2026-10-29
         status: current
         decision: approved
@@ -1344,6 +1354,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - private-saved-work-and-browser-recovery
           - refinement-backlog-planning-and-retained-state
           - corrected-local-source-before-merge
           - console-capabilities-exact-composition
@@ -1363,6 +1374,10 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/saved-work/store.js
+          - repo: operator-orchestration-service
+            path: docs/operations/saved-operator-work.md
           - repo: operator-orchestration-service
             path: src/console-source-authority.js
           - repo: operator-orchestration-service
