@@ -22,7 +22,7 @@ Reviewed exact sources, including the [requested local advisor drafting delta](2
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@3f88ca468ef26ad604e50ee7a04b0290ba95a44b`
-- `operator-orchestration-service@d219e37c02170c9ecf7900fbd8b2a0561f3dfea7`
+- `operator-orchestration-service@9f19e978a688cacbd3e187dc5401adc3a4563226`
 - `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
@@ -56,6 +56,18 @@ the [preceding complete-runtime acceptance](2026-10-15-governance-console-platfo
 Their independent owner gates and exact bindings remain enforced.
 
 ## Review Areas
+
+### Valid backlog planning in Refinement
+
+The [Refinement planning review](2026-10-29-refinement-backlog-planning.md)
+accepts Gary OOS PR393 at the merged revision above. Required committed/active
+planning remains distinct from optional future backlog fields in existing v1
+groups. Native PI/iteration validation, current field scope and canonical
+readback remain authoritative; retained values are checked for concurrent change.
+Candidate and merge trees are identical. Full owner and hosted exact-head checks
+and API/worker image smoke passed. Only OOS advances; other source selections,
+Platform tree and durable generation remain unchanged. Normal commissioning and
+actual Console verification are later operating evidence.
 
 ### Original history content remains reachable
 
