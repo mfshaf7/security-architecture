@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@836e14e39450c87957dde687ef072b70f62e1d87`
+- `governance-operations-console@8219c08256a2cc119ef5df476708fab00a7094c6`
 - `operator-orchestration-service@670dc727194facae776633656b71417c993b824d`
 - `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
@@ -975,3 +975,14 @@ candidate/merge tree equality. The usable-stage reflow and shared runtime facts
 now keep selected monitor rows clickable and full source references contained.
 Only the Console revision advances; normal restart/status and final native
 selected-state proof remain required.
+
+## Compact VMEM summary copy
+
+Console PR150, merged `8219c08256a2cc119ef5df476708fab00a7094c6`, uses `VMEM`
+for the card and legend and a numeric committed/limit summary. The existing
+detail explanation, metric calculation, thresholds, data access and authority
+are unchanged. The merged tree equals reviewed Gary candidate
+`ab1e72a978fb557410ee9bade1501d0a4d48de4e`. This copy-only amendment
+advances only the existing Console source selection; no new Security boundary
+or review mechanism is introduced. Normal restart and native copy readback
+remain required before operating completion.
