@@ -623,8 +623,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-29-saved-operator-work.md
-        reviewed_on: 2026-10-29
+        path: docs/reviews/components/2026-10-30-console-recovery-timing.md
+        reviewed_on: 2026-10-30
         status: current
         decision: approved
         review_areas:
@@ -634,6 +634,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-lock-verified-shared-package-cache
+          - console-complete-lifecycle-budget-and-interrupted-diagnostics
           - private-saved-work-and-browser-recovery
           - delivery-history-original-version-and-independent-owner-activity
           - durable-independent-owner-result-and-mounted-metadata
@@ -671,6 +673,12 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: dev-integration/profiles/accepted-idea-delivery/scripts/install_runtime_dependencies.mjs
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-console-recovery-timing.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-console-recovery-timing.md
           - repo: operator-orchestration-service
             path: src/saved-work/store.js
           - repo: operator-orchestration-service
@@ -780,8 +788,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-console-capability-recovery.md
-        reviewed_on: 2026-10-28
+        path: docs/reviews/components/2026-10-30-console-recovery-timing.md
+        reviewed_on: 2026-10-30
         status: current
         decision: approved
         review_areas:
@@ -791,6 +799,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-lock-verified-shared-package-cache
+          - console-complete-lifecycle-budget-and-interrupted-diagnostics
           - console-capability-commissioning-recovery
           - corrected-local-source-before-merge
           - console-capabilities-exact-composition
@@ -843,6 +853,12 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: dev-integration/profiles/accepted-idea-delivery/scripts/install_runtime_dependencies.mjs
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-console-recovery-timing.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-console-recovery-timing.md
           - repo: platform-engineering
             path: scripts/dev_integration.py
           - repo: platform-engineering
@@ -1356,8 +1372,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-29-saved-operator-work.md
-        reviewed_on: 2026-10-29
+        path: docs/reviews/components/2026-10-30-console-recovery-timing.md
+        reviewed_on: 2026-10-30
         status: current
         decision: approved
         review_areas:
@@ -1367,6 +1383,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-lock-verified-shared-package-cache
+          - console-complete-lifecycle-budget-and-interrupted-diagnostics
           - private-saved-work-and-browser-recovery
           - refinement-backlog-planning-and-retained-state
           - corrected-local-source-before-merge
@@ -1387,6 +1405,12 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: dev-integration/profiles/accepted-idea-delivery/scripts/install_runtime_dependencies.mjs
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-console-recovery-timing.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-console-recovery-timing.md
           - repo: operator-orchestration-service
             path: src/saved-work/store.js
           - repo: operator-orchestration-service
