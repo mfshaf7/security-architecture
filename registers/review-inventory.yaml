@@ -327,7 +327,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-29-saved-operator-work.md
+        path: docs/reviews/components/2026-10-29-primary-console-clarity.md
         reviewed_on: 2026-10-29
         status: current
         decision: approved
@@ -338,6 +338,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - primary-console-readable-activity-and-bounded-history
           - private-saved-work-and-browser-recovery
           - delivery-history-original-version-and-independent-owner-activity
           - delivery-history-original-workflow-completed-locks
@@ -392,6 +393,18 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: docs/product/primary-console-maintenance.md
+          - repo: governance-operations-console
+            path: src/governance-activity/governance-activity-api-route.ts
+          - repo: governance-operations-console
+            path: src/governance-activity/governance-activity-composer.ts
+          - repo: governance-operations-console
+            path: src/agent-console/state/use-agent-modal-presentation.ts
+          - repo: governance-operations-console
+            path: tests/browser/primary-console-maintenance.spec.mjs
+          - repo: governance-operations-console
+            path: tests/console-architecture/primary-console-maintenance.test.mjs
           - repo: governance-operations-console
             path: src/console-integration/saved-work/browser-session.ts
           - repo: governance-operations-console

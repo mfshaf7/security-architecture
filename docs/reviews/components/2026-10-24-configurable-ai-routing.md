@@ -955,3 +955,16 @@ The existing Platform tree, architecture, source custody, originalC786 durable
 activation generation, exact WGCF worker image, model/account choices and all
 human approval gates remain unchanged. The generated owner-record index covers
 the OOS maintenance record; no improvement record or new ART item is added.
+
+## Primary Console clarity and bounded history amendment
+
+The [primary Console delta review](2026-10-29-primary-console-clarity.md) approves
+Console PR148, merged as `427372c831c971d5ece0a57e4adc451adde12015`, with
+the exact reviewed candidate tree. It covers readable event projections with
+original technical evidence, bounded authenticated owner-cursor continuation,
+truthful loading and availability, dock containment and native Agent modality.
+The power-user vocabulary and identifiers remain available; no model invocation
+or canonical mutation authority is added. Only the Console revision changes in
+the finite decision. Other owner pins, Platform tree, activation generation,
+worker image and credential roles remain unchanged. Normal activation and actual
+owner readback remain required before operating completion.
