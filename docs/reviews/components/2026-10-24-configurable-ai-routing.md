@@ -9,6 +9,8 @@ governed gateway boundary with operator-configured backend/model/native effort
 and explicit fallback. It does not create a second control plane or give a model
 source, account, approval, merge, deployment or canonical mutation authority.
 
+The [native connection and timestamped-success delta](2026-10-30-provider-health-evidence.md) extends post-core health without changing provider authority or routing.
+
 The accepted architecture is
 `wgcf://artifacts/delivery-art/sha256/7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`,
 digest `sha256:7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`.
@@ -21,13 +23,13 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@07ecdc67bdfa54402cea33b0672b81aa13807064`
-- `operator-orchestration-service@a58a4dabadb498fee219da0c967dbebd32b5f30c`
-- `platform-engineering@1a1c2b3eb8a712845d02191ce3d6954272737145`
+- `governance-operations-console@2d97ce5692969da1bf85da35e077766dc6bd8f0d`
+- `operator-orchestration-service@609f28b6948d86309439ea673c7df306f0fc8a2f`
+- `platform-engineering@d8bf4504366a0b20ed7b14bb99835fc32d3bf82f`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@fd4cd6b8f539540d211cae791cdb895b4114719e`
+- `platform-engineering-tree@e9686202687940d0e5781bc20c6bb670edd95485`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
 OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
