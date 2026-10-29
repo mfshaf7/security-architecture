@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@427372c831c971d5ece0a57e4adc451adde12015`
+- `governance-operations-console@836e14e39450c87957dde687ef072b70f62e1d87`
 - `operator-orchestration-service@670dc727194facae776633656b71417c993b824d`
 - `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
@@ -968,3 +968,10 @@ or canonical mutation authority is added. Only the Console revision changes in
 the finite decision. Other owner pins, Platform tree, activation generation,
 worker image and credential roles remain unchanged. Normal activation and actual
 owner readback remain required before operating completion.
+
+The selected-runtime-detail amendment in that same primary Console review accepts
+PR149 at `836e14e39450c87957dde687ef072b70f62e1d87` after exact Gary
+candidate/merge tree equality. The usable-stage reflow and shared runtime facts
+now keep selected monitor rows clickable and full source references contained.
+Only the Console revision advances; normal restart/status and final native
+selected-state proof remain required.
