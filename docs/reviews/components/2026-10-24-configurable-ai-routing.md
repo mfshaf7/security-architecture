@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@9776edb757e33317661feb32caa99130376a760c`
+- `governance-operations-console@07ecdc67bdfa54402cea33b0672b81aa13807064`
 - `operator-orchestration-service@a58a4dabadb498fee219da0c967dbebd32b5f30c`
 - `platform-engineering@1a1c2b3eb8a712845d02191ce3d6954272737145`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
@@ -30,7 +30,7 @@ Reviewed exact sources, including the [requested local advisor drafting delta](2
 - `platform-engineering-tree@fd4cd6b8f539540d211cae791cdb895b4114719e`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
-OOS PR396, Platform PR353 and Console PR151 at the exact merged revisions/tree
+OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
 above. It restores independent core startup, post-start configured-provider
 observations and explicit registration update in existing Model Operations.
 The preceding [recovery timing and dependency-cache delta](2026-10-30-console-recovery-timing.md)
