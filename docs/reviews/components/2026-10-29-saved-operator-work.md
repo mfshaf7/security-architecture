@@ -23,7 +23,12 @@ strict commands and the authenticated source-projection read. The companion
 candidate `60b4adf59e6a5ad361757493926047e9e655c146` owns its same-origin adapter,
 existing-editor integration and browser recovery. OOS merged as
 `670dc727194facae776633656b71417c993b824d`; Console merged as
-`753162abc3b85b67240e5b64037c4da88b2eb1f0`. Exact candidate/merge trees match.
+`753162abc3b85b67240e5b64037c4da88b2eb1f0`. The bounded historical-state
+correction in [Console PR147](https://github.com/mfshaf7/governance-operations-console/pull/147)
+candidate `479fc73f4cf57a86bc2445496bd8ca3cd8924f8c` merged as
+`9bb812189bb25f073a96f27d90f73b7c11690f79`, the final accepted Console revision.
+It explicitly labels unuploaded historical copies as browser-only without
+starting owner writes. Exact candidate/merge trees match.
 The finite decision selects the final merged owner revisions only after exact
 candidate/merge tree equality is proven. Other owner pins, Platform tree,
 durable activation manifest/generation and worker digest remain unchanged.
@@ -88,13 +93,18 @@ fetched-base owner gates and actual API/worker image smoke. The configured API
 image saved/read exact content across container replacement; an unconfigured
 worker remained denied. Console's full architecture, behavior, type, build and
 dependency checks passed; the final conflict-preservation amendment includes
-its own regression and full 815-test check. Hosted exact-head owner CI passed.
+its own regression; the final historical-state source passed the full 816-test
+check. Hosted exact-head owner CI passed.
 
 Five actual records were recovered from Console-only managed profiles, including
 five named sessions and four finalized brief versions. Controlled candidate
 client/store proof recovered exact raw originals and diagram snapshots from fresh
 storage after owner reconstruction. This is source proof, not live Console
 commissioning or evidence about the operator's separate desktop browser.
+The three retained 1332 versions contain snapshots but no complete finalized-brief
+object; 1349 retains its complete object. Missing historical fields remain marked
+unavailable. Recovering exact retained bytes does not invent missing approval,
+authorship or finalization checks from a diagram or canonical apply receipt.
 
 Before completion require normal exact-source activation, actual original-data
 migration through the Console, fresh-browser retrieval, readonly final-history

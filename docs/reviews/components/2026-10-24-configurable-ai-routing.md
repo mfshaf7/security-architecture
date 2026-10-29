@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@753162abc3b85b67240e5b64037c4da88b2eb1f0`
+- `governance-operations-console@9bb812189bb25f073a96f27d90f73b7c11690f79`
 - `operator-orchestration-service@670dc727194facae776633656b71417c993b824d`
 - `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
@@ -30,7 +30,7 @@ Reviewed exact sources, including the [requested local advisor drafting delta](2
 - `platform-engineering-tree@8bc54e24ba844ebaf90b5281a538b11bd3ac87d5`
 
 The [saved operator work review](2026-10-29-saved-operator-work.md) accepts
-Gary OOS PR394 and Console PR146 for private saved drafts, original browser
+Gary OOS PR394 and Console PR146/147 for private saved drafts, original browser
 recovery and truthful save acknowledgement across the three existing editors.
 Only those two source pins change. Existing canonical workflow authority,
 other source pins, Platform tree and activation manifest remain unchanged.
