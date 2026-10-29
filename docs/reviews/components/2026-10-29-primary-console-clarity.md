@@ -7,7 +7,7 @@ review covers native modal/keyboard behavior, source-loading interpretation,
 read-only activity continuation, truthful operating copy and retained evidence.
 It adds no model invocation, backend mutation, credential or release authority.
 
-The source is [Console PR148](https://github.com/mfshaf7/governance-operations-console/pull/148),
+The initial reviewed source is [Console PR148](https://github.com/mfshaf7/governance-operations-console/pull/148),
 reviewed candidate `8bc7b4a357cb65e4a0fb16c9728bee17d1df917e`, tree
 `853fdc69abd5caf8c7fe5ebc775de973e9a28c54`. Canonical merge
 `427372c831c971d5ece0a57e4adc451adde12015` has the same tree. This
@@ -109,3 +109,39 @@ owner history, identities and the current activation generation. Rollback
 selects the previous accepted source through the same lifecycle; no data purge
 or canonical event migration is required. Native readback and exact-owner
 branch/credential cleanup are separate completion gates.
+
+## Selected runtime detail containment amendment
+
+The native pass on the initial accepted source exposed a selected-state layout
+miss: at1920pixels the component detail covered the monitor list, preventing
+deselection. Long runtime source references also painted outside their cards.
+The [bounded Console correction](https://github.com/mfshaf7/governance-operations-console/pull/149)
+is reviewed at Gary candidate `180c5cf4b99346a1b5f937098b25ecaa5bd69ddd`, tree
+`61d98ce7565e895cb3d8fa4e8269c36a3a3a03bd`. Canonical merge
+`836e14e39450c87957dde687ef072b70f62e1d87` has that same tree; this
+equal-tree proof precedes the Console-only finite selection.
+
+The correction extends the existing usable-stage reflow threshold to1200pixels
+and wraps the existing runtime fact/reference pattern without truncating values.
+Three-column presentation remains where the usable stage can hold it. The same
+component, resource, alert and monitor controls remain; no alternative interface
+or changed selection persistence policy is introduced. Precise source facts and
+owner identifiers stay accessible. There is no new data flow, browser authority,
+endpoint, credential, model invocation or canonical mutation.
+
+The main reviewer approves this exact tree under the same local Security
+boundary and retains decision closure. All821behavior tests, architecture guards,
+type checking, production build, public-source validation and production audit
+passed. Three primary browser cases now cover selected and unselected states,
+component switching/deselection/tab access and a long synthetic source reference
+at1200/1440/1700/1920pixels. Candidate UI additionally passed all six actual-owner
+components and six resource details at every size, including detail containment.
+The temporary CSS causal diagnostic and proxied candidate checks are not native
+operating acceptance. Final accepted-source normal restart/status and native
+readback remain required; previously interrupted provider activation is not
+reported as successful merely because the frontend served a page.
+
+Only the Console revision advances after merge/equal-tree verification. Existing
+owner pins, Platform tree, durable generation, worker and permission roles remain
+unchanged. The source list in the composed prose and its finite YAML must agree
+before the normal Platform lifecycle runs.
