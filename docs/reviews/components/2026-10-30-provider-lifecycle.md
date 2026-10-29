@@ -14,7 +14,7 @@ in the paired composed decision; this draft is not operating evidence.
 
 - operator-orchestration-service: Gary candidate `e3a19757102b7a0ef769376f80d3a461f1c92b9c`, merged `a58a4dabadb498fee219da0c967dbebd32b5f30c`, equal tree `f83a22f1b7d656db2e44c13e3062517afb0fac6a` ([PR396](https://github.com/mfshaf7/operator-orchestration-service/pull/396)).
 - platform-engineering: Gary candidate `ae636eda67ac00f4abf425417128a0b5de728ce8`, merged `1a1c2b3eb8a712845d02191ce3d6954272737145`, equal tree `fd4cd6b8f539540d211cae791cdb895b4114719e` ([PR353](https://github.com/mfshaf7/platform-engineering/pull/353)).
-- governance-operations-console: Gary candidate `445f362bc00bcbe3584532ae405953916668b2f1`, merged `9776edb757e33317661feb32caa99130376a760c`, equal tree `b65ea0e1170b588d95eea7875b71f4653f835cec` ([PR151](https://github.com/mfshaf7/governance-operations-console/pull/151)).
+- governance-operations-console: Gary candidate `cd92f816bed5d04a4c7849f8c062658222397142`, merged `07ecdc67bdfa54402cea33b0672b81aa13807064`, equal tree `d1fe5d1151d795181229645874d8cb7375093180` ([PR152](https://github.com/mfshaf7/governance-operations-console/pull/152)); retains PR151 behavior.
 
 ## Scope Delta
 
@@ -59,6 +59,18 @@ bounded synthetic verification/receipt. Success preserves the stable model ID,
 routes and historical evidence; failure or uncertain completion adopts nothing.
 Reconcile still recovers the original command. In-flight selections remain frozen;
 unknown completion, integrity, output and policy errors never permit fallback.
+
+### Native presentation qualification
+
+Native data and explicit verification were correct, but initial visual inspection
+found a crowded metadata strip and fallback fields competing for the bounded
+routing area. The Console correction reuses existing metadata detail/title/wrap
+and Field Stack scrolling. It groups check time with provider status, summarizes
+content change while retaining full digests in the existing tooltip, and leaves
+runtime values visible. No owner API, permission, registration, routing or
+inference behavior changes. Full product validation and the isolated visual
+check passed; the actual source-bound browser proof remains required after
+accepted frontend replacement. Source is selected by the same paired decision.
 
 ## Review Areas
 
