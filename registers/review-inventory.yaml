@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-purpose-lifecycle-qualification.md
-        reviewed_on: 2026-10-28
+        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
+        reviewed_on: 2026-10-30
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-core-independent-post-start-configured-provider-health
           - purpose-lifecycle-qualification-fixture-isolation-and-final-tree
           - purpose-lifecycle-suspended-qualification-and-exact-restoration
           - shared-platform-control-plane-and-secrets
@@ -60,6 +61,12 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: governance-operations-console
+            path: docs/product/model-operations-live-integration.md
           - repo: platform-engineering
             path: scripts/runtime_artifact_integrity.py
           - repo: platform-engineering
@@ -327,8 +334,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-29-primary-console-clarity.md
-        reviewed_on: 2026-10-29
+        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
+        reviewed_on: 2026-10-30
         status: current
         decision: approved
         review_areas:
@@ -338,6 +345,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-core-independent-post-start-configured-provider-health
           - primary-console-readable-activity-and-bounded-history
           - private-saved-work-and-browser-recovery
           - delivery-history-original-version-and-independent-owner-activity
@@ -393,6 +401,12 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: governance-operations-console
+            path: docs/product/model-operations-live-integration.md
           - repo: governance-operations-console
             path: docs/product/primary-console-maintenance.md
           - repo: governance-operations-console
@@ -623,7 +637,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-console-recovery-timing.md
+        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -634,6 +648,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-core-independent-post-start-configured-provider-health
           - console-lock-verified-shared-package-cache
           - console-complete-lifecycle-budget-and-interrupted-diagnostics
           - private-saved-work-and-browser-recovery
@@ -673,6 +688,12 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: governance-operations-console
+            path: docs/product/model-operations-live-integration.md
           - repo: operator-orchestration-service
             path: dev-integration/profiles/accepted-idea-delivery/scripts/install_runtime_dependencies.mjs
           - repo: operator-orchestration-service
@@ -788,7 +809,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-console-recovery-timing.md
+        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -799,6 +820,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-core-independent-post-start-configured-provider-health
           - console-lock-verified-shared-package-cache
           - console-complete-lifecycle-budget-and-interrupted-diagnostics
           - console-capability-commissioning-recovery
@@ -853,6 +875,12 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: governance-operations-console
+            path: docs/product/model-operations-live-integration.md
           - repo: operator-orchestration-service
             path: dev-integration/profiles/accepted-idea-delivery/scripts/install_runtime_dependencies.mjs
           - repo: operator-orchestration-service
@@ -1255,8 +1283,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-27-requested-advisor-drafts.md
-        reviewed_on: 2026-10-27
+        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
+        reviewed_on: 2026-10-30
         status: current
         decision: approved
         review_areas:
@@ -1266,6 +1294,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-core-independent-post-start-configured-provider-health
           - prototype-separate-profile-caller-task-purpose
           - native-profile-retirement-without-live-grants
           - independent-profile-eligibility-and-launch-denial
@@ -1276,6 +1305,12 @@ review_inventory:
           - agent-console-controlled-activation-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: governance-operations-console
+            path: docs/product/model-operations-live-integration.md
           - repo: platform-engineering
             path: dev-integration/profiles/governed-ai-gateway/runtime/model_profile_resolver.py
           - repo: platform-engineering
