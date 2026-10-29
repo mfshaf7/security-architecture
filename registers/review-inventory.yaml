@@ -1333,8 +1333,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-premerge-local-source-recovery.md
-        reviewed_on: 2026-10-28
+        path: docs/reviews/components/2026-10-29-refinement-backlog-planning.md
+        reviewed_on: 2026-10-29
         status: current
         decision: approved
         review_areas:
@@ -1344,6 +1344,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - refinement-backlog-planning-and-retained-state
           - corrected-local-source-before-merge
           - console-capabilities-exact-composition
           - console-native-multi-item-source-scope
