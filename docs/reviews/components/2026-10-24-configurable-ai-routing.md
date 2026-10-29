@@ -21,7 +21,7 @@ current clean Security main and verify the exact source/tree bindings.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@9bb812189bb25f073a96f27d90f73b7c11690f79`
+- `governance-operations-console@427372c831c971d5ece0a57e4adc451adde12015`
 - `operator-orchestration-service@670dc727194facae776633656b71417c993b824d`
 - `platform-engineering@d174217d6cbfe177862d34ce0c33feba9df1a921`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
