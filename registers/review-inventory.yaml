@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
+        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
           - purpose-lifecycle-qualification-fixture-isolation-and-final-tree
           - purpose-lifecycle-suspended-qualification-and-exact-restoration
@@ -63,8 +64,12 @@ review_inventory:
         owner_artifacts:
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: platform-engineering
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: governance-operations-console
             path: docs/product/model-operations-live-integration.md
           - repo: platform-engineering
@@ -334,7 +339,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
+        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -345,6 +350,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
           - primary-console-readable-activity-and-bounded-history
           - private-saved-work-and-browser-recovery
@@ -403,8 +409,12 @@ review_inventory:
         owner_artifacts:
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: platform-engineering
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: governance-operations-console
             path: docs/product/model-operations-live-integration.md
           - repo: governance-operations-console
@@ -637,7 +647,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
+        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -648,6 +658,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
           - console-lock-verified-shared-package-cache
           - console-complete-lifecycle-budget-and-interrupted-diagnostics
@@ -690,8 +701,12 @@ review_inventory:
         owner_artifacts:
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: platform-engineering
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: governance-operations-console
             path: docs/product/model-operations-live-integration.md
           - repo: operator-orchestration-service
@@ -809,7 +824,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
+        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -820,6 +835,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
           - console-lock-verified-shared-package-cache
           - console-complete-lifecycle-budget-and-interrupted-diagnostics
@@ -877,8 +893,12 @@ review_inventory:
         owner_artifacts:
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: platform-engineering
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: governance-operations-console
             path: docs/product/model-operations-live-integration.md
           - repo: operator-orchestration-service
@@ -1283,7 +1303,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-lifecycle.md
+        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -1294,6 +1314,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
           - prototype-separate-profile-caller-task-purpose
           - native-profile-retirement-without-live-grants
@@ -1307,8 +1328,12 @@ review_inventory:
         owner_artifacts:
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: platform-engineering
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-health-evidence.md
           - repo: governance-operations-console
             path: docs/product/model-operations-live-integration.md
           - repo: platform-engineering
