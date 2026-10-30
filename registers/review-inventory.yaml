@@ -345,7 +345,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-experimental-api-provider-connections.md
+        path: docs/reviews/components/2026-10-29-primary-console-clarity.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
