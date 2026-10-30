@@ -19,7 +19,7 @@ The paired YAML is the finite activation decision; runtime must read it from
 current clean Security main and verify the exact source/tree bindings.
 
 The [layout and Proposal overview maintenance amendment](2026-10-29-primary-console-clarity.md#console-layout-and-proposal-overview-maintenance-amendment)
-accepts Console PR155 and PR156 at the current exact source set. It preserves the existing
+accepts Console PR155, PR156 and PR157 at the current exact source set. It preserves the existing
 interface and full owner context while repairing layout containment and live-mode
 copy. Its native operating qualification follows normal accepted-source activation.
 
@@ -33,7 +33,7 @@ startup, identity, purpose, source and publication controls remain inherited.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@8f6a12ea8cf4f2537cd4060b8e0b6d58d8a9c170`
+- `governance-operations-console@bab958faba0b32c54ec0c1c10d52f1ffd1dac4e4`
 - `operator-orchestration-service@1eceee2afaf34dbf2fbe4bb142bcff9fba7799e0`
 - `platform-engineering@1862fd3ab614761852ef98969ec2bbafcc1525d8`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`

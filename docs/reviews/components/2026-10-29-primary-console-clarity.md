@@ -210,3 +210,29 @@ Canonical merge `8f6a12ea8cf4f2537cd4060b8e0b6d58d8a9c170` has that same
 tree. Exact-head delegated approval and successful hosted validation precede
 this final finite selection. The decision selects this descendant, including
 the original PR155 repair, for the same normal activation/native proof.
+
+### Complete Hub context scrolling
+
+Native operating inspection found that the full4033-character Proposal body was
+intact but clipped inside the selected Hub panel, whose hidden overflow left
+its final lines inaccessible. This is a presentation containment failure, not
+source-data loss. The earlier browser check established DOM retention only.
+
+[Console PR157](https://github.com/mfshaf7/governance-operations-console/pull/157)
+is reviewed at Gary candidate `c1991303b0c2b71ab157e862305a706da442c70d`,
+tree `a2451d09dffd7cd6f4a246bc9058678f1efa9d84`. Its single existing Hub-panel
+CSS rule enables bounded internal scrolling; no panel, route, field, identity,
+authorization or mutation changes. The original overview, full body, metadata,
+controller and native modal boundaries remain.
+
+`approved` for this exact tree under the same local boundary. All829behavior
+tests, architecture guards, types, production build and public-source checks
+passed. Seven browser cases now require normal mouse-wheel access to the final
+body line at1200/1440/1700/1920. The built candidate also passed that same test
+with the actual unchanged4033-character owner body, with no API writes. This
+closes the weaker DOM-presence proof before operating completion is claimed.
+Only Console source selection advances after merged/equal-tree verification;
+existing native activation and final operating proof remain required.
+Merged source `bab958faba0b32c54ec0c1c10d52f1ffd1dac4e4` has the same
+reviewed tree. Exact-head delegated approval, local source/browser proof and
+successful hosted validation preceded merge and this final source selection.
