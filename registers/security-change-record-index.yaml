@@ -3681,6 +3681,20 @@ change_records:
   - WS-003
   - WS-005
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-10-30-experimental-provider-connections.md
+  date: '2026-10-30'
+  short_title: 2026-10-30-experimental-provider-connections
+  review_areas:
+  - runtime
+  - delivery
+  - secrets
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-10-30-provider-health-evidence.md
   date: '2026-10-30'
   short_title: 2026-10-30-provider-health-evidence
@@ -4239,6 +4253,19 @@ change_records:
   review_areas:
   - runtime
   - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
+- repo: platform-engineering
+  path: docs/records/change-records/2026-10-30-provider-connection-history.md
+  date: '2026-10-30'
+  short_title: 2026-10-30-provider-connection-history
+  review_areas:
+  - runtime
+  - delivery
+  - ai
   findings: []
   risks: []
   workstreams:

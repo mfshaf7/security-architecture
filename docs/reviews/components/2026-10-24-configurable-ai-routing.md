@@ -18,22 +18,28 @@ The schema-six content retains logical artifact `architecture-packet:delivery-13
 The paired YAML is the finite activation decision; runtime must read it from
 current clean Security main and verify the exact source/tree bindings.
 
+The [Experimental API connection delta](2026-10-30-experimental-api-provider-connections.md)
+accepts Epic1363's named Claude, DeepSeek and GLM connections at the current exact
+source set below. Its real-account qualification remains pending. Existing
+startup, identity, purpose, source and publication controls remain inherited.
+
 ## Scope Delta
 
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@2d97ce5692969da1bf85da35e077766dc6bd8f0d`
-- `operator-orchestration-service@609f28b6948d86309439ea673c7df306f0fc8a2f`
-- `platform-engineering@d8bf4504366a0b20ed7b14bb99835fc32d3bf82f`
+- `governance-operations-console@a5660e4e42216fc1e4d408c137de824f4b11c684`
+- `operator-orchestration-service@1eceee2afaf34dbf2fbe4bb142bcff9fba7799e0`
+- `platform-engineering@1862fd3ab614761852ef98969ec2bbafcc1525d8`
 - `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@e9686202687940d0e5781bc20c6bb670edd95485`
+- `platform-engineering-tree@df6aa9c1ed887f9a4262d5ae0afa29621a5d26da`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
 OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
-above. It restores independent core startup, post-start configured-provider
+selected in that historical review. The current descendant source set preserves
+its independent core startup, post-start configured-provider
 observations and explicit registration update in existing Model Operations.
 The preceding [recovery timing and dependency-cache delta](2026-10-30-console-recovery-timing.md)
 accepted OOS PR395 and Platform PR351; their cache, budgets and interrupted
@@ -268,9 +274,10 @@ outside model authority. No model receives a repository or installation token.
 
 The dedicated native account is held only at
 `kv/data/components/governed-ai-gateway/dev-integration/codex-account`.
-The gateway's renewable Vault token permits create/read/update of that one data
-path, plus ordinary self-lease operations. It cannot list or read other provider
-or source identities. The intended token ID is persisted privately before issue;
+The gateway's renewable Vault token permits create/read/update of that account
+data path and the separately reviewed finite API-connection custody prefix, plus
+ordinary self-lease operations. It cannot list credentials or read unadmitted
+provider or source identities. The intended token ID is persisted privately before issue;
 an uncertain response reuses that identity. Root Vault authority remains in the
 Platform operator path and never reaches gateway, OOS, Console or a model.
 
