@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
+        path: docs/reviews/components/2026-10-30-experimental-api-provider-connections.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -112,6 +112,12 @@ review_inventory:
             path: products/governance-operations-console/AGENTS.md
           - repo: platform-engineering
             path: products/governance-operations-console/README.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-connection-history.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-experimental-provider-connections.md
+          - repo: governance-operations-console
+            path: docs/security-and-data-boundaries.md
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -339,7 +345,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
+        path: docs/reviews/components/2026-10-30-experimental-api-provider-connections.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -575,6 +581,12 @@ review_inventory:
             path: src/teras/teras-patterns.module.css
           - repo: governance-operations-console
             path: docs/product/teras-contract.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-connection-history.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-experimental-provider-connections.md
+          - repo: governance-operations-console
+            path: docs/security-and-data-boundaries.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -647,7 +659,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
+        path: docs/reviews/components/2026-10-30-experimental-api-provider-connections.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -799,6 +811,12 @@ review_inventory:
             path: test/refinement-service.test.js
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-29-delivery-history-fidelity.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-connection-history.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-experimental-provider-connections.md
+          - repo: governance-operations-console
+            path: docs/security-and-data-boundaries.md
   products:
     console-todo-1275:
       owner_repo: platform-engineering
@@ -824,7 +842,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
+        path: docs/reviews/components/2026-10-30-experimental-api-provider-connections.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -1001,6 +1019,12 @@ review_inventory:
             path: src/platform-operation/service.js
           - repo: workspace-governance-control-fabric
             path: packages/control_fabric_core/src/control_fabric_core/workspace_continuity_projection.py
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-connection-history.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-experimental-provider-connections.md
+          - repo: governance-operations-console
+            path: docs/security-and-data-boundaries.md
     openclaw:
       owner_repo: platform-engineering
       scope: product
@@ -1432,7 +1456,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-console-recovery-timing.md
+        path: docs/reviews/components/2026-10-30-experimental-api-provider-connections.md
         reviewed_on: 2026-10-30
         status: current
         decision: approved
@@ -1533,3 +1557,11 @@ review_inventory:
             path: test/delivery-art-work-session-service.test.js
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-25-delivery-realization-http-errors.md
+          - repo: platform-engineering
+            path: docs/records/change-records/2026-10-30-provider-connection-history.md
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-10-30-experimental-provider-connections.md
+          - repo: governance-operations-console
+            path: docs/product/model-operations-live-integration.md
+          - repo: governance-operations-console
+            path: docs/security-and-data-boundaries.md
