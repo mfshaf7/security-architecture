@@ -145,3 +145,68 @@ Only the Console revision advances after merge/equal-tree verification. Existing
 owner pins, Platform tree, durable generation, worker and permission roles remain
 unchanged. The source list in the composed prose and its finite YAML must agree
 before the normal Platform lifecycle runs.
+
+## Console layout and Proposal overview maintenance amendment
+
+The operator-approved presentation repair in
+[Console PR155](https://github.com/mfshaf7/governance-operations-console/pull/155)
+is reviewed at Gary candidate `a7e96f7b4d53c6d5692208e9397f410ff4763be9`,
+tree `15b5b32babf99a002908ddebcbde0660f815f113`.
+Canonical merge `658ff6342206046187e5e6392b5c5140ab322e88` has the same
+tree, verified before advancing the finite source decision. Hosted Console
+validation passed before merge; delegated approval names the exact candidate.
+
+The existing Console frame reserves each dock once. Header/account and the
+same seven registry-derived Workbench destinations reflow within usable stage
+width. Teras metadata retains content height, status/header text wraps, and
+the environment workspace reuses its scrolling content region. Portfolio uses
+the existing inventory table profile: all columns remain accessible through
+bounded horizontal scrolling instead of overlapping. These changes preserve
+the existing interface, controller state, operations and source ownership.
+
+Proposal overview capture wording derives from the same live/disconnected
+mode as its capture dialog. Its selected context is a short display excerpt
+with an explicit route to the full Proposal Hub context. The full original
+body remains unchanged in owner projection, Hub, details, history and
+workflow/advisor inputs. No content is added to model context by shortening
+the overview, and no model or mutation is invoked by these presentation changes.
+
+`approved` for this exact candidate tree under the existing local composition.
+The main reviewer retains Security closure and final landing judgment. Gary
+authors/publishes; the delegated accountable human reviews and merges. Existing
+identity, server-only credentials, authorization, native modal focus, canonical
+mutations, provider qualification and source acceptance remain inherited.
+There is no new endpoint, credential, provider route, runtime privilege or
+approval mechanism. Prior Experimental API-provider qualification remains pending.
+
+All829behavior tests, architecture guards, TypeScript, production build,
+repository/public-source checks and production dependency audit passed. Six
+browser cases cover dock/launcher fitting at1200/1440/1700/1920, monitor
+selection and keyboard/native modal ownership, history continuity, long
+Proposal/full Hub context, and disconnected capture wording. Candidate entry
+inspection used accepted-owner GET projections with no writes or page errors.
+Synthetic regressions and proxied candidate readback are source proof, not
+native operating acceptance. Normal Platform activation and accepted-source
+native readback must pass before maintenance completion.
+
+Only the Console source binding advances after canonical merge/equal-tree
+verification. Other exact owner pins, Platform tree, activation generation,
+worker image, accounts and permissions remain unchanged. The existing rollout
+and accepted-source rollback path preserves owner data and history.
+
+The remaining Registry consumer correction in
+[Console PR156](https://github.com/mfshaf7/governance-operations-console/pull/156)
+is reviewed at Gary candidate `c82f4fb9f6473835fc6671df00779bec25d5357e`,
+tree `c1d10a3c7580db741dc96107a0eb71c1d384f980`. It applies the same existing
+inventory table profile to Registry, whose primary column collapsed at1200px.
+Its source-only effect preserves every record, column, selection and operation.
+The exact source passed829behavior tests, architecture/type/build checks and
+all seven primary browser regressions. The built candidate's actual-owner GET
+matrix at1200/1440/1700/1920 retained all120Registry cells, with no cell/card
+overflow, writes or page errors. Main review approves this exact continuation
+tree under the same boundary; final finite selection follows canonical
+merge/equal-tree verification and operating qualification remains separate.
+Canonical merge `8f6a12ea8cf4f2537cd4060b8e0b6d58d8a9c170` has that same
+tree. Exact-head delegated approval and successful hosted validation precede
+this final finite selection. The decision selects this descendant, including
+the original PR155 repair, for the same normal activation/native proof.
