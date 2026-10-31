@@ -1,9 +1,9 @@
 # October 2026 platform security disposition
 
-Reviewed October31,2026 by Codex for accountable delegated review by `mfshaf7`.
+Reviewed October 31,2026 by Codex for accountable delegated review by `mfshaf7`.
 Decision: **approved-with-findings** for continued existing bounded development
 only. This supersedes the July executive/detailed assessment's current posture;
-their historical bytes and the October19 baseline reassessment remain intact.
+their historical bytes and the October 19 baseline reassessment remain intact.
 No independent audit, production qualification or new risk acceptance is claimed.
 
 ## Evidence boundary
@@ -19,7 +19,7 @@ Read-only source and inventory inspection covered these clean canonical commits:
 | OpenClaw Host Bridge | `86cd8d1a8418ec984a5e915ecb935ae98d3180fd` |
 | OpenClaw Runtime Distribution | `5f6cc48562e74fd0a3d17a60d436ff3300db87e1` |
 
-Inputs were the July assessment pair, October19 reassessment, current normalized
+Inputs were the July assessment pair, October 19 reassessment, current normalized
 remediation inventory, credential inventory, ADR0001/0002, secrets/recovery
 architecture and Platform recovery runbooks. Bounded implementation inspection
 confirmed Argo's repository ExternalSecret, Kubernetes-authenticated Vault
@@ -31,10 +31,10 @@ exact source acceptance before activation.
 
 ## Findings and accountable disposition
 
-The October30 checkpoints were missed. This review records that fact rather
+The October 30 checkpoints were missed. This review records that fact rather
 than treating expired assessment evidence as current or declaring the risks
 resolved. Existing owners, severities, open states and remediation requirements
-are retained. The next disposition checkpoint is **November30,2026**, a monthly
+are retained. The next disposition checkpoint is **November 30,2026**, a monthly
 follow-up following this missed quarterly checkpoint; it is not a promise that
 these wider programs will be implemented within this Console release.
 

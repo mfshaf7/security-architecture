@@ -33,10 +33,10 @@ startup, identity, purpose, source and publication controls remain inherited.
 Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@bab958faba0b32c54ec0c1c10d52f1ffd1dac4e4`
-- `operator-orchestration-service@1eceee2afaf34dbf2fbe4bb142bcff9fba7799e0`
+- `governance-operations-console@625231857cc9fad18653d8a57d6ae425e103b1f4`
+- `operator-orchestration-service@da3f5152c207006df634ace364aa3bc8cf8faf4d`
 - `platform-engineering@1862fd3ab614761852ef98969ec2bbafcc1525d8`
-- `workspace-governance@f78b40839862b42c1106eb7f76ba16548eb8df99`
+- `workspace-governance@cebc881dd794a8d12cc76ce299a8751ffe84e848`
 - `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
 - `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
 - `platform-engineering-tree@df6aa9c1ed887f9a4262d5ae0afa29621a5d26da`
@@ -1011,3 +1011,43 @@ are unchanged. The merged tree equals reviewed Gary candidate
 advances only the existing Console source selection; no new Security boundary
 or review mechanism is introduced. Normal restart and native copy readback
 remain required before operating completion.
+
+
+## Reviewed UI batch and recorded AI history release
+
+The [October 31 bounded source review](2026-10-31-console-ai-activity-read-scope.md)
+accepts Console Gary PR158 merged as `625231857cc9fad18653d8a57d6ae425e103b1f4`
+and OOS Gary PR399/400 merged through `da3f5152c207006df634ace364aa3bc8cf8faf4d`.
+Both merged trees exactly equal the locally tested Gary candidate trees
+(Console `89de7783ef5f6331dc01c975947e318a701e0343`;
+OOS `aed19da6399b662c3f465b9d63f6893daaa654f1`).
+
+Console passes 845 tests, all architecture/type/build checks, production audit
+and 34 native production-build browser cases across Proposal, Repository,
+Model Operations and the primary Console. Hosted run 41177802661 passes. OOS's
+combined exact head passes 1722 tests with 2 existing skips, full contract/API,
+governance and current-base validators, both image builds and API/disabled-worker
+smoke; hosted run 41178527795 passes. The original Proposal dependency's
+hosted run 41177809921 also passes.
+
+The additive history read retains caller/operator isolation and excludes raw
+prompts/results/errors/credentials. Enrolled native advisors retain their model
+route, context admission and human acceptance controls. Interrupted requests
+remain unconfirmed and legacy metadata stays absent. Read polling never invokes
+a model. The existing Delivery reference is projected without canonical writes.
+Preview examples never replace unavailable live data. UI layout/disclosure/copy
+changes retain owner controls and original technical evidence.
+
+Workspace Governance advances only record closure evidence in PR315; inspection
+of the selected `cebc881dd794a8d12cc76ce299a8751ffe84e848` change confirms no
+control code, schema, admission or permission delta. Platform tree, other source
+owners, original durable activation generation and exact WGCF worker image stay
+unchanged. The [October platform disposition](../../assessments/platform/2026-10-disposition.md)
+retains existing open identity/recovery/host findings and provides no production
+approval or new risk acceptance.
+
+Accept this exact source set for the existing local composition's normal
+Platform activation. Final operating status, real authenticated history readback
+and a controlled real request remain required before maintenance completion.
+No new provider, app permission, source-authoring role or canonical mutation is
+authorized by history visibility. Rollback retains all original owner data.

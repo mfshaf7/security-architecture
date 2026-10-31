@@ -116,18 +116,18 @@ live request records were not modified by this review.
 ## Final candidate source evidence
 
 Console Gary PR158 selects `ebd86efb015be1469b881b91e5585293d71ec8c2`.
-Its repository validation, architecture guards,845 tests, typecheck, production
-build, zero-vulnerability production audit and all15 production-build browser
-checks pass. Hosted validation41177802661 passed on that exact candidate.
+Its repository validation, architecture guards, 845 tests, typecheck, production
+build, zero-vulnerability production audit and all 15 production-build browser
+checks pass. Hosted run  validation41177802661 passed on that exact candidate.
 
 OOS Gary PR399 merged as `cc6d6e341739851eaf5d86212b8f187540767927`;
 PR400's published candidate is `ac36832a6cda4279efef10132c029e551e155686`.
 The locally combined tree `aed19da6399b662c3f465b9d63f6893daaa654f1` at
 validation-only Gary merge `0238b8972d46b4bae9b4e6676eebfb628026e14f`
-passes1722 owner tests with2 existing skips. Full contract/OpenAPI/governance,
+passes 1722 owner tests with 2 existing skips. Full contract/OpenAPI/governance,
 current-origin/main change-record and mutation checks pass. Both original
 candidates passed API/worker image builds, health and execution-disabled smoke;
-hosted41177809921 and41177927895 passed their original published candidates.
+hosted run 41177809921 and41177927895 passed their original published candidates.
 Final combined exact-head hosted validation and merged-tree equality are still
 required before composed source selection. No provider inference or live
 commissioning is inferred from these source checks.
@@ -135,3 +135,17 @@ commissioning is inferred from these source checks.
 The separate [October platform disposition](../../assessments/platform/2026-10-disposition.md)
 records the overdue existing assessment/remediation checkpoints. It retains
 open risks and does not expand this bounded source approval.
+
+
+## Final composed source acceptance
+
+OOS PR400's final Gary integration head is
+`0238b8972d46b4bae9b4e6676eebfb628026e14f`; hosted run 41178527795 passed. Its
+squash merge `da3f5152c207006df634ace364aa3bc8cf8faf4d` has the exact tested
+tree `aed19da6399b662c3f465b9d63f6893daaa654f1`. Console PR158 squash
+`625231857cc9fad18653d8a57d6ae425e103b1f4` likewise equals candidate tree
+`89de7783ef5f6331dc01c975947e318a701e0343`; all 34 batch browser cases passed.
+The existing composed decision now selects these exact merged owners, retaining
+all independent activation gates and unchanged Platform tree. The source-only
+status above describes the review stage; this final amendment accepts normal
+local Platform commissioning, while live operating proof remains outstanding.
