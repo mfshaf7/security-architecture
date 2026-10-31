@@ -6,6 +6,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | existing-security-baselines-2026-10 | platform | published | 2026-10-19 | 2027-04-19 | mfshaf7 | docs/assessments/platform/2026-10-baseline-reassessment.md |
 | platform-detailed-2026-04 | platform | superseded | 2026-04-18 | 2026-07-18 | mfshaf7 | docs/assessments/platform/2026-04-detailed.md |
-| platform-detailed-2026-07 | platform | published | 2026-07-30 | 2026-10-30 | mfshaf7 | docs/assessments/platform/2026-07-detailed.md |
+| platform-detailed-2026-07 | platform | superseded | 2026-07-30 | 2026-10-30 | mfshaf7 | docs/assessments/platform/2026-07-detailed.md |
+| platform-disposition-2026-10 | platform | published | 2026-10-31 | 2026-11-30 | mfshaf7 | docs/assessments/platform/2026-10-disposition.md |
 | platform-executive-2026-04 | platform | superseded | 2026-04-18 | 2026-07-18 | mfshaf7 | docs/assessments/platform/2026-04-executive.md |
-| platform-executive-2026-07 | platform | published | 2026-07-30 | 2026-10-30 | mfshaf7 | docs/assessments/platform/2026-07-executive.md |
+| platform-executive-2026-07 | platform | superseded | 2026-07-30 | 2026-10-30 | mfshaf7 | docs/assessments/platform/2026-07-executive.md |
