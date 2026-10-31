@@ -4,8 +4,8 @@ workstreams:
     title: Human identity modernization
     owner: security-architecture
     status: active
-    target_date: 2026-10-30
-    target_date_rationale: Quarterly disposition checkpoint retained because federated human access and break-glass separation are not implemented.
+    target_date: 2026-11-30
+    target_date_rationale: October30 checkpoint missed; reassessed October31 in docs/assessments/platform/2026-10-disposition.md. Federated access remains proposed and transitional local human access remains inventoried; F-001 remains High/open. November30 is the next accountable disposition checkpoint, not a remediation-completion promise or risk acceptance.
     artifacts:
       - repo: security-architecture
         path: docs/adr/0001-federated-human-access.md
@@ -20,8 +20,8 @@ workstreams:
     title: Recovery governance
     owner: security-architecture
     status: active
-    target_date: 2026-10-30
-    target_date_rationale: Quarterly disposition checkpoint retained pending custody, dual-control, and recovery-drill evidence.
+    target_date: 2026-11-30
+    target_date_rationale: October30 checkpoint missed; reassessed October31 in docs/assessments/platform/2026-10-disposition.md. Custody, dual-control and current recovery-drill evidence remain absent from the reviewed record; F-002 remains High/open. November30 is the next accountable disposition checkpoint, not a remediation-completion promise or risk acceptance.
     artifacts:
       - repo: security-architecture
         path: docs/standards/secrets-and-recovery.md
@@ -36,8 +36,8 @@ workstreams:
     title: Machine identity modernization
     owner: security-architecture
     status: active
-    target_date: 2026-10-30
-    target_date_rationale: Machine identity modernization remains active beyond the mitigated repository-visibility defect.
+    target_date: 2026-11-30
+    target_date_rationale: October30 checkpoint missed; reassessed October31 in docs/assessments/platform/2026-10-disposition.md. Argo repository ExternalSecret remains declarative; its GitHub App migration ADR is still proposed. F-003 remains mitigated, not reopened. November30 is the next accountable disposition checkpoint, not a remediation-completion promise or risk acceptance.
     artifacts:
       - repo: security-architecture
         path: docs/adr/0002-machine-git-access.md
@@ -67,8 +67,8 @@ workstreams:
     title: Secret delivery resilience
     owner: platform-engineering
     status: active
-    target_date: 2026-10-30
-    target_date_rationale: Quarterly disposition checkpoint retained pending an end-to-end secret-delivery recovery drill.
+    target_date: 2026-11-30
+    target_date_rationale: October30 checkpoint missed; reassessed October31 in docs/assessments/platform/2026-10-disposition.md. Vault Kubernetes SecretStore and declarative delivery remain present; a current end-to-end recovery drill is not established. F-005 remains Medium/open. November30 is the next accountable disposition checkpoint, not a remediation-completion promise or risk acceptance.
     artifacts:
       - repo: security-architecture
         path: docs/architecture/domains/secrets-and-recovery.md
@@ -83,8 +83,8 @@ workstreams:
     title: Host-control security review
     owner: security-architecture
     status: active
-    target_date: 2026-10-30
-    target_date_rationale: Quarterly disposition checkpoint retained pending active bridge policy, identity, and audit attestation.
+    target_date: 2026-11-30
+    target_date_rationale: October30 checkpoint missed; reassessed October31 in docs/assessments/platform/2026-10-disposition.md. Bridge bearer authentication, permission policy and audit remain implemented; current active-policy/environment attestation is not supplied. F-006 remains High/open. November30 is the next accountable disposition checkpoint, not a remediation-completion promise or risk acceptance.
     artifacts:
       - repo: security-architecture
         path: docs/architecture/domains/host-control.md
@@ -144,9 +144,9 @@ findings:
       - recovery handling
     owner: Security Architecture / Platform
     status: open
-    target_date: 2026-10-30
-    last_reviewed_on: 2026-07-30
-    target_date_rationale: Retained for the next quarterly disposition checkpoint because federated access remains proposed and operating proof is absent.
+    target_date: 2026-11-30
+    last_reviewed_on: 2026-10-31
+    target_date_rationale: October30 checkpoint missed; reassessed October31 in docs/assessments/platform/2026-10-disposition.md. Federated access remains proposed and transitional local human access remains inventoried; F-001 remains High/open. November30 is the next accountable disposition checkpoint, not a remediation-completion promise or risk acceptance.
     risk_id: R-001
     workstream: WS-001
     remediation_artifacts:
@@ -162,9 +162,9 @@ findings:
       - Vault recovery authority
     owner: Security Architecture / Platform
     status: open
-    target_date: 2026-10-30
-    last_reviewed_on: 2026-07-30
-    target_date_rationale: Retained for the next quarterly disposition checkpoint pending custody, dual-control, and drill evidence.
+    target_date: 2026-11-30
+    last_reviewed_on: 2026-10-31
+    target_date_rationale: October30 checkpoint missed; reassessed October31 in docs/assessments/platform/2026-10-disposition.md. Custody, dual-control and current recovery-drill evidence remain absent from the reviewed record; F-002 remains High/open. November30 is the next accountable disposition checkpoint, not a remediation-completion promise or risk acceptance.
     risk_id: R-002
     workstream: WS-002
     remediation_artifacts:
@@ -217,9 +217,9 @@ findings:
       - runtime namespaces
     owner: Platform
     status: open
-    target_date: 2026-10-30
-    last_reviewed_on: 2026-07-30
-    target_date_rationale: Retained for the next quarterly disposition checkpoint pending current end-to-end recovery evidence.
+    target_date: 2026-11-30
+    last_reviewed_on: 2026-10-31
+    target_date_rationale: October30 checkpoint missed; reassessed October31 in docs/assessments/platform/2026-10-disposition.md. Vault Kubernetes SecretStore and declarative delivery remain present; a current end-to-end recovery drill is not established. F-005 remains Medium/open. November30 is the next accountable disposition checkpoint, not a remediation-completion promise or risk acceptance.
     risk_id: R-005
     workstream: WS-005
     remediation_artifacts:
@@ -239,9 +239,9 @@ findings:
       - WSL host
     owner: Security Architecture / Platform
     status: open
-    target_date: 2026-10-30
-    last_reviewed_on: 2026-07-30
-    target_date_rationale: Retained for the next quarterly disposition checkpoint pending active policy, identity, audit, and environment-boundary attestation.
+    target_date: 2026-11-30
+    last_reviewed_on: 2026-10-31
+    target_date_rationale: October30 checkpoint missed; reassessed October31 in docs/assessments/platform/2026-10-disposition.md. Bridge bearer authentication, permission policy and audit remain implemented; current active-policy/environment attestation is not supplied. F-006 remains High/open. November30 is the next accountable disposition checkpoint, not a remediation-completion promise or risk acceptance.
     risk_id: R-006
     workstream: WS-006
     remediation_artifacts:

@@ -345,8 +345,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-29-primary-console-clarity.md
-        reviewed_on: 2026-10-30
+        path: docs/reviews/components/2026-10-31-console-ai-activity-read-scope.md
+        reviewed_on: 2026-10-31
         status: current
         decision: approved
         review_areas:
@@ -356,6 +356,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-ai-request-history-and-native-advice-metadata
           - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
           - primary-console-readable-activity-and-bounded-history
@@ -659,8 +660,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-experimental-api-provider-connections.md
-        reviewed_on: 2026-10-30
+        path: docs/reviews/components/2026-10-31-console-ai-activity-read-scope.md
+        reviewed_on: 2026-10-31
         status: current
         decision: approved
         review_areas:
@@ -670,6 +671,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-ai-request-history-and-native-advice-metadata
           - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
           - console-lock-verified-shared-package-cache
