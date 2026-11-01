@@ -114,3 +114,25 @@ remain requirements. Subsequent accepted API/storage/durable-operation deltas
 supersede the April document's historical pre-runtime restrictions only within
 their exact admitted local scopes. This renewal does not approve new stage/prod,
 autonomous governance, broad context disclosure or changes to those findings.
+
+
+## Final merged-source selection
+
+All543 WGCF tests and its exact-head hosted bootstrap/API/worker checks passed.
+The corresponding merged-source image build and validation also passed. All four
+owner PRs are merged with candidate/merged tree equality; the final source list
+and exact new worker digest are in the existing composed YAML and its matching
+[review amendment](2026-10-24-configurable-ai-routing.md#november-1-reviewed-ui-batch-two-composition).
+The original durable activation generation and unchanged Platform tree remain.
+The generated Security index now includes the merged OOS publication-preparation
+record. This source acceptance permits normal local activation; actual operating
+readback remains required before release completion.
+
+Merged-source OOS validation
+[41300753445](https://github.com/mfshaf7/operator-orchestration-service/actions/runs/41300753445)
+and API/worker publication
+[41300753448](https://github.com/mfshaf7/operator-orchestration-service/actions/runs/41300753448)
+also pass. Console merged-source validation
+[41300761467](https://github.com/mfshaf7/governance-operations-console/actions/runs/41300761467)
+passes. Published metadata is retained privately and binds each selected merged
+source; owner data and original request journals were not modified by the checks.
