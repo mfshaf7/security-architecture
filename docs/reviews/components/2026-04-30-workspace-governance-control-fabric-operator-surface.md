@@ -167,3 +167,20 @@ Findings and residual risk:
 - `workspace-governance-control-fabric/AGENTS.md`
 - [`../security-delta-review-process.md`](../security-delta-review-process.md)
 - [`../security-review-checklist.md`](../security-review-checklist.md)
+
+## November 1, 2026 baseline reassessment
+
+The October30 checkpoint expired and was caught by release validation. The
+[November source and boundary review](2026-11-01-console-ui-batch-two.md)
+reassesses current WGCF ownership, authenticated source/readiness, evidence,
+local runtime and independent release controls. The source1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144
+and its existing October28 composed acceptance provide the implemented baseline;
+new preparation source remains subject to exact-head owner checks and later
+composed acceptance. Current pod readiness is not business-operation proof.
+
+Decision remains **approved-with-findings**, reviewed November1,2026; next
+checkpoint April30,2027. Preserve the authority split, evidence confidentiality,
+context-admission requirements and independent Platform/Security gates above.
+Later accepted local API/storage/worker reviews supersede historical day-one
+restrictions only in their admitted scopes. No broader permission, finding
+closure, production certification or live release is inferred from this renewal.

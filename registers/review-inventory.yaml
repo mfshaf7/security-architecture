@@ -187,13 +187,13 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
-        reviewed_on: 2026-04-30
-        review_due_on: 2026-10-30
+        reviewed_on: 2026-11-01
+        review_due_on: 2027-04-30
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
-        reviewed_on: 2026-10-28
+        path: docs/reviews/components/2026-11-01-console-ui-batch-two.md
+        reviewed_on: 2026-11-01
         status: current
         decision: approved
         review_areas:
@@ -203,6 +203,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - authenticated-read-only-product-publication-preparation
           - console-capabilities-exact-composition
           - registered-owner-publication-freshness-and-native-callback
           - source-owner-provider-provenance-bundle-parity
@@ -1242,13 +1243,13 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-04-30-workspace-governance-control-fabric-operator-surface.md
-        reviewed_on: 2026-04-30
-        review_due_on: 2026-10-30
+        reviewed_on: 2026-11-01
+        review_due_on: 2027-04-30
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-console-capabilities-exact-composition.md
-        reviewed_on: 2026-10-28
+        path: docs/reviews/components/2026-11-01-console-ui-batch-two.md
+        reviewed_on: 2026-11-01
         status: current
         decision: approved
         review_areas:
@@ -1258,6 +1259,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - authenticated-read-only-product-publication-preparation
           - console-capabilities-exact-composition
           - source-owner-provider-provenance-bundle-parity
           - delivery-art-active-architecture-semantic-validation
