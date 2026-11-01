@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-experimental-api-provider-connections.md
-        reviewed_on: 2026-10-30
+        path: docs/reviews/components/2026-11-01-console-ui-batch-two.md
+        reviewed_on: 2026-11-01
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - final-canonical-source-freshness-after-startup-effects
           - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
           - purpose-lifecycle-qualification-fixture-isolation-and-final-tree

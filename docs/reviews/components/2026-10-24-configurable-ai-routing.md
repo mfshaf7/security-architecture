@@ -1097,3 +1097,21 @@ normal activation/status, fresh authenticated owner reads and the real rendered
 Console. The before-release Console session was expired, and anonymous GitHub
 source observations were rate-limited; neither condition is a healthy operating
 claim or permission to bypass authentication or freshness.
+
+
+## Final source evidence after startup effects
+
+The [November lifecycle review](2026-11-01-console-ui-batch-two.md#final-startup-source-freshness)
+accepts Platform `platform-engineering@acf1de663d1f2dd98ef9e927985fe3e36b1167b1`, tree
+`platform-engineering-tree@d66145777ccc66807d443edfb175c56a153efd52`. Gary PR358's tested candidate750db3d8f1d50f14c25a8fefc7c02eaeab4fc4db
+has the identical merged tree. Local full validation and both required hosted
+checks passed; its main-only metadata job was intentionally skipped on the PR.
+
+The repair reuses canonical refresh immediately before final readiness, after
+frontend preparation, artifact confirmation and provider setup. Five-minute
+expiry and source validation remain unchanged; missing authority withholds the
+core-online result. The existing lifecycle case covers warm, cold, late finishing
+and unavailable-source behavior. All Console/OOS/WGCF/Governance selections,
+original c786 manifest/generation, images, accounts and permissions above remain.
+Accept the exact repaired Platform tree for normal local activation and native
+readiness proof. No stale source is accepted as a workaround.
