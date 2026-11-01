@@ -1051,3 +1051,49 @@ Platform activation. Final operating status, real authenticated history readback
 and a controlled real request remain required before maintenance completion.
 No new provider, app permission, source-authoring role or canonical mutation is
 authorized by history visibility. Rollback retains all original owner data.
+
+
+## November 1 reviewed UI batch two composition
+
+The [bounded source review](2026-11-01-console-ui-batch-two.md) and operator
+preview approval cover this maintenance release. The exact selected sources are:
+
+| Owner | Merged source |
+| --- | --- |
+| context-governance-gateway | `e29c59a4ed56048f6aa47bb924899566a5e68bae` |
+| governance-operations-console | `71f7ff98110cb3601b7a6c5b2538eb5669adeb5d` |
+| operator-orchestration-service | `9ea2975373e7bdb94018c19a0637f086122941b6` |
+| platform-engineering | `1862fd3ab614761852ef98969ec2bbafcc1525d8` |
+| workspace-governance | `43c16685549f1115c4f0e7424753e460802a3add` |
+| workspace-governance-control-fabric | `d3516e570aec812a3cd66933387d89b6f1fc94e4` |
+| workspace-prototype-studio | `84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6` |
+
+Workspace Governance PR317, WGCF PR121, OOS PR401 and Console PR159 merged in
+that order under delegated human review after exact-head hosted checks passed.
+Each merged tree equals its Gary candidate tree. Security PR399 separately
+renewed the expired WGCF baseline without closing its existing findings.
+
+Local proof:300 Governance tests;543 WGCF tests;1729 OOS tests passing with two
+existing skips;863 Console semantic tests, architecture/type/build checks and
+zero production audit vulnerabilities. Production-output browser proof passed69
+cases with one explicitly unsupplied optional isolated-conformance input. No
+live model or real business mutation is inferred from those browser cases.
+
+WGCF merged-source validation41300744536 and published-image run41300744531
+passed. The exact activity image is `ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:e0902017d7da45fdfde11c3b8b04cb84be2f155fd1f0b1aae87dd34bf1e5f01e`. Its published metadata binds source
+`d3516e570aec812a3cd66933387d89b6f1fc94e4`. The existing Platform startup/status also verifies its
+baked revision. The API image is independently source-bound in the same build.
+
+The original `c786d34579937ab09eb12340b5ac2e4831783416bf111a66bd7ca9898465cc73`
+activation manifest, ten records, generation, expiry and runtime targets remain.
+Platform source/tree, remaining owners, caller permissions, accounts, model
+selections, publication targets and independent gates do not change.
+
+Accept the exact source/image selection for the existing normal local Platform
+activation. Preserve owner records, private drafts, requests and original-run
+history; readiness and explicit operator decisions remain separate. Update the
+generated owner-change index from merged source. Live completion still requires
+normal activation/status, fresh authenticated owner reads and the real rendered
+Console. The before-release Console session was expired, and anonymous GitHub
+source observations were rate-limited; neither condition is a healthy operating
+claim or permission to bypass authentication or freshness.

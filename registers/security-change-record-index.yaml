@@ -3744,6 +3744,19 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-01-product-publication-preparation.md
+  date: '2026-11-01'
+  short_title: 2026-11-01-product-publication-preparation
+  review_areas:
+  - delivery
+  - runtime
+  - identity
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
