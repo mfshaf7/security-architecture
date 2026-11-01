@@ -136,3 +136,41 @@ also pass. Console merged-source validation
 [41300761467](https://github.com/mfshaf7/governance-operations-console/actions/runs/41300761467)
 passes. Published metadata is retained privately and binds each selected merged
 source; owner data and original request journals were not modified by the checks.
+
+
+## Final startup source freshness
+
+Native release startup exposed a timing defect in the existing Platform lifecycle:
+source snapshots were refreshed after composition, but later frontend preparation,
+artifact confirmation and provider setup could consume their five-minute validity.
+The observed final readiness failure was correct; retaining historical publication
+requests did not supply current source authority. Authenticated identity/Model
+reads and the new frontend were independently available.
+
+Platform Gary [PR358](https://github.com/mfshaf7/platform-engineering/pull/358)
+selects candidate `750db3d8f1d50f14c25a8fefc7c02eaeab4fc4db`, tree `d66145777ccc66807d443edfb175c56a153efd52`. It adds one final call to the existing
+canonical-owner refresh immediately before final readiness, after all potentially
+long startup effects. Source TTL, source validation, caller/credential boundaries,
+activation generation and operator decisions remain unchanged. Status stays
+read-only. An unavailable owner/provider still blocks success; no core-online
+signal may be published from stale source.
+
+The existing activation regression now simulates warm startup, a frontend delay
+longer than the source window, a delay during finishing, both delays, and provider
+unavailability. The previous implementation fails the cold case; the corrected
+77-case lifecycle suite passes with four existing native-only skips. Full local
+`make validate` passed using CI's locked OOS source and equivalent sibling context.
+Hosted exact-head owner checks remain required before source merge. Native UI
+readback passes but does not by itself prove the corrected startup sequence.
+
+Decision: **approved** for this existing local lifecycle ordering repair. Exact
+merged Platform source/tree selection and its generated owner-record index must
+be updated before activation; the final normal managed startup must independently
+prove current sources and readiness. No new component, identity, privilege,
+profile, retry mechanism, expiry extension or production acceptance is introduced.
+
+Platform PR358 is now merged as `acf1de663d1f2dd98ef9e927985fe3e36b1167b1` with tree `d66145777ccc66807d443edfb175c56a153efd52` equal to its tested Gary
+candidate. Hosted validation41305533525 and repo-posture41305533545 passed.
+The existing composed selection and its review now bind this exact repaired
+Platform source/tree. All product pins and activation evidence are retained;
+normal fresh-source startup remains the required operating witness.
