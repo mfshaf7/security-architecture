@@ -1060,13 +1060,13 @@ preview approval cover this maintenance release. The exact selected sources are:
 
 | Owner | Merged source |
 | --- | --- |
-| context-governance-gateway | `e29c59a4ed56048f6aa47bb924899566a5e68bae` |
-| governance-operations-console | `71f7ff98110cb3601b7a6c5b2538eb5669adeb5d` |
-| operator-orchestration-service | `9ea2975373e7bdb94018c19a0637f086122941b6` |
-| platform-engineering | `1862fd3ab614761852ef98969ec2bbafcc1525d8` |
-| workspace-governance | `43c16685549f1115c4f0e7424753e460802a3add` |
-| workspace-governance-control-fabric | `d3516e570aec812a3cd66933387d89b6f1fc94e4` |
-| workspace-prototype-studio | `84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6` |
+| context-governance-gateway | `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae` |
+| governance-operations-console | `governance-operations-console@71f7ff98110cb3601b7a6c5b2538eb5669adeb5d` |
+| operator-orchestration-service | `operator-orchestration-service@9ea2975373e7bdb94018c19a0637f086122941b6` |
+| platform-engineering | `platform-engineering@1862fd3ab614761852ef98969ec2bbafcc1525d8` |
+| workspace-governance | `workspace-governance@43c16685549f1115c4f0e7424753e460802a3add` |
+| workspace-governance-control-fabric | `workspace-governance-control-fabric@d3516e570aec812a3cd66933387d89b6f1fc94e4` |
+| workspace-prototype-studio | `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6` |
 
 Workspace Governance PR317, WGCF PR121, OOS PR401 and Console PR159 merged in
 that order under delegated human review after exact-head hosted checks passed.
