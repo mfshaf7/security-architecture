@@ -3757,6 +3757,21 @@ change_records:
   workstreams:
   - WS-003
   - WS-005
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-02-dev-integration-profile-console.md
+  date: '2026-11-02'
+  short_title: 2026-11-02-dev-integration-profile-console
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  - ai
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
@@ -4341,6 +4356,21 @@ change_records:
   review_areas:
   - runtime
   - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
+- repo: platform-engineering
+  path: docs/records/change-records/2026-11-02-dev-integration-profile-console.md
+  date: '2026-11-02'
+  short_title: 2026-11-02-dev-integration-profile-console
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  - ai
   findings: []
   risks: []
   workstreams:
