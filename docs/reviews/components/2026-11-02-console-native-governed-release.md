@@ -200,3 +200,23 @@ The exact merged sources selected by the existing composed YAML are:
 | workspace-prototype-studio | `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6` |
 
 Platform tree: `platform-engineering-tree@aaa827463809d2ef0e8d3d18572b367fd8b6d451`. Source PRs: [Platform359](https://github.com/mfshaf7/platform-engineering/pull/359), [OOS402](https://github.com/mfshaf7/operator-orchestration-service/pull/402), [Console160](https://github.com/mfshaf7/governance-operations-console/pull/160), [Governance318](https://github.com/mfshaf7/workspace-governance/pull/318). Each merged tree equals its tested Gary candidate. The generated index now includes the merged owner records.
+
+## November 2 managed integration activation correction
+
+Live read-only publication proof returned dev_integration_not_configured because
+the staged profile/product flags were absent from the normal managed binding.
+Use the existing canonical-record binding shared by activate and restart to set
+both flags; consumed-state readiness rejects either disabled flag, and existing
+rollback disables/removes them. This is the already-reviewed bounded readback and
+profile-request recording, not native owner-workflow dispatch. The separate native
+release App remains pending/uncommissioned. No account, journal, image, identity,
+privilege, workflow engine or activation generation is added or reset.
+
+The existing77 lifecycle cases pass with four native-only skips, including both
+disabled consumed-flag cases and rollback; profile/product suites and hosted owner
+checks pass. Platform PR360 merged with exact candidate/merge tree equality.
+Decision: approved for normal managed restart and subsequent native read-only
+profile/product qualification. Readiness is not inferred from source alone.
+
+Current source: `platform-engineering@a5e751df89b476f6515c02184df1f5c02de88e45`.
+Current tree: `platform-engineering-tree@244baa26da3d47d24dee294a2867fb672051e1f5`.
