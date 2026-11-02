@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-01-console-ui-batch-two.md
-        reviewed_on: 2026-11-01
+        path: docs/reviews/components/2026-11-02-console-native-governed-release.md
+        reviewed_on: 2026-11-02
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-native-release-dedicated-dispatch-identity
+          - protected-owner-workflow-original-request-and-source-effect-binding
           - final-canonical-source-freshness-after-startup-effects
           - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
@@ -63,6 +65,16 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: security/governed-release-identity.yaml
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_dispatch.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_source.py
+          - repo: operator-orchestration-service
+            path: src/platform-operation/release-workflow-contracts.js
+          - repo: governance-operations-console
+            path: src/environment-lifecycle/presentation/governed-releases/native-release-actions.tsx
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
           - repo: operator-orchestration-service
@@ -347,8 +359,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-01-console-ui-batch-two.md
-        reviewed_on: 2026-11-01
+        path: docs/reviews/components/2026-11-02-console-native-governed-release.md
+        reviewed_on: 2026-11-02
         status: current
         decision: approved
         review_areas:
@@ -358,6 +370,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-native-release-dedicated-dispatch-identity
+          - protected-owner-workflow-original-request-and-source-effect-binding
           - authenticated-read-only-product-publication-preparation
           - console-native-advisor-and-ui-capability-preservation
           - bounded-ai-request-history-and-native-advice-metadata
@@ -418,6 +432,16 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: security/governed-release-identity.yaml
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_dispatch.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_source.py
+          - repo: operator-orchestration-service
+            path: src/platform-operation/release-workflow-contracts.js
+          - repo: governance-operations-console
+            path: src/environment-lifecycle/presentation/governed-releases/native-release-actions.tsx
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
           - repo: operator-orchestration-service
@@ -664,8 +688,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-01-console-ui-batch-two.md
-        reviewed_on: 2026-11-01
+        path: docs/reviews/components/2026-11-02-console-native-governed-release.md
+        reviewed_on: 2026-11-02
         status: current
         decision: approved
         review_areas:
@@ -675,6 +699,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-native-release-dedicated-dispatch-identity
+          - protected-owner-workflow-original-request-and-source-effect-binding
           - authenticated-read-only-product-publication-preparation
           - console-native-advisor-and-ui-capability-preservation
           - bounded-ai-request-history-and-native-advice-metadata
@@ -719,6 +745,16 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: security/governed-release-identity.yaml
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_dispatch.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_source.py
+          - repo: operator-orchestration-service
+            path: src/platform-operation/release-workflow-contracts.js
+          - repo: governance-operations-console
+            path: src/environment-lifecycle/presentation/governed-releases/native-release-actions.tsx
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
           - repo: operator-orchestration-service
@@ -850,8 +886,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-01-console-ui-batch-two.md
-        reviewed_on: 2026-11-01
+        path: docs/reviews/components/2026-11-02-console-native-governed-release.md
+        reviewed_on: 2026-11-02
         status: current
         decision: approved
         review_areas:
@@ -861,6 +897,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-native-release-dedicated-dispatch-identity
+          - protected-owner-workflow-original-request-and-source-effect-binding
           - authenticated-read-only-product-publication-preparation
           - console-native-advisor-and-ui-capability-preservation
           - provider-native-connection-and-bound-timestamped-success
@@ -919,6 +957,16 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: security/governed-release-identity.yaml
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_dispatch.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_source.py
+          - repo: operator-orchestration-service
+            path: src/platform-operation/release-workflow-contracts.js
+          - repo: governance-operations-console
+            path: src/environment-lifecycle/presentation/governed-releases/native-release-actions.tsx
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
           - repo: operator-orchestration-service
@@ -1467,8 +1515,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-01-console-ui-batch-two.md
-        reviewed_on: 2026-11-01
+        path: docs/reviews/components/2026-11-02-console-native-governed-release.md
+        reviewed_on: 2026-11-02
         status: current
         decision: approved
         review_areas:
@@ -1478,6 +1526,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-native-release-dedicated-dispatch-identity
+          - protected-owner-workflow-original-request-and-source-effect-binding
           - authenticated-read-only-product-publication-preparation
           - console-native-advisor-and-ui-capability-preservation
           - console-lock-verified-shared-package-cache
@@ -1502,6 +1552,16 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: security/governed-release-identity.yaml
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_dispatch.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_release_source.py
+          - repo: operator-orchestration-service
+            path: src/platform-operation/release-workflow-contracts.js
+          - repo: governance-operations-console
+            path: src/environment-lifecycle/presentation/governed-releases/native-release-actions.tsx
           - repo: operator-orchestration-service
             path: dev-integration/profiles/accepted-idea-delivery/scripts/install_runtime_dependencies.mjs
           - repo: operator-orchestration-service

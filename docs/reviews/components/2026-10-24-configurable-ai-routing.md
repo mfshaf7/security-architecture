@@ -1115,3 +1115,54 @@ and unavailable-source behavior. All Console/OOS/WGCF/Governance selections,
 original c786 manifest/generation, images, accounts and permissions above remain.
 Accept the exact repaired Platform tree for normal local activation and native
 readiness proof. No stale source is accepted as a workaround.
+
+## November 2 reviewed Console batch three composition
+
+The operator approved the reviewed batch for publication after live-preview
+inspection. This extends the existing composed local installation; it creates no
+new service, authority, autonomous workflow or installer. Gary authors owner
+source; the delegated accountable human reviews and merges. This is the main
+agent Security judgment, not an independent assessment.
+
+The delta includes truthful Lifecycle/Registry/profile/product readback and native
+profile request recording, guarded original-operation recovery, scoped history,
+consistent waiting feedback, stable Model/Prototype geometry and the approved
+primary Console activity/Focus layout. Loading is tied to actual pending requests;
+known data, errors, reduced motion and command guards remain. Cosmetic primary
+Console styling does not change Workbench primitives or canonical work-state truth.
+
+Owner-native release dispatch remains separately default-off. The optional new
+review activation metadata remains pending, with no commissioned dedicated App.
+The source update cannot widen Gary credentials, enable native release authority,
+automatically approve an environment or merge a runtime-source PR. Existing manual
+owner workflows, read-only navigation and original-operation recovery remain.
+
+Qualification includes Console884 semantic tests, full architecture/types/build,
+zero production dependency vulnerabilities and desktop browser proofs; OOS1754
+cases with1752passing and2existing skips, deterministic bundles, schema/API and
+base-aware owner checks; Workspace Governance300unit cases and full hosted checks;
+and complete Platform make validate on the exact committed source in isolated CI
+context. The full Platform check caught and corrected helper imports preceding
+module-path initialization; its existing38-case source-intent regression passes.
+Synthetic GitHub transport and preview data are presentation/source qualification,
+not operating acceptance or proof of complete live audit coverage.
+
+The original durable activation generation and reviewed WGCF worker digest remain.
+No owner request journal, model selection, account custody or business record is
+reset. Final normal managed activation and read-only operating checks must pass
+before declaring this batch live. Source rollback selects the preceding accepted
+composition while preserving mutable owner records and receipts.
+
+The exact merged sources selected by the existing composed YAML are:
+
+| Owner | Merged source |
+| --- | --- |
+| context-governance-gateway | `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae` |
+| governance-operations-console | `governance-operations-console@e1c2477c3d0a5756ec832095db3233d946c396c4` |
+| operator-orchestration-service | `operator-orchestration-service@11d3a959b7d463a3b33152839fd31cefdbbdff2e` |
+| platform-engineering | `platform-engineering@b40bb3421f19d7a2727c1ddef62536c6939703e1` |
+| workspace-governance | `workspace-governance@c442245b3bcc9671bf2ddf14adb473e09229d3f6` |
+| workspace-governance-control-fabric | `workspace-governance-control-fabric@d3516e570aec812a3cd66933387d89b6f1fc94e4` |
+| workspace-prototype-studio | `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6` |
+
+Platform tree: `aaa827463809d2ef0e8d3d18572b367fd8b6d451`. Source PRs: [Platform359](https://github.com/mfshaf7/platform-engineering/pull/359), [OOS402](https://github.com/mfshaf7/operator-orchestration-service/pull/402), [Console160](https://github.com/mfshaf7/governance-operations-console/pull/160), [Governance318](https://github.com/mfshaf7/workspace-governance/pull/318). Each merged tree equals its tested Gary candidate. The generated index now includes the merged owner records.
