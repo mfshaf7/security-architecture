@@ -1258,3 +1258,41 @@ delivery, credential consumption, renewal and restart checks. Actual runtime
 readback remains required before reporting the repair operational. Customer
 onboarding and independent installation qualification remain open product work;
 other Repository workflow repairs are outside this source acceptance.
+
+## Readiness response compatibility acceptance — 2026-11-03
+
+Accept the bounded readiness and History response corrections described in the
+[existing account-reader review](2026-11-03-account-repository-reader.md#native-readiness-and-history-compatibility).
+Platform's negative-read probe now accepts the canonical authenticated
+request-not-found response while rejecting generic or unrelated 404s. Console
+keeps disabled lifecycle history distinct from transient read failures. These
+corrections change no authority, lifecycle enablement, identity class or data
+scope. Main-agent Security closure and delegated human review remain explicit.
+
+The composed YAML now selects these exact merged sources:
+
+- `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
+- `governance-operations-console@7d925a50e3816e41331f6fcb54331cfbd0cb1e33`
+- `operator-orchestration-service@fc99ac2ccc279802c1cd75ea7bc701836d249e93`
+- `platform-engineering@57ebcd751c40c4c193c19abd60c85f4d13b047e0`
+- `workspace-governance@3db80c3eb7d7ff3311c11511c432cfb037fec26a`
+- `workspace-governance-control-fabric@d3516e570aec812a3cd66933387d89b6f1fc94e4`
+- `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
+- `platform-engineering-tree@3a0997a1b4a54458c299274fb4c66e9d233cdf78`
+
+[Platform363](https://github.com/mfshaf7/platform-engineering/pull/363) and
+[Console163](https://github.com/mfshaf7/governance-operations-console/pull/163)
+passed their complete required hosted checks. Their merged trees equal the
+tested Gary candidates. Local complete-runtime regression, native corrected
+route probe, owner governance checks, structured record/index preflight and
+the full Console check, public-source validator and dependency audit passed.
+The Console patch also passed a private preview against actual deployed OOS:
+the creation receipt remains visible, the lifecycle source is identified as
+disabled and no misleading Retry is offered. Account metadata reads, account
+denial and native reader rotation/reuse passed on the existing accepted path.
+
+Authorize the supported exact-source runtime restart and complete status path
+for this source pair. No repeated full composition bring-up, fake activation
+marker or relaxed readiness result is required. Current production readback
+must still pass after restart before reporting closure. This does not certify
+the remaining Repository workflows or independent customer installation.
