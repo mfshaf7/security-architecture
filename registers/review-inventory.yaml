@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-03-account-repository-reader.md
+        path: docs/reviews/platform/2026-11-03-composition-status-recovery.md
         reviewed_on: 2026-11-03
         status: current
         decision: approved
@@ -66,6 +66,12 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: scripts/dev_integration_compositions.py
+          - repo: platform-engineering
+            path: scripts/test_dev_integration_compositions.py
+          - repo: platform-engineering
+            path: docs/runbooks/dev-integration-profiles.md
           - repo: platform-engineering
             path: security/governed-release-identity.yaml
           - repo: platform-engineering
