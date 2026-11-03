@@ -13,12 +13,12 @@ reviewed_revisions:
   context-governance-gateway: e29c59a4ed56048f6aa47bb924899566a5e68bae
   governance-operations-console: 7d925a50e3816e41331f6fcb54331cfbd0cb1e33
   operator-orchestration-service: fc99ac2ccc279802c1cd75ea7bc701836d249e93
-  platform-engineering: 57ebcd751c40c4c193c19abd60c85f4d13b047e0
+  platform-engineering: cdd7565e49acf7034bd68982b3abf8c4b8cfa168
   workspace-governance: 3db80c3eb7d7ff3311c11511c432cfb037fec26a
   workspace-governance-control-fabric: d3516e570aec812a3cd66933387d89b6f1fc94e4
   workspace-prototype-studio: 84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6
 reviewed_trees:
-  platform-engineering: 3a0997a1b4a54458c299274fb4c66e9d233cdf78
+  platform-engineering: 4f03097cf83a0dfe01cfa98ff29e3d2a1cb8358a
 durable_orchestration:
   manifest_path: docs/reviews/components/console-capabilities-1332/manifest.json
   manifest_digest: sha256:c786d34579937ab09eb12340b5ac2e4831783416bf111a66bd7ca9898465cc73

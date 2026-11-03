@@ -1296,3 +1296,41 @@ for this source pair. No repeated full composition bring-up, fake activation
 marker or relaxed readiness result is required. Current production readback
 must still pass after restart before reporting closure. This does not certify
 the remaining Repository workflows or independent customer installation.
+
+## Composition status recovery acceptance — 2026-11-03
+
+Accept the bounded shared-runner health recovery reviewed in the
+[scoped Security decision](../platform/2026-11-03-composition-status-recovery.md).
+After a completed startup, current health may return active when every
+participant passes. Failed or interrupted lifecycle actions, suspended/unknown
+state and ambiguous legacy degraded state remain blocked. Status retains
+existing credentials and preserves newer lifecycle intent. This introduces no
+profile, authority, service, command, model selection or admission change.
+
+The exact reviewed merged sources selected by the existing YAML are:
+
+- `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
+- `governance-operations-console@7d925a50e3816e41331f6fcb54331cfbd0cb1e33`
+- `operator-orchestration-service@fc99ac2ccc279802c1cd75ea7bc701836d249e93`
+- `platform-engineering@cdd7565e49acf7034bd68982b3abf8c4b8cfa168`
+- `workspace-governance@3db80c3eb7d7ff3311c11511c432cfb037fec26a`
+- `workspace-governance-control-fabric@d3516e570aec812a3cd66933387d89b6f1fc94e4`
+- `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
+- `platform-engineering-tree@4f03097cf83a0dfe01cfa98ff29e3d2a1cb8358a`
+
+[Platform364](https://github.com/mfshaf7/platform-engineering/pull/364) passed
+required hosted validation, including the complete Platform validation target.
+Its merged tree equals Gary's tested candidate. Local proof includes 31
+composition/preflight regressions, 114 shared-runner tests, structure, governance
+and operational checks, and owner-record preflight. The generated Security
+index now includes the merged owner record; scoped review411 landed first.
+
+Authorize normal activation with this exact source set, followed by composed
+status and current runtime verification. Normal activation supplies completed
+lifecycle provenance to the existing legacy record; no manual label rewrite
+or credential recreation from status is accepted. Unit state sequences prove
+failure/recovery and interrupted-action denial without faulting healthy live
+services. Final native producer readback remains required before closure.
+No claim of repairing the observed process segfault or physical hardware is
+made. Main-agent Security closure and delegated human review remain explicit;
+this is local dev-integration acceptance, not stage or production qualification.
