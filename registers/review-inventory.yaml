@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-02-console-native-governed-release.md
-        reviewed_on: 2026-11-02
+        path: docs/reviews/components/2026-11-03-repository-verification-maturity.md
+        reviewed_on: 2026-11-03
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - repository-verification-maturity-and-active-owner-source-scope
           - console-native-release-dedicated-dispatch-identity
           - protected-owner-workflow-original-request-and-source-effect-binding
           - final-canonical-source-freshness-after-startup-effects
@@ -141,8 +142,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-28-durable-owner-result-recovery.md
-        reviewed_on: 2026-10-28
+        path: docs/reviews/components/2026-11-03-repository-verification-maturity.md
+        reviewed_on: 2026-11-03
         status: current
         decision: approved
         review_areas:
@@ -152,6 +153,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - repository-verification-maturity-and-active-owner-source-scope
           - durable-independent-owner-result-and-mounted-metadata
           - console-capabilities-exact-composition
           - final-guidance-native-qualification-and-owner-profile-boundary
@@ -359,8 +361,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-02-console-native-governed-release.md
-        reviewed_on: 2026-11-02
+        path: docs/reviews/components/2026-11-03-repository-verification-maturity.md
+        reviewed_on: 2026-11-03
         status: current
         decision: approved
         review_areas:
@@ -370,6 +372,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - repository-verification-maturity-and-active-owner-source-scope
           - console-native-release-dedicated-dispatch-identity
           - protected-owner-workflow-original-request-and-source-effect-binding
           - authenticated-read-only-product-publication-preparation
@@ -688,8 +691,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-02-console-native-governed-release.md
-        reviewed_on: 2026-11-02
+        path: docs/reviews/components/2026-11-03-repository-verification-maturity.md
+        reviewed_on: 2026-11-03
         status: current
         decision: approved
         review_areas:
@@ -699,6 +702,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - repository-verification-maturity-and-active-owner-source-scope
           - console-native-release-dedicated-dispatch-identity
           - protected-owner-workflow-original-request-and-source-effect-binding
           - authenticated-read-only-product-publication-preparation

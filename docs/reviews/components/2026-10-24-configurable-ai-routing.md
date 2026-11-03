@@ -1186,3 +1186,32 @@ profile/product qualification. Readiness is not inferred from source alone.
 
 Current source: `platform-engineering@a5e751df89b476f6515c02184df1f5c02de88e45`.
 Current tree: `platform-engineering-tree@244baa26da3d47d24dee294a2867fb672051e1f5`.
+
+## Repository verification maintenance acceptance — 2026-11-03
+
+Accept the existing composition with the reviewed repository onboarding and
+verification-maturity maintenance. The [scoped delta review](2026-11-03-repository-verification-maturity.md)
+records the trust-boundary judgment. This refresh changes the accepted source
+set, not the architecture version, credential class, operator authority or
+private/client qualification. Source validation and instructions remain distinct
+from actual application acceptance. Main-agent Security closure and delegated
+human review remain explicit. The new owner records are included in the
+generated Security change-record index.
+
+Exact reviewed merged sources:
+
+- `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
+- `governance-operations-console@375ecf5e9709097259cefd85fcda954692e8abd9`
+- `operator-orchestration-service@6d50ae0ce6a98976a70a7b99dc51ec2f35e4b976`
+- `platform-engineering@9f05994e9a1a8c30e6ad25eebaed13471cbfc375`
+- `workspace-governance@3db80c3eb7d7ff3311c11511c432cfb037fec26a`
+- `workspace-governance-control-fabric@d3516e570aec812a3cd66933387d89b6f1fc94e4`
+- `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
+- `platform-engineering-tree@6c1e6accff67c68b714d604e6539a17f99cbf6ed`
+
+Local source proof: Workspace Governance301, Platform40, OOS1,782 applicable
+tests with two existing skips, Console901 semantic and seven browser cases,
+and WGCF29 readiness tests passed. Public-source checks, exact production
+build and PR CI passed. Real normal runtime activation and read-only current
+owner-profile readback remain separate operating evidence; this acceptance
+never substitutes a synthetic business record or a generated application pass.
