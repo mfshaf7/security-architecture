@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-03-repository-verification-maturity.md
+        path: docs/reviews/components/2026-11-03-account-repository-reader.md
         reviewed_on: 2026-11-03
         status: current
         decision: approved
@@ -361,7 +361,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-03-repository-verification-maturity.md
+        path: docs/reviews/components/2026-11-03-account-repository-reader.md
         reviewed_on: 2026-11-03
         status: current
         decision: approved
@@ -691,7 +691,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-03-repository-verification-maturity.md
+        path: docs/reviews/components/2026-11-03-account-repository-reader.md
         reviewed_on: 2026-11-03
         status: current
         decision: approved
@@ -749,6 +749,8 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/repository-custody/provider-client.js
           - repo: platform-engineering
             path: security/governed-release-identity.yaml
           - repo: platform-engineering
