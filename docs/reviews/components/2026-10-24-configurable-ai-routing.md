@@ -1334,3 +1334,52 @@ services. Final native producer readback remains required before closure.
 No claim of repairing the observed process segfault or physical hardware is
 made. Main-agent Security closure and delegated human review remain explicit;
 this is local dev-integration acceptance, not stage or production qualification.
+
+
+## Runtime observation lifecycle coordination — 2026-11-03
+
+Accept the Platform maintenance correction for overlapping lifecycle and runtime
+observation collection. A native activation started all five participants, then
+failed because the independent snapshot collector already held its private
+lock. This is workload observation, separate from AI provider inference.
+
+The implementation reuses the same exclusive lock. Activation and restart wait
+for its current owner to finish, then collect fresh evidence. The periodic
+collector remains nonblocking; no concurrent writer or synthetic healthy receipt
+is admitted. Existing custody checks, six admitted reads, ten-second command
+bounds, eighty-second service bound, lifecycle deadline, atomic publication and
+120-second validity remain unchanged. No principal, permission, secret, workload
+command, scheduler or exposed operator capability is added. These product-local
+timing paths match no registered Platform delta-review trigger; the existing
+observation boundary remains applicable. This section records the assessed
+source delta and exact execution selection, not independent attestation. The
+main agent retains Security judgment; the delegated human remains accountable
+reviewer and merger.
+
+The existing lifecycle CI entrypoint exercises the real competing filesystem
+lock, successful publication after release and failure preservation/unlock.
+Synthetic catalog policies use temporary test state rather than inheriting the
+operator's live recovery latch. The 84-case suite includes the observation
+regressions; four opt-in Kubernetes cases are not selected by this CI command.
+Local structure, governance and operational checks and required hosted checks
+passed for the exact candidate tree. The merged source has the same tree.
+
+Current native recovery is proven on the preceding accepted source after a
+manual timer pause; the ordinary timer was restored and all participant/status,
+credential-preservation and Console/GitHub reads passed. That containment is not
+proof of the new coordination behavior. Select this exact source, perform the
+supported native lifecycle and verify current readiness with the ordinary timer
+active before operating closure. This change makes no hardware or page-cache
+repair claim. Source records and the generated Security index retain the owner
+boundary; rollback selects the preceding Platform source and matching decision.
+
+Current reviewed execution sources:
+
+- context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae
+- governance-operations-console@7d925a50e3816e41331f6fcb54331cfbd0cb1e33
+- operator-orchestration-service@fc99ac2ccc279802c1cd75ea7bc701836d249e93
+- platform-engineering@97d99f31b5a9d487cd61d612316fda76c771693c
+- workspace-governance@3db80c3eb7d7ff3311c11511c432cfb037fec26a
+- workspace-governance-control-fabric@d3516e570aec812a3cd66933387d89b6f1fc94e4
+- workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6
+- platform-engineering-tree@09bb80a0ba47bf8d52ce14c5ef681cd4365fc532
