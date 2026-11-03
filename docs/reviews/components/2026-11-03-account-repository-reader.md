@@ -122,3 +122,31 @@ delivery. Roll back the coordinated Platform/OOS scope extension while retaining
 existing workflow credentials, repository data, original receipts and selected
 mode. This is local dev-integration acceptance, not stage/production or complete
 customer-installation qualification.
+
+## Native Readiness And History Compatibility
+
+Native activation exposed a response-contract mismatch in Platform's existing
+negative-read probe. The authenticated Console route correctly preserved OOS's
+`repository_custody_request_not_found` code and returned its original live 404;
+the probe still expected the former generic adapter code. The correction uses
+the canonical machine code while preserving the HTTP status, message and
+live-mode checks. A generic or unrelated 404 remains denied. The corrected
+probe passed against the actual Console response before source landing.
+
+Native History inspection also found a setup response incorrectly classified
+as transient: OOS's disabled lifecycle runtime returns a configuration 503.
+The Console adapter now marks the known runtime/provider setup codes as
+nonretryable while preserving Retry for genuine provider unavailability. The
+actual-backend preview keeps the recorded creation receipt visible, identifies
+the disabled lifecycle source and offers no misleading Retry. This changes
+failure presentation; it enables no lifecycle command or provider privilege.
+
+The accepted account connection passed real public and private repository
+metadata reads through Console and deployed OOS, and rejected a foreign account.
+A bounded reader-only rotation used the existing accepted maintainer and grouped
+consumer rollout under its lifecycle lock. Actual consumer account/fingerprint
+checks passed before the previous token retired; a new maintainer instance
+then reused the current credential without issuing another one. This is native
+rotation/reuse evidence, not a claim that timed expiry or a new live repository
+creation was observed. Final source acceptance, the supported runtime restart
+and complete status checks remain required for composition closure.
