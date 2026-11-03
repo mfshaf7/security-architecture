@@ -1215,3 +1215,46 @@ and WGCF29 readiness tests passed. Public-source checks, exact production
 build and PR CI passed. Real normal runtime activation and read-only current
 owner-profile readback remain separate operating evidence; this acceptance
 never substitutes a synthetic business record or a generated application pass.
+
+## Account metadata reader maintenance acceptance — 2026-11-03
+
+Accept the existing composition with the reviewed account metadata reader and
+Repository History repair. The [account reader delta](2026-11-03-account-repository-reader.md)
+defines the explicit Metadata read grant, account boundary, protected renewal
+and disconnect selection, and optional consumer references. This extends the
+existing producer, timer and read adapter without a new service or mutation
+authority. Main-agent Security closure and delegated human review remain
+explicit; this is local dev-integration acceptance.
+
+The exact reviewed merged sources selected by the composed YAML are:
+
+- `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
+- `governance-operations-console@65e8f9891cc41a7fc9f5eb1454840d2c23098f27`
+- `operator-orchestration-service@fc99ac2ccc279802c1cd75ea7bc701836d249e93`
+- `platform-engineering@6ebbd658258819a4467707c310a32491f297de67`
+- `workspace-governance@3db80c3eb7d7ff3311c11511c432cfb037fec26a`
+- `workspace-governance-control-fabric@d3516e570aec812a3cd66933387d89b6f1fc94e4`
+- `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
+- `platform-engineering-tree@b99eb31dfacecafb460fd9a931e0ce429441091d`
+
+Source PRs: [Platform362](https://github.com/mfshaf7/platform-engineering/pull/362),
+[OOS404](https://github.com/mfshaf7/operator-orchestration-service/pull/404),
+[Console162](https://github.com/mfshaf7/governance-operations-console/pull/162).
+Their merged trees equal the tested Gary candidates. The generated Security
+index includes both merged owner change records. All required hosted checks
+passed, including Platform's complete validation and OOS image construction
+and smoke checks. Local proof includes 1,784 passing OOS tests with two existing
+skips, 908 Console semantic tests, five browser cases, architecture, types,
+production build, public-source validation and dependency audit. Legacy identity,
+account scope, twelve reader maintenance cases and complete-runtime regression
+checks passed; existing native-only skips remain explicit.
+
+Native commissioning verified an All repositories Metadata read token and an
+existing private-repository read, then revoked the proof tokens. A repository
+appearing after connection setup was exercised with unchanged client/token/
+configuration in isolated engineering proof; no new live repository was created.
+This acceptance authorizes normal exact-source activation and bounded account
+delivery, credential consumption, renewal and restart checks. Actual runtime
+readback remains required before reporting the repair operational. Customer
+onboarding and independent installation qualification remain open product work;
+other Repository workflow repairs are outside this source acceptance.
