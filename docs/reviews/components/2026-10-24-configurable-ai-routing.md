@@ -1515,3 +1515,92 @@ Both provider merges retain the reviewed Gary candidate trees and passed all
 required hosted checks plus delegated exact-head human approval. Other composed
 source selections and the durable orchestration manifest remain unchanged.
 Native activation and readback remain the operating gate.
+
+
+## Installation-private project records and source maintenance acceptance — 2026-11-05
+
+Decision: approved for the existing local single-operator installation and the
+exact merged source set in the paired composed decision. The scoped review is
+[private project operational records](2026-11-05-private-project-operational-records.md).
+The main agent retains Security judgment and final landing authority; Gary
+remains source author/publisher and the delegated accountable human reviews and
+merges. This is not an independent assessment or a completed operating witness.
+
+New project registration, decisions and history remain installation-private in
+WGCF's existing database. Policy and code remain versioned; project source stays
+in its selected Git repository. Existing Git records and pending reviews retain
+original authority. Native decisions use actual installation/version/digest and
+original receipts, with atomic CAS, replay, provider uniqueness and denial after
+missing or corrupt evidence. No private record is exported into public source.
+
+The finite Source App inspection and authenticated checkout use exact current
+native eligibility, one-repository reduced read tokens and successful revocation
+before completion. Immutable provider identity and canonical alias stay distinct.
+Managed source paths are installation-private. Source inspection grants no
+model, source-write, application acceptance, release or runtime authority. Native
+setup and ordinary manually authored source retain their separate approved scope,
+Gary identity and exact-head human review. Abrupt process kill relies on existing
+credential expiry; no finally-block guarantee or arbitrary corruption repair is
+claimed. The Metadata App scope remains unchanged.
+
+The current Registry/Repo Control/attention and Delivery picker consume actual
+registration. Bounded search and selected status avoid per-row history fanout;
+unknown or failed reads cannot become absent or ready records. Existing Delivery
+readiness reevaluates native eligibility before linking. The same reviewed UI
+batch retains Proposal Studio incubation choice and legacy history without
+migrating private Proposal/Studio/Catalog records or qualifying private Studio
+import. Private metadata is not automatic model context.
+
+Platform reuses the accepted complete-runtime lifecycle. This installation's
+policy selects internal registration, but the Security-pending source policy
+cannot authorize effects. Exact reviewed owner source and Platform tree must
+match the composed decision. Stable private installation identity precedes
+connections; the existing migration precedes native flags and distinct scoped
+roles. The restricted reader cannot enumerate/write records. Source, recovery
+health and fixed host connection checks remain in force. No new service, database,
+identity provider, installer, generic host command or per-project account setup
+is introduced. Rollback preserves records, original operations and unique source;
+it must not regenerate identity, drop populated tables or publish records to Git.
+
+Local source evidence includes Governance315 tests, WGCF591 tests and API/worker
+image checks, OOS1865 passing tests with2 existing skips and committed base-aware
+record/mutation checks, Platform67 source and139 runtime tests with4 optional
+skips, Console943 semantic tests/full guards/types/production build and zero
+production dependency vulnerabilities. Intercepted browser cases prove private/
+legacy registration and current native selection/error/Retry plus draft guards.
+No live private source read or new registration is inferred from those tests.
+The exact-source lifecycle activation and real Console route/recovery witness
+remain required before operating completion. Other composed decisions and
+immutable durable-orchestration evidence retain their existing boundaries.
+
+
+Reviewed and provider-merged owner sources for this maintenance:
+
+| Owner | Accepted merged revision | Review |
+|---|---|---|
+| workspace-governance | `workspace-governance@c824d357c05eaa50da5c71180506fba10b8052f1` | [PR320](https://github.com/mfshaf7/workspace-governance/pull/320) |
+| workspace-governance-control-fabric | `workspace-governance-control-fabric@63b6272f36d89fba1e4a3a10fe497fac0c87eb7a` | [PR122](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/122) |
+| operator-orchestration-service | `operator-orchestration-service@4cc3b69d12f268c2f2df3b015f019679c3e0c3a4` | [PR405](https://github.com/mfshaf7/operator-orchestration-service/pull/405) |
+| platform-engineering | `platform-engineering@e96760580742d8bb6a4009e979e26ae708839a3a` | [PR368](https://github.com/mfshaf7/platform-engineering/pull/368) |
+| governance-operations-console | `governance-operations-console@80ab4068cda8942614a4afe30fbf771080a759a5` | [PR165](https://github.com/mfshaf7/governance-operations-console/pull/165) |
+
+The exact accepted Platform tree is
+`platform-engineering-tree@a8f56e3e467f617eb8db03189a536abaa128d9cd`. The unchanged CGG
+selection and immutable durable-orchestration evidence remain as recorded in the
+paired decision. All owner PRs passed exact-head hosted checks and delegated human
+review of Gary source. The OOS image packaging omission was reproduced as a
+missing native-schema file, corrected in the same PR, and passed real local
+API/worker startup plus the updated hosted startup check. This does not waive
+exact-source activation, a migration check or native operating readback.
+
+
+The current Studio selection is
+`workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`. This is the
+already-merged October25 [PR43](https://github.com/mfshaf7/workspace-prototype-studio/pull/43)
+containing only the synthetic, inert source-editor1323 acceptance record, its
+planning docs and immutable landing input. All306 added lines were inspected;
+no executable, runtime, integration, privilege or real-client-data change is
+present. The local checkout was one accepted record behind remote main and is
+fast-forwarded without a new source change. This does not grant private Studio
+import or reinterpret that old draft as an accepted application or completed
+product. Current Studio registry and landing validation remain required.
