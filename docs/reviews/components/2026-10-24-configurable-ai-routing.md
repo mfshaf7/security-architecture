@@ -1579,8 +1579,8 @@ Reviewed and provider-merged owner sources for this maintenance:
 | Owner | Accepted merged revision | Review |
 |---|---|---|
 | workspace-governance | `workspace-governance@c824d357c05eaa50da5c71180506fba10b8052f1` | [PR320](https://github.com/mfshaf7/workspace-governance/pull/320) |
-| workspace-governance-control-fabric | `workspace-governance-control-fabric@63b6272f36d89fba1e4a3a10fe497fac0c87eb7a` | [PR122](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/122) |
-| operator-orchestration-service | `operator-orchestration-service@4cc3b69d12f268c2f2df3b015f019679c3e0c3a4` | [PR405](https://github.com/mfshaf7/operator-orchestration-service/pull/405) |
+| workspace-governance-control-fabric | `workspace-governance-control-fabric@fc522a77ae1fdc267b4e791ac65a4b6a6e1392c6` | [PR122](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/122), [PR123](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/123) |
+| operator-orchestration-service | `operator-orchestration-service@b8f6d24cf19bbd686b031d8b9d181eb260e8bab0` | [PR405](https://github.com/mfshaf7/operator-orchestration-service/pull/405), [PR406](https://github.com/mfshaf7/operator-orchestration-service/pull/406) |
 | platform-engineering | `platform-engineering@e96760580742d8bb6a4009e979e26ae708839a3a` | [PR368](https://github.com/mfshaf7/platform-engineering/pull/368) |
 | governance-operations-console | `governance-operations-console@80ab4068cda8942614a4afe30fbf771080a759a5` | [PR165](https://github.com/mfshaf7/governance-operations-console/pull/165) |
 
@@ -1604,3 +1604,43 @@ present. The local checkout was one accepted record behind remote main and is
 fast-forwarded without a new source change. This does not grant private Studio
 import or reinterpret that old draft as an accepted application or completed
 product. Current Studio registry and landing validation remain required.
+
+## Private registration worker image reconciliation
+
+The first controlled activation correctly rejected a mixed WGCF source set:
+its API used revision `63b6272f36d89fba1e4a3a10fe497fac0c87eb7a`, while the
+retained activity image embedded `d3516e570aec812a3cd66933387d89b6f1fc94e4`.
+The actual OOS worker remained allowed with the original activation digest;
+the activity worker reported the expected identity, queue and admitted
+activation. The final exact-source check blocked completion before the private
+repository exercise was submitted.
+
+An independent authoritative continuity read exposed stale bundled copies of
+the two Governance Inventory/lifecycle policies clarified by native records.
+The existing byte-equality check correctly rejected those old policies. WGCF
+PR123 refreshes the exact files and manifest to committed Governance c824d357.
+OOS PR406 consumes that exact reviewed WGCF merge. Inventory's source-owned
+fixed pin pair advances independently from unchanged retained Intake pins;
+requests cannot select either expectation. Regression checks reject an old
+pair or mixed authority/readiness sources. Original operation/architecture
+digests, schemas, runtime gates and historical receipts remain unchanged.
+WGCF's 591-test suite passes with13 optional skips, its actual committed
+InventoryAuthority snapshot succeeds, and OOS's14 real-Git conformance checks
+and1866 passing tests with2 skips qualify the matching consumer correction.
+
+The paired decision selects the existing hosted worker build from
+[successful build41930143346](https://github.com/mfshaf7/workspace-governance-control-fabric/actions/runs/41930143346),
+for accepted WGCF revision `fc522a77ae1fdc267b4e791ac65a4b6a6e1392c6`.
+Its immutable OCI index is
+`ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:ecf938c43237e236c6a29b12af1f25503cbab486c105b9e1cdf156bc80b9bd11`.
+Registry labels and the image's root-owned source-revision file independently
+match that exact source. The pulled image runs as UID10001, reports source
+readiness and refuses runtime execution without admitted activation evidence.
+The hosted job also passed its API/worker image qualification.
+
+These are existing dependency-selection corrections within the reviewed
+composition. They introduce no workflow, scope, queue, permission, definition or
+activation generation. Original manifest bytes, activation digest, private
+installation identity and durable history remain unchanged. Source matching and
+policy-byte checks remain mandatory; no check is weakened. Resume through the
+normal accepted lifecycle and require fresh operating receipts before completion.

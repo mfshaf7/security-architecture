@@ -12,14 +12,14 @@ review_ref: docs/reviews/components/2026-10-24-configurable-ai-routing.md
 reviewed_revisions:
   context-governance-gateway: e29c59a4ed56048f6aa47bb924899566a5e68bae
   governance-operations-console: 80ab4068cda8942614a4afe30fbf771080a759a5
-  operator-orchestration-service: 4cc3b69d12f268c2f2df3b015f019679c3e0c3a4
+  operator-orchestration-service: b8f6d24cf19bbd686b031d8b9d181eb260e8bab0
   platform-engineering: e96760580742d8bb6a4009e979e26ae708839a3a
   workspace-governance: c824d357c05eaa50da5c71180506fba10b8052f1
-  workspace-governance-control-fabric: 63b6272f36d89fba1e4a3a10fe497fac0c87eb7a
+  workspace-governance-control-fabric: fc522a77ae1fdc267b4e791ac65a4b6a6e1392c6
   workspace-prototype-studio: 32e5b40a4198ee8a468697502dc73324334cac70
 reviewed_trees:
   platform-engineering: a8f56e3e467f617eb8db03189a536abaa128d9cd
 durable_orchestration:
   manifest_path: docs/reviews/components/console-capabilities-1332/manifest.json
   manifest_digest: sha256:c786d34579937ab09eb12340b5ac2e4831783416bf111a66bd7ca9898465cc73
-  wgcf_worker_image: ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:e0902017d7da45fdfde11c3b8b04cb84be2f155fd1f0b1aae87dd34bf1e5f01e
+  wgcf_worker_image: ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:ecf938c43237e236c6a29b12af1f25503cbab486c105b9e1cdf156bc80b9bd11

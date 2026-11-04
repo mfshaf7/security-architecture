@@ -187,3 +187,21 @@ Publication ordering remains Governance contract → WGCF runtime → OOS and
 Platform consumers → Console, with Security generated-index reconciliation
 from landed owner records and exact composed activation afterward. Do not
 require a future merge receipt as pre-merge evidence or fabricate source pins.
+
+### Controlled activation dependency correction
+
+The first activation stopped before business writes because the retained WGCF
+activity image embedded the previous source. Separately, the current committed
+Inventory read rejected two stale copied Governance policies. Refresh the
+existing WGCF/OOS Inventory dependencies and select their actual merged sources
+and hosted worker artifact in the existing composed decision. Keep the original
+immutable orchestration manifest, activation digest, installation identity and
+receipt history. No new authorization mechanism or policy bypass is approved.
+
+The consumer's updated Inventory source pair is a source-owned constant in the
+existing assertion; it is not an operator/request-selected authority. Retained
+Intake keeps its existing exact pair. Tests reject stale or mixed source pairs.
+Real committed Inventory snapshot and real-Git source conformance checks prove
+both policy-byte equality and legacy continuity before another activation. The
+paired routing review records exact artifact provenance and validation. Source
+acceptance remains distinct from successful startup and private operating proof.
