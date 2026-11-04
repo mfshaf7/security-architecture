@@ -371,8 +371,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-03-account-repository-reader.md
-        reviewed_on: 2026-11-03
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
+        reviewed_on: 2026-11-04
         status: current
         decision: approved
         review_areas:

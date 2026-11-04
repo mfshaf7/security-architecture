@@ -4463,6 +4463,18 @@ change_records:
   risks: []
   workstreams:
   - WS-005
+- repo: platform-engineering
+  path: docs/records/change-records/2026-11-04-repository-link-binding.md
+  date: '2026-11-04'
+  short_title: 2026-11-04-repository-link-binding
+  review_areas:
+  - identity
+  - secrets
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-005
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'
