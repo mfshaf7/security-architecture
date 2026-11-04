@@ -1447,3 +1447,71 @@ PR366 is merged after required hosted checks and exact-head delegated approval;
 the merged tree equals the reviewed final Gary candidate. All other selections
 in the paired decision remain unchanged. Native operating proof is still
 required before reporting this maintenance complete.
+
+## Repository workflow and reader-binding maintenance amendment
+
+### Summary
+
+Decision: approved for the existing local single-operator boundary, subject to
+exact merged source selection and native activation/readback. This accepts the
+reviewed Repository UI batch and restores its missing metadata-reader approval
+reference. No new GitHub permission, provider identity, account installation,
+workflow authority, root privilege or network exposure is introduced.
+
+### Scope Delta
+
+Platform selects the dedicated repository-custody-github-app-v1 reference in the
+complete-runtime policy and projects its URI/digest separately from provisioning.
+The stable digest was proven against the protected selected-account delivery
+receipt, approved account contract, matching Secret and consumed OOS environment.
+It identifies metadata-only account/App/installation scope, not a renewable token
+or current health. Omitting it withholds only this approval pair; creation is not
+a fallback. Provider failure/revocation still denies owner operations. Account or
+installation changes require reconciling the selected reference and acceptance.
+Existing token renewal, reader failure isolation and caller authorization remain.
+
+Console reuses existing OOS lookup, custody command and WGCF readiness for the
+standalone Link existing repository entry. It derives immutable GitHub identity,
+omits Proposal fields for standalone requests, opens known retained records,
+locks pending edits/closing, guards unsent drafts and preserves retry identity.
+The missing-binding state permits lookup/drafting but disables submission.
+No success is invented from configuration or a browser-local fixture.
+
+The same batch includes Repository history/inspection readability, original
+lifecycle confirmation and draft guards, bounded Application verification request
+navigation and contextual responsibility labels. Display aliases do not change
+canonical keys, permission claims, immutable evidence or mutation eligibility.
+The optional shared metadata action preserves non-action rows. Safe external
+links isolate the opener. Remaining Repository setup usability is not declared
+complete by this acceptance.
+
+### Review Areas
+
+Identity, secrets, runtime and delivery. Local Console evidence: 910 semantic
+tests, all architecture guards, typecheck, production build, repository validation
+and zero production dependency vulnerabilities. Focused browser cases include
+five standalone linking cases and two Proposal regressions; actual provider
+lookup and original record navigation passed read-only. Platform evidence:
+91 complete-runtime tests (four opt-in Kubernetes tests skipped), 54 activation,
+12 reader and five account tests, source policy and owner docs/structure checks.
+These tests do not claim an actual newly linked live repository.
+
+### Decision
+
+Approved with no new Security findings for this existing boundary. The main
+agent retains Security closure; Gary authors/publishes and the standing delegated
+human identity reviews/merges. Owner source lands first, then the generated
+owner-record index and exact composed source selection. Native activation must
+verify the separate reference, current capabilities and real provider/custody
+readback before operating completion. A configured reference is not connection
+health or successful mutation. Rollback uses the preceding accepted source pair.
+
+Reviewed and provider-merged sources:
+
+- platform-engineering@3d43b0cb745278f5678c2e285a720c6d1a31b6ca, tree2eea62dd1a5743744270864504b218fddee52d43; [PR367](https://github.com/mfshaf7/platform-engineering/pull/367).
+- governance-operations-console@10d7ee488eb672dfb1591487ee5bba99dff0e57c, tree55dd21f99efa494663a195f47b44faae620bdede; [PR164](https://github.com/mfshaf7/governance-operations-console/pull/164).
+
+Both provider merges retain the reviewed Gary candidate trees and passed all
+required hosted checks plus delegated exact-head human approval. Other composed
+source selections and the durable orchestration manifest remain unchanged.
+Native activation and readback remain the operating gate.
