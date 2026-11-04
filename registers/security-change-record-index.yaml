@@ -3800,6 +3800,20 @@ change_records:
   workstreams:
   - WS-003
   - WS-005
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-04-private-repository-publication-boundary.md
+  date: '2026-11-04'
+  short_title: 2026-11-04-private-repository-publication-boundary
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
@@ -4475,6 +4489,20 @@ change_records:
   risks: []
   workstreams:
   - WS-005
+- repo: platform-engineering
+  path: docs/records/change-records/2026-11-05-private-source-registration.md
+  date: '2026-11-05'
+  short_title: 2026-11-05-private-source-registration
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'
@@ -4556,3 +4584,16 @@ change_records:
   - WS-003
   - WS-005
   - WS-007
+- repo: workspace-governance-control-fabric
+  path: docs/records/change-records/2026-11-04-private-instance-records.md
+  date: '2026-11-04'
+  short_title: 2026-11-04-private-instance-records
+  review_areas:
+  - identity
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
