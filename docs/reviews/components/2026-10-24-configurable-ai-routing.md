@@ -1383,3 +1383,67 @@ Current reviewed execution sources:
 - workspace-governance-control-fabric@d3516e570aec812a3cd66933387d89b6f1fc94e4
 - workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6
 - platform-engineering-tree@09bb80a0ba47bf8d52ce14c5ef681cd4365fc532
+
+
+## Backend connection recovery maintenance amendment
+
+### Summary
+
+Decision: approved for the existing local single-operator connection boundary,
+subject to exact merged Platform source/tree selection and native recovery proof.
+This repairs non-exiting tunnel hangs affecting both live and preview Console
+reads. It does not approve a cluster upgrade, new network exposure, additional
+host privilege, caller identity, credential scope or workflow capability.
+
+### Scope Delta
+
+Reviewed [Platform PR366](https://github.com/mfshaf7/platform-engineering/pull/366)
+introduces a standard-library supervisor inside each of the existing two user
+services. Fixed loopback liveness reads have a two-second timeout, ten-second
+interval, twenty-second initial grace and three-consecutive-silence threshold.
+HTTP errors/redirects prove a responsive transport but never application
+readiness; redirects and environment proxies are not followed. The probe has
+no account/caller credential and does not log response data.
+
+Only the owned tunnel child group is terminated and reaped, with bounded
+escalation. Existing systemd reconnect uses a five-second delay and does not
+permanently latch transient failures. Stop and suspension stop parent/child
+without an independent timer restarting them. No mutation request is replayed,
+credential renewed, backend workload restarted or frontend rebuilt.
+
+The accepted-source complete-runtime refresh-connections action uses the
+existing lifecycle lock, exact composed decision and unchanged namespace,
+service/port selection. Its receipt declares connection-only scope. All other
+reviewed source selections and the durable orchestration manifest are retained.
+
+### Review Areas
+
+Runtime and availability within the existing server-only local boundary.
+Local tests exercised a frozen live child, bounded detection/reaping, normal
+stop, unexpected zero exit, HTTP503 and redirect denial. Cross-domain activation
+54 tests pass; the existing CI runtime entrypoint runs90 tests,86 pass and four
+opt-in Kubernetes cases are explicitly skipped. Those local tests do not
+replace native recovery qualification or promise uninterrupted requests.
+
+### Decision
+
+Approved with no new Security findings. The main agent retains Security
+judgment; the standing delegated human identity reviews/merges the Gary-authored
+source. The generated owner-record index covers the new Platform change record.
+Native proof must freeze a managed child, observe automatic replacement and
+restore Console owner reads without manual restart. Deliberate stop must remain
+stopped. The precise Kubernetes1.30 stream-freeze trigger remains unproven;
+upstream kubectl1620 is supporting symptom evidence, not local causal proof.
+Recovery bounds an indefinite outage; a later cluster upgrade requires its own
+review. Rollback restores the preceding accepted Platform/Security source pair.
+
+Reviewed candidate: platform-engineering@ead4c893d8e0edf076499c31fc2462d8dad6dcef,
+tree2ef1188143c4aaf5c9189c690480a34eeb3bc55f. Final merged selection is
+recorded in the paired decision after provider merge/tree equality is proven.
+
+Final provider-merged selection: platform-engineering@45d9ebb419ac1088d68798246ee24eb71b3d4171
+and platform-engineering-tree@2ef1188143c4aaf5c9189c690480a34eeb3bc55f.
+PR366 is merged after required hosted checks and exact-head delegated approval;
+the merged tree equals the reviewed final Gary candidate. All other selections
+in the paired decision remain unchanged. Native operating proof is still
+required before reporting this maintenance complete.
