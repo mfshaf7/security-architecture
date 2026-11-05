@@ -20,6 +20,12 @@ retains Security judgment; this is not an independent assessment.
 
 ## Scope Delta
 
+The source reference serialization correction reviewed in the paired composed
+decision projects validated native references consistently across broker and
+host transports. It preserves the original approved source plan, scope and
+checkout, and adds no authority or permission. Exact source guards remain
+mandatory; the real Console operation must resume after accepted activation.
+
 New public and private physical source-only repository registrations use the
 installation's private operational storage. Existing Git records and pending
 source reviews retain their original authority. Products, shared components,
