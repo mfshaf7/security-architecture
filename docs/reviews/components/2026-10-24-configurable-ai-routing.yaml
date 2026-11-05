@@ -22,4 +22,4 @@ reviewed_trees:
 durable_orchestration:
   manifest_path: docs/reviews/components/console-capabilities-1332/manifest.json
   manifest_digest: sha256:c786d34579937ab09eb12340b5ac2e4831783416bf111a66bd7ca9898465cc73
-  wgcf_worker_image: ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:ecf938c43237e236c6a29b12af1f25503cbab486c105b9e1cdf156bc80b9bd11
+  wgcf_worker_image: ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:8f36a38e3fdd75ff10e9116f6469a2548bab00beef6635e4152575f45d5a2de3

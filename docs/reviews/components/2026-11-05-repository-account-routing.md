@@ -219,3 +219,13 @@ Retry requires an authoritative original-request not-found and retains identical
 input; a lost response does not create approval, cancellation or permission.
 Browser deadlines reflect existing owner budgets without cancelling execution.
 This is interface/source conformance, with no new authority or live activation.
+
+## Final activation image-binding correction
+
+The first coordinated activation reached the final operating check, which denied
+a retained WGCF activity-worker image whose embedded repository revision was
+older than the accepted WGCF source. The composed decision now pins the already
+built image for `25140998b8452bccc0f4512cd20692f51d163611`; its exact digest
+and CI provenance are recorded in the composed review. Worker source is unchanged.
+Original activation evidence and history remain intact, and no readiness guard
+is weakened. Source validation is distinct from the required live readback.
