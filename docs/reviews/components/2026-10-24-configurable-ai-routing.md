@@ -1644,3 +1644,43 @@ activation generation. Original manifest bytes, activation digest, private
 installation identity and durable history remain unchanged. Source matching and
 policy-byte checks remain mandatory; no check is weakened. Resume through the
 normal accepted lifecycle and require fresh operating receipts before completion.
+
+## Native source reference serialization correction
+
+The exact accepted OOS correction is
+`operator-orchestration-service@93e155a4e73a9a4b700e80516dc35b985818f3f2`,
+merged in [PR407](https://github.com/mfshaf7/operator-orchestration-service/pull/407)
+after exact-head Gary/human review and all hosted tests, contract validations,
+API/worker builds and image startup checks passed. All other composed sources,
+the reviewed Platform tree and immutable orchestration evidence are unchanged.
+
+The real private owner bootstrap reached its installation-private checkout and
+stopped at the exact plan guard before source publication. The async broker
+and synchronous host helper supplied semantically identical native Intake
+references with different JSON property order. Embedding that reference in
+generated source metadata produced different bytes. Read-only reconstruction
+isolated the discrepancy to field order; repository source and native record
+identity remained intact.
+
+OOS now projects validated provider and Intake/Inventory references in one typed
+field order at its shared proof boundary, and both readers consume that result.
+All exact-key, installation, policy, record version/digest, provider identity,
+eligibility and denied-effect checks run before normalization. No input field,
+permission or authority is added. Canonical semantic digests remain identical.
+The trusted scaffold engine, template digest, retained plan, original operation,
+source scope and checkout ownership are unchanged. A candidate read-only replay
+reproduces the exact already-approved plan, without resetting its approval.
+
+Three regression cases cover bootstrap, active verification and ordinary source
+across original, canonical-sorted and reversed transport keys. Bootstrap also
+requires identical full generated plans and file bytes. Nineteen focused checks
+and the full broker suite pass (1,869 tests, two existing optional skips);
+committed base-aware change-record and OpenProject mutation checks plus API,
+governance and deterministic bundle validations pass. No application acceptance,
+Inventory promotion or completed private operating witness is inferred.
+
+Security accepts this serialization correction within the existing composition.
+Exact merged revision selection and normal Platform activation remain required.
+Resume the original Console operation after activation, retaining every source
+consistency guard and current native authority check. There is no new exposure
+or accepted risk from field-order normalization.
