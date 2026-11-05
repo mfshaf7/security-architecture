@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-private-project-operational-records.md
+        path: docs/reviews/components/2026-11-05-repository-account-routing.md
         reviewed_on: 2026-11-05
         status: current
         decision: approved
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - repository-verification-maturity-and-active-owner-source-scope
           - console-native-release-dedicated-dispatch-identity
@@ -67,6 +68,10 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_repository_connections.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/complete-runtime-policy.yaml
           - repo: platform-engineering
             path: scripts/agent_source_instance.py
           - repo: platform-engineering
@@ -159,7 +164,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-private-project-operational-records.md
+        path: docs/reviews/components/2026-11-05-repository-account-routing.md
         reviewed_on: 2026-11-05
         status: current
         decision: approved
@@ -170,6 +175,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - repository-verification-maturity-and-active-owner-source-scope
           - durable-independent-owner-result-and-mounted-metadata
@@ -185,6 +191,8 @@ review_inventory:
           - product-publication-registry-publication-separation
           - product-publication-restore-history-integrity
         owner_artifacts:
+          - repo: workspace-governance
+            path: contracts/repository-custody.yaml
           - repo: workspace-governance
             path: contracts/instance-operational-records.yaml
           - repo: workspace-governance
@@ -231,7 +239,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-private-project-operational-records.md
+        path: docs/reviews/components/2026-11-05-repository-account-routing.md
         reviewed_on: 2026-11-05
         status: current
         decision: approved
@@ -242,6 +250,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - authenticated-read-only-product-publication-preparation
           - console-capabilities-exact-composition
@@ -258,6 +267,8 @@ review_inventory:
           - delivery-art-superseded-architecture-custody-lineage
           - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/repository_custody_readiness.py
           - repo: workspace-governance-control-fabric
             path: packages/control_fabric_core/src/control_fabric_core/instance_records.py
           - repo: workspace-governance-control-fabric
@@ -400,7 +411,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-private-project-operational-records.md
+        path: docs/reviews/components/2026-11-05-repository-account-routing.md
         reviewed_on: 2026-11-05
         status: current
         decision: approved
@@ -411,6 +422,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - repository-verification-maturity-and-active-owner-source-scope
           - console-native-release-dedicated-dispatch-identity
@@ -475,6 +487,10 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/repository/live-runtime/repository-connections.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/repository/presentation/dialogs/request/repository-request-dialog.tsx
           - repo: governance-operations-console
             path: src/workspace-registry/workspace-repository-status.ts
           - repo: governance-operations-console
@@ -741,7 +757,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-private-project-operational-records.md
+        path: docs/reviews/components/2026-11-05-repository-account-routing.md
         reviewed_on: 2026-11-05
         status: current
         decision: approved
@@ -752,6 +768,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - repository-verification-maturity-and-active-owner-source-scope
           - console-native-release-dedicated-dispatch-identity
@@ -800,6 +817,10 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/repository-custody/connections.js
+          - repo: operator-orchestration-service
+            path: src/instance-records/inventory-projection.js
           - repo: operator-orchestration-service
             path: src/instance-records/host-source-git.js
           - repo: operator-orchestration-service
@@ -951,7 +972,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-private-project-operational-records.md
+        path: docs/reviews/components/2026-11-05-repository-account-routing.md
         reviewed_on: 2026-11-05
         status: current
         decision: approved
@@ -962,6 +983,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - console-native-release-dedicated-dispatch-identity
           - protected-owner-workflow-original-request-and-source-effect-binding
@@ -1023,6 +1045,10 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_repository_connections.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/complete-runtime-policy.yaml
           - repo: governance-operations-console
             path: src/workspace-registry/workspace-repository-status.ts
           - repo: governance-operations-console
@@ -1173,8 +1199,13 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - openclaw-governed-release-control-standardization
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_repository_connections.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/complete-runtime-policy.yaml
           - repo: platform-engineering
             path: products/openclaw/README.md
           - repo: platform-engineering
@@ -1209,11 +1240,16 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - delivery-art-evidence-custody-boundary
           - delivery-art-source-provenance-integrity
           - delivery-art-object-storage-and-lifecycle
           - delivery-art-safe-openproject-projection
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_repository_connections.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/complete-runtime-policy.yaml
           - repo: security-architecture
             path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
           - repo: workspace-governance
@@ -1255,8 +1291,13 @@ review_inventory:
           - runtime
           - secrets
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - shared-platform-control-plane-and-secrets
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_repository_connections.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/complete-runtime-policy.yaml
           - repo: platform-engineering
             path: environments/shared/argocd/vault-app.yaml
           - repo: platform-engineering
@@ -1296,8 +1337,13 @@ review_inventory:
           - delivery
           - runtime
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - shared-platform-control-plane-and-secrets
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_repository_connections.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/complete-runtime-policy.yaml
           - repo: platform-engineering
             path: docs/decisions/adr/ADR-015-platform-observability-baseline-and-overlay-model.md
           - repo: platform-engineering
@@ -1345,12 +1391,17 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - console-capabilities-exact-composition
           - temporal-controlled-runtime-proof-authorization
           - temporal-component-commissioning-runtime-drill
           - temporal-baseline-attestation-and-exact-restore
           - temporal-bounded-worker-and-payload-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_repository_connections.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/complete-runtime-policy.yaml
           - repo: security-architecture
             path: docs/architecture/components/temporal/README.md
           - repo: security-architecture
@@ -1373,7 +1424,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-private-project-operational-records.md
+        path: docs/reviews/components/2026-11-05-repository-account-routing.md
         reviewed_on: 2026-11-05
         status: current
         decision: approved
@@ -1384,6 +1435,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - authenticated-read-only-product-publication-preparation
           - console-capabilities-exact-composition
@@ -1393,6 +1445,8 @@ review_inventory:
           - delivery-art-superseded-architecture-custody-lineage
           - delivery-art-review-packet-predecessor-validation
         owner_artifacts:
+          - repo: workspace-governance-control-fabric
+            path: packages/control_fabric_core/src/control_fabric_core/repository_custody_readiness.py
           - repo: workspace-governance-control-fabric
             path: packages/control_fabric_core/src/control_fabric_core/instance_records.py
           - repo: workspace-governance-control-fabric
@@ -1474,6 +1528,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
           - prototype-separate-profile-caller-task-purpose
@@ -1486,6 +1541,10 @@ review_inventory:
           - agent-console-controlled-activation-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: platform-engineering
+            path: products/governance-operations-console/scripts/console_repository_connections.py
+          - repo: platform-engineering
+            path: products/governance-operations-console/complete-runtime-policy.yaml
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-10-30-provider-lifecycle.md
           - repo: operator-orchestration-service
@@ -1592,7 +1651,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-private-project-operational-records.md
+        path: docs/reviews/components/2026-11-05-repository-account-routing.md
         reviewed_on: 2026-11-05
         status: current
         decision: approved
@@ -1603,6 +1662,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - console-native-release-dedicated-dispatch-identity
           - protected-owner-workflow-original-request-and-source-effect-binding
@@ -1630,6 +1690,10 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/repository-custody/connections.js
+          - repo: operator-orchestration-service
+            path: src/instance-records/inventory-projection.js
           - repo: operator-orchestration-service
             path: src/instance-records/host-source-git.js
           - repo: operator-orchestration-service
