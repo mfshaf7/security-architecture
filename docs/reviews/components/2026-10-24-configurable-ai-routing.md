@@ -1750,7 +1750,8 @@ change and the delegated accountable human reviewed its exact head and required
 checks. This is not an independent assessment. Governance, OOS, WGCF, Platform
 and Console dependencies are merged in that order. The generated Security index
 is rebuilt from their actual merged owner records. The existing architecture,
-model authorization and immutable orchestration worker bindings remain unchanged.
+model authorization and immutable orchestration activation generation remain unchanged.
+The activity-worker image is bound to the accepted WGCF source as recorded below.
 
 Account connections retain explicit purpose-specific grants, immutable provider
 identity, native scope and expiry, private Vault custody, renewal/consumption and
@@ -1781,3 +1782,24 @@ runtime activation. Actual installed-source health, account delivery/consumption
 and Console readback must be proved after activation; source acceptance alone is
 not operating completion or broad product readiness. Original data, requests,
 canonical checkouts and credentials remain under their existing boundaries.
+
+### WGCF activity-worker image correction
+
+Final activation rejected the retained worker image because its embedded source
+was `fc522a77ae1fdc267b4e791ac65a4b6a6e1392c6`, while this decision accepts
+WGCF `25140998b8452bccc0f4512cd20692f51d163611`. Both workers were authorized
+and ready; the exact-source check correctly denied the inconsistent pin.
+
+Accept activity-worker image
+`ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:8f36a38e3fdd75ff10e9116f6469a2548bab00beef6635e4152575f45d5a2de3`
+from the successful [WGCF image build](https://github.com/mfshaf7/workspace-governance-control-fabric/actions/runs/42017400549),
+whose worker release metadata binds that digest to the accepted WGCF commit.
+The worker source under `apps/worker/` is unchanged between these revisions;
+the published image advances the embedded repository source revision. The CI
+image proof includes worker status and denial without activation authority.
+
+Keep the original manifest, evidence bytes, generation, task queues and history.
+The existing exact image, embedded source and worker-authorization checks remain
+in force. This corrects the existing acceptance binding; it adds no permission,
+new workflow generation or runtime-authority bypass. Live readiness must be
+rechecked after applying the accepted image.
