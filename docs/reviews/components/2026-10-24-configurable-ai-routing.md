@@ -1684,3 +1684,48 @@ Exact merged revision selection and normal Platform activation remain required.
 Resume the original Console operation after activation, retaining every source
 consistency guard and current native authority check. There is no new exposure
 or accepted risk from field-order normalization.
+
+## Private registration command response correction
+
+The exact accepted Console source is
+`governance-operations-console@109b12d302dc5337e14ae1e261097406f9c6a134`,
+merged in [PR166](https://github.com/mfshaf7/governance-operations-console/pull/166)
+after Gary authorship, exact-head delegated human review and hosted checks.
+All other selected sources, the Platform tree and immutable orchestration
+evidence retain their preceding selections.
+
+The real private admission succeeded after its Console command's twelve-second
+deadline. The UI then recovered the same completed original request and receipt;
+no duplicate mutation was created. Registry's fresh native promotion separately
+stopped before owner request creation because the adapter discarded OOS's actual
+HttpError `error` code, while its missing-original check required that exact code.
+Read-only owner probes proved the actual promotion and lifecycle envelopes.
+
+The Console now preserves `error` alongside the retained `code` envelope. Only
+the exact owner/family-specific 404 permits a fresh native submission. Unrelated
+absence, forbidden access, unknown authority and changed input remain blocked.
+Reads retain twelve seconds; source-verifying commands reuse the existing
+bounded two-minute source-action budget. A deadline describes unconfirmed
+completion and directs original-request recovery, without an automatic
+replacement command or a false claim that the service is unreachable.
+
+Existing OOS operator approval, request identity, readiness, native receipt,
+compare-and-swap and current-record checks remain unchanged. No identity,
+permission, secret, storage, model or publication authority is added. Generic
+Intake error feedback no longer asserts that every transport uncertainty stopped
+the accepted workflow. Operating instructions distinguish internal receipts
+from retained Git review/merge evidence and use actual composition availability.
+
+The complete Console check passes: 947 semantic tests, architecture guards,
+type checking and production build. Repository validation passes and the
+production dependency audit reports zero vulnerabilities. Native tests use the
+actual owner error shape for promotion, lifecycle and replay, reject unrelated
+404 before a write, and distinguish bounded deadlines from disconnection.
+The candidate frontend also completed one real private native promotion with
+the approved OOS/WGCF owners and a verified installation storage receipt.
+No request interception, public operational Git write or model call substitutes
+for that proof. Final accepted frontend activation and live readback remain
+required; the candidate proof alone is not a deployment claim.
+
+Security accepts this existing adapter correction within the current local
+composition. Preserve exact-source activation and original operating history.

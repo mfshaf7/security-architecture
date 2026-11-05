@@ -20,6 +20,12 @@ retains Security judgment; this is not an independent assessment.
 
 ## Scope Delta
 
+The paired composed decision also accepts the Console registration transport
+correction: actual owner error codes, bounded source-verification commands and
+original-request uncertainty handling. Exact absent-request codes remain
+distinct from unavailable or unauthorized authority. Approval, source scope and
+canonical receipt verification retain their existing owners and requirements.
+
 The source reference serialization correction reviewed in the paired composed
 decision projects validated native references consistently across broker and
 host transports. It preserves the original approved source plan, scope and
