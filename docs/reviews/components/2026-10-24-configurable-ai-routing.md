@@ -1729,3 +1729,55 @@ required; the candidate proof alone is not a deployment claim.
 
 Security accepts this existing adapter correction within the current local
 composition. Preserve exact-source activation and original operating history.
+
+## Repository account routing and coordinated onboarding — accepted source set
+
+Security accepts the following exact merged sources for the existing local
+dev-integration composition, with the scope and limits in the
+[repository account/onboarding delta](2026-11-05-repository-account-routing.md):
+
+- `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
+- `governance-operations-console@5d200d94e361957ccef65c90ec8ed6acebfc3cd1`
+- `operator-orchestration-service@c0e66ca2333e7c239809930ca390018cf7623b50`
+- `platform-engineering@f9ae516794e0c208858ec546718b96185f27f337`
+- `workspace-governance@f5e06f3c6c480ffe3d48a79f24dfe84c8d0d0e8f`
+- `workspace-governance-control-fabric@25140998b8452bccc0f4512cd20692f51d163611`
+- `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
+- `platform-engineering-tree@7a767ca73aee38584578e009fc67cad8be25a82a`
+
+The main agent performed source/security judgment; Gary authored each source
+change and the delegated accountable human reviewed its exact head and required
+checks. This is not an independent assessment. Governance, OOS, WGCF, Platform
+and Console dependencies are merged in that order. The generated Security index
+is rebuilt from their actual merged owner records. The existing architecture,
+model authorization and immutable orchestration worker bindings remain unchanged.
+
+Account connections retain explicit purpose-specific grants, immutable provider
+identity, native scope and expiry, private Vault custody, renewal/consumption and
+revocation. This installation commissions its existing organization provisioning
+and existing personal/organization metadata grants. Personal provisioning remains
+unconfigured pending the operator's App choice; no App visibility, installation
+selection or lifecycle grant is widened. Packaged customer onboarding remains in
+the existing release backlog.
+
+Registry onboarding reuses custody, Intake, source controls and active Inventory.
+Project consumers require current readiness. Native source cannot publish into
+public Studio without fresh exact public/active provider evidence; private data
+and model-context boundaries remain unchanged. The obsolete local admission writer
+is removed, while historical receipts retain explicit non-authoritative labels.
+Readable forms, bounded register/history reads, loading/results and original-request
+recovery preserve exact accepted commands and do not create new approval authority.
+
+Local proof includes315 Governance tests;1893 OOS tests passed with2 existing skips;
+592 WGCF tests; Platform account/connection/complete-runtime checks (91 runtime tests,
+4 existing environment skips); Console963 semantic tests, architecture/typecheck/
+build/public-source checks and23 compiled-build browser cases plus unconfirmed-close
+recovery. All owner PR checks passed before merge. Browser responses are isolated
+conformance evidence, not personal-account creation or a new real project witness.
+The prior private repository operating evidence is retained without reinterpretation.
+
+This decision accepts these sources for normal integrity commissioning and complete
+runtime activation. Actual installed-source health, account delivery/consumption
+and Console readback must be proved after activation; source acceptance alone is
+not operating completion or broad product readiness. Original data, requests,
+canonical checkouts and credentials remain under their existing boundaries.
