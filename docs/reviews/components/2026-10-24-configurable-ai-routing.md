@@ -35,11 +35,11 @@ Reviewed exact sources for the approved Proposal and Model Operations maintenanc
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@067f64ce7da45465d26aac43596281ffb4c7a725`
 - `operator-orchestration-service@972cf6150f10d9d29521d53b3368a7c1e62346dc`
-- `platform-engineering@a6d6a1f8e053fcec989ed66c7e0849aa1340ff36`
+- `platform-engineering@adf606a906c226d88c5f1d72ad10cc5d08d82845`
 - `workspace-governance@f5e06f3c6c480ffe3d48a79f24dfe84c8d0d0e8f`
 - `workspace-governance-control-fabric@25140998b8452bccc0f4512cd20692f51d163611`
 - `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
-- `platform-engineering-tree@ec1550afedc7d0bba992f8343e3c1390f015fd7a`
+- `platform-engineering-tree@1d27270044cb7d4a948c18dfcd502e40a6485c24`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
 OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
@@ -1843,3 +1843,18 @@ working profiles unchanged. Pending or failed operating proof must remain
 explicit; no private policy edits or session-projection bypass are authorized.
 Rollback uses the prior accepted source/decision pair or the native original
 policy receipt as appropriate, retaining private evidence and unique work.
+
+
+### Native publisher identity readback correction
+
+Accept the exact source correction selected in the current list above. OOS's
+native source publication receipt names the already admitted Gary App as
+`mfshaf7-agent-gary[bot]`; GitHub's PR view names it
+`app/mfshaf7-agent-gary`. The adapter accepts those two exact native spellings.
+The existing native harness now returns the actual publisher author field and
+reproduces the failure before the correction; all14 adapter cases pass after.
+No other principal is authorized. Exact repository/base/head, GitHub author,
+required checks, accountable human review and receipt/readback remain unchanged.
+The same owner source record and previously reviewed artifact index apply.
+This is required batch commissioning repair, not another capability or control
+plane. The previously stated real Console operating witness remains pending.
