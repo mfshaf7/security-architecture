@@ -34,7 +34,7 @@ Reviewed exact sources for the approved Proposal and Model Operations maintenanc
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@067f64ce7da45465d26aac43596281ffb4c7a725`
-- `operator-orchestration-service@972cf6150f10d9d29521d53b3368a7c1e62346dc`
+- `operator-orchestration-service@efc80361081fad7ba844a1458b909eb17565fa51`
 - `platform-engineering@adf606a906c226d88c5f1d72ad10cc5d08d82845`
 - `workspace-governance@f5e06f3c6c480ffe3d48a79f24dfe84c8d0d0e8f`
 - `workspace-governance-control-fabric@25140998b8452bccc0f4512cd20692f51d163611`
@@ -1858,3 +1858,23 @@ required checks, accountable human review and receipt/readback remain unchanged.
 The same owner source record and previously reviewed artifact index apply.
 This is required batch commissioning repair, not another capability or control
 plane. The previously stated real Console operating witness remains pending.
+
+
+### CGG safe admission state compatibility correction
+
+Accept the exact current OOS source selection for this bounded commissioning
+repair. The real failed form admission returned `raw_projection: not_requested`
+and `redaction_safe: true`; native CGG uses this state for clean budgeted context
+when no raw projection was requested. The new profile adapter had incorrectly
+required only `denied`. Match the existing Agent Console, Work Design and
+Refinement consumers by accepting exactly `not_requested` or `denied`, with
+unchanged artifact identity/digest and strict `redaction_safe: true` checks.
+Unknown, raw-allowed and unsafe responses still fail before request creation.
+No context permission, raw export, provider inference or actor authority is added.
+
+The existing preparation tests now use the native clean-state response and
+exercise both accepted states plus unsafe/unknown rejection. The failed live
+attempt created only its retained CGG admission artifact, not a profile request.
+Original model configuration remains revision13 and unchanged. Actual native
+Console lifecycle/source/readback/restoration proof resumes only after this
+exact source acceptance and normal runtime activation; it remains pending here.
