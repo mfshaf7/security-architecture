@@ -35,11 +35,11 @@ Reviewed exact sources for the approved Proposal and Model Operations maintenanc
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@067f64ce7da45465d26aac43596281ffb4c7a725`
 - `operator-orchestration-service@efc80361081fad7ba844a1458b909eb17565fa51`
-- `platform-engineering@adf606a906c226d88c5f1d72ad10cc5d08d82845`
+- `platform-engineering@cb060b48d91129daaf7abce3a188815a09c900ce`
 - `workspace-governance@f5e06f3c6c480ffe3d48a79f24dfe84c8d0d0e8f`
 - `workspace-governance-control-fabric@25140998b8452bccc0f4512cd20692f51d163611`
 - `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
-- `platform-engineering-tree@1d27270044cb7d4a948c18dfcd502e40a6485c24`
+- `platform-engineering-tree@9541ccf7d030cf7be54bc4169efe35e77238f9af`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
 OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
@@ -1878,3 +1878,22 @@ attempt created only its retained CGG admission artifact, not a profile request.
 Original model configuration remains revision13 and unchanged. Actual native
 Console lifecycle/source/readback/restoration proof resumes only after this
 exact source acceptance and normal runtime activation; it remains pending here.
+
+
+### Composition-preserving native profile reconciliation
+
+Accept the current exact source selection for the finite correction reviewed in
+the [lifecycle assessment](2026-11-06-model-profile-lifecycle.md#native-composition-reconciliation-commissioning-correction).
+The existing ownership guard remains enforced; the gateway inherits a verified
+active parent's bounded bindings, with no standalone fallback. Existing approved
+policy bytes and original receipts remain exact while separately accepted current
+executable maintenance may advance. Startup checks the selected native workflow's
+service tools. No model activation, route assignment, provider install, new
+service or browser-selected command/environment authority is granted.
+
+The source tree includes the disposable suspended preset from real Console PR372.
+Its original operation records source applied and runtime unverified. Commission
+this exact correction normally, continue that same operation through Console and
+verify running state plus receipt-bound restoration. Existing model settings,
+working profiles, role boundaries and original history remain preserved. Source
+acceptance and the completed controlled tests do not replace that live proof.

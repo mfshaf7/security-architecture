@@ -192,3 +192,43 @@ lifecycle with the existing accepted origins and explicit Security operator list
 This selection does not establish operating acceptance. Exact source landing,
 current owner-record index, composed Security acceptance and the real disposable-
 profile operating witness remain separate release conditions.
+
+
+## Native composition reconciliation commissioning correction
+
+The real Console request and immutable decision produced Gary PR372, which the
+accountable human merged through Console. Its source readback is applied while
+running policy remains explicitly unverified. The adapter had called the gateway
+as a standalone profile; the existing composition ownership guard correctly
+refused to discard its parent bindings. Preserve that guard and reuse the existing
+validated active-context lookup and bounded child environment for the finite
+approved gateway update. Owner, active lifecycle, complete participants, namespaces
+and original credential custody remain checked. Missing/degraded context cannot
+fall back to an unbound update. Private credential values travel in process
+environment only, not command arguments, browser input or source journals.
+
+Current clean independently accepted executable code may be used when its three
+policy documents still match the original merged receipt. Exact-tree acceptance
+or the existing native policy-only receipt chain remains required; unreviewed
+code and unrelated policy are denied. Original request, approval, receipt and
+source readback remain unchanged. Receipt rollback restores only those three
+policy documents and retains later independently accepted maintenance code.
+This is continuation of existing controls, not a descendant-code bypass or a
+new execution authority.
+
+The service tool path also lacked the operator's existing Node/npm installation.
+The admitted Node22/npm tools are now available in the documented directory.
+Native lifecycle selection extends the existing controlled-path startup check to
+Node/npm/gh/make before runtime effects. This does not install an AI provider,
+change global manager PATH or require optional source tools for unselected
+lifecycle. Existing service privilege and private-custody controls remain intact.
+
+The controlled adapter harness now calls the actual composition ownership guard
+instead of returning runner success for an invalid call. It covers missing parent
+context, current accepted versus unaccepted code with unchanged policy, original
+operation recovery and receipt restoration preserving accepted maintenance.
+Actual continuation and restoration of the retained Console request remain the
+operating gate after exact composed acceptance and normal deployment. The one
+approved disposable preset remains suspended and unselected; existing model
+configuration revision13 and active profiles have not been changed by the
+qualification request. Do not claim live completion from source tests.
