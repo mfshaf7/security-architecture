@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-repository-account-routing.md
-        reviewed_on: 2026-11-05
+        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
+        reviewed_on: 2026-11-06
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - model-profile-native-lifecycle-source-and-policy-admission
+          - registered-workflow-model-profile-request-preparation
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - repository-verification-maturity-and-active-owner-source-scope
@@ -411,8 +413,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-repository-account-routing.md
-        reviewed_on: 2026-11-05
+        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
+        reviewed_on: 2026-11-06
         status: current
         decision: approved
         review_areas:
@@ -422,6 +424,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - model-profile-native-lifecycle-source-and-policy-admission
+          - registered-workflow-model-profile-request-preparation
+          - proposal-bounded-register-original-history-and-source-scope
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - repository-verification-maturity-and-active-owner-source-scope
@@ -757,8 +762,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-repository-account-routing.md
-        reviewed_on: 2026-11-05
+        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
+        reviewed_on: 2026-11-06
         status: current
         decision: approved
         review_areas:
@@ -768,6 +773,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - model-profile-native-lifecycle-source-and-policy-admission
+          - registered-workflow-model-profile-request-preparation
+          - proposal-bounded-register-original-history-and-source-scope
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - repository-verification-maturity-and-active-owner-source-scope
@@ -972,8 +980,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-repository-account-routing.md
-        reviewed_on: 2026-11-05
+        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
+        reviewed_on: 2026-11-06
         status: current
         decision: approved
         review_areas:
@@ -983,6 +991,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - model-profile-native-lifecycle-source-and-policy-admission
+          - registered-workflow-model-profile-request-preparation
+          - proposal-bounded-register-original-history-and-source-scope
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - console-native-release-dedicated-dispatch-identity
@@ -1517,8 +1528,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-30-provider-health-evidence.md
-        reviewed_on: 2026-10-30
+        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
+        reviewed_on: 2026-11-06
         status: current
         decision: approved
         review_areas:
@@ -1528,6 +1539,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - model-profile-native-lifecycle-source-and-policy-admission
+          - registered-workflow-model-profile-request-preparation
           - connected-personal-and-organization-repository-routing
           - provider-native-connection-and-bound-timestamped-success
           - console-core-independent-post-start-configured-provider-health
@@ -1651,8 +1664,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-repository-account-routing.md
-        reviewed_on: 2026-11-05
+        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
+        reviewed_on: 2026-11-06
         status: current
         decision: approved
         review_areas:
@@ -1662,6 +1675,9 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - model-profile-native-lifecycle-source-and-policy-admission
+          - registered-workflow-model-profile-request-preparation
+          - proposal-bounded-register-original-history-and-source-scope
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - console-native-release-dedicated-dispatch-identity

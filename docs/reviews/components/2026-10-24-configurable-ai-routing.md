@@ -30,16 +30,16 @@ startup, identity, purpose, source and publication controls remain inherited.
 
 ## Scope Delta
 
-Reviewed exact sources, including the [requested local advisor drafting delta](2026-10-27-requested-advisor-drafts.md):
+Reviewed exact sources for the approved Proposal and Model Operations maintenance batch:
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@625231857cc9fad18653d8a57d6ae425e103b1f4`
-- `operator-orchestration-service@da3f5152c207006df634ace364aa3bc8cf8faf4d`
-- `platform-engineering@1862fd3ab614761852ef98969ec2bbafcc1525d8`
-- `workspace-governance@cebc881dd794a8d12cc76ce299a8751ffe84e848`
-- `workspace-governance-control-fabric@1fc25783c59d1a6b0eb9935f42b0ee1fd81cf144`
-- `workspace-prototype-studio@84b7e7a596ce3d6f1c5853bbf1c348611ed9cdb6`
-- `platform-engineering-tree@df6aa9c1ed887f9a4262d5ae0afa29621a5d26da`
+- `governance-operations-console@067f64ce7da45465d26aac43596281ffb4c7a725`
+- `operator-orchestration-service@972cf6150f10d9d29521d53b3368a7c1e62346dc`
+- `platform-engineering@a6d6a1f8e053fcec989ed66c7e0849aa1340ff36`
+- `workspace-governance@f5e06f3c6c480ffe3d48a79f24dfe84c8d0d0e8f`
+- `workspace-governance-control-fabric@25140998b8452bccc0f4512cd20692f51d163611`
+- `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
+- `platform-engineering-tree@ec1550afedc7d0bba992f8343e3c1390f015fd7a`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
 OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
@@ -1803,3 +1803,43 @@ The existing exact image, embedded source and worker-authorization checks remain
 in force. This corrects the existing acceptance binding; it adds no permission,
 new workflow generation or runtime-authority bypass. Live readiness must be
 rechecked after applying the accepted image.
+
+
+## Proposal and Model Operations maintenance acceptance — 2026-11-06
+
+Accept the exact merged OOS PR409, Console PR168 and Platform PR370 sources
+listed above, under the [Proposal delta](2026-11-06-proposal-usability.md),
+[request usability assessment](2026-11-06-model-profile-request-usability.md)
+and [native lifecycle assessment](2026-11-06-model-profile-lifecycle.md).
+The merged Platform tree is identical to the reviewed candidate. Gary authored
+and published the changes; the delegated accountable human reviewed and merged
+the exact heads after required checks. The main agent retains Security and
+final landing judgment; these roles are not independent advisory attestations.
+
+Approve commissioning through the existing complete-runtime lifecycle, including
+canonical preparation/lifecycle selection, the existing CGG service origin,
+loopback OOS owner and explicit admitted operator role. Native request approval,
+separate activation/exception Security acceptance, exact Gary source review,
+receipt-bound policy-only continuation and guarded rollback remain enforced.
+The controller now reads the gateway's actual `/readyz` endpoint; adapter proof
+executes the observation script against the real gateway HTTP handler.
+
+This decision does not grant new model callers, provider credentials, arbitrary
+source execution or AI final decisions. New presets start suspended and
+unselected. Existing stable task identities, model routing/configuration,
+dedicated-account custody, private requests and invocation journals remain
+preserved. Published names/rules contain no private project content. The sample
+Registry onboarding view is explicitly disconnected preview data, not a live
+registration or grant. Earlier independent controls, durable activation manifest
+and worker digest remain unchanged.
+
+Source conformance, controlled adapter tests and isolated browser walkthroughs
+support this commissioning decision. They do not establish real provider
+entitlement or deployed lifecycle acceptance. Publication must be followed by
+normal accepted-source activation, authenticated Console readback and a real
+disposable suspended-profile request through native review, source publication,
+readback and receipt-bound restoration. Keep original model configuration and
+working profiles unchanged. Pending or failed operating proof must remain
+explicit; no private policy edits or session-projection bypass are authorized.
+Rollback uses the prior accepted source/decision pair or the native original
+policy receipt as appropriate, retaining private evidence and unique work.
