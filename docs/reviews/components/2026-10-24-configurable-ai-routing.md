@@ -30,14 +30,14 @@ startup, identity, purpose, source and publication controls remain inherited.
 
 ## Scope Delta
 
-Reviewed exact sources for the approved Proposal and Model Operations maintenance batch:
+Reviewed exact sources for the approved Console register navigation maintenance batch:
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@067f64ce7da45465d26aac43596281ffb4c7a725`
-- `operator-orchestration-service@efc80361081fad7ba844a1458b909eb17565fa51`
+- `governance-operations-console@9bb7ca09456206e5e80e2b40d00b14319ddb09fc`
+- `operator-orchestration-service@77e39cab44f169f24c2d41eb791a7919e0f7322f`
 - `platform-engineering@cb060b48d91129daaf7abce3a188815a09c900ce`
-- `workspace-governance@f5e06f3c6c480ffe3d48a79f24dfe84c8d0d0e8f`
-- `workspace-governance-control-fabric@25140998b8452bccc0f4512cd20692f51d163611`
+- `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
 - `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
 - `platform-engineering-tree@9541ccf7d030cf7be54bc4169efe35e77238f9af`
 
@@ -1897,3 +1897,55 @@ this exact correction normally, continue that same operation through Console and
 verify running state plus receipt-bound restoration. Existing model settings,
 working profiles, role boundaries and original history remain preserved. Source
 acceptance and the completed controlled tests do not replace that live proof.
+
+
+## Console register navigation maintenance acceptance — 2026-11-07
+
+The [fresh register review](2026-11-07-console-register-navigation.md) approves
+the bounded read/UI delta. Accept exact merged Governance PR322, OOS PR411,
+WGCF PR125 and Console PR169 at the source revisions listed above. Each Gary
+source head received delegated accountable approval after required CI; the
+candidate and merged trees match. Governance also reconciles two existing
+follow-up review dates while retaining unresolved limits and statuses. Security
+PR427 revalidates the existing expired baselines without changing their findings.
+
+The added source affects register retrieval and presentation only. Optional
+native views preserve existing authenticated callers and canonical mutation
+boundaries. Signed private Registry pages, exact originals, draft/pending custody,
+source-revision/selection binding, global continuity/board scope and readiness
+actor/freshness checks remain enforced. Shared 25/50/100 display choices store
+only the size preference in the browser. No database migration, new service,
+model/provider grant, worker activation or final-decision permission is added.
+
+Local owner suites pass: Governance315, WGCF597, OOS1938 (1936 pass/two
+intentional skips), Console1026 semantic tests plus architecture, typecheck,
+zero-vulnerability production dependency audit and isolated exact-source build.
+API/bundle/docs, fetched-base change/mutation checks, API/worker image smoke and
+retained browser walkthroughs pass. Full remaining Governance gates, including
+review dates, existing records, learning closure and integrated agent-action
+conformance, pass. Exact-head hosted CI passed for all four release PRs.
+
+The generated Security index includes the now-merged OOS register-read source
+record. It is generated from proven identical merged owner trees while primary
+execution checkouts retain their preceding accepted source until commissioning.
+The prior activation manifest and immutable gate receipts are preserved. The
+finite decision must select the newly published WGCF worker OCI digest whose
+baked revision matches the selected WGCF source; this advances artifact source
+provenance without expanding the previously admitted worker definition.
+
+Approve commissioning only through the existing complete-runtime lifecycle and
+source-selection controls. Platform's existing accepted policy-only descendant
+path remains available; the reviewed executable Platform source/tree stay
+unchanged. Native qualification must prove actual owner products/register pages,
+actual signed private Registry25/50/100 responses, independent originals and
+Console reads/pickers without fabricated persistent projects or business writes.
+Source conformance does not establish that operating result. Main-agent Security
+closure and delegated human final landing judgment remain explicit; this is not
+an independent external attestation. Rollback selects the prior accepted
+source/decision pair without a data migration, retaining original evidence.
+
+Published WGCF worker: `ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:e2de3ff0882c03b185b39d6e42f5f3b16179d577c6f595a23f1c22c7bd637e88`, built from the exact merged WGCF source above
+in workflow run42338185618. Its published metadata binds sourceSha and digest;
+API/worker build and source/default-denial smoke checks pass. The original
+durable manifest digest remains unchanged. Native running-image readback is
+still a commissioning obligation.
