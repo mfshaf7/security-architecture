@@ -168,3 +168,22 @@ Before CGG can move beyond local CLI/source use:
 - `context-governance-gateway/contracts/schemas/model-safe-packet.schema.json`
 - `context-governance-gateway/contracts/schemas/operator-receipt.schema.json`
 - `context-governance-gateway/contracts/schemas/redaction-report.schema.json`
+
+
+## Baseline revalidation — 2026-11-07
+
+Current source `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
+retains the raw/local custody and packet admission boundary. Reviewed the
+current Agent Console projection's caller binding, redaction/budget fields,
+raw_context_exposed=false and explicit raw-fallback denial, together with the
+2026-10-15 platform-operation assessment and its admitted service extensions.
+Fresh pipeline, Agent Console projection and authenticated API tests pass.
+No model or mutation authority is granted by packet generation.
+
+Revalidated the existing limited baseline, its explicitly linked later deltas
+and retained findings. Decision remains approved-with-findings; original residual
+risks are not closed or erased. Source/isolated checks establish continued
+baseline conformance, not a new end-to-end runtime or production attestation.
+The main agent retains Security judgment under delegated operator authority.
+Review due 2027-05-07. This review-date renewal is a dependency of the register
+maintenance release; it does not expand that release's scope or authority.
