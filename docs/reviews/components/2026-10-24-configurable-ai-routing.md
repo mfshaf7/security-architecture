@@ -33,13 +33,13 @@ startup, identity, purpose, source and publication controls remain inherited.
 Reviewed exact sources for the approved Console register navigation maintenance batch:
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@9bb7ca09456206e5e80e2b40d00b14319ddb09fc`
+- `governance-operations-console@fd822d7299a95da7e1ecb852ee8e87f93ff94d93`
 - `operator-orchestration-service@77e39cab44f169f24c2d41eb791a7919e0f7322f`
-- `platform-engineering@cb060b48d91129daaf7abce3a188815a09c900ce`
+- `platform-engineering@0f338e3d6039fbca6f3cc6727b0638c80f8fadc5`
 - `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
 - `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
 - `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
-- `platform-engineering-tree@9541ccf7d030cf7be54bc4169efe35e77238f9af`
+- `platform-engineering-tree@7f3161db1f5acbc6e945713777c1dd5bc4a8117a`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
 OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
@@ -1949,3 +1949,18 @@ in workflow run42338185618. Its published metadata binds sourceSha and digest;
 API/worker build and source/default-denial smoke checks pass. The original
 durable manifest digest remains unchanged. Native running-image readback is
 still a commissioning obligation.
+
+
+## Final register qualification repairs — 2026-11-07
+
+The [fresh register review](2026-11-07-console-register-navigation.md#final-qualification-repair-delta--2026-11-07)
+also accepts merged Console PR170 and Platform PR375 at the exact current pins
+above. Both candidates passed CI and delegated review; candidate and merged
+trees are identical. Console repairs compact register height and viewport-bound
+selector placement. Platform extends the existing connection supervisor to
+recycle a reproduced stream-creation timeout even while health succeeds. Existing
+policy-only model-profile descendants are incorporated in the selected full
+Platform tree without granting new provider authority. Other source revisions,
+worker digest, durable manifest and commissioning boundary remain unchanged.
+Native operating proof follows normal accepted-source activation; a successful
+source review does not stand in for that proof.

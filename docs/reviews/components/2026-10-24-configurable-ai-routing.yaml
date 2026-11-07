@@ -11,14 +11,14 @@ architecture:
 review_ref: docs/reviews/components/2026-10-24-configurable-ai-routing.md
 reviewed_revisions:
   context-governance-gateway: e29c59a4ed56048f6aa47bb924899566a5e68bae
-  governance-operations-console: 9bb7ca09456206e5e80e2b40d00b14319ddb09fc
+  governance-operations-console: fd822d7299a95da7e1ecb852ee8e87f93ff94d93
   operator-orchestration-service: 77e39cab44f169f24c2d41eb791a7919e0f7322f
-  platform-engineering: cb060b48d91129daaf7abce3a188815a09c900ce
+  platform-engineering: 0f338e3d6039fbca6f3cc6727b0638c80f8fadc5
   workspace-governance: 02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80
   workspace-governance-control-fabric: d3b8ba934275324abcb794c0276fd3dea0a9ceb9
   workspace-prototype-studio: 32e5b40a4198ee8a468697502dc73324334cac70
 reviewed_trees:
-  platform-engineering: 9541ccf7d030cf7be54bc4169efe35e77238f9af
+  platform-engineering: 7f3161db1f5acbc6e945713777c1dd5bc4a8117a
 durable_orchestration:
   manifest_path: docs/reviews/components/console-capabilities-1332/manifest.json
   manifest_digest: sha256:c786d34579937ab09eb12340b5ac2e4831783416bf111a66bd7ca9898465cc73

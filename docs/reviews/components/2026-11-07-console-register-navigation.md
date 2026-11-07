@@ -115,3 +115,40 @@ baselines. Those three baseline artifacts now record current source/control
 inspection, focused validation, preserved findings and a six-month review date.
 No runtime authority or accepted source pin changes in this prerequisite review.
 The final exact-source composition/index acceptance follows the owner merges.
+
+
+## Final qualification repair delta — 2026-11-07
+
+The same maintenance boundary includes Console PR170 and Platform PR375. Native
+qualification exposed a compact Model register with a 39px body under a 52px
+header, and kubectl stream-creation timeouts while health probes still succeeded.
+These observations do not establish source corruption or a new business defect.
+
+Console restores the compact register body minimum, bounds row-driven layout
+height and allows the existing outer work area to scroll on short screens.
+The shared portal selector measures before paint and opens above the trigger
+when the options cannot fit below. Existing columns, summaries, selection,
+keyboard controls and mutation gates remain. Fourteen affected browser cases
+pass at 1280/1700; two further Prototype cases verify full menu viewport bounds.
+Architecture guards, 1,026 semantic tests, typecheck, public-source validation,
+locked dependency audit and isolated exact-source production build pass.
+
+Platform drains the existing tunnel child's stderr in bounded chunks, retains
+its diagnostics and recognizes the reproduced kubectl stream-creation timeout.
+That signal causes only the existing child process group to be reaped and its
+supervisor to exit for the existing delayed service restart. Health success
+cannot clear that transport fault. Unrelated diagnostics and HTTP error
+responses do not cause recycling. No request body is inspected or replayed, no
+owner workload is restarted and no credential or privilege is added. Seven
+real-child tests and the complete-runtime suite (94 tests, four intentional
+skips) pass; full owner validation passes. The existing connection runbook and
+source record carry the procedure and rollback boundary.
+
+Decision: approved within the existing local commissioning boundary, subject to
+exact merged Console and Platform revision/tree binding in the composed decision.
+The already accepted native model-profile policy descendant is included in the
+new full Platform tree; its prior review remains applicable. Prior identity,
+secrets, AI and canonical mutation controls are inherited without expansion.
+Native reads passed after connection-only refresh during initial qualification;
+final operating status and browser proof must follow activation of these exact
+repairs. This decision grants no new runtime action or release maturity.

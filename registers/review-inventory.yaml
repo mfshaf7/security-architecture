@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
-        reviewed_on: 2026-11-06
+        path: docs/reviews/components/2026-11-07-console-register-navigation.md
+        reviewed_on: 2026-11-07
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-partial-stream-recovery-and-compact-register-viewport
           - model-profile-native-lifecycle-source-and-policy-admission
           - registered-workflow-model-profile-request-preparation
           - connected-personal-and-organization-repository-routing
@@ -426,6 +427,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-partial-stream-recovery-and-compact-register-viewport
           - bounded-console-register-navigation-and-source-pages
           - model-profile-native-lifecycle-source-and-policy-admission
           - registered-workflow-model-profile-request-preparation
@@ -984,8 +986,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
-        reviewed_on: 2026-11-06
+        path: docs/reviews/components/2026-11-07-console-register-navigation.md
+        reviewed_on: 2026-11-07
         status: current
         decision: approved
         review_areas:
@@ -995,6 +997,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-partial-stream-recovery-and-compact-register-viewport
           - model-profile-native-lifecycle-source-and-policy-admission
           - registered-workflow-model-profile-request-preparation
           - proposal-bounded-register-original-history-and-source-scope
