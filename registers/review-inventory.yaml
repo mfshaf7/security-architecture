@@ -166,8 +166,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-repository-account-routing.md
-        reviewed_on: 2026-11-05
+        path: docs/reviews/components/2026-11-07-console-register-navigation.md
+        reviewed_on: 2026-11-07
         status: current
         decision: approved
         review_areas:
@@ -177,6 +177,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-console-register-navigation-and-source-pages
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - repository-verification-maturity-and-active-owner-source-scope
@@ -241,8 +242,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-repository-account-routing.md
-        reviewed_on: 2026-11-05
+        path: docs/reviews/components/2026-11-07-console-register-navigation.md
+        reviewed_on: 2026-11-07
         status: current
         decision: approved
         review_areas:
@@ -252,6 +253,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-console-register-navigation-and-source-pages
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - authenticated-read-only-product-publication-preparation
@@ -316,8 +318,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
-        reviewed_on: 2026-05-05
-        review_due_on: 2026-11-05
+        reviewed_on: 2026-11-07
+        review_due_on: 2027-05-07
         status: active
         decision: approved-with-findings
       latest_change_review:
@@ -360,8 +362,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-05-06-workspace-prototype-studio-product-incubation-baseline.md
-        reviewed_on: 2026-05-06
-        review_due_on: 2026-11-06
+        reviewed_on: 2026-11-07
+        review_due_on: 2027-05-07
         status: active
         decision: approved-with-findings
       latest_change_review:
@@ -413,8 +415,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
-        reviewed_on: 2026-11-06
+        path: docs/reviews/components/2026-11-07-console-register-navigation.md
+        reviewed_on: 2026-11-07
         status: current
         decision: approved
         review_areas:
@@ -424,6 +426,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-console-register-navigation-and-source-pages
           - model-profile-native-lifecycle-source-and-policy-admission
           - registered-workflow-model-profile-request-preparation
           - proposal-bounded-register-original-history-and-source-scope
@@ -762,8 +765,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-06-model-profile-lifecycle.md
-        reviewed_on: 2026-11-06
+        path: docs/reviews/components/2026-11-07-console-register-navigation.md
+        reviewed_on: 2026-11-07
         status: current
         decision: approved
         review_areas:
@@ -773,6 +776,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-console-register-navigation-and-source-pages
           - model-profile-native-lifecycle-source-and-policy-admission
           - registered-workflow-model-profile-request-preparation
           - proposal-bounded-register-original-history-and-source-scope
@@ -1241,16 +1245,17 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-08-09-art-evidence-custody-and-source-provenance.md
-        reviewed_on: 2026-08-09
+        path: docs/reviews/components/2026-11-07-console-register-navigation.md
+        reviewed_on: 2026-11-07
         status: current
-        decision: approved-with-findings
+        decision: approved
         review_areas:
           - identity
           - secrets
           - delivery
           - runtime
         review_trigger_ids:
+          - bounded-console-register-navigation-and-source-pages
           - connected-personal-and-organization-repository-routing
           - delivery-art-evidence-custody-boundary
           - delivery-art-source-provenance-integrity
@@ -1479,8 +1484,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-05-05-context-governance-gateway-phase-1-local-custody.md
-        reviewed_on: 2026-05-05
-        review_due_on: 2026-11-05
+        reviewed_on: 2026-11-07
+        review_due_on: 2027-05-07
         status: active
         decision: approved-with-findings
       latest_change_review:
@@ -1523,8 +1528,8 @@ review_inventory:
       scope: component
       baseline_review:
         path: docs/reviews/components/2026-05-06-governed-ai-gateway-devint-runtime.md
-        reviewed_on: 2026-05-06
-        review_due_on: 2026-11-06
+        reviewed_on: 2026-11-07
+        review_due_on: 2027-05-07
         status: active
         decision: approved-with-findings
       latest_change_review:

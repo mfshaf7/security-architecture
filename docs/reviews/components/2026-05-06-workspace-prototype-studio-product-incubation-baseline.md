@@ -139,3 +139,23 @@ Before Prototype Studio can host mature runtime or client-visible review:
 - `workspace-prototype-studio/README.md`
 - `workspace-prototype-studio/docs/security-and-data-boundaries.md`
 - `workspace-governance/contracts/repo-rules/workspace-prototype-studio.yaml`
+
+
+## Baseline revalidation — 2026-11-07
+
+Current source `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
+retains source/data classification, security triggers, graduation ownership and
+no-production-release authority in its agent guidance and data-boundary policy.
+The 2026-10-25 landing Unicode assessment and the composed exact-source review
+cover later admitted local preview/source paths; the original incubation
+baseline alone does not authorize them. The registry validator and fresh
+Landing/Preview suites (14 and 10 tests) pass. The source packet carries
+references and provenance rather than target mutation credentials.
+
+Revalidated the existing limited baseline, its explicitly linked later deltas
+and retained findings. Decision remains approved-with-findings; original residual
+risks are not closed or erased. Source/isolated checks establish continued
+baseline conformance, not a new end-to-end runtime or production attestation.
+The main agent retains Security judgment under delegated operator authority.
+Review due 2027-05-07. This review-date renewal is a dependency of the register
+maintenance release; it does not expand that release's scope or authority.

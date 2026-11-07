@@ -100,3 +100,25 @@ Required smoke evidence:
 - `platform-engineering/docs/records/change-records/2026-05-06-governed-ai-gateway-devint-runtime.md`
 - `workspace-governance/contracts/components.yaml`
 - `workspace-governance/contracts/developer-integration-profiles.yaml`
+
+
+## Baseline revalidation — 2026-11-07
+
+Reviewed executable source `platform-engineering@cb060b48d91129daaf7abce3a188815a09c900ce`
+retains explicit caller/profile admission, gateway-only provider credential
+custody, consumer credential denial, default-deny routing and audit requirements.
+The clean current main `0c4f18c797cd4a9045b6327e614f9db1f4febd0f`
+differs only in the three existing AI policy files, under the accepted native
+policy-lifecycle path. The 2026-11-06 profile-lifecycle review and current
+composed source decision cover later native provider/model/profile extensions; they are not retroactively
+granted by the initial baseline. Fresh gateway policy and runtime suites pass
+11 tests each. No new provider, account, automatic fallback, production lane or
+canonical mutation permission is admitted by this revalidation.
+
+Revalidated the existing limited baseline, its explicitly linked later deltas
+and retained findings. Decision remains approved-with-findings; original residual
+risks are not closed or erased. Source/isolated checks establish continued
+baseline conformance, not a new end-to-end runtime or production attestation.
+The main agent retains Security judgment under delegated operator authority.
+Review due 2027-05-07. This review-date renewal is a dependency of the register
+maintenance release; it does not expand that release's scope or authority.
