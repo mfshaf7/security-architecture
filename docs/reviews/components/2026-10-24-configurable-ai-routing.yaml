@@ -11,7 +11,7 @@ architecture:
 review_ref: docs/reviews/components/2026-10-24-configurable-ai-routing.md
 reviewed_revisions:
   context-governance-gateway: e29c59a4ed56048f6aa47bb924899566a5e68bae
-  governance-operations-console: fd822d7299a95da7e1ecb852ee8e87f93ff94d93
+  governance-operations-console: 24b1027321e7d0b72aa143d9329c61cc2f4e5b3f
   operator-orchestration-service: 77e39cab44f169f24c2d41eb791a7919e0f7322f
   platform-engineering: 0f338e3d6039fbca6f3cc6727b0638c80f8fadc5
   workspace-governance: 02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80

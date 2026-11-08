@@ -33,7 +33,7 @@ startup, identity, purpose, source and publication controls remain inherited.
 Reviewed exact sources for the approved Console register navigation maintenance batch:
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@fd822d7299a95da7e1ecb852ee8e87f93ff94d93`
+- `governance-operations-console@24b1027321e7d0b72aa143d9329c61cc2f4e5b3f`
 - `operator-orchestration-service@77e39cab44f169f24c2d41eb791a7919e0f7322f`
 - `platform-engineering@0f338e3d6039fbca6f3cc6727b0638c80f8fadc5`
 - `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
@@ -1964,3 +1964,25 @@ Platform tree without granting new provider authority. Other source revisions,
 worker digest, durable manifest and commissioning boundary remain unchanged.
 Native operating proof follows normal accepted-source activation; a successful
 source review does not stand in for that proof.
+
+
+## Registry usability and attention truth maintenance — 2026-11-08
+
+The [existing review amendment](2026-11-07-console-register-navigation.md#registry-refresh-and-attention-projection-maintenance--2026-11-08)
+accepts Console PR171 at the exact merged revision above. Gary authored and
+published candidate `9a7773095f52de7b27c1ed52047bb32d6d9e3da1`; delegated
+human review and exact-head CI passed before merge. Candidate and merged source
+trees are identical. Local CI-equivalent validation includes architecture guards,
+1,042 semantic tests, typecheck, production build, public-source validation and
+zero production dependency vulnerabilities. Native preview and isolated browser
+proof cover Registry outcomes, shared registers, refresh continuity, loading and
+attention/history/freshness boundaries.
+
+This is Console-only maintenance: no Platform, OOS, WGCF, CGG, Governance or
+Studio executable source, durable orchestration manifest or worker digest changes.
+The finite YAML and this prose bind the same new Console source. Existing
+identity, source custody, context admission, canonical mutations and provider
+controls remain inherited. Original failed history records remain intact. Final
+operating proof follows the existing Platform activation and native readback;
+source acceptance alone is not that proof. The previous accepted source and
+artifact remain the rollback boundary, without a migration or data rewrite.

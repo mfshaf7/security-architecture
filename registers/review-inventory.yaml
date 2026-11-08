@@ -417,7 +417,7 @@ review_inventory:
         decision: approved-with-findings
       latest_change_review:
         path: docs/reviews/components/2026-11-07-console-register-navigation.md
-        reviewed_on: 2026-11-07
+        reviewed_on: 2026-11-08
         status: current
         decision: approved
         review_areas:
@@ -427,6 +427,8 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - governance-console-source-graduation
+          - console-registry-refresh-and-attention-projection-truth
           - console-partial-stream-recovery-and-compact-register-viewport
           - bounded-console-register-navigation-and-source-pages
           - model-profile-native-lifecycle-source-and-policy-admission
