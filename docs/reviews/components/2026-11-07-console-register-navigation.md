@@ -152,3 +152,70 @@ secrets, AI and canonical mutation controls are inherited without expansion.
 Native reads passed after connection-only refresh during initial qualification;
 final operating status and browser proof must follow activation of these exact
 repairs. This decision grants no new runtime action or release maturity.
+
+
+## Registry, refresh and attention projection maintenance — 2026-11-08
+
+Operator-approved owner maintenance is tracked as Landing Unit
+`maintenance-registry-usability-20261107`; the corresponding exact-source
+acceptance is `maintenance-console-registry-acceptance-20261108`, with decision
+`feature_single_landing_unit`. This extends the existing review; it introduces
+no new service, provider permission, data store or canonical mutation authority.
+
+The intended operator outcome is to preserve source truth while making existing
+workspaces readable and usable. Registry classification, inventory activation,
+private-record scope and pending versus completed outcomes remain distinct.
+Preparation, uncertain submission and history recovery keep their original
+request identity. Dependent repository reads cannot remain falsely loading after
+an owner failure. Quiet background reads retain selections and edited drafts;
+explicit navigation and failed reads retain visible loading/retry and write gates.
+
+The implemented shared register changes provide readable column minima,
+remembered numeric column widths and internal resize boundaries with an anchored
+outer edge. Optional browser preferences contain layout only, not project records
+or authority. Existing workspace structures, paging, original record access,
+mutation controls and outer scrolling remain. Reviewed panel spacing, loading
+feedback, single-line status pills and constrained modal content use existing
+components. There is no broad replacement of the interface baseline.
+
+Primary attention now distinguishes retained diagnostic failures from outstanding
+workflow work. Source authorization attempts resolve only with a validated,
+successful revocation receipt bound to the complete original intent and command;
+a newer unrelated success, shared profile, timestamp or expiry is insufficient.
+Original failed operation records remain inspectable. Readiness checks all known
+unresolved operations, preserving real recovery and pending work. Shared owner
+composition preserves record freshness rather than promoting stale records to
+current because the transport succeeded. Stale records cannot supply executable
+routes. Partial Prototype collections and bounded Platform/Orchestration windows
+are explicitly qualified in counts and existing Agent context metadata. Incomplete
+history is informational and does not disable otherwise valid current actions.
+Owner authorization, context admission, model routing, credentials and final
+approval remain unchanged.
+
+Source evidence: architecture guards, 1,042 semantic tests, typecheck,
+public-source repository validation and production dependency audit pass. The
+retained preview walkthrough covers the repaired workspaces, table resize and
+persistence, loading and freshness paths at 1280/1700. Ten focused attention,
+colour and Pulse browser scenarios pass; the four attention/history scenarios
+also pass after the final completeness refinement. Connected preview reads show
+nine current source feeds, two actions, one decision and zero blockers, with no
+page errors or business writes. All 84 operation records, including the two
+historical failures, remain retained. These are scoped source/preview results,
+not a universal readiness or independent external security attestation.
+
+Decision: approved for the existing local dev-integration boundary after exact
+merged Console source, production build and CI verification are bound in the
+finite composed decision and its companion review. Platform, OOS, WGCF, CGG,
+Governance and Studio selections, durable manifest and worker digest remain
+unchanged. Native proof must follow normal accepted-source activation. The main
+agent retains Security closure and final landing judgment under the operator's
+standing delegation; Gary authors and the delegated human reviews and merges.
+Rollback uses the prior accepted source/decision pair; there is no data migration.
+
+
+Exact source acceptance: Console PR171 merged as
+`24b1027321e7d0b72aa143d9329c61cc2f4e5b3f`, from Gary candidate
+`9a7773095f52de7b27c1ed52047bb32d6d9e3da1`, tree
+`0b3a95e598ab76b84ff20edd02571f94912e982b` for both. Exact-head CI and the
+local production build pass. The finite decision and companion review select
+this merged revision; other composition bindings remain unchanged.
