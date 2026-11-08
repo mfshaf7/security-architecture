@@ -35,11 +35,11 @@ Reviewed exact sources for the approved Console register navigation maintenance 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@24b1027321e7d0b72aa143d9329c61cc2f4e5b3f`
 - `operator-orchestration-service@77e39cab44f169f24c2d41eb791a7919e0f7322f`
-- `platform-engineering@0f338e3d6039fbca6f3cc6727b0638c80f8fadc5`
+- `platform-engineering@56d9097edd7da6a9b4a6a72388386b793ae5b290`
 - `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
 - `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
 - `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
-- `platform-engineering-tree@7f3161db1f5acbc6e945713777c1dd5bc4a8117a`
+- `platform-engineering-tree@1567fbce22e74f6bab9af92d98d5aed1957b0e67`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
 OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
@@ -1986,3 +1986,33 @@ controls remain inherited. Original failed history records remain intact. Final
 operating proof follows the existing Platform activation and native readback;
 source acceptance alone is not that proof. The previous accepted source and
 artifact remain the rollback boundary, without a migration or data rewrite.
+
+
+## Verified image recovery archives — 2026-11-08
+
+The [fresh recovery review](2026-11-08-image-recovery-archives.md) accepts merged
+Platform PR376 at the exact revision and full tree above. Gary candidate
+`4994a3de722d3b44631f09892a93987f6d7d1430` and merged source have identical
+trees; required exact-head CI and delegated review pass. The root helper retains
+and validates original OCI content before destructive cache removal, then
+reimports that archive and verifies original bytes without a replacement pull.
+Retained archives also supply fresh baselines when native content and upstream
+are unavailable. Existing per-image attempt limits, fixed admission and final
+consumer readiness remain. The lifecycle can recover a disjoint new artifact
+without replaying an earlier repair or completed pod deletion.
+
+Thirty-one focused cases pass with the ambient host policy deliberately absent.
+The approved real MinIO archive also reconstructs its 891-entry baseline offline,
+including the expected executable hash, with zero network calls. All local
+CI-equivalent commands and final full GitHub validation pass. The first CI failure
+was an isolated test-fixture dependency; the corrected fixture supplies its own
+policy and does not alter production logic. The generated Security source-record
+index includes the now-merged Platform record.
+
+Console remains at accepted PR171; all other executable sources, durable manifest
+and worker digest are unchanged. No new caller privilege, registry, service or
+mutable-data action is accepted. Deliberate reviewed helper reinstallation,
+normal activation and native operating proof remain required. Preserve original
+incidents, archives, owner data and the prior accepted source/helper decision for
+inspection and rollback. This is not a guarantee against recurring hardware
+faults, unavailable trusted content or damaged verification code.
