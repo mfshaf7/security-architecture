@@ -35,11 +35,11 @@ Reviewed exact sources for the approved Console register navigation maintenance 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@24b1027321e7d0b72aa143d9329c61cc2f4e5b3f`
 - `operator-orchestration-service@77e39cab44f169f24c2d41eb791a7919e0f7322f`
-- `platform-engineering@56d9097edd7da6a9b4a6a72388386b793ae5b290`
+- `platform-engineering@4f6061a18038f008ea2edca010b73d2979c1793c`
 - `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
 - `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
 - `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
-- `platform-engineering-tree@1567fbce22e74f6bab9af92d98d5aed1957b0e67`
+- `platform-engineering-tree@560b5cae97a38fdabb362fe80d4782ed4c6113ed`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
 OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
@@ -1991,7 +1991,8 @@ artifact remain the rollback boundary, without a migration or data rewrite.
 ## Verified image recovery archives — 2026-11-08
 
 The [fresh recovery review](2026-11-08-image-recovery-archives.md) accepts merged
-Platform PR376 at the exact revision and full tree above. Gary candidate
+Platform PR376 at its historical revision `56d9097edd7da6a9b4a6a72388386b793ae5b290` and tree
+`1567fbce22e74f6bab9af92d98d5aed1957b0e67`. Gary candidate
 `4994a3de722d3b44631f09892a93987f6d7d1430` and merged source have identical
 trees; required exact-head CI and delegated review pass. The root helper retains
 and validates original OCI content before destructive cache removal, then
@@ -2016,3 +2017,23 @@ normal activation and native operating proof remain required. Preserve original
 incidents, archives, owner data and the prior accepted source/helper decision for
 inspection and rollback. This is not a guarantee against recurring hardware
 faults, unavailable trusted content or damaged verification code.
+
+
+## Interrupted recovery correctness — 2026-11-09
+
+The [fresh recovery delta](2026-11-09-runtime-recovery-correctness.md) accepts
+Platform PR377 at the exact merged source and tree above. Its Gary candidate
+`8e630ca7629dcabba756cb4df66d261125120c12` has the identical tree. Full local
+validation, committed focused tests and exact-head GitHub checks pass; delegated
+human approval preceded merge. The generated owner change-record index follows
+the now-merged Platform record.
+
+The existing finite helper imports under the canonical admitted repository,
+keeps unresolved exact digests in verification and retires only proven pre-boot
+verifier Views. Maintenance preserves original recovery evidence and consumers.
+No caller, namespace, repository, model or mutable-data authority expands. Other
+accepted source pins, durable manifest and worker digest remain unchanged.
+Deliberate reviewed installation and normal activation with fresh native proof
+remain required; source acceptance alone does not establish backend readiness
+or hardware reliability. Rollback retains the prior accepted source/helper and
+all incidents, archives and owner data.
