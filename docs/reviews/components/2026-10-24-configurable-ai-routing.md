@@ -30,16 +30,16 @@ startup, identity, purpose, source and publication controls remain inherited.
 
 ## Scope Delta
 
-Reviewed exact sources for the approved Console register navigation maintenance batch:
+Reviewed exact sources for the approved Console local runtime composition:
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@24b1027321e7d0b72aa143d9329c61cc2f4e5b3f`
 - `operator-orchestration-service@77e39cab44f169f24c2d41eb791a7919e0f7322f`
-- `platform-engineering@4f6061a18038f008ea2edca010b73d2979c1793c`
+- `platform-engineering@9a62f4789e8bc9d43206c04e9e1bf2d5e1aeca9d`
 - `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
 - `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
 - `workspace-prototype-studio@32e5b40a4198ee8a468697502dc73324334cac70`
-- `platform-engineering-tree@560b5cae97a38fdabb362fe80d4782ed4c6113ed`
+- `platform-engineering-tree@6338b3cce0b282544dea15419529d7087c67274d`
 
 The [provider lifecycle delta](2026-10-30-provider-lifecycle.md) accepts Gary
 OOS PR396, Platform PR353 and Console PR152 (including PR151) at the exact merged revisions/tree
@@ -2022,7 +2022,8 @@ faults, unavailable trusted content or damaged verification code.
 ## Interrupted recovery correctness — 2026-11-09
 
 The [fresh recovery delta](2026-11-09-runtime-recovery-correctness.md) accepts
-Platform PR377 at the exact merged source and tree above. Its Gary candidate
+Platform PR377 at its historical merged source `4f6061a18038f008ea2edca010b73d2979c1793c` and tree
+`560b5cae97a38fdabb362fe80d4782ed4c6113ed`. Its Gary candidate
 `8e630ca7629dcabba756cb4df66d261125120c12` has the identical tree. Full local
 validation, committed focused tests and exact-head GitHub checks pass; delegated
 human approval preceded merge. The generated owner change-record index follows
@@ -2037,3 +2038,22 @@ Deliberate reviewed installation and normal activation with fresh native proof
 remain required; source acceptance alone does not establish backend readiness
 or hardware reliability. Rollback retains the prior accepted source/helper and
 all incidents, archives and owner data.
+
+
+## Clean program-cache readback — 2026-11-09
+
+The [fresh readback review](2026-11-09-runtime-cache-readback.md) accepts Platform
+PR378 at the exact merged source/tree above. Gary candidate
+`d439c6f0e2a5e6647ed9d0d69c8a55a8707d2f44` has the identical tree; full
+post-commit local validation, 43 focused cases, exact-head provider checks and
+delegated approval pass. The generated index follows the merged owner record.
+
+The finite verifier attempts a scoped regular-file cache reread after regenerating
+trusted baseline content, and requires a separate fresh image view before calling
+it recovered. Recurring/persistent errors remain corruption. Proof reuse also
+binds helper/policy identity; idle-checked maintenance uses the existing retained
+supervisor after proven recovery. No global cache-reset capability, new root
+action, write descriptor or mutable-data scope is added. Other accepted sources,
+durable manifest and worker digest are unchanged. Deliberate installation and
+fresh native complete-runtime readiness remain required. Manual cache-reset
+evidence is not an automatic-recovery witness or a hardware-reliability claim.
