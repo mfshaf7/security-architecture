@@ -4597,6 +4597,18 @@ change_records:
   - WS-003
   - WS-005
 - repo: platform-engineering
+  path: docs/records/change-records/2026-11-09-runtime-cache-readback.md
+  date: 2026-11-09.
+  short_title: 2026-11-09-runtime-cache-readback
+  review_areas:
+  - runtime
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-003
+  - WS-005
+- repo: platform-engineering
   path: docs/records/change-records/2026-11-09-runtime-recovery-correctness.md
   date: 2026-11-09.
   short_title: 2026-11-09-runtime-recovery-correctness

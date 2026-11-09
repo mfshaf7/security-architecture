@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-09-runtime-recovery-correctness.md
+        path: docs/reviews/components/2026-11-09-runtime-cache-readback.md
         reviewed_on: 2026-11-09
         status: current
         decision: approved
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - immutable-program-cache-readback-before-replacement
           - interrupted-image-recovery-correctness
           - verified-local-image-recovery-before-cache-removal
           - console-partial-stream-recovery-and-compact-register-viewport
