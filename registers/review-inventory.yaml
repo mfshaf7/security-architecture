@@ -755,7 +755,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-11-windowless-windows-health.md
+        path: docs/reviews/components/2026-11-11-withdraw-windowless-health.md
         reviewed_on: 2026-11-11
         status: current
         decision: approved
@@ -767,11 +767,9 @@ review_inventory:
           - repo: openclaw-host-bridge
             path: scripts/launch-platform-core-windows-health.cmd
           - repo: openclaw-host-bridge
-            path: scripts/launch-platform-core-windows-health.js
-          - repo: openclaw-host-bridge
             path: docs/install.md
           - repo: openclaw-host-bridge
-            path: docs/records/change-records/2026-11-11-windowless-windows-health.md
+            path: docs/records/change-records/2026-11-11-withdraw-windowless-health.md
     openclaw-telegram-enhanced:
       owner_repo: openclaw-telegram-enhanced
       scope: component

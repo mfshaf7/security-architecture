@@ -1,5 +1,10 @@
 # Windowless Windows health monitor launcher
 
+> Withdrawn; not commissioned. Live deployment was terminated by endpoint
+> protection. The conditional approval below is superseded by the
+> [withdrawal review](2026-11-11-withdraw-windowless-health.md), which authorizes
+> rollback and containment only. It does not authorize restoring blocked items.
+
 ## Summary
 
 - Date: 2026-11-11.

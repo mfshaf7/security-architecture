@@ -36,6 +36,16 @@ change_records:
   risks: []
   workstreams:
   - WS-006
+- repo: openclaw-host-bridge
+  path: docs/records/change-records/2026-11-11-withdraw-windowless-health.md
+  date: '2026-11-11'
+  short_title: Withdraw the unqualified launcher and retain the original startup path
+  review_areas:
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-006
 - repo: openclaw-runtime-distribution
   path: docs/records/change-records/2026-04-17-governed-telegram-overlay-lane.md
   date: '2026-04-17'
