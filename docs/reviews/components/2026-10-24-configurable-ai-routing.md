@@ -8,10 +8,12 @@ gate and unchanged architecture/durable-orchestration bindings. The detailed
 selected-file inert AI assistance, bounded Prototype overview, shared source
 UI and exact-loopback Prototype embedding. Delivery runtime execution remains
 outside this release. Source evidence does not predeclare native availability;
-normal accepted Platform activation/readback is required.
+normal accepted Platform activation/readback is required. The same review
+includes Console PR173's assistant HTTP-parser correction and standard shared
+dialog scrollbar, with existing source/model authority retained.
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@cd40ca9910e543a7caa23f67dc7058cc937c0ed9`
+- `governance-operations-console@bd6b63bb7d277de46824ac1369473e673c06431d`
 - `operator-orchestration-service@9e68d7bb1aee1f94e766fa10784fbddc7726d953`
 - `platform-engineering@a815752137438784252f8a19498285f977a36c6a`
 - `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
