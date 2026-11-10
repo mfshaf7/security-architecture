@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-10-console-source-editor-assistance-preview.md
+        path: docs/reviews/components/2026-11-10-runtime-latch-recheck.md
         reviewed_on: 2026-11-10
         status: current
         decision: approved

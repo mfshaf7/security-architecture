@@ -1,5 +1,19 @@
 # Configurable AI routing security review
 
+## Verified integrity-failure resumption — 2026-11-10
+
+The [bounded verification delta](2026-11-10-runtime-latch-recheck.md) accepts
+Platform [PR380](https://github.com/mfshaf7/platform-engineering/pull/380), merged
+as `a86088fdd6b0c323b21a23a7fd51f63bbf374b16`, with reviewed tree
+`fab6bf61fe38668665639af2951292e6ba157c3e`. Explicit check-failure provenance,
+one durable verification attempt per boot, fresh exact-source image coverage
+and no open repair incident may resume the existing readiness workflow. It does
+not authorize repair replay, unknown legacy latch release, new root actions or
+K3s restart. Existing source/editor, identity, provider, architecture and durable
+orchestration boundaries remain inherited. Normal owner/frontend confirmation
+and controlled native qualification remain required after reviewed installation.
+The current source list below advances only Platform and its matching tree.
+
 ## Repository selection clarity and initial read — 2026-11-10
 
 Console PR175, merged as `fecf9e0206820aa54a4139eb20979db30a41e1e1`,
@@ -57,11 +71,11 @@ dialog scrollbar, with existing source/model authority retained.
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
 - `governance-operations-console@fecf9e0206820aa54a4139eb20979db30a41e1e1`
 - `operator-orchestration-service@9e68d7bb1aee1f94e766fa10784fbddc7726d953`
-- `platform-engineering@a815752137438784252f8a19498285f977a36c6a`
+- `platform-engineering@a86088fdd6b0c323b21a23a7fd51f63bbf374b16`
 - `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
 - `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
 - `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
-- `platform-engineering-tree@39078e5160e1bf5f64b38a422611c599ea7c37fd`
+- `platform-engineering-tree@fab6bf61fe38668665639af2951292e6ba157c3e`
 
 ## Summary
 
