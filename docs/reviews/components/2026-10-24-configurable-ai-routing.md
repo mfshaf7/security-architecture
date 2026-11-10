@@ -1,5 +1,24 @@
 # Configurable AI routing security review
 
+## Current source editor maintenance reassessment — 2026-11-10
+
+Approved exact merged maintenance sources below under the existing composed
+gate and unchanged architecture/durable-orchestration bindings. The detailed
+[Security delta](2026-11-10-console-source-editor-assistance-preview.md) covers
+selected-file inert AI assistance, bounded Prototype overview, shared source
+UI and exact-loopback Prototype embedding. Delivery runtime execution remains
+outside this release. Source evidence does not predeclare native availability;
+normal accepted Platform activation/readback is required.
+
+- `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
+- `governance-operations-console@cd40ca9910e543a7caa23f67dc7058cc937c0ed9`
+- `operator-orchestration-service@9e68d7bb1aee1f94e766fa10784fbddc7726d953`
+- `platform-engineering@a815752137438784252f8a19498285f977a36c6a`
+- `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@39078e5160e1bf5f64b38a422611c599ea7c37fd`
+
 ## Summary
 
 Approve the exact local dev-integration composition for source landing and
