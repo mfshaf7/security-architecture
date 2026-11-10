@@ -18,7 +18,7 @@ source bindings are refreshed only for the reviewed release.
 ## Exact reviewed sources
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@cd40ca9910e543a7caa23f67dc7058cc937c0ed9`
+- `governance-operations-console@bd6b63bb7d277de46824ac1369473e673c06431d`
 - `operator-orchestration-service@9e68d7bb1aee1f94e766fa10784fbddc7726d953`
 - `platform-engineering@a815752137438784252f8a19498285f977a36c6a`
 - `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
@@ -27,6 +27,8 @@ source bindings are refreshed only for the reviewed release.
 - `platform-engineering-tree@39078e5160e1bf5f64b38a422611c599ea7c37fd`
 
 Studio PR44, OOS PR412, Platform PR379 and Console PR172 are merged.
+Console PR173 adds the HTTP-parser correction and standard dialog scrollbar
+reviewed below; its exact merged source is the current Console pin.
 Exact-head delegated review and required provider checks passed.
 No native availability result is inferred from these source merges.
 
@@ -124,6 +126,37 @@ results. Earlier accepted source, private drafts, original journals, model
 configuration and account custody remain the rollback/recovery boundary.
 
 ## Review Areas
+
+### Native qualification correction: assistant HTTP parsing
+
+The first native editor-assistance call exposed an availability defect before
+owner/model dispatch: both Console domain routes passed assistance JSON to the
+saved-draft validator. Earlier adapter tests bypassed that HTTP-body boundary.
+No model invocation, private save or source change occurred from the rejected
+request; the temporary authorization was revoked and its unchanged verification
+checkout retired.
+
+The reviewed Console repair retains the existing bounded UTF-8 reader and uses
+separate closed validators for assistant requests and saved-draft commands.
+Both Prototype and Delivery select the assistant parser on assistance routes.
+No task contract, profile, provider, caller, authorization, source effect or
+data boundary changes. The same owner correction includes the operator-requested
+standard Teras scrollbar on scrollable dialog bodies. It changes two CSS
+properties without changing dialog size, scroll ownership, content or actions.
+The populated four-fallback routing browser check reproduced the default
+scrollbar before the fix and passed afterward, retaining the draft guard. Actual domain HTTP-handler regressions cover question
+and edit dispatch, separate explicit saving, wrong-command rejection, malformed
+UTF-8 and oversized input without unintended owner dispatch. All 1,064 Console
+semantic tests, guards, types, build, repository validation and production
+dependency audit pass. Native model qualification follows accepted activation;
+source and isolated owner tests do not attest provider availability.
+
+Security accepts this corrective delta under the same composed gate and
+unchanged architecture, six other source pins, Platform tree and durable
+orchestration binding. The exact current Console revision above and in the
+paired composed decision is the corrected source; the prior merged PR172
+remains release history. This does not grant source actions to the assistant
+or introduce a new implementation work item or runtime control.
 
 - identity: existing caller/operator/session and Gary/human roles retained;
 - secrets: no new credentials, browser/model credential exposure or account import;
