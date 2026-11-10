@@ -1,5 +1,16 @@
 # Configurable AI routing security review
 
+## Proposal capture identity maintenance — 2026-11-10
+
+The [capture identity reassessment](2026-11-10-console-proposal-capture-identity.md)
+accepts Console PR174 at the exact merged revision below. Cryptographic capture
+identities prevent fresh browser lifetimes from reusing an older source
+reference. Original lookup/replay, caller attribution and mutation authority
+remain unchanged. All other composed source, Platform tree, architecture and
+durable-orchestration bindings are retained. Native capture proof follows normal
+accepted-source activation; this amendment grants no project runtime execution.
+
+
 ## Current source editor maintenance reassessment — 2026-11-10
 
 Approved exact merged maintenance sources below under the existing composed
@@ -13,7 +24,7 @@ includes Console PR173's assistant HTTP-parser correction and standard shared
 dialog scrollbar, with existing source/model authority retained.
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@bd6b63bb7d277de46824ac1369473e673c06431d`
+- `governance-operations-console@afbac18087efdd2f8e11ed9c77af180c4cae4423`
 - `operator-orchestration-service@9e68d7bb1aee1f94e766fa10784fbddc7726d953`
 - `platform-engineering@a815752137438784252f8a19498285f977a36c6a`
 - `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
