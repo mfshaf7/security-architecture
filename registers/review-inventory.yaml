@@ -433,7 +433,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-10-console-proposal-capture-identity.md
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
         reviewed_on: 2026-11-10
         status: current
         decision: approved
@@ -1021,7 +1021,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-10-console-proposal-capture-identity.md
+        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
         reviewed_on: 2026-11-10
         status: current
         decision: approved

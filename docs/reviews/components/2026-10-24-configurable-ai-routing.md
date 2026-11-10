@@ -1,5 +1,36 @@
 # Configurable AI routing security review
 
+## Repository selection clarity and initial read — 2026-11-10
+
+Console PR175, merged as `fecf9e0206820aa54a4139eb20979db30a41e1e1`,
+clarifies the main initiative repository for Delivery, the
+incubation source home for Prototype, and Delivery's separate per-work-item
+repository selection. The reviewed candidate is
+`e65a47af015412616408d4028378dc48db849d97`; required source checks and delegated
+human approval passed for that exact head. Repository modes, canonical
+payloads, custody references, admission, source-transfer authority, attribution
+and historical decisions are preserved.
+
+The shared repository-choice hook now reports its first unresolved read as
+loading rather than unavailable. Initial submission still requires current
+admitted repository evidence; settled errors remain errors and background
+refresh behavior is preserved. No browser or operator authority is added.
+
+Architecture guards, all 1,065 semantic tests, TypeScript, production build,
+public-source/repository checks and dependency audit pass locally. Fifteen
+focused browser cases pass, including route choices and exact repository
+payloads, pending/error/retry states and historical read-only handoffs.
+Two local build worker SIGSEGVs were followed by a successful checked build
+with bounded concurrency; native compiler bytes matched the locked archive.
+This is not a claim that host hardware instability has been repaired.
+
+Accept this bounded maintenance under the existing composed boundary. Only
+the Console source revision advances; other owner revisions, Platform tree,
+architecture, durable-orchestration and human source-review controls remain.
+Normal accepted-source activation and native readback are required before
+operating qualification. No project runtime implementation, additional
+repository grant or Stage/Prod authority is approved by this amendment.
+
 ## Proposal capture identity maintenance — 2026-11-10
 
 The [capture identity reassessment](2026-11-10-console-proposal-capture-identity.md)
