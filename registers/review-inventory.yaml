@@ -177,8 +177,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-07-console-register-navigation.md
-        reviewed_on: 2026-11-07
+        path: docs/reviews/components/2026-11-11-work-design-system-context.md
+        reviewed_on: 2026-11-11
         status: current
         decision: approved
         review_areas:
@@ -243,6 +243,10 @@ review_inventory:
             path: contracts/products.yaml
           - repo: workspace-governance
             path: contracts/schemas/product-publication-manifest.schema.json
+          - repo: workspace-governance
+            path: skills-src/project-delivery-operator/SKILL.md
+          - repo: workspace-governance
+            path: docs/delivery-art-operator-path.md
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -433,8 +437,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
-        reviewed_on: 2026-11-10
+        path: docs/reviews/components/2026-11-11-work-design-system-context.md
+        reviewed_on: 2026-11-11
         status: current
         decision: approved
         review_areas:
@@ -721,6 +725,12 @@ review_inventory:
             path: src/console-integration/source-authoring/live-runtime/use-source-assistant.ts
           - repo: governance-operations-console
             path: docs/product/prototype-inspection-maintenance.md
+          - repo: governance-operations-console
+            path: docs/product/work-design-live-integration.md
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/product-adapters/context-board/work-design-context-board-starters.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/workflows/work-design/session-controller/use-work-design-session-state.ts
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -804,8 +814,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-10-console-source-editor-assistance-preview.md
-        reviewed_on: 2026-11-10
+        path: docs/reviews/components/2026-11-11-work-design-system-context.md
+        reviewed_on: 2026-11-11
         status: current
         decision: approved
         review_areas:
@@ -1007,6 +1017,10 @@ review_inventory:
             path: src/prototype-landing/overview.js
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-11-09-source-editor-assistant.md
+          - repo: operator-orchestration-service
+            path: src/work-design/service.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-11-11-work-design-system-context.md
   products:
     console-todo-1275:
       owner_repo: platform-engineering
