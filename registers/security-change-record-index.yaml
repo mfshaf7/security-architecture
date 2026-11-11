@@ -3908,6 +3908,17 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-11-work-design-system-context.md
+  date: '2026-11-11'
+  short_title: 2026-11-11-work-design-system-context
+  review_areas:
+  - ai
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'

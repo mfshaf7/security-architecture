@@ -1,5 +1,37 @@
 # Configurable AI routing security review
 
+## Work Design system context and automatic Intake clarity — 2026-11-11
+
+The [scoped delta review](2026-11-11-work-design-system-context.md) accepts the
+Console, OOS and Workspace Governance maintenance revisions in the current
+source list below. Context explains the target system before ART decomposition;
+questions remain answer-only and explicitly requested drafts remain advisory.
+Generic starters preserve saved identity and geometry; historical finalized
+snapshots are not rewritten. The Intake wording describes the existing automatic
+handoff and History receipt rather than introducing another manual gate.
+
+Only these three owner revisions advance. Platform revision/tree, CGG, WGCF,
+Studio, architecture custody and durable-orchestration acceptance are retained.
+The generated owner-change index includes the new OOS record. Existing reviews
+continue to govern unchanged boundaries. Native Console operating proof follows
+normal activation; this source acceptance is not semantic model qualification.
+
+## Work Design system context and automatic Intake clarity — 2026-11-11
+
+The [scoped delta review](2026-11-11-work-design-system-context.md) accepts the
+Console, OOS and Workspace Governance maintenance revisions in the current
+source list below. Context explains the target system before ART decomposition;
+questions remain answer-only and explicitly requested drafts remain advisory.
+Generic starters preserve saved identity and geometry; historical finalized
+snapshots are not rewritten. The Intake wording describes the existing automatic
+handoff and History receipt rather than introducing another manual gate.
+
+Only these three owner revisions advance. Platform revision/tree, CGG, WGCF,
+Studio, architecture custody and durable-orchestration acceptance are retained.
+The generated owner-change index includes the new OOS record. Existing reviews
+continue to govern unchanged boundaries. Native Console operating proof follows
+normal activation; this source acceptance is not semantic model qualification.
+
 ## Verified integrity-failure resumption — 2026-11-10
 
 The [bounded verification delta](2026-11-10-runtime-latch-recheck.md) accepts
@@ -69,10 +101,10 @@ includes Console PR173's assistant HTTP-parser correction and standard shared
 dialog scrollbar, with existing source/model authority retained.
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@fecf9e0206820aa54a4139eb20979db30a41e1e1`
-- `operator-orchestration-service@9e68d7bb1aee1f94e766fa10784fbddc7726d953`
+- `governance-operations-console@564dc0235b3e2a3932782405342cba10f73b04f1`
+- `operator-orchestration-service@6b909e7d3ecdd3845f568b2bdbda277c0ca83ac0`
 - `platform-engineering@a86088fdd6b0c323b21a23a7fd51f63bbf374b16`
-- `workspace-governance@02891e37b8abb1cc0eccfbf56fb1812c8f9f2e80`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
 - `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
 - `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
 - `platform-engineering-tree@fab6bf61fe38668665639af2951292e6ba157c3e`
