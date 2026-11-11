@@ -731,6 +731,12 @@ review_inventory:
             path: src/domain-workspaces/delivery/product-adapters/context-board/work-design-context-board-starters.ts
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/presentation/workflows/work-design/session-controller/use-work-design-session-state.ts
+          - repo: governance-operations-console
+            path: src/product-apps/context-board/context-board-model.ts
+          - repo: governance-operations-console
+            path: src/product-apps/context-board/context-board-advisor-patch.ts
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/live-runtime/work-design-draft-advisor.ts
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component

@@ -1,5 +1,16 @@
 # Configurable AI routing security review
 
+## Native Context board vocabulary qualification — 2026-11-11
+
+The existing [system-context delta](2026-11-11-work-design-system-context.md)
+records successful native answer-only preservation and the rejected draft that
+exposed missing empty-board card choices. Console now supplies its unchanged
+canonical kind vocabulary through existing advisor field metadata; the model
+type, strict validator and advertised choices share one source. Unsupported
+output still fails atomically. This advances only the Console revision in the
+current source list; other owners and all inherited boundaries remain accepted.
+Native drafting/save qualification follows normal accepted-source activation.
+
 ## Work Design system context and automatic Intake clarity — 2026-11-11
 
 The [scoped delta review](2026-11-11-work-design-system-context.md) accepts the
@@ -101,7 +112,7 @@ includes Console PR173's assistant HTTP-parser correction and standard shared
 dialog scrollbar, with existing source/model authority retained.
 
 - `context-governance-gateway@e29c59a4ed56048f6aa47bb924899566a5e68bae`
-- `governance-operations-console@564dc0235b3e2a3932782405342cba10f73b04f1`
+- `governance-operations-console@e3b1ecb7b763db602b806dd8a7936501861cae69`
 - `operator-orchestration-service@6b909e7d3ecdd3845f568b2bdbda277c0ca83ac0`
 - `platform-engineering@a86088fdd6b0c323b21a23a7fd51f63bbf374b16`
 - `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`

@@ -45,10 +45,37 @@ Identity, secrets and runtime: no new credential, service, account access or hos
 
 approved. Commission through the existing exact-source composition only after required owner checks and delegated human reviews. This accepts the bounded change; operating qualification remains separate. No new finding, risk waiver, permission or autonomous approval is introduced.
 
+## Native qualification correction: empty-board drafting contract
+
+The answer-only native request succeeded with the selected gpt-6.1-sol High
+binding and preserved the existing note and empty diagram. A larger draft turn
+ended without confirmed completion within the provider window; no fallback or
+partial edit occurred. A smaller request returned meaningful architectural
+content but invented kind `box`, which the existing strict board validator
+correctly rejected atomically. These failures are retained operating evidence,
+not successful diagram qualification.
+
+The empty board exposed no supported card examples, while the drafting prompt
+only said to use existing diagram kinds. The bounded correction gives the
+existing board field its canonical card choices through existing `allowedValues`
+metadata. The model type and validator now consume the same readonly vocabulary;
+the accepted set remains unchanged. Existing generic draft instructions explain
+those choices and valid rectangular/coordinate fields. The operator need not
+supply implementation tokens, and unsupported output remains rejected.
+
+This changes only Console draft guidance/model metadata. No endpoint, model,
+effort, provider timeout, canonical permission or fallback policy changes. The
+regression sends the empty-board scope through ordinary serialization and proves
+that its advertised kinds are accepted by the real board consumer, while an
+invented kind remains rejected. Final native drafting/save proof follows the
+accepted-source refresh. Use the existing complete-runtime activation after exact source acceptance so
+all consumers receive the new Security decision, including services whose source
+is unchanged. The preceding core activation and image integrity checks passed.
+
 ## Exact reviewed owner sources
 
 | Owner | Merged commit | Reviewed tree |
 | --- | --- | --- |
-| governance-operations-console | `564dc0235b3e2a3932782405342cba10f73b04f1` | `44910dd680bc01be767b182beb1cde78e1109385` |
+| governance-operations-console | `e3b1ecb7b763db602b806dd8a7936501861cae69` | `c71d11086bcc525c66d743d018492d4ceaff8cbc` |
 | operator-orchestration-service | `6b909e7d3ecdd3845f568b2bdbda277c0ca83ac0` | `46b1d49922046f560436af94e270e40f5ccd69a7` |
 | workspace-governance | `dd0a0c094e880e40297dcea484ebd8ad3c75ef7b` | `06fd38e8b0417116139810122ad481d481e8570f` |
