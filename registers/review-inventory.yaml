@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-10-runtime-latch-recheck.md
-        reviewed_on: 2026-11-10
+        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        reviewed_on: 2026-11-18
         status: current
         decision: approved
         review_areas:
@@ -177,8 +177,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-11-work-design-system-context.md
-        reviewed_on: 2026-11-11
+        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        reviewed_on: 2026-11-18
         status: current
         decision: approved
         review_areas:
@@ -338,8 +338,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        reviewed_on: 2026-11-18
         status: current
         decision: approved
         review_areas:
@@ -437,8 +437,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-11-work-design-system-context.md
-        reviewed_on: 2026-11-11
+        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        reviewed_on: 2026-11-18
         status: current
         decision: approved
         review_areas:
@@ -820,8 +820,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-11-work-design-system-context.md
-        reviewed_on: 2026-11-11
+        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        reviewed_on: 2026-11-18
         status: current
         decision: approved
         review_areas:
@@ -1052,8 +1052,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-24-configurable-ai-routing.md
-        reviewed_on: 2026-11-10
+        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        reviewed_on: 2026-11-18
         status: current
         decision: approved
         review_areas:
@@ -1322,8 +1322,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-07-console-register-navigation.md
-        reviewed_on: 2026-11-07
+        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        reviewed_on: 2026-11-18
         status: current
         decision: approved
         review_areas:
@@ -1566,8 +1566,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-10-15-governance-console-platform-operation.md
-        reviewed_on: 2026-10-23
+        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        reviewed_on: 2026-11-18
         status: current
         decision: approved
         review_areas:
@@ -1746,8 +1746,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-10-console-source-editor-assistance-preview.md
-        reviewed_on: 2026-11-10
+        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        reviewed_on: 2026-11-18
         status: current
         decision: approved
         review_areas:
