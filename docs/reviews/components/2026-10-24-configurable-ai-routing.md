@@ -1,5 +1,29 @@
 # Configurable AI routing security review
 
+## Coordinated advisor, Context Brief, Execution and Catalog acceptance — 2026-11-18
+
+The [fresh full-batch delta](2026-11-18-console-advisor-execution-catalog.md)
+approves the four now-merged implementation owners for normal local activation.
+It covers trusted work guides, complete selected/upstream context, private bounded
+conversation recovery, native constrained advisory replies, multi-view Context
+Brief, Execution clarity/recovery, Catalog truth and scoped project membership.
+Final decisions remain explicit; provider, source, project/path and canonical
+backend authority stay bounded. Source acceptance is distinct from live
+commissioning and real-provider semantic quality. No Stage/Prod or separately
+pending governed-release capability is activated by this decision.
+
+Current exact accepted sources:
+
+- `context-governance-gateway@b83b3978f04ce951226367a60117000290e1c86a`
+- `governance-operations-console@560946028f30d8706ee460be539a501a8f821355`
+- `operator-orchestration-service@492a2c6bb034cb649277658537e74bce66a0f69e`
+- `platform-engineering@7cb8c908909878d2b63aa3da5e4eeb043dfd21ca`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@5db0593967d13b43a09dfedd84c08528c2b93ae7`
+
+
 ## Native Context board vocabulary qualification — 2026-11-11
 
 The existing [system-context delta](2026-11-11-work-design-system-context.md)
