@@ -130,3 +130,50 @@ claiming commissioned availability. Native model semantic quality and broader
 future-work completeness are not established by deterministic conformance or
 this source decision. Preserve prior accepted runtime and original data for
 rollback; recurring known hardware instability is not repaired by this batch.
+
+
+## Native gateway configuration deployment amendment
+
+The first accepted-source rollout was rejected by native Kubernetes because
+client-side apply duplicated the rendered gateway runtime into a 356,140-byte
+annotation; the annotation limit is 262,144 bytes. The actual runtime data is
+337,473 bytes and is within the ConfigMap data limit. This is a native deployment
+admission failure, not damaged application data or a reason to relax AI schemas.
+
+Approve the existing profile's namespace/name-bound runtime ConfigMap deployment
+through server-side apply under `platform-governed-ai-gateway`. Only that finite
+Platform-owned runtime object may transfer conflicting fields. Other resources
+retain ordinary apply, and no caller-supplied object or arbitrary forced resource
+path is introduced. Existing dynamic model-selection replacement semantics are
+retained. No model, caller, credential, namespace, source, canonical mutation or
+production authority expands.
+
+Native Kubernetes server dry-run accepts all 16 exact rendered resources through
+the amended split path. Structural equality proves every original resource and
+all runtime data are preserved. The dry-run performs zero mutations; it does not
+claim live commissioning. Source validators, admitted profile/runtime tests and
+exact-head CI remain required. Merge the Platform repair first, regenerate the
+owner change-record index, then bind its exact merged revision/tree in the
+existing composed decision before normal activation. Preserve the original
+failed rollout and prior accepted sources; do not delete objects, trim runtime
+content or introduce a new acceptance mechanism.
+
+
+### Exact source after native deployment amendment
+
+Platform [PR382](https://github.com/mfshaf7/platform-engineering/pull/382)
+passed exact-head CI and delegated review. The merged source tree equals Gary
+candidate `2db9f7de3d8b6e83777adc213cbceb22fb2278f1`. The following source set
+supersedes the earlier Platform pin for this bounded deployment amendment:
+
+- `context-governance-gateway@b83b3978f04ce951226367a60117000290e1c86a`
+- `governance-operations-console@560946028f30d8706ee460be539a501a8f821355`
+- `operator-orchestration-service@492a2c6bb034cb649277658537e74bce66a0f69e`
+- `platform-engineering@6f52edf1b8d2a3b747a72c64c777ba64b5ffd2bd`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@938ebaebd9d1c77b9f1a41d714d564346b8920b0`
+
+All other accepted boundaries, architecture, durable manifest and native
+commissioning obligations remain unchanged.

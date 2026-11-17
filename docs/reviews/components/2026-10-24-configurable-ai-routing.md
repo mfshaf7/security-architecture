@@ -1,5 +1,26 @@
 # Configurable AI routing security review
 
+## Native gateway ConfigMap deployment acceptance — 2026-11-18
+
+The [coordinated review amendment](2026-11-18-console-advisor-execution-catalog.md#native-gateway-configuration-deployment-amendment)
+accepts Platform PR382 and its bounded native deployment repair. Server-side
+field takeover applies only to the exact Platform-owned gateway runtime
+ConfigMap; all other resources retain ordinary apply. All 16 native server
+dry-run resources and runtime contents are preserved with zero mutations.
+No AI schema, provider, caller, authority or durable manifest is relaxed.
+The following is the current exact accepted source set; earlier lists retain
+their historical review scope. Normal activation/readback remains required.
+
+- `context-governance-gateway@b83b3978f04ce951226367a60117000290e1c86a`
+- `governance-operations-console@560946028f30d8706ee460be539a501a8f821355`
+- `operator-orchestration-service@492a2c6bb034cb649277658537e74bce66a0f69e`
+- `platform-engineering@6f52edf1b8d2a3b747a72c64c777ba64b5ffd2bd`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@938ebaebd9d1c77b9f1a41d714d564346b8920b0`
+
+
 ## Coordinated advisor, Context Brief, Execution and Catalog acceptance — 2026-11-18
 
 The [fresh full-batch delta](2026-11-18-console-advisor-execution-catalog.md)
