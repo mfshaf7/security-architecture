@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        path: docs/reviews/components/2026-11-18-work-design-reasoning.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -338,7 +338,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        path: docs/reviews/components/2026-11-18-work-design-reasoning.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -437,7 +437,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        path: docs/reviews/components/2026-11-18-work-design-reasoning.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -820,7 +820,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        path: docs/reviews/components/2026-11-18-work-design-reasoning.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -1052,7 +1052,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        path: docs/reviews/components/2026-11-18-work-design-reasoning.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -1566,7 +1566,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        path: docs/reviews/components/2026-11-18-work-design-reasoning.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -1746,7 +1746,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
+        path: docs/reviews/components/2026-11-18-work-design-reasoning.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved

@@ -1,5 +1,29 @@
 # Configurable AI routing security review
 
+## Detailed Work Design reasoning acceptance — 2026-11-18
+
+The [fresh bounded review](2026-11-18-work-design-reasoning.md) accepts the
+merged Context/Build Tree reasoning repair and terminal input-capacity correction.
+Complete CGG admission, native reply grammar, source and operator binding,
+original uncertain-request custody and final human decisions remain unchanged.
+No provider, tool, permission or automatic fallback authority is added.
+The current exact accepted source set supersedes older historical lists:
+
+- `context-governance-gateway@7a84f3cf45a532538f3be259b51892abb644b7af`
+- `governance-operations-console@711b0cba61f9f3a15c64c7271bea196eed109f5c`
+- `operator-orchestration-service@bcd89bb389ec5887f6e33f9a3ae0fcbaa08b7270`
+- `platform-engineering@abe0591cc40cc2881e305356a50853ffee5e861b`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@b9533d6265535e9e80deec46979e9bf2595832ef`
+
+Architecture: `wgcf://artifacts/delivery-art/sha256/7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`,
+digest `sha256:7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`.
+Normal activation and current native readback are still required; this does
+not claim model quality or primary Epic1384 completion.
+
+
 ## Native gateway ConfigMap deployment acceptance — 2026-11-18
 
 The [coordinated review amendment](2026-11-18-console-advisor-execution-catalog.md#native-gateway-configuration-deployment-amendment)
