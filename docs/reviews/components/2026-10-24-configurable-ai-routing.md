@@ -2340,3 +2340,22 @@ action, write descriptor or mutable-data scope is added. Other accepted sources,
 durable manifest and worker digest are unchanged. Deliberate installation and
 fresh native complete-runtime readiness remain required. Manual cache-reset
 evidence is not an automatic-recovery witness or a hardware-reliability claim.
+
+
+## Refinement field authority and Delivery feedback — 2026-11-19
+The [paired source delta](2026-11-19-refinement-advisor-context.md) accepts the operator-reviewed maintenance batch after Gary publication, exact-head local/provider checks and delegated human review. CGG PR34, OOS PR419 and Console PR185 are merged; each candidate and squash-merged tree is identical. The original Work Design Apply and all canonical work-item data remain retained.
+The current exact source set is:
+- `context-governance-gateway@7452d8a076fd7860dd25cd8c68aa310dc6a089d1`
+- `governance-operations-console@281dc1c791aaf4497a90a21e60bffa3df4c12258`
+- `operator-orchestration-service@ba38ed5d43560c809a810d98e0a9ecf0c293527c`
+- `platform-engineering@2134579b34cf8d2cdc48b8af4df8a8f1066ffb02`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@9891e02443e0b5d8fbbcb3ad7e97a6f8fe6a61de`
+
+The Console uses the shared diagram preview and Work Design tree/reader patterns; static submission feedback is replaced by pending acknowledgement, observed owner events and exact receipts. Shared Platform, Publication and Closeout actions retain existing endpoints with submission/navigation guards. Selected-field advice, per-record native/Catalog choices, separately identified unaccepted drafts and integer/decimal constraints retain deterministic source validation through CGG. Old handoff completion cannot close a new pass, and current values cannot stand in for unavailable accepted historical payloads.
+
+Local proof includes 107 CGG tests, 2,039 OOS tests with two existing skips, full API/schema/bundle and native mutation-contract gates, API/worker build/smoke, and 1,172 Console semantic checks plus optimized build/types/architecture/repository validation and a clean production dependency audit. Controlled browser journeys cover diagrams, pending Apply, source hierarchy/readability, individual/shared advice and choices, integer rejection and old-handoff recovery. These qualify source behavior, not a fabricated live Apply or model result.
+
+The generated Security owner-record index follows the merged OOS record. This decision replaces only the three executable source pins above; Platform source/tree, model routing and effort, dedicated account custody, credentials, current provider scopes, durable orchestration manifest/worker and final-decision controls are unchanged. The main agent retains review closure under standing operator delegation, not independent assurance. Normal accepted-source activation and native read-only/AI-assist qualification follow; no real Work Design or Refinement Apply is replayed. Previous accepted source/decision and retained receipts remain rollback evidence.
