@@ -353,6 +353,7 @@ review_inventory:
           - ai
         review_trigger_ids:
           - refinement-advisor-planning-context-and-governed-field-values
+          - refinement-related-draft-http-schema-parity
           - advisor-native-tool-contract-and-original-response-delivery
           - complete-composition-dedicated-work-design-caller-denial
           - prototype-real-subject-context-binding
@@ -454,6 +455,7 @@ review_inventory:
           - ai
         review_trigger_ids:
           - refinement-advisor-planning-context-and-governed-field-values
+          - refinement-packet-bounded-read-and-explicit-retry
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - governance-console-source-graduation
