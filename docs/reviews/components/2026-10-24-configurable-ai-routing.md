@@ -1,5 +1,17 @@
 # Configurable AI routing security review
 
+## Current Console undo-preservation acceptance — 2026-11-18
+
+The [fresh preservation follow-up](2026-11-18-advisor-tool-qualification.md#undo-preservation-follow-up)
+approves Gary [Console183](https://github.com/mfshaf7/governance-operations-console/pull/183)
+at `governance-operations-console@f3c5633459eab0502ed21447467436c3628fbd24`. All1,153 tests and final owner checks,
+exact-head CI and delegated approval pass; the merged tree equals the candidate.
+Undo retains later manual diagram names and explanations. This pin supersedes
+the preceding Console pin only. All other revisions, Platform tree, architecture,
+account, model/effort, durable manifest and decision boundaries below are unchanged.
+Normal accepted activation and native operating evidence remain required.
+
+
 ## Exact merged source acceptance — advisor tools, 2026-11-18
 
 The [fresh tool and response review](2026-11-18-advisor-tool-qualification.md)

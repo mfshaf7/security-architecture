@@ -79,3 +79,19 @@ follow the merged owner records before source closeout.
 ## Exact composition
 
 The [composed review](2026-10-24-configurable-ai-routing.md#exact-merged-source-acceptance--advisor-tools-2026-11-18) records the current accepted revisions and normal activation boundary. The three owner PRs and candidate/merge tree proofs are recorded there.
+
+## Undo preservation follow-up
+
+Source review found that restoring an older single canvas could strip its
+new view wrapper even after the operator manually changed its name or
+explanation. The corrected preservation check compacts only an untouched
+legacy default view; later manual metadata, other views and canvas content
+remain. Production-helper regression cases cover both independent manual
+fields and an unchanged default canvas. All 1,153 Console tests, architecture,
+types, optimized build, committed source validation and dependency audit pass.
+This is a bounded local preservation correction, with unchanged native advice,
+CGG, model/effort, account and final-decision boundaries. It introduces no
+canonical write or authority. The exact subsequently merged Console source
+supersedes its previous pin in the composed decision before normal activation.
+
+Gary [Console183](https://github.com/mfshaf7/governance-operations-console/pull/183) merged at `f3c5633459eab0502ed21447467436c3628fbd24` with passing exact-head CI, delegated review and matching source tree. This source is approved for the existing normal local activation; it adds no provider or final-decision authority.
