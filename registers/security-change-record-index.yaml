@@ -3933,6 +3933,17 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-18-advisor-tool-contract.md
+  date: '2026-11-18'
+  short_title: 2026-11-18-advisor-tool-contract
+  review_areas:
+  - ai
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-11-18-work-design-reasoning.md
   date: '2026-11-18'
   short_title: 2026-11-18-work-design-reasoning
@@ -4730,6 +4741,17 @@ change_records:
   - ai
   - identity
   - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-11-18-advisor-tools-and-transport.md
+  date: '2026-11-18'
+  short_title: 2026-11-18-advisor-tools-and-transport
+  review_areas:
+  - ai
   - runtime
   findings: []
   risks: []
