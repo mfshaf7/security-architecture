@@ -1,5 +1,32 @@
 # Configurable AI routing security review
 
+## Current brief and advisor transport acceptance — 2026-11-18
+
+The [fresh bounded review](2026-11-18-brief-and-advisor-transport.md) approves
+Gary [OOS418](https://github.com/mfshaf7/operator-orchestration-service/pull/418)
+and [Console184](https://github.com/mfshaf7/governance-operations-console/pull/184).
+Exact-head CI, standing delegated approval and candidate/merged tree equality
+are proven. Complete retained-diagram/brief review and note editing preserve
+history; request identity and bounded typed-reply transport are coherent.
+This exact current set supersedes historical pins below and preserves prior
+credential, provider, final-decision and rollback acceptance.
+
+- `context-governance-gateway@7a84f3cf45a532538f3be259b51892abb644b7af`
+- `governance-operations-console@35fe587b0b77fd0aea2cc2a7a974464c6cbdb43b`
+- `operator-orchestration-service@1df4a93e93b5c987595056c9060f0d0b203bde56`
+- `platform-engineering@2134579b34cf8d2cdc48b8af4df8a8f1066ffb02`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@9891e02443e0b5d8fbbcb3ad7e97a6f8fe6a61de`
+
+Architecture `wgcf://artifacts/delivery-art/sha256/7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`, digest `sha256:7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`. The existing durable manifest/worker digest, model/effort, account and
+canonical decision boundaries remain. This is exact source acceptance for the
+existing local activation, not operating proof or Stage/Prod authority. The
+retained completed native reply must not be regenerated merely to prove this
+transport correction. Current normal activation and Console readback follow.
+
+
 ## Current credential-renewal acceptance — 2026-11-18
 
 The [fresh credential-consumption review](2026-11-18-credential-refresh-without-advisor-interruption.md)
