@@ -123,3 +123,28 @@ digest `sha256:7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`
 manifest, worker digest, dedicated account, caller and explicit decision
 boundaries remain unchanged. Native provider quality and current operating
 readbacks remain separate commissioning evidence.
+
+## Native conversation follow-up
+
+Native Console qualification found a retained 2,219-character working message
+rejected by an obsolete 2,000-character BFF guard before OOS or model invocation.
+The existing shared conversation and OOS schemas admit complete messages up to
+12,000 characters. The common Work Design HTTP adapter now reuses that shared
+validator for Context and Build Tree; invalid input reports context required,
+not a backend outage. Extra fields, malformed Unicode, more than eight turns
+and messages over the existing bound fail before an owner call. No stored
+conversation is truncated or removed. Other Console agent adapters and owner
+contracts were inspected and already match the supported conversation bound.
+
+Actual-handler regressions failed before and passed after for both tasks, with
+complete long messages and follow-up replies forwarded over local HTTP. All
+1,136 Console tests, architecture guards, typecheck, optimized build, fetched-base
+committed repository validation and dependency audit passed.
+Gary [Console 181](https://github.com/mfshaf7/governance-operations-console/pull/181) received exact-head
+passing CI and delegated-human review before merging. The candidate and merged
+source trees match. This bounded consumer correction is approved at
+`governance-operations-console@177ed8942abe61c02a26787fbcc0771b2a0f3a02`, superseding the preceding Console pin.
+All other accepted revisions, architecture, provider/permission bindings, CGG
+budgets, final operator decisions and unknown-request custody remain unchanged.
+Normal accepted activation and real-provider quality checks remain required;
+this source review does not claim those calls have succeeded.

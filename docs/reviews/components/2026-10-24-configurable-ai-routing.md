@@ -1,5 +1,14 @@
 # Configurable AI routing security review
 
+## Native Work Design conversation alignment — 2026-11-18
+
+The [existing Work Design review](2026-11-18-work-design-reasoning.md#native-conversation-follow-up)
+accepts Console181 at `177ed8942abe61c02a26787fbcc0771b2a0f3a02`: both native advisor handlers
+reuse the existing complete-message conversation validator. This corrects a
+consumer mismatch without changing shared/OOS limits, authority, model access
+or final decisions. Current exact Console acceptance supersedes the prior pin;
+normal activation and native quality evidence remain required.
+
 ## Detailed Work Design reasoning acceptance — 2026-11-18
 
 The [fresh bounded review](2026-11-18-work-design-reasoning.md) accepts the
@@ -10,7 +19,7 @@ No provider, tool, permission or automatic fallback authority is added.
 The current exact accepted source set supersedes older historical lists:
 
 - `context-governance-gateway@7a84f3cf45a532538f3be259b51892abb644b7af`
-- `governance-operations-console@711b0cba61f9f3a15c64c7271bea196eed109f5c`
+- `governance-operations-console@177ed8942abe61c02a26787fbcc0771b2a0f3a02`
 - `operator-orchestration-service@bcd89bb389ec5887f6e33f9a3ae0fcbaa08b7270`
 - `platform-engineering@abe0591cc40cc2881e305356a50853ffee5e861b`
 - `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
