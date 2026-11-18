@@ -441,7 +441,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-advisor-tool-qualification.md
+        path: docs/reviews/components/2026-11-18-brief-and-advisor-transport.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -452,6 +452,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - governance-console-source-graduation
           - console-registry-refresh-and-attention-projection-truth
@@ -825,7 +826,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-credential-refresh-without-advisor-interruption.md
+        path: docs/reviews/components/2026-11-18-brief-and-advisor-transport.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -836,6 +837,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - bounded-console-register-navigation-and-source-pages
           - model-profile-native-lifecycle-source-and-policy-admission
@@ -1060,7 +1062,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-advisor-tool-qualification.md
+        path: docs/reviews/components/2026-11-18-brief-and-advisor-transport.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -1071,6 +1073,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - console-partial-stream-recovery-and-compact-register-viewport
           - model-profile-native-lifecycle-source-and-policy-admission
@@ -1756,7 +1759,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-credential-refresh-without-advisor-interruption.md
+        path: docs/reviews/components/2026-11-18-brief-and-advisor-transport.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -1767,6 +1770,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - model-profile-native-lifecycle-source-and-policy-admission
           - registered-workflow-model-profile-request-preparation
