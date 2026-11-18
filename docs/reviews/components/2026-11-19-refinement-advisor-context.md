@@ -99,3 +99,44 @@ before Landing Unit closeout. Existing accepted source pins remain in force.
 ## Exact merged-source acceptance
 
 CGG PR34, OOS PR419 and Console PR185 are approved and merged after exact-head checks. The current composed YAML and companion review bind their exact merged commits and preserve the other four source pins and Platform tree. The generated change-record index includes the new merged OOS record. This publication also covers the held shared diagram/tree/reader, Apply progress/log/receipt, persistence and busy/navigation repairs described in the Console tracking surface; they add no writer or final-decision authority. Runtime activation and native advisor/read-only source checks follow this source acceptance, without replaying Epic 1384 Apply.
+
+
+## Native Refinement admission and read states — 2026-11-19
+
+Native qualification exposed two defects after the preceding source acceptance:
+the multi-record packet GET inherited a 12-second deadline, and the HTTP parser
+omitted the already-admitted related-draft property. CGG PR35 and Console PR186
+repair these existing paths. Exact-head checks, delegated review and equal
+candidate/merged trees pass. The current accepted composition is:
+
+- `context-governance-gateway@a28f3713c622cc1ad35dabba0cdb600507be76c0`
+- `governance-operations-console@1ab8e14f6e09d76009e34141e57e08697b6925d5`
+- `operator-orchestration-service@ba38ed5d43560c809a810d98e0a9ecf0c293527c`
+- `platform-engineering@2134579b34cf8d2cdc48b8af4df8a8f1066ffb02`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@9891e02443e0b5d8fbbcb3ad7e97a6f8fe6a61de`
+
+The HTTP model admits the existing bounded, typed related-draft list; unknown
+properties, foreign targets and oversize values are denied. Actual HTTP tests
+compare published and implemented property sets. A real current work-context
+replay through the isolated HTTP ingress succeeds with redaction and digest
+checks; this is ingress evidence, not a model execution or canonical mutation.
+
+The Console packet GET has a finite 60-second budget. Apply acknowledgement and
+polls remain at 12 seconds and advice remains at 180 seconds. Shared loading and
+failure frames preserve selected-item context, disclose technical diagnostics
+once and offer an explicit GET-only retry. No cache, automatic Apply/advice
+resubmission, fallback authority, credentials, caller or model scope is added.
+CGG's full 109 tests and Console's full 1,172 semantic checks, types, architecture,
+repository validation, optimized build and clean dependency audit pass. Three
+controlled browser journeys prove loading, failure and read-only retry at
+1280/2560 widths. Actual-backend preview navigation reaches the original 1384
+workbench and its current choices without replaying Apply.
+
+Approved for this bounded maintenance delta. The current composed decision binds these exact revisions.
+Normal accepted-source activation, native advisor response and same-source
+readback follow this acceptance. The original work tree, source version and
+receipts remain preserved; neither source tests nor ingress replay stand in for
+live model qualification. The main agent retains delegated review closure.
