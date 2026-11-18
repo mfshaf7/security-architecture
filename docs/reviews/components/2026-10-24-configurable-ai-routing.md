@@ -1,5 +1,27 @@
 # Configurable AI routing security review
 
+## Exact merged source acceptance — advisor tools, 2026-11-18
+
+The [fresh tool and response review](2026-11-18-advisor-tool-qualification.md)
+approves the following exact merged source set for normal local activation.
+Gary-authored [Platform385](https://github.com/mfshaf7/platform-engineering/pull/385),
+[OOS416](https://github.com/mfshaf7/operator-orchestration-service/pull/416) and
+[Console182](https://github.com/mfshaf7/governance-operations-console/pull/182)
+have passing exact-head checks, delegated human approval and matching candidate
+and merged trees. This current set supersedes historical pins below. Native
+quality remains an operating qualification; source review alone does not prove it.
+
+- `context-governance-gateway@7a84f3cf45a532538f3be259b51892abb644b7af`
+- `governance-operations-console@74eb6ef02863020316cf22cfb2a83c0591fa608e`
+- `operator-orchestration-service@26699d628a8217910d0a29aa4b63b37cda78007a`
+- `platform-engineering@76e8a5d6de3e6f735fc029cb7c965a359148018f`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@c1bc0b80561ef4dd298828bf8b5df09797aba88d`
+
+Architecture `wgcf://artifacts/delivery-art/sha256/7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`, digest `sha256:7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`. The dedicated provider account, CGG boundaries, existing durable manifest and worker digest, final human decisions and retained private state remain unchanged.
+
 ## Native Work Design conversation alignment — 2026-11-18
 
 The [existing Work Design review](2026-11-18-work-design-reasoning.md#native-conversation-follow-up)
