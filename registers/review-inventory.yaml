@@ -1756,7 +1756,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-advisor-tool-qualification.md
+        path: docs/reviews/components/2026-11-18-credential-refresh-without-advisor-interruption.md
         reviewed_on: 2026-11-18
         status: current
         decision: approved
@@ -1800,6 +1800,8 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - ai-security-and-governance
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/repository-custody/credential-files.js
           - repo: operator-orchestration-service
             path: src/repository-custody/connections.js
           - repo: operator-orchestration-service

@@ -9,7 +9,9 @@ local-draft consumer and isolated browser renderer validated that response witho
 inference replay. The operator's original live Work Design session is unchanged.
 Landing Unit Decision: `child_isolated_landing_unit`,
 `maintenance-credential-projection-review-20261118`.
-Main-agent delegated review is not independent assurance.
+Main-agent delegated review is not independent assurance. This extends the
+[existing advisor/tool acceptance](2026-11-18-advisor-tool-qualification.md);
+its unchanged AI and final-decision boundaries remain accepted.
 
 ## Trust boundary and review
 
