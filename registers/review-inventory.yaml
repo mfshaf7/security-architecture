@@ -341,8 +341,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-advisor-tool-qualification.md
-        reviewed_on: 2026-11-18
+        path: docs/reviews/components/2026-11-19-refinement-advisor-context.md
+        reviewed_on: 2026-11-19
         status: current
         decision: approved
         review_areas:
@@ -352,6 +352,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - refinement-advisor-planning-context-and-governed-field-values
           - advisor-native-tool-contract-and-original-response-delivery
           - complete-composition-dedicated-work-design-caller-denial
           - prototype-real-subject-context-binding
@@ -441,8 +442,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-brief-and-advisor-transport.md
-        reviewed_on: 2026-11-18
+        path: docs/reviews/components/2026-11-19-refinement-advisor-context.md
+        reviewed_on: 2026-11-19
         status: current
         decision: approved
         review_areas:
@@ -452,6 +453,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - refinement-advisor-planning-context-and-governed-field-values
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - governance-console-source-graduation
@@ -826,8 +828,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-brief-and-advisor-transport.md
-        reviewed_on: 2026-11-18
+        path: docs/reviews/components/2026-11-19-refinement-advisor-context.md
+        reviewed_on: 2026-11-19
         status: current
         decision: approved
         review_areas:
@@ -837,6 +839,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - refinement-advisor-planning-context-and-governed-field-values
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - bounded-console-register-navigation-and-source-pages
