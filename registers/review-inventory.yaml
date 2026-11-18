@@ -842,6 +842,7 @@ review_inventory:
           - ai
         review_trigger_ids:
           - refinement-advisor-planning-context-and-governed-field-values
+          - refinement-unicode-context-wire-digest-parity
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - bounded-console-register-navigation-and-source-pages

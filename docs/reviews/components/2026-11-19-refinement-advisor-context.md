@@ -140,3 +140,57 @@ Normal accepted-source activation, native advisor response and same-source
 readback follow this acceptance. The original work tree, source version and
 receipts remain preserved; neither source tests nor ingress replay stand in for
 live model qualification. The main agent retains delegated review closure.
+
+
+## Refinement Unicode wire binding — 2026-11-19
+
+Native navigation and canonical readback passed after the preceding activation,
+but the explanation-only advisor request was refused before model invocation.
+CGG hashes ASCII-escaped sorted JSON, while Refinement used UTF-8 ART digests for
+its three CGG wire checks. The original owner narrative contains PM², proving a
+real mismatch rather than a permission or model-capacity failure. The existing
+Source Authoring lifecycle helper already implements the CGG encoding.
+
+OOS extracts that unchanged helper for reuse, preserving its lifecycle export,
+and uses it only for the assist-request, complete-context and returned-envelope
+wire digests. Internal ART, request identity, runs and receipts retain their
+existing UTF-8 custody. Original source text is unchanged. Exact response
+identity, selected targets, source revision, redaction, budget and all denied
+authority checks remain required. There is no alternate-hash acceptance, raw
+fallback, added caller, new model permission or mutation path.
+
+Independent Python serialization exercises accented text, PM², CJK, DEL and a
+supplementary character through the whole service advice path. The actual CGG
+HTTP response for the original owner context passes the candidate OOS validator;
+the previous source fails both context and envelope digests. Controlled model
+replies qualify wiring only. Exact source acceptance and native qualification
+follow owner verification; the real Work Design and Refinement Apply are never
+replayed. Approved for this bounded maintenance delta under standing delegated
+review authority; main agent retains closure.
+
+
+## Native Unicode context acceptance — 2026-11-19
+
+This review accepts OOS PR420 after independent Python digest parity, actual CGG HTTP response
+validation, all 2,040 passing broker tests (two existing skips), full API/bundle/
+governance/base-aware checks and API/worker build/smoke. Exact-head provider
+checks pass, delegated approval preceded merge, and candidate/merged trees match.
+The accepted source set is now:
+
+- `context-governance-gateway@a28f3713c622cc1ad35dabba0cdb600507be76c0`
+- `governance-operations-console@1ab8e14f6e09d76009e34141e57e08697b6925d5`
+- `operator-orchestration-service@f08cdff28adcbc5b30b251b062a2a09c3103f753`
+- `platform-engineering@2134579b34cf8d2cdc48b8af4df8a8f1066ffb02`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@9891e02443e0b5d8fbbcb3ad7e97a6f8fe6a61de`
+
+Only the OOS executable pin changes from the preceding acceptance. The extracted
+existing lifecycle wire digest preserves its original behavior and export; all
+three Refinement wire digests use that encoding. UTF-8 ART/run/receipt custody,
+source text, source/target integrity checks and all authority denials remain.
+No fallback hash, new caller, model scope, credential or writer is approved.
+The generated owner-record index follows merged OOS. Native live qualification
+continues after normal activation; prior failed native advice was refused before
+model invocation. Original real work and Apply history remain unchanged.
