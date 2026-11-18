@@ -3944,6 +3944,18 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-18-credential-projection.md
+  date: '2026-11-18'
+  short_title: 2026-11-18-credential-projection
+  review_areas:
+  - identity
+  - secrets
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-11-18-work-design-reasoning.md
   date: '2026-11-18'
   short_title: 2026-11-18-work-design-reasoning
@@ -4752,6 +4764,18 @@ change_records:
   short_title: 2026-11-18-advisor-tools-and-transport
   review_areas:
   - ai
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: platform-engineering
+  path: docs/records/change-records/2026-11-18-credential-projection.md
+  date: '2026-11-18'
+  short_title: 2026-11-18-credential-projection
+  review_areas:
+  - identity
+  - secrets
   - runtime
   findings: []
   risks: []
