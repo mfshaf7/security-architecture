@@ -1,5 +1,29 @@
 # Configurable AI routing security review
 
+## Current credential-renewal acceptance — 2026-11-18
+
+The [fresh credential-consumption review](2026-11-18-credential-refresh-without-advisor-interruption.md)
+approves Gary [OOS417](https://github.com/mfshaf7/operator-orchestration-service/pull/417)
+and [Platform386](https://github.com/mfshaf7/platform-engineering/pull/386).
+Exact-head CI, standing delegated human approval and candidate/merge tree equality
+are proven. Routine GitHub renewal uses current files and stable PodTemplate;
+actual source/configuration and WGCF caller changes retain required rollouts.
+This exact current set supersedes historical pins below; existing Console undo
+and advisor-tool acceptance remain. No additional account/grant, native inference,
+autonomous decision or Stage/Prod authority is introduced.
+
+- `context-governance-gateway@7a84f3cf45a532538f3be259b51892abb644b7af`
+- `governance-operations-console@f3c5633459eab0502ed21447467436c3628fbd24`
+- `operator-orchestration-service@6f9068d129230986ea62e17b7f9625486ea8afe6`
+- `platform-engineering@2134579b34cf8d2cdc48b8af4df8a8f1066ffb02`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@9891e02443e0b5d8fbbcb3ad7e97a6f8fe6a61de`
+
+Architecture `wgcf://artifacts/delivery-art/sha256/7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`, digest `sha256:7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6`. Existing durable manifest, worker digest, model/effort, account and decision boundaries remain. Normal activation and actual renewal with an in-flight native reply are still operating qualifications.
+
+
 ## Current Console undo-preservation acceptance — 2026-11-18
 
 The [fresh preservation follow-up](2026-11-18-advisor-tool-qualification.md#undo-preservation-follow-up)
