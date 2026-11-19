@@ -2495,3 +2495,20 @@ Owner tests, architecture/type/build, mutation-contract checks and source image
 smoke passed. This accepts the exact merged source for normal dev-integration
 activation. Actual native qualification and the interrupted business update are
 still separate; neither source merge nor this decision certifies that update.
+
+## Reviewed work dependencies and Technical Plan errors — 2026-11-19
+
+The [bounded maintenance review](2026-11-19-technical-plan-dependencies.md)
+accepts [Console PR189](https://github.com/mfshaf7/governance-operations-console/pull/189)
+at `56cb4e3ccb933c666be8d516070b3b6f755bdd66`. Gary's exact candidate passed local
+CI-equivalent checks, browser interaction checks and provider CI; delegated human
+review/merge and candidate/merged tree equality are recorded. The companion YAML
+changes only that Console pin, retaining the other six owner revisions, Platform
+tree and orchestration manifest.
+
+Named prerequisite editing uses the existing reviewed OOS change-control writer
+and its original authorization, source revision, native relation validation and
+receipt boundaries. Safe error details explain invalid plans without removing
+the requirement that the proposed plan match recorded ART dependencies. Native
+qualification follows normal accepted-source activation; no synthetic result
+establishes that operating outcome or approves the pending initiative plan.
