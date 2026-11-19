@@ -2500,7 +2500,7 @@ still separate; neither source merge nor this decision certifies that update.
 
 The [bounded maintenance review](2026-11-19-technical-plan-dependencies.md)
 accepts [Console PR189](https://github.com/mfshaf7/governance-operations-console/pull/189)
-at `56cb4e3ccb933c666be8d516070b3b6f755bdd66`. Gary's exact candidate passed local
+at `governance-operations-console@56cb4e3ccb933c666be8d516070b3b6f755bdd66`. Gary's exact candidate passed local
 CI-equivalent checks, browser interaction checks and provider CI; delegated human
 review/merge and candidate/merged tree equality are recorded. The companion YAML
 changes only that Console pin, retaining the other six owner revisions, Platform
