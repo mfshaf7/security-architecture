@@ -92,3 +92,35 @@ reviewed local checks. Candidate and merged trees are identical. The main agent
 performed delegated human review and merge; the temporary source grant and
 branch were retired with strict owner cleanup. The existing composed decision
 binds this merged Console revision while preserving all other accepted pins.
+
+## Native missing-reference qualification correction
+
+The first native dependency operation succeeded through the live Console and
+reopened with the recorded prerequisite. Canonical readback retained all 36 work
+identities, narratives and preparation metadata; only the intended relation,
+its dependency projection and expected timestamps changed. This is native owner
+receipt evidence, separate from the earlier synthetic browser exercise.
+
+The final native current-plan check exposed an incomplete error fixture in the
+original review. OpenProject reports an absent reference as HTTP 404 with
+`error: not_found` and `details: delivery_art_reference_missing`. The earlier
+fixture assumed the precise reason occupied the top-level error field. The
+narrow correction maps only that exact tuple in the current-plan client to its
+existing absent-plan state. Other missing records, denied reads, malformed
+responses, explicit error codes and unavailable services retain their failures.
+The shared error adapter, OOS writer, authorization and approval rules do not
+change; an absent plan still grants no execution permission.
+
+The corrected source adapter was exercised read-only against the actual OOS
+endpoint using the existing Console caller and operator configuration. It
+received that native envelope and returned the precise missing-reference result.
+Focused cases also retain other 404s, mismatched status and explicit-code
+precedence. Source tests and native post-activation UI verification remain
+separate. This is a bounded extension of the existing approval, retaining its
+self-review limits and rollback boundary; no new control plane is introduced.
+
+The final correction landed through Console PR190 as
+`ad27707f18028a5d76c26aa77f8533b9b811ab50` from Gary candidate
+`f77628700bebea8f7c8aea866ebe8038aeeb8715`. Required provider CI and all
+owner checks passed; reviewed and merged trees are identical. The exact composed
+decision advances only that Console revision.

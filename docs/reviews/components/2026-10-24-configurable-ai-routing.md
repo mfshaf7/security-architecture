@@ -2512,3 +2512,24 @@ receipt boundaries. Safe error details explain invalid plans without removing
 the requirement that the proposed plan match recorded ART dependencies. Native
 qualification follows normal accepted-source activation; no synthetic result
 establishes that operating outcome or approves the pending initiative plan.
+
+
+## Native absent-plan envelope correction — 2026-11-19
+
+The same [bounded review](2026-11-19-technical-plan-dependencies.md) accepts
+[Console PR190](https://github.com/mfshaf7/governance-operations-console/pull/190)
+at `governance-operations-console@ad27707f18028a5d76c26aa77f8533b9b811ab50`.
+Native qualification of the prerequisite editor passed with the original owner
+receipt and verified readback. The final plan read identified an incorrect
+fixture assumption: the precise absent-reference reason is nested under details
+in OpenProject's HTTP404/not_found envelope. Only that exact result is mapped
+to the existing absent-plan display. Other404s, denied statuses, explicit codes
+and unavailable services retain their failures. This grants no execution rights.
+
+The corrected adapter passed a read-only call to the actual OOS service using
+the existing Console binding, eight focused checks, all1181semantic tests,
+architecture/types/build/public-source checks and a zero-vulnerability dependency
+audit. Required CI passed; candidate and merged trees match after delegated
+review/merge. Only the Console source pin advances; all six other pins, Platform
+tree and orchestration manifest remain as recorded. Normal commissioning and
+post-activation native UI proof still follow.
