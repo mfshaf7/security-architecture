@@ -194,3 +194,84 @@ No fallback hash, new caller, model scope, credential or writer is approved.
 The generated owner-record index follows merged OOS. Native live qualification
 continues after normal activation; prior failed native advice was refused before
 model invocation. Original real work and Apply history remain unchanged.
+
+
+## Selected scope and complete draft-context follow-up
+
+Real Console drafting correctly produced selected-field narratives and refused
+unproven planning commitments. The next one-story repository request failed
+locally: its selected field retained 35-record choice/value/status maps, producing
+17,426 characters against a 16,000-character local scope bound. Console projects
+only exact selected target facts, retaining per-record choices, numeric and other
+validation constraints and selected source value/status. Original owner packets
+and unrelated records remain intact. No local scope threshold is raised.
+
+Before publication, actual downstream admission exposed a second bound: complete
+selected/ancestor owner facts, five related drafts and six complete conversation
+turns exceeded the fixed 8,000-token allowance. The repair reuses Work Design's
+finite 32,000-token planning allowance coherently in CGG schema/HTTP/runtime and
+the OOS consumer. The 262,144-byte bound, dedicated Refinement caller, redaction,
+source/draft identity and receipt checks remain. Other caller budgets, provider
+routing, output/deadline limits and all model/mutation authority are unchanged.
+Gateway provider capacity remains independently enforced. This is bounded
+admission of the same selected data classes, not wider source or action access.
+
+Full Console 1,175 semantic checks/build/types/architecture and clean dependency audit pass;
+three source regressions preserve selected/shared permissions and validation
+facts, and two controlled browser journeys prove advice reaches the existing
+transport and saves only selected unreviewed drafts with no Apply. CGG 110 tests,
+compile/JSON checks and finite token/byte negative cases pass. Actual complete
+HTTP admission retains every selected/ancestor fact, related draft and bounded
+conversation turn. Controlled transport and isolated admission remain distinct
+from native model proof after accepted-source activation.
+
+Approved for this operator-authorized required maintenance delta. Main agent
+retains security closure under standing delegated review authority. The source
+order is CGG, OOS, Console, then exact composed acceptance and normal activation.
+Original Epic 1384 canonical work, Work Design handoff and saved AI drafts are retained;
+no Work Design or Refinement Apply is replayed. Deferred cosmetic read-state work
+remains outside this correction. Exact merged revision acceptance follows.
+
+
+## Complete selected Refinement draft context — 2026-11-19
+
+This review accepts CGG PR36, OOS PR421 and Console PR187 after exact-head provider checks,
+delegated review and candidate/merged tree equality. The accepted composition is:
+
+- `context-governance-gateway@fbe68c1bed5d7198f330bfa2e4638bbd1e4ea946`
+- `governance-operations-console@4b80fe274adf4c0838cfb41e1a2c13cd64fb7c52`
+- `operator-orchestration-service@f786940bafbe189d35b210277d405d9883e8e474`
+- `platform-engineering@2134579b34cf8d2cdc48b8af4df8a8f1066ffb02`
+- `workspace-governance@dd0a0c094e880e40297dcea484ebd8ad3c75ef7b`
+- `workspace-governance-control-fabric@d3b8ba934275324abcb794c0276fd3dea0a9ceb9`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@9891e02443e0b5d8fbbcb3ad7e97a6f8fe6a61de`
+
+Console excludes packet-wide target maps from its local selected scope while
+retaining selected values, per-record choices and typed constraints. Its local
+16,000-character allowance is unchanged. OOS and CGG coherently reuse Work
+Design's finite 32,000-token planning allowance for complete selected/ancestor
+facts, related drafts and bounded conversation. The 262,144-byte ceiling,
+dedicated caller, redaction, exact source/draft/envelope checks and refusal to
+truncate remain. No additional record class, raw fallback, model invocation,
+provider scope, writer or tool is admitted. Other caller budgets, model routing,
+output/deadline bounds and final-decision authority are unchanged.
+
+Source proof includes Console's 1,175 semantic checks, build/types/architecture/
+repository validation and clean dependency audit, three scope regressions and
+two controlled browser journeys over 35-item choice maps. CGG's 110 tests include
+complete-source retention and over-token/over-byte refusal. OOS's 2,040 passing
+checks (two existing skips), focused allowance proof, API/bundle/governance and
+committed base-aware checks plus API/worker image smoke pass. The staged tree
+matches the committed tree. The actual 31,566-character selected request passed
+real isolated HTTP admission at the bounded allowance; equality checks retain
+all selected/ancestor facts, five related drafts and six complete conversation
+turns, and the response passes the candidate OOS validator. Simulated replies
+and isolated admission do not stand in for native deployed model proof.
+
+The generated owner-record index follows merged OOS. Other source pins,
+Platform tree, credentials, durable orchestration and operator checkpoints stay
+unchanged. Native advisor drafting and same-source readback follow normal
+accepted-source activation. Retain original canonical work, handoff and saved
+AI drafts; do not replay the real Work Design or Refinement Apply. Main agent
+retains delegated security review closure.

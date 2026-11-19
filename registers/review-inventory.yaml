@@ -353,6 +353,7 @@ review_inventory:
           - ai
         review_trigger_ids:
           - refinement-advisor-planning-context-and-governed-field-values
+          - refinement-selected-context-facts-and-complete-budget
           - refinement-related-draft-http-schema-parity
           - advisor-native-tool-contract-and-original-response-delivery
           - complete-composition-dedicated-work-design-caller-denial
@@ -455,6 +456,7 @@ review_inventory:
           - ai
         review_trigger_ids:
           - refinement-advisor-planning-context-and-governed-field-values
+          - refinement-selected-context-facts-and-complete-budget
           - refinement-packet-bounded-read-and-explicit-retry
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
@@ -842,6 +844,7 @@ review_inventory:
           - ai
         review_trigger_ids:
           - refinement-advisor-planning-context-and-governed-field-values
+          - refinement-selected-context-facts-and-complete-budget
           - refinement-unicode-context-wire-digest-parity
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
