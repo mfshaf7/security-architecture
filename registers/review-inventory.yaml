@@ -444,7 +444,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-19-delivery-principal-identity.md
+        path: docs/reviews/components/2026-11-19-technical-plan-dependencies.md
         reviewed_on: 2026-11-19
         status: current
         decision: approved
@@ -455,6 +455,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - reviewed-work-prerequisites-and-safe-technical-plan-errors
           - native-principal-identity-and-readonly-refinement-inspection
           - refinement-advisor-planning-context-and-governed-field-values
           - refinement-selected-context-facts-and-complete-budget
@@ -1079,7 +1080,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-19-delivery-principal-identity.md
+        path: docs/reviews/components/2026-11-19-technical-plan-dependencies.md
         reviewed_on: 2026-11-19
         status: current
         decision: approved
@@ -1090,6 +1091,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - reviewed-work-prerequisites-and-safe-technical-plan-errors
           - native-principal-identity-and-readonly-refinement-inspection
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
