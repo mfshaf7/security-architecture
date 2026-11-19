@@ -444,7 +444,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-19-refinement-advisor-context.md
+        path: docs/reviews/components/2026-11-19-delivery-principal-identity.md
         reviewed_on: 2026-11-19
         status: current
         decision: approved
@@ -455,6 +455,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-principal-identity-and-readonly-refinement-inspection
           - refinement-advisor-planning-context-and-governed-field-values
           - refinement-selected-context-facts-and-complete-budget
           - refinement-packet-bounded-read-and-explicit-retry
@@ -531,6 +532,8 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - agent-console-focus-producer-request-reference-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/workflows/refinement/steps/metadata-draft/refinement-tree-review-dialog.tsx
           - repo: governance-operations-console
             path: src/domain-workspaces/repository/live-runtime/repository-connections.ts
           - repo: governance-operations-console
@@ -832,7 +835,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-19-refinement-advisor-context.md
+        path: docs/reviews/components/2026-11-19-delivery-principal-identity.md
         reviewed_on: 2026-11-19
         status: current
         decision: approved
@@ -843,6 +846,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-principal-identity-and-readonly-refinement-inspection
           - refinement-advisor-planning-context-and-governed-field-values
           - refinement-selected-context-facts-and-complete-budget
           - refinement-unicode-context-wire-digest-parity
@@ -902,6 +906,10 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - ai-security-and-governance
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/openproject-principal-identity.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-11-19-delivery-principal-identity.md
           - repo: operator-orchestration-service
             path: src/repository-custody/credential-files.js
           - repo: operator-orchestration-service
@@ -1071,8 +1079,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-brief-and-advisor-transport.md
-        reviewed_on: 2026-11-18
+        path: docs/reviews/components/2026-11-19-delivery-principal-identity.md
+        reviewed_on: 2026-11-19
         status: current
         decision: approved
         review_areas:
@@ -1082,6 +1090,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-principal-identity-and-readonly-refinement-inspection
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - console-partial-stream-recovery-and-compact-register-viewport
@@ -1150,6 +1159,8 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
         owner_artifacts:
+          - repo: governance-operations-console
+            path: src/domain-workspaces/delivery/presentation/workflows/refinement/steps/metadata-draft/refinement-tree-review-dialog.tsx
           - repo: platform-engineering
             path: products/governance-operations-console/scripts/console_repository_connections.py
           - repo: platform-engineering
@@ -1768,8 +1779,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-brief-and-advisor-transport.md
-        reviewed_on: 2026-11-18
+        path: docs/reviews/components/2026-11-19-delivery-principal-identity.md
+        reviewed_on: 2026-11-19
         status: current
         decision: approved
         review_areas:
@@ -1779,6 +1790,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - native-principal-identity-and-readonly-refinement-inspection
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery
           - model-profile-native-lifecycle-source-and-policy-admission
@@ -1813,6 +1825,10 @@ review_inventory:
           - configurable-ai-native-model-management-composed-boundary
           - ai-security-and-governance
         owner_artifacts:
+          - repo: operator-orchestration-service
+            path: src/openproject-principal-identity.js
+          - repo: operator-orchestration-service
+            path: docs/records/change-records/2026-11-19-delivery-principal-identity.md
           - repo: operator-orchestration-service
             path: src/repository-custody/credential-files.js
           - repo: operator-orchestration-service

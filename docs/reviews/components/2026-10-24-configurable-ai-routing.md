@@ -2473,3 +2473,25 @@ unchanged. Native advisor drafting and same-source readback follow normal
 accepted-source activation. Retain original canonical work, handoff and saved
 AI drafts; do not replay the real Work Design or Refinement Apply. Main agent
 retains delegated security review closure.
+
+
+## Native principal mapping and read-only Refinement review — 2026-11-19
+
+The [bounded source review](2026-11-19-delivery-principal-identity.md) accepts
+OOS PR422 and Console PR188 after exact-head CI, delegated human review and
+candidate/merged tree equality. The current composition changes only:
+
+- `operator-orchestration-service@da8ecdcfaa2172bc23d58767739440fc4c376648`
+- `governance-operations-console@13810fc6084f885015424c9e63a06a3e89c43880`
+
+All other owner pins, the Platform tree and durable orchestration manifest stay
+as recorded in the companion YAML. Reuse existing Catalog identity references
+while retaining native per-item assignment permissions; no identity or privilege
+is created. The existing Refinement tree-only reader preserves authoring state.
+Apply acknowledgement retains the full packet-validation deadline, stable input
+and idempotency identity; run polling and final receipt checks remain unchanged.
+
+Owner tests, architecture/type/build, mutation-contract checks and source image
+smoke passed. This accepts the exact merged source for normal dev-integration
+activation. Actual native qualification and the interrupted business update are
+still separate; neither source merge nor this decision certifies that update.
