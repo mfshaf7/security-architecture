@@ -10,9 +10,9 @@ architecture:
   digest: sha256:7715729bdb3420a790ff816d204c4c9c96a94745265444c517b2d02cb3e316b6
 review_ref: docs/reviews/components/2026-10-24-configurable-ai-routing.md
 reviewed_revisions:
-  context-governance-gateway: a28f3713c622cc1ad35dabba0cdb600507be76c0
-  governance-operations-console: 1ab8e14f6e09d76009e34141e57e08697b6925d5
-  operator-orchestration-service: f08cdff28adcbc5b30b251b062a2a09c3103f753
+  context-governance-gateway: fbe68c1bed5d7198f330bfa2e4638bbd1e4ea946
+  governance-operations-console: 4b80fe274adf4c0838cfb41e1a2c13cd64fb7c52
+  operator-orchestration-service: f786940bafbe189d35b210277d405d9883e8e474
   platform-engineering: 2134579b34cf8d2cdc48b8af4df8a8f1066ffb02
   workspace-governance: dd0a0c094e880e40297dcea484ebd8ad3c75ef7b
   workspace-governance-control-fabric: d3b8ba934275324abcb794c0276fd3dea0a9ceb9
