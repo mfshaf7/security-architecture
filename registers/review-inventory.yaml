@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-disposable-delivery-source-rehearsal.md
+        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
         reviewed_on: 2026-11-22
         status: current
         decision: approved
@@ -76,6 +76,7 @@ review_inventory:
           - governance-console-failure-first-rollback-order
           - configurable-ai-native-model-management-composed-boundary
           - ai-security-and-governance
+          - openproject-runtime-and-automation-boundary
         owner_artifacts:
           - repo: platform-engineering
             path: products/governance-operations-console/scripts/console_workflow_credentials.py
@@ -171,6 +172,8 @@ review_inventory:
             path: security/schemas/source-editor-assistance.schema.json
           - repo: platform-engineering
             path: dev-integration/profiles/governed-ai-gateway/runtime/model_configuration.py
+          - repo: platform-engineering
+            path: products/openproject/catalog-control/catalog-control-contract.json
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -445,8 +448,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-19-technical-plan-dependencies.md
-        reviewed_on: 2026-11-19
+        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        reviewed_on: 2026-11-22
         status: current
         decision: approved
         review_areas:
@@ -754,6 +757,8 @@ review_inventory:
             path: src/product-apps/context-board/context-board-advisor-patch.ts
           - repo: governance-operations-console
             path: src/domain-workspaces/delivery/live-runtime/work-design-draft-advisor.ts
+          - repo: governance-operations-console
+            path: docs/product/delivery-execution-work-sessions.md
     openclaw-runtime-distribution:
       owner_repo: openclaw-runtime-distribution
       scope: component
@@ -837,8 +842,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-19-delivery-principal-identity.md
-        reviewed_on: 2026-11-19
+        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        reviewed_on: 2026-11-22
         status: current
         decision: approved
         review_areas:
@@ -907,6 +912,7 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
           - ai-security-and-governance
+          - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: operator-orchestration-service
             path: src/openproject-principal-identity.js
@@ -1056,6 +1062,8 @@ review_inventory:
             path: src/work-design/service.js
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-11-11-work-design-system-context.md
+          - repo: operator-orchestration-service
+            path: src/delivery-art/work-session-controller.js
   products:
     console-todo-1275:
       owner_repo: platform-engineering
@@ -1081,8 +1089,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-19-technical-plan-dependencies.md
-        reviewed_on: 2026-11-19
+        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        reviewed_on: 2026-11-22
         status: current
         decision: approved
         review_areas:
@@ -1306,6 +1314,8 @@ review_inventory:
             path: src/console-integration/source-authoring/live-runtime/use-source-assistant.ts
           - repo: governance-operations-console
             path: docs/product/prototype-inspection-maintenance.md
+          - repo: governance-operations-console
+            path: docs/product/delivery-execution-work-sessions.md
     openclaw:
       owner_repo: platform-engineering
       scope: product
@@ -1357,8 +1367,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
-        reviewed_on: 2026-11-18
+        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        reviewed_on: 2026-11-22
         status: current
         decision: approved
         review_areas:
@@ -1373,6 +1383,8 @@ review_inventory:
           - delivery-art-source-provenance-integrity
           - delivery-art-object-storage-and-lifecycle
           - delivery-art-safe-openproject-projection
+          - openproject-delivery-adapter-and-api
+          - openproject-runtime-and-automation-boundary
         owner_artifacts:
           - repo: platform-engineering
             path: products/governance-operations-console/scripts/console_repository_connections.py
@@ -1386,6 +1398,8 @@ review_inventory:
             path: contracts/schemas/delivery-art-custody-receipt.schema.json
           - repo: platform-engineering
             path: products/openproject/runtime-contract.md
+          - repo: platform-engineering
+            path: products/openproject/catalog-control/catalog-control-contract.json
   components:
     argo-cd:
       owner_repo: platform-engineering
@@ -1782,8 +1796,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-19-delivery-principal-identity.md
-        reviewed_on: 2026-11-19
+        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        reviewed_on: 2026-11-22
         status: current
         decision: approved
         review_areas:
@@ -1827,6 +1841,7 @@ review_inventory:
           - governance-console-external-security-tree-binding
           - configurable-ai-native-model-management-composed-boundary
           - ai-security-and-governance
+          - openproject-delivery-adapter-and-api
         owner_artifacts:
           - repo: operator-orchestration-service
             path: src/openproject-principal-identity.js
@@ -1938,3 +1953,5 @@ review_inventory:
             path: src/prototype-landing/overview.js
           - repo: operator-orchestration-service
             path: docs/records/change-records/2026-11-09-source-editor-assistant.md
+          - repo: operator-orchestration-service
+            path: src/delivery-art/work-session-controller.js
