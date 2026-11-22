@@ -55,3 +55,17 @@ batch uses the existing model routing and context admission path.
 | governance-operations-console | [PR #192](https://github.com/mfshaf7/governance-operations-console/pull/192) | 058edbc7a666e2c28a8e667064b379bb59d0c5cb | 7d49ffff89f2f611be23fb9093c55852a9084594 |
 
 The delegated human reviewed the exact Gary heads after the required checks. The Console production build and dependency audit passed. The disposable Little List rehearsal passed against the merged Governance and Registry sources. The new read and transfer code may activate in the existing local composition. The live pilot still requires a separate operator decision and authenticated provider readback.
+
+### Durable Registry worker image
+
+The first live activation found the previous worker image still pinned. The
+new immutable image digest is
+`sha256:59172b0ea54250063bfa1ed8c0f16534abf6d6299c09369661e1c606d6a1d47f`.
+The worker image was built from the reviewed Registry revision
+`e01bcfdf861494f2d0d0ab52fe2ff63d3e47cf68`. Its Linux amd64 artifact reported
+that revision from its embedded source marker. An isolated status read
+confirmed worker identity, the existing readiness queue, and default denial
+without activation evidence. The Security decision pins this exact image
+with the original workflow activation manifest. Normal Platform activation
+still requires live readback of the image and authorized worker.
+[Exact worker image build](https://github.com/mfshaf7/workspace-governance-control-fabric/actions/runs/45034964880/job/137246559813)
