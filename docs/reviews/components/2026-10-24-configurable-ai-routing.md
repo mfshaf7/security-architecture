@@ -2547,3 +2547,11 @@ The [scoped review](2026-11-22-pi-planning-delivery-composed.md) accepts the coo
 | workspace-governance | [PR #324](https://github.com/mfshaf7/workspace-governance/pull/324) | `ed229b0f7c0e39a0dd734c83d0e964b3f75f7007` | `f9f87b0d8cb529a4cdcedec3ef63b51e960ff5ff` |
 
 The Platform tree is `79e77db0657de69fd2b328909e034d868ada2ba3`. The renewed manifest keeps historical work item #970 as evidence. The runtime retains explicit close intent, finalized source evidence, scope, and ownership verification. Normal activation and native readback establish the working installation's result.
+
+### Runtime source bindings
+
+- `governance-operations-console@aaee553d6e1a3675b7c6c391ab8b02c88bd20cbc`
+- `operator-orchestration-service@6657d58cf8025270cea75e1eb0394b903b4f866c`
+- `platform-engineering@1595a4e7e1412fa3d4fab2f520e12b67c358b67d`
+- `workspace-governance@ed229b0f7c0e39a0dd734c83d0e964b3f75f7007`
+- `platform-engineering-tree@79e77db0657de69fd2b328909e034d868ada2ba3`
