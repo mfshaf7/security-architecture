@@ -2533,3 +2533,17 @@ audit. Required CI passed; candidate and merged trees match after delegated
 review/merge. Only the Console source pin advances; all six other pins, Platform
 tree and orchestration manifest remain as recorded. Normal commissioning and
 post-activation native UI proof still follow.
+
+
+## PI Planning and Delivery rehearsal corrections — 2026-11-22
+
+The [scoped review](2026-11-22-pi-planning-delivery-composed.md) accepts the coordinated owner revisions below. The other three owner revisions and the durable orchestration manifest retain their existing bindings.
+
+| Owner | Reviewed PR | Merged revision | Reviewed and merged tree |
+| --- | --- | --- | --- |
+| operator-orchestration-service | [PR #423](https://github.com/mfshaf7/operator-orchestration-service/pull/423) | `6657d58cf8025270cea75e1eb0394b903b4f866c` | `0d324ffa9cdb521bf47c692e07a21aab00fa5145` |
+| platform-engineering | [PR #387](https://github.com/mfshaf7/platform-engineering/pull/387) | `1595a4e7e1412fa3d4fab2f520e12b67c358b67d` | `79e77db0657de69fd2b328909e034d868ada2ba3` |
+| governance-operations-console | [PR #191](https://github.com/mfshaf7/governance-operations-console/pull/191) | `aaee553d6e1a3675b7c6c391ab8b02c88bd20cbc` | `43e4a9f205d0abab792b236386101e628e259678` |
+| workspace-governance | [PR #324](https://github.com/mfshaf7/workspace-governance/pull/324) | `ed229b0f7c0e39a0dd734c83d0e964b3f75f7007` | `f9f87b0d8cb529a4cdcedec3ef63b51e960ff5ff` |
+
+The Platform tree is `79e77db0657de69fd2b328909e034d868ada2ba3`. The renewed manifest keeps historical work item #970 as evidence. The runtime retains explicit close intent, finalized source evidence, scope, and ownership verification. Normal activation and native readback establish the working installation's result.
