@@ -1,0 +1,6 @@
+schema_version: 1
+gate_id: gate:ai-routing-composed-security
+status: accepted
+platform_tree: 283cd5c2a9f512a9c139365db196592dca0fb2c3
+workspace_governance_revision: dd0a0c094e880e40297dcea484ebd8ad3c75ef7b
+source_rehearsal_digest: sha256:37672bc72e4b1253665e90a371edbb91b518a1eda9616cf0c696e30862d2d0b3
