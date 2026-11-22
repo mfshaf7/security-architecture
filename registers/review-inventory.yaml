@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
         reviewed_on: 2026-11-22
         status: current
         decision: approved
@@ -184,8 +184,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-18-console-advisor-execution-catalog.md
-        reviewed_on: 2026-11-18
+        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
+        reviewed_on: 2026-11-22
         status: current
         decision: approved
         review_areas:
@@ -264,8 +264,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-07-console-register-navigation.md
-        reviewed_on: 2026-11-07
+        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
+        reviewed_on: 2026-11-22
         status: current
         decision: approved
         review_areas:
@@ -448,7 +448,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
         reviewed_on: 2026-11-22
         status: current
         decision: approved
@@ -842,7 +842,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
         reviewed_on: 2026-11-22
         status: current
         decision: approved
@@ -1089,7 +1089,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
         reviewed_on: 2026-11-22
         status: current
         decision: approved
@@ -1566,8 +1566,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-05-repository-account-routing.md
-        reviewed_on: 2026-11-05
+        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
+        reviewed_on: 2026-11-22
         status: current
         decision: approved
         review_areas:
@@ -1796,7 +1796,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
+        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
         reviewed_on: 2026-11-22
         status: current
         decision: approved
