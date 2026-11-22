@@ -4016,6 +4016,41 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-22-proposal-overview-and-delivery-link.md
+  date: '2026-11-22'
+  short_title: 2026-11-22-proposal-overview-and-delivery-link
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-22-protected-repository-verification-and-transfer.md
+  date: '2026-11-22'
+  short_title: 2026-11-22-protected-repository-verification-and-transfer
+  review_areas:
+  - identity
+  - secrets
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-22-scoped-delivery-planning-reads.md
+  date: '2026-11-22'
+  short_title: 2026-11-22-scoped-delivery-planning-reads
+  review_areas:
+  - delivery
+  - runtime
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'

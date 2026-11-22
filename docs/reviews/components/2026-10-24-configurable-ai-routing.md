@@ -2555,3 +2555,19 @@ The Platform tree is `79e77db0657de69fd2b328909e034d868ada2ba3`. The renewed man
 - `platform-engineering@1595a4e7e1412fa3d4fab2f520e12b67c358b67d`
 - `workspace-governance@ed229b0f7c0e39a0dd734c83d0e964b3f75f7007`
 - `platform-engineering-tree@79e77db0657de69fd2b328909e034d868ada2ba3`
+
+
+### Scoped reads and repository authority release
+
+The [dated release review](2026-11-22-console-scoped-reads-composed.md) accepts the exact owner revisions below for the existing local Console composition.
+
+- `context-governance-gateway@fbe68c1bed5d7198f330bfa2e4638bbd1e4ea946`
+- `governance-operations-console@058edbc7a666e2c28a8e667064b379bb59d0c5cb`
+- `operator-orchestration-service@2e499019c50ea3cac01ef80a169050d1e4996645`
+- `platform-engineering@f80cdafc8e4a685a31f8879648cdb65e59568e77`
+- `workspace-governance@29f673f6a3059f34ec2c8edc160373fe8d87b988`
+- `workspace-governance-control-fabric@e01bcfdf861494f2d0d0ab52fe2ff63d3e47cf68`
+- `workspace-prototype-studio@07776dbcb13acaf8ad2d39d02c28929dd14f5fe3`
+- `platform-engineering-tree@89d8118b720f167476051a2fd6ff2c5976e38fa5`
+
+Platform activation verifies this set. Real registration transfer and Application Verification remain separate operating evidence.
