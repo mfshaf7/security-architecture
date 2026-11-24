@@ -2571,3 +2571,12 @@ The [dated release review](2026-11-22-console-scoped-reads-composed.md) accepts 
 - `platform-engineering-tree@89d8118b720f167476051a2fd6ff2c5976e38fa5`
 
 Platform activation verifies this set. Real registration transfer and Application Verification remain separate operating evidence.
+
+### Temporal startup addresses
+
+The [dated Platform review](../platform/2026-11-24-temporal-startup-addresses.md)
+accepts the chart address correction and completion check for the namespace
+Job. The Console composition selects the exact reviewed Platform tree:
+
+- `platform-engineering@3459da0acb843ef670f106009059ca51d1fe40a4`
+- `platform-engineering-tree@6ba2fbbfa092476a83293eb860fcead2893cfbed`
