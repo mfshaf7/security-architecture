@@ -2600,3 +2600,16 @@ The [scoped review](2026-11-25-technical-plan-delivery-composed.md) accepts the 
 - `platform-engineering@a22f347d67b25d12fda102497d9188340f9de289`
 - `governance-operations-console@7f0972d630bf8b325e09069920410722d7affbbd`
 - `platform-engineering-tree@84ab73e78d639d2c3f60236a69ca8ba88399c2e4`
+
+
+## PI Planning placement — 2026-11-26
+
+The [scoped review](2026-11-26-pi-placement-composed.md) accepts the two exact owner revisions below. Existing credential, authority and durable workflow bindings stay in effect. Normal Platform activation and live readback are required.
+
+| Owner | Reviewed PR | Merged revision | Reviewed and merged tree |
+| --- | --- | --- | --- |
+| operator-orchestration-service | [PR #428](https://github.com/mfshaf7/operator-orchestration-service/pull/428) | `1260c0a646dd83567bafffb1ffcd62e513a731ac` | `88ba378ab156ec5d46009fdb3084a91de652947d` |
+| governance-operations-console | [PR #194](https://github.com/mfshaf7/governance-operations-console/pull/194) | `d7461e82789ca0b0adb34579f426a5a2049736ef` | `dc3d71ba5d5035f02249eee0e4274622d795bbdb` |
+
+- `operator-orchestration-service@1260c0a646dd83567bafffb1ffcd62e513a731ac`
+- `governance-operations-console@d7461e82789ca0b0adb34579f426a5a2049736ef`
