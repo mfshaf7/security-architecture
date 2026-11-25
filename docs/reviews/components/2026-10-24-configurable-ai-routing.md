@@ -2580,3 +2580,23 @@ Job. The Console composition selects the exact reviewed Platform tree:
 
 - `platform-engineering@3459da0acb843ef670f106009059ca51d1fe40a4`
 - `platform-engineering-tree@6ba2fbbfa092476a83293eb860fcead2893cfbed`
+
+
+## Technical Plan and Delivery composition — 2026-11-25
+
+The [scoped review](2026-11-25-technical-plan-delivery-composed.md) accepts the five exact owner revisions below. Existing credential, authority and durable workflow bindings stay in effect. Normal Platform activation and live readback are required.
+
+| Owner | Reviewed PR | Merged revision | Reviewed and merged tree |
+| --- | --- | --- | --- |
+| workspace-governance | [PR #326](https://github.com/mfshaf7/workspace-governance/pull/326) | `a9e091e652a99156e63336544bf5ba9764934158` | `b9c25b5c52becc0737e00d23fe65c27f09b88c47` |
+| workspace-governance-control-fabric | [PR #127](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/127) | `15d8ba987bb87ee96734f29e51fe0e78a93afc7b` | `8a82f12fb93497ebd80e6d7e892c87d987c1c1bf` |
+| operator-orchestration-service | [PR #427](https://github.com/mfshaf7/operator-orchestration-service/pull/427) | `414e4cfb2f1dbde7b431ca6270690f55215e5d28` | `ef1aa0af8647871ea6afa1a28d17ef52f5b2c52b` |
+| platform-engineering | [PR #390](https://github.com/mfshaf7/platform-engineering/pull/390) | `a22f347d67b25d12fda102497d9188340f9de289` | `84ab73e78d639d2c3f60236a69ca8ba88399c2e4` |
+| governance-operations-console | [PR #193](https://github.com/mfshaf7/governance-operations-console/pull/193) | `7f0972d630bf8b325e09069920410722d7affbbd` | `a1c1c2f4785e292fb9c91a7ff1fe01c202c22f6b` |
+
+- `workspace-governance@a9e091e652a99156e63336544bf5ba9764934158`
+- `workspace-governance-control-fabric@15d8ba987bb87ee96734f29e51fe0e78a93afc7b`
+- `operator-orchestration-service@414e4cfb2f1dbde7b431ca6270690f55215e5d28`
+- `platform-engineering@a22f347d67b25d12fda102497d9188340f9de289`
+- `governance-operations-console@7f0972d630bf8b325e09069920410722d7affbbd`
+- `platform-engineering-tree@84ab73e78d639d2c3f60236a69ca8ba88399c2e4`

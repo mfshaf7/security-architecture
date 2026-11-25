@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/platform/2026-11-24-temporal-startup-addresses.md
-        reviewed_on: 2026-11-24
+        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
+        reviewed_on: 2026-11-25
         status: current
         decision: approved
         review_areas:
@@ -175,6 +175,8 @@ review_inventory:
             path: dev-integration/profiles/governed-ai-gateway/runtime/model_configuration.py
           - repo: platform-engineering
             path: products/openproject/catalog-control/catalog-control-contract.json
+          - repo: platform-engineering
+            path: products/openproject/catalog-control/openproject_delivery_catalog_control.rb
     workspace-governance:
       owner_repo: workspace-governance
       scope: component
@@ -185,8 +187,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
-        reviewed_on: 2026-11-22
+        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
+        reviewed_on: 2026-11-25
         status: current
         decision: approved
         review_areas:
@@ -255,6 +257,8 @@ review_inventory:
             path: skills-src/project-delivery-operator/SKILL.md
           - repo: workspace-governance
             path: docs/delivery-art-operator-path.md
+          - repo: workspace-governance
+            path: contracts/schemas/delivery-art-architecture-packet.schema.json
     workspace-governance-control-fabric:
       owner_repo: workspace-governance-control-fabric
       scope: component
@@ -265,8 +269,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
-        reviewed_on: 2026-11-22
+        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
+        reviewed_on: 2026-11-25
         status: current
         decision: approved
         review_areas:
@@ -449,8 +453,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
-        reviewed_on: 2026-11-22
+        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
+        reviewed_on: 2026-11-25
         status: current
         decision: approved
         review_areas:
@@ -843,8 +847,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
-        reviewed_on: 2026-11-22
+        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
+        reviewed_on: 2026-11-25
         status: current
         decision: approved
         review_areas:
@@ -1065,6 +1069,8 @@ review_inventory:
             path: docs/records/change-records/2026-11-11-work-design-system-context.md
           - repo: operator-orchestration-service
             path: src/delivery-art/work-session-controller.js
+          - repo: operator-orchestration-service
+            path: src/delivery-art/service.js
   products:
     console-todo-1275:
       owner_repo: platform-engineering
@@ -1090,8 +1096,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
-        reviewed_on: 2026-11-22
+        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
+        reviewed_on: 2026-11-25
         status: current
         decision: approved
         review_areas:
@@ -1368,8 +1374,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-pi-planning-delivery-composed.md
-        reviewed_on: 2026-11-22
+        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
+        reviewed_on: 2026-11-25
         status: current
         decision: approved
         review_areas:
@@ -1401,6 +1407,8 @@ review_inventory:
             path: products/openproject/runtime-contract.md
           - repo: platform-engineering
             path: products/openproject/catalog-control/catalog-control-contract.json
+          - repo: platform-engineering
+            path: products/openproject/catalog-control/openproject_delivery_catalog_control.rb
   components:
     argo-cd:
       owner_repo: platform-engineering
@@ -1567,8 +1575,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
-        reviewed_on: 2026-11-22
+        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
+        reviewed_on: 2026-11-25
         status: current
         decision: approved
         review_areas:
@@ -1797,8 +1805,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-22-console-scoped-reads-composed.md
-        reviewed_on: 2026-11-22
+        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
+        reviewed_on: 2026-11-25
         status: current
         decision: approved
         review_areas:
@@ -1956,3 +1964,5 @@ review_inventory:
             path: docs/records/change-records/2026-11-09-source-editor-assistant.md
           - repo: operator-orchestration-service
             path: src/delivery-art/work-session-controller.js
+          - repo: operator-orchestration-service
+            path: src/delivery-art/service.js
