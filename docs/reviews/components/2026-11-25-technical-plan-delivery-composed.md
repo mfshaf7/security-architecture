@@ -34,3 +34,9 @@ The Console production build and 1,204 semantic checks passed. All 12 targeted r
 | governance-operations-console | [PR #193](https://github.com/mfshaf7/governance-operations-console/pull/193) | `7f0972d630bf8b325e09069920410722d7affbbd` | `a1c1c2f4785e292fb9c91a7ff1fe01c202c22f6b` |
 
 Each merged tree matches the exact Gary PR head verified by local and GitHub checks. The delegated human reviewed and merged the exact source. The Console's production dependency audit is clear. The update is approved for the existing working dev-integration composition. Normal Platform activation and readback are required to establish the operating result. The operating evidence remains distinct from this source review.
+
+## Durable worker image proof
+
+The reviewed activity worker is `ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:0345bbc631e0b21ec047f0c9f4751568f70c7eb8d6960f46cbe7f13777efcdf7`. Its baked WGCF revision is `15d8ba987bb87ee96734f29e51fe0e78a93afc7b`. The [exact main build](https://github.com/mfshaf7/workspace-governance-control-fabric/actions/runs/45575931134) verified its source file, unprivileged identity, and default denial. The existing activation manifest, generation, task queue, and workflow authority remain bound to their original evidence.
+
+When updating the reviewed WGCF revision, verify the worker release metadata and baked source against the reviewed revision before applying the composition.
