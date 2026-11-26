@@ -2640,3 +2640,16 @@ The [scoped review](2026-11-26-canonical-core-source-read-composed.md) accepts t
 | operator-orchestration-service | [PR #430](https://github.com/mfshaf7/operator-orchestration-service/pull/430) | `880731ed36f7aab4839f3435aefa6132d8eff323` | `f334f62cdc05229eab65eb15d05a13587839ff37` |
 
 - `operator-orchestration-service@880731ed36f7aab4839f3435aefa6132d8eff323`
+
+
+## Recorded Delivery source groups — 2026-11-26
+
+The [scoped review](2026-11-26-recorded-group-source-intent-composed.md) accepts the exact OOS and Console revisions below. Existing credential, authority and durable workflow bindings stay in effect. Normal Platform activation and live readback are required.
+
+| Owner | Reviewed PR | Merged revision | Reviewed and merged tree |
+| --- | --- | --- | --- |
+| operator-orchestration-service | [PR #431](https://github.com/mfshaf7/operator-orchestration-service/pull/431) | `bbfe12ee08262b86e31034840e823a93e21c7d5c` | `d240afbefb18c7b68dbd81ef4721d7a730302a1c` |
+| governance-operations-console | [PR #196](https://github.com/mfshaf7/governance-operations-console/pull/196) | `57b6e3607f49111b27bb734168baef9fe982e428` | `834c29c235bc341a0322c43a75073e269066892a` |
+
+- `operator-orchestration-service@bbfe12ee08262b86e31034840e823a93e21c7d5c`
+- `governance-operations-console@57b6e3607f49111b27bb734168baef9fe982e428`
