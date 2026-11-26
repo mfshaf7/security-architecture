@@ -4072,6 +4072,16 @@ change_records:
   risks: []
   workstreams:
   - WS-007
+- repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-26-recorded-plan-work-start.md
+  date: '2026-11-26'
+  short_title: 2026-11-26-recorded-plan-work-start
+  review_areas:
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: platform-engineering
   path: docs/records/change-records/2026-04-17-stage-bridge-audit-path-drift.md
   date: '2026-04-17'
@@ -4919,6 +4929,16 @@ change_records:
   risks: []
   workstreams:
   - WS-005
+- repo: platform-engineering
+  path: docs/records/change-records/2026-11-26-recorded-plan-source-access.md
+  date: '2026-11-26'
+  short_title: 2026-11-26-recorded-plan-source-access
+  review_areas:
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
 - repo: workspace-governance-control-fabric
   path: docs/records/change-records/2026-10-03-delivery-art-architecture-v5-activation.md
   date: '2026-10-03'

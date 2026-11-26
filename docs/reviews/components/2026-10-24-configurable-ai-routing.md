@@ -2613,3 +2613,19 @@ The [scoped review](2026-11-26-pi-placement-composed.md) accepts the two exact o
 
 - `operator-orchestration-service@1260c0a646dd83567bafffb1ffcd62e513a731ac`
 - `governance-operations-console@d7461e82789ca0b0adb34579f426a5a2049736ef`
+
+
+## Recorded Technical Plan at work start — 2026-11-26
+
+The [scoped review](2026-11-26-recorded-plan-work-start-composed.md) accepts the three exact owner revisions below. Existing credential, authority and durable workflow bindings stay in effect. Normal Platform activation and live readback are required.
+
+| Owner | Reviewed PR | Merged revision | Reviewed and merged tree |
+| --- | --- | --- | --- |
+| operator-orchestration-service | [PR #429](https://github.com/mfshaf7/operator-orchestration-service/pull/429) | `c8edd9ff67c63e6932a5a168502bdda941d90e54` | `e566544e3600d55b64c770df76e373d7fda3fe93` |
+| governance-operations-console | [PR #195](https://github.com/mfshaf7/governance-operations-console/pull/195) | `3eadc1d13700d57e46b5c493daec177dabfe7f85` | `cd5bb7e760ed9a0f255c468cb555cabd818c6f95` |
+| platform-engineering | [PR #391](https://github.com/mfshaf7/platform-engineering/pull/391) | `74a46b229aaa5d1bc8b3efa209c1d63743262391` | `f726ae0eb34ba8e5f6ad883c352eaebeee014808` |
+
+- `operator-orchestration-service@c8edd9ff67c63e6932a5a168502bdda941d90e54`
+- `governance-operations-console@3eadc1d13700d57e46b5c493daec177dabfe7f85`
+- `platform-engineering@74a46b229aaa5d1bc8b3efa209c1d63743262391`
+- `platform-engineering-tree@f726ae0eb34ba8e5f6ad883c352eaebeee014808`

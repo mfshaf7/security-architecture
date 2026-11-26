@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
-        reviewed_on: 2026-11-25
+        path: docs/reviews/components/2026-11-26-recorded-plan-work-start-composed.md
+        reviewed_on: 2026-11-26
         status: current
         decision: approved
         review_areas:
@@ -453,7 +453,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-pi-placement-composed.md
+        path: docs/reviews/components/2026-11-26-recorded-plan-work-start-composed.md
         reviewed_on: 2026-11-26
         status: current
         decision: approved
@@ -847,7 +847,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-pi-placement-composed.md
+        path: docs/reviews/components/2026-11-26-recorded-plan-work-start-composed.md
         reviewed_on: 2026-11-26
         status: current
         decision: approved
@@ -1096,7 +1096,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-pi-placement-composed.md
+        path: docs/reviews/components/2026-11-26-recorded-plan-work-start-composed.md
         reviewed_on: 2026-11-26
         status: current
         decision: approved
@@ -1374,7 +1374,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-pi-placement-composed.md
+        path: docs/reviews/components/2026-11-26-recorded-plan-work-start-composed.md
         reviewed_on: 2026-11-26
         status: current
         decision: approved
@@ -1805,7 +1805,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-pi-placement-composed.md
+        path: docs/reviews/components/2026-11-26-recorded-plan-work-start-composed.md
         reviewed_on: 2026-11-26
         status: current
         decision: approved
