@@ -2653,3 +2653,11 @@ The [scoped review](2026-11-26-recorded-group-source-intent-composed.md) accepts
 
 - `operator-orchestration-service@bbfe12ee08262b86e31034840e823a93e21c7d5c`
 - `governance-operations-console@57b6e3607f49111b27bb734168baef9fe982e428`
+
+
+## Delivery resource-record identity — 2026-11-26
+
+The [scoped maintenance review](2026-11-26-delivery-resource-record-identity-composed.md) binds the approved group identifier to the existing ownership checks and accepts these exact revisions for the Console dev-integration composition.
+
+- `workspace-governance@888c3d6dd495ecdc342c546fdaa15498e9efd5fe`
+- `operator-orchestration-service@fc211b2101aca91133d230e9244bc69c3daf1e34`

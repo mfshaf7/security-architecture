@@ -847,7 +847,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-recorded-group-source-intent-composed.md
+        path: docs/reviews/components/2026-11-26-delivery-resource-record-identity-composed.md
         reviewed_on: 2026-11-26
         status: current
         decision: approved
@@ -1805,7 +1805,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-recorded-group-source-intent-composed.md
+        path: docs/reviews/components/2026-11-26-delivery-resource-record-identity-composed.md
         reviewed_on: 2026-11-26
         status: current
         decision: approved
