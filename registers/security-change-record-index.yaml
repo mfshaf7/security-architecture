@@ -4063,6 +4063,16 @@ change_records:
   workstreams:
   - WS-007
 - repo: operator-orchestration-service
+  path: docs/records/change-records/2026-11-26-canonical-core-source-read.md
+  date: '2026-11-26'
+  short_title: 2026-11-26-canonical-core-source-read
+  review_areas:
+  - delivery
+  findings: []
+  risks: []
+  workstreams:
+  - WS-007
+- repo: operator-orchestration-service
   path: docs/records/change-records/2026-11-26-pi-risk-milestone-placement.md
   date: '2026-11-26'
   short_title: 2026-11-26-pi-risk-milestone-placement

@@ -2629,3 +2629,14 @@ The [scoped review](2026-11-26-recorded-plan-work-start-composed.md) accepts the
 - `governance-operations-console@3eadc1d13700d57e46b5c493daec177dabfe7f85`
 - `platform-engineering@74a46b229aaa5d1bc8b3efa209c1d63743262391`
 - `platform-engineering-tree@f726ae0eb34ba8e5f6ad883c352eaebeee014808`
+
+
+## Canonical core source reads — 2026-11-26
+
+The [scoped review](2026-11-26-canonical-core-source-read-composed.md) accepts the exact OOS revision below. Existing credential, authority and durable workflow bindings stay in effect. Normal Platform activation and live readback are required.
+
+| Owner | Reviewed PR | Merged revision | Reviewed and merged tree |
+| --- | --- | --- | --- |
+| operator-orchestration-service | [PR #430](https://github.com/mfshaf7/operator-orchestration-service/pull/430) | `880731ed36f7aab4839f3435aefa6132d8eff323` | `f334f62cdc05229eab65eb15d05a13587839ff37` |
+
+- `operator-orchestration-service@880731ed36f7aab4839f3435aefa6132d8eff323`
