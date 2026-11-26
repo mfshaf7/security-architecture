@@ -6,13 +6,14 @@ Platform implements the saved-project runtime for Delivery #1388–#1391.
 [Broker PR #433](https://github.com/mfshaf7/operator-orchestration-service/pull/433)
 supplies the reviewed saved-source handoff. [Platform PR #392](https://github.com/mfshaf7/platform-engineering/pull/392)
 contains the exact Platform source. The Platform
-candidate at `f76068c51a9f6dc3828aefbd72688bfc573a77b5` has tree
-`b19dd8c1d3c591d6557c136f1375244205794021` against protected Platform main
-`74a46b229aaa5d1bc8b3efa209c1d63743262391`. The change contains 13 paths.
-The 12 Console draft files and the existing larger Platform provider file
-match the exercised candidate byte for byte. GitHub's test merge against
-protected main produced the same tree. The candidate passed 44 focused
-runtime and provider tests and the owner structure and document validators.
+candidate at `552f5e5c03cbc33b428855c1055c09c549d5fdf2` has tree
+`4701551960cb9a743643e3012c4bab328399641e` against protected Platform main
+`74a46b229aaa5d1bc8b3efa209c1d63743262391`. The runtime implementation
+from the original review remains covered. The revised head binds operating
+evidence to the named rehearsals and includes their source and regression
+tests. GitHub's test merge against protected main produced the same tree.
+The candidate passed Platform validation, including 50 focused runtime
+and evidence tests.
 
 ## Scope Delta
 
@@ -47,6 +48,22 @@ decision or authorize a runtime rollout.
   the retained-data witness across Stop and Resume. A failed update
   left the previous pair serving. Reset returned 409 and left data
   untouched. The disposable namespaces were removed.
+
+### Operating case evidence
+
+The rehearsal starts only from clean exact Platform and reviewed Broker
+checkouts and uses an isolated temporary project and local provider. The
+runtime cases include active-pair update failure, interrupted Stop recovery,
+retained volume and declared scratch, and native capacity refusal. Both
+application processes confirmed network denial against the configured Broker
+and Kubernetes services. Disposable resources were removed after the test.
+
+Platform retains the exact result privately with both source revisions and
+a content digest. The read-only commands name one approved case each and
+check its required observations. The actual Broker evidence adapter
+rejected missing case evidence even when the general tests passed, then
+accepted the four cases after owner receipt verification. The file permissions
+preserve the established Platform owner trust boundary.
 
 ## Decision
 
