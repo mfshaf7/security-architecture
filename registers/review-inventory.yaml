@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-recorded-plan-work-start-composed.md
-        reviewed_on: 2026-11-26
+        path: docs/reviews/components/2026-11-27-stage-2-platform-saved-project-runtime.md
+        reviewed_on: 2026-11-27
         status: current
         decision: approved
         review_areas:
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-stage-2-project-runtime-source-review
           - temporal-startup-frontend-address
           - disposable-delivery-source-owner-setup-and-exact-scope
           - advisor-native-tool-contract-and-original-response-delivery
@@ -1096,8 +1097,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-recorded-group-source-intent-composed.md
-        reviewed_on: 2026-11-26
+        path: docs/reviews/components/2026-11-27-stage-2-platform-saved-project-runtime.md
+        reviewed_on: 2026-11-27
         status: current
         decision: approved
         review_areas:
@@ -1107,6 +1108,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-stage-2-project-runtime-source-review
           - reviewed-work-prerequisites-and-safe-technical-plan-errors
           - native-principal-identity-and-readonly-refinement-inspection
           - bounded-brief-review-and-advisor-reply-transport
