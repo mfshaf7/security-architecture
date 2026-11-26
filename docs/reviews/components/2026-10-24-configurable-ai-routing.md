@@ -2696,3 +2696,18 @@ establish the operating outcome.
 - `operator-orchestration-service@7391da772326acc8a3706d95c59be9af04d1aebd`
 - `platform-engineering@6541e31bfc059241129d2b57d996da064983492e`
 - `platform-engineering-tree@4701551960cb9a743643e3012c4bab328399641e`
+
+## Continue verification after source merge — 2026-11-27
+
+The [post-merge verification review](2026-11-27-post-merge-verification-access.md)
+covers Broker [PR #436](https://github.com/mfshaf7/operator-orchestration-service/pull/436).
+The connected preview obtained the four named Platform results for the
+existing Console action. Replay returned the original receipt with zero
+source lease or source preparation requests.
+
+Accept Broker revision `c131f8699c7e6c965b470072b3b286146845b916` and reviewed tree `57a25c454523e8ae3a8977d4331a78d6c6cfaae2`
+for the existing Dev Integration composition. The other reviewed owner
+revisions remain as recorded in the preceding decision. Normal Platform
+activation and live Console result readback establish operating acceptance.
+
+- `operator-orchestration-service@c131f8699c7e6c965b470072b3b286146845b916`
