@@ -2661,3 +2661,15 @@ The [scoped maintenance review](2026-11-26-delivery-resource-record-identity-com
 
 - `workspace-governance@888c3d6dd495ecdc342c546fdaa15498e9efd5fe`
 - `operator-orchestration-service@fc211b2101aca91133d230e9244bc69c3daf1e34`
+
+### Verified protected-base source publication — 2026-11-26
+
+- operator-orchestration-service@9fb97de3da23b6ec09cba88a90dd4336bd85aa10
+- Exact landed tree `a3ae47fb532c81c82892453fca6543d860d7a275`
+- [Scoped Security review](2026-11-26-protected-base-source-publication.md)
+
+This update binds the merged Broker maintenance revision for the existing
+Console composition. It preserves the source grant, authority and normal
+GitHub gates. The owner-local checks and hosted validation passed. Reconcile
+the original #1384 work session through the normal operator surface after
+Platform activation.
