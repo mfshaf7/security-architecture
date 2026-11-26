@@ -2673,3 +2673,26 @@ Console composition. It preserves the source grant, authority and normal
 GitHub gates. The owner-local checks and hosted validation passed. Reconcile
 the original #1384 work session through the normal operator surface after
 Platform activation.
+
+
+## Stage 2 runtime evidence and Console action — 2026-11-27
+
+The [Broker and Console review](2026-11-27-stage-2-broker-runtime-verification.md)
+and the [Platform source review](2026-11-27-stage-2-platform-saved-project-runtime.md)
+cover the exact source changes. The Console reads operating results through
+the existing governed action. The paired runtime rehearsal ran on an admitted
+disposable target and removed that environment afterward. The composed
+decision accepts the listed revisions for the existing Dev Integration
+runtime. Normal Platform activation and the live Console result readback
+establish the operating outcome.
+
+| Owner | Reviewed PR | Merged revision | Reviewed and merged tree |
+| --- | --- | --- | --- |
+| governance-operations-console | [PR #197](https://github.com/mfshaf7/governance-operations-console/pull/197) | `c29ba97f2285db66723e25ab9bdc28e65b496bb9` | `01ab96602878cf70ad58387fe16c538610656ec6` |
+| operator-orchestration-service | [PR #435](https://github.com/mfshaf7/operator-orchestration-service/pull/435) | `7391da772326acc8a3706d95c59be9af04d1aebd` | `ef85a2f75078ffbac33307bfcf463c401fd16f06` |
+| platform-engineering | [PR #392](https://github.com/mfshaf7/platform-engineering/pull/392) | `6541e31bfc059241129d2b57d996da064983492e` | `4701551960cb9a743643e3012c4bab328399641e` |
+
+- `governance-operations-console@c29ba97f2285db66723e25ab9bdc28e65b496bb9`
+- `operator-orchestration-service@7391da772326acc8a3706d95c59be9af04d1aebd`
+- `platform-engineering@6541e31bfc059241129d2b57d996da064983492e`
+- `platform-engineering-tree@4701551960cb9a743643e3012c4bab328399641e`
