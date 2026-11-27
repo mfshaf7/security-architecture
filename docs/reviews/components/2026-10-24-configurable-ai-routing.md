@@ -2730,3 +2730,21 @@ The [scoped review](2026-11-27-console-delivery-recovery-batch.md) binds these e
 - `governance-operations-console@f626ff5af6ecdd4c4262fce81ed09532bfa92bd6`
 - `platform-engineering@65707c132324ff372212068a6e00cdc9ef69692a`
 - `platform-engineering-tree@b9a1e57769645c06daf6f0632206e082d9796559`
+
+### Bind the WGCF worker to the approved Delivery recovery source
+
+The first live final-readiness check observed an authorized WGCF worker
+reporting the previous revision `15d8ba987bb87ee96734f29e51fe0e78a93afc7b`.
+This decision already accepts WGCF revision `6f3033bad9cfa41de200f640320a1536c052414f`.
+The retained worker pin was inconsistent with that revision and correctly
+failed readiness.
+
+Accept the exact published worker image `ghcr.io/mfshaf7/workspace-governance-control-fabric-worker@sha256:2190c868e04530f274d0e390fc8c85308bb07171cd303cb563c0af5ee3d77acb`.
+The [WGCF build metadata and image smoke tests](https://github.com/mfshaf7/workspace-governance-control-fabric/actions/runs/45991443687)
+bind the digest to the merged commit. The exact image embeds that revision.
+Worker application source is unchanged. The merged core change adds the
+Technical Plan custody lookup used by the API.
+
+The manifest digest, original authorization generation, task queues and
+recorded evidence are retained. Final activation must prove the actual
+worker image, embedded revision, queue, identity and original activation.
