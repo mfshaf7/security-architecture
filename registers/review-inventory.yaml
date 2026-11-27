@@ -11,7 +11,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-27-stage-2-platform-saved-project-runtime.md
+        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
         reviewed_on: 2026-11-27
         status: current
         decision: approved
@@ -22,6 +22,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-delivery-command-plan-custody-session-renewal-and-source-section-review
           - console-stage-2-project-runtime-source-review
           - temporal-startup-frontend-address
           - disposable-delivery-source-owner-setup-and-exact-scope
@@ -188,8 +189,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
-        reviewed_on: 2026-11-25
+        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
+        reviewed_on: 2026-11-27
         status: current
         decision: approved
         review_areas:
@@ -199,6 +200,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-delivery-command-plan-custody-session-renewal-and-source-section-review
           - bounded-console-register-navigation-and-source-pages
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
@@ -270,8 +272,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
-        reviewed_on: 2026-11-25
+        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
+        reviewed_on: 2026-11-27
         status: current
         decision: approved
         review_areas:
@@ -281,6 +283,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-delivery-command-plan-custody-session-renewal-and-source-section-review
           - bounded-console-register-navigation-and-source-pages
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
@@ -454,7 +457,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-27-stage-2-broker-runtime-verification.md
+        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
         reviewed_on: 2026-11-27
         status: current
         decision: approved
@@ -465,6 +468,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-delivery-command-plan-custody-session-renewal-and-source-section-review
           - reviewed-work-prerequisites-and-safe-technical-plan-errors
           - native-principal-identity-and-readonly-refinement-inspection
           - refinement-advisor-planning-context-and-governed-field-values
@@ -848,7 +852,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-27-stage-2-broker-runtime-verification.md
+        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
         reviewed_on: 2026-11-27
         status: current
         decision: approved
@@ -859,6 +863,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-delivery-command-plan-custody-session-renewal-and-source-section-review
           - native-principal-identity-and-readonly-refinement-inspection
           - refinement-advisor-planning-context-and-governed-field-values
           - refinement-selected-context-facts-and-complete-budget
@@ -1097,7 +1102,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-27-stage-2-platform-saved-project-runtime.md
+        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
         reviewed_on: 2026-11-27
         status: current
         decision: approved
@@ -1108,6 +1113,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-delivery-command-plan-custody-session-renewal-and-source-section-review
           - console-stage-2-project-runtime-source-review
           - reviewed-work-prerequisites-and-safe-technical-plan-errors
           - native-principal-identity-and-readonly-refinement-inspection
@@ -1577,8 +1583,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-25-technical-plan-delivery-composed.md
-        reviewed_on: 2026-11-25
+        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
+        reviewed_on: 2026-11-27
         status: current
         decision: approved
         review_areas:
@@ -1588,6 +1594,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-delivery-command-plan-custody-session-renewal-and-source-section-review
           - connected-personal-and-organization-repository-routing
           - private-project-operational-records-and-scoped-source-access
           - authenticated-read-only-product-publication-preparation
@@ -1807,8 +1814,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-protected-base-source-publication.md
-        reviewed_on: 2026-11-26
+        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
+        reviewed_on: 2026-11-27
         status: current
         decision: approved
         review_areas:
@@ -1818,6 +1825,7 @@ review_inventory:
           - runtime
           - ai
         review_trigger_ids:
+          - console-delivery-command-plan-custody-session-renewal-and-source-section-review
           - native-principal-identity-and-readonly-refinement-inspection
           - bounded-brief-review-and-advisor-reply-transport
           - advisor-native-tool-contract-and-original-response-delivery

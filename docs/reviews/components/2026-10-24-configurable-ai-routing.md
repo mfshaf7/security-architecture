@@ -2711,3 +2711,22 @@ revisions remain as recorded in the preceding decision. Normal Platform
 activation and live Console result readback establish operating acceptance.
 
 - `operator-orchestration-service@c131f8699c7e6c965b470072b3b286146845b916`
+
+## Console Delivery recovery and source editing — 2026-11-27
+
+The [scoped review](2026-11-27-console-delivery-recovery-batch.md) binds these exact owner revisions. Use the existing Platform activation and verify the result through the live Console.
+
+| Owner | Reviewed PR | Merged revision | Reviewed and merged tree |
+| --- | --- | --- | --- |
+| workspace-governance | [PR #328](https://github.com/mfshaf7/workspace-governance/pull/328) | `421adb7d23c3a5a281bd3a315cb69992872327db` | `c6f66fe11469a46acd89a0d2723e7cd66c207829` |
+| workspace-governance-control-fabric | [PR #128](https://github.com/mfshaf7/workspace-governance-control-fabric/pull/128) | `6f3033bad9cfa41de200f640320a1536c052414f` | `8d7b4e3f5aee2877ecc79239c422d5a1b2bfa540` |
+| operator-orchestration-service | [PR #437](https://github.com/mfshaf7/operator-orchestration-service/pull/437) | `5bb05fd3e0e0b70c3118436098977dd82ae821ab` | `181511b0cc084d3a952d341dd0d8debe50887230` |
+| governance-operations-console | [PR #198](https://github.com/mfshaf7/governance-operations-console/pull/198) | `f626ff5af6ecdd4c4262fce81ed09532bfa92bd6` | `6c2c4c5c5dd3f925c9acc14ddfbf0708b476e016` |
+| platform-engineering | [PR #393](https://github.com/mfshaf7/platform-engineering/pull/393) | `65707c132324ff372212068a6e00cdc9ef69692a` | `b9a1e57769645c06daf6f0632206e082d9796559` |
+
+- `workspace-governance@421adb7d23c3a5a281bd3a315cb69992872327db`
+- `workspace-governance-control-fabric@6f3033bad9cfa41de200f640320a1536c052414f`
+- `operator-orchestration-service@5bb05fd3e0e0b70c3118436098977dd82ae821ab`
+- `governance-operations-console@f626ff5af6ecdd4c4262fce81ed09532bfa92bd6`
+- `platform-engineering@65707c132324ff372212068a6e00cdc9ef69692a`
+- `platform-engineering-tree@b9a1e57769645c06daf6f0632206e082d9796559`
