@@ -2748,3 +2748,18 @@ Technical Plan custody lookup used by the API.
 The manifest digest, original authorization generation, task queues and
 recorded evidence are retained. Final activation must prove the actual
 worker image, embedded revision, queue, identity and original activation.
+
+## Authenticated GitHub reads for Console workflows
+
+The [scope review](2026-11-28-console-authenticated-github-reads.md) binds these source revisions.
+
+| Owner | Reviewed PR | Merged revision | Reviewed tree |
+| --- | --- | --- | --- |
+| platform-engineering | [#394](https://github.com/mfshaf7/platform-engineering/pull/394) | `4e5fc2dd368022bbd1440f8558edef8ffacde139` | `ead72654203b8e23fa28b8056d3ccbc10ed55ee9` |
+| governance-operations-console | [#199](https://github.com/mfshaf7/governance-operations-console/pull/199) | `851b6825fac2930dbece9cbda6ee60a59d122e2f` | `f01ce0058006cc9dc0785453669088b33fafafbe` |
+| operator-orchestration-service | [#438](https://github.com/mfshaf7/operator-orchestration-service/pull/438) | `39fa5198d084608d5f7b00d5694fd26f4d2c66f7` | `e5a245812e9076c4a3813aff258a3886a039e312` |
+
+- `platform-engineering@4e5fc2dd368022bbd1440f8558edef8ffacde139`
+- `platform-engineering-tree@ead72654203b8e23fa28b8056d3ccbc10ed55ee9`
+- `governance-operations-console@851b6825fac2930dbece9cbda6ee60a59d122e2f`
+- `operator-orchestration-service@39fa5198d084608d5f7b00d5694fd26f4d2c66f7`

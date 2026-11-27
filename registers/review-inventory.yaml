@@ -11,8 +11,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
-        reviewed_on: 2026-11-27
+        path: docs/reviews/components/2026-11-28-console-authenticated-github-reads.md
+        reviewed_on: 2026-11-28
         status: current
         decision: approved
         review_areas:
@@ -457,8 +457,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
-        reviewed_on: 2026-11-27
+        path: docs/reviews/components/2026-11-28-console-authenticated-github-reads.md
+        reviewed_on: 2026-11-28
         status: current
         decision: approved
         review_areas:
@@ -852,8 +852,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
-        reviewed_on: 2026-11-27
+        path: docs/reviews/components/2026-11-28-console-authenticated-github-reads.md
+        reviewed_on: 2026-11-28
         status: current
         decision: approved
         review_areas:
@@ -1020,7 +1020,7 @@ review_inventory:
           - repo: operator-orchestration-service
             path: src/prototype-closure/source-client.js
           - repo: operator-orchestration-service
-            path: src/repository-owner-bootstrap/source-reader.js
+            path: src/repository-owner-bootstrap/private-source-reader.js
           - repo: operator-orchestration-service
             path: src/repository-owner-bootstrap/scaffold.js
           - repo: operator-orchestration-service
@@ -1102,8 +1102,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
-        reviewed_on: 2026-11-27
+        path: docs/reviews/components/2026-11-28-console-authenticated-github-reads.md
+        reviewed_on: 2026-11-28
         status: current
         decision: approved
         review_areas:
@@ -1814,8 +1814,8 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-27-console-delivery-recovery-batch.md
-        reviewed_on: 2026-11-27
+        path: docs/reviews/components/2026-11-28-console-authenticated-github-reads.md
+        reviewed_on: 2026-11-28
         status: current
         decision: approved
         review_areas:
@@ -1937,7 +1937,7 @@ review_inventory:
           - repo: operator-orchestration-service
             path: src/prototype-closure/source-client.js
           - repo: operator-orchestration-service
-            path: src/repository-owner-bootstrap/source-reader.js
+            path: src/repository-owner-bootstrap/private-source-reader.js
           - repo: operator-orchestration-service
             path: src/platform-operation/source-credential-authority.js
           - repo: operator-orchestration-service
