@@ -457,7 +457,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-28-console-authenticated-github-reads.md
+        path: docs/reviews/components/2026-11-28-console-delivery-completion.md
         reviewed_on: 2026-11-28
         status: current
         decision: approved
@@ -852,7 +852,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-28-console-authenticated-github-reads.md
+        path: docs/reviews/components/2026-11-28-console-delivery-completion.md
         reviewed_on: 2026-11-28
         status: current
         decision: approved
@@ -1102,7 +1102,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-28-console-authenticated-github-reads.md
+        path: docs/reviews/components/2026-11-28-console-delivery-completion.md
         reviewed_on: 2026-11-28
         status: current
         decision: approved
@@ -1382,8 +1382,8 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-26-recorded-group-source-intent-composed.md
-        reviewed_on: 2026-11-26
+        path: docs/reviews/components/2026-11-28-console-delivery-completion.md
+        reviewed_on: 2026-11-28
         status: current
         decision: approved
         review_areas:
@@ -1814,7 +1814,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-28-console-authenticated-github-reads.md
+        path: docs/reviews/components/2026-11-28-console-delivery-completion.md
         reviewed_on: 2026-11-28
         status: current
         decision: approved

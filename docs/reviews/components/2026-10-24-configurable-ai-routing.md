@@ -2763,3 +2763,15 @@ The [scope review](2026-11-28-console-authenticated-github-reads.md) binds these
 - `platform-engineering-tree@ead72654203b8e23fa28b8056d3ccbc10ed55ee9`
 - `governance-operations-console@851b6825fac2930dbece9cbda6ee60a59d122e2f`
 - `operator-orchestration-service@39fa5198d084608d5f7b00d5694fd26f4d2c66f7`
+
+## Delivery completion evidence readback
+
+The [scope review](2026-11-28-console-delivery-completion.md) binds these exact source revisions.
+
+| Owner | Reviewed PR | Merged revision | Reviewed tree |
+| --- | --- | --- | --- |
+| operator-orchestration-service | [#439](https://github.com/mfshaf7/operator-orchestration-service/pull/439) | `064de7bbe17c7027650fa6c15d48659b1685c31a` | `33f21fcdb10dc88b0bc72815bba4b938f596b310` |
+| governance-operations-console | [#200](https://github.com/mfshaf7/governance-operations-console/pull/200) | `69b004f0702613ffe93650267086156224b3f033` | `55e0a1b8754614d690d5f341df2be9004ad2708a` |
+
+- `operator-orchestration-service@064de7bbe17c7027650fa6c15d48659b1685c31a`
+- `governance-operations-console@69b004f0702613ffe93650267086156224b3f033`
