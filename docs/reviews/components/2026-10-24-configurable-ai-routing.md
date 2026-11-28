@@ -2775,3 +2775,9 @@ The [scope review](2026-11-28-console-delivery-completion.md) binds these exact 
 
 - `operator-orchestration-service@064de7bbe17c7027650fa6c15d48659b1685c31a`
 - `governance-operations-console@69b004f0702613ffe93650267086156224b3f033`
+
+## Retained Work Session navigation
+
+The [scope review](2026-11-28-console-retained-work-session.md) binds this Console-only update. The exact reviewed and merged source for [Console #201](https://github.com/mfshaf7/governance-operations-console/pull/201) is `756bb4778a3ba405617209dba0c1b52fa3ba4a8c` with tree `db472d12bdf8d3a341ac30df233ddae3ec2bf7f9`.
+
+- `governance-operations-console@756bb4778a3ba405617209dba0c1b52fa3ba4a8c`
