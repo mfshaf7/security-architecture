@@ -457,7 +457,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-28-console-retained-work-session.md
+        path: docs/reviews/components/2026-11-28-console-delivery-status-inspection.md
         reviewed_on: 2026-11-28
         status: current
         decision: approved
@@ -852,7 +852,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-28-console-delivery-completion.md
+        path: docs/reviews/components/2026-11-28-console-delivery-status-inspection.md
         reviewed_on: 2026-11-28
         status: current
         decision: approved
@@ -1102,7 +1102,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-28-console-retained-work-session.md
+        path: docs/reviews/components/2026-11-28-console-delivery-status-inspection.md
         reviewed_on: 2026-11-28
         status: current
         decision: approved
@@ -1382,7 +1382,7 @@ review_inventory:
         status: active
         decision: approved-with-findings
       latest_change_review:
-        path: docs/reviews/components/2026-11-28-console-delivery-completion.md
+        path: docs/reviews/components/2026-11-28-console-delivery-status-inspection.md
         reviewed_on: 2026-11-28
         status: current
         decision: approved
@@ -1814,7 +1814,7 @@ review_inventory:
         status: active
         decision: approved
       latest_change_review:
-        path: docs/reviews/components/2026-11-28-console-delivery-completion.md
+        path: docs/reviews/components/2026-11-28-console-delivery-status-inspection.md
         reviewed_on: 2026-11-28
         status: current
         decision: approved

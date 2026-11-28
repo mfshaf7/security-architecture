@@ -2781,3 +2781,15 @@ The [scope review](2026-11-28-console-delivery-completion.md) binds these exact 
 The [scope review](2026-11-28-console-retained-work-session.md) binds this Console-only update. The exact reviewed and merged source for [Console #201](https://github.com/mfshaf7/governance-operations-console/pull/201) is `756bb4778a3ba405617209dba0c1b52fa3ba4a8c` with tree `db472d12bdf8d3a341ac30df233ddae3ec2bf7f9`.
 
 - `governance-operations-console@756bb4778a3ba405617209dba0c1b52fa3ba4a8c`
+
+## Delivery status and retained tree inspection
+
+The [scope review](2026-11-28-console-delivery-status-inspection.md) binds these exact source revisions.
+
+| Owner | Reviewed PR | Merged revision | Reviewed tree |
+| --- | --- | --- | --- |
+| operator-orchestration-service | [#440](https://github.com/mfshaf7/operator-orchestration-service/pull/440) | `395d888b180eaff22a8be4aead764bf1bee13b44` | `86977888b7a91574c88cd9c250b4650554018f5c` |
+| governance-operations-console | [#202](https://github.com/mfshaf7/governance-operations-console/pull/202) | `d3bd28992b6a458cfbee99762fca54b9fba542eb` | `3c959db3687aa3c1b1851d88160cb2125423bb9b` |
+
+- `operator-orchestration-service@395d888b180eaff22a8be4aead764bf1bee13b44`
+- `governance-operations-console@d3bd28992b6a458cfbee99762fca54b9fba542eb`
